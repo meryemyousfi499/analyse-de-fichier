@@ -1,0 +1,258 @@
+{
+  "id_rapport": "1ca7a791",
+  "origine": "auto_watch",
+  "duree_analyse_s": 116.278,
+  "metadonnees": {
+    "nom": "jdk-26_windows-x64_bin.msi",
+    "extension": "msi",
+    "taille_octets": 196526080,
+    "taille_lisible": "187.4 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\jdk-26_windows-x64_bin.msi",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-11T00:45:42",
+    "date_modification": "2026-05-11T01:11:42",
+    "date_acces": "2026-09-11T14:22:26",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "ole_office_legacy",
+    "extension_declaree": ".msi",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "b1f1dcfccb6a2ad64627aeb26b84dffa3bbeaae1509367858917b321f8c8ae07",
+    "sha1": "63b47efe335254422dfb401d648e9e7bf22e7733",
+    "md5": "f936c6ec142e466b0ef523703d602d6e",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "ole_office_legacy",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.999,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.15,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "fv.ru"
+    ],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "A:\\\u0014",
+      "a:\\}4pgG\t\u0002Z\u001cYPe[\u001eiއ𫸐׵\u001adYv\u000fM%\u0007z\u0004RP^9[w\u0003\u0019",
+      "Q:\\@\u0014SM1y^%9hJ\u0014\u000bj\u0010x^,D\u0007P=\u000e\u000fCxu",
+      "I:\\!\u0004udӢS\u0005d\u001fzzs#hs7\t3",
+      "w:\\IA#Q-\u0019\u0018VMپ\u001e3~fj=\u00075`2\u000f\u001aM&}.tet\u0018InS",
+      "q:\\݋]9\u0013t$",
+      "I:\\",
+      "k:\\V\bydL\u0001'",
+      "j:\\\u000er!U}Z2",
+      "d:\\a\u001bne",
+      "O:\\#\u0014{",
+      "A:\\\u0014\u0019",
+      "r:\\\u0001曢焸\u001fD\f\u0005J\u0010P",
+      "t:\\e+q'\u0011\u001c\u000f\u0012\u0000\u00009}mcO'hX{ \u001eٟp[",
+      "e:\\xW\u001b{",
+      "t:\\g{\u00121`\u000f\u0004\u0012eW\u0019_(\u0006ǛP",
+      "m:\\-]^Mi#\u000bAI`\u0016މ拂o&F\\f2l'_IK",
+      "A:\\`.\u0013a\u00056kg3}A\u0005m\u0016(Mtd\u001d\u001b\u0017РM_\u00064,T\u0003.ٳ",
+      "q:\\",
+      "f:\\Ȭ\u0012H\u0012i\u0016I",
+      "a:\\\u0014y",
+      "l:\\\u0018.Q!lp\u0017^k89~DcBE[\u0004\u000e1\u0016B{\u0015-i\u0011zI\tZ",
+      "d:\\TFv\u0011D\txHDC",
+      "X:\\\u001b[",
+      "t:\\",
+      "V:\\TxbLO)",
+      "a:\\Ya",
+      "Z:\\u[",
+      "c:\\R",
+      "L:\\(-O\u0007=;"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 196526080,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 1
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "fv.ru": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/fv.ru/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/b1f1dcfccb6a2ad64627aeb26b84dffa3bbeaae1509367858917b321f8c8ae07/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.999875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0824,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 20,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\jdk-26_windows-x64_bin.msi",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

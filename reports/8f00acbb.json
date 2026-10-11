@@ -1,0 +1,183 @@
+{
+  "id_rapport": "8f00acbb",
+  "origine": "auto_watch",
+  "duree_analyse_s": 2.8,
+  "metadonnees": {
+    "nom": "Microsoft.Services.Store.winmd",
+    "extension": "winmd",
+    "taille_octets": 5120,
+    "taille_lisible": "5.0 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Microsoft.Services.Store.winmd",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-03T21:33:43",
+    "date_modification": "2026-08-26T15:56:10",
+    "date_acces": "2026-09-11T09:59:21",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".winmd",
+    "coherent": false,
+    "alerte": true,
+    "commentaire": "ALERTE : le fichier déclaré '.winmd' est en réalité de type 'pe_executable'. Usurpation d'extension probable."
+  },
+  "empreintes": {
+    "sha256": "45715793b8c8571554b0bfb4eccc29e2884c16481e1c7dbee78363bbe4da3dd9",
+    "sha1": "c825aee5a545e0d95d931314e3110d682be743e4",
+    "md5": "e91e57474dfa91125183c501783f9ff5",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": true,
+      "type": "DLL",
+      "architecture": "0x14c",
+      "nombre_imports": 1,
+      "imports_dangereux_detectes": [],
+      "sections": [
+        {
+          "nom": ".text",
+          "taille_brute": 4096,
+          "entropie": 4.84,
+          "executable": true,
+          "ecriture": false
+        },
+        {
+          "nom": ".reloc",
+          "taille_brute": 512,
+          "entropie": 0.082,
+          "executable": false,
+          "ecriture": false
+        }
+      ],
+      "packer_suspecte": false,
+      "signature_presente": false,
+      "point_entree": "0x2ebe",
+      "timestamp_compilation": 1780452198
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.3,
+    "verdict_entropie": "faible (texte / code non compresse)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.3
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": true,
+    "signature_presente": false,
+    "verifiee": null,
+    "editeur": null,
+    "commentaire": "Aucune signature Authenticode detectee. Cela n'implique pas automatiquement un fichier malveillant, mais augmente legerement le niveau de vigilance."
+  },
+  "yara": {
+    "disponible": true,
+    "matches": [
+      {
+        "regle": "PE_Disguised_As_Document",
+        "severite": "critique",
+        "description": "En-tete MZ (executable) alors que le contexte attend un document"
+      }
+    ]
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/45715793b8c8571554b0bfb4eccc29e2884c16481e1c7dbee78363bbe4da3dd9/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.00048828125,
+      "entropie_globale": 0.5375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 1,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 1,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.194,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 86,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Regle(s) YARA critique(s) declenchee(s) : PE_Disguised_As_Document.",
+      "Fichier deguise : extension '.winmd' mais contenu reel de type 'pe_executable'.",
+      "Aucune signature numerique Authenticode presente."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1789117163,
+    "fichier_original": "Microsoft.Services.Store.winmd",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1789117163_Microsoft.Services.Store.winmd.quarantine",
+    "raison": "Regle(s) YARA critique(s) declenchee(s) : PE_Disguised_As_Document.; Fichier deguise : extension '.winmd' mais contenu reel de type 'pe_executable'.; Aucune signature numerique Authenticode presente.",
+    "action": "block",
+    "libelle": "Bloquer"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "6a5a1a37bf"
+  }
+}

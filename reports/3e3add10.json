@@ -1,0 +1,265 @@
+{
+  "id_rapport": "3e3add10",
+  "origine": "auto_watch",
+  "duree_analyse_s": 52.509,
+  "metadonnees": {
+    "nom": "tableaux_structure.docx",
+    "extension": "docx",
+    "taille_octets": 10598,
+    "taille_lisible": "10.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\tableaux_structure.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-14T00:56:40",
+    "date_modification": "2026-05-14T00:56:42",
+    "date_acces": "2026-09-11T14:18:10",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/0333dd53-98d0-4149-9d97-ba64ed5cdf7b\nHostUrl=https://claude.ai/api/organizations/b6dc8f8c-7ecc-44e3-8028-97e8ecece2f0/conversations/0333dd53-98d0-4149-9d97-ba64ed5cdf7b/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Ftableaux_structure.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "6449e39c270a61b16df951d48b6066bf81d7c032d48959b35d61d38f5de6926a",
+    "sha1": "30436239d284e1188e69f05c1dcb077740862ae3",
+    "md5": "89e1f68e54d2381c213b27594cedf36c",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.636,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.64
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/6449e39c270a61b16df951d48b6066bf81d7c032d48959b35d61d38f5de6926a/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0010107040405273437,
+      "entropie_globale": 0.9545,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.042,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\comments.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\_rels\\comments.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3lijfdky\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "39c177b3",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "a9182b95",
+      "nom": "app.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "837873d0",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "2c3a8b1d",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "b14904bc",
+      "nom": "comments.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "769dc0c7",
+      "nom": "document.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "d8ecd9a1",
+      "nom": "endnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "300ab818",
+      "nom": "fontTable.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "c7943119",
+      "nom": "footnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "b867bcef",
+      "nom": "numbering.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "8bdcbd57",
+      "nom": "settings.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "0c83551d",
+      "nom": "styles.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "e1162b9b",
+      "nom": "comments.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "ff8b55e2",
+      "nom": "document.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "c98d34f4",
+      "nom": "endnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "03654143",
+      "nom": "fontTable.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "3c5bcc93",
+      "nom": "footnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "76079fed",
+      "nom": ".rels",
+      "score": 19
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport 39c177b3).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport 837873d0).",
+      "Score releve par le contenu extrait de l'archive : comments.xml (score 27, rapport b14904bc)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\tableaux_structure.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

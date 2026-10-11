@@ -1,0 +1,281 @@
+{
+  "id_rapport": "fe2cc228",
+  "origine": "auto_watch",
+  "duree_analyse_s": 110.78,
+  "metadonnees": {
+    "nom": "cabinet-noir-agent.rar",
+    "extension": "rar",
+    "taille_octets": 259346705,
+    "taille_lisible": "247.3 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent.rar",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-10T14:58:07",
+    "date_modification": "2026-09-10T14:58:19",
+    "date_acces": "2026-09-10T16:05:13",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/08507518-71af-47b3-b843-3c748aacf4a4\nHostUrl=https://claude.ai/api/organizations/def1f0e2-259a-4e88-8af0-dc1efcf7c815/conversations/08507518-71af-47b3-b843-3c748aacf4a4/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Fuploads%2Fcabinet-noir-agent.rar\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "rar",
+    "extension_declaree": ".rar",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "1483fb117e7ec1421e4abe23da01f364ed5d78b0ffa4abec6a971a9d8fc4b672",
+    "sha1": "dc3f72062dd47bd4035ea0bcde8329144ffa295a",
+    "md5": "a05607febfc5f7d6c44d9ed3022673a6",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "rar",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.999,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 259346705,
+    "taille_analysee_octets": 209715200
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "s.io"
+    ],
+    "urls": [],
+    "emails": [
+      "OX@5JO..bK"
+    ],
+    "chemins_windows": [
+      "n:\\n;#[nw v\b\u0005q\u0003\u0003\u000eTL\th\tϒ",
+      "C:\\6 K&zL\u001b\u000bzd\u0007\\@4",
+      "k:\\pHMcVbl#Y\u0015N",
+      "F:\\~\u0016zu\u0013\u0012_%ؿT%\u0015Mzԗonׄ;=]pR\u0007vڜ\\a%]ɰBG\u000bKXqQ\u0002-״¬sxFd$v\u0000\u000bP\u000bJ\u001fǽN",
+      "z:\\M\u0002=#FT(\u001f\u0006&\u0004\u0007X[踥¿({ -g.!\u000285i@_S\u0005\u0014b͉QJL%O\u000fs",
+      "f:\\σl.\u0013Z",
+      "O:\\O3}gRnn",
+      "Q:\\^\u0014v,4Ƒ.\u0005ԫ7A8`",
+      "B:\\3\u0019",
+      "u:\\捍8B1a5Y",
+      "J:\\8'=\u0019#$J¸\u0014,\u0018=\u0001 +PhcF\u000bq]\u001bZx_Y",
+      "F:\\Va\u0003xcEHOC\u0006h ϓ\u0015[\u0014A4DrՂ",
+      "M:\\åǨFXC(E\f)-AJcTl\u00143\u0002",
+      "o:\\-O\u001fKØw\u0004Ni\u001a6]",
+      "t:\\3M\u0005Y$ò",
+      "m:\\HqgI]0OxS,u~H&\u0011D\f\te",
+      "y:\\fRy",
+      "g:\\\u001c݆7\u001625",
+      "Y:\\@",
+      "d:\\",
+      "b:\\+Z%\fE\u0016\fdT()\u0000;\u001d\u0012\u0014 3r.p\u0006Z5wm\u00019\u001eZ\u000e[]",
+      "U:\\\f+Z24;agP",
+      "F:\\Y d\u00072ȊAz",
+      "v:\\!P\tnpMצ3},$e2}P\u000e\u0019!",
+      "S:\\\u0014q\u0018ҡ}",
+      "r:\\X",
+      "s:\\\u0005RjC",
+      "Z:\\-$Y",
+      "B:\\uA(",
+      "I:\\&Cw[Я\\\tyy\u001a\bQ[.\u001c8X"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 259346705,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 4
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "s.io": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 4,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "s.io",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.999875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0879,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".rar",
+    "backend_disponible": true,
+    "extraction_reussie": false,
+    "mot_de_passe_utilise": null,
+    "fichiers_extraits": [],
+    "erreur": "impossible d'ouvrir l'archive (mot de passe manquant/incorrect) : Cannot find working tool"
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 25,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['s.io'], URLs: aucune, hashs embarques: aucun.",
+      "Archive protegee par mot de passe : contenu NON inspecte (aucun mot de passe valide fourni ou trouve parmi les mots de passe courants). Fournissez le mot de passe partage pour une analyse complete."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent.rar",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

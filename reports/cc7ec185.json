@@ -1,0 +1,354 @@
+{
+  "id_rapport": "cc7ec185",
+  "origine": "auto_watch",
+  "duree_analyse_s": 9.041,
+  "metadonnees": {
+    "nom": "RH Emails - The bigest data base-1.pdf",
+    "extension": "pdf",
+    "taille_octets": 3034207,
+    "taille_lisible": "2.9 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\RH Emails - The bigest data base-1.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-06-09T16:07:22",
+    "date_modification": "2026-06-09T16:07:23",
+    "date_acces": "2026-09-11T13:04:31",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://web.whatsapp.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "c3c2d2ada77515a9e5faa219a539650ac19d6341429b19f0dd7730a13c4308c2",
+    "sha1": "0a9eabf750b76ef29e1cd9debe562f18becfe8e9",
+    "md5": "60a1cc1576d941251eb44aae7ce5b10f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 134
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.692,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.76,
+      7.41,
+      7.82,
+      7.58,
+      7.54,
+      7.84,
+      7.56,
+      7.59,
+      7.74,
+      7.52,
+      7.59,
+      7.62,
+      7.93,
+      7.98,
+      7.97,
+      7.97,
+      7.97,
+      7.97,
+      7.97,
+      7.97,
+      7.93,
+      7.78,
+      7.37,
+      7.97,
+      7.98,
+      7.62,
+      6.31,
+      3.19,
+      3.12,
+      3.2,
+      3.29,
+      3.27,
+      3.32,
+      3.28,
+      3.27,
+      3.3,
+      3.23,
+      3.21,
+      3.27,
+      3.3,
+      3.24,
+      3.32,
+      3.17,
+      3.15,
+      3.22,
+      3.22,
+      3.32
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/Type/Font/Subtype/TrueType/Name/F2/BaseFont/Arial/Encoding/..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "3smorocco.com",
+      "abb.com",
+      "ma.abb.com",
+      "actis-maroc.com",
+      "gmail.com",
+      "iam.net",
+      "afginvestmenbank.com",
+      "hotmail.com",
+      "africphar.com",
+      "akwagroup.com",
+      "anp.org",
+      "amnsl.com",
+      "airliquide.com",
+      "akzonobel.com",
+      "alcatel-lucent.com",
+      "wanadoo.net",
+      "allvidia.com",
+      "altadis.com",
+      "ma.imptob.com",
+      "aluminiumdumaroc.com",
+      "amaroc-agro.com",
+      "amcor.com",
+      "apmterminals.com",
+      "appro-tech.com",
+      "arkelio.com",
+      "arsenconsulting.com",
+      "artis-environnement.com",
+      "ma.cimpor.com",
+      "onep.org",
+      "casanet.net",
+      "winner.net",
+      "abcoujda.com",
+      "abctanger.com",
+      "attijariwafa.com",
+      "augesatmaroc.com",
+      "sanofi-aventis.com",
+      "aventis.com",
+      "sanofi.com",
+      "avy-protect.com",
+      "laboratoires-azbane.com",
+      "bayercropscience.com",
+      "bayerhealthcare.com",
+      "bayer.com",
+      "open.net",
+      "besix.com",
+      "cimpor.com",
+      "nadornet.net",
+      "bnpparibas.com",
+      "bostik.com",
+      "bottu.com"
+    ],
+    "urls": [],
+    "emails": [
+      "khalid-boukaa@3smorocco.com",
+      "hassan.herradi@3smorocco.com",
+      "noureddine.khalid@3smorocco.com",
+      "youssef.zabane@abb.com",
+      "fatimazahraa.aghlim@ma.abb.com",
+      "kenza.majid@ma.abb.com",
+      "mohamed.achouri@ma.abb.com",
+      "n.rami@accolade.co.ma",
+      "nharrak@accolade.co.ma",
+      "doulabi@acteor.ma",
+      "o.rachid@actis-maroc.com",
+      "adimag100@gmail.com",
+      "aditrad08@gmail.com",
+      "adricom@iam.net.ma",
+      "hicham.oussaid@afginvestmenbank.com",
+      "afayadgroupe@menara.maafayadgroupe",
+      "a.africlabo@menara.ma",
+      "o.ennaya@africphar.com",
+      "a.assaous@africphar.com",
+      "commercial@africode.ma",
+      "a.laghrani@africode.co.ma",
+      "anthiou2@gmail.com",
+      "o.ouhmidou@akwagroup.com",
+      "bouelkhurat@hotmail.com",
+      "aamraoui@anp.org.ma",
+      "s_farah@anp.org.ma",
+      "a_laabous@anp.org.ma",
+      "m.touab@tmsa.ma",
+      "i.aarabi@tmsa.ma",
+      "amn@amnsl.com",
+      "hmitta@hotmail.com",
+      "ka_zekri@yahoo.fr",
+      "aicm@menara.ma",
+      "samira.belkacem@airliquide.com",
+      "azrib.youness@airliquide.com",
+      "cliane.serhic@akzonobel.ma",
+      "karim.abid@akzonobel.com",
+      "achat@aui.ma",
+      "ybenbrahim@almanar.ma",
+      "hanane.benlahsen@alcatel-lucent.com",
+      "abdelhamid.cherrat@alcatel-lucent.com",
+      "aicha.archoq@alcatel-lucent.com",
+      "mohamed.lamhamdi@alcatel-lucent.com",
+      "alfellouss@wanadoo.net.ma",
+      "hicham.alliance@gmail.com",
+      "bahou.alliance@menara.ma",
+      "aldel-h@hotmail.com",
+      "asennani@allvidia.com",
+      "said.bamouss@almabat.ma",
+      "youness.jabine@almabat.ma"
+    ],
+    "chemins_windows": [
+      "n:\\\u0013hfg='&t4\u001f@\tn\u0011Z",
+      "I:\\q}y}\u0015\u001dX\u0002`ߝ"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "09705BEAC2DECE4F9569BD6CD05D992A"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 50
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "3smorocco.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/3smorocco.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "abb.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/abb.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "ma.abb.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/ma.abb.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "actis-maroc.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/actis-maroc.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "gmail.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/gmail.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/c3c2d2ada77515a9e5faa219a539650ac19d6341429b19f0dd7730a13c4308c2/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.28936452865600587,
+      "entropie_globale": 0.8365,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0399,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 25,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\RH Emails - The bigest data base-1.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

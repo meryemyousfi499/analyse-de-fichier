@@ -1,0 +1,362 @@
+{
+  "id_rapport": "14b75b21",
+  "origine": "auto_watch",
+  "duree_analyse_s": 6.317,
+  "metadonnees": {
+    "nom": "SteamSetup.exe",
+    "extension": "exe",
+    "taille_octets": 2380800,
+    "taille_lisible": "2.3 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\SteamSetup.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-05-18T01:04:45",
+    "date_modification": "2026-05-18T01:05:12",
+    "date_acces": "2026-09-11T14:12:11",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "7d3654531c32d941b8cae81c4137fc542172bfa9635f169cb392f245a0a12bcb",
+    "sha1": "da5995070737ec655824c92622333c489eb6bce4",
+    "md5": "1b54b70beef8eb240db31718e8f7eb5d",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": true,
+      "type": "EXE",
+      "architecture": "0x14c",
+      "nombre_imports": 165,
+      "imports_dangereux_detectes": [
+        "AdjustTokenPrivileges",
+        "GetProcAddress"
+      ],
+      "sections": [
+        {
+          "nom": ".text",
+          "taille_brute": 25088,
+          "entropie": 6.45,
+          "executable": true,
+          "ecriture": false
+        },
+        {
+          "nom": ".rdata",
+          "taille_brute": 5120,
+          "entropie": 5.163,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".data",
+          "taille_brute": 1536,
+          "entropie": 3.982,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".ndata",
+          "taille_brute": 0,
+          "entropie": 0.0,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".rsrc",
+          "taille_brute": 78336,
+          "entropie": 6.211,
+          "executable": false,
+          "ecriture": false
+        }
+      ],
+      "packer_suspecte": false,
+      "signature_presente": true,
+      "point_entree": "0x33b6",
+      "timestamp_compilation": 1469408151
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.984,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.09,
+      6.19,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.89
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "1.0.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [
+      "cacerts.digicert.com",
+      "crl3.digicert.com",
+      "crl4.digicert.com",
+      "www.digicert.com"
+    ],
+    "urls": [
+      "http://ocsp.digicert.com0C\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\u0006\u0003U\u001d\u001f\u0004",
+      "http://ocsp.digicert.com0A\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\u0006\u0003U\u001d\u001f\u0004",
+      "http://ocsp.digicert.com0X\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0",
+      "http://www.digicert.com/CPS0\u0006\b+\u0006\u0001\u0005\u0005\u0007\u0001\u0001\u000400$\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u0018http://ocsp.digicert.com0\\\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "x:\\oq\u001aגo\tx\u0014}",
+      "E:\\\u0013C\u0006",
+      "D:\\\u001e\u00018\u0015%\u001b\u0003zP\f~̕\u001f\bVeޛi\u000fA\\\u0015l0aav2)=\u0011I",
+      "d:\\9v\u001e\u0019\u0001Ѿ\u0005_O5\u000fQkr$LP",
+      "k:\\KJ]\u0018.^@\u0018ƠXbNGq\u001a",
+      "C:\\[+t]z\u00008",
+      "q:\\\u0000\u0011\bH",
+      "f:\\",
+      "C:\\,5\u0010Sp\u000eCdmfayڑF\u001b\u00041Qk%#ͼ;CF_U\u0019T1\u0007=GU\u0001D;7\u0001q\u0006k _",
+      "I:\\\u0001W1c\u00141\u001fcÏ[\u0003=_"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 14
+  },
+  "signature_numerique": {
+    "applicable": true,
+    "signature_presente": true,
+    "verifiee": null,
+    "editeur": null,
+    "commentaire": "Table de certificats presente. Verification cryptographique complete non effectuee (osslsigncode non installe sur cette machine)."
+  },
+  "yara": {
+    "disponible": true,
+    "matches": [
+      {
+        "regle": "PE_Disguised_As_Document",
+        "severite": "critique",
+        "description": "En-tete MZ (executable) alors que le contexte attend un document"
+      }
+    ]
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=1.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "6.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=6.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "cacerts.digicert.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/cacerts.digicert.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "crl3.digicert.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/crl3.digicert.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "crl4.digicert.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/crl4.digicert.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "www.digicert.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.digicert.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "http://ocsp.digicert.com0C\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\u0006\u0003U\u001d\u001f\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0C%06%08%2B%06%01%05%05%070%027http%3A%2F%2Fcacerts.digicert.com%2FDigiCertAssuredIDRootCA.crt0E%06%03U%1D%1F%04/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://ocsp.digicert.com0A\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\u0006\u0003U\u001d\u001f\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0A%06%08%2B%06%01%05%05%070%025http%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedRootG4.crt0C%06%03U%1D%1F%04/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://ocsp.digicert.com0X\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0X%06%08%2B%06%01%05%05%070%02Lhttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://www.digicert.com/CPS0\u0006\b+\u0006\u0001\u0005\u0005\u0007\u0001\u0001\u000400$\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u0018http://ocsp.digicert.com0\\\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fwww.digicert.com%2FCPS0%06%08%2B%06%01%05%05%07%01%01%0400%24%06%08%2B%06%01%05%05%070%01%18http%3A%2F%2Focsp.digicert.com0%5C%06%08%2B%06%01%05%05%070%02Phttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/7d3654531c32d941b8cae81c4137fc542172bfa9635f169cb392f245a0a12bcb/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.22705078125,
+      "entropie_globale": 0.998,
+      "nb_imports_dangereux": 2,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 4,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.2497,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 77,
+    "niveau": "eleve",
+    "action_recommandee": "quarantine",
+    "explications": [
+      "Regle(s) YARA critique(s) declenchee(s) : PE_Disguised_As_Document.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1789132337,
+    "fichier_original": "SteamSetup.exe",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1789132337_SteamSetup.exe.quarantine",
+    "raison": "Regle(s) YARA critique(s) declenchee(s) : PE_Disguised_As_Document.; Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.; Plusieurs indicateurs suspects detectes dans le contenu.",
+    "action": "quarantine",
+    "libelle": "Mettre en quarantaine"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "bb951cdffd"
+  }
+}

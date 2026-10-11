@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabinet Noir — Agent d'analyse de fichiers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- Rail de navigation -->
+  <aside class="rail">
+    <div class="rail-brand">
+      <span class="rail-brand-mark">CN</span>
+      <div class="rail-brand-text">
+        <h1>Cabinet Noir</h1>
+        <p>Agent d'analyse de fichiers</p>
+      </div>
+    </div>
+
+    <nav class="rail-nav">
+      <button class="rail-link is-active" data-view="analyse">Analyse</button>
+      <button class="rail-link" data-view="verification">Vérifier un indicateur</button>
+      <button class="rail-link" data-view="sandbox">
+        Sandbox
+        <span id="rail-sandbox-count" class="rail-status-count"></span>
+      </button>
+      <button class="rail-link" data-view="historique">Historique</button>
+      <button class="rail-link" data-view="journal">Journal de quarantaine</button>
+    </nav>
+
+    <div class="rail-engines">
+      <p class="rail-engines-title">Moteurs disponibles</p>
+      <ul id="engine-status">
+        <li data-engine="yara"><span class="dot"></span>YARA</li>
+        <li data-engine="clamav"><span class="dot"></span>ClamAV</li>
+        <li data-engine="ti"><span class="dot"></span>Threat Intel</li>
+        <li data-engine="archives"><span class="dot"></span>Archives protégées</li>
+        <li data-engine="ml"><span class="dot dot-on"></span>Scoring heuristique</li>
+      </ul>
+    </div>
+
+    <p class="rail-footnote">Aucune suppression automatique.<br>La quarantaine neutralise sans détruire.</p>
+  </aside>
+
+  <!-- Zone principale -->
+  <main class="main">
+
+    <!-- VUE ANALYSE -->
+    <section id="view-analyse" class="view is-active">
+
+      <!-- Tableau de bord : statistiques cliquables, chacune vers sa propre page dédiée -->
+      <div id="stats-bar" class="stats-bar">
+        <button class="stat-card" data-nav="watch-current">
+          <span class="stat-label">Fichier en cours d'analyse</span>
+          <span class="stat-value stat-value-mono" id="stat-watch-current">—</span>
+          <span class="stat-sub" id="stat-watch-current-sub">chargement…</span>
+        </button>
+        <button class="stat-card" data-nav="watch-queue">
+          <span class="stat-label">En file d'attente</span>
+          <span class="stat-value" id="stat-files-queue">—</span>
+          <span class="stat-sub">nouveaux + arrière-plan</span>
+        </button>
+        <button class="stat-card" data-nav="historique">
+          <span class="stat-label">Fichiers analysés</span>
+          <span class="stat-value" id="stat-files-total">—</span>
+          <span class="stat-sub">au total</span>
+        </button>
+        <button class="stat-card" data-nav="sandbox">
+          <span class="stat-label">Fichiers suspects</span>
+          <span class="stat-value" id="stat-sandbox-total">—</span>
+          <span class="stat-sub" id="stat-sandbox-sub">à tester en sandbox</span>
+        </button>
+        <button class="stat-card" id="stat-last-report">
+          <span class="stat-label">Dernier rapport</span>
+          <span class="stat-value stat-value-mono" id="stat-last-report-id">—</span>
+          <span class="stat-sub" id="stat-last-report-name">aucun pour l'instant</span>
+        </button>
+      </div>
+
+      <div class="hero">
+        <div class="hero-gauge">
+          <svg viewBox="0 0 220 220" class="gauge-svg">
+            <circle cx="110" cy="110" r="92" class="gauge-track"/>
+            <circle id="gauge-arc" cx="110" cy="110" r="92" class="gauge-arc"/>
+          </svg>
+          <div class="gauge-center">
+            <span id="gauge-score">—</span>
+            <small id="gauge-label">en attente</small>
+          </div>
+        </div>
+
+        <div class="hero-drop">
+          <p class="hero-eyebrow">Coffre de dépôt</p>
+          <h2>Déposez un fichier pour ouvrir le dossier d'instruction</h2>
+          <p class="hero-sub">Métadonnées, empreintes, analyse statique, IOC, YARA, antivirus et scoring sont exécutés sans jamais exécuter le fichier.</p>
+
+          <div id="dropzone" class="dropzone">
+            <input type="file" id="file-input" hidden>
+            <p class="dropzone-text">Glissez un fichier ici, ou <span class="dropzone-link">parcourir</span></p>
+            <p id="dropzone-filename" class="dropzone-filename"></p>
+          </div>
+
+          <div class="archive-password-row">
+            <label for="archive-password">Mot de passe (si fichier partagé protégé / archive chiffrée)</label>
+            <input type="text" id="archive-password" placeholder="laisser vide si non protégé">
+          </div>
+
+          <div id="verdict-line" class="verdict-line"></div>
+        </div>
+      </div>
+
+      <!-- Séquence du pipeline (ordre réel -> numérotation justifiée) -->
+      <ol id="pipeline-track" class="pipeline-track">
+        <li data-step="metadonnees"><span>01</span>Métadonnées</li>
+        <li data-step="coherence_type"><span>02</span>Cohérence type</li>
+        <li data-step="empreintes"><span>03</span>Empreintes</li>
+        <li data-step="analyse_statique"><span>04</span>Analyse statique</li>
+        <li data-step="entropie_obfuscation"><span>05</span>Entropie</li>
+        <li data-step="extraction_ioc"><span>06</span>IOC</li>
+        <li data-step="signature"><span>07</span>Signature</li>
+        <li data-step="yara"><span>08</span>YARA</li>
+        <li data-step="antivirus"><span>09</span>Antivirus</li>
+        <li data-step="scoring_ml"><span>10</span>Scoring</li>
+        <li data-step="fusion_score"><span>11</span>Fusion</li>
+        <li data-step="action_reponse"><span>12</span>Réponse</li>
+      </ol>
+
+      <div id="report-grid" class="report-grid" hidden>
+
+        <article class="panel panel-verdict">
+          <h3>Explication de la décision</h3>
+          <ul id="panel-explications" class="explication-list"></ul>
+          <div class="action-bar" id="action-bar"></div>
+        </article>
+
+        <article class="panel">
+          <h3>Métadonnées</h3>
+          <dl id="panel-metadata" class="kv-list"></dl>
+        </article>
+
+        <article class="panel">
+          <h3>Cohérence du type</h3>
+          <dl id="panel-type" class="kv-list"></dl>
+        </article>
+
+        <article class="panel panel-mono">
+          <h3>Empreintes cryptographiques</h3>
+          <dl id="panel-hashes" class="kv-list kv-mono"></dl>
+        </article>
+
+        <article class="panel">
+          <h3>Entropie &amp; obfuscation</h3>
+          <div id="panel-entropy-bars" class="entropy-bars"></div>
+          <dl id="panel-entropy" class="kv-list"></dl>
+        </article>
+
+        <article class="panel panel-wide">
+          <h3>Analyse statique</h3>
+          <div id="panel-static" class="static-content"></div>
+        </article>
+
+        <article class="panel panel-wide">
+          <h3>Indicateurs de compromission</h3>
+          <div class="ioc-tabs" id="ioc-tabs"></div>
+          <div id="ioc-content" class="ioc-content"></div>
+        </article>
+
+        <article class="panel">
+          <h3>Règles YARA déclenchées</h3>
+          <div id="panel-yara" class="badge-list"></div>
+        </article>
+
+        <article class="panel">
+          <h3>Antivirus (ClamAV)</h3>
+          <dl id="panel-clamav" class="kv-list"></dl>
+        </article>
+
+        <article class="panel">
+          <h3>Scoring — features</h3>
+          <div id="panel-ml" class="feature-bars"></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- VUE VERIFICATION MANUELLE -->
+    <section id="view-verification" class="view">
+      <h2 class="view-title">Vérifier un indicateur vous-même</h2>
+      <p class="view-sub">
+        Vous avez reçu un hash, un lien, un domaine ou une IP par un autre moyen
+        (email, message, journal de connexion) et voulez le vérifier sans déposer
+        de fichier ? Interrogez directement les sources de réputation configurées
+        (AbuseIPDB, AlienVault OTX, MalwareBazaar, URLhaus).
+      </p>
+
+      <form id="indicator-form" class="indicator-form">
+        <select id="indicator-type">
+          <option value="hash">Hash (MD5 / SHA-1 / SHA-256)</option>
+          <option value="domaine">Domaine</option>
+          <option value="url">URL</option>
+          <option value="ip">Adresse IP</option>
+        </select>
+        <input type="text" id="indicator-value" placeholder="ex : 8f14e45fceea167a5a36dedd4bea2543 ou exemple-suspect.com" required>
+        <button type="submit">Vérifier</button>
+      </form>
+
+      <pre id="indicator-result" class="indicator-result"></pre>
+    </section>
+
+    <!-- VUE DEDIEE : FICHIER EN COURS D'ANALYSE -->
+    <section id="view-watch-current" class="view">
+      <h2 class="view-title">Fichier en cours d'analyse</h2>
+      <p class="view-sub">
+        Fichier actuellement dépilé par le thread de traitement de la
+        surveillance automatique et en train de passer dans le pipeline
+        d'analyse (métadonnées, empreintes, YARA, antivirus, scoring...).
+        Cette page se met à jour toute seule.
+      </p>
+
+      <div class="watch-current-panel" id="watch-current-panel">
+        <span class="watch-current-dot" id="watch-current-dot"></span>
+        <div class="watch-current-text">
+          <span class="watch-current-label" id="watch-current-label">chargement…</span>
+          <span class="watch-current-sub" id="watch-current-sub"></span>
+        </div>
+      </div>
+
+      <button class="stat-card watch-lastfile-btn" id="watch-lastfile-btn" hidden>
+        <span class="stat-label">Dernier fichier traité</span>
+        <span class="stat-value stat-value-mono" id="watch-lastfile-name">—</span>
+        <span class="stat-sub" id="watch-lastfile-sub">voir le rapport →</span>
+      </button>
+    </section>
+
+    <!-- VUE DEDIEE : FILE D'ATTENTE -->
+    <section id="view-watch-queue" class="view">
+      <h2 class="view-title">File d'attente d'analyse</h2>
+      <p class="view-sub">
+        La surveillance sépare deux files : les <strong>nouveaux
+        téléchargements</strong> (priorité haute, traités FIFO dès qu'ils se
+        stabilisent) et les fichiers <strong>déjà présents</strong> sur la
+        machine au démarrage (priorité basse, traités en arrière-plan sans
+        jamais bloquer un nouveau téléchargement).
+      </p>
+      <table class="history-table">
+        <thead>
+          <tr><th>Fichier</th><th>Dossier</th><th>Priorité</th></tr>
+        </thead>
+        <tbody id="watch-queue-body"></tbody>
+      </table>
+    </section>
+
+    <!-- VUE SANDBOX -->
+    <section id="view-sandbox" class="view">
+      <h2 class="view-title">Sandbox dynamique</h2>
+      <p class="view-sub">
+        Tout fichier jugé <strong>élevé</strong> ou <strong>critique</strong> par
+        l'analyse statique ci-dessus est automatiquement mis en file ici pour
+        un test comportemental réel : il est ouvert/exécuté dans une machine
+        virtuelle jetable distante (via l'API Hybrid Analysis), ce que le
+        reste du pipeline ne fait jamais.
+      </p>
+
+      <div id="sandbox-key-warning" class="sandbox-warning" hidden>
+        Aucune clé <code>HYBRID_ANALYSIS_API_KEY</code> n'est configurée : les
+        fichiers suspects sont listés ci-dessous mais ne sont pas encore
+        soumis au test sandbox. Configurez la clé (gratuite sur
+        <a href="https://www.hybrid-analysis.com/signup" target="_blank" rel="noopener">hybrid-analysis.com</a>)
+        puis redémarrez le serveur, ou soumettez manuellement une entrée
+        ci-dessous une fois la clé ajoutée.
+      </div>
+
+      <table class="history-table sandbox-table">
+        <thead>
+          <tr>
+            <th>Fichier</th>
+            <th>Niveau (statique)</th>
+            <th>Statut sandbox</th>
+            <th>Verdict comportemental</th>
+            <th>Menaces</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="sandbox-body"></tbody>
+      </table>
+
+      <!-- Panneau de détail : affiché en cliquant sur une ligne, sans quitter le dashboard -->
+      <div id="sandbox-detail" class="sandbox-detail" hidden>
+        <button id="sandbox-detail-close" class="mini-btn sandbox-detail-close">✕ fermer</button>
+        <h3 id="sandbox-detail-title" class="sandbox-detail-title"></h3>
+        <dl class="kv-list" id="sandbox-detail-kv"></dl>
+      </div>
+    </section>
+
+    <!-- VUE HISTORIQUE -->
+    <section id="view-historique" class="view">
+      <h2 class="view-title">Historique des analyses</h2>
+      <table class="history-table">
+        <thead>
+          <tr><th>Fichier</th><th>Score</th><th>Niveau</th><th>Action</th><th>SHA-256</th></tr>
+        </thead>
+        <tbody id="history-body"></tbody>
+      </table>
+    </section>
+
+    <!-- VUE JOURNAL -->
+    <section id="view-journal" class="view">
+      <h2 class="view-title">Journal de quarantaine</h2>
+      <p class="view-sub">Les fichiers mis en quarantaine sont déplacés, renommés et passés en lecture seule dans <code>/quarantine</code>. Aucune suppression automatique n'est jamais effectuée.</p>
+    </section>
+
+  </main>
+</div>
+
+<script src="/static/js/dashboard.js"></script>
+</body>
+</html>

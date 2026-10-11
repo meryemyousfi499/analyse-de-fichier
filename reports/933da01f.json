@@ -1,0 +1,239 @@
+{
+  "id_rapport": "933da01f",
+  "origine": "auto_watch",
+  "duree_analyse_s": 4.66,
+  "metadonnees": {
+    "nom": "Gemini_Generated_Image_psyb7tpsyb7tpsyb.png",
+    "extension": "png",
+    "taille_octets": 905758,
+    "taille_lisible": "884.5 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Gemini_Generated_Image_psyb7tpsyb7tpsyb.png",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-14T18:35:08",
+    "date_modification": "2026-05-14T18:35:08",
+    "date_acces": "2026-09-11T14:14:22",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=about:internet\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "png",
+    "extension_declaree": ".png",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "c55de1d4d5898afd9989b027cf2fa1edf47926226c974d718177f220ad9c6671",
+    "sha1": "cf29a6f663b49681fcd37caf91383063d4c1f5ba",
+    "md5": "59b63b2853f364bbad68fd4f88548b2f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "png",
+    "image": {
+      "disponible": true,
+      "dimensions": "1407x768",
+      "donnees_ajoutees_apres_fin": false,
+      "taille_donnees_ajoutees_octets": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.891,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.59,
+      7.64,
+      7.86,
+      7.85,
+      7.87,
+      7.85,
+      7.9,
+      7.88,
+      7.93,
+      7.84,
+      7.8,
+      7.85,
+      7.84,
+      7.73
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "cv.iptc.org"
+    ],
+    "urls": [
+      "http://c2pa-ocsp.pki.goog/04\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002(http://pki.goog/c2pa/media-1p-ica-g3.crt0\u0017\u0006\u0003U\u001d",
+      "http://pki.goog/c2pa/root-g3.crt0&\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u001ahttp://c2pa-ocsp.pki.goog/0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0014\\؉SCZՁ\u0003\u0019\u0004**-0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014{ὴ,\u0010kJ70",
+      "http://c2pa-ocsp.pki.goog/04\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002(http://pki.goog/c2pa/core-tsa-ica-g3.crt0\u0017\u0006\u0003U\u001d",
+      "http://pki.goog/c2pa/root-g3.crt0&\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u001ahttp://c2pa-ocsp.pki.goog/0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0014\\؉SCZՁ\u0003\u0019\u0004**-0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014U`t;\u0003jD\u0006ea0",
+      "http://pki.goog/c2pa/media-1p-ica-g3.crt0\u000f\u0006"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "q:\\5'",
+      "t:\\zd;"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 69
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 14
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "cv.iptc.org": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/cv.iptc.org/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "http://c2pa-ocsp.pki.goog/04\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002(http://pki.goog/c2pa/media-1p-ica-g3.crt0\u0017\u0006\u0003U\u001d": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fc2pa-ocsp.pki.goog%2F04%06%08%2B%06%01%05%05%070%02%28http%3A%2F%2Fpki.goog%2Fc2pa%2Fmedia-1p-ica-g3.crt0%17%06%03U%1D/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://pki.goog/c2pa/root-g3.crt0&\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u001ahttp://c2pa-ocsp.pki.goog/0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0014\\؉SCZՁ\u0003\u0019\u0004**-0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014{ὴ,\u0010kJ70": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fpki.goog%2Fc2pa%2Froot-g3.crt0%26%06%08%2B%06%01%05%05%070%01%1Ahttp%3A%2F%2Fc2pa-ocsp.pki.goog%2F0%1F%06%03U%1D%23%04%180%16%14%5C%D8%89SCZ%D5%81%03%19%7F%04%2A%2A-0%1D%06%03U%1D%0E%04%16%04%14%7B%E1%BD%B4%2C%10kJ70/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://c2pa-ocsp.pki.goog/04\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002(http://pki.goog/c2pa/core-tsa-ica-g3.crt0\u0017\u0006\u0003U\u001d": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fc2pa-ocsp.pki.goog%2F04%06%08%2B%06%01%05%05%070%02%28http%3A%2F%2Fpki.goog%2Fc2pa%2Fcore-tsa-ica-g3.crt0%17%06%03U%1D/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://pki.goog/c2pa/root-g3.crt0&\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u001ahttp://c2pa-ocsp.pki.goog/0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0014\\؉SCZՁ\u0003\u0019\u0004**-0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014U`t;\u0003jD\u0006ea0": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fpki.goog%2Fc2pa%2Froot-g3.crt0%26%06%08%2B%06%01%05%05%070%01%1Ahttp%3A%2F%2Fc2pa-ocsp.pki.goog%2F0%1F%06%03U%1D%23%04%180%16%14%5C%D8%89SCZ%D5%81%03%19%7F%04%2A%2A-0%1D%06%03U%1D%0E%04%16%04%14U%60t%3B%03jD%06ea0/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://pki.goog/c2pa/media-1p-ica-g3.crt0\u000f\u0006": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fpki.goog%2Fc2pa%2Fmedia-1p-ica-g3.crt0%0F%06/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/c55de1d4d5898afd9989b027cf2fa1edf47926226c974d718177f220ad9c6671/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.08637981414794922,
+      "entropie_globale": 0.986375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 5,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1597,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 20,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Gemini_Generated_Image_psyb7tpsyb7tpsyb.png",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "id_rapport": "0eca66f3",
+  "origine": "auto_watch",
+  "duree_analyse_s": 220.415,
+  "metadonnees": {
+    "nom": "etape9_reconstruction_attaque.docx",
+    "extension": "docx",
+    "taille_octets": 10431,
+    "taille_lisible": "10.2 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\etape9_reconstruction_attaque.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-04-26T21:50:12",
+    "date_modification": "2026-04-26T21:50:14",
+    "date_acces": "2026-09-12T00:23:57",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/eeab1cc8-c336-4ab7-81a8-f71784da9e72\nHostUrl=https://claude.ai/api/organizations/b6dc8f8c-7ecc-44e3-8028-97e8ecece2f0/conversations/eeab1cc8-c336-4ab7-81a8-f71784da9e72/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Fetape9_reconstruction_attaque.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "4bf4e8b59b3792af92da417b89d69c8f19386f4c8930b106f968fba9d8c881ec",
+    "sha1": "659fab8e60aa7fde9b0f5a7c67f7bfeabf7fbd03",
+    "md5": "76a82e3bec9b4ccddc6d3289e5bdb7d9",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.624,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.62
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0009947776794433593,
+      "entropie_globale": 0.953,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0419,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\comments.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\_rels\\comments.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_6n6yroqa\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "38500b31",
+      "nom": "[Content_Types].xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "0842f14e",
+      "nom": "app.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "dca42fb7",
+      "nom": "core.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "1690e457",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "e160c114",
+      "nom": "comments.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "d30ad874",
+      "nom": "document.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "8242c09c",
+      "nom": "endnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "3516c94d",
+      "nom": "fontTable.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "46757c63",
+      "nom": "footnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "db53d66f",
+      "nom": "numbering.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "b57f0be9",
+      "nom": "settings.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "73b5a72f",
+      "nom": "styles.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "83c6a53b",
+      "nom": "comments.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "9e2a5104",
+      "nom": "document.xml.rels",
+      "score": 42
+    },
+    {
+      "id_rapport": "063d4872",
+      "nom": "endnotes.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "8667d387",
+      "nom": "fontTable.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "933e3309",
+      "nom": "footnotes.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "5558250f",
+      "nom": ".rels",
+      "score": 34
+    }
+  ],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 24, rapport 38500b31).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 34, rapport dca42fb7).",
+      "Score releve par le contenu extrait de l'archive : comments.xml (score 42, rapport e160c114)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\etape9_reconstruction_attaque.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

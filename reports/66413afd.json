@@ -1,0 +1,289 @@
+{
+  "id_rapport": "66413afd",
+  "origine": "auto_watch",
+  "duree_analyse_s": 58.929,
+  "metadonnees": {
+    "nom": "rapport_pipeline_final.docx",
+    "extension": "docx",
+    "taille_octets": 13950,
+    "taille_lisible": "13.6 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\rapport_pipeline_final.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-19T02:54:12",
+    "date_modification": "2026-05-19T02:54:13",
+    "date_acces": "2026-09-11T14:08:56",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/a2f82279-b7f9-4405-8d1f-7ec938033afb\nHostUrl=https://claude.ai/api/organizations/d92153e8-af71-4ce3-9f46-aed4bb124f55/conversations/a2f82279-b7f9-4405-8d1f-7ec938033afb/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Frapport_pipeline_final.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "15df82ce954e0b94b87df0ce0913f10ae4b73418ccb98bf49c22480c36da0df8",
+    "sha1": "eeeea8ad4d6576862ee9f9f932bb40bb02402b31",
+    "md5": "4a46f9d82224a2967ad98c44c2a43180",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.684,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.68
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/15df82ce954e0b94b87df0ce0913f10ae4b73418ccb98bf49c22480c36da0df8/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0013303756713867188,
+      "entropie_globale": 0.9605,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0422,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\comments.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\footer1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\header1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\_rels\\comments.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\_rels\\footer1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\word\\_rels\\header1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hkeoj97b\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "05eb9dcf",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "61ecabe8",
+      "nom": "app.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "298b0a66",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "eaa33c7a",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "67e9db42",
+      "nom": "comments.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "e96f1232",
+      "nom": "document.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "ab7b5ebd",
+      "nom": "endnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "cd5c934b",
+      "nom": "fontTable.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "2b8cee40",
+      "nom": "footer1.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "f8a5e8ba",
+      "nom": "footnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "6969d926",
+      "nom": "header1.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "249edebe",
+      "nom": "numbering.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "f70bde17",
+      "nom": "settings.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "176a4803",
+      "nom": "styles.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "603652bf",
+      "nom": "comments.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "489f7ade",
+      "nom": "document.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "30ece6c7",
+      "nom": "endnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "1fd12306",
+      "nom": "fontTable.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "12f43dc0",
+      "nom": "footer1.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "9ec99788",
+      "nom": "footnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "7d1d951d",
+      "nom": "header1.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "c86a4b0c",
+      "nom": ".rels",
+      "score": 19
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport 05eb9dcf).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport 298b0a66).",
+      "Score releve par le contenu extrait de l'archive : comments.xml (score 27, rapport 67e9db42)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\rapport_pipeline_final.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

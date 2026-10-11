@@ -1,0 +1,15 @@
+Flask==3.0.3
+python-magic==0.4.27
+pefile==2023.2.7
+oletools==0.60.2
+PyPDF2==3.0.1
+yara-python==4.5.1
+requests==2.32.3
+clamd==1.0.2
+
+# --- Optionnel : archives protegees par mot de passe ("fichier partage avec une cle") ---
+# L'agent se degrade proprement si l'un de ces paquets manque (le format
+# correspondant est simplement signale comme non pris en charge).
+pyzipper==0.3.6
+py7zr==0.21.1
+rarfile==4.2

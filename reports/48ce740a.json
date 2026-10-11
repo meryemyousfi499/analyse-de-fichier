@@ -1,0 +1,289 @@
+{
+  "id_rapport": "48ce740a",
+  "origine": "auto_watch",
+  "duree_analyse_s": 59.527,
+  "metadonnees": {
+    "nom": "Justification_Outils_PFA_Management.docx",
+    "extension": "docx",
+    "taille_octets": 26217,
+    "taille_lisible": "25.6 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Justification_Outils_PFA_Management.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-20T20:54:43",
+    "date_modification": "2026-05-20T20:54:47",
+    "date_acces": "2026-09-11T14:06:21",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/f56aeec0-2672-4bfd-897b-c52cbd6935a8\nHostUrl=https://claude.ai/api/organizations/43deef5a-cdd6-4f6e-928b-609824995097/conversations/f56aeec0-2672-4bfd-897b-c52cbd6935a8/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FJustification_Outils_PFA_Management.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "407a6e64c2498b71ad9a714340f2c9916c81e3d16c2ddeb38ef95ae79cf62aa9",
+    "sha1": "73c58b154c19237d74ae609d0b735da67cf9ee48",
+    "md5": "335dcfd4fcccbf2933e53d2344144db5",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.879,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.88
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/407a6e64c2498b71ad9a714340f2c9916c81e3d16c2ddeb38ef95ae79cf62aa9/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0025002479553222655,
+      "entropie_globale": 0.984875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0433,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\comments.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\footer1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\header1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\_rels\\comments.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\_rels\\footer1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\word\\_rels\\header1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_l2jygt5g\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "8fe14b0e",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "b34da2e7",
+      "nom": "app.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "6d713a4d",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "2ea43cc1",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "3d890b9a",
+      "nom": "comments.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "95f445de",
+      "nom": "document.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "b97424bc",
+      "nom": "endnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "16126bf2",
+      "nom": "fontTable.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "f36602c2",
+      "nom": "footer1.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "b93eff6a",
+      "nom": "footnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "e09668d4",
+      "nom": "header1.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "43941d6b",
+      "nom": "numbering.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "4e6cae89",
+      "nom": "settings.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "6f1c77a1",
+      "nom": "styles.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "58f0b126",
+      "nom": "comments.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "054cf2fa",
+      "nom": "document.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "b40daad4",
+      "nom": "endnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "8057b0b0",
+      "nom": "fontTable.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "e7a10098",
+      "nom": "footer1.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "2ad8f9e9",
+      "nom": "footnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "49526417",
+      "nom": "header1.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "11840e72",
+      "nom": ".rels",
+      "score": 19
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport 8fe14b0e).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport 6d713a4d).",
+      "Score releve par le contenu extrait de l'archive : comments.xml (score 27, rapport 3d890b9a)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Justification_Outils_PFA_Management.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

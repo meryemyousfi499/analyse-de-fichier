@@ -1,0 +1,253 @@
+{
+  "id_rapport": "07c19974",
+  "origine": "auto_watch",
+  "duree_analyse_s": 90.616,
+  "metadonnees": {
+    "nom": "cabinet-noir-agent-maj.rar",
+    "extension": "rar",
+    "taille_octets": 146909251,
+    "taille_lisible": "140.1 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj.rar",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-10T16:22:42",
+    "date_modification": "2026-09-10T16:23:37",
+    "date_acces": "2026-09-10T23:20:30",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "rar",
+    "extension_declaree": ".rar",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "21ee3983dbe6362d1c3884140ad445b657e16c606768aa09ce32bf89232869f5",
+    "sha1": "1eb97c2ef4851af20ff518fe5dc51ca7cf240086",
+    "md5": "45063d6906cbe231080d77c8dba1b747",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "rar",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 8.0,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [
+      "N@J.ty",
+      "D@A.Afk"
+    ],
+    "chemins_windows": [
+      "n:\\n;#[nw v\b\u0005q\u0003\u0003\u000eTL\th\tϒ",
+      "C:\\6 K&zL\u001b\u000bzd\u0007\\@4",
+      "J:\\6\u0005 h0",
+      "o:\\\u001fU{\t)7",
+      "p:\\Nѕs",
+      "A:\\4BAyVO\f",
+      "K:\\)\u0005'\u001f",
+      "H:\\II\u001a6",
+      "c:\\ZϲĄB^jⰧ",
+      "y:\\jn;j\u001eLzO\u0014\u000fH\u0005x2%U3\u0001\tZ\u0018sſnV17\u000e",
+      "o:\\\u0003BCy\u000b\\\u0002gj",
+      "v:\\",
+      "J:\\\u001f\u001fe2`M\u0015G\u001e~.z\u001ebO'=&\tqTEIνuq_w\u001b\f{",
+      "q:\\=0",
+      "z:\\\u001e!\u0006",
+      "g:\\.\u0006",
+      "u:\\-X]-jZu`ZX",
+      "F:\\\u0005\u0000",
+      "k:\\TGVdI\u0004K֚+\u0002C\b%-\u0014AwC",
+      "N:\\_ ]",
+      "J:\\esj`kEY[N%Ymu.A\u0014\u001f9Y\u0007H\u000f",
+      "t:\\_c~n",
+      "b:\\[M\fP}tgޅ",
+      "C:\\-S8\u001cL\u000f\u00042H8ġ1\u000fGL4\u00178і\\O\u0018_Z",
+      "H:\\\u0010ºI!!\b@D=צ5\u000b\u0000_\u0015Yyo`v_6\u001cw1Yu\u001bflݏ3x)2úRt.pu",
+      "V:\\xbpᚙ\t\u000eь7\fy!ʊ;Lh",
+      "F:\\4+RlW\u0014",
+      "W:\\\u001c!\u001b\u000fUyM\\9U\u0016xgabb0]1.",
+      "J:\\Tj\b-\u0010Y\u0003_e\u0014",
+      "T:\\SxI\u001e\u001c-5"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 146909251,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 1.0,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0549,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".rar",
+    "backend_disponible": true,
+    "extraction_reussie": false,
+    "mot_de_passe_utilise": null,
+    "fichiers_extraits": [],
+    "erreur": "impossible d'ouvrir l'archive (mot de passe manquant/incorrect) : Cannot find working tool"
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Archive protegee par mot de passe : contenu NON inspecte (aucun mot de passe valide fourni ou trouve parmi les mots de passe courants). Fournissez le mot de passe partage pour une analyse complete."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj.rar",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

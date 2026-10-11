@@ -1,0 +1,342 @@
+{
+  "id_rapport": "bf705170",
+  "origine": "auto_watch",
+  "duree_analyse_s": 44.701,
+  "metadonnees": {
+    "nom": "README.md",
+    "extension": "md",
+    "taille_octets": 5632,
+    "taille_lisible": "5.5 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\README.md",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-04-27T06:04:00",
+    "date_modification": "2026-04-17T07:09:17",
+    "date_acces": "2026-09-12T01:15:20",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".md",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "e00671b8c3125ce2ac733a5bd1f08fc6eebe259c9b38beb73e8a0bfd1603e75e",
+    "sha1": "adda6ba2094b9d83bba3dc2cf1ea6a1e956f2ee1",
+    "md5": "454b6371013d4774a4ec0449f0fc758a",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.108,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.11
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "github.com",
+      "hub.docker.com",
+      "user-images.githubusercontent.com",
+      "aquasec.com",
+      "www.aquasec.com",
+      "goreportcard.com",
+      "img.shields.io",
+      "www.openpolicyagent.org"
+    ],
+    "urls": [
+      "https://github.com/aquasecurity/trivy/releases/latest/",
+      "https://github.com/aquasecurity/trivy-action)",
+      "https://github.com/aquasecurity/trivy-operator)",
+      "https://github.com/aquasecurity/trivy-vscode-extension)",
+      "https://hub.docker.com/r/aquasec/trivy/tags?page=1&name=canary),",
+      "https://github.com/aquasecurity/trivy/pkgs/container/trivy/75776514?tag=canary),",
+      "https://gallery.ecr.aws/aquasecurity/trivy#canary)",
+      "https://github.com/aquasecurity/trivy/actions/workflows/canary.yaml))",
+      "https://user-images.githubusercontent.com/1161307/171013513-95f18734-233d-45d3-aaf5-d6aec687db0e.mov",
+      "https://user-images.githubusercontent.com/1161307/171013917-b1f37810-f434-465c-b01a-22de036bd9b3.mov",
+      "https://trivy.dev/docs/latest/commercial/compare/).",
+      "https://aquasec.com",
+      "https://www.aquasec.com/demo",
+      "https://github.com/aquasecurity/trivy/actions/workflows/test.yaml",
+      "https://github.com/aquasecurity/trivy/actions/workflows/test.yaml/badge.svg",
+      "https://goreportcard.com/report/github.com/aquasecurity/trivy",
+      "https://goreportcard.com/badge/github.com/aquasecurity/trivy",
+      "https://github.com/aquasecurity/trivy/releases",
+      "https://img.shields.io/github/release/aquasecurity/trivy.svg?logo=github",
+      "https://img.shields.io/github/downloads/aquasecurity/trivy/total?logo=github",
+      "https://img.shields.io/docker/pulls/aquasec/trivy?logo=docker&label=docker%20pulls%20%2F%20trivy",
+      "https://github.com/aquasecurity/trivy/blob/main/LICENSE",
+      "https://img.shields.io/badge/License-Apache%202.0-blue.svg",
+      "https://trivy.dev",
+      "https://trivy.dev/docs/latest/",
+      "https://github.com/aquasecurity/community/blob/main/CODE_OF_CONDUCT.md",
+      "https://trivy.dev/docs/latest/getting-started/installation/",
+      "https://trivy.dev/docs/latest/ecosystem/",
+      "https://trivy.dev/docs/latest/coverage/",
+      "https://ariadne.space/2021/06/08/the-vulnerability-remediation-lifecycle-of-alpine-containers/",
+      "https://www.openpolicyagent.org/docs/latest/#rego",
+      "https://www.sigstore.dev/",
+      "https://www.aquasec.com/products/open-source-projects/",
+      "https://github.com/aquasecurity/trivy/discussions"
+    ],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 76
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "github.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "7940"
+        }
+      },
+      "hub.docker.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "user-images.githubusercontent.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "2"
+        }
+      },
+      "aquasec.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.aquasec.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://github.com/aquasecurity/trivy/releases/latest/": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://github.com/aquasecurity/trivy-action)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://github.com/aquasecurity/trivy-operator)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://github.com/aquasecurity/trivy-vscode-extension)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://hub.docker.com/r/aquasec/trivy/tags?page=1&name=canary),": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "github.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "user-images.githubusercontent.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.000537109375,
+      "entropie_globale": 0.6385,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 34,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1105,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['github.com', 'user-images.githubusercontent.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\README.md",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

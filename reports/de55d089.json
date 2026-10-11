@@ -1,0 +1,1335 @@
+{
+  "id_rapport": "de55d089",
+  "origine": "auto_watch",
+  "duree_analyse_s": 1071.726,
+  "metadonnees": {
+    "nom": "logs-main.zip",
+    "extension": "zip",
+    "taille_octets": 66148831,
+    "taille_lisible": "63.1 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\logs-main.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-06T01:28:03",
+    "date_modification": "2026-09-06T01:28:41",
+    "date_acces": "2026-09-11T09:40:24",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://github.com/\nHostUrl=https://codeload.github.com/meryemyousfi499/logs/zip/refs/heads/main?token=BSATL7YSON3VQR2YI35KBZLKTS2WG\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "8b5b65ceae78a757a1b686260e48c5f75c416824bb90c70534ed757e5c05692a",
+    "sha1": "90dd83632dff079cc27ca17db46773e00edfa6a6",
+    "md5": "00940abc76ad3e6ad59c73e75a05dbb1",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.996,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "R.cn"
+    ],
+    "urls": [],
+    "emails": [
+      "c@2.Az"
+    ],
+    "chemins_windows": [
+      "y:\\5",
+      "y:\\p5",
+      "Z:\\hyH\tr",
+      "i:\\`sC5M\u001cq",
+      "l:\\g\u001bwg_\u001b\u0019\tټprN-M\u0001`l\u0012V\u0015\u000fV\\I\u001a\u0004=֔Z$\u001cK7",
+      "R:\\3\u0005bl\u0010(\fT'8\u0006UF q\b JH\u0004\u0014\u0015&JFL.dD9qblH$Q,",
+      "a:\\7tVcso\u001b,e\u0016E;41",
+      "x:\\\u0015\b=\u0004w\\ѻ",
+      "Q:\\7tVcso\u001b,e\u0016E;41",
+      "d:\\Uezvh1{1s",
+      "W:\\)`\u0007",
+      "K:\\t\u0002h\u001c{&3\u000f\u001a\u0010\u0013$\u0013\b4\u0013\u001dV±L",
+      "m:\\s;\u0018zw[k",
+      "d:\\d]d A\u0015A2\b\u0001\u0014eeT\u0018",
+      "d:\\d]d\bA+f\u0014\u001d07\u0004",
+      "q:\\",
+      "J:\\b\u001bER-)-Q\u0003$c}ɘ8\u0018v\u0007Etܮ{; O+iA\u001b@I\u001dME3",
+      "f:\\f]fPA\u0019",
+      "G:\\N\u0002",
+      "d:\\Uezzh1{1s",
+      "P:\\\u0011\u0001.\u0005 PFW\u0014w!r\u0005X6!u8x\b=gM#\u001fv@,㍜ 0\u0004)\u0017\u000f",
+      "N:\\qihxy\u0018d\u0019\u001d\u000e\u0019@oi",
+      "L:\\",
+      "M:\\w\u0017՛64VoI\u0015!eN\u0002Jy]#KPm\u001df̼s\u0002Z^Y2\u0004VhPĩ\u0001TB\u0010(\\\u0016֝([aXVq;d",
+      "d:\\d]d\u0018A\u0015+25\u00066'\u0018`Y",
+      "b:\\6Oȿ8\u0015",
+      "d:\\\u001fe!7q\u0010e+",
+      "q:\\\u0016Dsa\u0019X+\u0019k)иt",
+      "A:\\{\u0002f",
+      "i:\\怖GGv\u001fn\u001dFG)\u0018I2yWh)zYA\u0012\fa4[Yp\u0002\u0012eKDC\b4\u0002\u001f\u0017lR)b\u001d\u0016!4\u0000\u001d\u001a"
+    ],
+    "chemins_unix": [
+      "/usr/lib/go-1.22/src/runtime/runtime-gdb.py\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u00005\u0019\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000x\u0001}w|\u0002d\u0003%z4%\u0004\u0004kB\u0012",
+      "/usr/lib/go-1.22/src/runtime/runtime-gdb.py\u0000ZLIB\u0000\u0000\u0000\u0000\u0000\u0013Z"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 66148831,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 4
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "R.cn": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 2,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "R.cn",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.9995,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0879,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\build.sh",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\go.mod",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\go.sum",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\main.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\OPENSEARCH.md",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\README.md",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent-new.exe",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent-server",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent-server.exe",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent.exe",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent.exe~",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent_macos_arm64",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent_report_DESKTOP-ULUR3QJ.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent_report_DESKTOP-ULUR3QJ_dashboard.html",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent_report_macs-MacBook-Pro.local.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\secagent_report_macs-MacBook-Pro.local_dashboard.html",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\stop",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\cmd\\agent\\main.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\cmd\\backfill\\main.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\cmd\\server\\main.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\latest.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_110818.305.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_111026.775.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_111234.386.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_111441.507.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_111654.272.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_111903.009.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_122749.083.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_123014.221.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_123224.038.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_123450.905.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_123845.963.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_124213.345.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_124524.863.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_124829.215.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_125107.762.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_125341.248.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_125539.321.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_125723.303.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_125908.250.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_130050.215.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_130233.083.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_130437.547.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_130901.309.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_131043.619.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_131220.572.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_131402.580.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_131538.398.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_131717.397.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_131855.760.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_132038.881.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_132226.953.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_132415.390.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_132559.385.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_132743.044.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_164233.700.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_164425.186.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_164647.956.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_164829.026.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_165012.233.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_165151.162.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_165337.178.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_165519.241.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_165659.116.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_165838.603.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_170016.440.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_170153.426.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_170330.926.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_170509.242.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_170644.334.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\DESKTOP-ULUR3QJ\\history\\20260904_170823.674.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\latest.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_145011.452.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_145256.670.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_145540.690.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_145825.383.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_150148.898.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_150524.209.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_150754.020.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_151029.453.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_151316.678.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_151629.936.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_151917.184.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_152150.153.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_152511.911.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_152740.921.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_153033.798.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_153256.682.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_154248.390.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_154727.442.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_155149.371.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_155520.803.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_155810.442.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_160107.986.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_160351.754.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_160652.494.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_160939.029.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_161220.492.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_161514.003.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_161754.315.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_162034.047.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_162259.448.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_162625.393.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_162924.249.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_163205.707.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_163454.558.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_163746.873.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_164034.044.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_164326.701.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_164636.881.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_165055.571.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_165513.652.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_170221.118.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_170749.425.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_171123.348.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_171715.177.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_171955.012.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_172322.277.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_172543.313.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_172822.667.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_173116.689.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\data\\hosts\\macs-MacBook-Pro.local\\history\\20260904_173405.725.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\deploy\\opensearch\\docker-compose.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent-server",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_linux_amd64",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_macos_amd64",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_macos_arm64",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_report_DESKTOP-ULUR3QJ_20260815_004113.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_report_DESKTOP-ULUR3QJ_20260815_004113_dashboard.html",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_report_DESKTOP-ULUR3QJ_20260815_195424.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_report_DESKTOP-ULUR3QJ_20260815_195424_dashboard.html",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_report_macs-MacBook-Pro.local_20260813_102810.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_report_macs-MacBook-Pro.local_20260813_102810_dashboard.html",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent_windows_amd64.exe",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\.DS_Store",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\analyzer\\risk.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\analyzer\\types.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\collect.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\extras_darwin.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\extras_linux.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\extras_windows.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\logon_darwin.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\logon_linux.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\logon_windows.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\network.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\network_darwin.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\network_other.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\persistence_darwin.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\persistence_linux.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\persistence_windows.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\process.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\signature.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\signature_darwin.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\signature_windows.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\strings.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\syslogs_darwin.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\syslogs_linux.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\syslogs_windows.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\types.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\collector\\util.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\dashboard\\dashboard.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\dashboard\\template.html",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\elevate\\elevate_other.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\elevate\\elevate_windows.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\indexer\\indexer.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\report\\report.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\report\\send.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\server\\alert.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\server\\discover_link.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\server\\fleet.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\server\\http.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\server\\store.go",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\internal\\threatagent\\client.go"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "235f760f",
+      "nom": "build.sh",
+      "score": 1
+    },
+    {
+      "id_rapport": "49041dea",
+      "nom": "go.mod",
+      "score": 24
+    },
+    {
+      "id_rapport": "07095a7f",
+      "nom": "go.sum",
+      "score": 24
+    },
+    {
+      "id_rapport": "ca8aeacb",
+      "nom": "main.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "031a141e",
+      "nom": "OPENSEARCH.md",
+      "score": 19
+    },
+    {
+      "id_rapport": "26437bfc",
+      "nom": "README.md",
+      "score": 10
+    },
+    {
+      "id_rapport": "d31dd4ec",
+      "nom": "secagent-new.exe",
+      "score": 100
+    },
+    {
+      "id_rapport": "e529ac51",
+      "nom": "secagent-server",
+      "score": 29
+    },
+    {
+      "id_rapport": "b3f94776",
+      "nom": "secagent-server.exe",
+      "score": 100
+    },
+    {
+      "id_rapport": "4dee4d61",
+      "nom": "secagent.exe",
+      "score": 100
+    },
+    {
+      "id_rapport": "17abdf35",
+      "nom": "secagent.exe~",
+      "score": 100
+    },
+    {
+      "id_rapport": "ced2d249",
+      "nom": "secagent_macos_arm64",
+      "score": 28
+    },
+    {
+      "id_rapport": "d27b36b2",
+      "nom": "secagent_report_DESKTOP-ULUR3QJ.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "6a2d13ac",
+      "nom": "secagent_report_DESKTOP-ULUR3QJ_dashboard.html",
+      "score": 30
+    },
+    {
+      "id_rapport": "9b42e9f6",
+      "nom": "secagent_report_macs-MacBook-Pro.local.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "42612f72",
+      "nom": "secagent_report_macs-MacBook-Pro.local_dashboard.html",
+      "score": 28
+    },
+    {
+      "id_rapport": "c0488345",
+      "nom": "stop",
+      "score": 0
+    },
+    {
+      "id_rapport": "ce94461d",
+      "nom": "main.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "e2174cd1",
+      "nom": "main.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "296a7fed",
+      "nom": "main.go",
+      "score": 10
+    },
+    {
+      "id_rapport": "52cccd70",
+      "nom": "latest.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "8edabde6",
+      "nom": "20260904_110818.305.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "4361132e",
+      "nom": "20260904_111026.775.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "6b21ef21",
+      "nom": "20260904_111234.386.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "32734605",
+      "nom": "20260904_111441.507.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "b9478bb8",
+      "nom": "20260904_111654.272.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "545825d4",
+      "nom": "20260904_111903.009.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "11cf5632",
+      "nom": "20260904_122749.083.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "1b3b5fee",
+      "nom": "20260904_123014.221.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "dac8660c",
+      "nom": "20260904_123224.038.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "bc02199a",
+      "nom": "20260904_123450.905.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "699fb17b",
+      "nom": "20260904_123845.963.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "38f62f22",
+      "nom": "20260904_124213.345.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "3fa1abbd",
+      "nom": "20260904_124524.863.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "04217690",
+      "nom": "20260904_124829.215.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "f5ba47dc",
+      "nom": "20260904_125107.762.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "50b768b5",
+      "nom": "20260904_125341.248.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "74bac8ad",
+      "nom": "20260904_125539.321.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "da456cd4",
+      "nom": "20260904_125723.303.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "1c784d26",
+      "nom": "20260904_125908.250.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "c82612ca",
+      "nom": "20260904_130050.215.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "1ef6fe43",
+      "nom": "20260904_130233.083.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "a251f3f4",
+      "nom": "20260904_130437.547.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "41349c0b",
+      "nom": "20260904_130901.309.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "f5a14cf3",
+      "nom": "20260904_131043.619.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "ec8a7747",
+      "nom": "20260904_131220.572.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "55841e79",
+      "nom": "20260904_131402.580.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "6de33bce",
+      "nom": "20260904_131538.398.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "748c57fd",
+      "nom": "20260904_131717.397.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "0e376d25",
+      "nom": "20260904_131855.760.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "a5de6b9f",
+      "nom": "20260904_132038.881.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "e6cd30c6",
+      "nom": "20260904_132226.953.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "fcf61609",
+      "nom": "20260904_132415.390.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "47249706",
+      "nom": "20260904_132559.385.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "381bd1e7",
+      "nom": "20260904_132743.044.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "17674318",
+      "nom": "20260904_164233.700.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "8a3c944d",
+      "nom": "20260904_164425.186.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "e9280641",
+      "nom": "20260904_164647.956.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "d8c23e24",
+      "nom": "20260904_164829.026.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "144a9064",
+      "nom": "20260904_165012.233.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "14299d48",
+      "nom": "20260904_165151.162.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "fce400cd",
+      "nom": "20260904_165337.178.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "f75ad320",
+      "nom": "20260904_165519.241.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "bd0c76a3",
+      "nom": "20260904_165659.116.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "c8721b71",
+      "nom": "20260904_165838.603.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "7e4b51f9",
+      "nom": "20260904_170016.440.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "5e71e659",
+      "nom": "20260904_170153.426.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "79b8c042",
+      "nom": "20260904_170330.926.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "6948c6d1",
+      "nom": "20260904_170509.242.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "afbc9a77",
+      "nom": "20260904_170644.334.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "1e06e300",
+      "nom": "20260904_170823.674.json",
+      "score": 30
+    },
+    {
+      "id_rapport": "f533ea6d",
+      "nom": "latest.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "a00987f9",
+      "nom": "20260904_145011.452.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "05186ec3",
+      "nom": "20260904_145256.670.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "5245ab81",
+      "nom": "20260904_145540.690.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "0b8ca105",
+      "nom": "20260904_145825.383.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "87238aa4",
+      "nom": "20260904_150148.898.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "1f6dfa29",
+      "nom": "20260904_150524.209.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "e195bf3d",
+      "nom": "20260904_150754.020.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "78c1d736",
+      "nom": "20260904_151029.453.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "881d1185",
+      "nom": "20260904_151316.678.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "12840a8e",
+      "nom": "20260904_151629.936.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "3e766f4e",
+      "nom": "20260904_151917.184.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "c9528757",
+      "nom": "20260904_152150.153.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "f35bffd4",
+      "nom": "20260904_152511.911.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "a833a252",
+      "nom": "20260904_152740.921.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "0b95a374",
+      "nom": "20260904_153033.798.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "de2152ba",
+      "nom": "20260904_153256.682.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "d09edce1",
+      "nom": "20260904_154248.390.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "f45c584c",
+      "nom": "20260904_154727.442.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "42a722bb",
+      "nom": "20260904_155149.371.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "61d2e3e0",
+      "nom": "20260904_155520.803.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "fb29b7bd",
+      "nom": "20260904_155810.442.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "44153f56",
+      "nom": "20260904_160107.986.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "27ea0f88",
+      "nom": "20260904_160351.754.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "295ba33e",
+      "nom": "20260904_160652.494.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "87a06048",
+      "nom": "20260904_160939.029.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "b567885e",
+      "nom": "20260904_161220.492.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "77c5026b",
+      "nom": "20260904_161514.003.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "89cb5eec",
+      "nom": "20260904_161754.315.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "b685d7bf",
+      "nom": "20260904_162034.047.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "d9c99d30",
+      "nom": "20260904_162259.448.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "edfc0002",
+      "nom": "20260904_162625.393.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "32a99c32",
+      "nom": "20260904_162924.249.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "6b012107",
+      "nom": "20260904_163205.707.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "a97edd49",
+      "nom": "20260904_163454.558.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "af1d9335",
+      "nom": "20260904_163746.873.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "fbe0cd56",
+      "nom": "20260904_164034.044.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "26a0329b",
+      "nom": "20260904_164326.701.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "5f698577",
+      "nom": "20260904_164636.881.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "63293651",
+      "nom": "20260904_165055.571.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "bd2d7191",
+      "nom": "20260904_165513.652.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "551d0780",
+      "nom": "20260904_170221.118.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "9958d7e2",
+      "nom": "20260904_170749.425.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "3bd60d19",
+      "nom": "20260904_171123.348.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "9c0c107b",
+      "nom": "20260904_171715.177.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "3c8a6e89",
+      "nom": "20260904_171955.012.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "305bc9b0",
+      "nom": "20260904_172322.277.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "ff60aeec",
+      "nom": "20260904_172543.313.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "fce4d5ad",
+      "nom": "20260904_172822.667.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "b1b2112f",
+      "nom": "20260904_173116.689.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "17b1c1ac",
+      "nom": "20260904_173405.725.json",
+      "score": 28
+    },
+    {
+      "id_rapport": "87db87ea",
+      "nom": "docker-compose.yml",
+      "score": 19
+    },
+    {
+      "id_rapport": "1b3bb015",
+      "nom": "secagent",
+      "score": 27
+    },
+    {
+      "id_rapport": "96635d0f",
+      "nom": "secagent-server",
+      "score": 30
+    },
+    {
+      "id_rapport": "59303a1c",
+      "nom": "secagent_linux_amd64",
+      "score": 27
+    },
+    {
+      "id_rapport": "d31cd5ab",
+      "nom": "secagent_macos_amd64",
+      "score": 27
+    },
+    {
+      "id_rapport": "fd3328c5",
+      "nom": "secagent_macos_arm64",
+      "score": 28
+    },
+    {
+      "id_rapport": "4c832f99",
+      "nom": "secagent_report_DESKTOP-ULUR3QJ_20260815_004113.json",
+      "score": 31
+    },
+    {
+      "id_rapport": "ee5f29e3",
+      "nom": "secagent_report_DESKTOP-ULUR3QJ_20260815_004113_dashboard.html",
+      "score": 31
+    },
+    {
+      "id_rapport": "1476b9c3",
+      "nom": "secagent_report_DESKTOP-ULUR3QJ_20260815_195424.json",
+      "score": 31
+    },
+    {
+      "id_rapport": "7644a5fd",
+      "nom": "secagent_report_DESKTOP-ULUR3QJ_20260815_195424_dashboard.html",
+      "score": 31
+    },
+    {
+      "id_rapport": "0606ad02",
+      "nom": "secagent_report_macs-MacBook-Pro.local_20260813_102810.json",
+      "score": 27
+    },
+    {
+      "id_rapport": "936fc3cf",
+      "nom": "secagent_report_macs-MacBook-Pro.local_20260813_102810_dashboard.html",
+      "score": 27
+    },
+    {
+      "id_rapport": "c35e6785",
+      "nom": "secagent_windows_amd64.exe",
+      "score": 100
+    },
+    {
+      "id_rapport": "9eaba667",
+      "nom": ".DS_Store",
+      "score": 1
+    },
+    {
+      "id_rapport": "5bb2a4c3",
+      "nom": "risk.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "217046ac",
+      "nom": "types.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "16f6dc09",
+      "nom": "collect.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "bf8cd2bc",
+      "nom": "extras_darwin.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "7b37c336",
+      "nom": "extras_linux.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "7b0474e3",
+      "nom": "extras_windows.go",
+      "score": 10
+    },
+    {
+      "id_rapport": "ea6efb3c",
+      "nom": "logon_darwin.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "472c0ba3",
+      "nom": "logon_linux.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "7dd33918",
+      "nom": "logon_windows.go",
+      "score": 10
+    },
+    {
+      "id_rapport": "2a386e04",
+      "nom": "network.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "5ddab284",
+      "nom": "network_darwin.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "8c71f531",
+      "nom": "network_other.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "4dc0bc9b",
+      "nom": "persistence_darwin.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "0181ef2c",
+      "nom": "persistence_linux.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "242f0e46",
+      "nom": "persistence_windows.go",
+      "score": 10
+    },
+    {
+      "id_rapport": "619902b1",
+      "nom": "process.go",
+      "score": 10
+    },
+    {
+      "id_rapport": "deb1c443",
+      "nom": "signature.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "3515daa3",
+      "nom": "signature_darwin.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "43679be8",
+      "nom": "signature_windows.go",
+      "score": 10
+    },
+    {
+      "id_rapport": "70b26d56",
+      "nom": "strings.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "f251cd47",
+      "nom": "syslogs_darwin.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "ed3d2c22",
+      "nom": "syslogs_linux.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "fbd46f25",
+      "nom": "syslogs_windows.go",
+      "score": 10
+    },
+    {
+      "id_rapport": "65eac5ca",
+      "nom": "types.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "5e02a054",
+      "nom": "util.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "d54f7b77",
+      "nom": "dashboard.go",
+      "score": 10
+    },
+    {
+      "id_rapport": "5bdd66a4",
+      "nom": "template.html",
+      "score": 17
+    },
+    {
+      "id_rapport": "08b77609",
+      "nom": "elevate_other.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "f1a1672b",
+      "nom": "elevate_windows.go",
+      "score": 10
+    },
+    {
+      "id_rapport": "a1996463",
+      "nom": "indexer.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "4586cd4a",
+      "nom": "report.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "675005a1",
+      "nom": "send.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "77226371",
+      "nom": "alert.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "b7a2f5c6",
+      "nom": "discover_link.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "d12fdb83",
+      "nom": "fleet.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "a4d22b17",
+      "nom": "http.go",
+      "score": 9
+    },
+    {
+      "id_rapport": "cdde8a13",
+      "nom": "store.go",
+      "score": 1
+    },
+    {
+      "id_rapport": "368b99e2",
+      "nom": "client.go",
+      "score": 9
+    }
+  ],
+  "score_final": {
+    "score": 100,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['R.cn'], URLs: aucune, hashs embarques: aucun.",
+      "Score releve par le contenu extrait de l'archive : secagent-new.exe (score 100, rapport d31dd4ec)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1789117091,
+    "fichier_original": "logs-main.zip",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1789117091_logs-main.zip.quarantine",
+    "raison": "Quelques indicateurs isoles detectes (a corroborer).; Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['R.cn'], URLs: aucune, hashs embarques: aucun.; Score releve par le contenu extrait de l'archive : secagent-new.exe (score 100, rapport d31dd4ec).",
+    "action": "block",
+    "libelle": "Bloquer"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "3689b035e8"
+  }
+}

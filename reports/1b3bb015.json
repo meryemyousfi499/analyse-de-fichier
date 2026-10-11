@@ -1,0 +1,366 @@
+{
+  "id_rapport": "1b3bb015",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 9.879,
+  "metadonnees": {
+    "nom": "secagent",
+    "extension": "(aucune)",
+    "taille_octets": 5456386,
+    "taille_lisible": "5.2 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-11T09:40:21",
+    "date_modification": "2026-09-11T09:40:22",
+    "date_acces": "2026-09-11T09:54:13",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".(aucune)",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "1b3545708fd2ce19cf919e93ce6bc216c95e5d50084a64f8cae208201e98b384",
+    "sha1": "189aebd349cc837707878e0e7719939824392218",
+    "md5": "84418f7491c5761f03aeffbd8ffe2e8c",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.92,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.19,
+      6.42,
+      6.45,
+      6.44,
+      6.37,
+      6.42,
+      6.37,
+      6.33,
+      6.28,
+      6.35,
+      6.35,
+      6.42,
+      6.28,
+      6.23,
+      6.34,
+      6.45,
+      6.3,
+      6.53,
+      6.24,
+      6.35,
+      6.41,
+      6.48,
+      6.93,
+      5.08,
+      5.41,
+      4.83,
+      5.02,
+      5.26,
+      5.41,
+      5.24,
+      5.28,
+      4.83,
+      5.04,
+      5.03,
+      4.98,
+      5.5,
+      4.31,
+      4.43,
+      4.39,
+      4.6,
+      4.62,
+      3.59,
+      3.0,
+      3.22,
+      3.62,
+      5.57,
+      3.62,
+      3.52,
+      3.29,
+      3.7,
+      3.91,
+      4.39,
+      6.09,
+      3.71,
+      7.99,
+      7.99,
+      7.99,
+      7.91,
+      7.95,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 26,
+      "exemple": "ftpshttppop3smtpdialbindunixIPv4IPv64tcp6tcp4udp6udplockstop..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "0.0.0.0"
+    ],
+    "domaines": [
+      "stat-tile.info",
+      "finding-card.info",
+      "badge.info",
+      "www.w3.org",
+      "s.info",
+      "github.com",
+      "golang.org",
+      "runtime.link",
+      "eq.io",
+      "eq.net",
+      "hash.net",
+      "eq.golang.org",
+      "eq.github.com",
+      "itab.net",
+      "itab.github.com"
+    ],
+    "urls": [
+      "http://www.w3.org/2000/svg"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "n:\\",
+      "i:\\怖GGv\u001fn\u001dFG)\u0018I2yWh)zYA\u0012\fa4[Yp\u0002\u0012eKDC\b4\u0002\u001f\u0017lR)b\u001d\u0016!4\u0000\u001d\u001a",
+      "d:\\H(\u001dût35\u0003Jfo\u0006π\f̀)\u00190+\u00036g\f8\u00013q\u0006\u0000+\u00132x&xg\u0017\tY\t3L؛\tG2T&\\̄2n&",
+      "S:\\\u001b'{"
+    ],
+    "chemins_unix": [
+      "/usr/lib/dyld\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001b\u0000\u0000\u0000\u0018\u0000\u0000\u0000҄1\u000e^w\u0001d\u001d2\u0000\u0000\u0000",
+      "/usr/lib/libresolv.9.dylib\u0000\u0000\u0000\u0000\u0000\u0000",
+      "/usr/lib/libSystem.B.dylib\u0000\u0000\u0000\u0000\u0000\u0000&\u0000\u0000\u0000\u0010\u0000\u0000\u0000M\u0000\u0018\u001b\u0000\u0000)\u0000\u0000\u0000\u0010\u0000\u0000\u0000M\u0000\u0000\u0000\u0000\u0000\u001d\u0000\u0000\u0000\u0010\u0000\u0000\u0000PR\u0000\u0000\u0000\u0019\u0000\u0000\u0000\u0004\u0000\u0000__DWARF\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00005\u0000\u0000",
+      "/tmp/runasMySQLRedislogon%d-%varm64-jsonauthdLabel",
+      "/var/tmp//dev/shm/ksoftirqdTimestampRunAtLoad",
+      "/etc/hosts",
+      "/etc/zoneinfoparsing",
+      "/etc/serviceswrong",
+      "/etc/protocolsinternal",
+      "/etc/mdns.allowreflectlite.Setjstmpllitinterptarinsecurepathurlstrictcolonsx509keypairleafx509usepolicieszipinsecurepathinval",
+      "/etc/resolv.confhostLookupOrder=non-IPv4",
+      "/etc/nsswitch.confinvalid",
+      "/usr/lib/locale/TZ/\\appdata\\local\\tempPermission",
+      "/usr/share/zoneinfoDashboard",
+      "/usr/share/zoneinfo/run",
+      "/usr/share/lib/zoneinfo/missing",
+      "/usr/libexec/ApplicationFirewall/socketfilterfwreflect.Value.Bytes",
+      "/usr/local/go\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "/usr/local/go/src/internal/abi/bounds.go\u0000/usr/local/go/src/internal/abi/escape.go\u0000/usr/local/go/src/internal/abi/type.go\u0000",
+      "/usr/local/go/src/internal/cpu/cpu.go\u0000/usr/local/go/src/internal/cpu/cpu_arm64.go\u0000/usr/local/go/src/internal/cpu/cpu_arm64_da",
+      "/usr/local/go/src/internal/cpu/cpu_darwin.go\u0000/usr/local/go/src/internal/runtime/sys/dit_arm64.go\u0000/usr/local/go/src/internal/r",
+      "/usr/local/go/src/internal/runtime/atomic/types.go\u0000/usr/local/go/src/internal/bytealg/index_arm64.go\u0000/usr/local/go/src/intern",
+      "/usr/local/go/src/internal/bytealg/count_arm64.s\u0000/usr/local/go/src/internal/bytealg/equal_arm64.s\u0000/usr/local/go/src/internal/",
+      "/usr/local/go/src/internal/bytealg/indexbyte_arm64.s\u0000/usr/local/go/src/internal/runtime/maps/group.go\u0000/usr/local/go/src/inter",
+      "/usr/local/go/src/internal/abi/map.go\u0000/usr/local/go/src/internal/runtime/maps/runtime_fast32.go\u0000/usr/local/go/src/internal/ru",
+      "/usr/local/go/src/internal/runtime/maps/runtime_faststr.go\u0000/usr/local/go/src/internal/runtime/maps/table.go\u0000/usr/local/go/src",
+      "/usr/local/go/src/internal/strconv/atof.go\u0000/usr/local/go/src/internal/strconv/deps.go\u0000/usr/local/go/src/internal/strconv/atoi",
+      "/usr/local/go/src/internal/strconv/math.go\u0000/usr/local/go/src/internal/strconv/atofeisel.go\u0000/usr/local/go/src/math/bits/bits.g",
+      "/usr/local/go/src/internal/strconv/ftoa.go\u0000/usr/local/go/src/internal/strconv/ctoa.go\u0000/usr/local/go/src/internal/strconv/deci",
+      "/usr/local/go/src/internal/strconv/ftoadbox.go\u0000/usr/local/go/src/internal/strconv/ftoafixed.go\u0000/usr/local/go/src/internal/str"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": [
+        "25d71935e7be5b3a1b9e7953558bb9b2749229687cf3cd39c7f99d3f42672fae",
+        "55b825d6d76842fa06225686af4e70043b16687553e9bcbcd398b6e012f72a75",
+        "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 18
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "0.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=0.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "stat-tile.info": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/stat-tile.info/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "finding-card.info": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/finding-card.info/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "badge.info": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/badge.info/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.w3.org/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "s.info": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/s.info/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "http://www.w3.org/2000/svg": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {
+      "25d71935e7be5b3a1b9e7953558bb9b2749229687cf3cd39c7f99d3f42672fae": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/25d71935e7be5b3a1b9e7953558bb9b2749229687cf3cd39c7f99d3f42672fae/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "malwarebazaar": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "55b825d6d76842fa06225686af4e70043b16687553e9bcbcd398b6e012f72a75": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/55b825d6d76842fa06225686af4e70043b16687553e9bcbcd398b6e012f72a75/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "malwarebazaar": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "malwarebazaar": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/1b3545708fd2ce19cf919e93ce6bc216c95e5d50084a64f8cae208201e98b384/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.5203615188598633,
+      "entropie_globale": 0.865,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 1,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.1207,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_wf776ele\\logs-main\\dist\\secagent",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

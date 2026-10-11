@@ -1,0 +1,305 @@
+{
+  "id_rapport": "231ab765",
+  "origine": "auto_watch",
+  "duree_analyse_s": 86.989,
+  "metadonnees": {
+    "nom": "trivy.exe",
+    "extension": "exe",
+    "taille_octets": 163709952,
+    "taille_lisible": "156.1 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\trivy.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-04-27T06:04:00",
+    "date_modification": "2026-04-17T07:44:09",
+    "date_acces": "2026-09-12T01:13:53",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "e9f115fe62504938cabe510c16f2a0b0e960460213c23f06cddbae9ef9afeeaf",
+    "sha1": "af526c314d58f7bef7858ad05a07f3603f132ba1",
+    "md5": "0ffbd07b124aca72078d83bac1c6d028",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": true,
+      "type": "EXE",
+      "architecture": "0x8664",
+      "nombre_imports": 48,
+      "imports_dangereux_detectes": [
+        "GetProcAddress",
+        "VirtualAlloc"
+      ],
+      "sections": [
+        {
+          "nom": ".text",
+          "taille_brute": 71261696,
+          "entropie": 6.117,
+          "executable": true,
+          "ecriture": false
+        },
+        {
+          "nom": ".rdata",
+          "taille_brute": 85060608,
+          "entropie": 5.891,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".data",
+          "taille_brute": 4253184,
+          "entropie": 5.813,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".pdata",
+          "taille_brute": 1755648,
+          "entropie": 6.334,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".xdata",
+          "taille_brute": 512,
+          "entropie": 1.767,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".idata",
+          "taille_brute": 1536,
+          "entropie": 4.237,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".reloc",
+          "taille_brute": 1374720,
+          "entropie": 5.462,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".symtab",
+          "taille_brute": 512,
+          "entropie": 0.02,
+          "executable": false,
+          "ecriture": false
+        }
+      ],
+      "packer_suspecte": false,
+      "signature_presente": false,
+      "point_entree": "0x88b20",
+      "timestamp_compilation": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.376,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.16,
+      6.23,
+      6.29,
+      6.2,
+      6.24,
+      6.28,
+      6.2,
+      6.12,
+      6.21,
+      6.21,
+      6.02,
+      6.19,
+      6.22,
+      6.19,
+      6.04,
+      6.15,
+      6.41,
+      6.2,
+      6.16,
+      6.14,
+      6.19,
+      6.15,
+      6.21,
+      6.17,
+      6.1,
+      6.09,
+      5.89,
+      6.0,
+      6.03,
+      6.17,
+      6.11,
+      6.1,
+      6.03,
+      5.98,
+      6.03,
+      5.87,
+      6.04,
+      5.97,
+      6.03,
+      6.22,
+      6.1,
+      6.03,
+      6.01,
+      6.02,
+      6.11,
+      6.05,
+      6.04,
+      5.85,
+      6.13,
+      5.96,
+      5.97,
+      6.14,
+      6.13,
+      5.81,
+      6.05,
+      6.21,
+      6.04,
+      6.44,
+      6.02,
+      5.97,
+      6.61,
+      6.22,
+      6.11,
+      6.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "Z:\\\tH2\u0000\u0000\u000011H\u0000\u0000\u0000]\u000f\u001fD\u0000\u0000蛿t+H$\u0000\u0000\u0000HR\bHH$\u0000\u0000\u0000HHH\u0000\u0000\u0000]D\u000f\u0011",
+      "g:\\\u0004HL$@f[2tH$\u0000\u0000\u0000H$P\u0001\u0000\u0000HPX\u000f\u0010D$@\u000f\u0011@`\u000f\u0010D$P\u000f\u0011@p\u000f\u0010D$`\u000f\u0011\u0000\u0000\u0000H\u0005he\u0004H$X\u0001\u0000\u0000H"
+    ],
+    "chemins_unix": [
+      "/etc/sshH9\b\u000f\u00021ɉH\u0010]HD$\bH\\$\u0010\u0010HD$\bH\\$\u0010I;f\u0010\u000f\u0000\u0000\u0000UHHPHD$`fD\u000f|$H@|$x@t$yD$\u001f\u0000HD$0\u0000\u0000\u0000\u0000D\u000f\u0011|$"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 163709952,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": true,
+    "signature_presente": false,
+    "verifiee": null,
+    "editeur": null,
+    "commentaire": "Aucune signature Authenticode detectee. Cela n'implique pas automatiquement un fichier malveillant, mais augmente legerement le niveau de vigilance."
+  },
+  "yara": {
+    "disponible": true,
+    "matches": [
+      {
+        "regle": "Suspicious_LOLBins_Chain",
+        "severite": "moyen",
+        "description": "Chaine d'outils systeme legitimes detournes (living-off-the-land)"
+      },
+      {
+        "regle": "PE_Disguised_As_Document",
+        "severite": "critique",
+        "description": "En-tete MZ (executable) alors que le contexte attend un document"
+      }
+    ]
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.797,
+      "nb_imports_dangereux": 2,
+      "packer_suspecte": 0,
+      "signature_absente": 1,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.2164,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 56,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Regle(s) YARA critique(s) declenchee(s) : PE_Disguised_As_Document.",
+      "Aucune signature numerique Authenticode presente.",
+      "Mis en file sandbox malgre un niveau de risque global 'moyen' : une regle YARA critique/elevee a ete declenchee."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\trivy.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "5edf49ff6f"
+  }
+}

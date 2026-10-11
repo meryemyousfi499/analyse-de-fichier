@@ -1,0 +1,167 @@
+{
+  "id_rapport": "012d7cb3",
+  "origine": "auto_watch",
+  "duree_analyse_s": 7.706,
+  "metadonnees": {
+    "nom": "pfa (1).pdf",
+    "extension": "pdf",
+    "taille_octets": 997724,
+    "taille_lisible": "974.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\pfa (1).pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-08T02:20:29",
+    "date_modification": "2026-05-08T02:20:31",
+    "date_acces": "2026-09-11T14:31:03",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.texpage.com/\nHostUrl=https://latex-file.texpageusercontent.com/CompileResult/b9cd8a03-0eeb-4754-868d-399fbf99fb12/7fa584c8-2131-4f39-af20-ade27eb6c030/a9ad8b64-53cc-4c27-8534-31f4f3de2631/output.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=LTAI5tLosCAqoaGQ32MRY9K1%2F20260508%2Foss-cn-hangzhou%2Fs3%2Faws4_request&X-Amz-Date=20260508T012135Z&X-Amz-Expires=14400&X-Amz-Signature=14fe1a5a593ff72aca490046f57c1408c20c156e6853567e9d1505687d586f53&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3Bfilename%3D%22pfa.pdf%22%3Bfilename%2A%3Dutf-8%27%27pfa.pdf\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "0a41df1ce9fe5eccaa0e7b4f03004f95f7e902989cecf7ba949909d01f415833",
+    "sha1": "16a8324587e5d9cbd68df9d83d8e695830e25646",
+    "md5": "9afe01bcd2c593f82e00de4a3e2d0d62",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 63
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.997,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.97,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.98,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.98,
+      7.96
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "C0D0C72F291B5056C70AB9956CF5DFF2"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/0a41df1ce9fe5eccaa0e7b4f03004f95f7e902989cecf7ba949909d01f415833/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.09515037536621093,
+      "entropie_globale": 0.999625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.045,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 11,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\pfa (1).pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

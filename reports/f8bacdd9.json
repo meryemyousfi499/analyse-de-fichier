@@ -1,0 +1,416 @@
+{
+  "id_rapport": "f8bacdd9",
+  "origine": "auto_watch",
+  "duree_analyse_s": 5156.211,
+  "metadonnees": {
+    "nom": "Rapport_Evenements_Locaux_macOS (3).docx",
+    "extension": "docx",
+    "taille_octets": 9956335,
+    "taille_lisible": "9.5 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Rapport_Evenements_Locaux_macOS (3).docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-08-10T05:57:13",
+    "date_modification": "2026-08-10T05:57:22",
+    "date_acces": "2026-09-10T21:46:18",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/4d59365e-5acd-4ec5-b919-23164f3f0311\nHostUrl=https://claude.ai/api/organizations/d92153e8-af71-4ce3-9f46-aed4bb124f55/conversations/4d59365e-5acd-4ec5-b919-23164f3f0311/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FRapport_Evenements_Locaux_macOS.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "0f3d1d8f50cfa98707efc4efbd6d5443b50b7f8b54f867abfb18538670ed7f6e",
+    "sha1": "3064f8c89cd3755dd0048da08ee1afda27b0d70a",
+    "md5": "057258157adda1085b3b8917bdb66658",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.994,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      7.98,
+      7.97,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      7.97,
+      7.97,
+      7.99,
+      7.98,
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "X:\\%]\u0001YN\u0003w\u000f\u0019pFrT\u001bxUi@D\u0004^\u0005\u0015倍xyY++\u0016I)銼54X\u001eϣ\u000b\u0006\u0001gPf\u001d\u001cX+\u0013~\u001e\u0010\b㫎K\u0017ZFǶ^\u001e",
+      "A:\\\u0001\u0007\tA\u001coO\u001a\u0016t̒6s-",
+      "Q:\\]\u001ec̅\u0014\u001b&֮",
+      "n:\\w挗s\u000blگZu1G1'%NF`\b3f",
+      "X:\\",
+      "C:\\`\u0015b",
+      "G:\\BWz\u0007",
+      "J:\\",
+      "S:\\",
+      "l:\\Bk=]uy7b\u0010JD6_\u0004aY{hY{",
+      "z:\\Bp\u0012\u0019nK",
+      "o:\\gb",
+      "B:\\mn}g3Fch\u0005C"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "c97167181f668c3f95c54cf0860b8dd6bc2d5985",
+        "52c4e0b8a767b45399b94257f7c940101db2f8e5",
+        "70daadc9763deba472e0506a62d6c313106d0ea7",
+        "02e6c12ee27a1ee4d51027e2acb6b490c4c83eb9",
+        "caa573d2935e3fdaa729759c81c3c07bf6b745ec",
+        "b4e9cd56c914a5c9fb562f8822feb780ff399e53",
+        "886626ab30d9403d45bdad5323b51a04d00c135d",
+        "cf2a0729b33b3d630f366da8066ae22389ae74ca",
+        "021b552cc807df27719b4b28a9246cb1e8bd4ba6",
+        "53a4b8758514cd7a7c131e9164a364f245c0e1ee"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.9495100975036621,
+      "entropie_globale": 0.99925,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0544,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\comments.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\021b552cc807df27719b4b28a9246cb1e8bd4ba6.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\02e6c12ee27a1ee4d51027e2acb6b490c4c83eb9.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\52c4e0b8a767b45399b94257f7c940101db2f8e5.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\53a4b8758514cd7a7c131e9164a364f245c0e1ee.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\70daadc9763deba472e0506a62d6c313106d0ea7.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\886626ab30d9403d45bdad5323b51a04d00c135d.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\b4e9cd56c914a5c9fb562f8822feb780ff399e53.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\c97167181f668c3f95c54cf0860b8dd6bc2d5985.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\caa573d2935e3fdaa729759c81c3c07bf6b745ec.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\media\\cf2a0729b33b3d630f366da8066ae22389ae74ca.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\_rels\\comments.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rurlpy4c\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "e31e6538",
+      "nom": "[Content_Types].xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "2774abda",
+      "nom": "app.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "2033139c",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "fa48bade",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "003d29b6",
+      "nom": "comments.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "aa7c97dc",
+      "nom": "document.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "e6532cda",
+      "nom": "endnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "980eecae",
+      "nom": "fontTable.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "61dfa40c",
+      "nom": "footnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "fb7fd577",
+      "nom": "numbering.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "15eebd3b",
+      "nom": "settings.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "45c5ba14",
+      "nom": "styles.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "d403955c",
+      "nom": "021b552cc807df27719b4b28a9246cb1e8bd4ba6.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "cfc3ab9b",
+      "nom": "02e6c12ee27a1ee4d51027e2acb6b490c4c83eb9.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "5cbad940",
+      "nom": "52c4e0b8a767b45399b94257f7c940101db2f8e5.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "93d5011c",
+      "nom": "53a4b8758514cd7a7c131e9164a364f245c0e1ee.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "aa524eb4",
+      "nom": "70daadc9763deba472e0506a62d6c313106d0ea7.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "43aee72f",
+      "nom": "886626ab30d9403d45bdad5323b51a04d00c135d.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "fad5f1fe",
+      "nom": "b4e9cd56c914a5c9fb562f8822feb780ff399e53.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "ea65a300",
+      "nom": "c97167181f668c3f95c54cf0860b8dd6bc2d5985.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "5cecab63",
+      "nom": "caa573d2935e3fdaa729759c81c3c07bf6b745ec.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "90521159",
+      "nom": "cf2a0729b33b3d630f366da8066ae22389ae74ca.png",
+      "score": 33
+    },
+    {
+      "id_rapport": "762b2280",
+      "nom": "comments.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "da3e21c6",
+      "nom": "document.xml.rels",
+      "score": 42
+    },
+    {
+      "id_rapport": "93a25819",
+      "nom": "endnotes.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "51dc9ec7",
+      "nom": "fontTable.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "8be035e7",
+      "nom": "footnotes.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "bf96557b",
+      "nom": ".rels",
+      "score": 34
+    }
+  ],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 24, rapport e31e6538).",
+      "Score releve par le contenu extrait de l'archive : comments.xml (score 42, rapport 003d29b6)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Rapport_Evenements_Locaux_macOS (3).docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

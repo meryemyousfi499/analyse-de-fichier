@@ -1,0 +1,445 @@
+{
+  "id_rapport": "27ea408a",
+  "origine": "auto_watch",
+  "duree_analyse_s": 149.044,
+  "metadonnees": {
+    "nom": "Chapitre_Attaques_Securite.docx",
+    "extension": "docx",
+    "taille_octets": 1408777,
+    "taille_lisible": "1.3 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Chapitre_Attaques_Securite.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-13T06:06:29",
+    "date_modification": "2026-05-13T06:06:30",
+    "date_acces": "2026-09-11T14:19:58",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/3b2fe8ed-5ad7-40da-9886-ab93d220ce5d\nHostUrl=https://claude.ai/api/organizations/43deef5a-cdd6-4f6e-928b-609824995097/conversations/3b2fe8ed-5ad7-40da-9886-ab93d220ce5d/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FChapitre_Attaques_Securite.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "21a40af1d2fb4ddee4b35f2aa6ca40ba051e0caf7e130b004a8cb2f3a63fc1f6",
+    "sha1": "e9cf4c699331ed7b5997c6b851677f7ba69a1a28",
+    "md5": "1ab0ecd53547b60f3a4055bebbaff813",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.9
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "z:\\s(7}D,^S%{",
+      "U:\\\u0002N\u001a\t}s;Y6Nr\u0006UP3t[\u001fN^kp3REN[tv;\bHKdH\\`؄RZ",
+      "U:\\h\u0016\u001b,\u0018yk-\u0019\u0004n+ǋ+8\u001dF\u000eWrNA5\\\u0012\u0001e}A!e"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "7e9112c72b25f827f3b980b94664e4e61a2b7092",
+        "41439ed35b7d64b0d4afe1f3c5a64ec36a9b44ff",
+        "84be23105476cb27f0622390fa7bb6890bb50bdc",
+        "54d14196c998408eba8c17a31ff38221a2811d4b",
+        "239ad9a9d327dae88586e826ab8c232fd8202be0",
+        "012250bd36866629f16aa1ac62e865bac365f12b",
+        "8f2950df1f44be65cefdf786c1299c0fe760a387",
+        "0a39fc108e862ba8cad3ea53c81fdc22f7c80f32",
+        "b2b7b8605d49933595f41f3d59195b8507cdce78",
+        "e1fee456dee4099add363cea8aa69fc2208fb62f"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/21a40af1d2fb4ddee4b35f2aa6ca40ba051e0caf7e130b004a8cb2f3a63fc1f6/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.13435144424438478,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0454,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\comments.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\footer1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\header1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\012250bd36866629f16aa1ac62e865bac365f12b.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\0a39fc108e862ba8cad3ea53c81fdc22f7c80f32.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\1066834520e1a3956b36e850ef131594525408fd.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\239ad9a9d327dae88586e826ab8c232fd8202be0.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\3e5c56315778b7cf93c8a01c8595428decb93e9f.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\41439ed35b7d64b0d4afe1f3c5a64ec36a9b44ff.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\54194ad22130e494d16eda71d99018b1e18b5554.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\54d14196c998408eba8c17a31ff38221a2811d4b.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\69295295bc9903fb35f94820855c016465b3b0c7.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\7499d638de1d0b7c8b4ed9c5343de767b403572e.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\7e9112c72b25f827f3b980b94664e4e61a2b7092.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\84be23105476cb27f0622390fa7bb6890bb50bdc.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\8f2950df1f44be65cefdf786c1299c0fe760a387.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\a5064e87db795559dae6bc871b2a858b36ff1fe1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\b0debb68cbdffc6aa0e32200c6d352069de76e91.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\b2b7b8605d49933595f41f3d59195b8507cdce78.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\c6484ee1840b0abb1abffa9be6628085ee4a0a6f.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\de74001e35f5279a5587196cd04dd6de9947406e.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\e1fee456dee4099add363cea8aa69fc2208fb62f.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\media\\e73bef15a10fe970bbe6293b28d17eede1cef3f1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\_rels\\comments.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\_rels\\footer1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\word\\_rels\\header1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_oyxv1se5\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "e74abe91",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "9d3307fb",
+      "nom": "app.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "0be230c1",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "45da31d6",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "357f5cef",
+      "nom": "comments.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "62581107",
+      "nom": "document.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "c84d63c4",
+      "nom": "endnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "d8b8eb2b",
+      "nom": "fontTable.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "30f3b49a",
+      "nom": "footer1.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "7636dca6",
+      "nom": "footnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "3a501335",
+      "nom": "header1.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "fe1e742a",
+      "nom": "numbering.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "99230835",
+      "nom": "settings.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "72be87a6",
+      "nom": "styles.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "04639ae5",
+      "nom": "012250bd36866629f16aa1ac62e865bac365f12b.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "17cf8fb2",
+      "nom": "0a39fc108e862ba8cad3ea53c81fdc22f7c80f32.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "d271ae5a",
+      "nom": "1066834520e1a3956b36e850ef131594525408fd.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "bd2668f2",
+      "nom": "239ad9a9d327dae88586e826ab8c232fd8202be0.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "af0ec18f",
+      "nom": "3e5c56315778b7cf93c8a01c8595428decb93e9f.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "1a9b4abc",
+      "nom": "41439ed35b7d64b0d4afe1f3c5a64ec36a9b44ff.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "b267e7ae",
+      "nom": "54194ad22130e494d16eda71d99018b1e18b5554.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "41155e67",
+      "nom": "54d14196c998408eba8c17a31ff38221a2811d4b.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "df3d5cc9",
+      "nom": "69295295bc9903fb35f94820855c016465b3b0c7.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "23b2a4e0",
+      "nom": "7499d638de1d0b7c8b4ed9c5343de767b403572e.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "d9ced04e",
+      "nom": "7e9112c72b25f827f3b980b94664e4e61a2b7092.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "cf3ff805",
+      "nom": "84be23105476cb27f0622390fa7bb6890bb50bdc.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "2359a190",
+      "nom": "8f2950df1f44be65cefdf786c1299c0fe760a387.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "f91d5621",
+      "nom": "a5064e87db795559dae6bc871b2a858b36ff1fe1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "1e5523bc",
+      "nom": "b0debb68cbdffc6aa0e32200c6d352069de76e91.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "99a3acaa",
+      "nom": "b2b7b8605d49933595f41f3d59195b8507cdce78.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "0f7829a8",
+      "nom": "c6484ee1840b0abb1abffa9be6628085ee4a0a6f.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "e96ef92c",
+      "nom": "de74001e35f5279a5587196cd04dd6de9947406e.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "32090d44",
+      "nom": "e1fee456dee4099add363cea8aa69fc2208fb62f.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "ef7f1cf6",
+      "nom": "e73bef15a10fe970bbe6293b28d17eede1cef3f1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "e940ce3b",
+      "nom": "comments.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "8dc52b69",
+      "nom": "document.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "c815caf9",
+      "nom": "endnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "a873a4b4",
+      "nom": "fontTable.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "88ed4b07",
+      "nom": "footer1.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "29b19fe1",
+      "nom": "footnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "507bd8ed",
+      "nom": "header1.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "9f157b33",
+      "nom": ".rels",
+      "score": 19
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport e74abe91).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport 0be230c1).",
+      "Score releve par le contenu extrait de l'archive : comments.xml (score 27, rapport 357f5cef)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Chapitre_Attaques_Securite.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

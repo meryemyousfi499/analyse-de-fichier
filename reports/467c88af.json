@@ -1,0 +1,242 @@
+{
+  "id_rapport": "467c88af",
+  "origine": "auto_watch",
+  "duree_analyse_s": 3.785,
+  "metadonnees": {
+    "nom": "demande de stage PFA.eml",
+    "extension": "eml",
+    "taille_octets": 451470,
+    "taille_lisible": "440.9 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\demande de stage PFA.eml",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-07-06T15:49:11",
+    "date_modification": "2026-07-06T15:49:13",
+    "date_acces": "2026-09-11T13:03:07",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://mail.google.com/\nHostUrl=https://mail-attachment.googleusercontent.com/attachment/u/2/?ui=2&ik=d39f82ab2e&attid=0.1&permmsgid=msg-f:1869805735368305516&th=19f2e268df9dab6c&view=att&zw&disp=safe&saddbat=ANGjdJ_AiRqSzXtpZ-V-R7bIhge_rEAUmQQCzhT5KHHxojm-Mog3fnArwpagJPlROZ48uQvNmVdOWHmE4KL1p_AR9xTN6pCjCgZX0KN2-92Bmmy5L-lTKjN_55ywMn9ptRm5J0SouxGy8OvH3jQVHCyPiRkIImEGYyBAaMVAscxE1KPqTCpjCjozI1x2zwkOnbSI6V0WHPZeG-3JUkTgR6k4zVTwMWsGZZUDw909X_NCn8AxZxFWKgkZNtOrWgu9MI_1V0y5kd0tjLBYx3LbGN0QA8L0yZQP8ciE6frT-8VMaXHxu4vLruWukBaYRNhfhs2zFBOaKN9uYVGWbfdt9dD-EJ6a9JeS0zpZ_hyYUcPmmqzeZxba-QCj5FHm1_OxxxVg13vOM3XGrBOiSx-osqnXHvnOtzFdxIDksc3FLL_Vg46TzduwivDuFbRhyFOAuDgz7KDFfIZhukkI717MJR00KiaYnLbBDfOm5BEZzkt0300AY6JkjIl-uz0gqavyCha0SH635MsysnzsCL5j4zHxNMJg7J-VnjHyLOsZDLMHojIiOLASrpPyekLUQBnlELZnACpAW__hDKSqOQELr6nISKsfRBatdQxhYDpUHPcc5rUaLX54uWkWJVUKcsVAZuWD7nYjpISmQj1c4iaoznOmlZdGqGT_iIqBACtj8WGcSDv7NLSpqcZ3Y5WVz5lhRmrezMaRUsrrogpADuLWrL0ffM3Npn0rwuUgkdCQ8n9soerfxUHSA1cGpCpphdtGlz6I7vTWGU6FLcetrXr648iPpb-Wkt_MSf4zVHtyhKVIngTAf4VI2LDSTnD5ajeQ-hJkxybzryJpvZ2v7XNJ2evuLBP0_PXzZIq6zbRgnEk4IbHbThFKwD3OkbJpQxrVIe8aszjJwS0SMJ-m23kkg-9RcV0J408GSSWNC6zfCJZ8p6n57lVH2tA6lhLSwwr-TSY5zE3Q4pf85Fvza1Pf0a4YkjM1HQOu2MC-sVqhnW4BPSznHNIlXRibvPaXZhbo7y2XNoGp6ATczg2m-_lWprwWMFO-qtDEbva1EvFVw5vm3LnyfwQw1LoAD3Z6mwtzcxbqvAia_pY70tMsk8xMD6as1fpkXU3f4_EHoxif9Q\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".eml",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "29eb50da47344ad57634cb6cb7a3e464ef8acf617705357ab1e90a01714d6d03",
+    "sha1": "c12b529e91f7e0962d2ee449a6eeeb482488ba4d",
+    "md5": "1889e043f8240572ebd428003f4fb38f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.063,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.13,
+      6.04,
+      6.01,
+      6.04,
+      6.04,
+      6.04,
+      5.95
+    ],
+    "base64": {
+      "nombre_blobs_base64": 2,
+      "exemple": "GjAouuyt5Y/D/mgEXh1FKXzAI6g6mNL6X2u4yiJfVpAjxLqNtxeT5FIr85Oh..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "15.21.181.8",
+      "15.21.181.9",
+      "15.21.181.6"
+    ],
+    "domaines": [
+      "microsoft.com",
+      "mx.microsoft.com",
+      "gmail.com",
+      "DU2PR04CA0210.eurprd04.prod.outlook.com",
+      "DB9PR01MB9007.eurprd01.prod.exchangelabs.com",
+      "DB5PEPF00014B97.eurprd02.prod.outlook.com",
+      "DU2PR04CA0210.outlook.office365.com",
+      "protection.outlook.com",
+      "mail-pf1-x42d.google.com",
+      "DB5PEPF00014B97.mail.protection.outlook.com",
+      "google.com",
+      "mx.google.com",
+      "1e100.net",
+      "mail.gmail.com"
+    ],
+    "urls": [],
+    "emails": [
+      "m.boukourizia@tamwilcom.ma",
+      "meryemyousfi339@gmail.com",
+      "CA+xmTcqYXmnXLiM2kV9zi8_tRdzVDyr4prf_BacMKN-o8+6u+w@mail.gmail.com"
+    ],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 17
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "15.21.181.8": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=15.21.181.8&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "15.21.181.9": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=15.21.181.9&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "15.21.181.6": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=15.21.181.6&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "mx.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/mx.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "gmail.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/gmail.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "DU2PR04CA0210.eurprd04.prod.outlook.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/DU2PR04CA0210.eurprd04.prod.outlook.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "DB9PR01MB9007.eurprd01.prod.exchangelabs.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/DB9PR01MB9007.eurprd01.prod.exchangelabs.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/29eb50da47344ad57634cb6cb7a3e464ef8acf617705357ab1e90a01714d6d03/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.04305553436279297,
+      "entropie_globale": 0.757875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0338,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 25,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\demande de stage PFA.eml",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

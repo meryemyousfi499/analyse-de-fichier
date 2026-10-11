@@ -1,0 +1,562 @@
+{
+  "id_rapport": "353d67c7",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 30.326,
+  "metadonnees": {
+    "nom": "secagent_report_DESKTOP-ULUR3QJ_20260815_004113_dashboard.html",
+    "extension": "html",
+    "taille_octets": 651662,
+    "taille_lisible": "636.4 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ysy_o6u\\logs-main\\dist\\secagent_report_DESKTOP-ULUR3QJ_20260815_004113_dashboard.html",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-10T16:54:08",
+    "date_modification": "2026-09-10T16:54:08",
+    "date_acces": "2026-09-10T18:01:29",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".html",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "3b97e10749094a07377c2774ef46394f25ee9252388b422447592a9fa6771cc0",
+    "sha1": "4f4d026f0f832bd18c6ad4be317bbcf3b1e29859",
+    "md5": "ae1c743b102e788602f325d25f567812",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.519,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.51,
+      5.46,
+      5.33,
+      5.41,
+      5.26,
+      5.32,
+      5.26,
+      5.37,
+      5.4,
+      5.32
+    ],
+    "base64": {
+      "nombre_blobs_base64": 7,
+      "exemple": "WAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAA..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "10.34.0.84",
+      "0.0.0.0",
+      "127.0.0.1",
+      "172.28.48.1",
+      "192.168.1.8",
+      "160.79.104.10",
+      "34.54.194.141",
+      "141.194.54.34",
+      "34.36.57.103",
+      "103.57.36.34",
+      "4.150.223.100",
+      "104.18.32.47",
+      "172.64.144.52",
+      "74.125.206.84",
+      "35.190.80.1",
+      "1.80.190.35",
+      "20.184.175.5",
+      "52.123.224.133",
+      "40.79.150.122",
+      "23.196.98.217",
+      "20.184.175.2",
+      "13.89.179.12",
+      "50.85.242.216",
+      "20.42.65.84",
+      "4.208.165.241",
+      "150.171.109.83",
+      "172.65.251.78",
+      "185.26.182.111",
+      "185.26.182.106",
+      "185.26.182.118",
+      "104.18.41.41",
+      "34.149.66.163",
+      "163.66.149.34",
+      "150.171.28.12",
+      "4.150.223.96",
+      "34.77.165.109",
+      "109.165.77.34",
+      "98.66.133.184",
+      "172.64.146.215",
+      "64.233.167.188",
+      "34.160.81.0",
+      "0.81.160.34",
+      "104.20.20.94",
+      "104.20.46.192",
+      "192.168.19.1",
+      "192.168.72.1",
+      "1.0.0.0",
+      "1.3.255.5",
+      "9.0.232.90",
+      "19.0.19.65"
+    ],
+    "domaines": [
+      "stat-tile.info",
+      "finding-card.info",
+      "badge.info",
+      "clients2.google.com",
+      "crashstats-collector-2.opera.com",
+      "141.194.54.34.bc.googleusercontent.com",
+      "103.57.36.34.bc.googleusercontent.com",
+      "wk-in-f84.1e100.net",
+      "1.80.190.35.bc.googleusercontent.com",
+      "a23-196-98-217.deploy.static.akamaitechnologies.com",
+      "163.66.149.34.bc.googleusercontent.com",
+      "109.165.77.34.bc.googleusercontent.com",
+      "wl-in-f188.1e100.net",
+      "0.81.160.34.bc.googleusercontent.com",
+      "docs.gitlab.com",
+      "gitlab.com",
+      "MiKTeX.org",
+      "www.w3.org",
+      "s.info"
+    ],
+    "urls": [
+      "https://clients2.google.com/cr/report",
+      "https://crashstats-collector-2.opera.com/",
+      "https://docs.gitlab.com/runner/configuration/advanced-configuration.html#long-polling-issues\\u001b[0;m",
+      "https://gitlab.com/api...",
+      "https://go.dev",
+      "http://www.w3.org/2000/svg"
+    ],
+    "emails": [
+      "go@go1.26.6-go1.26.6-windows-amd64-2026-08-14.v1.count"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "c:\\",
+      "d:\\n  - Request bottleneck",
+      "s:\\n  1. Increase 'request_concurrency' to 2-4 for 1 runners currently using request_concurrency=1\\nNote"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [
+      "Conhost.exe",
+      "Explorer.EXE",
+      "cmd.exe",
+      "conhost.exe",
+      "explorer.exe",
+      "powershell.exe",
+      "svchost.exe",
+      "taskhostw.exe"
+    ],
+    "hashs_embarques": {
+      "md5": [
+        "47cfbd36e6731eae72ad48a587da4361",
+        "c63ca1eef0a6e985071b4e1b3cf6c1f9",
+        "60031ce16effec2654628b1b7d4dca5d",
+        "b6bda03ed99a8ac30250918af528d48b",
+        "738fc5130376468299268bdfe15a7cec",
+        "51fefd8d7dd84451b492bd3cfc1d7340",
+        "bda418229b6f4e458a55433de3bed746",
+        "a25b29241f2644ad93e0a65bd8cdf49e",
+        "efa493593388411c973ca48dc130902c",
+        "a4f34b8d57fe473ea1c9cc02aa611db9"
+      ],
+      "sha1": [
+        "ab5f575e5fdaa2cf4987b1a474e49b54dc2d6b68",
+        "B58FA2027934054DD9EE0958B6E17EABAA3A1F58",
+        "a5b500951314efd502d07465bd138dfbd714a960"
+      ],
+      "sha256": [
+        "57f29c15d881707e13173026a82d610d52e690e987d7ce2c35fab821276de114",
+        "88d989fb85f66e97b127ce99db560cf376c75290c39d7e5428f839cf42fd6342",
+        "602b6d0823fb5b944739abb3330f19ad506e09dee184dff1347048acce8211b3",
+        "b02ee54fb2ec69673386d41119ee8ed083a6eab3bfca6aa2155d20ce68ef8963",
+        "ea91cd0634c69789b68770311b4e892010fe9e37d16c15fd33c461a04cebe4e3",
+        "f43fa44aea5df569fe55ab3644841f747fa112070cb1d10b93a984ea050f7af2",
+        "29dfabdbbddc8131644a042b0704d6d46adcd19535dd6ccf7b2fb4811327155c",
+        "09a5c3b476d8df2b69582a8b0af0b5bdc377264d8e3590ad6ef73d72d6a65640",
+        "9d8b3b567f1b2b47cc3808807aee91919731bf0093dad1bdd27eaa105e3b4b13",
+        "09b2571ebfadf5ce1429905e8f465c22dbfd5a2a3c3124a0c8ae0fb658bb6025"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "powershell",
+        "occurrences": 90
+      },
+      {
+        "chaine": "cmd.exe",
+        "occurrences": 7
+      },
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      },
+      {
+        "chaine": "net user",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 93
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "10.34.0.84": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "429 Client Error: Too Many Requests for url: https://api.abuseipdb.com/api/v2/check?ipAddress=10.34.0.84&maxAgeInDays=90"
+        }
+      },
+      "0.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "429 Client Error: Too Many Requests for url: https://api.abuseipdb.com/api/v2/check?ipAddress=0.0.0.0&maxAgeInDays=90"
+        }
+      },
+      "127.0.0.1": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "429 Client Error: Too Many Requests for url: https://api.abuseipdb.com/api/v2/check?ipAddress=127.0.0.1&maxAgeInDays=90"
+        }
+      },
+      "172.28.48.1": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "429 Client Error: Too Many Requests for url: https://api.abuseipdb.com/api/v2/check?ipAddress=172.28.48.1&maxAgeInDays=90"
+        }
+      },
+      "192.168.1.8": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "429 Client Error: Too Many Requests for url: https://api.abuseipdb.com/api/v2/check?ipAddress=192.168.1.8&maxAgeInDays=90"
+        }
+      }
+    },
+    "domaines": {
+      "stat-tile.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "finding-card.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "badge.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "clients2.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crashstats-collector-2.opera.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://clients2.google.com/cr/report": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://crashstats-collector-2.opera.com/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 7,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://docs.gitlab.com/runner/configuration/advanced-configuration.html#long-polling-issues\\u001b[0;m": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://gitlab.com/api...": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://go.dev": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "57f29c15d881707e13173026a82d610d52e690e987d7ce2c35fab821276de114": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "88d989fb85f66e97b127ce99db560cf376c75290c39d7e5428f839cf42fd6342": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "602b6d0823fb5b944739abb3330f19ad506e09dee184dff1347048acce8211b3": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "b02ee54fb2ec69673386d41119ee8ed083a6eab3bfca6aa2155d20ce68ef8963": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 7,
+          "signale": true
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "ea91cd0634c69789b68770311b4e892010fe9e37d16c15fd33c461a04cebe4e3": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 8,
+          "signale": true
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "https://clients2.google.com/cr/report",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "https://crashstats-collector-2.opera.com/",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "b02ee54fb2ec69673386d41119ee8ed083a6eab3bfca6aa2155d20ce68ef8963",
+        "type": "hashs",
+        "source": "otx"
+      },
+      {
+        "indicateur": "ea91cd0634c69789b68770311b4e892010fe9e37d16c15fd33c461a04cebe4e3",
+        "type": "hashs",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.062147331237792966,
+      "entropie_globale": 0.689875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 4,
+      "nb_urls": 6,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.2783,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 46,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['https://clients2.google.com/cr/report', 'https://crashstats-collector-2.opera.com/'], hashs embarques: ['b02ee54fb2ec69673386d41119ee8ed083a6eab3bfca6aa2155d20ce68ef8963', 'ea91cd0634c69789b68770311b4e892010fe9e37d16c15fd33c461a04cebe4e3']."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ysy_o6u\\logs-main\\dist\\secagent_report_DESKTOP-ULUR3QJ_20260815_004113_dashboard.html",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

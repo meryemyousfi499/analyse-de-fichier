@@ -1,0 +1,301 @@
+{
+  "id_rapport": "4d4ac37f",
+  "origine": "auto_watch",
+  "duree_analyse_s": 96.936,
+  "metadonnees": {
+    "nom": "email-threat.rar",
+    "extension": "rar",
+    "taille_octets": 112955411,
+    "taille_lisible": "107.7 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\email-threat.rar",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-09T10:37:41",
+    "date_modification": "2026-09-09T10:39:10",
+    "date_acces": "2026-09-10T23:22:49",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "rar",
+    "extension_declaree": ".rar",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "99a4e41c679c6cb3489c29d58c28740c6eb328e772d8c983635f3a8c3266b2a4",
+    "sha1": "7cd86407b8b9a16b1753865c44ea702aa52228c0",
+    "md5": "f6a56b02ac95b1fe51ff3955596d8945",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "rar",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.997,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.96,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.97,
+      7.99,
+      8.0,
+      7.97,
+      7.95,
+      7.95,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.97,
+      8.0,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "3.3.3.3"
+    ],
+    "domaines": [
+      "docs.python.org"
+    ],
+    "urls": [
+      "https://docs.python.org/3/library/venv.html"
+    ],
+    "emails": [
+      "5@..cEZ"
+    ],
+    "chemins_windows": [
+      "a:\\a\u000e\u0007E%F#&i\u0015Ar\u0015LN\u000b_\u001fB\\$+\u0013VЌ2lX-;8",
+      "Q:\\m",
+      "U:\\\u0016@\u000f\u0002\u001e\u0000}5\u0010z䒐\u0018L",
+      "t:\\܊\u001bx\fr\u001c\u0002\u0014\\\u0006u^͗d",
+      "K:\\\u0012٥7\u000bc\u0013^\u0002\u0018v9.\u0001+\u000bk\u000ej!ՇF\u001c",
+      "l:\\@wQma&\u0005wa\u0016X\u0012J3詝K",
+      "h:\\M",
+      "D:\\ǒv\u0018}v\u001az\u0019RP+}\u0010gKFzJW\u0011ujU\u0003~EꯊoFS\b",
+      "J:\\6 \u001e\u0018Óȁc x\u0003M,\u0015n",
+      "J:\\5S3R",
+      "C:\\\u0016sX+\u000euN\u000f\u0016BzQiG\u0015e#LH\u0013\u0010t\u0013-\tji\u0016plL.\u001a;\b\bf\\Ѡvnf\u000fw",
+      "x:\\\u0006\u0015jh\u0000ج艪\u001d\u0000L6C{\u0002\u0003\u000b\u0017\u00042 (_C\u0000_email-threat",
+      "M:\\Q!`-\u001a\u0002D\u0015i",
+      "O:\\90w=h",
+      "a:\\ڗkik8gG6\u0014ٯD",
+      "F:\\\u0016\u001ei5qh",
+      "e:\\;A!)Ti\u0012ѕyj\\\u0017 m\t\u0017Wiuwq{U",
+      "t:\\UCvU$I)~Uޫ^\u0000S\u0012\u001b差ˠ&d\f\u001d\tA#hcbO#svL7n5uZqxau3\u0013iU\u0005+ׅдVϕ)Q\fGRݎĦ~c",
+      "O:\\'^9\u0015F=6y٘Ҧ{Pc\u0003\u0005Ŗ\u000epYW_4\u0018P\u0003 ",
+      "O:\\`",
+      "P:\\'Kig\u0005ʅq\u00194\u0016\u000f\u00103W!v]TB\u0014l\u0016\u0015r6G\u0018Vl⿱\u0010\u0018_)y#K",
+      "z:\\Y(t`[[1z\u0001A\u001b96",
+      "j:\\\u0019Csd#ZsW=UIc\u001dl͔",
+      "U:\\\b1$ K\u0014SX\u000eNLCHKq)\\=[M\u0015s\u0012f",
+      "q:\\O,scK=wr\u0003\u001cjMfcZUtXbf\u0000\u000b]OoZe3\u0004NfTݟ3S",
+      "b:\\\u001aBz4\u0013",
+      "G:\\7@",
+      "p:\\",
+      "v:\\(\u0002ɹGwsM",
+      "R:\\ \u0015\u0004-!l\u0006[)i@R,"
+    ],
+    "chemins_unix": [
+      "/etc/jupyter/nbconfig/notebook.d/pydeck.json"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "ed4f167a5330424524f45258e7ca2c8d",
+        "a4c2229bdc2a2a630acdc095b4d86008"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 112955411,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 4
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "3.3.3.3": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "429 Client Error: Too Many Requests for url: https://api.abuseipdb.com/api/v2/check?ipAddress=3.3.3.3&maxAgeInDays=90"
+        }
+      }
+    },
+    "domaines": {
+      "docs.python.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://docs.python.org/3/library/venv.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.999625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0714,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".rar",
+    "backend_disponible": true,
+    "extraction_reussie": false,
+    "mot_de_passe_utilise": null,
+    "fichiers_extraits": [],
+    "erreur": "impossible d'ouvrir l'archive (mot de passe manquant/incorrect) : Cannot find working tool"
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 10,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Archive protegee par mot de passe : contenu NON inspecte (aucun mot de passe valide fourni ou trouve parmi les mots de passe courants). Fournissez le mot de passe partage pour une analyse complete."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\email-threat.rar",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "id_rapport": "30b00f67",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 44.433,
+  "metadonnees": {
+    "nom": "secagent_macos_amd64",
+    "extension": "(aucune)",
+    "taille_octets": 4583808,
+    "taille_lisible": "4.4 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ysy_o6u\\logs-main\\dist\\secagent_macos_amd64",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-10T16:54:08",
+    "date_modification": "2026-09-10T16:54:08",
+    "date_acces": "2026-09-10T17:59:29",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".(aucune)",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "6982525ffc442d2614591208ca8cd956ba2e9e7f011c622022537e1906c1b182",
+    "sha1": "638253f11c5e0a3fa12ea3e4e8c7324320463e94",
+    "md5": "63c6faf9086b003fd6777e8634668e63",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.901,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.13,
+      6.26,
+      6.17,
+      6.15,
+      6.2,
+      6.05,
+      6.03,
+      6.2,
+      6.27,
+      6.12,
+      6.21,
+      6.06,
+      6.11,
+      6.01,
+      6.09,
+      6.18,
+      6.03,
+      6.1,
+      6.11,
+      6.11,
+      6.22,
+      6.23,
+      5.19,
+      4.94,
+      3.3,
+      3.19,
+      5.24,
+      4.47,
+      3.38,
+      3.24,
+      3.62,
+      5.17,
+      4.9,
+      5.5,
+      5.89,
+      5.9,
+      5.6,
+      5.79,
+      5.9,
+      5.85,
+      5.86,
+      4.14,
+      4.14,
+      4.33,
+      4.41,
+      4.73,
+      4.28,
+      7.28,
+      7.99,
+      7.99,
+      7.99,
+      7.97,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.97,
+      7.98
+    ],
+    "base64": {
+      "nombre_blobs_base64": 18,
+      "exemple": "1562578125fcntlGreekAdlamBamumBatakBuhidDograKhmerLatinLimbu..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "0.0.0.0"
+    ],
+    "domaines": [
+      "stat-tile.info",
+      "finding-card.info",
+      "badge.info",
+      "www.w3.org",
+      "s.info",
+      "github.com",
+      "golang.org",
+      "runtime.link",
+      "eq.io",
+      "eq.golang.org",
+      "eq.github.com",
+      "eq.net",
+      "itab.github.com",
+      "itab.net"
+    ],
+    "urls": [
+      "http://www.w3.org/2000/svg"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "n:\\",
+      "m:\\IBJ"
+    ],
+    "chemins_unix": [
+      "/usr/lib/dyld\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "/usr/lib/libSystem.B.dylib\u0000\u0000\u0000\u0000\u0000\u0000",
+      "/usr/lib/libresolv.9.dylib\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "/etc/locHT$HH9",
+      "/tmp/runasMySQLRedislogon%d-%vamd64-jsonLabel",
+      "/var/tmp//dev/shm/ksoftirqdTimestampRunAtLoad",
+      "/etc/hosts.localhostgetsockoptIP",
+      "/etc/zoneinfoparsing",
+      "/etc/serviceswrong",
+      "/etc/protocolsunknown",
+      "/etc/mdns.allowreflectlite.Setjstmpllitinterptarinsecurepathx509usepolicieszipinsecurepathinvalid",
+      "/etc/resolv.confnon-IPv4",
+      "/etc/nsswitch.confinvalid",
+      "/usr/lib/locale/TZ/time:",
+      "/usr/share/zoneinfoDashboard",
+      "/usr/share/zoneinfo/run",
+      "/usr/share/lib/zoneinfo/RDP",
+      "/usr/libexec/ApplicationFirewall/socketfilterfwreflect.Value.Bytes",
+      "/usr/lib/go-1.22\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000call",
+      "/usr/lib/go-1.22/src/internal/abi/type.go\u0000",
+      "/usr/lib/go-1.22/src/internal/cpu/cpu.go\u0000/usr/lib/go-1.22/src/internal/cpu/cpu_x86.go\u0000/usr/lib/go-1.22/src/internal/cpu/cpu_x",
+      "/usr/lib/go-1.22/src/runtime/internal/sys/intrinsics.go\u0000/usr/lib/go-1.22/src/internal/bytealg/count_native.go\u0000/usr/lib/go-1.2",
+      "/usr/lib/go-1.22/src/internal/bytealg/compare_amd64.s\u0000/usr/lib/go-1.22/src/internal/bytealg/count_amd64.s\u0000/usr/lib/go-1.22/sr",
+      "/usr/lib/go-1.22/src/internal/bytealg/index_amd64.s\u0000/usr/lib/go-1.22/src/internal/bytealg/indexbyte_amd64.s\u0000/usr/lib/go-1.22/",
+      "/usr/lib/go-1.22/src/internal/chacha8rand/chacha8_amd64.s\u0000/usr/lib/go-1.22/src/runtime/float.go\u0000/usr/lib/go-1.22/src/runtime/",
+      "/usr/lib/go-1.22/src/runtime/netpoll.go\u0000/usr/lib/go-1.22/src/runtime/select.go\u0000/usr/lib/go-1.22/src/runtime/signal_unix.go\u0000/u",
+      "/usr/lib/go-1.22/src/runtime/typekind.go\u0000/usr/lib/go-1.22/src/runtime/stubs.go\u0000/usr/lib/go-1.22/src/runtime/arena.go\u0000/usr/lib",
+      "/usr/lib/go-1.22/src/runtime/internal/atomic/types.go\u0000/usr/lib/go-1.22/src/runtime/lockrank_off.go\u0000/usr/lib/go-1.22/src/runti",
+      "/usr/lib/go-1.22/src/runtime/runtime2.go\u0000/usr/lib/go-1.22/src/runtime/mwbbuf.go\u0000/usr/lib/go-1.22/src/runtime/atomic_pointer.g",
+      "/usr/lib/go-1.22/src/runtime/cgocall.go\u0000/usr/lib/go-1.22/src/runtime/chan.go\u0000/usr/lib/go-1.22/src/runtime/proc.go\u0000/usr/lib/go"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": [
+        "310da7890f312c3e9e77825750bad066709f9dcd04a3cf1be91d69e56d19c9ef",
+        "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 17
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "clamd injoignable (service non demarre ?)"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "0.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "429 Client Error: Too Many Requests for url: https://api.abuseipdb.com/api/v2/check?ipAddress=0.0.0.0&maxAgeInDays=90"
+        }
+      }
+    },
+    "domaines": {
+      "stat-tile.info": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "finding-card.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "badge.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "s.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.w3.org/2000/svg": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "310da7890f312c3e9e77825750bad066709f9dcd04a3cf1be91d69e56d19c9ef": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "http://www.w3.org/2000/svg",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "type": "hashs",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.43714599609375,
+      "entropie_globale": 0.862625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 1,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.1196,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://www.w3.org/2000/svg'], hashs embarques: ['AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC']."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ysy_o6u\\logs-main\\dist\\secagent_macos_amd64",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}
