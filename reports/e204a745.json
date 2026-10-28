@@ -1,0 +1,459 @@
+{
+  "id_rapport": "e204a745",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 95.974,
+  "metadonnees": {
+    "nom": "pagecounts-with-time-1.zip",
+    "extension": "zip",
+    "taille_octets": 595437,
+    "taille_lisible": "581.5 Ko",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tkh8xch8\\pagecounts\\pagecounts-with-time-1.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-18T02:47:59",
+    "date_modification": "2026-10-18T02:47:59",
+    "date_acces": "2026-10-18T02:48:05",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "9d1dd69451f24bc842b93241c4f683753d0b1ce9224d68d0c7fb91913c965540",
+    "sha1": "65d6ea2fe693ee8a18af235047bcefa59134d6b4",
+    "md5": "008b747f28247bc0cfcee680bd97bc9c",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.991,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      5.33
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "r:\\iA",
+      "I:\\S1as",
+      "g:\\T1a7p])\u001d^\u001emnڷ"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.056785297393798825,
+      "entropie_globale": 0.998875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0445,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-000000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-010000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-020000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-030000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-040000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-050000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-060000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-070000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-080000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-090000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-100000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-110000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-120000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-130000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-140000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-150000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-160000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-170000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-180000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-190000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-200000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-210000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-220000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160801-230000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-000000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-010000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-020000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-030000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-040000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-050000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-060000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-070000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-080000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-090000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-100000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-110000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-120000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-130000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-140000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-150000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-160000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-170000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-180000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-190000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-200000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-210000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-220000.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0p7qmvlz\\pagecounts-with-time-1\\pagecounts-20160802-230000.gz"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "3569ff0c",
+      "nom": "pagecounts-20160801-000000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "7faf7b41",
+      "nom": "pagecounts-20160801-010000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "d04bd6cc",
+      "nom": "pagecounts-20160801-020000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "e4fcb772",
+      "nom": "pagecounts-20160801-030000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "de58afc0",
+      "nom": "pagecounts-20160801-040000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "72d80e39",
+      "nom": "pagecounts-20160801-050000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "a96f77a1",
+      "nom": "pagecounts-20160801-060000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "3b7caeca",
+      "nom": "pagecounts-20160801-070000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "a48a3d76",
+      "nom": "pagecounts-20160801-080000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "935bd6d7",
+      "nom": "pagecounts-20160801-090000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "5288ebc9",
+      "nom": "pagecounts-20160801-100000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "094c5a2a",
+      "nom": "pagecounts-20160801-110000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "16afb5d6",
+      "nom": "pagecounts-20160801-120000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "96b6c7fd",
+      "nom": "pagecounts-20160801-130000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "9130b1b6",
+      "nom": "pagecounts-20160801-140000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "788c7480",
+      "nom": "pagecounts-20160801-150000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "bf9f46dc",
+      "nom": "pagecounts-20160801-160000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "ec47b634",
+      "nom": "pagecounts-20160801-170000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "f42811ea",
+      "nom": "pagecounts-20160801-180000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "87edadeb",
+      "nom": "pagecounts-20160801-190000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "7c5599f8",
+      "nom": "pagecounts-20160801-200000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "e1bdb77d",
+      "nom": "pagecounts-20160801-210000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "283b09ce",
+      "nom": "pagecounts-20160801-220000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "b406e16d",
+      "nom": "pagecounts-20160801-230000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "cea178c6",
+      "nom": "pagecounts-20160802-000000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "9f0ba4db",
+      "nom": "pagecounts-20160802-010000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "bb78318c",
+      "nom": "pagecounts-20160802-020000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "c17dbc43",
+      "nom": "pagecounts-20160802-030000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "6d4be4f2",
+      "nom": "pagecounts-20160802-040000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "6ba0e248",
+      "nom": "pagecounts-20160802-050000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "9e63e675",
+      "nom": "pagecounts-20160802-060000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "9b2b5c22",
+      "nom": "pagecounts-20160802-070000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "316b0d88",
+      "nom": "pagecounts-20160802-080000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "24df901d",
+      "nom": "pagecounts-20160802-090000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "5d31783b",
+      "nom": "pagecounts-20160802-100000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "66579cb2",
+      "nom": "pagecounts-20160802-110000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "a6d063aa",
+      "nom": "pagecounts-20160802-120000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "45b0b0c7",
+      "nom": "pagecounts-20160802-130000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "fd190977",
+      "nom": "pagecounts-20160802-140000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "897ee165",
+      "nom": "pagecounts-20160802-150000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "65dd4857",
+      "nom": "pagecounts-20160802-160000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "5439d23a",
+      "nom": "pagecounts-20160802-170000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "b07d139f",
+      "nom": "pagecounts-20160802-180000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "3fae8b8c",
+      "nom": "pagecounts-20160802-190000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "f0aee8d0",
+      "nom": "pagecounts-20160802-200000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "02a675ef",
+      "nom": "pagecounts-20160802-210000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "a7b205ea",
+      "nom": "pagecounts-20160802-220000.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "d5c38639",
+      "nom": "pagecounts-20160802-230000.gz",
+      "score": 1
+    }
+  ],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tkh8xch8\\pagecounts\\pagecounts-with-time-1.zip",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

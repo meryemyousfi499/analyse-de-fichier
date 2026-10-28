@@ -1,0 +1,169 @@
+{
+  "id_rapport": "c836afaf",
+  "origine": "auto_watch",
+  "duree_analyse_s": 1.824,
+  "metadonnees": {
+    "nom": "Se préparer à l'entretien d'embauche.pdf",
+    "extension": "pdf",
+    "taille_octets": 681513,
+    "taille_lisible": "665.5 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Se préparer à l'entretien d'embauche.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-06-04T00:32:34",
+    "date_modification": "2026-06-04T00:32:36",
+    "date_acces": "2026-10-28T12:35:05",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://drive.usercontent.google.com/download?id=1fwy6BxNSYZy8hyfLDhjAwIFPGdg1y6w1&export=download&authuser=0&confirm=t&uuid=030f4987-ec8d-40c9-9237-f9960f37dac8&at=AAINaIKCj6dr2C7P9Hu_qbo6BNgf:1780529626672\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "aaf7b27aeac3b1a90d3f3f6f50d884c05e9b7d53d53c459d6e3192a48d01fe6e",
+    "sha1": "98413fe1a5afc0aee02c1051d484e06b94e579bf",
+    "md5": "59199c0d3110545261e24d0d0443b9f9",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.529,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.99,
+      7.28,
+      7.17,
+      7.72,
+      7.64,
+      7.69,
+      7.67,
+      7.57,
+      7.69,
+      7.22,
+      2.78
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "FEFF00470072006F0075007000650020003100340020002D002000530065..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "147.0.0.0"
+    ],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "c:\\Ң8G\u0015\tf\u001b$f\u0000@섛f"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 1
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "147.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=147.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/aaf7b27aeac3b1a90d3f3f6f50d884c05e9b7d53d53c459d6e3192a48d01fe6e/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.06499414443969727,
+      "entropie_globale": 0.941125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0421,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 19,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Se préparer à l'entretien d'embauche.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

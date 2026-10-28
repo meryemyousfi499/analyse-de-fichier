@@ -1,0 +1,352 @@
+{
+  "id_rapport": "f1f45e7e",
+  "origine": "auto_watch",
+  "duree_analyse_s": 1.675,
+  "metadonnees": {
+    "nom": "WhatsApp Installer (1).exe",
+    "extension": "exe",
+    "taille_octets": 1140768,
+    "taille_lisible": "1.1 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\WhatsApp Installer (1).exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-04-04T14:56:49",
+    "date_modification": "2026-04-04T14:56:55",
+    "date_acces": "2026-10-28T12:46:44",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://get.microsoft.com/installer/download/9NKSQGP7F2NH?cid=chatlist_toastbar\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "e3d3061c262ec4eab229e3d810e35a3a57767708ae4b7606fb65ef50a4230bac",
+    "sha1": "d30ab69765a6605f30954d5ea0fe2d1397d2420c",
+    "md5": "5ebf31d27e49e18a9795f2eef37af91b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": false,
+      "raison": "module pefile non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.8,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.52,
+      6.03,
+      6.5,
+      4.95,
+      7.45,
+      7.99,
+      7.71,
+      7.65,
+      5.62,
+      5.67,
+      5.83,
+      5.56,
+      5.94,
+      5.61,
+      5.77,
+      6.7,
+      7.91,
+      4.41
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "MIIDUDCCAjigAwIBAgIQImsjBGfFTk6M7sZzNVcAwDANBgkqhkiG9w0BAQsF..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "4.0.0.0",
+      "10.0.5.0",
+      "4.1.2.0",
+      "1.0.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [
+      "schemas.microsoft.com",
+      "schemas.openxmlformats.org",
+      "www.microsoft.com",
+      "crl.microsoft.com",
+      "docs.microsoft.com"
+    ],
+    "urls": [
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u001f\u0010\u0000\u0000\u0000",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014:\bcontrols%clr-namespace:StoreInstaller.Controls\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014",
+      "http://schemas.openxmlformats.org/markup-compatibility/2006\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00146\u0006models#clr-namespace:StoreInstaller.Models\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014I\u0005shell9http://schemas.microsoft.com/netfx/2009/xaml/presentation\u0003\u0000\u0001\u0000\u0002\u0000\u0004\u0000\u00142\u0005views",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%\u0001\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00142\bcontrols%clr-namespace:StoreInstaller.Controls\u0000\u0000%\u0013\u000e\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0002\u0000\u0003\u0000\u0006\u0000\u0005\u0000\u00142\bcontrols%clr-namespace:StoreInstaller.Controls\u0000\u0000\u00146",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%\u0011\u0003\u0000\u0000",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00142\bcontrols%clr-namespace:StoreInstaller.Controls\u0000\u0000\u0014I\u0005shell9http://schemas.microsoft.com/netfx/2009/xaml/presentation\u0003\u0000\u0001\u0000\u0002\u0000\u0004\u0000%\b\u0000\u0000",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00142\bcontrols%clr-namespace:StoreInstaller.Controls\u0000\u0000%y\u0003\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%\u0000\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%A\u0000\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%3\u0000\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%+\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%,\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%\u0003\u0000\u0000",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00147\u0006system,clr-namespace:System;assembly=System.Runtime\u0000\u0000%G\u0000\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014",
+      "http://schemas.openxmlformats.org/markup-compatibility/2006\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00146\u0002vm",
+      "http://www.microsoft.com0",
+      "http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0",
+      "https://docs.microsoft.com/windows/win32/fileio/maximum-file-path-limitation",
+      "http://schemas.microsoft.com/SMI/2005/WindowsSettings",
+      "http://schemas.microsoft.com/SMI/2016/WindowsSettings",
+      "http://www.microsoft.com/pki/certs/MicMarPCA2011_2011-03-28.crt0"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "D:\\a\\_work\\1\\s\\src\\StoreInstaller\\obj\\Release\\net472\\StoreInstaller.pdb\u0000SHA256\u0000HޗA=ÇT\u0010S"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "8953ba75573a46212c870d810a43a3da589aabc3"
+      ],
+      "sha256": [
+        "CCEC4700597EB3F093C5841181BE8E638DADFDD2514DC22229244DF1396767AE"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 60
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "4.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=4.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "10.0.5.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=10.0.5.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "4.1.2.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=4.1.2.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=1.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "6.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=6.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "schemas.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/schemas.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "schemas.openxmlformats.org": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/schemas.openxmlformats.org/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "www.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "crl.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/crl.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "docs.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/docs.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u001f\u0010\u0000\u0000\u0000": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2Fwinfx%2F2006%2Fxaml%04%00%01%00%02%00%05%00%04%00%1F%10%00%00%00/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014:\bcontrols%clr-namespace:StoreInstaller.Controls\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2Fwinfx%2F2006%2Fxaml%04%00%01%00%02%00%05%00%04%00%14%3A%08controls%25clr-namespace%3AStoreInstaller.Controls%04%00%01%00%02%00%05%00%04%00%14/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.openxmlformats.org/markup-compatibility/2006\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00146\u0006models#clr-namespace:StoreInstaller.Models\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014I\u0005shell9http://schemas.microsoft.com/netfx/2009/xaml/presentation\u0003\u0000\u0001\u0000\u0002\u0000\u0004\u0000\u00142\u0005views": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2Fmarkup-compatibility%2F2006%04%00%01%00%02%00%05%00%04%00%146%06models%23clr-namespace%3AStoreInstaller.Models%04%00%01%00%02%00%05%00%04%00%14I%05shell9http%3A%2F%2Fschemas.microsoft.com%2Fnetfx%2F2009%2Fxaml%2Fpresentation%03%00%01%00%02%00%04%00%142%05views/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0000\u0000\u0001\u0000\u0004\u0000\u0003\u0000%\u0001\u0000\u0000&": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2Fwinfx%2F2006%2Fxaml%04%00%00%00%01%00%04%00%03%00%25%01%00%00%26/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00142\bcontrols%clr-namespace:StoreInstaller.Controls\u0000\u0000%\u0013\u000e\u0000\u0000&": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2Fwinfx%2F2006%2Fxaml%04%00%01%00%02%00%05%00%04%00%142%08controls%25clr-namespace%3AStoreInstaller.Controls%00%00%25%13%0E%00%00%26/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {
+      "CCEC4700597EB3F093C5841181BE8E638DADFDD2514DC22229244DF1396767AE": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/CCEC4700597EB3F093C5841181BE8E638DADFDD2514DC22229244DF1396767AE/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "malwarebazaar": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/e3d3061c262ec4eab229e3d810e35a3a57767708ae4b7606fb65ef50a4230bac/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.1087921142578125,
+      "entropie_globale": 0.85,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 25,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.1484,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 28,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\WhatsApp Installer (1).exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

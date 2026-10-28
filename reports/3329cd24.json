@@ -1,0 +1,292 @@
+{
+  "id_rapport": "3329cd24",
+  "origine": "auto_watch",
+  "duree_analyse_s": 349.197,
+  "metadonnees": {
+    "nom": "Rapport_AltoroJ_5pages (2).docx",
+    "extension": "docx",
+    "taille_octets": 89136,
+    "taille_lisible": "87.0 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Rapport_AltoroJ_5pages (2).docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-28T10:38:52",
+    "date_modification": "2026-10-28T10:38:54",
+    "date_acces": "2026-10-28T10:44:02",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://claude.ai/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "4d7aa5382c14d2a295a1a856aec8593c128756442f1f0e1f254f774036d3021b",
+    "sha1": "6a285349b5c0e310458dcc7dc7274b2845e53ac9",
+    "md5": "cfac2e86998b4be778574d0c89219159",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.982,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.92
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "5128349e71cc685142072db5b9abdc07b511f927",
+        "c5a3fe41c57de5400ee5a7dce84b8d6c51cdd45c"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.00850067138671875,
+      "entropie_globale": 0.99775,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.044,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\footer1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\media\\5128349e71cc685142072db5b9abdc07b511f927.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\media\\c5a3fe41c57de5400ee5a7dce84b8d6c51cdd45c.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\_rels\\footer1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_056sodrx\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "8be04048",
+      "nom": "[Content_Types].xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "5b08a5e0",
+      "nom": "app.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "d7f88f7d",
+      "nom": "core.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "abc748d9",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "b943d865",
+      "nom": "document.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "170a230a",
+      "nom": "endnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "3aa4a639",
+      "nom": "fontTable.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "1e837f43",
+      "nom": "footer1.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "60c6461a",
+      "nom": "footnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "0266356e",
+      "nom": "numbering.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "9fc38e3d",
+      "nom": "settings.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "7225cd08",
+      "nom": "styles.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "d8425265",
+      "nom": "5128349e71cc685142072db5b9abdc07b511f927.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "95969154",
+      "nom": "c5a3fe41c57de5400ee5a7dce84b8d6c51cdd45c.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "1ba96bb9",
+      "nom": "theme1.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "f2b7d74c",
+      "nom": "document.xml.rels",
+      "score": 42
+    },
+    {
+      "id_rapport": "0f77e536",
+      "nom": "endnotes.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "a6503f7d",
+      "nom": "fontTable.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "d7ab43ae",
+      "nom": "footer1.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "95e3c6e2",
+      "nom": "footnotes.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "9c757e9e",
+      "nom": ".rels",
+      "score": 34
+    }
+  ],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 24, rapport 8be04048).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 34, rapport d7f88f7d).",
+      "Score releve par le contenu extrait de l'archive : document.xml (score 42, rapport b943d865)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Rapport_AltoroJ_5pages (2).docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "id_rapport": "d9dfde18",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 29.112,
+  "metadonnees": {
+    "nom": "tmax-2.zip",
+    "extension": "zip",
+    "taille_octets": 3712679,
+    "taille_lisible": "3.5 Mo",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y1jn_9nj\\Datasets\\tmax-2.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-17T23:46:11",
+    "date_modification": "2026-10-17T23:46:11",
+    "date_acces": "2026-10-17T23:46:41",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "f286f7059c4aacd954158a3b9acfead450d01b24e149ce65f43f525af3b0b698",
+    "sha1": "af749cc14b8789a002795c94395857dba1bb2b4a",
+    "md5": "682488f867b1f54f86f30b83207a9742",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [
+      "7j@SY.xv"
+    ],
+    "chemins_windows": [
+      "A:\\(125x",
+      "U:\\b;",
+      "I:\\;]",
+      "U:\\\u0007\u001b0%\u0005\u000eV\u0014\u0014Y\u001a\u001aᚋtk\u0007Hs\u0006Cm6#",
+      "a:\\\u0017sCz=ә&+؂Nբ",
+      "q:\\j",
+      "J:\\4'2\u0013{z\u0018ù`$\u0015\\H\u0018V3",
+      "S:\\\u0014%M\u0012~hD\u00141Z[FY\u001ec\u001b(",
+      "c:\\\u0015E",
+      "y:\\\u000f[)ȹ=",
+      "F:\\IU",
+      "A:\\\u0010",
+      "j:\\JT\u0005"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.354068660736084,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0478,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00000.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00001.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00002.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00003.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00004.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00005.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00006.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00007.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00008.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_x_1hhggj\\tmax-2\\part-00009.csv.gz"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "d2710077",
+      "nom": "part-00000.csv.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "afc1162d",
+      "nom": "part-00001.csv.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "bad16f1b",
+      "nom": "part-00002.csv.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "1d2c6df9",
+      "nom": "part-00003.csv.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "3a760500",
+      "nom": "part-00004.csv.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "cae01f6f",
+      "nom": "part-00005.csv.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "81345ec4",
+      "nom": "part-00006.csv.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "cd5cbb4f",
+      "nom": "part-00007.csv.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "aaae6eb2",
+      "nom": "part-00008.csv.gz",
+      "score": 1
+    },
+    {
+      "id_rapport": "4fd5320c",
+      "nom": "part-00009.csv.gz",
+      "score": 1
+    }
+  ],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y1jn_9nj\\Datasets\\tmax-2.zip",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

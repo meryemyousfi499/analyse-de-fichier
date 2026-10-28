@@ -1,0 +1,650 @@
+{
+  "id_rapport": "9f602a9a",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 74.949,
+  "metadonnees": {
+    "nom": "mongotop.exe",
+    "extension": "exe",
+    "taille_octets": 13547520,
+    "taille_lisible": "12.9 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_yge4_slj\\mongodb-database-tools-windows-x86_64-100.20.0\\bin\\mongotop.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-10-28T03:32:48",
+    "date_modification": "2026-10-28T03:32:48",
+    "date_acces": "2026-10-28T03:47:10",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "54966cf6baaa4fae76b5472208898732da54ab1a8692d79d50729d6870f086cc",
+    "sha1": "0a4b7a832b44822f0dc23b1b12ad21a935b1b9ce",
+    "md5": "1a3765607281ed19afe0407d74204cdc",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": false,
+      "raison": "module pefile non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.301,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.41,
+      6.31,
+      6.26,
+      6.19,
+      6.16,
+      6.21,
+      6.17,
+      6.12,
+      6.15,
+      6.12,
+      6.02,
+      6.35,
+      6.08,
+      6.2,
+      6.14,
+      6.09,
+      6.13,
+      6.1,
+      6.17,
+      6.13,
+      6.06,
+      5.92,
+      5.94,
+      5.95,
+      6.04,
+      6.14,
+      6.2,
+      5.95,
+      5.87,
+      5.97,
+      6.16,
+      6.15,
+      6.08,
+      5.98,
+      6.0,
+      6.41,
+      6.51,
+      6.35,
+      6.13,
+      6.17,
+      6.18,
+      6.14,
+      6.01,
+      6.41,
+      5.99,
+      6.36,
+      6.39,
+      6.0,
+      5.88,
+      6.11,
+      6.17,
+      6.09,
+      6.24,
+      6.06,
+      5.97,
+      6.03,
+      5.97,
+      5.99,
+      5.99,
+      5.98,
+      6.03,
+      6.05,
+      6.11,
+      5.71
+    ],
+    "base64": {
+      "nombre_blobs_base64": 118,
+      "exemple": "BAUBBqBCDBDJBDZBDzBGBBGyBHPBHVBHgBHzBIIBIJBIUBIVBIXBKBBKKBKM..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "5.4.62.5",
+      "4.32.5.4",
+      "52.5.4.72",
+      "5.4.82.5",
+      "5.4.102.5",
+      "4.112.5.4",
+      "169.254.170.2",
+      "169.254.169.254",
+      "127.0.0.1",
+      "1.1.1.1",
+      "1.3.1.1",
+      "1.2.2.1",
+      "1.2.1.1"
+    ],
+    "domaines": [
+      "github.com",
+      "go.mongodb.org",
+      "golang.org",
+      "yaml.org",
+      "pointeravx512vpopcntdqsts.windows.net",
+      "closedConnectionCreated.cosmos.azure.com",
+      "login.chinacloudapi.cn",
+      "login.microsoftonline.com",
+      "management.core.windows.net",
+      "www.w3.org",
+      "schemas.xmlsoap.org",
+      "management.core.chinacloudapi.cn",
+      "management.core.usgovcloudapi.net",
+      "dgithub.com",
+      "docs.oasis-open.org",
+      "kubernetes.io",
+      "dochub.mongodb.org",
+      "sts.amazonaws.com",
+      "learn.microsoft.com",
+      "www.mongodb.com",
+      "docs.mongodb.com",
+      "runtime.link",
+      "idna.info",
+      "cases.info",
+      "0github.com",
+      "0go.mongodb.org",
+      "1go.mongodb.org",
+      "2go.mongodb.org",
+      "2github.com",
+      "3github.com",
+      "3go.mongodb.org",
+      "4github.com",
+      "5go.mongodb.org",
+      "6go.mongodb.org",
+      "7go.mongodb.org",
+      "7github.com",
+      "8go.mongodb.org",
+      "8github.com",
+      "9go.mongodb.org",
+      "9github.com",
+      "Bgo.mongodb.org",
+      "Bgithub.com",
+      "Egithub.com",
+      "Fgithub.com",
+      "Jgithub.com",
+      "Lgithub.com",
+      "Mgithub.com",
+      "Ngithub.com",
+      "Ogithub.com",
+      "Pgithub.com"
+    ],
+    "urls": [
+      "https://%v/%v/oauth2/v2.0/authorizexml:",
+      "http://169.254.169.254/latest/api/tokened25519:",
+      "https://https://management.core.chinacloudapi.cn/the",
+      "https://management.core.usgovcloudapi.net/parse",
+      "http://docs.oasis-open.org/ws-sx/ws-trust/200512application/x-www-form-urlencoded;",
+      "https://go.dev/doc/godebug#go-1casgstatus:",
+      "https://%s/dstsv2/%s/v2.0/.well-known/openid-configurationTenantDiscoveryResponse:",
+      "https://aka.ms/azsdk/go/identity/troubleshoot#loadBalanced",
+      "https://go.dev/issue/66821):",
+      "https://login.microsoftonline.com/",
+      "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsdexpected",
+      "https://pkg.go.dev/go.mongodb.org/mongo-driver/mongo#hdr-Potential_DNS_Issues:",
+      "https://go.dev/pkg/crypto/rsa#hdr-Minimum_key_size)no",
+      "https://aka.ms/azsdk/go/identity/troubleshoot#dac",
+      "http://dochub.mongodb.org/core/tools-dbpath-deprecated",
+      "https://sts.amazonaws.com/?Action=AssumeRoleWithWebIdentity&RoleSessionName=%s&RoleArn=%s&WebIdentityToken=%s&Version=2011-06-15tls:",
+      "https://aka.ms/azsdk/go/identity/docs#DefaultAzureCredential",
+      "https://learn.microsoft.com/partner-center/find-ids-and-domain-names%s.GetToken():",
+      "https://aka.ms/servicefabricmiThe",
+      "https://www.mongodb.com/supportability/cosmosdbYou",
+      "https://www.mongodb.com/supportability/documentdbhttp2:",
+      "http://docs.mongodb.com/database-tools/mongotop/"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "B:\\!G\u000bDӓH_(\u0019iAE6`@\u0001\u0000\u0000\u0000X@\u0001\u0000\u0000\u0000\t`@\u0001\u0000\u0000\u0000}q@\u0001\u0000\u0000\u0000Xq@\u0001\u0000\u0000\u0000Be@\u0001\u0000\u0000\u0000\u0000Tg@\u0001\u0000\u0000\u00000Ii@\u0001\u0000\u0000\u00001Ii@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000`q@\u0001\u0000\u0000\u0000q@\u0001\u0000\u0000\u0000W\u000b\u0000\u0000\u0000\u0000\u0000W\u000b\u0000\u0000\u0000\u0000\u0000@",
+      "L:\\",
+      "n:\\",
+      "Y:\\\u000f[n^0]\u0002`&\u0002(a",
+      "l:\\",
+      "t:\\",
+      "g:\\"
+    ],
+    "chemins_unix": [
+      "/etc/mdns.allowunknown",
+      "/etc/resolv.confhostLookupOrder=non-IPv4",
+      "/etc/hostsinvalid",
+      "/etc/nsswitch.confinvalid",
+      "/bin/himdsAZURE_KUBERNETES_CA_FILEAZURE_KUBERNETES_CA_DATA",
+      "/var/opt/azcmagent/tokensAZURE_KUBERNETES_SNI_NAME2006-1-2",
+      "/var/run/secrets/kubernetes.io/serviceaccount/tokencrypto/elliptic:"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "B10B11B12B13B14B15B16B17B18B19B2",
+        "B20B21B22B23B24B25B26B27B28B29B3",
+        "B30B31B32B33B34B35B36B37B38B39B4",
+        "B40B41B42B43B44B45B46B47B48B49B5",
+        "EDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+        "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+      ],
+      "sha1": [
+        "7536fd7f3d67f5115de3eb2e271b327b7ce329b9"
+      ],
+      "sha256": [
+        "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "68e328d70a0c9f4d3399877636a721ae667f6eaeaeaaf0bcdd72110f766d41f0",
+        "25d71935e7be5b3a1b9e7953558bb9b2749229687cf3cd39c7f99d3f42672fae",
+        "5614d73739c4cb953979c5b476501cda147b86386834ff88f636587787e0f1e9",
+        "151980c76045461a035541e4715980704f7cf5d4baabc792b5831ad82e0f352b",
+        "eb5c9593356a453fa3d606d0a7b939e5709e67a6354ae0c100932b4968b0aff9",
+        "57c34c5db143984eafbc04101be885deb0c256ea5580fde907eae9e651564ac4",
+        "d9a2bfed8f78ccf55e607f0a56c8209adb348363078f1f6aa8ffa893060fe816",
+        "1f009943335f345924036a535645b81aa2c9ed06ae1a52257385744e7ca237db",
+        "b5099e0fbc639d7c52f84d1f25f850a64b12299ec0ab03264abfc301c9754b59"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "wget",
+        "occurrences": 36
+      },
+      {
+        "chaine": "powershell",
+        "occurrences": 13
+      },
+      {
+        "chaine": "curl",
+        "occurrences": 11
+      },
+      {
+        "chaine": "cmd.exe",
+        "occurrences": 1
+      },
+      {
+        "chaine": "-encodedcommand",
+        "occurrences": 1
+      },
+      {
+        "chaine": "writeprocessmemory",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 125
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "5.4.62.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "4.32.5.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "52.5.4.72": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "5.4.82.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "5.4.102.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "github.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "52370"
+        }
+      },
+      "go.mongodb.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "golang.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "yaml.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 15,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "pointeravx512vpopcntdqsts.windows.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://%v/%v/oauth2/v2.0/authorizexml:": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2F%25v%2F%25v%2Foauth2%2Fv2.0%2Fauthorizexml%3A/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://169.254.169.254/latest/api/tokened25519:": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://https://management.core.chinacloudapi.cn/the": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fhttps%3A%2F%2Fmanagement.core.chinacloudapi.cn%2Fthe/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://management.core.usgovcloudapi.net/parse": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://docs.oasis-open.org/ws-sx/ws-trust/200512application/x-www-form-urlencoded;": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "68e328d70a0c9f4d3399877636a721ae667f6eaeaeaaf0bcdd72110f766d41f0": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "25d71935e7be5b3a1b9e7953558bb9b2749229687cf3cd39c7f99d3f42672fae": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "5614d73739c4cb953979c5b476501cda147b86386834ff88f636587787e0f1e9": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "151980c76045461a035541e4715980704f7cf5d4baabc792b5831ad82e0f352b": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "github.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "golang.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "yaml.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "type": "hashs",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.787625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 6,
+      "nb_urls": 22,
+      "base64_massif": 1,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.3533,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 48,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['github.com', 'golang.org', 'yaml.org'], URLs: aucune, hashs embarques: ['AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC']."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_yge4_slj\\mongodb-database-tools-windows-x86_64-100.20.0\\bin\\mongotop.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

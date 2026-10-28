@@ -1,0 +1,504 @@
+{
+  "id_rapport": "d2d30bcf",
+  "origine": "auto_watch",
+  "duree_analyse_s": 260.365,
+  "metadonnees": {
+    "nom": "cv meryem yousfi (3).pptx",
+    "extension": "pptx",
+    "taille_octets": 230856,
+    "taille_lisible": "225.4 Ko",
+    "mime_reel": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\cv meryem yousfi (3).pptx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-13T21:05:27",
+    "date_modification": "2026-10-13T21:05:27",
+    "date_acces": "2026-10-18T00:04:05",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".pptx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "c4336ce8e7b486941323137f75e44f6ee6f1ecab41133882bcc2b1016d12e6c8",
+    "sha1": "a6fa9633e287e9dad54ac815e5cd6667dd7f6d1b",
+    "md5": "e784ec4ab09ef285f1350809adae404c",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.957,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.9,
+      7.98,
+      7.97,
+      7.8
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.w3.org"
+    ],
+    "urls": [
+      "http://www.w3.org/2000/svg",
+      "http://www.w3.org/1999/xlink"
+    ],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 5
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.w3.org/2000/svg": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.w3.org/1999/xlink": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "http://www.w3.org/2000/svg",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://www.w3.org/1999/xlink",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.022016143798828124,
+      "entropie_globale": 0.994625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 2,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.1044,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\docProps\\thumbnail.jpeg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\presentation.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\presProps.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\tableStyles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\viewProps.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\media\\image1.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\media\\image2.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\media\\image3.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\media\\image4.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\notesMasters\\notesMaster1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\notesMasters\\_rels\\notesMaster1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\notesSlides\\notesSlide1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\notesSlides\\_rels\\notesSlide1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout10.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout11.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout2.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout3.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout4.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout5.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout6.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout7.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout8.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\slideLayout9.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout10.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout11.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout2.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout3.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout4.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout5.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout6.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout7.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout8.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideLayouts\\_rels\\slideLayout9.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideMasters\\slideMaster1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slideMasters\\_rels\\slideMaster1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slides\\slide1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\slides\\_rels\\slide1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\theme\\theme2.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\ppt\\_rels\\presentation.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ly4s675p\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "1fc078fd",
+      "nom": "[Content_Types].xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "455f51fa",
+      "nom": "app.xml",
+      "score": 25
+    },
+    {
+      "id_rapport": "45054bee",
+      "nom": "core.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "861e48b8",
+      "nom": "thumbnail.jpeg",
+      "score": 1
+    },
+    {
+      "id_rapport": "b8364afa",
+      "nom": "presentation.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "d70b088c",
+      "nom": "presProps.xml",
+      "score": 94
+    },
+    {
+      "id_rapport": "2864079c",
+      "nom": "tableStyles.xml",
+      "score": 84
+    },
+    {
+      "id_rapport": "49d6d6cd",
+      "nom": "viewProps.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "977b0fff",
+      "nom": "image1.svg",
+      "score": 25
+    },
+    {
+      "id_rapport": "b5ca35fa",
+      "nom": "image2.svg",
+      "score": 25
+    },
+    {
+      "id_rapport": "c2b03b8f",
+      "nom": "image3.svg",
+      "score": 24
+    },
+    {
+      "id_rapport": "59405a43",
+      "nom": "image4.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "ff1770f0",
+      "nom": "notesMaster1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "eb1133ed",
+      "nom": "notesMaster1.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "88c66556",
+      "nom": "notesSlide1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "2a781e3d",
+      "nom": "notesSlide1.xml.rels",
+      "score": 33
+    },
+    {
+      "id_rapport": "f8f439ea",
+      "nom": "slideLayout1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "9fc4d861",
+      "nom": "slideLayout10.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "19cb4d6c",
+      "nom": "slideLayout11.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "5ed30d6c",
+      "nom": "slideLayout2.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "5b6f698e",
+      "nom": "slideLayout3.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "372edc90",
+      "nom": "slideLayout4.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "755ab85d",
+      "nom": "slideLayout5.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "ded585c0",
+      "nom": "slideLayout6.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "3c033bb3",
+      "nom": "slideLayout7.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "2849a67c",
+      "nom": "slideLayout8.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "302c0b99",
+      "nom": "slideLayout9.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "9a0953b7",
+      "nom": "slideLayout1.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "a69ac611",
+      "nom": "slideLayout10.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "a13c7867",
+      "nom": "slideLayout11.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "fbd866ed",
+      "nom": "slideLayout2.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "7267f965",
+      "nom": "slideLayout3.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "b51d601e",
+      "nom": "slideLayout4.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "27c23693",
+      "nom": "slideLayout5.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "d2aef5ba",
+      "nom": "slideLayout6.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "ace7d1f8",
+      "nom": "slideLayout7.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "60331a1c",
+      "nom": "slideLayout8.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "3005e1ca",
+      "nom": "slideLayout9.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "79dc2635",
+      "nom": "slideMaster1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "9dfd52de",
+      "nom": "slideMaster1.xml.rels",
+      "score": 93
+    },
+    {
+      "id_rapport": "f93801ba",
+      "nom": "slide1.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "b4a3d99a",
+      "nom": "slide1.xml.rels",
+      "score": 33
+    },
+    {
+      "id_rapport": "e016d127",
+      "nom": "theme1.xml",
+      "score": 84
+    },
+    {
+      "id_rapport": "d9732cbe",
+      "nom": "theme2.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "82ea2500",
+      "nom": "presentation.xml.rels",
+      "score": 42
+    },
+    {
+      "id_rapport": "b7e08948",
+      "nom": ".rels",
+      "score": 94
+    }
+  ],
+  "score_final": {
+    "score": 94,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://www.w3.org/2000/svg', 'http://www.w3.org/1999/xlink'], hashs embarques: aucun.",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 34, rapport 45054bee).",
+      "Score releve par le contenu extrait de l'archive : presProps.xml (score 94, rapport d70b088c)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1792278505,
+    "fichier_original": "cv meryem yousfi (3).pptx",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1792278505_cv meryem yousfi (3).pptx.quarantine",
+    "raison": "Quelques indicateurs isoles detectes (a corroborer).; Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://www.w3.org/2000/svg', 'http://www.w3.org/1999/xlink'], hashs embarques: aucun.; Score releve par le contenu extrait de l'archive : core.xml (score 34, rapport 45054bee).; Score releve par le contenu extrait de l'archive : presProps.xml (score 94, rapport d70b088c).",
+    "action": "block",
+    "libelle": "Bloquer"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "57739e90d2"
+  }
+}

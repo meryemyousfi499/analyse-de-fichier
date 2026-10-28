@@ -1,0 +1,180 @@
+{
+  "id_rapport": "59a1f4a9",
+  "origine": "auto_watch",
+  "duree_analyse_s": 3.25,
+  "metadonnees": {
+    "nom": "IMG_0001.pdf",
+    "extension": "pdf",
+    "taille_octets": 1606658,
+    "taille_lisible": "1.5 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\IMG_0001.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-01T00:27:03",
+    "date_modification": "2026-10-01T00:27:22",
+    "date_acces": "2026-10-28T11:09:14",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://mail.google.com/\nHostUrl=https://mail-attachment.googleusercontent.com/attachment/u/2/?ui=2&ik=d39f82ab2e&attid=0.1&permmsgid=msg-f:1877567479094530071&th=1a0e75aca9415017&view=att&disp=safe&realattid=f_mul1s45b0&zw&saddbat=ANGjdJ8MmHR-Svgs2aR9-f_2Qmwqiaa_2n0D5QnZYnV177JcT0eyzHvkhd3FrZUueAN7KCO-eRNzujD2sjt1oaVEzfHPHc542JWCY4ptWcqCoflXvJ3fptTgdCCGQxdGZWZt5YG5RppnQeWbQipPr_MO-HIjaTqAsx2p_lez4wp7lxZCSEdptwgf-Nh0HmQtBCNh_CtfK8cXJ9t3MoHJym6nuDClZn9VwRN2mo6I7Xgpz-vyy0i1dN75DOYL89IcGpoEXXf1C9gB9PKtMh431s-iX-zdow7aCj3Z0qpzS0gQG5ESMEJT4_FrBbaCjClZf9j7-xB2WmcDQdS82y4tXmsiSzaZVq4hE9_aVNWwFYYZd_nKGNgXZcyvk7aw6njHsQ6vY6DwA4TmKDN6sCuoEuCGPad2UcUSY3q71w0lo-ut6Hr882rF1Nr6yl5m4c4sKOVIbwx0jzWnWuNe4kUwGG2U51Z_Kc2nyaHGZvhM5MHJSX5XWaumU95leW7wB7nLhJv_QV-WuunBf31EPtpcTmoTUoc6mTrmzm4-3cNDN4ivGJLkDrAreszllYymwJfe6w15Csvr-00nQPDujpemM-2v7x1xcl8zdqirIbH1shgK_y9UzEHKGY5zciP65eqVS5w78OifF4oLJQbwHDnCfze4sF43_fKQxKnPfD-UNpkItlG6hJPS3PS1I7nJc1lK5ykLYNiZQHGXo7CR2xFlIequalsgAJWvk7zBL41rAKCadBXtBA0wJIq-joch34PZhz2of1xbGCjtOzj4eEU4-AcDHX5_7nJLlE2MomPZWMSefKbyHBw7zGBUODgpqsuhtEzmYIa4ruiDUfyto5qbpF2s64YnUv4Bj0hOUivVDU0jMG0EzkjyUF1NFeMNz19-ivfFDg4JmM6OPW4Lb0o2txSxKWgjAjZ8xTq_jkWX2-e4IJaTf6kjQA7TdXEITy4Ydd-KRwKu6yl40VrxDpfWpz2tm3gEx9AXP4eGQay86vP4WYezGirVFx5ugjvvOwzX29Rxw9U93nWwcGOyFnV_4s7aquoFnjUMKwbE_pJMnAv4bxE_6WJ-yUSgcWO5sAt_Q3LCLM4qBja9RQtn8Syb9cOksTki72nPrYP_ofSade2W2Bbx4Eg9gigQn50sJbA\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "6bff69b1e1e5a822309a1739f77b16f644f474b4b8137536497eaed039403d2e",
+    "sha1": "83776687c92a3c4593bbd8ac6a731c1f5728d80d",
+    "md5": "97243ff8dbe920b9ed4ac0efd9106c12",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.948,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.89,
+      7.96,
+      7.89,
+      7.94,
+      7.94,
+      7.95,
+      7.95,
+      7.94,
+      7.95,
+      7.96,
+      7.96,
+      7.96,
+      7.93,
+      7.94,
+      7.94,
+      7.96,
+      7.9,
+      7.9,
+      7.9,
+      7.89,
+      7.9,
+      7.9,
+      7.96,
+      7.94,
+      7.92
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "c:\\Bѱ\u001d",
+      "u:\\\u0017"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "5361b11740caeab4f5c10eda3ec553f5"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.15322284698486327,
+      "entropie_globale": 0.9935,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0454,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 11,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\IMG_0001.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

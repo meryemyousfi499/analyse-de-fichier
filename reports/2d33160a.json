@@ -1,0 +1,577 @@
+{
+  "id_rapport": "2d33160a",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 61.76,
+  "metadonnees": {
+    "nom": "bsondump.exe",
+    "extension": "exe",
+    "taille_octets": 8311296,
+    "taille_lisible": "7.9 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_i_klccsf\\mongodb-database-tools-windows-x86_64-100.20.0\\bin\\bsondump.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-10-28T17:00:54",
+    "date_modification": "2026-10-28T17:00:55",
+    "date_acces": "2026-10-28T17:03:57",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "066f03be0e5c6ee465646877da9a2bf833ec7106ef47aa5f58b71dd2f548acbb",
+    "sha1": "3d2980b775cffc9f6821027c07081891d7fac36f",
+    "md5": "f359365bf4dbd664945741f1b3d3ce22",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": false,
+      "raison": "module pefile non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.322,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.42,
+      6.31,
+      6.24,
+      6.2,
+      6.17,
+      6.22,
+      6.16,
+      6.07,
+      6.19,
+      6.11,
+      6.16,
+      6.26,
+      6.17,
+      6.21,
+      6.1,
+      6.11,
+      6.15,
+      5.84,
+      6.19,
+      6.2,
+      6.1,
+      5.77,
+      6.14,
+      5.94,
+      6.12,
+      6.12,
+      6.07,
+      6.16,
+      6.15,
+      6.13,
+      6.4,
+      5.91,
+      6.39,
+      6.35,
+      6.0,
+      5.86,
+      6.13,
+      6.19,
+      6.12,
+      6.06,
+      5.52,
+      5.47,
+      5.44,
+      5.97,
+      6.27,
+      6.24,
+      6.13,
+      5.99,
+      5.97,
+      5.97,
+      6.32,
+      6.33,
+      5.84,
+      5.95,
+      6.09,
+      6.15,
+      6.15,
+      5.76,
+      5.14,
+      5.23,
+      6.3,
+      6.51,
+      7.99,
+      6.09
+    ],
+    "base64": {
+      "nombre_blobs_base64": 113,
+      "exemple": "BAUBBqBCDBDJBDZBDzBGBBGyBHPBHVBHgBHzBIIBIJBIUBIVBIXBKBBKKBKM..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "5.4.62.5",
+      "4.32.5.4",
+      "52.5.4.72",
+      "5.4.82.5",
+      "5.4.102.5",
+      "4.112.5.4",
+      "127.0.0.1",
+      "1.1.1.1",
+      "1.3.1.1",
+      "1.2.2.1",
+      "1.2.1.1"
+    ],
+    "domaines": [
+      "github.com",
+      "go.mongodb.org",
+      "golang.org",
+      "yaml.org",
+      "login.chinacloudapi.cn",
+      "login.microsoftonline.com",
+      "management.core.windows.net",
+      "management.core.chinacloudapi.cn",
+      "management.core.usgovcloudapi.net",
+      "docs.mongodb.com",
+      "dochub.mongodb.org",
+      "runtime.link",
+      "idna.info",
+      "cases.info",
+      "0go.mongodb.org",
+      "1go.mongodb.org",
+      "2go.mongodb.org",
+      "2github.com",
+      "5go.mongodb.org",
+      "7go.mongodb.org",
+      "8go.mongodb.org",
+      "9go.mongodb.org",
+      "Bgithub.com",
+      "Ngithub.com",
+      "Ogithub.com",
+      "Qgithub.com",
+      "Ugithub.com",
+      "Xgithub.com",
+      "Zgithub.com"
+    ],
+    "urls": [
+      "https://go.dev/doc/godebug#go-1casgstatus:",
+      "https://go.dev/issue/66821):",
+      "https://pkg.go.dev/go.mongodb.org/mongo-driver/mongo#hdr-Potential_DNS_Issues:",
+      "https://go.dev/pkg/crypto/rsa#hdr-Minimum_key_size)the",
+      "http://docs.mongodb.com/database-tools/bsondump/",
+      "http://dochub.mongodb.org/core/tools-dbpath-deprecated"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "t:\\",
+      "n:\\",
+      "g:\\",
+      "l:\\"
+    ],
+    "chemins_unix": [
+      "/etc/mdns.allowunknown",
+      "/etc/resolv.confhostLookupOrder=non-IPv4",
+      "/etc/hostsinvalid",
+      "/etc/nsswitch.confinvalid"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "B10B11B12B13B14B15B16B17B18B19B2",
+        "B20B21B22B23B24B25B26B27B28B29B3",
+        "B30B31B32B33B34B35B36B37B38B39B4",
+        "B40B41B42B43B44B45B46B47B48B49B5",
+        "EDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+        "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+      ],
+      "sha1": [
+        "7536fd7f3d67f5115de3eb2e271b327b7ce329b9"
+      ],
+      "sha256": [
+        "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "68e328d70a0c9f4d3399877636a721ae667f6eaeaeaaf0bcdd72110f766d41f0",
+        "25d71935e7be5b3a1b9e7953558bb9b2749229687cf3cd39c7f99d3f42672fae",
+        "eb5c9593356a453fa3d606d0a7b939e5709e67a6354ae0c100932b4968b0aff9"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "wget",
+        "occurrences": 33
+      },
+      {
+        "chaine": "curl",
+        "occurrences": 10
+      },
+      {
+        "chaine": "writeprocessmemory",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 61
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "5.4.62.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "4.32.5.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "52.5.4.72": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "5.4.82.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "5.4.102.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "github.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "55253"
+        }
+      },
+      "go.mongodb.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "golang.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "yaml.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 15,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "login.chinacloudapi.cn": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://go.dev/doc/godebug#go-1casgstatus:": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://go.dev/issue/66821):": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://pkg.go.dev/go.mongodb.org/mongo-driver/mongo#hdr-Potential_DNS_Issues:": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://go.dev/pkg/crypto/rsa#hdr-Minimum_key_size)the": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://docs.mongodb.com/database-tools/bsondump/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "68e328d70a0c9f4d3399877636a721ae667f6eaeaeaaf0bcdd72110f766d41f0": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "25d71935e7be5b3a1b9e7953558bb9b2749229687cf3cd39c7f99d3f42672fae": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "eb5c9593356a453fa3d606d0a7b939e5709e67a6354ae0c100932b4968b0aff9": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "github.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "golang.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "yaml.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "type": "hashs",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.792626953125,
+      "entropie_globale": 0.79025,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 3,
+      "nb_urls": 6,
+      "base64_massif": 1,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.2852,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 46,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['github.com', 'golang.org', 'yaml.org'], URLs: aucune, hashs embarques: ['AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC']."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_i_klccsf\\mongodb-database-tools-windows-x86_64-100.20.0\\bin\\bsondump.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

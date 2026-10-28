@@ -1,0 +1,250 @@
+{
+  "id_rapport": "4a85b3ce",
+  "origine": "auto_watch",
+  "duree_analyse_s": 74.35,
+  "metadonnees": {
+    "nom": "go1.26.6.windows-amd64.msi",
+    "extension": "msi",
+    "taille_octets": 62308352,
+    "taille_lisible": "59.4 Mo",
+    "mime_reel": "application/x-msi",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\go1.26.6.windows-amd64.msi",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-08-14T00:06:08",
+    "date_modification": "2026-08-14T00:06:22",
+    "date_acces": "2026-10-18T06:22:37",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "ole_office_legacy",
+    "extension_declaree": ".msi",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "7c1390d3ab814753c3176bc0e0648ff70d3c2b4c3b22cced9c347f40dc920168",
+    "sha1": "8550ca18838aabe3fdde60ce00a5cd46f1a25182",
+    "md5": "6dc0dae229ec03c00ca33e095bc7e90a",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "ole_office_legacy",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.979,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.19,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.97,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [
+      "p@W.kD",
+      "3@A.GnX",
+      "uo@d.FU"
+    ],
+    "chemins_windows": [
+      "X:\\\u001cP_N\u001c\\A\u0001w\u0002N\u0012l\u0010=\u001bfY+M[\u0016\u001ca\u0017f20w\u0011g$$1K=\u0001̲2zѧ\u0003\fb!\u000eGhjo8\u0014\u0012",
+      "g:\\\tBQbĦ\u0005\u0010R]܎֦\u0003qt{\t@i葺\u0005X\u0006ӱ_ѳӣ ",
+      "x:\\\u000fD\u000eRq;E",
+      "v:\\6u[״\u0012Y`.&\u0007T8!gC%",
+      "k:\\c[",
+      "m:\\]\u0004_LFWS\u001dnU-;",
+      "b:\\",
+      "k:\\\u00011t\u0011\fT\u0012-\\\u0006\\#\u0017H.vN\u000f4u",
+      "g:\\MfT8aa+]&\u0013I\u0000ߦ''d93p^f7n\u0014\u00039-'",
+      "G:\\nl+\u000e%Ϡ\u001bK7#%-P208+",
+      "e:\\LDh\u0015js=z+\u001e3nV+Sp.5\u0019V\u001dRe_Ƿb\fp",
+      "V:\\\u0011\u0006L[(\f\u0016A\u0006\u0002ۉ",
+      "U:\\\u000f˲)(\u0015wd\u0015MW\u001f6J\u001d.\u0000B&",
+      "h:\\\u0004r",
+      "W:\\َQZn",
+      "h:\\T)n\u0004e",
+      "L:\\W\u000b7",
+      "Q:\\\u0011騊",
+      "t:\\Oޘ'\u0015\t@",
+      "v:\\[\u0001\u001d[",
+      "U:\\_\u0003z䪎",
+      "f:\\3X\u001a\u0014xfu=",
+      "p:\\\u0007XSuϳ^a\u001b\\Bs0\fo\u000eƑ\u00000r\u00041W ߟG!٩\u0002b\u0007\u001b",
+      "Z:\\Msy7f\u0018U[\u001d¸\u001b'Xt1n[׈L\u0001xh\u0015K\\;\u0017 ٵ\u0013σi\u0004fUk환\\2\u0003Sm+qw\b\\ݕ0ɤG@k^14sPL\u0000'ᡷ0\\C\u0003Ǆ\u001ea¢F\u0014=+",
+      "R:\\Rv#\u000eż9",
+      "M:\\\u0007;x΀7DW5N\u0005GE\u001f",
+      "i:\\",
+      "k:\\\u001aЄ\f\u00186#oQ.,1\u0001",
+      "Z:\\",
+      "F:\\q4\u0017"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 62308352,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.997375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0823,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 12,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\go1.26.6.windows-amd64.msi",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

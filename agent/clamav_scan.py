@@ -1,9 +1,9 @@
+
 """
-Détection antivirus multi-moteur via ClamAV (clamd).
-Le résultat est traité comme UN indicateur parmi d'autres, jamais comme
-décision finale à lui seul.
-Nécessite que le démon clamd tourne sur la machine (non démarré par défaut).
+Analyse antivirus via ClamAV dans Docker.
+Le résultat est un indicateur parmi d'autres du pipeline Cabinet Noir.
 """
+
 from config import CLAMD_HOST, CLAMD_PORT
 
 try:
@@ -15,22 +15,52 @@ except ImportError:
 
 def scan_with_clamav(path):
     if not _HAS_CLAMD:
-        return {"disponible": False, "raison": "module python-clamd non installe"}
+        return {
+            "disponible": False,
+            "raison": "Module clamd non installe dans cet environnement Python",
+        }
 
+    # Vérifier la connexion au moteur ClamAV
     try:
-        cd = clamd.ClamdNetworkSocket(host=CLAMD_HOST, port=CLAMD_PORT)
+        cd = clamd.ClamdNetworkSocket(
+            host=CLAMD_HOST,
+            port=CLAMD_PORT,
+            timeout=60,
+        )
         cd.ping()
-    except Exception:
-        return {"disponible": False, "raison": "clamd injoignable (service non demarre ?)"}
+    except Exception as e:
+        return {
+            "disponible": False,
+            "raison": f"ClamAV injoignable : {e}",
+        }
 
+    # Envoyer le contenu du fichier au conteneur Docker
     try:
-        result = cd.scan(path)
-        status, signature = result.get(path, ("ERROR", None))
+        with open(path, "rb") as fichier:
+            result = cd.instream(fichier)
+
+        status, signature = result.get("stream", ("ERROR", "Resultat absent"))
+
+        if status == "ERROR":
+            return {
+                "disponible": False,
+                "infecte": None,
+                "signature": None,
+                "statut_brut": status,
+                "raison": f"ClamAV n'a pas pu analyser le fichier : {signature}",
+            }
+
         return {
             "disponible": True,
             "infecte": status == "FOUND",
             "signature": signature,
             "statut_brut": status,
         }
+
     except Exception as e:
-        return {"disponible": False, "raison": f"erreur de scan clamd: {e}"}
+        return {
+            "disponible": False,
+            "infecte": None,
+            "signature": None,
+            "raison": f"Erreur pendant l'analyse ClamAV : {e}",
+        }

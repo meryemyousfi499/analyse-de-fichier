@@ -1,0 +1,328 @@
+{
+  "id_rapport": "d4839326",
+  "origine": "auto_watch",
+  "duree_analyse_s": 113.993,
+  "metadonnees": {
+    "nom": "Rapport_Agents_et_Dashboards (1).docx",
+    "extension": "docx",
+    "taille_octets": 764559,
+    "taille_lisible": "746.6 Ko",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Rapport_Agents_et_Dashboards (1).docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-19T21:14:11",
+    "date_modification": "2026-09-19T21:14:12",
+    "date_acces": "2026-10-18T06:03:04",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/be4420f4-88d1-4060-8abe-d287691fffbb\nHostUrl=https://claude.ai/api/organizations/d92153e8-af71-4ce3-9f46-aed4bb124f55/conversations/be4420f4-88d1-4060-8abe-d287691fffbb/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FRapport_Agents_et_Dashboards.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "0f699febc1690a54eb5eb63ddcc9ddc222906c27f0945a6b2e14c9ec24b1b336",
+    "sha1": "0d0f714c0aa991f8c00d290f603a836e72d44d8b",
+    "md5": "d51bf6010b1a93b12e812705d80313f7",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.97
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "I:\\L\u000f$ٗ&D$\fu]Mw"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "ed5112930208389793c679abc2e1e784e449f9e4",
+        "9b4556f266f3cd5e08cb9c77ec6b6a455fcaa0ed",
+        "e997cf2c443323800ef9aeb3c710c045551e6989"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0729140281677246,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0447,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\comments.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\footer1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\header1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\media\\9b4556f266f3cd5e08cb9c77ec6b6a455fcaa0ed.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\media\\e997cf2c443323800ef9aeb3c710c045551e6989.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\media\\ed5112930208389793c679abc2e1e784e449f9e4.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\_rels\\comments.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\_rels\\footer1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\word\\_rels\\header1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_hsab95ew\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "0e13b630",
+      "nom": "[Content_Types].xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "9d9dd1cf",
+      "nom": "app.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "ffa62ae8",
+      "nom": "core.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "1cbb1f27",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "5920fc1b",
+      "nom": "comments.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "6b85e7da",
+      "nom": "document.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "52fce8a5",
+      "nom": "endnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "e4ed2c11",
+      "nom": "fontTable.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "dc0c17f6",
+      "nom": "footer1.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "9f37c648",
+      "nom": "footnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "86db7b9c",
+      "nom": "header1.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "fb2a4f90",
+      "nom": "numbering.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "2b6a8b1e",
+      "nom": "settings.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "0cf03008",
+      "nom": "styles.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "a9c5cc52",
+      "nom": "9b4556f266f3cd5e08cb9c77ec6b6a455fcaa0ed.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "ea3a547b",
+      "nom": "e997cf2c443323800ef9aeb3c710c045551e6989.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "f4f93e6b",
+      "nom": "ed5112930208389793c679abc2e1e784e449f9e4.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "275a7271",
+      "nom": "comments.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "48fcde31",
+      "nom": "document.xml.rels",
+      "score": 42
+    },
+    {
+      "id_rapport": "df245db8",
+      "nom": "endnotes.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "408471ba",
+      "nom": "fontTable.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "a0add5dd",
+      "nom": "footer1.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "09387d31",
+      "nom": "footnotes.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "6d43f41c",
+      "nom": "header1.xml.rels",
+      "score": 24
+    },
+    {
+      "id_rapport": "ebd02e01",
+      "nom": ".rels",
+      "score": 34
+    }
+  ],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 24, rapport 0e13b630).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 34, rapport ffa62ae8).",
+      "Score releve par le contenu extrait de l'archive : comments.xml (score 42, rapport 5920fc1b)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Rapport_Agents_et_Dashboards (1).docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

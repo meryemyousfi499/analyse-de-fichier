@@ -1,0 +1,292 @@
+{
+  "id_rapport": "42c12cd1",
+  "origine": "auto_watch",
+  "duree_analyse_s": 39.539,
+  "metadonnees": {
+    "nom": "sigma_mitre_update.zip",
+    "extension": "zip",
+    "taille_octets": 22139,
+    "taille_lisible": "21.6 Ko",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\sigma_mitre_update.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-01T09:58:59",
+    "date_modification": "2026-09-01T09:59:04",
+    "date_acces": "2026-10-18T06:21:33",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/95dff08d-dee4-4880-8b1e-7e6a954af999\nHostUrl=https://claude.ai/api/organizations/def1f0e2-259a-4e88-8af0-dc1efcf7c815/conversations/95dff08d-dee4-4880-8b1e-7e6a954af999/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Fsigma_mitre_update.zip\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "b60642404f5958ea264c19745763b31383e7dc3fd31be0f72d78b74d7e845d7f",
+    "sha1": "f069cfb4299f4c4f2a70c8f61cf37f29b8bf50a6",
+    "md5": "04f4d7fe3eb4a43827919d1d8def18ff",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.687,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.69
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.002111339569091797,
+      "entropie_globale": 0.960875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0423,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\MAPPING.md",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\sigma_engine.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\base_secagent_suspicious.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\base_threatintel_malicious.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\base_waf_any_request.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\base_waf_high_rps.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\base_waf_is_under_attack.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\base_waf_sensitive_uri.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_cross_secagent_threatintel.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_cross_secagent_waf_threatintel.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_cross_waf_threatintel.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_secagent_repeated.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_waf_burst_volume_urgent.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_waf_burst_volume_watch.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_waf_high_rps.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_waf_is_under_attack.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_waf_multi_host_recon.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_waf_sensitive_uri_urgent.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\custom\\correlation_waf_sensitive_uri_watch.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\sigmahq\\waf_jndi_exploit.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\rules\\sigmahq\\waf_sql_injection.yml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_1f0u4o3j\\project\\scripts\\sync_sigmahq.sh"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "64d93a60",
+      "nom": "MAPPING.md",
+      "score": 1
+    },
+    {
+      "id_rapport": "00da9ace",
+      "nom": "sigma_engine.py",
+      "score": 9
+    },
+    {
+      "id_rapport": "36282810",
+      "nom": "base_secagent_suspicious.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "a37f1157",
+      "nom": "base_threatintel_malicious.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "5063691a",
+      "nom": "base_waf_any_request.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "be83a672",
+      "nom": "base_waf_high_rps.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "ad7a6852",
+      "nom": "base_waf_is_under_attack.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "94043f6a",
+      "nom": "base_waf_sensitive_uri.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "064e2395",
+      "nom": "correlation_cross_secagent_threatintel.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "3deac9fd",
+      "nom": "correlation_cross_secagent_waf_threatintel.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "27d32634",
+      "nom": "correlation_cross_waf_threatintel.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "ad5efa95",
+      "nom": "correlation_secagent_repeated.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "a7fda224",
+      "nom": "correlation_waf_burst_volume_urgent.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "be323bec",
+      "nom": "correlation_waf_burst_volume_watch.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "25ac57b2",
+      "nom": "correlation_waf_high_rps.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "4d2748a8",
+      "nom": "correlation_waf_is_under_attack.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "4cac82d0",
+      "nom": "correlation_waf_multi_host_recon.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "daea900a",
+      "nom": "correlation_waf_sensitive_uri_urgent.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "bac6ffbf",
+      "nom": "correlation_waf_sensitive_uri_watch.yml",
+      "score": 1
+    },
+    {
+      "id_rapport": "df76a256",
+      "nom": "waf_jndi_exploit.yml",
+      "score": 25
+    },
+    {
+      "id_rapport": "b9ab7cae",
+      "nom": "waf_sql_injection.yml",
+      "score": 25
+    },
+    {
+      "id_rapport": "f2a0ac4c",
+      "nom": "sync_sigmahq.sh",
+      "score": 24
+    }
+  ],
+  "score_final": {
+    "score": 25,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : sigma_engine.py (score 9, rapport 00da9ace).",
+      "Score releve par le contenu extrait de l'archive : waf_jndi_exploit.yml (score 25, rapport df76a256)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\sigma_mitre_update.zip",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

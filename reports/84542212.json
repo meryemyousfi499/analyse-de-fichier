@@ -1,0 +1,235 @@
+{
+  "id_rapport": "84542212",
+  "origine": "auto_watch",
+  "duree_analyse_s": 228.687,
+  "metadonnees": {
+    "nom": "Lettre de motivation – PFE IA (version simple).docx",
+    "extension": "docx",
+    "taille_octets": 15481,
+    "taille_lisible": "15.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Lettre de motivation – PFE IA (version simple).docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-21T19:09:45",
+    "date_modification": "2026-10-22T01:19:44",
+    "date_acces": "2026-10-28T04:32:01",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://claude.ai/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "bae04c7292b0bd9ac1aa0b51af6324c03bdde7a104dab19cd61bf2d7c96b2163",
+    "sha1": "a3cf6a02e133c4a656e62bd84e3cbd512048278c",
+    "md5": "9aa95b93a32727f28b92e63c161f84a2",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.368,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.37
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0014763832092285155,
+      "entropie_globale": 0.921,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.068,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\word\\webSettings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\word\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_c2uxi5p4\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "bcb56f1e",
+      "nom": "[Content_Types].xml",
+      "score": 84
+    },
+    {
+      "id_rapport": "dd2aaf7a",
+      "nom": "app.xml",
+      "score": 25
+    },
+    {
+      "id_rapport": "e48ebcb7",
+      "nom": "core.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "b6547736",
+      "nom": "document.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "88115dbc",
+      "nom": "fontTable.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "14e357cf",
+      "nom": "numbering.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "c3a62354",
+      "nom": "settings.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "79a14ae8",
+      "nom": "styles.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "8873b42c",
+      "nom": "webSettings.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "24b58820",
+      "nom": "theme1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "45b5dc4c",
+      "nom": "document.xml.rels",
+      "score": 100
+    },
+    {
+      "id_rapport": "c8903898",
+      "nom": ".rels",
+      "score": 93
+    }
+  ],
+  "score_final": {
+    "score": 100,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 84, rapport bcb56f1e).",
+      "Score releve par le contenu extrait de l'archive : document.xml.rels (score 100, rapport 45b5dc4c)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1793158550,
+    "fichier_original": "Lettre de motivation – PFE IA (version simple).docx",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1793158550_Lettre de motivation – PFE IA (version simple).docx.quarantine",
+    "raison": "Aucun signal notable detecte : fichier conforme aux attentes.; Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 84, rapport bcb56f1e).; Score releve par le contenu extrait de l'archive : document.xml.rels (score 100, rapport 45b5dc4c).",
+    "action": "block",
+    "libelle": "Bloquer"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "33dbe8097e"
+  }
+}

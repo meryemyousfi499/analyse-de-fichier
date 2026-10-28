@@ -1,0 +1,206 @@
+{
+  "id_rapport": "a9307a2b",
+  "origine": "auto_watch",
+  "duree_analyse_s": 4.79,
+  "metadonnees": {
+    "nom": "option-b.zip",
+    "extension": "zip",
+    "taille_octets": 14833,
+    "taille_lisible": "14.5 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\option-b.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-03-19T02:23:13",
+    "date_modification": "2026-03-19T02:23:17",
+    "date_acces": "2026-10-28T12:49:54",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/e642bf8d-fb08-4e79-824d-7d6405558c2a\nHostUrl=https://claude.ai/api/organizations/d92153e8-af71-4ce3-9f46-aed4bb124f55/conversations/e642bf8d-fb08-4e79-824d-7d6405558c2a/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Foption-b.zip\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "18db709694c7641b4657303b50069970b4627cff2e6b630b9c96d202257ef551",
+    "sha1": "5f50a170ad8909df51dc95f36b27a32d46ef13af",
+    "md5": "00585d8431bb25193963354d67c7038b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.886,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.89
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/18db709694c7641b4657303b50069970b4627cff2e6b630b9c96d202257ef551/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0014145851135253906,
+      "entropie_globale": 0.98575,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0433,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_b673lga3\\option-b\\.env",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_b673lga3\\option-b\\app.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_b673lga3\\option-b\\compare.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_b673lga3\\option-b\\database.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_b673lga3\\option-b\\README.md",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_b673lga3\\option-b\\requirements.txt",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_b673lga3\\option-b\\templates\\historique.html",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_b673lga3\\option-b\\templates\\index.html"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "f6057009",
+      "nom": ".env",
+      "score": 17
+    },
+    {
+      "id_rapport": "2e298d11",
+      "nom": "app.py",
+      "score": 9
+    },
+    {
+      "id_rapport": "7ad8a478",
+      "nom": "compare.py",
+      "score": 18
+    },
+    {
+      "id_rapport": "6e1369c0",
+      "nom": "database.py",
+      "score": 1
+    },
+    {
+      "id_rapport": "f0e205de",
+      "nom": "README.md",
+      "score": 28
+    },
+    {
+      "id_rapport": "e311736a",
+      "nom": "requirements.txt",
+      "score": 1
+    },
+    {
+      "id_rapport": "3ad4518b",
+      "nom": "historique.html",
+      "score": 1
+    },
+    {
+      "id_rapport": "8587788c",
+      "nom": "index.html",
+      "score": 1
+    }
+  ],
+  "score_final": {
+    "score": 28,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : .env (score 17, rapport f6057009).",
+      "Score releve par le contenu extrait de l'archive : compare.py (score 18, rapport 7ad8a478).",
+      "Score releve par le contenu extrait de l'archive : README.md (score 28, rapport f0e205de)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\option-b.zip",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

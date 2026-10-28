@@ -1,0 +1,425 @@
+{
+  "id_rapport": "eb8a5bce",
+  "origine": "auto_watch",
+  "duree_analyse_s": 1.921,
+  "metadonnees": {
+    "nom": "known_exploited_vulnerabilities.csv",
+    "extension": "csv",
+    "taille_octets": 921756,
+    "taille_lisible": "900.2 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\known_exploited_vulnerabilities.csv",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-07-21T09:40:34",
+    "date_modification": "2026-07-21T09:40:34",
+    "date_acces": "2026-10-28T12:32:40",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.cisa.gov/known-exploited-vulnerabilities-catalog\nHostUrl=https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".csv",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "3021840b25278860a58944e41e270c9f8b1d61ba3b4ea4433af7b3d97e9803b6",
+    "sha1": "fcbe54297e9cd2f4514edbff586b22eccf9362b6",
+    "md5": "d46ded568768cc64f49285e2429336ee",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.163,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.11,
+      5.1,
+      5.09,
+      5.12,
+      5.13,
+      5.12,
+      5.12,
+      5.17,
+      5.23,
+      5.17,
+      5.2,
+      5.19,
+      5.17,
+      5.13,
+      5.14
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "net/wiki/spaces/LTRXTS/pages/2538438657/Latest+Firmware+for+..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "10.0.0.50",
+      "2.2.3.1"
+    ],
+    "domaines": [
+      "msrc.microsoft.com",
+      "fortiguard.fortinet.com",
+      "www.oracle.com",
+      "learn.microsoft.com",
+      "psirt.global.sonicwall.com",
+      "www.cisco.com",
+      "www.balbooa.com",
+      "www.icagenda.com",
+      "extensions.joomla.org",
+      "github.com",
+      "helpx.adobe.com",
+      "simple-help.com",
+      "www.ptc.com",
+      "ltrxdev.atlassian.net",
+      "community.ui.com",
+      "advisory.splunk.com",
+      "www.joomlacontenteditor.net",
+      "blog.litespeedtech.com",
+      "sec.cloudapps.cisco.com",
+      "support.oracle.com",
+      "hub.ivanti.com",
+      "chromereleases.googleblog.com",
+      "issues.chromium.org",
+      "www.arista.com",
+      "blog.checkpoint.com",
+      "support.checkpoint.com",
+      "www.solarwinds.com",
+      "documentation.solarwinds.com",
+      "mirasvit.com",
+      "git.kernel.org",
+      "www.kernel.org",
+      "source.android.com",
+      "security.paloaltonetworks.com",
+      "www.drupal.org",
+      "success.trendmicro.com",
+      "web.archive.org",
+      "www.adobe.com",
+      "lore.kernel.org",
+      "xint.io",
+      "support.cpanel.net",
+      "docs.cpanel.net",
+      "docs.wpsquared.com",
+      "www.connectwise.com",
+      "supportannouncement.us.dlink.com",
+      "security.samsungtv.com",
+      "devnet.kentico.com",
+      "www.papercut.com",
+      "wiki.zimbra.com",
+      "support.quest.com",
+      "www.jetbrains.com"
+    ],
+    "urls": [
+      "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58644",
+      "https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk",
+      "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-58644",
+      "https://fortiguard.fortinet.com/psirt/FG-IR-26-141",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-25089",
+      "https://fortiguard.fortinet.com/psirt/FG-IR-26-100",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-39808",
+      "https://www.oracle.com/security-alerts/cspumay2026.html",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-46817",
+      "https://www.cisa.gov/news-events/ics-advisories/icsa-23-236-01",
+      "https://nvd.nist.gov/vuln/detail/CVE-2023-4346",
+      "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56155",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-56155;",
+      "https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/decommission/adfs-decommission-guide",
+      "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-56164",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-56164",
+      "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0008",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-15409",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-15410",
+      "https://www.cisco.com/c/en/us/obsolete/ios-nx-os-software/cisco-ios-software-releases-12-4-mainline.html",
+      "https://nvd.nist.gov/vuln/detail/CVE-2008-4128",
+      "https://www.balbooa.com/joomla-forms",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-56291",
+      "https://www.icagenda.com/#download",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-48939",
+      "https://extensions.joomla.org/extension/sp-page-builder/",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-48908",
+      "https://github.com/langflow-ai/langflow/security/advisories/GHSA-qrpv-q767-xqq2",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-55255",
+      "https://www.joomlack.fr/en/joomla-extensions/page-builder-ck",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-56290",
+      "https://helpx.adobe.com/security/products/coldfusion/apsb26-68.html",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-48282",
+      "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45659",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-45659",
+      "https://simple-help.com/security/simplehelp-security-update-2026-05",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-48558",
+      "https://www.ptc.com/en/support/article/CS473270",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-12569",
+      "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-cucm-ssrf-cXPnHcW.html",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-20230",
+      "https://ltrxdev.atlassian.net/wiki/spaces/LTRXTS/pages/2538438657/Latest+Firmware+for+the+EDS5000+series+EDS5008+EDS5016+EDS5032",
+      "https://nvd.nist.gov/vuln/detail/CVE-2025-67038",
+      "https://community.ui.com/releases/Security-Advisory-Bulletin-064-064/84811c09-4cf4-42ab-bd61-cc994445963b",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-34910",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-34909",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-34908",
+      "https://advisory.splunk.com/advisories/SVD-2026-0603",
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-20253"
+    ],
+    "emails": [
+      "20240610090330.1347021-2-lee@kernel.org"
+    ],
+    "chemins_windows": [],
+    "chemins_unix": [
+      "/home/change-logs/"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "b5165454d983fc9717bc8748901a64f9",
+        "a64b4a8f662d3639dec8d65f47bc93c5",
+        "2b09e95d90ff4cb38830ecc04c89cee5",
+        "4587b63118524aec911191cc81605283",
+        "c5bf79590657e32554c6683296a8e8aa"
+      ],
+      "sha1": [
+        "24f6008564183aa120d07c03d9289519c2fe02af",
+        "ef04be759da41b14d2d129e670533180a44987dc",
+        "bfa032631c36b900e7444dfa278340b33cbf7cdb",
+        "15089907d1f1301b22c72d7f68846a2ef20df547",
+        "ccba9f748aa8d50a38d7748e2e60362edd6a32cc",
+        "fd702c02497b2f398e739e3119bed0b23dd7aa7b",
+        "59673137c45ac2bcfad1170d954347c1a17ab949",
+        "553707f3fd5f68f47f531cfcff56aa3ec294c6f6",
+        "9fa492cdc160cd27ce1046cb36f47d3b2b1efa21",
+        "b29c457a6511435960115c0f548c4360d5f4801d"
+      ],
+      "sha256": [
+        "421a4ad2615941b177b6ec4ab5e239c14e62af2ab07c6df1741e2a62223223c4"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "vbscript",
+        "occurrences": 4
+      },
+      {
+        "chaine": "powershell",
+        "occurrences": 2
+      },
+      {
+        "chaine": "shellcode",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 161
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "10.0.0.50": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=10.0.0.50&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "2.2.3.1": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=2.2.3.1&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "msrc.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/msrc.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "fortiguard.fortinet.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/fortiguard.fortinet.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "www.oracle.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.oracle.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "learn.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/learn.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "psirt.global.sonicwall.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/psirt.global.sonicwall.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-58644": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fmsrc.microsoft.com%2Fupdate-guide%2Fvulnerability%2FCVE-2026-58644/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fwww.cisa.gov%2Fnews-events%2Fdirectives%2Fbod-26-04-prioritizing-security-updates-based-risk/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fwww.cisa.gov%2Fnews-events%2Fdirectives%2Fbod-26-04-implementation-guidance-prioritizing-security-updates-based-risk/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "https://nvd.nist.gov/vuln/detail/CVE-2026-58644": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fnvd.nist.gov%2Fvuln%2Fdetail%2FCVE-2026-58644/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "https://fortiguard.fortinet.com/psirt/FG-IR-26-141": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Ffortiguard.fortinet.com%2Fpsirt%2FFG-IR-26-141/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {
+      "421a4ad2615941b177b6ec4ab5e239c14e62af2ab07c6df1741e2a62223223c4": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/421a4ad2615941b177b6ec4ab5e239c14e62af2ab07c6df1741e2a62223223c4/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "malwarebazaar": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/3021840b25278860a58944e41e270c9f8b1d61ba3b4ea4433af7b3d97e9803b6/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.08790550231933594,
+      "entropie_globale": 0.645375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 3,
+      "nb_urls": 50,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.2107,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 29,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\known_exploited_vulnerabilities.csv",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

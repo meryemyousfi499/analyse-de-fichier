@@ -1,0 +1,302 @@
+{
+  "id_rapport": "a3728d8e",
+  "origine": "auto_watch",
+  "duree_analyse_s": 12.226,
+  "metadonnees": {
+    "nom": "Chapitre5_SonarQube.docx",
+    "extension": "docx",
+    "taille_octets": 167872,
+    "taille_lisible": "163.9 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Chapitre5_SonarQube.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-07T16:48:59",
+    "date_modification": "2026-05-07T16:49:01",
+    "date_acces": "2026-10-28T12:42:14",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/64f77f2a-8d42-4010-a9fa-6e6d1f397d74\nHostUrl=https://claude.ai/api/organizations/b6dc8f8c-7ecc-44e3-8028-97e8ecece2f0/conversations/64f77f2a-8d42-4010-a9fa-6e6d1f397d74/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FChapitre5_SonarQube.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "9c31f4da20e2cee2cca64b6d85d6c1cd1d74d784c62275dff37f00d41dde447a",
+    "sha1": "f6c198606ecbae183b361ca3fff2896dcdcc355a",
+    "md5": "4fafcd1eef9387ee6e41168742372037",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.992,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      8.0,
+      7.96
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "m:\\֪\u0001S84\u0010\u0019rnCr3\u0019on͚)U\u0019\u0003d\u0006\u000ep",
+      "M:\\wcZ00I\bZbR",
+      "y:\\pgt\u001dTE",
+      "S:\\΍"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "f65ffca6bff1b5f7526814969778a742d25d84cd",
+        "dae45a33995c894431f5489365d1eb5e0e19d2de",
+        "7c6a2ab938e6c5ca91b330ab831d27f35ecdeded",
+        "4a58e0b190f4c2ad7bbf86df13e00175287b557e"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/9c31f4da20e2cee2cca64b6d85d6c1cd1d74d784c62275dff37f00d41dde447a/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.016009521484375,
+      "entropie_globale": 0.999,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0441,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\comments.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\media\\4a58e0b190f4c2ad7bbf86df13e00175287b557e.jpg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\media\\7c6a2ab938e6c5ca91b330ab831d27f35ecdeded.jpg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\media\\dae45a33995c894431f5489365d1eb5e0e19d2de.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\media\\f65ffca6bff1b5f7526814969778a742d25d84cd.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\_rels\\comments.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tll06nud\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "e10d06b2",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "ffc2fddf",
+      "nom": "app.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "3bdec323",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "3e081f02",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "817a035f",
+      "nom": "comments.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "cda110aa",
+      "nom": "document.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "31d641d1",
+      "nom": "endnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "b87d23c9",
+      "nom": "fontTable.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "0eac6fee",
+      "nom": "footnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "7e8b4435",
+      "nom": "numbering.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "913ca0f7",
+      "nom": "settings.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "e7d7f017",
+      "nom": "styles.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "e6fa6e2f",
+      "nom": "4a58e0b190f4c2ad7bbf86df13e00175287b557e.jpg",
+      "score": 1
+    },
+    {
+      "id_rapport": "dc67041e",
+      "nom": "7c6a2ab938e6c5ca91b330ab831d27f35ecdeded.jpg",
+      "score": 1
+    },
+    {
+      "id_rapport": "acf814e9",
+      "nom": "dae45a33995c894431f5489365d1eb5e0e19d2de.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "145002f6",
+      "nom": "f65ffca6bff1b5f7526814969778a742d25d84cd.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "139b73b5",
+      "nom": "comments.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "ca50e031",
+      "nom": "document.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "f1483c92",
+      "nom": "endnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "dff37619",
+      "nom": "fontTable.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "d90ec98e",
+      "nom": "footnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "41e044fb",
+      "nom": ".rels",
+      "score": 19
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport e10d06b2).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport 3bdec323).",
+      "Score releve par le contenu extrait de l'archive : comments.xml (score 27, rapport 817a035f)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Chapitre5_SonarQube.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

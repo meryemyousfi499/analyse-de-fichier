@@ -1,0 +1,219 @@
+{
+  "id_rapport": "756c30ca",
+  "origine": "auto_watch",
+  "duree_analyse_s": 4.156,
+  "metadonnees": {
+    "nom": "ordre_presentations.xlsx",
+    "extension": "xlsx",
+    "taille_octets": 9561,
+    "taille_lisible": "9.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\ordre_presentations.xlsx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-03-29T00:28:31",
+    "date_modification": "2026-03-29T00:28:33",
+    "date_acces": "2026-10-28T12:49:21",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://web.whatsapp.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".xlsx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "a24953682dd8d2eeb5b4fb4ca4b41f388bbe56a3abebb9e852a91a9b24599612",
+    "sha1": "781037b799a313bad24bac30decd428f00975525",
+    "md5": "feea0c328be5f43b8f52bf1ec5008a49",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.85,
+    "verdict_entropie": "elevee - normale pour ce format deja compresse par nature (pas un signal d'alerte)",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      6.85
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/a24953682dd8d2eeb5b4fb4ca4b41f388bbe56a3abebb9e852a91a9b24599612/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0009118080139160156,
+      "entropie_globale": 0.85625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0651,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\xl\\sharedStrings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\xl\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\xl\\workbook.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\xl\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\xl\\worksheets\\sheet1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\xl\\_rels\\workbook.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_t6s5sc77\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "d39ae829",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "b1a67308",
+      "nom": "app.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "d1012b43",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "53e400ea",
+      "nom": "sharedStrings.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "67f12f9d",
+      "nom": "styles.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "34091a8b",
+      "nom": "workbook.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "da13115e",
+      "nom": "theme1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "9d3d1e21",
+      "nom": "sheet1.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "4c3d1f0d",
+      "nom": "workbook.xml.rels",
+      "score": 19
+    },
+    {
+      "id_rapport": "8ade7654",
+      "nom": ".rels",
+      "score": 18
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport d39ae829).",
+      "Score releve par le contenu extrait de l'archive : app.xml (score 10, rapport b1a67308).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport d1012b43).",
+      "Score releve par le contenu extrait de l'archive : styles.xml (score 27, rapport 67f12f9d)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\ordre_presentations.xlsx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

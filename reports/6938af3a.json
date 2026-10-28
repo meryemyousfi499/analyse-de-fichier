@@ -1,0 +1,348 @@
+{
+  "id_rapport": "6938af3a",
+  "origine": "auto_watch",
+  "duree_analyse_s": 1.251,
+  "metadonnees": {
+    "nom": "TB-MICHEL-PEREIRA-RENDU-FINAL.pdf",
+    "extension": "pdf",
+    "taille_octets": 739711,
+    "taille_lisible": "722.4 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TB-MICHEL-PEREIRA-RENDU-FINAL.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-03-10T02:06:04",
+    "date_modification": "2026-03-10T02:06:06",
+    "date_acces": "2026-10-28T12:50:33",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.google.com/\nHostUrl=https://sonar.rero.ch/documents/323802/files/TB-MICHEL-PEREIRA-RENDU-FINAL.pdf\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "5db4f525e2a0fca60eb1110d6ec273de3555232252ece5c0107401f287155b30",
+    "sha1": "aca662027c3e7965c8701826f8d09831c56c913a",
+    "md5": "4eb13a0bb5e632bba54e38cdfa1e47b3",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.899,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.51,
+      7.98,
+      7.99,
+      7.98,
+      7.84,
+      7.91,
+      7.84,
+      7.96,
+      7.98,
+      7.98,
+      7.3,
+      3.23
+    ],
+    "base64": {
+      "nombre_blobs_base64": 3,
+      "exemple": "/Type/Font/Subtype/TrueType/Name/F3/BaseFont/ArialMT/Encodin..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.urkund.com",
+      "www.techno-science.net",
+      "fr.jura.com",
+      "www.bitpanda.com",
+      "www.linkedin.com",
+      "www.nytimes.com",
+      "fr.wikipedia.org",
+      "dbdb.io",
+      "edri.org",
+      "www.avast.com",
+      "fondalo.com",
+      "www.investopedia.com",
+      "nftnow.com",
+      "www.digitaltrends.com",
+      "taginspector.com",
+      "medium.com",
+      "www.theverge.com",
+      "www.fastcompany.com",
+      "www.welivesecurity.com",
+      "www.nbcnews.com",
+      "www.youtube.com",
+      "www.sap.com",
+      "en.wikipedia.org",
+      "www.bloomberg.com",
+      "ethereum.org",
+      "www.ibm.com",
+      "allaboutcookies.org",
+      "earthweb.com",
+      "www.w3.org",
+      "ns.adobe.com",
+      "purl.org"
+    ],
+    "urls": [
+      "https://www.urkund.com/fr/student/)",
+      "https://www.techno-science.net/definition/10886.html)",
+      "https://www.usg.edu/galileo/skills/unit07/internet07_02.phtml)",
+      "https://fr.jura.com/fr/conseil-achat/achat-en-ligne-conditions/protection-des-donnees)",
+      "https://cryptoast.fr/web-3-version-decentralisee-internet/)",
+      "https://dev.to/rounakbanik/deploying-a-dapp-to-mainnet-3cob)",
+      "https://www.bitpanda.com/academy/fr/lecons/quest-ce-quune-dapp)",
+      "https://www.linkedin.com/pulse/evolution-internet-from-web10-web3-ravi-chamria)",
+      "https://www.lemonde.fr/pixels/article/2022/04/20/le-web3-explique-en-quatre-questions_6122944_4408996.html)",
+      "https://www.nytimes.com/2018/04/04/us/politics/cambridge-analytica-scandal-fallout.html)",
+      "https://fr.wikipedia.org/w/index.php?title=Cookie_\\(informatique\\)&oldid=196282405)",
+      "https://dbdb.io/db/gun)",
+      "https://fr.wikipedia.org/w/index.php?title=D%C3%A9centralisation&oldid=190623278)",
+      "https://edri.org/our-work/targeted-online-big-tech-business-model-sells-your-deepest-secrets-for-profit/)",
+      "https://www.avast.com/fr-fr/c-what-is-tcp-ip)",
+      "https://fondalo.com/what-is-targeting-in-digital-marketing/)",
+      "https://www.investopedia.com/terms/d/distributed-ledger-technology-dlt.asp)",
+      "https://fr.wikipedia.org/w/index.php?title=GAFAM&oldid=196433050)",
+      "https://nftnow.com/features/the-problem-with-anonymity-in-web3-and-nfts/)",
+      "https://gun.eco/docs/Introduction)",
+      "https://www.investopedia.com/terms/b/blockchain.asp)",
+      "https://www.digitaltrends.com/computing/history-of-cookies-and-effect-on-privacy/)",
+      "https://fr.wikipedia.org/w/index.php?title=Histoire_d%27Internet&oldid=192365639)",
+      "https://thereader.mitpress.mit.edu/a-history-of-the-data-tracked-user/)",
+      "https://www.lebigdata.fr/gafam-tout-savoir)",
+      "https://taginspector.com/articles/marketing-tags-and-pixels-form-and-function/)",
+      "https://medium.com/@vivekmadurai/web-evolution-from-1-0-to-3-0-e84f2c06739)",
+      "https://www.lesechos.fr/tech-medias/hightech/cest-quoi-le-web3-cette-nouvelle-version-dinternet-qui-fait-parler-delle-1376152)",
+      "https://www.theverge.com/2016/11/13/13619148/trump-facebook-twitter-helped-win)",
+      "https://www.fastcompany.com/90656170/targeted-ads-arent-just-annoying-they-can-be-harmful-heres-how-to-fight-back)",
+      "https://www.welivesecurity.com/2018/02/23/six-tips-avoid-targeted-marketing/)",
+      "https://www.cnil.fr/fr/nouvelles-methodes-de-tracage-en-ligne-quelles-solutions-pour-se-proteger)",
+      "https://www.nbcnews.com/tech/social-media/mark-zuckerberg-leveraged-facebook-user-data-fight-rivals-help-friends-n994706)",
+      "https://www.youtube.com/watch?v=N5E3gra5wz4)",
+      "https://www.icodproject.eu/)",
+      "https://www.sap.com/suisse/insights/what-is-blockchain.html)",
+      "https://www.investopedia.com/news/cryptokitties-are-still-thing-heres-why/)",
+      "https://en.wikipedia.org/w/index.php?title=Steemit&oldid=1101156463)",
+      "https://www.bloomberg.com/news/videos/2018-05-07/steemit-1st-social-media-platform-built-on-top-of-a-blockchain-video)",
+      "https://ethereum.org/en/developers/docs/dapps/#top)",
+      "https://fr.wikipedia.org/w/index.php?title=Web3&oldid=195064586)",
+      "https://fr.wikipedia.org/w/index.php?title=WebRTC&oldid=186009806)",
+      "https://www.youtube.com/watch?v=WmR9IMUD_CY)",
+      "https://www.ibm.com/topics/smart-contracts)",
+      "https://allaboutcookies.org/what-is-a-web-beacon)",
+      "https://ethereum.org/)",
+      "https://earthweb.com/metamask-statistics/)",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "http://ns.adobe.com/pdf/1.3/",
+      "http://purl.org/dc/elements/1.1/"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "z:\\^Eo}AUux)\f5"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "A5F7F964BEDB8F4499788E8916E9311F"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 131
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.urkund.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.urkund.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "www.techno-science.net": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.techno-science.net/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "fr.jura.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/fr.jura.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "www.bitpanda.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.bitpanda.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "www.linkedin.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.linkedin.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "https://www.urkund.com/fr/student/)": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fwww.urkund.com%2Ffr%2Fstudent%2F%29/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "https://www.techno-science.net/definition/10886.html)": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fwww.techno-science.net%2Fdefinition%2F10886.html%29/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "https://www.usg.edu/galileo/skills/unit07/internet07_02.phtml)": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fwww.usg.edu%2Fgalileo%2Fskills%2Funit07%2Finternet07_02.phtml%29/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "https://fr.jura.com/fr/conseil-achat/achat-en-ligne-conditions/protection-des-donnees)": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Ffr.jura.com%2Ffr%2Fconseil-achat%2Fachat-en-ligne-conditions%2Fprotection-des-donnees%29/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "https://cryptoast.fr/web-3-version-decentralisee-internet/)": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fcryptoast.fr%2Fweb-3-version-decentralisee-internet%2F%29/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/5db4f525e2a0fca60eb1110d6ec273de3555232252ece5c0107401f287155b30/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.07054433822631836,
+      "entropie_globale": 0.987375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 50,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1596,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 38,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\TB-MICHEL-PEREIRA-RENDU-FINAL.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

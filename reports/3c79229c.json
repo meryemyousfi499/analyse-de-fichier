@@ -1,0 +1,259 @@
+{
+  "id_rapport": "3c79229c",
+  "origine": "auto_watch",
+  "duree_analyse_s": 18.616,
+  "metadonnees": {
+    "nom": "Meryem Yousfi - TP1 - Hadoop HDFS et MapReduce.pdf",
+    "extension": "pdf",
+    "taille_octets": 566654,
+    "taille_lisible": "553.4 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Meryem Yousfi - TP1 - Hadoop HDFS et MapReduce.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-19T21:01:08",
+    "date_modification": "2026-09-19T21:01:09",
+    "date_acces": "2026-10-28T11:32:11",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://doc-00-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/k7jcnh5igph5srihkbmlubq7547kmjj5/1789847775000/drive/14365239555874006747/ACFrOgA7AzH7w0-68P3ziDLsyp_6vFS3tVXS6LgtI7ixJLVELYBW_GNsKhkWDFCvbeccJHkjYzZRe1ZA4-JSm7JipRYXVAXXp5DBRHdg5kyLP56izo36xc3tIcqqoIBRYZayGkJm1s9Es497oGI7SQL8cw3u3q9am4tPSoLFIrvpMt0qsygk7m_mrPalosfXyyl40qshmssGu29AUdFmzKGrhHPyRMq2gwKDGDpOcC57q5Nn_TgkyrIYslxWEozsm4HTM9Kf3k7UqqicobGi?authuser=2&print=true&nonce=ppurnqbo74l4u&user=14365239555874006747&hash=ccqr39813n938gbcd63o93d3j9u1ofb2\nHostUrl=https://doc-00-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/k7jcnh5igph5srihkbmlubq7547kmjj5/1789847775000/drive/14365239555874006747/ACFrOgA7AzH7w0-68P3ziDLsyp_6vFS3tVXS6LgtI7ixJLVELYBW_GNsKhkWDFCvbeccJHkjYzZRe1ZA4-JSm7JipRYXVAXXp5DBRHdg5kyLP56izo36xc3tIcqqoIBRYZayGkJm1s9Es497oGI7SQL8cw3u3q9am4tPSoLFIrvpMt0qsygk7m_mrPalosfXyyl40qshmssGu29AUdFmzKGrhHPyRMq2gwKDGDpOcC57q5Nn_TgkyrIYslxWEozsm4HTM9Kf3k7UqqicobGi?authuser=2&print=true&nonce=ppurnqbo74l4u&user=14365239555874006747&hash=ccqr39813n938gbcd63o93d3j9u1ofb2\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "3c34ea8c44cc2316ec8adf8b959753a2ef7bf3ec7f0eec38aa264f7b61f58a5f",
+    "sha1": "7d39c64ab591197fc8eecf21a21806c1a8a8af71",
+    "md5": "a9b01f4fec0ea695e9b0114713e74687",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.65,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.54,
+      5.97,
+      7.86,
+      7.88,
+      7.82,
+      7.92,
+      7.31,
+      8.0,
+      6.09
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "153.0.0.0"
+    ],
+    "domaines": [
+      "www.docker.com",
+      "hub.docker.com"
+    ],
+    "urls": [
+      "https://www.docker.com/products/docker-desktop/)",
+      "https://hub.docker.com/r/chakour12/hadoop-cluster)",
+      "http://localhost:9870/)"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "D:\\$\u0006\u0016c;FE1\u000b-"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "F2A51D6198CDC0A512BFD49F74978CF9"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 9
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "153.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 18,
+          "pays": "CN",
+          "nombre_signalements": 21,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "www.docker.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "hub.docker.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://www.docker.com/products/docker-desktop/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://hub.docker.com/r/chakour12/hadoop-cluster)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://localhost:9870/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.05404033660888672,
+      "entropie_globale": 0.95625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 3,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0921,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 28,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Meryem Yousfi - TP1 - Hadoop HDFS et MapReduce.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

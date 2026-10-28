@@ -1,0 +1,170 @@
+{
+  "id_rapport": "196a616c",
+  "origine": "auto_watch",
+  "duree_analyse_s": 3.024,
+  "metadonnees": {
+    "nom": "البوابة الالكترونية لطلب السجل العدلي1.pdf",
+    "extension": "pdf",
+    "taille_octets": 75033,
+    "taille_lisible": "73.3 Ko",
+    "mime_reel": "cannot open `C:\\Users\\HYPER\\Downloads\\\\330\\247\\331\\204\\330\\250\\331\\210\\330\\247\\330\\250\\330\\251 \\330\\247\\331\\204\\330\\247\\331\\204\\331\\203\\330\\252\\330\\261\\331\\210\\331\\206\\331\\212\\330\\251 \\331\\204\\330\\267\\331\\204\\330\\250 \\330\\247\\331\\204\\330\\263\\330\\254\\331\\204 \\330\\247\\331\\204\\330\\271\\330\\257\\331\\204\\331\\2121.pdf' (No such file or directory)",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\البوابة الالكترونية لطلب السجل العدلي1.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-08-25T22:44:59",
+    "date_modification": "2026-08-25T22:45:00",
+    "date_acces": "2026-10-18T06:22:22",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "b1b05aa57a800e7636497ff51690d7d7f827696179c71f3dc6e0c08bfcd7fda0",
+    "sha1": "0800e3d3fbf96ddf93afa6ec4550114d7b606aa0",
+    "md5": "475afff210a5fe4b68b81acf2cdff87b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 1
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.935,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.96,
+      7.62
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "FEFF0627064406280648062706280629002006270644062706440643062A..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "151.0.0.0"
+    ],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 1
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "erreur de scan: could not open file \"C:\\Users\\HYPER\\Downloads\\البوابة الالكترونية لطلب السجل العدلي1.pdf\"",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "151.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 17,
+          "pays": "RU",
+          "nombre_signalements": 21,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.007155704498291016,
+      "entropie_globale": 0.991875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0437,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 19,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\البوابة الالكترونية لطلب السجل العدلي1.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

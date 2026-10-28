@@ -1,0 +1,206 @@
+{
+  "id_rapport": "5d65ff21",
+  "origine": "auto_watch",
+  "duree_analyse_s": 11.186,
+  "metadonnees": {
+    "nom": "TP3 Partie 2.pdf",
+    "extension": "pdf",
+    "taille_octets": 292916,
+    "taille_lisible": "286.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TP3 Partie 2.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-23T16:14:38",
+    "date_modification": "2026-10-23T16:14:38",
+    "date_acces": "2026-10-28T04:06:47",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://doc-0o-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/pehucsa1o2uj04fk6fmrg9he6mtg9gmi/1792772025000/drive/14365239555874006747/ACFrOgCc9AIE4Sz22FCrvx78eftvAdPGW4FRhxq93nxmGdR-bIv1Zzw6BsmPG2VxAgne6TGVGaN3-8dDPBYEEaw6RSuQfiqgB6BSovGltA2ToTW2WpFVQkFP8xOIHbjpYapIgY_Ov8ZGedbeJ-bmcx50JNFB-kMb_lyU-2S1jpwPfFampu8wg5ObEnmeJjyQ47VCU2TNiLOwiGrbx9kpmteuAnNOx2edwnt78UFMFQ==?authuser=1&print=true&nonce=6vr257d8r7f94&user=14365239555874006747&hash=mdffh4i9peil6h8o2rmsmughu0tnauoh\nHostUrl=https://doc-0o-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/pehucsa1o2uj04fk6fmrg9he6mtg9gmi/1792772025000/drive/14365239555874006747/ACFrOgCc9AIE4Sz22FCrvx78eftvAdPGW4FRhxq93nxmGdR-bIv1Zzw6BsmPG2VxAgne6TGVGaN3-8dDPBYEEaw6RSuQfiqgB6BSovGltA2ToTW2WpFVQkFP8xOIHbjpYapIgY_Ov8ZGedbeJ-bmcx50JNFB-kMb_lyU-2S1jpwPfFampu8wg5ObEnmeJjyQ47VCU2TNiLOwiGrbx9kpmteuAnNOx2edwnt78UFMFQ==?authuser=1&print=true&nonce=6vr257d8r7f94&user=14365239555874006747&hash=mdffh4i9peil6h8o2rmsmughu0tnauoh\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "3a5fc2c5ca23424b0f9b38a30eb55af55f0c63aaef46b0e1be4237b759deaa27",
+    "sha1": "e7eec70f316da8fe7b1f8870b7955f48c013626c",
+    "md5": "b1a85acb1182b9263592729b0b54ea9e",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.664,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.88,
+      7.99,
+      6.61,
+      7.73,
+      6.66
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "155.0.0.0"
+    ],
+    "domaines": [
+      "movielens.org"
+    ],
+    "urls": [
+      "https://movielens.org/)"
+    ],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "0BBF97C4FCCC8645F623193E526C661F"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 4
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "155.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 4,
+          "pays": "ZM",
+          "nombre_signalements": 4,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "movielens.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://movielens.org/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.02793464660644531,
+      "entropie_globale": 0.958,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0589,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 19,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\TP3 Partie 2.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

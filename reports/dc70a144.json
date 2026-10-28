@@ -1,0 +1,98 @@
+{
+  "id_rapport": "dc70a144",
+  "origine": "auto_watch",
+  "duree_analyse_s": 0.002,
+  "metadonnees": {
+    "nom": "f8ce89aa8986486f9afd8941386a6f28_meryemyousfi.pdf",
+    "extension": "pdf",
+    "taille_octets": null,
+    "taille_lisible": "inconnue (analyse interrompue)",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\uploads\\f8ce89aa8986486f9afd8941386a6f28_meryemyousfi.pdf",
+    "proprietaire": "inconnu",
+    "permissions": "inconnu",
+    "date_creation": null,
+    "date_modification": null,
+    "date_acces": null,
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "extension_declaree": ".pdf",
+    "type_reel_detecte": null,
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Analyse interrompue avant la verification de coherence."
+  },
+  "empreintes": {
+    "sha256": "",
+    "sha1": "",
+    "md5": "",
+    "connu_malveillant": false
+  },
+  "analyse_statique": {
+    "note": "Analyse statique interrompue : le fichier est devenu inaccessible avant cette etape."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 0,
+    "verdict_entropie": null,
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [],
+    "base64": {
+      "nombre_blobs_base64": null
+    },
+    "xor": {
+      "xor_simple_suspecte": null,
+      "cle_probable": null
+    }
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "chaines_suspectes": [],
+    "score_indicateurs": 0
+  },
+  "signature_numerique": null,
+  "yara": {
+    "disponible": false,
+    "raison": "analyse interrompue avant ce stade",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "analyse interrompue avant ce stade"
+  },
+  "threat_intelligence": null,
+  "scoring_ml": {
+    "features": {},
+    "probabilite_risque": 0,
+    "methode": "non_execute"
+  },
+  "archive": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 100,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Le fichier est devenu inaccessible en cours d'analyse ([WinError 2] Le fichier spécifié est introuvable: 'C:\\\\Users\\\\HYPER\\\\Downloads\\\\cabinet-noir-agent-maj\\\\file-analysis-agent\\\\uploads\\\\f8ce89aa8986486f9afd8941386a6f28_meryemyousfi.pdf'). Cela survient typiquement quand l'antivirus temps reel du systeme d'exploitation (ex. Windows Defender) detecte le fichier de son cote et le neutralise (suppression ou mise en quarantaine) avant que ce pipeline ait fini de le lire. Traite comme une detection positive forte : niveau 'critique', meme si l'analyse interne de cet agent n'a pas pu aller a son terme.",
+      "Sandbox non soumis : fichier deja supprime par l'antivirus du systeme : rien a soumettre au sandbox."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "block",
+    "libelle": "Bloquer",
+    "note": "Fichier deja supprime ou mis en quarantaine par l'antivirus du systeme : aucune action de quarantaine interne necessaire ni possible, le fichier n'existe plus a cet emplacement."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null,
+    "raison_non_soumis": "fichier deja supprime par l'antivirus du systeme : rien a soumettre au sandbox"
+  },
+  "erreur_pipeline": "[WinError 2] Le fichier spécifié est introuvable: 'C:\\\\Users\\\\HYPER\\\\Downloads\\\\cabinet-noir-agent-maj\\\\file-analysis-agent\\\\uploads\\\\f8ce89aa8986486f9afd8941386a6f28_meryemyousfi.pdf'"
+}

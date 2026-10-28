@@ -1,0 +1,171 @@
+{
+  "id_rapport": "d61ac394",
+  "origine": "auto_watch",
+  "duree_analyse_s": 11.397,
+  "metadonnees": {
+    "nom": "DNSSI_v_2023.pdf",
+    "extension": "pdf",
+    "taille_octets": 754854,
+    "taille_lisible": "737.2 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\DNSSI_v_2023.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-06T20:59:21",
+    "date_modification": "2026-10-06T20:59:24",
+    "date_acces": "2026-10-18T01:56:50",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://doc-08-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/8q98k9aqt4gcuutj3kgp8k3p9niudtk8/1791320325000/drive/14365239555874006747/ACFrOgCT967FHrn7KsuDTH25ut7PmUpG6wCLFBWLTnKoriP9UjLJNn_mgqkIsYjeCG8abJUEzroTxS9zyBlYUYccIXk4ewgc2nj4jjsjr5hUarq9C4ut7x0AR-STqWMvWmGctzLbEndE_VllvFOsowHq1SZuljepkjXAw0DJjNJKvpSQ7-AAe6OXCSi93eYm2AWA7ajfJx_u45a8EfBNbwekhSI_jYUVEPn74mpDwg==?authuser=2&print=true&nonce=ughffpp3rv06g&user=14365239555874006747&hash=4erofqin0ot4jpgk35gm2p1c5nq8mre2\nHostUrl=https://doc-08-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/8q98k9aqt4gcuutj3kgp8k3p9niudtk8/1791320325000/drive/14365239555874006747/ACFrOgCT967FHrn7KsuDTH25ut7PmUpG6wCLFBWLTnKoriP9UjLJNn_mgqkIsYjeCG8abJUEzroTxS9zyBlYUYccIXk4ewgc2nj4jjsjr5hUarq9C4ut7x0AR-STqWMvWmGctzLbEndE_VllvFOsowHq1SZuljepkjXAw0DJjNJKvpSQ7-AAe6OXCSi93eYm2AWA7ajfJx_u45a8EfBNbwekhSI_jYUVEPn74mpDwg==?authuser=2&print=true&nonce=ughffpp3rv06g&user=14365239555874006747&hash=4erofqin0ot4jpgk35gm2p1c5nq8mre2\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "0a0d77e6ba54f9ed46e7420ca6bc67786186e759d93c9f2775c944e6abbd57e0",
+    "sha1": "27eff503e980ec8e6503a65b5eee6aed3f8748c8",
+    "md5": "796eca3ef6adc7ebb89cdaa5fb884949",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": true,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 40
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.743,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.75,
+      7.79,
+      7.97,
+      7.93,
+      7.68,
+      7.77,
+      7.99,
+      6.7,
+      7.51,
+      8.0,
+      8.0,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "q:\\\u0016\\,4T@\u0000;.\u0014\u0002Ml"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "D2565C58FF1589935999433B5DCBEF89",
+        "2B5CC22A0F9542AF35EA3676C0E3AD82"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.07198848724365234,
+      "entropie_globale": 0.967875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 1,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0983,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 30,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "PDF contenant du JavaScript embarque et/ou une action /Launch.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\DNSSI_v_2023.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

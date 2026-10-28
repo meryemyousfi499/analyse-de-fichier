@@ -1,0 +1,301 @@
+{
+  "id_rapport": "5ef76d79",
+  "origine": "auto_watch",
+  "duree_analyse_s": 39.765,
+  "metadonnees": {
+    "nom": "tsetup-x64.6.4.2.exe",
+    "extension": "exe",
+    "taille_octets": 50181144,
+    "taille_lisible": "47.9 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\tsetup-x64.6.4.2.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-01-13T01:01:45",
+    "date_modification": "2026-01-13T01:10:36",
+    "date_acces": "2026-10-28T12:56:10",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://desktop.telegram.org/\nHostUrl=https://td.telegram.org/tx64/tsetup-x64.6.4.2.exe\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "e092ffc4cb63c80b9b36ffe3dc68ac232a93737e0e1b998f8f660dd542c3ee7e",
+    "sha1": "ab72f70fd217467ef78dd8ddb71cea338369bc79",
+    "md5": "2196a644a4720a9e58b917fe1a234301",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": false,
+      "raison": "module pefile non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.52,
+      6.12,
+      6.52,
+      6.34,
+      6.05,
+      6.2,
+      6.41,
+      5.39,
+      5.92,
+      6.54,
+      5.98,
+      6.7,
+      7.21,
+      7.71,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 3,
+      "exemple": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "1.0.0.0"
+    ],
+    "domaines": [
+      "schemas.microsoft.com",
+      "t.io",
+      "T.cn"
+    ],
+    "urls": [
+      "http://schemas.microsoft.com/SMI/2005/WindowsSettings"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "X:\\",
+      "N:\\",
+      "O:\\",
+      "J:\\",
+      "T:\\",
+      "Z:\\Ѭ.boLK#\u001bG\u0001\u0014\u0012r\u0016",
+      "K:\\uU˲T๛6)$,\u000b4=\u001b ;c\u00142",
+      "f:\\㤻\u0014~i4J`\u0004Z\u000e,0auBb\bNOHZ\u000bhN\f3\u0004^\u0014Z.m7f\u0019\u001df3C{\u0015+n(8A\u00179Ԕ=ۙ",
+      "Y:\\qu\u0000Ň\u0002q\u001b\u001fQ\u001c%DPڐ^\u0011L",
+      "T:\\̽qS\u001a\u001a\\A;f",
+      "J:\\\u0000ak'\u0010ʦ%\u0010\u000fw",
+      "J:\\vԑf&8Dj\u0019\u0016\f\u000fv\u0011\u0007!K\fy\u0010GaEa\u0010\u0012\u001eL_'Zl",
+      "T:\\\u0015!)_\u000e\u0001FQC`\\e-z\u0010X&b`-H9Y)V0kFq(\u000b~'2լ{pX",
+      "V:\\\u0017\u001c5\u0003̠s=AQSTAjKc\u0015",
+      "B:\\\u0007\u000fp\u0005CǵJ^G\u0006\u0016!\u00133ovQw`b\tũ1}՞H\u0011շ$Ť\u0003'W%\u0010&LLRd6U)`\u00187KF\u001a uf\u0007\u0012\u0013Q'",
+      "r:\\Ym\u001e&00",
+      "j:\\\u001ab੺p\u0013\u0015~\u001e",
+      "G:\\ϭ`YVR0KY\u0003)\f",
+      "E:\\Gw$xD+h~\u00070",
+      "K:\\g\f5Q",
+      "N:\\Vp\u0017նÚ1ME򮐝L",
+      "x:\\.iV8\u001b\u001a%U",
+      "u:\\n,\\\u0003ned\t\u0011ꕖ\u001eJL#14",
+      "u:\\",
+      "Q:\\\u001b\u000fQX\u001fEOI7\u0019`\u0013m)(DuKhcz",
+      "V:\\j\u0017TGX%K\u001cx+t\u0011\u001a`QM,ɇX",
+      "k:\\fG$l}}qH",
+      "P:\\s\u0005\u0018",
+      "d:\\",
+      "e:\\wVY,\u0018"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 50181144,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 6
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=1.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "schemas.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/schemas.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "t.io": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/t.io/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "T.cn": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/T.cn/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "http://schemas.microsoft.com/SMI/2005/WindowsSettings": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2FSMI%2F2005%2FWindowsSettings/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/e092ffc4cb63c80b9b36ffe3dc68ac232a93737e0e1b998f8f660dd542c3ee7e/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 1,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.1319,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 29,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\tsetup-x64.6.4.2.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

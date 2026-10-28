@@ -1,0 +1,241 @@
+{
+  "id_rapport": "72871398",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 38.127,
+  "metadonnees": {
+    "nom": "part-00001.json.gz",
+    "extension": "gz",
+    "taille_octets": 7820714,
+    "taille_lisible": "7.5 Mo",
+    "mime_reel": "application/x-gzip",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rv9nnxqp\\DataTP2Partie2\\reddit2\\reddit2\\part-00001.json.gz",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-18T02:12:20",
+    "date_modification": "2026-10-18T02:12:20",
+    "date_acces": "2026-10-18T02:18:09",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "gzip",
+    "extension_declaree": ".gz",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "0e03450249ab83094fb13af9e17563651eba6b505e73541692857b93deb74e6e",
+    "sha1": "8203c6e9e70735bcf1ab14d08c1aaa3a2e0aa051",
+    "md5": "f9b411ff0f14a66a16199d2db205bf68",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "gzip",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "d:\\%R\u000er_عrcSD9R]9B4H힏D\u00125ʹmq\u0012WC\u000ere\u000bn͌s",
+      "y:\\\u001c\t-SZp8O0plꑆ\u0015)+iWum\u001avZaSa%Lj",
+      "U:\\i\u001ehB\u0003,{r.6",
+      "Y:\\U",
+      "S:\\ed\u0005'UU9\u0019\u000b);",
+      "f:\\ז\u0019",
+      "i:\\i\u0006ۺo_\u0000+iE",
+      "u:\\\u0007v",
+      "m:\\L0'",
+      "D:\\~{",
+      "n:\\w",
+      "c:\\ƊX6o\u0012\u0006\u0019\u001b\u0010P@е",
+      "M:\\v$.ѿǊx\u0004䢅",
+      "n:\\Ĝ3J%\u0007aWB",
+      "k:\\wɲ",
+      "c:\\\u0013\u000fj\tAJm\u0010y\t($.\tQ×z-",
+      "B:\\q]v(cd73\u0010\u0017F˫&x-5eW\u001eV\bJ12N \u0018ҭ\u001a",
+      "y:\\",
+      "L:\\",
+      "E:\\v",
+      "i:\\",
+      "Y:\\zdvh\u0013̰UC\u0002o\u001au\u0006;v \u000eE",
+      "l:\\w;\u0010uFcM@",
+      "G:\\RRhL]\u0002ζ&\u0014;D7\fSQ",
+      "r:\\M`Fdjn߻uۧ3=ԳAꖳՉutl4%%g'',X\u0011\t\u001fe\u001fr+\u001a,SL5u9{DⰣ2v\u0004(T9lpB6ns\u0004y",
+      "f:\\\u001f\u0013z4%",
+      "U:\\1d\u0012",
+      "H:\\xܮ[\u0000fEHc)\u001cw\\l&є\u0016!",
+      "D:\\@!\u0000ThAdvף0s¼+ܘj9㪲ƌ\u0002\u0007NNq\b,]xDlW4\u001aͽ.b",
+      "M:\\e\u000bƬJrA\u0015(@vwX\u0017"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.7458414077758789,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0521,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rv9nnxqp\\DataTP2Partie2\\reddit2\\reddit2\\part-00001.json.gz",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

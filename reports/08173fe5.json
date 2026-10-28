@@ -1,0 +1,192 @@
+{
+  "id_rapport": "08173fe5",
+  "origine": "auto_watch",
+  "duree_analyse_s": 3.8,
+  "metadonnees": {
+    "nom": "PP Cours IACS S4.pdf",
+    "extension": "pdf",
+    "taille_octets": 2301701,
+    "taille_lisible": "2.2 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\PP Cours IACS S4.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-06-04T00:35:58",
+    "date_modification": "2026-06-04T00:35:59",
+    "date_acces": "2026-10-28T12:35:00",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://web.whatsapp.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "7390dde78f10c2434631c0ccc2391ae0ac3aa8ca42fa624d280eb61489cdaee5",
+    "sha1": "d4e143e95874d432bb4b40b1c7dce6c3fcbfe2df",
+    "md5": "c36fc5c98a8ab497aa47c3025812376f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.969,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.76,
+      7.81,
+      7.87,
+      7.91,
+      7.91,
+      7.99,
+      7.99,
+      7.9,
+      7.9,
+      7.92,
+      7.88,
+      7.91,
+      7.92,
+      7.92,
+      7.99,
+      7.98,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.97,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.97,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      6.02,
+      3.37
+    ],
+    "base64": {
+      "nombre_blobs_base64": 7,
+      "exemple": "/Type/Font/Subtype/TrueType/Name/F2/BaseFont/ABCDEE+Calibri/..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "L:\\K\u0011.;l\u0010R",
+      "D:\\V] 1I\u0019)yf",
+      "J:\\I+p%\u001d$",
+      "u:\\Cy\u000f8\u001f",
+      "r:\\",
+      "x:\\h",
+      "e:\\\u0014t;\u001bqq+7\u0004"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "CC0B09C50952CA458531C5DC004BBCC3"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/7390dde78f10c2434631c0ccc2391ae0ac3aa8ca42fa624d280eb61489cdaee5/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.2195073127746582,
+      "entropie_globale": 0.996125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0792,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 12,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\PP Cours IACS S4.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

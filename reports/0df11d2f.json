@@ -1,0 +1,248 @@
+{
+  "id_rapport": "0df11d2f",
+  "origine": "auto_watch",
+  "duree_analyse_s": 6.677,
+  "metadonnees": {
+    "nom": "PV-DE-NOTE-TD-Exam-premieer-annee.xlsx",
+    "extension": "xlsx",
+    "taille_octets": 24554,
+    "taille_lisible": "24.0 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\PV-DE-NOTE-TD-Exam-premieer-annee.xlsx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-01-06T04:37:53",
+    "date_modification": "2026-01-06T04:37:53",
+    "date_acces": "2026-10-28T12:56:46",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.univ-oeb.dz/ista/wp-content/uploads/2025/02/\nHostUrl=https://www.univ-oeb.dz/ista/wp-content/uploads/2025/02/PV-DE-NOTE-TD-Exam-premieer-annee.xlsx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".xlsx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "7ee263cba92e183c821fff1a0adf3f154655235512fc06aa1ce40d02d2c5e012",
+    "sha1": "616ec541f0f395856aae98782c74b76c128bf157",
+    "md5": "cf7ef7298521c350c215032c9ac06c9d",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.629,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.63
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/7ee263cba92e183c821fff1a0adf3f154655235512fc06aa1ce40d02d2c5e012/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0023416519165039063,
+      "entropie_globale": 0.953625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0694,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\sharedStrings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\workbook.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\drawings\\drawing1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\drawings\\_rels\\drawing1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\media\\image1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\printerSettings\\printerSettings1.bin",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\worksheets\\sheet1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\worksheets\\_rels\\sheet1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\xl\\_rels\\workbook.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_3ub6sdko\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "2dc7f1c2",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "bbbb10bb",
+      "nom": "app.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "191861c7",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "141a6aa1",
+      "nom": "sharedStrings.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "f4d577b7",
+      "nom": "styles.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "622a00eb",
+      "nom": "workbook.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "7fce3709",
+      "nom": "drawing1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "f97f6e90",
+      "nom": "drawing1.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "ee755f93",
+      "nom": "image1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "a7682414",
+      "nom": "printerSettings1.bin",
+      "score": 1
+    },
+    {
+      "id_rapport": "27f4d284",
+      "nom": "theme1.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "c59958c2",
+      "nom": "sheet1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "360fd6dd",
+      "nom": "sheet1.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "8de899e4",
+      "nom": "workbook.xml.rels",
+      "score": 19
+    },
+    {
+      "id_rapport": "fdc531d6",
+      "nom": ".rels",
+      "score": 18
+    }
+  ],
+  "score_final": {
+    "score": 19,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport 2dc7f1c2).",
+      "Score releve par le contenu extrait de l'archive : app.xml (score 10, rapport bbbb10bb).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport 191861c7)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\PV-DE-NOTE-TD-Exam-premieer-annee.xlsx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

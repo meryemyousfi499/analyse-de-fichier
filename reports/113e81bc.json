@@ -1,0 +1,269 @@
+{
+  "id_rapport": "113e81bc",
+  "origine": "auto_watch",
+  "duree_analyse_s": 6.657,
+  "metadonnees": {
+    "nom": "Gemini_Generated_Image_7dlik47dlik47dli.jfif",
+    "extension": "jfif",
+    "taille_octets": 564361,
+    "taille_lisible": "551.1 Ko",
+    "mime_reel": "image/jpeg",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Gemini_Generated_Image_7dlik47dlik47dli.jfif",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-23T21:57:59",
+    "date_modification": "2026-09-23T21:58:01",
+    "date_acces": "2026-10-18T06:02:09",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=about:internet\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "jpeg",
+    "extension_declaree": ".jfif",
+    "coherent": false,
+    "alerte": false,
+    "commentaire": "ALERTE : le fichier déclaré '.jfif' est en réalité de type 'jpeg'. Usurpation d'extension probable."
+  },
+  "empreintes": {
+    "sha256": "e1d61b12b5c3fb788de03b27a86cb857fcbe1b0e50701cdb076f547b546185c8",
+    "sha1": "80b3006b81a5ca35297489f0be164ab4742bf45a",
+    "md5": "9bd858bac822e8facbee6d97847284f1",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "jpeg",
+    "image": {
+      "disponible": true,
+      "dimensions": "1933x544",
+      "donnees_ajoutees_apres_fin": false,
+      "taille_donnees_ajoutees_octets": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.983,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.96,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.91
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "cv.iptc.org"
+    ],
+    "urls": [
+      "http://c2pa-ocsp.pki.goog/04\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002(http://pki.goog/c2pa/media-1p-ica-g3.crt0\u0017\u0006\u0003U\u001d",
+      "http://pki.goog/c2pa/root-g3.crt0&\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u001ahttp://c2pa-ocsp.pki.goog/0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0014\\؉SCZՁ\u0003\u0019\u0004**-0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014{ὴ,\u0010kJ70",
+      "http://c2pa-ocsp.pki.goog/04\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002(http://pki.goog/c2pa/core-tsa-ica-g3.crt0\u0017\u0006\u0003U\u001d",
+      "http://pki.goog/c2pa/root-g3.crt0&\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u001ahttp://c2pa-ocsp.pki.goog/0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0014\\؉SCZՁ\u0003\u0019\u0004**-0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014U`t;\u0003jD\u0006ea0",
+      "http://pki.goog/c2pa/media-1p-ica-g3.crt0\u000f\u0006"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "t:\\}ϗ[}ka`",
+      "j:\\",
+      "Y:\\qpl\u0019",
+      "I:\\lw\u001cSn",
+      "m:\\ؓm\u0006u&\u000b\u001b\u00126\u001e\u001ai#BR,v'Ћ~\u001e\u0001$5A\u0010=\u0007l@",
+      "R:\\m\u0005",
+      "u:\\[ t.@ ^{6=",
+      "C:\\GpTɨGqy\u0005i\tAFUu`]"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 8
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 14
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "cv.iptc.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://c2pa-ocsp.pki.goog/04\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002(http://pki.goog/c2pa/media-1p-ica-g3.crt0\u0017\u0006\u0003U\u001d": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://pki.goog/c2pa/root-g3.crt0&\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u001ahttp://c2pa-ocsp.pki.goog/0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0014\\؉SCZՁ\u0003\u0019\u0004**-0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014{ὴ,\u0010kJ70": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fpki.goog%2Fc2pa%2Froot-g3.crt0%26%06%08%2B%06%01%05%05%070%01%1Ahttp%3A%2F%2Fc2pa-ocsp.pki.goog%2F0%1F%06%03U%1D%23%04%180%16%14%5C%D8%89SCZ%D5%81%03%19%7F%04%2A%2A-0%1D%06%03U%1D%0E%04%16%04%14%7B%E1%BD%B4%2C%10kJ70/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://c2pa-ocsp.pki.goog/04\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002(http://pki.goog/c2pa/core-tsa-ica-g3.crt0\u0017\u0006\u0003U\u001d": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://pki.goog/c2pa/root-g3.crt0&\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u001ahttp://c2pa-ocsp.pki.goog/0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\u0014\\؉SCZՁ\u0003\u0019\u0004**-0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014U`t;\u0003jD\u0006ea0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fpki.goog%2Fc2pa%2Froot-g3.crt0%26%06%08%2B%06%01%05%05%070%01%1Ahttp%3A%2F%2Fc2pa-ocsp.pki.goog%2F0%1F%06%03U%1D%23%04%180%16%14%5C%D8%89SCZ%D5%81%03%19%7F%04%2A%2A-0%1D%06%03U%1D%0E%04%16%04%14U%60t%3B%03jD%06ea0/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://pki.goog/c2pa/media-1p-ica-g3.crt0\u000f\u0006": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.053821659088134764,
+      "entropie_globale": 0.997875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 5,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1598,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 20,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Gemini_Generated_Image_7dlik47dlik47dli.jfif",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "id_rapport": "a4102d0b",
+  "origine": "auto_watch",
+  "duree_analyse_s": 18.812,
+  "metadonnees": {
+    "nom": "TP2_git_IACS.pdf",
+    "extension": "pdf",
+    "taille_octets": 17987746,
+    "taille_lisible": "17.2 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TP2_git_IACS.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-02-27T09:47:45",
+    "date_modification": "2026-02-27T09:47:45",
+    "date_acces": "2026-10-28T12:50:40",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://web.whatsapp.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "3223a8a1f94d8747448c655501b78b5ed990129713bb4049ea94ded067e73240",
+    "sha1": "8d57d2a04e6546e1571cb8a9d9a90ac33390b02c",
+    "md5": "21c28faff52e0fe85522a024e2bd748a",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.988,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.96,
+      7.95,
+      7.96,
+      7.97,
+      7.96,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.98,
+      7.98,
+      7.99,
+      7.97,
+      7.94,
+      7.95,
+      7.94,
+      7.95,
+      7.98,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.96,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.96,
+      7.89,
+      7.99,
+      7.99,
+      7.99,
+      7.92,
+      7.88,
+      7.98,
+      7.98,
+      7.94,
+      7.86,
+      7.97,
+      7.99,
+      7.97,
+      7.85,
+      7.99,
+      7.98,
+      7.96,
+      7.91,
+      7.99,
+      7.96,
+      7.91,
+      7.99,
+      7.99,
+      7.96,
+      7.91
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "kV.io",
+      "dev.azure.com"
+    ],
+    "urls": [
+      "https://dev.azure.com/)"
+    ],
+    "emails": [
+      "b@c.COP",
+      "b@Jzb.CQ"
+    ],
+    "chemins_windows": [
+      "E:\\O",
+      "i:\\3S\u0013;jq\u000eO$bIWGIĒ7yh\u000fo\u0007M0",
+      "O:\\&\u0018VՅ\u001dd\u0002'bns\u0018D[Z\u001b",
+      "E:\\@PΊH'Q$ $\u0017)\u0019=\u0001\tʑ`.\u001b6G",
+      "q:\\\u001eQ\u0000",
+      "H:\\\fohpOs!\u0012}b\f\f@O8q",
+      "b:\\\u001a8!\u001a",
+      "w:\\\t",
+      "g:\\\u001e&=\u0014\u001e$B0r'{AvCUe-\t\u0018",
+      "s:\\",
+      "w:\\-m.1G c4",
+      "q:\\\u000b\bB\u0000\u0001Z\u000bE;@P=",
+      "r:\\ҏ\u0017\\_\u001eG_f",
+      "r:\\ҏ\u0017\\ŗt݆adn8;\u0004\u0010@\u0000\u0001\u0004\u0010@\u0000\u0001\u0004V\u0000҄\bX",
+      "K:\\)2}啑\bskaʤ\u0019i\u0015U@\u0015P\u0005T\u0001U@\u0015P\u0005T\u0001U@\u0015Q0\u001f2\u0002\u0000^p\u0011frW^y\u000fj",
+      "m:\\7P",
+      "c:\\@Se1e\u000b",
+      "v:\\\u0010PR\u0003IS\u0000H\u0001ԁ\u0000-Pǋ~[\u001foNi@.\u001f\u000bگ#\u0001C\u0010\u0018L\u001561dY.C\u0014(9kSSC%Cv\u0002ܑb\u0000$my",
+      "z:\\",
+      "p:\\KJ]z\u0002\fr\u000e\u0012\u0001D@",
+      "b:\\Liix\u0011#\u001dh",
+      "d:\\\u000b.]N4ei&M\u0019",
+      "p:\\l[prlL.r\u0017\u0014\bBSxB`g\u0018",
+      "p:\\",
+      "w:\\q",
+      "O:\\뎹!\u001d2#;ҷ\u000fՊVjZ_\u001d\u000f)\u0002U",
+      "p:\\TW!\u001c\u0015mf3\u0010",
+      "p:\\\b\\\u0013s\u0003pc\u0001\u000bᔗp\u0000\u0006`\u000f\u000e@ـ\tRc\\\u000f\u00121\u0003!%xT\u0013&pUaX",
+      "t:\\$\u0005pV2\u0015A",
+      "h:\\2Êl"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "387a4d0b87d8b9ce8137582c49cf5b3b"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 4
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "kV.io": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/kV.io/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "dev.azure.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/dev.azure.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "https://dev.azure.com/)": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fdev.azure.com%2F%29/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/3223a8a1f94d8747448c655501b78b5ed990129713bb4049ea94ded067e73240/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.9985,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0714,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 20,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\TP2_git_IACS.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

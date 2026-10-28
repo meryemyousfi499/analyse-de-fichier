@@ -1,0 +1,155 @@
+{
+  "id_rapport": "79d9309e",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 4.691,
+  "metadonnees": {
+    "nom": "thumbnail.jpeg",
+    "extension": "jpeg",
+    "taille_octets": 8324,
+    "taille_lisible": "8.1 Ko",
+    "mime_reel": "image/jpeg",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7sf_93w0\\docProps\\thumbnail.jpeg",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-18T02:25:07",
+    "date_modification": "2026-10-18T02:25:07",
+    "date_acces": "2026-10-18T02:25:57",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "jpeg",
+    "extension_declaree": ".jpeg",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "96367138dc44ce09bf2c8f0f8e49348a1478d2c5c0af69bbc2bbc38b63cdcead",
+    "sha1": "8c0783443eb2c940a65b84ad0ca38d2f4014952a",
+    "md5": "90fd87cbb448593802403de5b92f8006",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "jpeg",
+    "image": {
+      "disponible": true,
+      "dimensions": "395x512",
+      "donnees_ajoutees_apres_fin": true,
+      "taille_donnees_ajoutees_octets": 1
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 3.995,
+    "verdict_entropie": "faible (texte / code non compresse)",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      3.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 4,
+        "signale": true
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0007938385009765625,
+      "entropie_globale": 0.499375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0494,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 96,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Des donnees (1 octets) sont dissimulees apres la fin officielle de l'image (technique de fichier polyglotte / steganographie de conteneur).",
+      "Le hash SHA-256 du fichier est reconnu comme malveillant par : otx."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1792286761,
+    "fichier_original": "thumbnail.jpeg",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1792286761_thumbnail.jpeg.quarantine",
+    "raison": "Des donnees (1 octets) sont dissimulees apres la fin officielle de l'image (technique de fichier polyglotte / steganographie de conteneur).; Le hash SHA-256 du fichier est reconnu comme malveillant par : otx.",
+    "action": "block",
+    "libelle": "Bloquer"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "d99b9fcb31"
+  }
+}

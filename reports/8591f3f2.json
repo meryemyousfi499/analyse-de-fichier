@@ -1,0 +1,160 @@
+{
+  "id_rapport": "8591f3f2",
+  "origine": "auto_watch",
+  "duree_analyse_s": 3.62,
+  "metadonnees": {
+    "nom": "world.pdf",
+    "extension": "pdf",
+    "taille_octets": 342273,
+    "taille_lisible": "334.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\world.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-27T10:26:47",
+    "date_modification": "2026-10-27T10:26:48",
+    "date_acces": "2026-10-28T17:13:23",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://doc-04-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/59oi1as07thjlcc6defrdejvsau7qjak/1793096775000/drive/14365239555874006747/ACFrOgBQqLM3cmxYKYuBYh3qGashEkBqJYk__mspRVc6VFLmP0KnTL_jH2F4txqfKNHsE6tcouCfUkluC-4oZvWq6yoBkYLRSxnDpit2riEmt5i5jS170J6Tk2l4xGt7fNVUMzVxkGgCqbint71X2cYekzUM6IU1w2k4aCIltfe4mz_Ctjd4HtN28qq1Q5wSgsfrOaC7eZNI506tAX_tZACOgWmSCr33NXljEwiTzw==?authuser=1&print=true&nonce=5l7d87a2f56l2&user=14365239555874006747&hash=gfe111kvsgbj30m0lv84u8l8i6ncnbai\nHostUrl=https://doc-04-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/59oi1as07thjlcc6defrdejvsau7qjak/1793096775000/drive/14365239555874006747/ACFrOgBQqLM3cmxYKYuBYh3qGashEkBqJYk__mspRVc6VFLmP0KnTL_jH2F4txqfKNHsE6tcouCfUkluC-4oZvWq6yoBkYLRSxnDpit2riEmt5i5jS170J6Tk2l4xGt7fNVUMzVxkGgCqbint71X2cYekzUM6IU1w2k4aCIltfe4mz_Ctjd4HtN28qq1Q5wSgsfrOaC7eZNI506tAX_tZACOgWmSCr33NXljEwiTzw==?authuser=1&print=true&nonce=5l7d87a2f56l2&user=14365239555874006747&hash=gfe111kvsgbj30m0lv84u8l8i6ncnbai\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "0232c0760157394569ee6ef9e2866a02cd176d89a175784b9cbf8bcbfd5a3ed4",
+    "sha1": "4126e37528fc4e76c4f23b86d397e401ce42fde3",
+    "md5": "1be61c5f36268f6675adf6df213fa768",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.909,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.96,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.98
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "V:\\5Tft="
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "73F000731D0DFE9D827249FE3963668C"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.03264169692993164,
+      "entropie_globale": 0.988625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0438,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 11,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\world.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

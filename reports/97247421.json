@@ -1,0 +1,351 @@
+{
+  "id_rapport": "97247421",
+  "origine": "auto_watch",
+  "duree_analyse_s": 48.428,
+  "metadonnees": {
+    "nom": "TP2 Partie 2 (1).pdf",
+    "extension": "pdf",
+    "taille_octets": 318291,
+    "taille_lisible": "310.8 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TP2 Partie 2 (1).pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-07T22:16:52",
+    "date_modification": "2026-10-07T22:16:55",
+    "date_acces": "2026-10-18T01:08:02",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://doc-04-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/ketjldq50ms3ohdk6tfuhav5l9qp0k2g/1791411300000/drive/14365239555874006747/ACFrOgD_12cvDakMLH5yLMu7q2xrOakD5w_yXdYAEx4i4O7YI99M6Nl64mPI9HgD7gyY7LePjTVmdel1Yg66Uu21zZNpeaog96HEHApzStDYZLXZRSE1uPJxZC7fPNa9lJdNhGk8mAnFlxrSNHYKC8OQTrap9TYzV5yNO-ugyP6KTKbxcHwl3XKVNuGKQNQ1iHQV3ek5p4ZB3Q-FHlp7UpiR72n-8dtIpYR7OYq0ig==?authuser=2&print=true&nonce=q6tc2uhsn6g5c&user=14365239555874006747&hash=1o2leivq1po5i2pq4e3vkvd647kpfcfg\nHostUrl=https://doc-04-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/ketjldq50ms3ohdk6tfuhav5l9qp0k2g/1791411300000/drive/14365239555874006747/ACFrOgD_12cvDakMLH5yLMu7q2xrOakD5w_yXdYAEx4i4O7YI99M6Nl64mPI9HgD7gyY7LePjTVmdel1Yg66Uu21zZNpeaog96HEHApzStDYZLXZRSE1uPJxZC7fPNa9lJdNhGk8mAnFlxrSNHYKC8OQTrap9TYzV5yNO-ugyP6KTKbxcHwl3XKVNuGKQNQ1iHQV3ek5p4ZB3Q-FHlp7UpiR72n-8dtIpYR7OYq0ig==?authuser=2&print=true&nonce=q6tc2uhsn6g5c&user=14365239555874006747&hash=1o2leivq1po5i2pq4e3vkvd647kpfcfg\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "ed764ea8756e5435ca9c68aa5a6354c6f9f5b497cafe4e2e3ded128ca8463adf",
+    "sha1": "58677776e90855305924daf6c79278bd49da712b",
+    "md5": "5e9b12335b0974c414bdc99e5cd53f58",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": true,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 7
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.535,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.78,
+      7.7,
+      5.87,
+      7.95,
+      7.19
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "154.0.0.0"
+    ],
+    "domaines": [
+      "spark.apache.org",
+      "archive.org",
+      "docs.python.org",
+      "fr.wikipedia.org",
+      "en.wikipedia.org"
+    ],
+    "urls": [
+      "https://spark.apache.org/downloads.html)",
+      "https://archive.org/details/2015_reddit_comments_corpus)",
+      "https://docs.python.org/3/library/json.html)",
+      "https://fr.wikipedia.org/wiki/E_\\(nombre\\))",
+      "https://en.wikipedia.org/wiki/E_%28mathematical_constant%29#Stochastic_representations)",
+      "https://fr.wikipedia.org/wiki/Loi_des_grands_nombres)",
+      "https://docs.python.org/3/library/random.html)",
+      "https://fr.wikipedia.org/wiki/Compilation_%C3%A0_la_vol%C3%A9e)"
+    ],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "6CE51D8DA6D4FD72DC3CB18C66AA5EC1"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 22
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "154.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 14,
+          "pays": "ZA",
+          "nombre_signalements": 7,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "spark.apache.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "archive.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "83"
+        }
+      },
+      "docs.python.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "fr.wikipedia.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "en.wikipedia.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://spark.apache.org/downloads.html)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://archive.org/details/2015_reddit_comments_corpus)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://docs.python.org/3/library/json.html)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://fr.wikipedia.org/wiki/E_\\(nombre\\))": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://en.wikipedia.org/wiki/E_%28mathematical_constant%29#Stochastic_representations)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "archive.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "archive.org",
+        "type": "domaines",
+        "source": "urlhaus"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.03035459518432617,
+      "entropie_globale": 0.941875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 1,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 8,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1791,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 71,
+    "niveau": "eleve",
+    "action_recommandee": "quarantine",
+    "explications": [
+      "PDF contenant du JavaScript embarque et/ou une action /Launch.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['archive.org'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1792282112,
+    "fichier_original": "TP2 Partie 2 (1).pdf",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1792282112_TP2 Partie 2 (1).pdf.quarantine",
+    "raison": "PDF contenant du JavaScript embarque et/ou une action /Launch.; Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.; Volume important d'indicateurs suspects (URLs, IP, commandes).; Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['archive.org'], URLs: aucune, hashs embarques: aucun.",
+    "action": "quarantine",
+    "libelle": "Mettre en quarantaine"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "113ee85bb2"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id_rapport": "090e45ba",
+  "origine": "auto_watch",
+  "duree_analyse_s": 2.489,
+  "metadonnees": {
+    "nom": "HGwqlWOnLHoU4KKunDuYZn1rWl2b2l1i2CELDGUPsLC4jDbxkQNsOpCr3cPajt7Rt-jhN9kPyzWqJzfHJ67FFVvUE6_DnYLQzpyt3ru5iA9JpFEI98uIZuCoEZ5NCTJVG_n-EqNovx8aQFx4fmd7VfSehKZCDbRhdPXRWa2_IR0.jfif",
+    "extension": "jfif",
+    "taille_octets": 24214,
+    "taille_lisible": "23.6 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\HGwqlWOnLHoU4KKunDuYZn1rWl2b2l1i2CELDGUPsLC4jDbxkQNsOpCr3cPajt7Rt-jhN9kPyzWqJzfHJ67FFVvUE6_DnYLQzpyt3ru5iA9JpFEI98uIZuCoEZ5NCTJVG_n-EqNovx8aQFx4fmd7VfSehKZCDbRhdPXRWa2_IR0.jfif",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-24T15:41:47",
+    "date_modification": "2026-09-24T15:41:49",
+    "date_acces": "2026-10-28T11:14:13",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://chatgpt.com/\nHostUrl=https://images.openai.com/static-rsc-4/HGwqlWOnLHoU4KKunDuYZn1rWl2b2l1i2CELDGUPsLC4jDbxkQNsOpCr3cPajt7Rt-jhN9kPyzWqJzfHJ67FFVvUE6_DnYLQzpyt3ru5iA9JpFEI98uIZuCoEZ5NCTJVG_n-EqNovx8aQFx4fmd7VfSehKZCDbRhdPXRWa2_IR0?purpose=inline\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "jpeg",
+    "extension_declaree": ".jfif",
+    "coherent": false,
+    "alerte": false,
+    "commentaire": "ALERTE : le fichier déclaré '.jfif' est en réalité de type 'jpeg'. Usurpation d'extension probable."
+  },
+  "empreintes": {
+    "sha256": "bf73d8167cb12eafaf68595430b6c051d23ce49c0a51e0ff20e1bbb333bfeaa1",
+    "sha1": "cf5d3f4ac124c1b17d96f488768c2b8bb8f7f119",
+    "md5": "1a37aa77ae2e3457c9defb97febd980f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "jpeg",
+    "image": {
+      "disponible": true,
+      "dimensions": "586x689",
+      "donnees_ajoutees_apres_fin": false,
+      "taille_donnees_ajoutees_octets": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.505,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.5
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.002309226989746094,
+      "entropie_globale": 0.938125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0413,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\HGwqlWOnLHoU4KKunDuYZn1rWl2b2l1i2CELDGUPsLC4jDbxkQNsOpCr3cPajt7Rt-jhN9kPyzWqJzfHJ67FFVvUE6_DnYLQzpyt3ru5iA9JpFEI98uIZuCoEZ5NCTJVG_n-EqNovx8aQFx4fmd7VfSehKZCDbRhdPXRWa2_IR0.jfif",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

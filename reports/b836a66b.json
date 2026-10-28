@@ -1,0 +1,469 @@
+{
+  "id_rapport": "b836a66b",
+  "origine": "auto_watch",
+  "duree_analyse_s": 114.075,
+  "metadonnees": {
+    "nom": "Exemple_universite_1slide.pptx",
+    "extension": "pptx",
+    "taille_octets": 97166,
+    "taille_lisible": "94.9 Ko",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Exemple_universite_1slide.pptx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-08T09:17:19",
+    "date_modification": "2026-10-08T09:17:20",
+    "date_acces": "2026-10-18T00:49:48",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://claude.ai/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".pptx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "c82c3f259cc231edfb999d22394b934ae1d06b6b4d7b1e0cb12061e0f0b089dc",
+    "sha1": "bb76ecf76202fb9d4c3bbdff49b4b8534e6ad320",
+    "md5": "28d4b57e5016780735243d5967335964",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.35,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      5.29,
+      5.42
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "schemas.openxmlformats.org",
+      "purl.org",
+      "www.w3.org",
+      "schemas.microsoft.com"
+    ],
+    "urls": [
+      "http://schemas.openxmlformats.org/package/2006/content-types",
+      "http://schemas.openxmlformats.org/package/2006/relationships",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+      "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+      "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+      "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+      "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+      "http://purl.org/dc/elements/1.1/",
+      "http://purl.org/dc/terms/",
+      "http://purl.org/dc/dcmitype/",
+      "http://www.w3.org/2001/XMLSchema-instance",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesMaster",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/presProps",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/viewProps",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tableStyles",
+      "http://schemas.openxmlformats.org/drawingml/2006/main",
+      "http://schemas.microsoft.com/office/thememl/2012/main",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+      "http://schemas.openxmlformats.org/presentationml/2006/main",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesSlide",
+      "http://schemas.microsoft.com/office/powerpoint/2010/main"
+    ],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 56
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "schemas.openxmlformats.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "purl.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "schemas.microsoft.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://schemas.openxmlformats.org/package/2006/content-types": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 4,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.openxmlformats.org/package/2006/relationships": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 4,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "purl.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://schemas.openxmlformats.org/package/2006/content-types",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://schemas.openxmlformats.org/package/2006/relationships",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.009266471862792969,
+      "entropie_globale": 0.66875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 26,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1119,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\presentation.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\presProps.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\tableStyles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\viewProps.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\notesMasters\\notesMaster1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\notesMasters\\_rels\\notesMaster1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\notesSlides\\notesSlide1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\notesSlides\\_rels\\notesSlide1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\slideLayouts\\slideLayout1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\slideLayouts\\_rels\\slideLayout1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\slideMasters\\slideMaster1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\slideMasters\\_rels\\slideMaster1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\slides\\slide1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\slides\\_rels\\slide1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\ppt\\_rels\\presentation.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_g_9adorl\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "6ae65d25",
+      "nom": "[Content_Types].xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "dc6773bd",
+      "nom": "app.xml",
+      "score": 25
+    },
+    {
+      "id_rapport": "651c595c",
+      "nom": "core.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "fc996037",
+      "nom": "presentation.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "2551354f",
+      "nom": "presProps.xml",
+      "score": 93
+    },
+    {
+      "id_rapport": "14120c45",
+      "nom": "tableStyles.xml",
+      "score": 84
+    },
+    {
+      "id_rapport": "6217d532",
+      "nom": "viewProps.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "51274e60",
+      "nom": "notesMaster1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "c4805afe",
+      "nom": "notesMaster1.xml.rels",
+      "score": 25
+    },
+    {
+      "id_rapport": "db090770",
+      "nom": "notesSlide1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "0948e391",
+      "nom": "notesSlide1.xml.rels",
+      "score": 33
+    },
+    {
+      "id_rapport": "ed9995ee",
+      "nom": "slideLayout1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "b503b118",
+      "nom": "slideLayout1.xml.rels",
+      "score": 84
+    },
+    {
+      "id_rapport": "2916ff40",
+      "nom": "slideMaster1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "53639f5f",
+      "nom": "slideMaster1.xml.rels",
+      "score": 33
+    },
+    {
+      "id_rapport": "784c3702",
+      "nom": "slide1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "2a10d0f0",
+      "nom": "slide1.xml.rels",
+      "score": 33
+    },
+    {
+      "id_rapport": "a70f3db2",
+      "nom": "theme1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "341aab5d",
+      "nom": "presentation.xml.rels",
+      "score": 42
+    },
+    {
+      "id_rapport": "22e00561",
+      "nom": ".rels",
+      "score": 33
+    }
+  ],
+  "score_final": {
+    "score": 93,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['purl.org'], URLs: ['http://schemas.openxmlformats.org/package/2006/content-types', 'http://schemas.openxmlformats.org/package/2006/relationships', 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument'], hashs embarques: aucun.",
+      "Score releve par le contenu extrait de l'archive : presProps.xml (score 93, rapport 2551354f)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1792281102,
+    "fichier_original": "Exemple_universite_1slide.pptx",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1792281102_Exemple_universite_1slide.pptx.quarantine",
+    "raison": "Volume important d'indicateurs suspects (URLs, IP, commandes).; Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['purl.org'], URLs: ['http://schemas.openxmlformats.org/package/2006/content-types', 'http://schemas.openxmlformats.org/package/2006/relationships', 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument'], hashs embarques: aucun.; Score releve par le contenu extrait de l'archive : presProps.xml (score 93, rapport 2551354f).",
+    "action": "block",
+    "libelle": "Bloquer"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "6cd89a07d9"
+  }
+}

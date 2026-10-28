@@ -1,0 +1,341 @@
+{
+  "id_rapport": "6299b18f",
+  "origine": "auto_watch",
+  "duree_analyse_s": 13.507,
+  "metadonnees": {
+    "nom": "TP2.IOT.docx",
+    "extension": "docx",
+    "taille_octets": 1407728,
+    "taille_lisible": "1.3 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TP2.IOT.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2025-11-05T22:03:51",
+    "date_modification": "2025-11-06T00:29:14",
+    "date_acces": "2026-10-28T12:58:38",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.ilovepdf.com/\nHostUrl=https://api94o.ilovepdf.com/v1/download/r0g36b948wywnrh6kxy7gr9cxlwk4tkmr3yc4fh3ydrxr7q3nkkj5f6msqA81f1tkfs3ps7Aw8tbn9qtrfgt69q3st3ncg30f7tjvf7jlv2rAgk0xz5ygs9trrnvA0wzbwk4rlAk373drr7Adsmsy5yqm7ylyxAmwd6x2qx04chx53pqs2lq\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "53e2e043f7b9358cc36ea4c5e2bee127b118b76e0a4e36e6b76b7c0ec28a7415",
+    "sha1": "2a4e16940a71b821bd4e079ba1fe9e60291fde43",
+    "md5": "b31fc45ef48f46ecd8c2d3db9acfeda9",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.891,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.83,
+      7.75,
+      7.77,
+      7.92,
+      7.97,
+      7.73,
+      7.72,
+      7.73,
+      7.73,
+      7.75,
+      7.75,
+      7.71,
+      7.72,
+      7.72,
+      7.72,
+      7.93,
+      7.93,
+      7.94,
+      7.96,
+      7.96,
+      7.97,
+      7.84
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "Z:\\{v\u0000+a5+yN7\u0017\u0000ScJKۏ",
+      "Y:\\N\u001d\u0017U~g\u001b}٩\u0014;ye",
+      "U:\\KIU\u0000",
+      "T:\\+\u001f"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/53e2e043f7b9358cc36ea4c5e2bee127b118b76e0a4e36e6b76b7c0ec28a7415/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.13425140380859374,
+      "entropie_globale": 0.986375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0723,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\webSettings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image1.jpeg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image10.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image11.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image2.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image3.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image4.jpeg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image5.jpeg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image6.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image7.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image8.jpeg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\media\\image9.jpeg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ay9h6l7l\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "2cb358a1",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "c1a8e035",
+      "nom": "app.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "68f397f5",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "97848978",
+      "nom": "custom.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "390f8702",
+      "nom": "document.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "3dc718a2",
+      "nom": "endnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "01cc03da",
+      "nom": "fontTable.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "d3825217",
+      "nom": "footnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "2e39cb15",
+      "nom": "numbering.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "3fe95234",
+      "nom": "settings.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "f3dcda5b",
+      "nom": "styles.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "edaa1052",
+      "nom": "webSettings.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "da3dfb02",
+      "nom": "image1.jpeg",
+      "score": 1
+    },
+    {
+      "id_rapport": "f6e6fd60",
+      "nom": "image10.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "5e742ab1",
+      "nom": "image11.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "a1d29ef8",
+      "nom": "image2.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "2ca0e142",
+      "nom": "image3.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "a458bb2e",
+      "nom": "image4.jpeg",
+      "score": 1
+    },
+    {
+      "id_rapport": "3f41b2e4",
+      "nom": "image5.jpeg",
+      "score": 1
+    },
+    {
+      "id_rapport": "19b5c27d",
+      "nom": "image6.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "86a7fea2",
+      "nom": "image7.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "73fe9b8f",
+      "nom": "image8.jpeg",
+      "score": 1
+    },
+    {
+      "id_rapport": "ced16a38",
+      "nom": "image9.jpeg",
+      "score": 1
+    },
+    {
+      "id_rapport": "fa9eb10d",
+      "nom": "theme1.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "b0bf6b8f",
+      "nom": "document.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "97dce400",
+      "nom": ".rels",
+      "score": 19
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport 2cb358a1).",
+      "Score releve par le contenu extrait de l'archive : app.xml (score 10, rapport c1a8e035).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport 68f397f5).",
+      "Score releve par le contenu extrait de l'archive : document.xml (score 27, rapport 390f8702)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\TP2.IOT.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

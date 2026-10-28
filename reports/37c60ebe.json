@@ -1,0 +1,326 @@
+{
+  "id_rapport": "37c60ebe",
+  "origine": "auto_watch",
+  "duree_analyse_s": 29.526,
+  "metadonnees": {
+    "nom": "python-3.13.12-amd64.exe",
+    "extension": "exe",
+    "taille_octets": 29096776,
+    "taille_lisible": "27.7 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\python-3.13.12-amd64.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-02-11T12:36:18",
+    "date_modification": "2026-02-11T12:45:26",
+    "date_acces": "2026-10-28T12:55:27",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "96159fcb523ae404b707186a75b4104ee23851e476a5e838e14584cf1e03f981",
+    "sha1": "4c1e0830de7e5a87f40278c817553bdf55776f7d",
+    "md5": "7588c11aecd9b64fc6213525c4a13c85",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": false,
+      "raison": "module pefile non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.44,
+      6.41,
+      6.5,
+      6.66,
+      6.61,
+      4.58,
+      5.85,
+      5.8,
+      7.59,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.96,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 2,
+      "exemple": "ABCDEFGHIJKLMNOPQRSTUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "1.0.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [
+      "www.microsoft.com",
+      "oneocsp.microsoft.com"
+    ],
+    "urls": [
+      "http://oneocsp.microsoft.com/ocsp0f\u0006\u0003U\u001d",
+      "http://oneocsp.microsoft.com/ocsp0",
+      "http://www.microsoft.com/pkiops/crl/Microsoft%20Public%20RSA%20Timestamping%20CA%202020.crl0y\u0006\b+\u0006\u0001\u0005\u0005\u0007\u0001\u0001\u0004m0k0i\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002]http://www.microsoft.com/pkiops/certs/Microsoft%20Public%20RSA%20Timestamping%20CA%202020.crt0"
+    ],
+    "emails": [
+      "YS@t.lYi"
+    ],
+    "chemins_windows": [
+      "c:\\agent\\_work\\36\\s\\wix\\src\\libs\\dutil\\apputil.cpp\u0000\u0000c",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\libs\\dutil\\strutil.cpp\u0000\u0000\u0000\u0000\u0000\u0000!\u0000%\u0000'\u0000(\u0000)\u0000",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\libs\\dutil\\fileutil.cpp\u0000%\u0000u\u0000.\u0000%\u0000u\u0000.\u0000%\u0000u\u0000.\u0000%\u0000u\u0000\u0000\u0000 \u0000\u0000\u0000c",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\libs\\dutil\\memutil.cpp\u0000\u0000A\u0000d\u0000v\u0000A\u0000p\u0000i\u00003\u00002\u0000.\u0000d\u0000l\u0000l\u0000\u0000\u0000\u0000\u0000RegDeleteKeyExW\u0000c",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\engine.cpp\u0000\u0000Failed to get OS info.\u0000\u00003.14.1.8722\u0000Failed to initialize core.\u0000\u0000Failed to run untrusted mode.\u0000\u0000\u0000Failed to run per-user mode.\u0000\u0000\u0000\u0000Failed to run per-machine mode.\u0000Failed to run embedded mode.\u0000\u0000\u0000\u0000Failed to run RunOnce mode.\u0000Invalid run mode.\u0000\u0000\u0000Missing required parameter for switch",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\variable.cpp\u0000\u0000\u0000\u0000Attempt to set built-in variable value",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\condition.cpp\u0000\u0000\u0000Failed to find variable.\u0000\u0000\u0000\u0000Failed to parse condition '%ls' at position",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\search.cpp\u0000\u0000Failed to allocate memory for search structs.\u0000\u0000\u0000Failed to get @Variable.\u0000\u0000\u0000\u0000Failed to get @Condition.\u0000\u0000\u0000D\u0000i\u0000r\u0000e\u0000c\u0000t\u0000o\u0000r\u0000y\u0000S\u0000e\u0000a\u0000r\u0000c\u0000h\u0000\u0000\u0000P\u0000a\u0000t\u0000h\u0000\u0000\u0000\u0000\u0000Failed to get @Path.\u0000\u0000\u0000\u0000e\u0000x\u0000i\u0000s\u0000t\u0000s\u0000\u0000\u0000\u0000\u0000p\u0000a\u0000t\u0000h\u0000\u0000\u0000\u0000\u0000F\u0000i\u0000l\u0000e\u0000S\u0000e\u0000a\u0000r\u0000c\u0000h\u0000\u0000\u0000\u0000\u0000R\u0000e\u0000g\u0000i\u0000s\u0000t\u0000r\u0000y\u0000S\u0000e\u0000a\u0000r\u0000c\u0000h\u0000\u0000\u0000\u0000\u0000R\u0000o\u0000o\u0000t\u0000\u0000\u0000\u0000\u0000Failed to get @Root.\u0000\u0000\u0000\u0000H\u0000K\u0000C\u0000R\u0000\u0000\u0000\u0000\u0000H\u0000K\u0000C\u0000U\u0000\u0000\u0000\u0000\u0000H\u0000K\u0000L\u0000M\u0000\u0000\u0000\u0000\u0000H\u0000K\u0000U\u0000\u0000\u0000Invalid value for @Root",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\section.cpp\u0000Failed to open handle to engine process path.\u0000\u0000\u0000Failed to seek to start of file.\u0000\u0000\u0000\u0000Failed to read DOS header.\u0000\u0000Failed to find valid DOS image header in buffer.\u0000\u0000\u0000\u0000Failed to seek to NT header.\u0000\u0000\u0000\u0000Failed to read NT header.\u0000\u0000\u0000Failed to find valid NT image header in buffer.\u0000Failed to seek to section info.\u0000Failed to read signature offset.\u0000\u0000\u0000\u0000Failed to read signature size.\u0000\u0000Failed to seek past optional headers.\u0000\u0000\u0000Failed to read image section header, index",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\approvedexe.cpp\u0000Failed to allocate memory for approved exe structs.\u0000Failed to get @Key.\u0000V\u0000a\u0000l\u0000u\u0000e\u0000N\u0000a\u0000m\u0000e\u0000\u0000\u0000Failed to get @ValueName.\u0000\u0000\u0000Failed to get @Win64.\u0000\u0000\u0000Failed to format argument string.\u0000\u0000\u0000",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\container.cpp\u0000\u0000\u0000Failed to allocate memory for container structs.\u0000\u0000\u0000\u0000P\u0000r\u0000i\u0000m\u0000a\u0000r\u0000y\u0000\u0000\u0000Failed to get @Primary.\u0000A\u0000t\u0000t\u0000a\u0000c\u0000h\u0000e\u0000d\u0000\u0000\u0000\u0000\u0000Failed to get @Attached.\u0000\u0000\u0000\u0000A\u0000t\u0000t\u0000a\u0000c\u0000h\u0000e\u0000d\u0000I\u0000n\u0000d\u0000e\u0000x\u0000\u0000\u0000Failed to get @AttachedIndex.\u0000\u0000\u0000Failed to get path to current process for attached container.\u0000\u0000\u0000Failed to set attached container file path.\u0000F\u0000i\u0000l\u0000e\u0000P\u0000a\u0000t\u0000h\u0000\u0000\u0000\u0000\u0000Failed to get @FilePath.\u0000\u0000\u0000\u0000Failed to copy @FilePath\u0000\u0000\u0000\u0000D\u0000o\u0000w\u0000n\u0000l\u0000o\u0000a\u0000d\u0000U\u0000r\u0000l\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get @DownloadUrl. Either @SourcePath or @DownloadUrl needs to be provided.\u0000\u0000\u0000\u0000H\u0000a\u0000s\u0000h\u0000\u0000\u0000\u0000\u0000Failed to hex decode the Container",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\catalog.cpp\u0000Failed to allocate memory for payload structs.\u0000\u0000P\u0000a\u0000y\u0000l\u0000o\u0000a\u0000d\u0000\u0000\u0000Failed to get @Payload.\u0000Failed to find payload for catalog file.\u0000\u0000\u0000\u0000Failed to get catalog local file path\u0000\u0000\u0000Failed to open catalog in working path",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\payload.cpp\u0000P\u0000a\u0000c\u0000k\u0000a\u0000g\u0000i\u0000n\u0000g\u0000\u0000\u0000Failed to get @Packaging.\u0000\u0000\u0000d\u0000o\u0000w\u0000n\u0000l\u0000o\u0000a\u0000d\u0000\u0000\u0000\u0000\u0000e\u0000m\u0000b\u0000e\u0000d\u0000d\u0000e\u0000d\u0000\u0000\u0000\u0000\u0000e\u0000x\u0000t\u0000e\u0000r\u0000n\u0000a\u0000l\u0000\u0000\u0000\u0000\u0000Invalid value for @Packaging",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\userexperience.cpp\u0000\u0000Failed to load UX DLL.\u0000\u0000BootstrapperApplicationCreate\u0000\u0000\u0000Failed to get BootstrapperApplicationCreate entry-point\u0000Failed to create UX.\u0000\u0000\u0000\u0000BootstrapperApplicationDestroy\u0000\u0000Failed to create working folder.\u0000\u0000\u0000\u0000.\u0000b\u0000a\u0000\u0000\u0000%\u0000l\u0000s\u0000%\u0000l\u0000s\u0000\\\u0000\u0000\u0000Failed to calculate the bootstrapper application working path.\u0000\u0000Failed create bootstrapper application working folder.\u0000\u0000\u0000\u0000\u0000\u0000Engine active cannot be changed because it was already in that state.\u0000\u0000\u0000Engine is active, cannot proceed.\u0000\u0000\u0000R\u0000o\u0000l\u0000l\u0000b\u0000a\u0000c\u0000k\u0000B\u0000o\u0000u\u0000n\u0000d\u0000a\u0000r\u0000y\u0000\u0000\u0000\u0000\u0000Failed to select rollback boundary nodes.\u0000\u0000\u0000Failed to get rollback bundary node count.\u0000\u0000c",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\registration.cpp\u0000\u0000\u0000\u0000Invalid modify disabled type",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\plan.cpp\u0000\u0000\u0000\u0000UX aborted plan package begin.\u0000\u0000Failed to process package rollback boundary.\u0000\u0000\u0000\u0000Failed to plan layout package.\u0000\u0000Failed to plan execute package.\u0000Failed to plan cache package.\u0000\u0000\u0000Failed to plan dependency actions for package",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\logging.cpp\u0000Failed to open Application event log\u0000\u0000\u0000\u0000_\u0000r\u0000o\u0000l\u0000l\u0000b\u0000a\u0000c\u0000k\u0000\u0000\u0000_\u0000\u0000\u0000%\u0000l\u0000s\u0000%\u0000h\u0000s\u0000%\u0000l\u0000s\u0000_\u0000%\u00000\u00003\u0000u\u0000_\u0000%\u0000l\u0000s\u0000%\u0000l\u0000s\u0000.\u0000%\u0000l\u0000s\u0000\u0000\u0000Failed to allocate path for package log.\u0000\u0000\u0000\u0000Failed to set log path into variable.\u0000\u0000\u0000Failed to copy package log path.\u0000\u0000\u0000\u0000Unknown\u0000Help\u0000\u0000\u0000\u0000Layout\u0000\u0000Cache\u0000\u0000\u0000Uninstall\u0000\u0000\u0000Install\u0000Modify\u0000\u0000Repair\u0000\u0000UpdateReplace\u0000\u0000\u0000UpdateReplaceEmbedded\u0000\u0000\u0000Invalid\u0000None\u0000\u0000\u0000\u0000AdminInstall\u0000\u0000\u0000\u0000MinorUpgrade\u0000\u0000\u0000\u0000MajorUpgrade\u0000\u0000\u0000\u0000Patch\u0000\u0000\u0000Register\u0000\u0000\u0000\u0000Unregister\u0000\u0000Yes\u0000No\u0000\u0000true\u0000\u0000\u0000\u0000false\u0000\u0000\u0000Obsolete\u0000\u0000\u0000\u0000Absent\u0000\u0000Cached\u0000\u0000Present\u0000Superseded\u0000\u0000Partial\u0000Complete\u0000\u0000\u0000\u0000Advertised\u0000\u0000Local\u0000\u0000\u0000Source\u0000\u0000AddLocal\u0000\u0000\u0000\u0000AddSource\u0000\u0000\u0000AddDefault\u0000\u0000Reinstall\u0000\u0000\u0000Advertise\u0000\u0000\u0000Remove\u0000\u0000All\u0000AllUserManaged\u0000\u0000Machine\u0000UserManaged\u0000UserUnmanaged\u0000\u0000\u0000PerMachine\u0000\u0000PerUser\u0000Required\u0000\u0000\u0000\u0000Initiated\u0000\u0000\u0000Active\u0000\u0000Suspend\u0000ARP\u0000Reboot Pending\u0000\u0000Detect\u0000\u0000Upgrade\u0000Addon\u0000\u0000\u0000Dependent\u0000\u0000\u0000Update\u0000\u0000Downgrade\u0000\u0000\u0000MinorUpdate\u0000ForceAbsent\u0000U\u0000n\u0000k\u0000n\u0000o\u0000w\u0000n\u0000\u0000\u0000%I64u.%I64u.%I64u.%I64u\u0000\u0000\u0000\u0000\u0000S\u0000O\u0000F\u0000T\u0000W\u0000A\u0000R\u0000E\u0000\\\u0000P\u0000o\u0000l\u0000i\u0000c\u0000i\u0000e\u0000s\u0000\\\u0000M\u0000i\u0000c\u0000r\u0000o\u0000s\u0000o\u0000f\u0000t\u0000\\\u0000W\u0000i\u0000n\u0000d\u0000o\u0000w\u0000s\u0000\\\u0000I\u0000n\u0000s\u0000t\u0000a\u0000l\u0000l\u0000e\u0000r\u0000\u0000\u0000L\u0000o\u0000g\u0000g\u0000i\u0000n\u0000g\u0000\u0000\u0000Failed to get temp folder.\u0000\u0000Failed to get length of temp folder.\u0000\u0000\u0000\u0000%\u0000u\u0000\\\u0000\u0000\u0000Failed to format session id as a string.\u0000\u0000\u0000\u0000Failed to get length of session id string.\u0000\u0000Failed to copy temp folder.\u0000b\u0000u\u0000r\u0000n\u0000.\u0000e\u0000l\u0000e\u0000v\u0000a\u0000t\u0000e\u0000d\u0000\u0000\u0000\\\u0000\\\u0000.\u0000\\\u0000p\u0000i\u0000p\u0000e\u0000\\\u0000%\u0000l\u0000s\u0000\u0000\u0000\u0000\u0000\\\u0000\\\u0000.\u0000\\\u0000p\u0000i\u0000p\u0000e\u0000\\\u0000%\u0000l\u0000s\u0000.\u0000C\u0000a\u0000c\u0000h\u0000e\u0000\u0000\u0000\u0000\u0000Failed to write send message to pipe.\u0000\u0000\u0000Failed to pump messages during send message to pipe.\u0000\u0000\u0000\u0000Failed to read log message.\u0000Failed to write log message",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\pipe.cpp\u0000\u0000\u0000\u0000No status returned to PipePumpMessages()\u0000\u0000\u0000\u0000Failed to read returned result to PipePumpMessages()\u0000\u0000\u0000\u0000Failed to read returned restart to PipePumpMessages()\u0000\u0000\u0000Failed to process message",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\core.cpp\u0000\u0000\u0000\u0000UX aborted detect begin.\u0000\u0000\u0000\u0000Failed to execute searches.\u0000Failed to detect related bundles.\u0000\u0000\u0000Failed to detect forward compatible bundle.\u0000Failed to detect provider key bundle id.\u0000\u0000\u0000\u0000Failed to report detected related bundles.\u0000\u0000Failed to detect update.\u0000\u0000\u0000\u0000Failed to initialize MSP engine detection.\u0000\u0000UX aborted detect package begin.\u0000\u0000\u0000\u0000Failed to detect if payloads are all cached for package",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\cache.cpp\u0000\u0000\u0000Failed to create the security descriptor for the working folder.\u0000\u0000\u0000\u0000Failed create working folder.\u0000\u0000\u0000Failed to copy working folder.\u0000\u0000Failed to get working folder for bundle.\u0000\u0000\u0000\u0000%\u0000l\u0000s\u0000%\u0000l\u0000s\u0000\\\u0000%\u0000l\u0000s\u0000\u0000\u0000\u0000\u0000Failed to calculate the bundle working path.\u0000\u0000\u0000\u0000Failed to get working folder for bundle layout.\u0000Failed to append bundle id for bundle layout working path.\u0000\u0000Failed to get working folder for payload.\u0000\u0000\u0000Failed to append SHA1 hash as payload unverified path.\u0000\u0000Failed to get working folder for container.\u0000Failed to append SHA1 hash as container unverified path.\u0000\u0000\u0000\u0000per-machine\u0000per-user\u0000\u0000\u0000\u0000Failed to get %hs package cache root directory.\u0000Failed to construct cache path.\u0000Failed to ensure cache path was backslash terminated.\u0000\u0000\u0000Failed to get old %hs package cache root directory.\u0000%\u0000l\u0000s\u0000.\u0000R\u0000\u0000\u0000Failed to get current process directory.\u0000\u0000\u0000\u0000Failed to combine last source with source.\u0000\u0000Failed to combine layout source with source.\u0000\u0000\u0000\u0000Failed to copy source path.\u0000Failed to determine length of source path.\u0000\u0000Failed to determine length of relative path.\u0000\u0000\u0000\u0000Failed to trim source folder.\u0000\u0000\u0000Failed to set last source.\u0000\u0000UX aborted on download progress.\u0000\u0000\u0000\u0000Invalid return code from progress routine.\u0000\u0000Failed to get current path for process to cache to clean room.\u0000\u0000Failed to cache bundle to clean room.\u0000\u0000\u0000Failed to use current process path as target path.\u0000\u0000Failed to copy engine to working folder.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to combine completed path with engine file name for layout.\u0000\u0000Layout bundle from",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\elevation.cpp\u0000\u0000\u0000UX aborted elevation requirement.\u0000\u0000\u0000Failed to create pipe name and client token.\u0000\u0000\u0000\u0000Failed to create pipe and cache pipe.\u0000\u0000\u0000Failed to connect to elevated child process.\u0000\u0000\u0000\u0000Failed to write action to message buffer.\u0000\u0000\u0000Failed to write update action to message buffer.\u0000\u0000\u0000\u0000Failed to write system restore point action to message buffer.\u0000\u0000Failed to write variables.\u0000\u0000Failed to send message to per-machine process.\u0000\u0000Failed to write engine working path to message buffer.\u0000\u0000Failed to write resume command line to message buffer.\u0000\u0000Failed to write resume flag.\u0000\u0000\u0000\u0000Failed to write registration operations to message buffer.\u0000\u0000\u0000\u0000\u0000\u0000Failed to write dependency registration action to message buffer.\u0000\u0000\u0000Failed to write estimated size to message buffer.\u0000\u0000\u0000Failed to write resume mode to message buffer.\u0000\u0000Failed to write restart enum to message buffer.\u0000Failed to write layout directory to message buffer.\u0000Failed to write payload unverified path to message buffer.\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_LAYOUT_BUNDLE message to per-machine process.\u0000\u0000\u0000\u0000Failed to write container id to message buffer.\u0000Failed to write package id to message buffer.\u0000\u0000\u0000Failed to write payload id to message buffer.\u0000\u0000\u0000Failed to write unverified path to message buffer.\u0000\u0000Failed to write move flag to message buffer.\u0000\u0000\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_CACHE_OR_LAYOUT_CONTAINER_OR_PAYLOAD message to per-machine process.\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_CACHE_CLEANUP message to per-machine process.\u0000\u0000\u0000\u0000Failed to write action type to message buffer.\u0000\u0000Failed to write bundle id to message buffer.\u0000\u0000\u0000\u0000Failed to write dependent provider key to message buffer.\u0000\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_PROCESS_DEPENDENT_REGISTRATION message to per-machine process.\u0000\u0000\u0000Failed to write rollback.\u0000\u0000\u0000Failed to write the list of dependencies to ignore to the message buffer.\u0000\u0000\u0000Failed to write the list of ancestors to the message buffer.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_EXECUTE_EXE_PACKAGE message to per-machine process.\u0000\u0000Failed to write parent hwnd to message buffer.\u0000\u0000Failed to write package log to message buffer.\u0000\u0000Failed to write UI level to message buffer.\u0000Failed to write feature action to message buffer.\u0000\u0000\u0000Failed to write slipstream patch action to message buffer.\u0000\u0000Failed to write rollback flag to message buffer.\u0000\u0000\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_EXECUTE_MSI_PACKAGE message to per-machine process.\u0000\u0000Failed to write target product code to message buffer.\u0000\u0000Failed to write count of ordered patches to message buffer.\u0000Failed to write ordered patch order to message buffer.\u0000\u0000Failed to write ordered patch id to message buffer.\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_EXECUTE_MSP_PACKAGE message to per-machine process.\u0000\u0000Failed to write StopWusaService.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_EXECUTE_MSU_PACKAGE message to per-machine process.\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_EXECUTE_PACKAGE_PROVIDER message to per-machine process.\u0000Failed to write bundle dependency key to message buffer.\u0000\u0000\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_EXECUTE_PACKAGE_DEPENDENCY message to per-machine process.\u0000\u0000\u0000Failed to write installed ProductCode to message buffer.\u0000\u0000\u0000\u0000Failed to write installed version to message buffer.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_LOAD_COMPATIBLE_PACKAGE message to per-machine process.\u0000\u0000Failed to write clean package id to message buffer.\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_CLEAN_PACKAGE message to per-machine process.\u0000\u0000\u0000\u0000Failed to write approved exe id to message buffer.\u0000\u0000Failed to write approved exe arguments to message buffer.\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to write approved exe WaitForInputIdle timeout to message buffer.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to send BURN_ELEVATION_MESSAGE_TYPE_LAUNCH_APPROVED_EXE message to per-machine process.\u0000\u0000Failed to create elevated cache thread.\u0000Failed to pump messages in child process.\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to resume automatic updates after pausing them, continuing...\u0000\u0000\u0000\u0000Failed to set elevated cache pipe into thread local storage for logging.\u0000\u0000\u0000\u0000Failed to allowed results.\u0000\u0000Failed to progress.\u0000Failed to read error code.\u0000\u0000Failed to read message.\u0000Failed to read file count.\u0000\u0000Failed to allocate buffer for files in use.\u0000Failed to read file name",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\splashscreen.cpp\u0000\u0000\u0000\u0000Failed to create modal event.\u0000\u0000\u0000Failed to create UI thread.\u0000Failed to allocate string to display error message\u0000\u0000Failed to load splash screen.\u0000\u0000\u0000W\u0000i\u0000x\u0000B\u0000u\u0000r\u0000n\u0000S\u0000p\u0000l\u0000a\u0000s\u0000h\u0000S\u0000c\u0000r\u0000e\u0000e\u0000n\u0000\u0000\u0000Failed to register window.\u0000\u0000Failed to create window.\u0000\u0000\u0000\u0000Failed to load splash screen bitmap.\u0000\u0000\u0000\u0000c",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\engineforapplication.cpp\u0000\u0000\u0000\u0000Invalid argument ppvObject\u0000\u0000%ls\u0000Failed to log UX message.\u0000\u0000\u0000Application requested to send embedded message when not in embedded mode.\u0000\u0000\u0000Failed to write message string to message buffer.\u0000\u0000\u0000Failed to write UI hint to message buffer.\u0000\u0000Failed to send embedded message over pipe.\u0000\u0000Application requested to send embedded progress message when not in embedded mode.\u0000\u0000Failed to write overall progress percentage to message buffer.\u0000\u0000Failed to send embedded progress message over pipe.\u0000u\u0000p\u0000d\u0000a\u0000t\u0000e\u0000\\\u0000%\u0000l\u0000s\u0000\u0000\u0000\u0000\u0000Failed to default local update source\u0000\u0000\u0000Failed to recreate command-line for update bundle.\u0000\u0000Failed to create bundle update guid.\u0000\u0000\u0000\u0000Failed to convert bundle update guid into string.\u0000\u0000\u0000Failed to set update bundle.\u0000\u0000\u0000\u0000Engine is active, cannot change engine state.\u0000\u0000\u0000UX requested unknown payload with id",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\cabextract.cpp\u0000\u0000Failed to create begin operation event.\u0000Failed to create operation complete event.\u0000\u0000Failed to create extraction thread.\u0000Failed to wait for operation complete.\u0000\u0000Failed to begin and wait for operation.\u0000Failed to set begin operation event.\u0000\u0000\u0000\u0000Failed to wait for thread to terminate.\u0000Failed to reset operation complete event.\u0000\u0000\u0000Failed to get extraction thread exit code.\u0000\u0000Failed to wait for operation complete event.\u0000\u0000\u0000\u0000Failed to initialize cabinet.dll.\u0000\u0000\u0000Failed to extract all files from container, erf",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\exeengine.cpp\u0000\u0000\u0000Invalid package current state",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\msiengine.cpp\u0000\u0000\u0000Failed to allocate memory for MSI feature structs.\u0000\u0000A\u0000d\u0000d\u0000L\u0000o\u0000c\u0000a\u0000l\u0000C\u0000o\u0000n\u0000d\u0000i\u0000t\u0000i\u0000o\u0000n\u0000\u0000\u0000Failed to get @AddLocalCondition.\u0000\u0000\u0000A\u0000d\u0000d\u0000S\u0000o\u0000u\u0000r\u0000c\u0000e\u0000C\u0000o\u0000n\u0000d\u0000i\u0000t\u0000i\u0000o\u0000n\u0000\u0000\u0000\u0000\u0000Failed to get @AddSourceCondition.\u0000\u0000A\u0000d\u0000v\u0000e\u0000r\u0000t\u0000i\u0000s\u0000e\u0000C\u0000o\u0000n\u0000d\u0000i\u0000t\u0000i\u0000o\u0000n\u0000\u0000\u0000\u0000\u0000Failed to get @AdvertiseCondition.\u0000\u0000R\u0000o\u0000l\u0000l\u0000b\u0000a\u0000c\u0000k\u0000A\u0000d\u0000d\u0000L\u0000o\u0000c\u0000a\u0000l\u0000C\u0000o\u0000n\u0000d\u0000i\u0000t\u0000i\u0000o\u0000n\u0000\u0000\u0000Failed to get @RollbackAddLocalCondition.\u0000\u0000\u0000R\u0000o\u0000l\u0000l\u0000b\u0000a\u0000c\u0000k\u0000A\u0000d\u0000d\u0000S\u0000o\u0000u\u0000r\u0000c\u0000e\u0000C\u0000o\u0000n\u0000d\u0000i\u0000t\u0000i\u0000o\u0000n\u0000\u0000\u0000\u0000\u0000Failed to get @RollbackAddSourceCondition.\u0000\u0000R\u0000o\u0000l\u0000l\u0000b\u0000a\u0000c\u0000k\u0000A\u0000d\u0000v\u0000e\u0000r\u0000t\u0000i\u0000s\u0000e\u0000C\u0000o\u0000n\u0000d\u0000i\u0000t\u0000i\u0000o\u0000n\u0000\u0000\u0000\u0000\u0000Failed to get @RollbackAdvertiseCondition.\u0000\u0000Failed to parse properties from XML.\u0000\u0000\u0000\u0000R\u0000e\u0000l\u0000a\u0000t\u0000e\u0000d\u0000P\u0000a\u0000c\u0000k\u0000a\u0000g\u0000e\u0000\u0000\u0000\u0000\u0000Failed to select related MSI nodes.\u0000Failed to get related MSI node count.\u0000\u0000\u0000Failed to allocate memory for related MSI structs.\u0000\u0000Failed to parse related MSI element.\u0000\u0000\u0000\u0000S\u0000l\u0000i\u0000p\u0000s\u0000t\u0000r\u0000e\u0000a\u0000m\u0000M\u0000s\u0000p\u0000\u0000\u0000Failed to allocate memory for slipstream MSP packages.\u0000\u0000Failed to allocate memory for slipstream MSP ids.\u0000\u0000\u0000Failed to get next slipstream MSP node.\u0000Failed to parse slipstream MSP ids.\u0000M\u0000s\u0000i\u0000P\u0000r\u0000o\u0000p\u0000e\u0000r\u0000t\u0000y\u0000\u0000\u0000Failed to select property nodes.\u0000\u0000\u0000\u0000Failed to get property node count.\u0000\u0000Failed to allocate memory for MSI property structs.\u0000R\u0000o\u0000l\u0000l\u0000b\u0000a\u0000c\u0000k\u0000V\u0000a\u0000l\u0000u\u0000e\u0000\u0000\u0000Failed to get @RollbackValue.\u0000\u0000\u0000Failed to convert version",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\mspengine.cpp\u0000\u0000\u0000UX aborted detect target MSI package.\u0000\u0000\u0000UX aborted plan target MSI package.\u0000Failed to plan target product.\u0000\u0000Failed to plan rollack target product.\u0000\u0000Failed to append patch.\u0000Failed to add properties to obfuscated argument string.\u0000Failed to add PATCH property on install.\u0000\u0000\u0000\u0000Failed to add patches to PATCH property on install.\u0000",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\msuengine.cpp\u0000\u0000\u0000Invalid package state.\u0000\u0000Failed to determine WOW64 status.\u0000\u0000\u0000Failed to find Windows directory.\u0000\u0000\u0000S\u0000y\u0000s\u0000N\u0000a\u0000t\u0000i\u0000v\u0000e\u0000\\\u0000\u0000\u0000\u0000\u0000Failed to append SysNative directory.\u0000\u0000\u0000Failed to find System32 directory.\u0000\u0000w\u0000u\u0000s\u0000a\u0000.\u0000e\u0000x\u0000e\u0000\u0000\u0000\u0000\u0000Failed to allocate WUSA.exe path.\u0000\u0000\u0000Failed to build MSU path.\u0000\u0000\u0000",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\dependency.cpp\u0000\u0000Failed to allocate memory for dependency providers.\u0000Failed to get the next dependency provider node.\u0000\u0000\u0000\u0000Failed to get the Key attribute.\u0000\u0000\u0000\u0000Failed to get the Version attribute.\u0000\u0000\u0000\u0000Failed to get the DisplayName attribute.\u0000\u0000\u0000\u0000I\u0000m\u0000p\u0000o\u0000r\u0000t\u0000e\u0000d\u0000\u0000\u0000\u0000\u0000Failed to get the Imported attribute.\u0000\u0000\u0000Failed to get the package provider information.\u0000Failed to get the package default provider information.\u0000Failed to get provider key bundle id.\u0000\u0000\u0000Failed to initialize provider key bundle id.\u0000\u0000\u0000\u0000Failed to add the bundle provider key to the list of dependencies to ignore.\u0000\u0000\u0000\u0000Failed to split the list of dependencies to ignore.\u0000Failed to join the list of dependencies to ignore.\u0000\u0000Failed to check the dictionary of unique dependencies.\u0000\u0000Failed to add ",
+      "c:\\agent\\_work\\36\\s\\wix\\src\\burn\\engine\\relatedbundle.cpp\u0000\u0000\u0000Failed to allocate list for a single upgrade code from older bundle.\u0000\u0000\u0000\u0000upgrade codes\u0000\u0000\u0000Failed to create string dictionary for %hs.\u0000Failed to do array search for upgrade code match.\u0000\u0000\u0000Failed to do array search for detect code match.\u0000\u0000\u0000\u0000Failed to do array search for addon code match.\u0000addon codes\u0000patch codes\u0000Failed to do array search for patch code match.\u0000detect codes\u0000\u0000\u0000\u0000Failed to read version from registry for bundle"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "certutil",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 29096776,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 13
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=1.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "6.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=6.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "www.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "oneocsp.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/oneocsp.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "http://oneocsp.microsoft.com/ocsp0f\u0006\u0003U\u001d": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Foneocsp.microsoft.com%2Focsp0f%06%03U%1D/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://oneocsp.microsoft.com/ocsp0": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Foneocsp.microsoft.com%2Focsp0/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://www.microsoft.com/pkiops/crl/Microsoft%20Public%20RSA%20Timestamping%20CA%202020.crl0y\u0006\b+\u0006\u0001\u0005\u0005\u0007\u0001\u0001\u0004m0k0i\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002]http://www.microsoft.com/pkiops/certs/Microsoft%20Public%20RSA%20Timestamping%20CA%202020.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fwww.microsoft.com%2Fpkiops%2Fcrl%2FMicrosoft%2520Public%2520RSA%2520Timestamping%2520CA%25202020.crl0y%06%08%2B%06%01%05%05%07%01%01%04m0k0i%06%08%2B%06%01%05%05%070%02%5Dhttp%3A%2F%2Fwww.microsoft.com%2Fpkiops%2Fcerts%2FMicrosoft%2520Public%2520RSA%2520Timestamping%2520CA%25202020.crt0/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/96159fcb523ae404b707186a75b4104ee23851e476a5e838e14584cf1e03f981/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 3,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.1648,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 30,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\python-3.13.12-amd64.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

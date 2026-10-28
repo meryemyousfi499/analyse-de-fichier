@@ -1,0 +1,222 @@
+{
+  "id_rapport": "e54c62f2",
+  "origine": "auto_watch",
+  "duree_analyse_s": 14.867,
+  "metadonnees": {
+    "nom": "TP2 Partie 3 (1).pdf",
+    "extension": "pdf",
+    "taille_octets": 289390,
+    "taille_lisible": "282.6 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TP2 Partie 3 (1).pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-15T19:53:53",
+    "date_modification": "2026-10-15T19:53:54",
+    "date_acces": "2026-10-28T09:23:20",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://doc-10-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/lnfnsjjb1r8rifu4r60bv797f5oe1kp4/1792094025000/drive/14365239555874006747/ACFrOgDgCQ6d2fhrGYA5Xq1Mmx_BURClWXaL5S85duDzQB6s8lFcT2uMaOgCyQHi6mj0P_x7MaOyIzBc7Hb83VHiJnpap31-XJFCMomPhL6kuIPOviCw9wlK-N7SC3tYXx7HE7d6BnuFyktXN654ArdBgxeXHiraabW5QGZhZz_dClr1Xuwg6pZIFj5_He2ekiByAVS3hp89KsMl_1p0ngikkdyQq7pUJRGNI60RxQ==?authuser=3&print=true&nonce=fgk50sassejg2&user=14365239555874006747&hash=b0740ap05k3t53e06e6oi0vmq2bvcfdr\nHostUrl=https://doc-10-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/lnfnsjjb1r8rifu4r60bv797f5oe1kp4/1792094025000/drive/14365239555874006747/ACFrOgDgCQ6d2fhrGYA5Xq1Mmx_BURClWXaL5S85duDzQB6s8lFcT2uMaOgCyQHi6mj0P_x7MaOyIzBc7Hb83VHiJnpap31-XJFCMomPhL6kuIPOviCw9wlK-N7SC3tYXx7HE7d6BnuFyktXN654ArdBgxeXHiraabW5QGZhZz_dClr1Xuwg6pZIFj5_He2ekiByAVS3hp89KsMl_1p0ngikkdyQq7pUJRGNI60RxQ==?authuser=3&print=true&nonce=fgk50sassejg2&user=14365239555874006747&hash=b0740ap05k3t53e06e6oi0vmq2bvcfdr\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "b04a070b3fa966f1425dbc3182307d6671cce6ae79ed2760dfa31bb3af318af3",
+    "sha1": "505f1690a21a02856643f40e503ef6e92ab92c27",
+    "md5": "94669552b014ac3606be1cd923ec8086",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.31,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.72,
+      5.61,
+      7.31,
+      8.0,
+      4.97
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "154.0.0.0"
+    ],
+    "domaines": [
+      "fr.wikipedia.org"
+    ],
+    "urls": [
+      "https://fr.wikipedia.org/wiki/Extract-transform-load)",
+      "https://www.drought.gov/data-maps-tools/global-historical-climatology-network-ghcn)"
+    ],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "CAFC6752365778F61AEDF9B559E1D94F"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 6
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "154.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 14,
+          "pays": "ZA",
+          "nombre_signalements": 15,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "fr.wikipedia.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://fr.wikipedia.org/wiki/Extract-transform-load)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.drought.gov/data-maps-tools/global-historical-climatology-network-ghcn)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.02759838104248047,
+      "entropie_globale": 0.91375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 2,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0734,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 28,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\TP2 Partie 3 (1).pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

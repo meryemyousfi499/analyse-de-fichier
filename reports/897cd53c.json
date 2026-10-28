@@ -1,0 +1,565 @@
+{
+  "id_rapport": "897cd53c",
+  "origine": "auto_watch",
+  "duree_analyse_s": 501.6,
+  "metadonnees": {
+    "nom": "Compte_rendu_TP_Securite_Blockchain_sans_sauts_de_page.docx",
+    "extension": "docx",
+    "taille_octets": 1251854,
+    "taille_lisible": "1.2 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Compte_rendu_TP_Securite_Blockchain_sans_sauts_de_page.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-20T12:09:23",
+    "date_modification": "2026-10-20T12:13:00",
+    "date_acces": "2026-10-28T05:11:13",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://claude.ai/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "6d0c8fc475a5c06c4bd075f5b30122facb631e7eb97efc8a234a9548b7dcfe14",
+    "sha1": "48db5da1836511493c817e3ff55973407486ad4c",
+    "md5": "81079efda1585376865d4df54031744e",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.973,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.94,
+      7.98,
+      7.98,
+      7.96,
+      7.95,
+      7.97,
+      7.96,
+      7.96,
+      7.98,
+      7.96,
+      7.98,
+      7.97,
+      7.96,
+      7.97,
+      7.96,
+      7.96,
+      7.97,
+      7.97,
+      7.91,
+      6.04
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "o:\\o\u001c",
+      "q:\\6\u001fB"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.11938610076904296,
+      "entropie_globale": 0.996625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0726,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\customXml\\item1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\customXml\\itemProps1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\customXml\\_rels\\item1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\footer1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\webSettings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image10.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image11.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image12.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image13.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image14.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image15.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image16.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image17.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image18.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image19.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image2.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image20.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image21.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image22.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image23.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image24.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image25.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image26.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image27.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image28.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image29.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image3.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image30.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image31.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image32.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image33.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image34.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image35.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image36.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image37.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image38.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image39.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image4.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image40.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image41.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image42.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image43.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image44.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image45.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image5.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image6.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image7.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image8.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\media\\image9.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_sin9krv7\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "bb5b2481",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "6a28d784",
+      "nom": "item1.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "7279e357",
+      "nom": "itemProps1.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "a778c3d4",
+      "nom": "item1.xml.rels",
+      "score": 85
+    },
+    {
+      "id_rapport": "3b47b9e1",
+      "nom": "app.xml",
+      "score": 25
+    },
+    {
+      "id_rapport": "16e3ee1e",
+      "nom": "core.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "8800f349",
+      "nom": "document.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "88c7e373",
+      "nom": "endnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "f6b6d622",
+      "nom": "fontTable.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "727531cb",
+      "nom": "footer1.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "19313872",
+      "nom": "footnotes.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "20bbf685",
+      "nom": "numbering.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "3f7574e6",
+      "nom": "settings.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "7979a5ea",
+      "nom": "styles.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "c7f82f29",
+      "nom": "webSettings.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "94304f29",
+      "nom": "image1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "93b34788",
+      "nom": "image10.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "ceb2053f",
+      "nom": "image11.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "eb91b97b",
+      "nom": "image12.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "89f2173e",
+      "nom": "image13.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "8185a596",
+      "nom": "image14.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "6f083995",
+      "nom": "image15.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "54533abc",
+      "nom": "image16.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "164cc0af",
+      "nom": "image17.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "21ccd444",
+      "nom": "image18.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "edeb12ae",
+      "nom": "image19.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "eb92f700",
+      "nom": "image2.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "c4b5a057",
+      "nom": "image20.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "2bd67be8",
+      "nom": "image21.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "99ed78cf",
+      "nom": "image22.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "37a4d791",
+      "nom": "image23.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "dab83336",
+      "nom": "image24.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "2b27fde1",
+      "nom": "image25.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "1d538c43",
+      "nom": "image26.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "65fb1922",
+      "nom": "image27.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "8214d96e",
+      "nom": "image28.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "707f6935",
+      "nom": "image29.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "521eccc0",
+      "nom": "image3.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "89b2dfae",
+      "nom": "image30.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "33f31953",
+      "nom": "image31.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "e2bd1b8c",
+      "nom": "image32.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "155cc730",
+      "nom": "image33.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "f788e84d",
+      "nom": "image34.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "f3139bac",
+      "nom": "image35.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "bc94933b",
+      "nom": "image36.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "f7e5ce06",
+      "nom": "image37.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "16fe7794",
+      "nom": "image38.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "fcbf50d1",
+      "nom": "image39.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "cb325784",
+      "nom": "image4.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "be3211d5",
+      "nom": "image40.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "fce635b7",
+      "nom": "image41.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "13899b9a",
+      "nom": "image42.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "063941dc",
+      "nom": "image43.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "2725bce5",
+      "nom": "image44.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "76d69609",
+      "nom": "image45.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "1317440e",
+      "nom": "image5.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "a792c883",
+      "nom": "image6.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "04aeb216",
+      "nom": "image7.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "49fc86c5",
+      "nom": "image8.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "217ded8f",
+      "nom": "image9.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "cc1100e9",
+      "nom": "theme1.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "f2a5a5f1",
+      "nom": "document.xml.rels",
+      "score": 42
+    },
+    {
+      "id_rapport": "f16899a0",
+      "nom": ".rels",
+      "score": 93
+    }
+  ],
+  "score_final": {
+    "score": 93,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport bb5b2481).",
+      "Score releve par le contenu extrait de l'archive : item1.xml (score 24, rapport 6a28d784).",
+      "Score releve par le contenu extrait de l'archive : item1.xml.rels (score 85, rapport a778c3d4).",
+      "Score releve par le contenu extrait de l'archive : .rels (score 93, rapport f16899a0)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1793161174,
+    "fichier_original": "Compte_rendu_TP_Securite_Blockchain_sans_sauts_de_page.docx",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1793161174_Compte_rendu_TP_Securite_Blockchain_sans_sauts_de_page.docx.quarantine",
+    "raison": "Aucun signal notable detecte : fichier conforme aux attentes.; Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport bb5b2481).; Score releve par le contenu extrait de l'archive : item1.xml (score 24, rapport 6a28d784).; Score releve par le contenu extrait de l'archive : item1.xml.rels (score 85, rapport a778c3d4).; Score releve par le contenu extrait de l'archive : .rels (score 93, rapport f16899a0).",
+    "action": "block",
+    "libelle": "Bloquer"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "e3ba340e85"
+  }
+}

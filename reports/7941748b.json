@@ -1,0 +1,165 @@
+{
+  "id_rapport": "7941748b",
+  "origine": "auto_watch",
+  "duree_analyse_s": 1.764,
+  "metadonnees": {
+    "nom": "ra_dr.pdf",
+    "extension": "pdf",
+    "taille_octets": 691025,
+    "taille_lisible": "674.8 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\ra_dr.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-03-29T03:37:43",
+    "date_modification": "2026-03-29T03:37:44",
+    "date_acces": "2026-10-28T12:49:19",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.overleaf.com/project/69c3f5579c562f5459c27d8b\nHostUrl=https://www.overleaf.com/download/project/69c3f5579c562f5459c27d8b/build/19d37791454-b5d21401215bbd89/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-c3d-c-f-8l2z&enable_pdf_caching=true&popupDownload=true&editorId=b0aac185-f9ae-40d3-b9aa-072cbb549b97\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "68d28e5ea76b895541264a52ef5c257606b098779843e8b0c69eda589a5c4545",
+    "sha1": "c68b2a1042c3f301c10a55f832007db47e5705cf",
+    "md5": "155618cf60b1dc8874e9de4276e91bed",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.913,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.94,
+      7.9,
+      7.89,
+      7.75,
+      7.78,
+      7.66,
+      7.78,
+      7.88,
+      7.78,
+      7.93,
+      7.89
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "p:\\",
+      "e:\\9t{",
+      "B:\\c\u000b\u0004\u0016\u0000\u0000h",
+      "O:\\{zҪ8\u0012\u001dsg{\u0012ă[\u0014G;+\u001dc\u001e3i7._\u001ebݎ\u0018\u0013NC]ȓR\u0012]cE3Q\f\u001f\u0018$oM׊N\u001f[\u001eL)ruOxp\b9i\u0011H~on\u0003\u00173gv\u0001!W~+͊A_"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "bad83dc5a3fadeae2b03b3d9c733b05b",
+        "3bec0a6d6cd4b580c454895afa358dfa"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/68d28e5ea76b895541264a52ef5c257606b098779843e8b0c69eda589a5c4545/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.06590127944946289,
+      "entropie_globale": 0.989125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0442,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 11,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\ra_dr.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

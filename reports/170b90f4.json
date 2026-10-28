@@ -1,0 +1,270 @@
+{
+  "id_rapport": "170b90f4",
+  "origine": "auto_watch",
+  "duree_analyse_s": 111.561,
+  "metadonnees": {
+    "nom": "TP21_explique.docx",
+    "extension": "docx",
+    "taille_octets": 232897,
+    "taille_lisible": "227.4 Ko",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TP21_explique.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-02T08:48:11",
+    "date_modification": "2026-10-02T08:48:13",
+    "date_acces": "2026-10-18T02:32:21",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://claude.ai/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "1c1ca7267392abe7a517c1e02915376b80858dfd6822c99fbecdbdd91342b4e5",
+    "sha1": "503fb27da2e8741633ba7e9d01fdd7328d101aa8",
+    "md5": "ad58f84297319636b77051a56f1fc573",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.996,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      8.0,
+      7.99,
+      7.96
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "H:\\h\u00046i)ŮRs^ԩ",
+      "q:\\ێ;5y"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.02221078872680664,
+      "entropie_globale": 0.9995,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0442,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\webSettings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\media\\image1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\media\\image2.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\media\\image3.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\media\\image4.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\media\\image5.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\media\\image6.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f257b_a6\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "dc12ca05",
+      "nom": "[Content_Types].xml",
+      "score": 84
+    },
+    {
+      "id_rapport": "5fe092e1",
+      "nom": "app.xml",
+      "score": 25
+    },
+    {
+      "id_rapport": "3947d076",
+      "nom": "core.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "b0b4d645",
+      "nom": "document.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "934f719b",
+      "nom": "fontTable.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "c8af3f45",
+      "nom": "settings.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "f8d96767",
+      "nom": "styles.xml",
+      "score": 42
+    },
+    {
+      "id_rapport": "2ad1d7c2",
+      "nom": "webSettings.xml",
+      "score": 100
+    },
+    {
+      "id_rapport": "5833c179",
+      "nom": "image1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "90d3d40f",
+      "nom": "image2.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "eb4c428a",
+      "nom": "image3.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "0b1549f8",
+      "nom": "image4.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "65e77942",
+      "nom": "image5.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "662898df",
+      "nom": "image6.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "8a051e5c",
+      "nom": "theme1.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "a5f0e1e9",
+      "nom": "document.xml.rels",
+      "score": 42
+    },
+    {
+      "id_rapport": "27e8361f",
+      "nom": ".rels",
+      "score": 93
+    }
+  ],
+  "score_final": {
+    "score": 100,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 84, rapport dc12ca05).",
+      "Score releve par le contenu extrait de l'archive : webSettings.xml (score 100, rapport 2ad1d7c2)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1792287252,
+    "fichier_original": "TP21_explique.docx",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1792287252_TP21_explique.docx.quarantine",
+    "raison": "Aucun signal notable detecte : fichier conforme aux attentes.; Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 84, rapport dc12ca05).; Score releve par le contenu extrait de l'archive : webSettings.xml (score 100, rapport 2ad1d7c2).",
+    "action": "block",
+    "libelle": "Bloquer"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "c08236ec12"
+  }
+}

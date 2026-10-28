@@ -1,0 +1,173 @@
+{
+  "id_rapport": "570e6e23",
+  "origine": "auto_watch",
+  "duree_analyse_s": 2.294,
+  "metadonnees": {
+    "nom": "éthique et droit.pdf",
+    "extension": "pdf",
+    "taille_octets": 690877,
+    "taille_lisible": "674.7 Ko",
+    "mime_reel": "cannot open `C:\\Users\\HYPER\\Downloads\\\\303\\251thique et droit.pdf' (No such file or directory)",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\éthique et droit.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-04-02T18:03:47",
+    "date_modification": "2026-04-02T18:03:49",
+    "date_acces": "2026-10-18T06:58:02",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.overleaf.com/project/69c3f5579c562f5459c27d8b\nHostUrl=https://www.overleaf.com/download/project/69c3f5579c562f5459c27d8b/build/19d4f2b2025-0a455052bab428d4/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-c3d-c-f-ckz2&enable_pdf_caching=true&popupDownload=true&editorId=eb1e3cc6-48da-4d35-b64b-f9ee24e65847\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "6387df9bce0be8d0963aafe9c078bd5d682ed6585612ebf5849e7a4c202e28c3",
+    "sha1": "59f8967188875b2d77f3d71cefb2498624554f3f",
+    "md5": "de331daddff2ce7f9bc9b9356e109195",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 15
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.913,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.94,
+      7.9,
+      7.89,
+      7.75,
+      7.78,
+      7.66,
+      7.78,
+      7.88,
+      7.78,
+      7.93,
+      7.88
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "p:\\",
+      "e:\\9t{",
+      "B:\\c\u000b\u0004\u0016\u0000\u0000h",
+      "O:\\{zҪ8\u0012\u001dsg{\u0012ă[\u0014G;+\u001dc\u001e3i7._\u001ebݎ\u0018\u0013NC]ȓR\u0012]cE3Q\f\u001f\u0018$oM׊N\u001f[\u001eL)ruOxp\b9i\u0011H~on\u0003\u00173gv\u0001!W~+͊A_"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "5f79da89d1591a3e78f26d642ee9578f",
+        "11e13a3fc04b902fd1e1bcab757271c3"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "erreur de scan: could not open file \"C:\\Users\\HYPER\\Downloads\\éthique et droit.pdf\"",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.06588716506958008,
+      "entropie_globale": 0.989125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0442,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 11,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\éthique et droit.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

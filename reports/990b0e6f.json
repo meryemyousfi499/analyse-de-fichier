@@ -1,0 +1,191 @@
+{
+  "id_rapport": "990b0e6f",
+  "origine": "auto_watch",
+  "duree_analyse_s": 11105.724,
+  "metadonnees": {
+    "nom": "pagecounts.zip",
+    "extension": "zip",
+    "taille_octets": 587491,
+    "taille_lisible": "573.7 Ko",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\pagecounts.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-30T18:02:51",
+    "date_modification": "2026-09-30T18:02:52",
+    "date_acces": "2026-10-18T02:47:59",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://drive.google.com/\nHostUrl=https://drive.usercontent.google.com/download?id=1YnkwgZOgHAGyT1p_uoLw6FHxsZRS0Y2n&export=download&authuser=0\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "7958479eb15446edd52e31471ca821661ee90f257e0cebcf67ae827e7e207f72",
+    "sha1": "ee9fbea16f9920cd18c8dd7ab06bdc81d53f5d0a",
+    "md5": "f4fb26cf09922bc99ab11c2eb4f3065b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.999,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "g:\\0\t_\u0000",
+      "J:\\~Pc8w ULH=Q",
+      "C:\\\t"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.05602750778198242,
+      "entropie_globale": 0.999875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0446,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tkh8xch8\\pagecounts\\pagecounts-with-time-0.zip",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tkh8xch8\\pagecounts\\pagecounts-with-time-1.zip",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_tkh8xch8\\pagecounts\\pagecounts-with-time-2.zip"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "86bdeb26",
+      "nom": "pagecounts-with-time-0.zip",
+      "score": 1
+    },
+    {
+      "id_rapport": "e204a745",
+      "nom": "pagecounts-with-time-1.zip",
+      "score": 1
+    },
+    {
+      "id_rapport": "038ca9a4",
+      "nom": "pagecounts-with-time-2.zip",
+      "score": 60
+    }
+  ],
+  "score_final": {
+    "score": 60,
+    "niveau": "eleve",
+    "action_recommandee": "quarantine",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : pagecounts-with-time-2.zip (score 60, rapport 038ca9a4)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1792299185,
+    "fichier_original": "pagecounts.zip",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1792299185_pagecounts.zip.quarantine",
+    "raison": "Aucun signal notable detecte : fichier conforme aux attentes.; Score releve par le contenu extrait de l'archive : pagecounts-with-time-2.zip (score 60, rapport 038ca9a4).",
+    "action": "quarantine",
+    "libelle": "Mettre en quarantaine"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "129564df61"
+  }
+}

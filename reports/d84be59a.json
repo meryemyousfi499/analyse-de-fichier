@@ -1,0 +1,250 @@
+{
+  "id_rapport": "d84be59a",
+  "origine": "auto_watch",
+  "duree_analyse_s": 7.006,
+  "metadonnees": {
+    "nom": "TP3 Partie 1.pdf",
+    "extension": "pdf",
+    "taille_octets": 807628,
+    "taille_lisible": "788.7 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TP3 Partie 1.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-16T15:44:15",
+    "date_modification": "2026-10-16T15:44:15",
+    "date_acces": "2026-10-17T23:45:49",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://doc-10-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/0tbmef3t0bkagnqpcghgghcvjonvfu19/1792165200000/drive/14365239555874006747/ACFrOgDaY5otq2JYs0LXxjrOK69W7DiDYSYaUa3SFXBN8E4fNYxg14G4fkH8ZDx-tM5yFsQ5IwPQKB26KkOg1wKT4LjofzhEkvYu7pqUUChEFRRHOxAFZXsPWCNEIBT0eAQTYRwVH8CsbKMui6JYs8n49_HKzyv3LqFRnvq6SwIUWjXss_Dat957FOJC5m_s5T0k1mwRPmVMxQRO1zrgwJOa3M6MWb5HpaEjm_q1ig==?authuser=0&print=true&nonce=78o6k7h08ncgm&user=14365239555874006747&hash=i1p3ck7udm0pjts5h17mt8bf65gjm3fd\nHostUrl=https://doc-10-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/0tbmef3t0bkagnqpcghgghcvjonvfu19/1792165200000/drive/14365239555874006747/ACFrOgDaY5otq2JYs0LXxjrOK69W7DiDYSYaUa3SFXBN8E4fNYxg14G4fkH8ZDx-tM5yFsQ5IwPQKB26KkOg1wKT4LjofzhEkvYu7pqUUChEFRRHOxAFZXsPWCNEIBT0eAQTYRwVH8CsbKMui6JYs8n49_HKzyv3LqFRnvq6SwIUWjXss_Dat957FOJC5m_s5T0k1mwRPmVMxQRO1zrgwJOa3M6MWb5HpaEjm_q1ig==?authuser=0&print=true&nonce=78o6k7h08ncgm&user=14365239555874006747&hash=i1p3ck7udm0pjts5h17mt8bf65gjm3fd\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "5d29b41d27c0b018523b7bca799daf0c8509b82d85f4c9cc6d3db48e77ebfd47",
+    "sha1": "553fcbe327ed9f0b0483d183ce340f8f85964474",
+    "md5": "12faff6609b6f42b88b92000b00053e4",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": true,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 6
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.967,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.92,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.23,
+      7.91,
+      6.61
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "155.0.0.0"
+    ],
+    "domaines": [
+      "neo4j.com"
+    ],
+    "urls": [
+      "https://neo4j.com/download/)",
+      "https://neo4j.com/product/aura-db/)"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "m:\\XOc`\u0011\u0003ځ\u0003\u0001SX=\u0018MamWrlP"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "F8B7300D7F7513423BD362E05F014B14"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "iex(",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 9
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "155.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 5,
+          "pays": "ZM",
+          "nombre_signalements": 3,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "neo4j.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 3,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://neo4j.com/download/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://neo4j.com/product/aura-db/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "neo4j.com",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.07702140808105469,
+      "entropie_globale": 0.995875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 1,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 2,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1655,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 63,
+    "niveau": "eleve",
+    "action_recommandee": "quarantine",
+    "explications": [
+      "PDF contenant du JavaScript embarque et/ou une action /Launch.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Plusieurs indicateurs suspects detectes dans le contenu.",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['neo4j.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1792277155,
+    "fichier_original": "TP3 Partie 1.pdf",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1792277155_TP3 Partie 1.pdf.quarantine",
+    "raison": "PDF contenant du JavaScript embarque et/ou une action /Launch.; Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.; Plusieurs indicateurs suspects detectes dans le contenu.; Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['neo4j.com'], URLs: aucune, hashs embarques: aucun.",
+    "action": "quarantine",
+    "libelle": "Mettre en quarantaine"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "f577757ce4"
+  }
+}

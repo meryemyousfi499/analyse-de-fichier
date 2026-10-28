@@ -1,0 +1,309 @@
+{
+  "id_rapport": "a30bbe17",
+  "origine": "auto_watch",
+  "duree_analyse_s": 20.495,
+  "metadonnees": {
+    "nom": "ChatGPT Image 24 sept. 2026, 15_57_29 (1).png",
+    "extension": "png",
+    "taille_octets": 1644117,
+    "taille_lisible": "1.6 Mo",
+    "mime_reel": "image/png",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\ChatGPT Image 24 sept. 2026, 15_57_29 (1).png",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-24T15:57:30",
+    "date_modification": "2026-09-24T15:57:38",
+    "date_acces": "2026-10-18T05:54:59",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://chatgpt.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "png",
+    "extension_declaree": ".png",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "6ed2c760d99ced86a69b6faf110eab2dd4c7b307e7f76e5582194ab708925e02",
+    "sha1": "57c54f26e1a6128aa6bd32dc1f641ef46921d911",
+    "md5": "5d08c251b62c1ca8c7e8faee51b62162",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "png",
+    "image": {
+      "disponible": true,
+      "dimensions": "1312x1199",
+      "donnees_ajoutees_apres_fin": false,
+      "taille_donnees_ajoutees_octets": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.986,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.4,
+      7.99,
+      7.98,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.94
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.w3.org",
+      "cv.iptc.org",
+      "SSL.com",
+      "crt-c2pa.ssl.com"
+    ],
+    "urls": [
+      "http://www.w3.org/2000/svg",
+      "http://crt-c2pa.ssl.com/SSL.com-C2PA-I-R1.cer0$\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u0018http://ocsp-c2pa.ssl.com0\u0017\u0006\u0003U\u001d",
+      "http://ocsp-c2pa.ssl.com0B\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00026http://crt-c2pa.ssl.com/SSL.com-C2PA-Root-2025-RSA.cer0"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "c:\\6\u0000\u0015󥯸 ꃓZ",
+      "E:\\-\u000e;",
+      "a:\\JϦ\u001bk+ѱ",
+      "b:\\\u0007\u0011@"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 4
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 13
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "cv.iptc.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "SSL.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crt-c2pa.ssl.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.w3.org/2000/svg": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://crt-c2pa.ssl.com/SSL.com-C2PA-I-R1.cer0$\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u0018http://ocsp-c2pa.ssl.com0\u0017\u0006\u0003U\u001d": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ocsp-c2pa.ssl.com0B\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00026http://crt-c2pa.ssl.com/SSL.com-C2PA-Root-2025-RSA.cer0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp-c2pa.ssl.com0B%06%08%2B%06%01%05%05%070%026http%3A%2F%2Fcrt-c2pa.ssl.com%2FSSL.com-C2PA-Root-2025-RSA.cer0/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "SSL.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://www.w3.org/2000/svg",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.15679521560668946,
+      "entropie_globale": 0.99825,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 3,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.128,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 34,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu.",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['SSL.com'], URLs: ['http://www.w3.org/2000/svg'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\ChatGPT Image 24 sept. 2026, 15_57_29 (1).png",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "id_rapport": "90f7e816",
+  "origine": "auto_watch",
+  "duree_analyse_s": 42.916,
+  "metadonnees": {
+    "nom": "futureinternet-18-00345.pdf",
+    "extension": "pdf",
+    "taille_octets": 3390940,
+    "taille_lisible": "3.2 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\futureinternet-18-00345.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-26T09:33:50",
+    "date_modification": "2026-10-26T09:33:56",
+    "date_acces": "2026-10-28T17:25:47",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.mdpi.com/1999-5903/18/7/345\nHostUrl=https://www.mdpi.com/api/articles/single/download-from-url?url=https%3A%2F%2Fmdpi-res.com%2Ffutureinternet%2Ffutureinternet-18-00345%2Farticle_deploy%2Ffutureinternet-18-00345.pdf%3Fversion%3D1782802769&fileName=futureinternet-18-00345.pdf\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "7fad5d93356b0210d6a6d1b966b933fd556127c76c8ecf9fe2b15dbfd319c17c",
+    "sha1": "a7b3d6c57c1852de3e263237a88c1fb664df7bc9",
+    "md5": "58aca08f5da3136d285b9d6bc9b176b1",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.946,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.87,
+      7.68,
+      7.83,
+      7.81,
+      7.83,
+      7.75,
+      7.82,
+      7.82,
+      7.82,
+      7.81,
+      7.85,
+      7.78,
+      7.73,
+      7.94,
+      7.93,
+      7.91,
+      7.93,
+      7.88,
+      7.65,
+      7.9,
+      7.55,
+      7.88,
+      7.91,
+      7.96,
+      7.98,
+      7.97,
+      7.95,
+      7.93,
+      7.98,
+      7.98,
+      7.98,
+      7.99,
+      7.98,
+      7.98,
+      7.99,
+      7.98,
+      7.98,
+      7.99,
+      7.97,
+      7.97,
+      7.96,
+      7.97,
+      7.97,
+      7.99,
+      7.75,
+      7.37,
+      7.67,
+      7.62,
+      7.68,
+      7.73,
+      7.99,
+      7.24
+    ],
+    "base64": {
+      "nombre_blobs_base64": 4,
+      "exemple": "37/percent/ampersand/quoteright/parenleft/parenright/asteris..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "crossmark.crossref.org",
+      "creativecommons.org",
+      "www.mdpi.com",
+      "orcid.org",
+      "doi.org"
+    ],
+    "urls": [
+      "https://crossmark.crossref.org/dialog?doi=10.3390/fi18070345&domain=pdf&date_stamp=2026-06-30)",
+      "https://creativecommons.org/licenses/by/4.0/)",
+      "https://www.mdpi.com/journal/futureinternet)",
+      "https://www.mdpi.com)",
+      "https://orcid.org/0000-0002-7388-4340)",
+      "https://orcid.org/0000-0002-5643-0021)",
+      "https://doi.org/10.3390/fi18070345)",
+      "https://research.unsw.edu.au/projects/toniot-datasets)",
+      "https://research.unsw.edu.au/projects/unsw-nb15-dataset)",
+      "https://doi.org/10.1109/JIOT.2026.3656738)",
+      "https://doi.org/10.1016/j.adhoc.2023.103120)",
+      "https://doi.org/10.1016/j.asej.2024.102777)",
+      "https://doi.org/10.1007/s00521-020-04772-3)",
+      "https://doi.org/10.1016/j.phycom.2025.102777)",
+      "https://doi.org/10.1007/s12083-025-02124-3)",
+      "https://doi.org/10.48084/etasr.7657)",
+      "https://doi.org/10.1016/j.procs.2023.09.026)",
+      "https://doi.org/10.3390/app15126421)",
+      "https://doi.org/10.1007/s12559-024-10313-0)",
+      "https://doi.org/10.1038/s41598-025-33242-w)",
+      "https://www.ncbi.nlm.nih.gov/pubmed/41491357)",
+      "https://doi.org/10.1016/j.procs.2025.09.526)",
+      "https://doi.org/10.1109/EEET64351.2024.00011)",
+      "https://doi.org/10.1109/access.2025.3528214)",
+      "https://doi.org/10.1038/s41598-025-32183-8)",
+      "https://www.ncbi.nlm.nih.gov/pubmed/41554793)",
+      "https://doi.org/10.1007/s11042-024-19695-7)",
+      "https://doi.org/10.1109/CSNT64827.2025.10968274)",
+      "https://doi.org/10.3390/s23187856)",
+      "https://www.ncbi.nlm.nih.gov/pubmed/37765912)",
+      "https://doi.org/10.1016/j.scs.2021.102994)",
+      "https://doi.org/10.1016/j.advengsoft.2013.12.007)",
+      "https://doi.org/10.1613/jair.953)",
+      "https://doi.org/10.5755/j01.itc.53.1.34933)",
+      "https://doi.org/10.1016/j.compeleceng.2022.107810)",
+      "https://doi.org/10.1016/j.jfranklin.2024.107440)",
+      "https://doi.org/10.18517/ijaseit.15.3.13022)",
+      "https://doi.org/10.58496/MJCS/2024/004)",
+      "https://doi.org/10.1109/JSEN.2009.2038120)",
+      "https://doi.org/10.3390/s25154845)",
+      "https://www.ncbi.nlm.nih.gov/pubmed/40808008)",
+      "https://doi.org/10.71129/ijaci.v2i1.pp21-33)",
+      "https://doi.org/10.52866/ijcsm.2023.04.04.009)",
+      "https://doi.org/10.11591/ijeecs.v8.i1.pp27-35)"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "c:\\4f",
+      "m:\\\u001f^02",
+      "o:\\\u0017\u0007y",
+      "O:\\$",
+      "B:\\!\u001d)\u0017OB",
+      "q:\\",
+      "z:\\\b\u0010@",
+      "M:\\)QQip;{",
+      "o:\\[^r{x(\u001e",
+      "x:\\\u0014(V\u000fGz6z@V\u001eɇ5\u0019˥\u0017gKOEOFJ\u000b_n\u000b4=\u000b٣O"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "3c4d98ea999cd749e74741463d6d41ce",
+        "c9bb3f6d9d4de9be58d26c46fb4ecadd"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 93
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "crossmark.crossref.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "creativecommons.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.mdpi.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "orcid.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "doi.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://crossmark.crossref.org/dialog?doi=10.3390/fi18070345&domain=pdf&date_stamp=2026-06-30)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://creativecommons.org/licenses/by/4.0/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.mdpi.com/journal/futureinternet)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.mdpi.com)": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fwww.mdpi.com%29/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://orcid.org/0000-0002-7388-4340)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "creativecommons.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "orcid.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "doi.org",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.32338523864746094,
+      "entropie_globale": 0.99325,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 44,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1626,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 53,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['creativecommons.org', 'orcid.org', 'doi.org'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\futureinternet-18-00345.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

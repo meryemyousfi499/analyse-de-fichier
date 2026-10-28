@@ -1,0 +1,351 @@
+{
+  "id_rapport": "d36da80f",
+  "origine": "auto_watch",
+  "duree_analyse_s": 76.538,
+  "metadonnees": {
+    "nom": "texstudio-4.9.8-win-qt6-signed.exe",
+    "extension": "exe",
+    "taille_octets": 153249568,
+    "taille_lisible": "146.2 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\texstudio-4.9.8-win-qt6-signed.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-10-11T01:44:47",
+    "date_modification": "2026-10-11T01:49:00",
+    "date_acces": "2026-10-28T09:50:21",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "243d64e65bbefff706c92b58fb1a56b6e024fbb1fb11dffc623e59c18b0ab397",
+    "sha1": "75b32a410bb16b2723ea06b44135c30529aad156",
+    "md5": "9eed8e7806027b9c230f42d749de6358",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": false,
+      "raison": "module pefile non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.999,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.75,
+      5.81,
+      6.74,
+      7.96,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.98,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.94,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "1.0.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [
+      "schemas.microsoft.com",
+      "C.ru",
+      "AU0.cn"
+    ],
+    "urls": [
+      "http://schemas.microsoft.com/SMI/2005/WindowsSettings"
+    ],
+    "emails": [
+      "Z@Y.Go"
+    ],
+    "chemins_windows": [
+      "n:\\{\u0018ox_C",
+      "K:\\[Z\u0014",
+      "F:\\\u0007\u001d&`Q5y,&\td~nQ;\u0004Ԙ`L0X~\u0012",
+      "E:\\M",
+      "q:\\#)NHӖ\u001aIqZ]#)NHӿj$\u001aIqU#)NHS5p8H\u001aIq\u001aP#)N5ԭFR",
+      "o:\\\u00122y)\u001ex5۪\u0001c\b!",
+      "r:\\-]",
+      "h:\\\u000bqh3A\u000bFQFDXs\u0017",
+      "H:\\V8WJVtf\u00053ӆ&8}",
+      "y:\\8}BE\\CSXÛL\u001a^",
+      "K:\\ȿ\u0019%\u001co",
+      "u:\\\u0010",
+      "M:\\mUE@\t2X7",
+      "u:\\(-g`']_W",
+      "l:\\\u0011ܙ8ɒ\u001c\f;k\u0007j0\u0006=d\u00056Ȁ]\u0014}z\u0014\fd\u001a׮`7I'[\\ӈۢ\u0006a\u001bo\u0016Cf#8ɸ0~9H\u001aA;r",
+      "A:\\n+\\V;\u001b#)\u001cdڳͤl\u001cRȾ",
+      "F:\\\u0012\u001bPۄ(i\u0000",
+      "o:\\#",
+      "R:\\",
+      "P:\\\u0018\b!",
+      "L:\\\u001aȾ\u0013L=caX.ŋ\u0001\u001auayd׌",
+      "D:\\89r2}Ò\u0000Y[sQ\u000bvcr)W\u000bwʹ\u001eЬoOG",
+      "w:\\`28lq29ls%ǌ",
+      "U:\\\u0001",
+      "b:\\ԕ\u0012_\u0004r\u000e",
+      "g:\\U\u000f6t\u0019_nLj!Ϭ\u000e7\u001b\u0013~WOoL",
+      "D:\\\u001eǰWb",
+      "c:\\N;\u00124@u=}\u000bJ3\u0005\u0002\u001b90\u0015\u0013,B~'",
+      "g:\\h",
+      "z:\\66KcikxMM=k.ްS;8"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 153249568,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 7
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "AU",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "6.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "schemas.microsoft.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "C.ru": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 2,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "AU0.cn": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://schemas.microsoft.com/SMI/2005/WindowsSettings": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "C.ru",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://schemas.microsoft.com/SMI/2005/WindowsSettings",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.999875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0989,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 43,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Plusieurs indicateurs suspects detectes dans le contenu.",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['C.ru'], URLs: ['http://schemas.microsoft.com/SMI/2005/WindowsSettings'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\texstudio-4.9.8-win-qt6-signed.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

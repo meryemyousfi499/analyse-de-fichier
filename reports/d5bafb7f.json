@@ -1,0 +1,361 @@
+{
+  "id_rapport": "d5bafb7f",
+  "origine": "auto_watch",
+  "duree_analyse_s": 30.566,
+  "metadonnees": {
+    "nom": "WhatsApp Installer (3).exe",
+    "extension": "exe",
+    "taille_octets": 813088,
+    "taille_lisible": "794.0 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\WhatsApp Installer (3).exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-10-08T16:55:24",
+    "date_modification": "2026-10-08T16:55:30",
+    "date_acces": "2026-10-28T10:57:04",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://get.microsoft.com/installer/download/9NKSQGP7F2NH?cid=chatlist_toastbar\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "974f669f962b58cac38f528b59a3715847625e091a5eedffe60a0b5675c8fbe5",
+    "sha1": "f058e25893e58c534d30dada7cffea3718ee0e33",
+    "md5": "d8b4a4b4a70106d4edb51b71606b1570",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": false,
+      "raison": "module pefile non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.863,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.4,
+      5.64,
+      5.72,
+      5.36,
+      5.99,
+      4.86,
+      4.61,
+      7.31,
+      7.8,
+      7.98,
+      8.0,
+      7.88,
+      4.43
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "4.0.0.0",
+      "10.0.12.0",
+      "1.0.0.0"
+    ],
+    "domaines": [
+      "schemas.microsoft.com",
+      "schemas.openxmlformats.org",
+      "www.microsoft.com",
+      "crl.microsoft.com"
+    ],
+    "urls": [
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00148\u0007theming$clr-namespace:StoreInstaller.Theming\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u001f\u0010\u0000\u0000\u0000",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014:\bcontrols%clr-namespace:StoreInstaller.Controls\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014",
+      "http://schemas.openxmlformats.org/markup-compatibility/2006\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00146\u0006models#clr-namespace:StoreInstaller.Models\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014I\u0005shell9http://schemas.microsoft.com/netfx/2009/xaml/presentation\u0003\u0000\u0001\u0000\u0002\u0000\u0004\u0000\u00142\u0005views",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00142\bcontrols%clr-namespace:StoreInstaller.Controls\u0000\u0000%\u0013\u000e\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0002\u0000\u0003\u0000\u0006\u0000\u0005\u0000\u00146",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00142\bcontrols%clr-namespace:StoreInstaller.Controls\u0000\u0000\u0014I\u0005shell9http://schemas.microsoft.com/netfx/2009/xaml/presentation\u0003\u0000\u0001\u0000\u0002\u0000\u0004\u0000%\b\u0000\u0000",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00142\bcontrols%clr-namespace:StoreInstaller.Controls\u0000\u0000%y\u0003\u0000\u0000&",
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014",
+      "http://schemas.openxmlformats.org/markup-compatibility/2006\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00146\u0002vm",
+      "http://www.microsoft.com/pki/certs/MicMarPCA2011_2011-03-28.crt0",
+      "http://www.microsoft.com0",
+      "http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "A:\\\u00132",
+      "D:\\a\\_work\\1\\s\\src\\StoreInstaller\\obj\\Release\\net472\\StoreInstaller.pdb\u0000SHA256\u0000\u0017Ds#"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "2ee876db97d84a09e734c9def92bfc09c32ab513"
+      ],
+      "sha256": [
+        "CCEC4700597EB3F093C5841181BE8E638DADFDD2514DC22229244DF1396767AE"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 31
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "4.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "10.0.12.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": null,
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "AU",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "schemas.microsoft.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "schemas.openxmlformats.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.microsoft.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crl.microsoft.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00148\u0007theming$clr-namespace:StoreInstaller.Theming\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u001f\u0010\u0000\u0000\u0000": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2Fwinfx%2F2006%2Fxaml%04%00%01%00%02%00%05%00%04%00%148%07theming%24clr-namespace%3AStoreInstaller.Theming%04%00%01%00%02%00%05%00%04%00%1F%10%00%00%00/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014:\bcontrols%clr-namespace:StoreInstaller.Controls\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2Fwinfx%2F2006%2Fxaml%04%00%01%00%02%00%05%00%04%00%14%3A%08controls%25clr-namespace%3AStoreInstaller.Controls%04%00%01%00%02%00%05%00%04%00%14/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.openxmlformats.org/markup-compatibility/2006\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00146\u0006models#clr-namespace:StoreInstaller.Models\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u0014I\u0005shell9http://schemas.microsoft.com/netfx/2009/xaml/presentation\u0003\u0000\u0001\u0000\u0002\u0000\u0004\u0000\u00142\u0005views": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2Fmarkup-compatibility%2F2006%04%00%01%00%02%00%05%00%04%00%146%06models%23clr-namespace%3AStoreInstaller.Models%04%00%01%00%02%00%05%00%04%00%14I%05shell9http%3A%2F%2Fschemas.microsoft.com%2Fnetfx%2F2009%2Fxaml%2Fpresentation%03%00%01%00%02%00%04%00%142%05views/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0001\u0000\u0002\u0000\u0005\u0000\u0004\u0000\u00142\bcontrols%clr-namespace:StoreInstaller.Controls\u0000\u0000%\u0013\u000e\u0000\u0000&": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2Fwinfx%2F2006%2Fxaml%04%00%01%00%02%00%05%00%04%00%142%08controls%25clr-namespace%3AStoreInstaller.Controls%00%00%25%13%0E%00%00%26/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.microsoft.com/winfx/2006/xaml\u0004\u0000\u0002\u0000\u0003\u0000\u0006\u0000\u0005\u0000\u00146": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2Fwinfx%2F2006%2Fxaml%04%00%02%00%03%00%06%00%05%00%146/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "CCEC4700597EB3F093C5841181BE8E638DADFDD2514DC22229244DF1396767AE": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0775421142578125,
+      "entropie_globale": 0.857875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 12,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.1485,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 28,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\WhatsApp Installer (3).exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

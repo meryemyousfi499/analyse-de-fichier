@@ -1,0 +1,98 @@
+{
+  "id_rapport": "57fb1725",
+  "origine": "auto_watch",
+  "duree_analyse_s": 0.001,
+  "metadonnees": {
+    "nom": "__rar_9948.42060.rartemp",
+    "extension": "rartemp",
+    "taille_octets": null,
+    "taille_lisible": "inconnue (analyse interrompue)",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\__rar_9948.42060.rartemp",
+    "proprietaire": "inconnu",
+    "permissions": "inconnu",
+    "date_creation": null,
+    "date_modification": null,
+    "date_acces": null,
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "extension_declaree": ".rartemp",
+    "type_reel_detecte": null,
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Analyse interrompue avant la verification de coherence."
+  },
+  "empreintes": {
+    "sha256": "",
+    "sha1": "",
+    "md5": "",
+    "connu_malveillant": false
+  },
+  "analyse_statique": {
+    "note": "Analyse statique interrompue : le fichier est devenu inaccessible avant cette etape."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 0,
+    "verdict_entropie": null,
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [],
+    "base64": {
+      "nombre_blobs_base64": null
+    },
+    "xor": {
+      "xor_simple_suspecte": null,
+      "cle_probable": null
+    }
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "chaines_suspectes": [],
+    "score_indicateurs": 0
+  },
+  "signature_numerique": null,
+  "yara": {
+    "disponible": false,
+    "raison": "analyse interrompue avant ce stade",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "analyse interrompue avant ce stade"
+  },
+  "threat_intelligence": null,
+  "scoring_ml": {
+    "features": {},
+    "probabilite_risque": 0,
+    "methode": "non_execute"
+  },
+  "archive": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 100,
+    "niveau": "critique",
+    "action_recommandee": "block",
+    "explications": [
+      "Le fichier est devenu inaccessible en cours d'analyse ([Errno 13] Permission denied: 'C:\\\\Users\\\\HYPER\\\\Downloads\\\\__rar_9948.42060.rartemp'). Cela survient typiquement quand l'antivirus temps reel du systeme d'exploitation (ex. Windows Defender) detecte le fichier de son cote et le neutralise (suppression ou mise en quarantaine) avant que ce pipeline ait fini de le lire. Traite comme une detection positive forte : niveau 'critique', meme si l'analyse interne de cet agent n'a pas pu aller a son terme.",
+      "Sandbox non soumis : fichier illisible : impossible de le copier vers le sandbox."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "block",
+    "libelle": "Bloquer",
+    "note": "Fichier encore present sur le disque mais illisible (permissions ou verrou pose par un autre processus, ex. l'antivirus du systeme en cours de scan) : aucune quarantaine interne tentee pour eviter de corrompre un fichier deja verrouille."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null,
+    "raison_non_soumis": "fichier illisible : impossible de le copier vers le sandbox"
+  },
+  "erreur_pipeline": "[Errno 13] Permission denied: 'C:\\\\Users\\\\HYPER\\\\Downloads\\\\__rar_9948.42060.rartemp'"
+}

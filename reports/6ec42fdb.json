@@ -1,0 +1,284 @@
+{
+  "id_rapport": "6ec42fdb",
+  "origine": "auto_watch",
+  "duree_analyse_s": 7.1,
+  "metadonnees": {
+    "nom": "SentinelAI_MultiAgents_Rapport (1).docx",
+    "extension": "docx",
+    "taille_octets": 221944,
+    "taille_lisible": "216.7 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\SentinelAI_MultiAgents_Rapport (1).docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-07-16T11:03:36",
+    "date_modification": "2026-07-16T11:03:38",
+    "date_acces": "2026-10-28T12:33:31",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/ee22e432-ef8e-4d1c-8a28-877c7df1f942\nHostUrl=https://claude.ai/api/organizations/b6dc8f8c-7ecc-44e3-8028-97e8ecece2f0/conversations/ee22e432-ef8e-4d1c-8a28-877c7df1f942/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FSentinelAI_MultiAgents_Rapport.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "39d179c047e4005eb7266b8a745533e908275816f76e7478f4e59c216e6e408e",
+    "sha1": "d1f1b208d4d4ab66d09f8022c9b0d42d2d8a4816",
+    "md5": "6b79875a5bb7c0ff8cceb25b8057bfde",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.994,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      8.0,
+      7.93
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "768a8f696543daa10326f32585400fa3c6079b0f",
+        "489a8ff6cd20814a770cba977e17d72ed89c02a4"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/39d179c047e4005eb7266b8a745533e908275816f76e7478f4e59c216e6e408e/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.021166229248046876,
+      "entropie_globale": 0.99925,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0442,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\docProps\\custom.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\comments.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\endnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\footnotes.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\media\\489a8ff6cd20814a770cba977e17d72ed89c02a4.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\media\\768a8f696543daa10326f32585400fa3c6079b0f.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\_rels\\comments.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\_rels\\endnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\_rels\\fontTable.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\word\\_rels\\footnotes.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_y3oh5c3o\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "5805b2ef",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "9cb4d831",
+      "nom": "app.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "82b82287",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "0b6c0a9b",
+      "nom": "custom.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "1f0212de",
+      "nom": "comments.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "2f168ee3",
+      "nom": "document.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "a9fbb7f5",
+      "nom": "endnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "e9bd7975",
+      "nom": "fontTable.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "4443dfb1",
+      "nom": "footnotes.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "6b9fb3a1",
+      "nom": "numbering.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "614bae83",
+      "nom": "settings.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "10d3e2d4",
+      "nom": "styles.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "e2f825e6",
+      "nom": "489a8ff6cd20814a770cba977e17d72ed89c02a4.png",
+      "score": 9
+    },
+    {
+      "id_rapport": "5ed84368",
+      "nom": "768a8f696543daa10326f32585400fa3c6079b0f.png",
+      "score": 9
+    },
+    {
+      "id_rapport": "b593e287",
+      "nom": "comments.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "7be2d8bf",
+      "nom": "document.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "05999ade",
+      "nom": "endnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "55261bd8",
+      "nom": "fontTable.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "412dd21e",
+      "nom": "footnotes.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "9fb68ac0",
+      "nom": ".rels",
+      "score": 19
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport 5805b2ef).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport 82b82287).",
+      "Score releve par le contenu extrait de l'archive : comments.xml (score 27, rapport 1f0212de)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\SentinelAI_MultiAgents_Rapport (1).docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

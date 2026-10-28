@@ -1,0 +1,261 @@
+{
+  "id_rapport": "9255a0d6",
+  "origine": "auto_watch",
+  "duree_analyse_s": 8.905,
+  "metadonnees": {
+    "nom": "Organigramme_Acteurs_Traitement.docx",
+    "extension": "docx",
+    "taille_octets": 36975,
+    "taille_lisible": "36.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Organigramme_Acteurs_Traitement.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-03-30T23:33:35",
+    "date_modification": "2026-03-30T23:33:36",
+    "date_acces": "2026-10-28T12:48:23",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://chatgpt.com/c/69cafa5b-3384-832b-80ca-9e5914e1b1d1\nHostUrl=https://chatgpt.com/backend-api/estuary/content?id=file_000000005dcc724382df64183e508d08&ts=493030&p=fs&cid=1&sig=87512606dc7e7d5caa500ec4453bdf6294902eac5f0da41df9a566b765c028c1&v=0\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "b4d23655c7ab1a0f688912a1227f118c26d094f2409441cda4f5b741c1a1ae73",
+    "sha1": "aaa447754669fb8e09a991104ef17b29f3dd0ef9",
+    "md5": "6bf64a0f095a865116899eb89935c0dc",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.964,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.96
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/b4d23655c7ab1a0f688912a1227f118c26d094f2409441cda4f5b741c1a1ae73/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0035262107849121094,
+      "entropie_globale": 0.9955,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0438,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\customXml\\item1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\customXml\\itemProps1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\customXml\\_rels\\item1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\docProps\\thumbnail.jpeg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\word\\fontTable.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\word\\settings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\word\\stylesWithEffects.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\word\\webSettings.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\word\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_h3a04w5c\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "0e4b5ffe",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "b58778bc",
+      "nom": "item1.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "ef59f422",
+      "nom": "itemProps1.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "39039f95",
+      "nom": "item1.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "b3169a76",
+      "nom": "app.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "5c99a930",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "0e4c494b",
+      "nom": "thumbnail.jpeg",
+      "score": 36
+    },
+    {
+      "id_rapport": "4f042ca4",
+      "nom": "document.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "dbfa09bf",
+      "nom": "fontTable.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "9deb0495",
+      "nom": "numbering.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "7f51c337",
+      "nom": "settings.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "8be26980",
+      "nom": "styles.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "7315fe13",
+      "nom": "stylesWithEffects.xml",
+      "score": 27
+    },
+    {
+      "id_rapport": "e16dc106",
+      "nom": "webSettings.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "648df3d9",
+      "nom": "theme1.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "59ce2d00",
+      "nom": "document.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "3245775a",
+      "nom": ".rels",
+      "score": 19
+    }
+  ],
+  "score_final": {
+    "score": 36,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport 0e4b5ffe).",
+      "Score releve par le contenu extrait de l'archive : itemProps1.xml (score 10, rapport ef59f422).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport 5c99a930).",
+      "Score releve par le contenu extrait de l'archive : thumbnail.jpeg (score 36, rapport 0e4c494b)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Organigramme_Acteurs_Traitement.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

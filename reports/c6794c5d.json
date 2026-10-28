@@ -1,0 +1,175 @@
+{
+  "id_rapport": "c6794c5d",
+  "origine": "auto_watch",
+  "duree_analyse_s": 1.949,
+  "metadonnees": {
+    "nom": "NotebookLM Mind Map (12).png",
+    "extension": "png",
+    "taille_octets": 1466736,
+    "taille_lisible": "1.4 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\NotebookLM Mind Map (12).png",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-03-15T04:18:17",
+    "date_modification": "2026-03-15T04:18:17",
+    "date_acces": "2026-10-28T12:50:25",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://notebooklm.google.com/\nHostUrl=https://notebooklm.google.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "png",
+    "extension_declaree": ".png",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "1bd1aabfbdfa370108ea096f2b4b829c8cf220039899547a25c9ad8d4bc714da",
+    "sha1": "b870f47cc6c875609e9b8bb2890bec68b54240d2",
+    "md5": "59fdba4557a1a8a63d6ae1ef3b06f735",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "png",
+    "image": {
+      "disponible": true,
+      "dimensions": "4331x6336",
+      "donnees_ajoutees_apres_fin": false,
+      "taille_donnees_ajoutees_octets": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.486,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.54,
+      7.05,
+      7.55,
+      7.75,
+      7.06,
+      7.71,
+      7.57,
+      6.84,
+      7.64,
+      7.57,
+      7.35,
+      7.92,
+      7.15,
+      7.52,
+      7.39,
+      7.52,
+      7.62,
+      6.92,
+      7.63,
+      7.4,
+      7.4,
+      7.67,
+      7.32
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "J:\\ynWM\u0007Xb~()VܳpD;Fl@\u0011s\u001ez}\u001aZ\u001fu;E-[巟V\u0017UmjuEs\u0019%\u001c\u00144\u0003&Q\u0003e_K\u001bמ3(%\u001d]kQsͺu\u001d#dI{ZZ12y$ٽcg",
+      "u:\\.\u001eۿ.\f\bsA\u000b3'!\u0000\u0002\bē\u0000Ƅ\u0000",
+      "H:\\MV"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/1bd1aabfbdfa370108ea096f2b4b829c8cf220039899547a25c9ad8d4bc714da/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.13987884521484376,
+      "entropie_globale": 0.93575,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0701,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 2,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\NotebookLM Mind Map (12).png",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

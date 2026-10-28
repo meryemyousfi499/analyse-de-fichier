@@ -1,0 +1,231 @@
+{
+  "id_rapport": "0bee789d",
+  "origine": "auto_watch",
+  "duree_analyse_s": 6.965,
+  "metadonnees": {
+    "nom": "crypto.pdf",
+    "extension": "pdf",
+    "taille_octets": 5463097,
+    "taille_lisible": "5.2 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\crypto.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-02T22:28:18",
+    "date_modification": "2026-10-02T22:28:19",
+    "date_acces": "2026-10-28T11:03:36",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.irif.fr/_media/users/ylg/crypto.pdf\nHostUrl=https://www.irif.fr/_media/users/ylg/crypto.pdf\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "b153ff5c79af5b01e7d13a02a50bc3d29fc568afc75414d3c6dd12354d1549cd",
+    "sha1": "2a426e6eb34bb564f9dceebb1589e8cc89d76778",
+    "md5": "a565dd4efa470a85e5982467e3275e39",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.981,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.97,
+      7.99,
+      7.51,
+      7.5,
+      7.61,
+      7.68,
+      7.49,
+      7.68,
+      7.7,
+      7.44,
+      7.5,
+      7.99,
+      7.99,
+      7.99,
+      7.95,
+      7.99,
+      7.96,
+      7.86,
+      7.81,
+      7.98,
+      7.94,
+      7.92,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.58,
+      7.47,
+      7.49,
+      7.77,
+      7.42,
+      7.66,
+      7.73,
+      7.99,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98,
+      7.98
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "555555555555555555555555555555555555555555555555555555555555..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [
+      "ylg@irif.fr"
+    ],
+    "chemins_windows": [
+      "r:\\s",
+      "d:\\__OqY9u`$TɳL]\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0018}t\fbj",
+      "G:\\Ξ\u0004(nQDZ#gr{\u001fY,",
+      "I:\\\u001agiusFSh\u0018+숦-dývAθz+`3Щn6n\u0003\b\u0007",
+      "P:\\)!׺bGI\u0000^",
+      "V:\\",
+      "R:\\0]",
+      "e:\\㛎`\u001f)\u000fSdFTA\u0001R)0D\u0016@UtEj",
+      "s:\\`\u0012Dg౒\\\u0018Ͽ}ɲLJ\u0019\u0001zc\u0004e5ugQ&aL=aP醱ݮ7sAj_"
+    ],
+    "chemins_unix": [
+      "/usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonbook.pdf)",
+      "/usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericononline.pdf)"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "D913074D06F1F840142C8E97FB951780"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.5210015296936035,
+      "entropie_globale": 0.997625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0496,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 11,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\crypto.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

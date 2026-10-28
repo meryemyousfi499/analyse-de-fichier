@@ -124,3 +124,6 @@ MAX_PATTERN_SCAN_MB = int(os.environ.get("MAX_PATTERN_SCAN_MB", "25"))
 # calcul - un echantillon suffisant pour estimer l'entropie, sans charger
 # plusieurs Go en RAM ni ralentir l'analyse.
 MAX_ENTROPY_READ_MB = int(os.environ.get("MAX_ENTROPY_READ_MB", "200"))
+CLAMD_HOST = "127.0.0.1"
+CLAMD_PORT = 3310
+HYBRID_ANALYSIS_API_KEY = "ecut2uyi587cffda2wgfls6yeaf522cbce4ue97za32b164f9kmg1dqt1646e6fa"

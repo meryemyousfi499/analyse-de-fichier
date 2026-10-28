@@ -1,0 +1,483 @@
+{
+  "id_rapport": "9d758696",
+  "origine": "auto_watch",
+  "duree_analyse_s": 20.132,
+  "metadonnees": {
+    "nom": "Presentation_Attaque_Cybersecurite_IA.pptx",
+    "extension": "pptx",
+    "taille_octets": 36872,
+    "taille_lisible": "36.0 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Presentation_Attaque_Cybersecurite_IA.pptx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2025-11-07T01:05:58",
+    "date_modification": "2025-11-07T01:06:16",
+    "date_acces": "2026-10-28T12:58:18",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://chatgpt.com/\nHostUrl=https://sdmntprnortheu.oaiusercontent.com/files/00000000-4368-71f4-b455-7ecf79e0df75/raw?se=2025-11-07T00%3A12%3A19Z&sp=r&sv=2024-08-04&sr=b&scid=fcf4b125-2f37-4100-9249-6ab5fdd62de4&skoid=8e0fb8a9-6beb-4b32-9eda-253f61890767&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-06T18%3A59%3A48Z&ske=2025-11-07T18%3A59%3A48Z&sks=b&skv=2024-08-04&sig=gfFZeGxM43xSu%2BSlPAMqJ25oEMJAEUDlyBpKAESAkRI%3D\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".pptx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "02c5408be179a436a128bdee894da463b2d2cb744b7545c10073c7cfe32acfcc",
+    "sha1": "e108e9be4d257119528db067f3ce86473810d577",
+    "md5": "558f39fd9facd3cce72b192e6ff3eee9",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.772,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.77
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/02c5408be179a436a128bdee894da463b2d2cb744b7545c10073c7cfe32acfcc/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.003516387939453125,
+      "entropie_globale": 0.9715,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0427,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\docProps\\thumbnail.jpeg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\presentation.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\presProps.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\tableStyles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\viewProps.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\printerSettings\\printerSettings1.bin",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout10.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout11.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout2.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout3.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout4.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout5.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout6.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout7.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout8.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\slideLayout9.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout10.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout11.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout2.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout3.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout4.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout5.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout6.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout7.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout8.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideLayouts\\_rels\\slideLayout9.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideMasters\\slideMaster1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slideMasters\\_rels\\slideMaster1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\slide1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\slide2.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\slide3.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\slide4.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\slide5.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\slide6.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\slide7.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\slide8.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\slide9.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\_rels\\slide1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\_rels\\slide2.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\_rels\\slide3.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\_rels\\slide4.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\_rels\\slide5.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\_rels\\slide6.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\_rels\\slide7.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\_rels\\slide8.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\slides\\_rels\\slide9.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\ppt\\_rels\\presentation.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_7bru057l\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "65dcd767",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "596ca2f3",
+      "nom": "app.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "ae8f870e",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "1b760b7c",
+      "nom": "thumbnail.jpeg",
+      "score": 1
+    },
+    {
+      "id_rapport": "e13d91a0",
+      "nom": "presentation.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "af5138f5",
+      "nom": "presProps.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "ec04005f",
+      "nom": "tableStyles.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "e95c361c",
+      "nom": "viewProps.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "0827612d",
+      "nom": "printerSettings1.bin",
+      "score": 9
+    },
+    {
+      "id_rapport": "c6b8610a",
+      "nom": "slideLayout1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "2876a21c",
+      "nom": "slideLayout10.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "0bccdd7d",
+      "nom": "slideLayout11.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "70d5f55d",
+      "nom": "slideLayout2.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "6f5f3dc8",
+      "nom": "slideLayout3.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "b778898a",
+      "nom": "slideLayout4.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "932b001c",
+      "nom": "slideLayout5.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "02996703",
+      "nom": "slideLayout6.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "ef8986f2",
+      "nom": "slideLayout7.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "ab21ba9d",
+      "nom": "slideLayout8.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "2df25158",
+      "nom": "slideLayout9.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "05c6bde8",
+      "nom": "slideLayout1.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "e8d9be04",
+      "nom": "slideLayout10.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "c1838399",
+      "nom": "slideLayout11.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "80fe79d1",
+      "nom": "slideLayout2.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "36ce8511",
+      "nom": "slideLayout3.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "8afccb6d",
+      "nom": "slideLayout4.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "a910b5d8",
+      "nom": "slideLayout5.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "3cd03654",
+      "nom": "slideLayout6.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "35a0bd05",
+      "nom": "slideLayout7.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "e77eae76",
+      "nom": "slideLayout8.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "e961fa57",
+      "nom": "slideLayout9.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "1293dd76",
+      "nom": "slideMaster1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "3ec87781",
+      "nom": "slideMaster1.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "79753145",
+      "nom": "slide1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "a6e089cf",
+      "nom": "slide2.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "95049468",
+      "nom": "slide3.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "1405029b",
+      "nom": "slide4.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "2427b638",
+      "nom": "slide5.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "3ddd9728",
+      "nom": "slide6.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "08023c75",
+      "nom": "slide7.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "dc60cc7f",
+      "nom": "slide8.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "29c46ad2",
+      "nom": "slide9.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "7369f262",
+      "nom": "slide1.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "9e3eb9aa",
+      "nom": "slide2.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "b8013982",
+      "nom": "slide3.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "d76a9701",
+      "nom": "slide4.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "4dc25984",
+      "nom": "slide5.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "ef614a76",
+      "nom": "slide6.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "024d37ae",
+      "nom": "slide7.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "94cfc5d4",
+      "nom": "slide8.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "b76b4c6c",
+      "nom": "slide9.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "66744393",
+      "nom": "theme1.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "6220dac4",
+      "nom": "presentation.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "40c084e4",
+      "nom": ".rels",
+      "score": 19
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 9, rapport 65dcd767).",
+      "Score releve par le contenu extrait de l'archive : app.xml (score 10, rapport 596ca2f3).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 19, rapport ae8f870e).",
+      "Score releve par le contenu extrait de l'archive : presentation.xml.rels (score 27, rapport 6220dac4)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Presentation_Attaque_Cybersecurite_IA.pptx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "id_rapport": "2931fb96",
+  "origine": "auto_watch",
+  "duree_analyse_s": 32.923,
+  "metadonnees": {
+    "nom": "AttentionIsAllYouNeed.pdf",
+    "extension": "pdf",
+    "taille_octets": 2215244,
+    "taille_lisible": "2.1 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\AttentionIsAllYouNeed.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-05T21:32:45",
+    "date_modification": "2026-10-05T21:32:47",
+    "date_acces": "2026-10-28T11:02:52",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://web.whatsapp.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "sha1": "a639448e61be3ab2a6fb696c0e910b0a3e5fd57f",
+    "md5": "18e1b007a1dab45b30cc861ba2dfda25",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.072,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.72,
+      7.78,
+      7.9,
+      7.72,
+      4.92,
+      4.9,
+      7.3,
+      8.0,
+      6.06,
+      4.9,
+      6.83,
+      8.0,
+      5.9,
+      4.89,
+      7.63,
+      7.93,
+      5.34,
+      4.9,
+      7.74,
+      7.78,
+      4.91,
+      6.03,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.4,
+      4.94,
+      4.85,
+      4.8,
+      5.12,
+      2.83,
+      2.84
+    ],
+    "base64": {
+      "nombre_blobs_base64": 5,
+      "exemple": "/E/K/N/O/P/Q/V/W/a/alpha/b/beta/c/comma/d/e/epsilon1/g/h/i/k..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "github.com",
+      "arxiv.org"
+    ],
+    "urls": [
+      "https://github.com/tensorflow/tensor2tensor)",
+      "http://arxiv.org/abs/1607.06450)",
+      "http://arxiv.org/abs/1601.06733)",
+      "http://arxiv.org/abs/1610.02357)",
+      "http://arxiv.org/abs/1705.03122)",
+      "http://arxiv.org/abs/1308.0850)",
+      "http://arxiv.org/abs/1602.02410)",
+      "http://arxiv.org/abs/1610.10099)",
+      "http://arxiv.org/abs/1703.10722)",
+      "http://arxiv.org/abs/1703.03130)",
+      "http://arxiv.org/abs/1511.06114)",
+      "http://arxiv.org/abs/1508.04025)",
+      "http://arxiv.org/abs/1705.04304)",
+      "http://arxiv.org/abs/1608.05859)",
+      "http://arxiv.org/abs/1508.07909)",
+      "http://arxiv.org/abs/1701.06538)",
+      "http://arxiv.org/abs/1609.08144)"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "D:\\\u0013\u0015aG(C\u001dQ\u000bq"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "ff3e15dfc6c8c63548b1c64bc2982fdb",
+        "df4e004b950fdce2316c92c337019be1"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 36
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "github.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "55221"
+        }
+      },
+      "arxiv.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://github.com/tensorflow/tensor2tensor)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://arxiv.org/abs/1607.06450)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://arxiv.org/abs/1601.06733)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://arxiv.org/abs/1610.02357)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://arxiv.org/abs/1705.03122)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "github.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "arxiv.org",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.21126213073730468,
+      "entropie_globale": 0.884,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 17,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1566,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 43,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['github.com', 'arxiv.org'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\AttentionIsAllYouNeed.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

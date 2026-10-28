@@ -1,0 +1,274 @@
+{
+  "id_rapport": "ec8e3c0d",
+  "origine": "auto_watch",
+  "duree_analyse_s": 24.996,
+  "metadonnees": {
+    "nom": "Mery Ysf - TP2 Partie 1.pdf",
+    "extension": "pdf",
+    "taille_octets": 221761,
+    "taille_lisible": "216.6 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Mery Ysf - TP2 Partie 1.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-30T18:02:22",
+    "date_modification": "2026-09-30T18:02:23",
+    "date_acces": "2026-10-18T05:53:05",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://doc-08-3g-apps-viewer.googleusercontent.com/viewer/secure/pdf/d6cpajlfsiuuvmfcm6q7hhicv75rugm7/c66fjprg7ll5rqh5enlabtuumde6ehtk/1790787450000/drive/16118819073600049519/ACFrOgAtKxF5G3ke58ZRDbzFnArR-QxyXjrlQyD7_2IfJYPLOsLxdnGV17FPOio2iDuFMA613X4TEt8aWnTzVjo-SUXThC2iKY_Z11IKh7ZoQ2GPYXzJYs14okV5mNKHg0p_1PGBdaqUIeMxgS8u140tg7hzF2PLsf9ew5DDWFFsVl6YxXHNBmawJQ5w9-Nugw1aCtaQb_Q8HZvFsGw4NCGRzt1T21qYN1ZV22ycyhD2v3ZlM9AEJGgrM9H5rYQ=?authuser=0&print=true&nonce=mp1j5c3kgf4r6&user=16118819073600049519&hash=2vqveet1hj0l9s6pkc4a1o3jqn2kh5bg\nHostUrl=https://doc-08-3g-apps-viewer.googleusercontent.com/viewer/secure/pdf/d6cpajlfsiuuvmfcm6q7hhicv75rugm7/c66fjprg7ll5rqh5enlabtuumde6ehtk/1790787450000/drive/16118819073600049519/ACFrOgAtKxF5G3ke58ZRDbzFnArR-QxyXjrlQyD7_2IfJYPLOsLxdnGV17FPOio2iDuFMA613X4TEt8aWnTzVjo-SUXThC2iKY_Z11IKh7ZoQ2GPYXzJYs14okV5mNKHg0p_1PGBdaqUIeMxgS8u140tg7hzF2PLsf9ew5DDWFFsVl6YxXHNBmawJQ5w9-Nugw1aCtaQb_Q8HZvFsGw4NCGRzt1T21qYN1ZV22ycyhD2v3ZlM9AEJGgrM9H5rYQ=?authuser=0&print=true&nonce=mp1j5c3kgf4r6&user=16118819073600049519&hash=2vqveet1hj0l9s6pkc4a1o3jqn2kh5bg\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "1a0595178fda12f3a36b169652cba152439e7fa043cc01de4543226ee8e5c5b0",
+    "sha1": "27e0503247e57fd7c3accf1c4365e8f89942a4eb",
+    "md5": "1c2065fff99b709e8dc59bd680837815",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": true,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 5
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.637,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.81,
+      6.64,
+      7.99,
+      6.75
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "154.0.0.0"
+    ],
+    "domaines": [
+      "dumps.wikimedia.org",
+      "classroom.google.com"
+    ],
+    "urls": [
+      "https://dumps.wikimedia.org/other/pagecounts-raw/)",
+      "https://dumps.wikimedia.org/other/pageviews/2016/2016-08/)",
+      "https://classroom.google.com/u/1/c/ODg1ODczMDA0Nzgw)",
+      "https://classroom.google.com/u/1/w/ODg1ODczMDA0Nzgw/t/all)",
+      "http://localhost:9870/dfshealth.html#tab-overview)",
+      "http://localhost:8088/cluster)"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "l:\\(\u0017,id,Cux0q4f`2\u00186+Adc\u000b\t\u0016}\u001c^\u0007g'wm߸tD`\u001e03b\u0003\f00ڒ\u0006A1\u0018DE`0@\u0018{\u0002'ɅD\t\u001a0etcv\tlf\t\u0006"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "DCAC14F782EA929434970D5E4083A19D"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 15
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "154.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=154.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001EE80E11F90>: Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "dumps.wikimedia.org": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/dumps.wikimedia.org/general (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001EE81259090>: Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001EE812596D0>: Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "classroom.google.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/classroom.google.com/general (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001EE81259450>: Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001EE812591D0>: Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "https://dumps.wikimedia.org/other/pagecounts-raw/)": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fdumps.wikimedia.org%2Fother%2Fpagecounts-raw%2F%29/general (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001EE81259BD0>: Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001EE81259950>: Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "https://dumps.wikimedia.org/other/pageviews/2016/2016-08/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://classroom.google.com/u/1/c/ODg1ODczMDA0Nzgw)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://classroom.google.com/u/1/w/ODg1ODczMDA0Nzgw/t/all)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://localhost:9870/dfshealth.html#tab-overview)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.02114877700805664,
+      "entropie_globale": 0.954625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 1,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 6,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1796,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 56,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "PDF contenant du JavaScript embarque et/ou une action /Launch.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Mery Ysf - TP2 Partie 1.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,877 @@
+{
+  "id_rapport": "c0f4b649",
+  "origine": "auto_watch",
+  "duree_analyse_s": 42.919,
+  "metadonnees": {
+    "nom": "La-Cybersecurite-Defis-et-Defenses.pptx",
+    "extension": "pptx",
+    "taille_octets": 1226124,
+    "taille_lisible": "1.2 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\La-Cybersecurite-Defis-et-Defenses.pptx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2025-11-07T03:18:52",
+    "date_modification": "2025-11-07T03:18:53",
+    "date_acces": "2026-10-28T12:57:35",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://gamma.app/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".pptx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "7caf6727a688f02138a265a6c21474acaf52fb1b1df398d32778e8e51cef0682",
+    "sha1": "c7d8d1955934bf15dea92d525a78d4af974b539f",
+    "md5": "17867621a2c83ade47882929b8d58a78",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.621,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.98,
+      7.98,
+      7.98,
+      7.67,
+      5.3,
+      5.27,
+      7.67,
+      7.58,
+      7.77,
+      7.57,
+      7.51,
+      7.61,
+      7.58,
+      7.81,
+      6.49,
+      6.3,
+      6.4,
+      7.79,
+      7.16
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "schemas.openxmlformats.org",
+      "purl.org",
+      "www.w3.org",
+      "schemas.microsoft.com"
+    ],
+    "urls": [
+      "http://schemas.openxmlformats.org/package/2006/content-types",
+      "http://schemas.openxmlformats.org/package/2006/relationships",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+      "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+      "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+      "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+      "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+      "http://purl.org/dc/elements/1.1/",
+      "http://purl.org/dc/terms/",
+      "http://purl.org/dc/dcmitype/",
+      "http://www.w3.org/2001/XMLSchema-instance",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesMaster",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/presProps",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/viewProps",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tableStyles",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+      "http://schemas.openxmlformats.org/drawingml/2006/main",
+      "http://schemas.microsoft.com/office/thememl/2012/main",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+      "http://schemas.openxmlformats.org/presentationml/2006/main",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
+      "https://gamma.app/?utm_source=made-with-gamma",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesSlide",
+      "http://schemas.microsoft.com/office/powerpoint/2010/main",
+      "http://schemas.microsoft.com/office/drawing/2016/SVG/main",
+      "http://www.w3.org/2000/svg",
+      "http://www.w3.org/1999/xlink"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "G:\\b\u0010a =؆\u001d\u0001ǲ\u0017\u001e",
+      "j:\\5k\u0012~\u001f=ooe\u0004\b\u0010 F@\u0000FϹ\u0004\b\u0010(T@xPha"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 70
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "module yara-python non installe",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "module python-clamd non installe"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "schemas.openxmlformats.org": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/schemas.openxmlformats.org/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "purl.org": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/purl.org/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/www.w3.org/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "schemas.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/schemas.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "http://schemas.openxmlformats.org/package/2006/content-types": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2Fpackage%2F2006%2Fcontent-types/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.openxmlformats.org/package/2006/relationships": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2Fpackage%2F2006%2Frelationships/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2FofficeDocument%2F2006%2Frelationships%2Fextended-properties/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2Fpackage%2F2006%2Frelationships%2Fmetadata%2Fcore-properties/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2FofficeDocument%2F2006%2Frelationships%2FofficeDocument/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/7caf6727a688f02138a265a6c21474acaf52fb1b1df398d32778e8e51cef0682/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.11693229675292968,
+      "entropie_globale": 0.952625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 33,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1256,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\presentation.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\presProps.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\tableStyles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\viewProps.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\fonts\\font1.fntdata",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\fonts\\font2.fntdata",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\fonts\\font3.fntdata",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\fonts\\font4.fntdata",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\fonts\\font5.fntdata",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\fonts\\font6.fntdata",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-1-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-1002-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-1003-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-1004-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-1005-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-1006-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-1007-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-2-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-2-2.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-2-3.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-2-4.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-2-5.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-2-6.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-2-7.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-2-8.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-3-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-3-2.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-3-3.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-4-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-10.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-11.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-12.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-2.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-3.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-4.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-5.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-6.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-7.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-8.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-5-9.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-6-1.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-6-2.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-6-3.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-6-4.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-6-5.svg",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\media\\image-6-6.png",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesMasters\\notesMaster1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesMasters\\_rels\\notesMaster1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\notesSlide1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\notesSlide2.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\notesSlide3.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\notesSlide4.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\notesSlide5.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\notesSlide6.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\_rels\\notesSlide1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\_rels\\notesSlide2.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\_rels\\notesSlide3.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\_rels\\notesSlide4.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\_rels\\notesSlide5.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\notesSlides\\_rels\\notesSlide6.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\slideLayout1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\slideLayout2.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\slideLayout3.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\slideLayout4.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\slideLayout5.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\slideLayout6.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\slideLayout7.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\_rels\\slideLayout1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\_rels\\slideLayout2.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\_rels\\slideLayout3.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\_rels\\slideLayout4.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\_rels\\slideLayout5.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\_rels\\slideLayout6.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideLayouts\\_rels\\slideLayout7.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideMasters\\slideMaster1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slideMasters\\_rels\\slideMaster1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\slide1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\slide2.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\slide3.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\slide4.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\slide5.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\slide6.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\_rels\\slide1.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\_rels\\slide2.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\_rels\\slide3.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\_rels\\slide4.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\_rels\\slide5.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\slides\\_rels\\slide6.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\theme\\theme1.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\ppt\\_rels\\presentation.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_8d4g37ad\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "4d68460c",
+      "nom": "[Content_Types].xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "7ba80495",
+      "nom": "app.xml",
+      "score": 10
+    },
+    {
+      "id_rapport": "e93bac50",
+      "nom": "core.xml",
+      "score": 19
+    },
+    {
+      "id_rapport": "4762bca1",
+      "nom": "presentation.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "a1d90102",
+      "nom": "presProps.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "10c4e51c",
+      "nom": "tableStyles.xml",
+      "score": 9
+    },
+    {
+      "id_rapport": "18edcebf",
+      "nom": "viewProps.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "b0f0a459",
+      "nom": "font1.fntdata",
+      "score": 11
+    },
+    {
+      "id_rapport": "b2ea3cdd",
+      "nom": "font2.fntdata",
+      "score": 11
+    },
+    {
+      "id_rapport": "a21087b3",
+      "nom": "font3.fntdata",
+      "score": 11
+    },
+    {
+      "id_rapport": "2b28d009",
+      "nom": "font4.fntdata",
+      "score": 11
+    },
+    {
+      "id_rapport": "6f098dbc",
+      "nom": "font5.fntdata",
+      "score": 11
+    },
+    {
+      "id_rapport": "69f75464",
+      "nom": "font6.fntdata",
+      "score": 11
+    },
+    {
+      "id_rapport": "5930bf6d",
+      "nom": "image-1-1.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "3b18339f",
+      "nom": "image-1002-1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "d3595819",
+      "nom": "image-1003-1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "f5881641",
+      "nom": "image-1004-1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "dc7ca559",
+      "nom": "image-1005-1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "2ee4e5a7",
+      "nom": "image-1006-1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "94d1f89f",
+      "nom": "image-1007-1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "9676e765",
+      "nom": "image-2-1.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "203d0883",
+      "nom": "image-2-2.svg",
+      "score": 9
+    },
+    {
+      "id_rapport": "b233af3d",
+      "nom": "image-2-3.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "7664fb5a",
+      "nom": "image-2-4.svg",
+      "score": 10
+    },
+    {
+      "id_rapport": "709b9043",
+      "nom": "image-2-5.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "b8307e83",
+      "nom": "image-2-6.svg",
+      "score": 10
+    },
+    {
+      "id_rapport": "04e7629e",
+      "nom": "image-2-7.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "c75f6ee2",
+      "nom": "image-2-8.svg",
+      "score": 10
+    },
+    {
+      "id_rapport": "082b6ba1",
+      "nom": "image-3-1.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "7ae0995f",
+      "nom": "image-3-2.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "48634589",
+      "nom": "image-3-3.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "a3b4657e",
+      "nom": "image-4-1.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "334981c8",
+      "nom": "image-5-1.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "abfe7670",
+      "nom": "image-5-10.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "3df9fe05",
+      "nom": "image-5-11.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "efb05504",
+      "nom": "image-5-12.svg",
+      "score": 9
+    },
+    {
+      "id_rapport": "c53dff76",
+      "nom": "image-5-2.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "f28687c3",
+      "nom": "image-5-3.svg",
+      "score": 10
+    },
+    {
+      "id_rapport": "87081b17",
+      "nom": "image-5-4.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "31e4e5af",
+      "nom": "image-5-5.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "e3df290c",
+      "nom": "image-5-6.svg",
+      "score": 10
+    },
+    {
+      "id_rapport": "49b11e98",
+      "nom": "image-5-7.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "fc76636b",
+      "nom": "image-5-8.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "e3b4d3a5",
+      "nom": "image-5-9.svg",
+      "score": 10
+    },
+    {
+      "id_rapport": "d2bff246",
+      "nom": "image-6-1.png",
+      "score": 2
+    },
+    {
+      "id_rapport": "b2e1a690",
+      "nom": "image-6-2.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "b3763d3a",
+      "nom": "image-6-3.svg",
+      "score": 10
+    },
+    {
+      "id_rapport": "660bff99",
+      "nom": "image-6-4.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "1f0eba5b",
+      "nom": "image-6-5.svg",
+      "score": 10
+    },
+    {
+      "id_rapport": "399e5423",
+      "nom": "image-6-6.png",
+      "score": 1
+    },
+    {
+      "id_rapport": "db18e6b0",
+      "nom": "notesMaster1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "b07e72dc",
+      "nom": "notesMaster1.xml.rels",
+      "score": 10
+    },
+    {
+      "id_rapport": "439040e3",
+      "nom": "notesSlide1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "b97043f6",
+      "nom": "notesSlide2.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "7c2b0eb0",
+      "nom": "notesSlide3.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "8578dab5",
+      "nom": "notesSlide4.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "b5490e13",
+      "nom": "notesSlide5.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "62ac1572",
+      "nom": "notesSlide6.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "8dc99231",
+      "nom": "notesSlide1.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "aab86aa1",
+      "nom": "notesSlide2.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "c89c853f",
+      "nom": "notesSlide3.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "1b51aed9",
+      "nom": "notesSlide4.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "ec2a79d8",
+      "nom": "notesSlide5.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "a674b034",
+      "nom": "notesSlide6.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "21104136",
+      "nom": "slideLayout1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "1df9b4f6",
+      "nom": "slideLayout2.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "61c73ee6",
+      "nom": "slideLayout3.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "4818496e",
+      "nom": "slideLayout4.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "3529f987",
+      "nom": "slideLayout5.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "4fab44ad",
+      "nom": "slideLayout6.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "2ab1c73e",
+      "nom": "slideLayout7.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "75331ab7",
+      "nom": "slideLayout1.xml.rels",
+      "score": 9
+    },
+    {
+      "id_rapport": "103aec09",
+      "nom": "slideLayout2.xml.rels",
+      "score": 19
+    },
+    {
+      "id_rapport": "db2941d2",
+      "nom": "slideLayout3.xml.rels",
+      "score": 19
+    },
+    {
+      "id_rapport": "7d6a8d7c",
+      "nom": "slideLayout4.xml.rels",
+      "score": 19
+    },
+    {
+      "id_rapport": "9f749ebd",
+      "nom": "slideLayout5.xml.rels",
+      "score": 19
+    },
+    {
+      "id_rapport": "224f520b",
+      "nom": "slideLayout6.xml.rels",
+      "score": 19
+    },
+    {
+      "id_rapport": "daff8aa9",
+      "nom": "slideLayout7.xml.rels",
+      "score": 19
+    },
+    {
+      "id_rapport": "1046babb",
+      "nom": "slideMaster1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "bc379587",
+      "nom": "slideMaster1.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "7835176f",
+      "nom": "slide1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "98e3afd9",
+      "nom": "slide2.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "b7ab8ce1",
+      "nom": "slide3.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "2d0e8ae3",
+      "nom": "slide4.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "c937e3be",
+      "nom": "slide5.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "c234c28c",
+      "nom": "slide6.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "7285bff5",
+      "nom": "slide1.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "22f36922",
+      "nom": "slide2.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "c269a8f9",
+      "nom": "slide3.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "9214c505",
+      "nom": "slide4.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "31d91e5e",
+      "nom": "slide5.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "94e8729c",
+      "nom": "slide6.xml.rels",
+      "score": 18
+    },
+    {
+      "id_rapport": "482c00c4",
+      "nom": "theme1.xml",
+      "score": 18
+    },
+    {
+      "id_rapport": "22d1920d",
+      "nom": "presentation.xml.rels",
+      "score": 27
+    },
+    {
+      "id_rapport": "52a8a968",
+      "nom": ".rels",
+      "score": 18
+    }
+  ],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\La-Cybersecurite-Defis-et-Defenses.pptx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}
