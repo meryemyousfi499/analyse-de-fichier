@@ -79,13 +79,20 @@ rule Suspicious_LOLBins_Chain
         2 of them
 }
 
+/*
+  Cette regle utilise la variable externe `file_ext` (extension du fichier SANS
+  le point, en minuscules), fournie par agent/yara_scan.py. Sans elle, la regle
+  se declenchait sur TOUT executable legitime (tout .exe commence par "MZ").
+  Elle ne s'active maintenant que si l'extension annoncee est celle d'un
+  document / d'une image / d'un fichier texte.
+*/
 rule PE_Disguised_As_Document
 {
     meta:
-        description = "En-tete MZ (executable) alors que le contexte attend un document"
+        description = "En-tete MZ (executable) alors que l'extension annonce un document ou une image"
         severity = "critique"
     strings:
         $mz = { 4D 5A }
     condition:
-        $mz at 0
+        $mz at 0 and file_ext matches /^(pdf|docx?|docm|xlsx?|xlsm|pptx?|pptm|rtf|txt|csv|odt|ods|odp|jpe?g|png|gif|bmp|mp3|mp4|zip)$/
 }

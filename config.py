@@ -124,6 +124,45 @@ MAX_PATTERN_SCAN_MB = int(os.environ.get("MAX_PATTERN_SCAN_MB", "25"))
 # calcul - un echantillon suffisant pour estimer l'entropie, sans charger
 # plusieurs Go en RAM ni ralentir l'analyse.
 MAX_ENTROPY_READ_MB = int(os.environ.get("MAX_ENTROPY_READ_MB", "200"))
-CLAMD_HOST = "127.0.0.1"
-CLAMD_PORT = 3310
-HYBRID_ANALYSIS_API_KEY = "ecut2uyi587cffda2wgfls6yeaf522cbce4ue97za32b164f9kmg1dqt1646e6fa"
+
+# ---------------------------------------------------------------------------
+# Politique de l'orchestrateur (centralisee ici : plus aucun seuil disperse)
+# ---------------------------------------------------------------------------
+# Serveur Flask : par defaut en local uniquement. Mettre HOST=0.0.0.0 pour
+# exposer l'agent sur le reseau (dans ce cas, definissez aussi API_TOKEN).
+HOST = os.environ.get("CABINET_NOIR_HOST", "127.0.0.1")
+PORT = int(os.environ.get("CABINET_NOIR_PORT", "5500"))
+# Jeton exige (en-tete "X-API-Token") par /api/ingest-remote. Sans jeton
+# configure, cet endpoint n'accepte que les requetes venant de la machine locale.
+API_TOKEN = os.environ.get("CABINET_NOIR_API_TOKEN", "")
+
+# Score statique minimal (0-100) a partir duquel la sandbox est demandee
+# lorsqu'aucun signal fort independant n'existe. 70 = point de depart a calibrer.
+SANDBOX_MIN_SCORE = int(os.environ.get("SANDBOX_MIN_SCORE", "70"))
+# Taille max (octets) d'un fichier soumis a la sandbox.
+SANDBOX_MAX_FILE_MB = int(os.environ.get("SANDBOX_MAX_FILE_MB", "50"))
+# La sandbox Hybrid Analysis est un service EXTERNE : soumettre un fichier
+# revient a le partager. Par defaut (0), les fichiers eligibles sont mis en
+# file avec le statut "en_attente_validation" et ne partent qu'apres clic
+# manuel sur "Soumettre". Mettre 1 pour autoriser l'envoi automatique.
+SANDBOX_ALLOW_EXTERNAL_SUBMISSION = os.environ.get("SANDBOX_ALLOW_EXTERNAL_SUBMISSION", "0") in ("1", "true", "True")
+# Parametres de partage envoyes a Hybrid Analysis (a verifier dans la doc
+# de l'API v2 : une cle gratuite peut rendre les rapports publics).
+SANDBOX_NO_SHARE_THIRD_PARTY = os.environ.get("SANDBOX_NO_SHARE_THIRD_PARTY", "1") in ("1", "true", "True")
+SANDBOX_ALLOW_COMMUNITY_ACCESS = os.environ.get("SANDBOX_ALLOW_COMMUNITY_ACCESS", "0") in ("1", "true", "True")
+# Duree de conservation (jours) des copies d'echantillons dans sandbox/.
+SANDBOX_RETENTION_DAYS = int(os.environ.get("SANDBOX_RETENTION_DAYS", "7"))
+# Extensions JAMAIS soumises seules a la sandbox (composants internes, medias).
+SANDBOX_NEVER_STANDALONE_EXTENSIONS = (
+    ".rels", ".xml", ".vml", ".emf", ".wmf", ".png", ".jpg", ".jpeg", ".gif",
+    ".bmp", ".ico", ".svg", ".css", ".json", ".txt", ".config",
+)
+
+# Archives : limites anti zip-bomb / recursion.
+ARCHIVE_MAX_DEPTH = int(os.environ.get("ARCHIVE_MAX_DEPTH", "3"))
+ARCHIVE_MAX_FILES = int(os.environ.get("ARCHIVE_MAX_FILES", "200"))
+
+# Cache : un fichier deja analyse (meme SHA-256, memes regles YARA) depuis
+# moins de CACHE_TTL_HOURS heures n'est pas re-analyse par la surveillance auto.
+CACHE_TTL_HOURS = float(os.environ.get("CACHE_TTL_HOURS", "24"))
+DB_PATH = os.path.join(BASE_DIR, "cabinet_noir.db")

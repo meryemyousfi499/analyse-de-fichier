@@ -3,12 +3,13 @@ Agent de traitement et d'analyse de fichiers — point d'entrée Flask.
 Lance le serveur : python app.py
 Dashboard : http://127.0.0.1:5500
 """
+import hmac
 import os
 import uuid
 
 from flask import Flask, jsonify, render_template, request, redirect
 
-from config import MAX_UPLOAD_MB, UPLOAD_DIR, AUTO_WATCH_ENABLED, WATCH_DIRS
+from config import MAX_UPLOAD_MB, UPLOAD_DIR, AUTO_WATCH_ENABLED, WATCH_DIRS, HOST, PORT, API_TOKEN
 from agent.pipeline import run_pipeline, list_reports, get_report
 
 app = Flask(__name__)
@@ -20,6 +21,27 @@ app.config["MAX_CONTENT_LENGTH"] = MAX_UPLOAD_MB * 1024 * 1024
 # sur cette machine (voir son propre flag -opensearch-dashboards-url) :
 # on réutilise ce mécanisme plutôt que d'en refaire un ici.
 SECAGENT_SERVER_URL = os.environ.get("SECAGENT_SERVER_URL", "").rstrip("/")
+
+
+_LOCAL_ADDRS = ("127.0.0.1", "::1", "::ffff:127.0.0.1")
+
+
+def _is_authorized():
+    """Autorise une requete sensible : jeton valide (en-tete X-API-Token) si un
+    jeton est configure, sinon uniquement la machine locale. Evite qu'un agent
+    expose sur le reseau (HOST=0.0.0.0) accepte des fichiers ou declenche des
+    soumissions sandbox depuis n'importe qui."""
+    if API_TOKEN:
+        sent = request.headers.get("X-API-Token", "")
+        if hmac.compare_digest(sent.encode(), API_TOKEN.encode()):
+            return True
+        # Le dashboard local n'envoie pas de jeton : tolere uniquement en local.
+        return request.remote_addr in _LOCAL_ADDRS and request.headers.get("X-API-Token") is None
+    return request.remote_addr in _LOCAL_ADDRS
+
+
+def _forbidden():
+    return jsonify({"erreur": "acces refuse : jeton X-API-Token valide requis (ou requete locale)"}), 403
 
 
 @app.route("/")
@@ -64,8 +86,11 @@ def ingest_remote():
     que /api/analyze, avec en plus la machine d'origine (`host`).
 
     Corps : multipart/form-data, champ fichier "fichier" + champ texte
-    "host" (nom de la machine, obligatoire).
+    "host" (nom de la machine, obligatoire). Requiert l'en-tete X-API-Token
+    (CABINET_NOIR_API_TOKEN) ou une requete locale.
     """
+    if not _is_authorized():
+        return _forbidden()
     if "fichier" not in request.files:
         return jsonify({"erreur": "aucun fichier recu (champ 'fichier' attendu)"}), 400
 
@@ -92,13 +117,10 @@ def ingest_remote():
             except Exception:
                 pass
 
-    from config import REPORTS_DIR
-    import json as _json
+    from agent.orchestrator import save_report
     report["host"] = host
-    report_path = os.path.join(REPORTS_DIR, f"{report['id_rapport']}.json")
     try:
-        with open(report_path, "w", encoding="utf-8") as fh:
-            _json.dump(report, fh, ensure_ascii=False, indent=2, default=str)
+        save_report(report)  # reecrit le JSON et met a jour l'index SQLite
     except Exception as e:
         print(f"[cabinet-noir] avertissement: ré-écriture du rapport avec host echouee: {e}")
 
@@ -179,6 +201,8 @@ def sandbox_list():
 @app.route("/api/sandbox/submit/<entry_id>", methods=["POST"])
 def sandbox_submit(entry_id):
     from agent import sandbox
+    if not _is_authorized():
+        return _forbidden()
     ok = sandbox.submit_now(entry_id)
     if not ok:
         return jsonify({"erreur": "soumission impossible (cle API absente, entree introuvable, ou deja en cours)"}), 400
@@ -246,5 +270,13 @@ if __name__ == "__main__":
 
     from agent import sandbox
     sandbox.resume_pending_on_startup()
+    try:
+        sandbox.purge_old_samples()
+    except Exception as e:
+        print(f"[cabinet-noir] avertissement: purge sandbox impossible: {e}")
 
-    app.run(host="0.0.0.0", port=5500, debug=False, threaded=True)
+    if HOST not in ("127.0.0.1", "localhost", "::1") and not API_TOKEN:
+        print("[cabinet-noir] ATTENTION : agent expose sur le reseau sans CABINET_NOIR_API_TOKEN ; "
+              "/api/ingest-remote et la soumission sandbox restent reserves aux requetes locales.")
+
+    app.run(host=HOST, port=PORT, debug=False, threaded=True)

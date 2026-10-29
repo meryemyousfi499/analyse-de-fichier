@@ -80,7 +80,7 @@ Quatre sources indépendantes peuvent être activées, chacune se dégradant pro
 export ABUSEIPDB_API_KEY="votre_cle_abuseipdb"
 export OTX_API_KEY="votre_cle_otx"
 export ABUSECH_AUTH_KEY="votre_cle_abusech"   # active MalwareBazaar + URLhaus
-export HYBRID_ANALYSIS_API_KEY = "ecut2uyi587cffda2wgfls6yeaf522cbce4ue97za32b164f9kmg1dqt1646e6fa"
+export HYBRID_ANALYSIS_API_KEY="votre_cle_hybrid_analysis"   # ne JAMAIS la committer
 ./run.sh
 ```
 
@@ -267,3 +267,35 @@ file-analysis-agent/
 ├── quarantine/                # Fichiers neutralisés + journal
 └── reports/                   # Historique des rapports JSON
 ```
+
+## Orchestrateur, verdict et politique (nouveau)
+
+`agent/orchestrator.py` décide quels outils lancer et pourquoi, puis produit un
+rapport avec la trace complète (`orchestration.outils`, `orchestration.plan`).
+Tous les outils renvoient un `ToolResult` normalisé (`agent/tool_result.py`) :
+`ok | detected | error | unavailable | not_applicable | skipped | pending`.
+
+Le **verdict** (`agent/verdict.py`) est distinct du score : `clean`, `suspect`,
+`malicious` ou `inconclusive`, avec une confiance et une couverture. Un outil
+indisponible ou en erreur n'est jamais interprété comme « sain » : le verdict
+devient `inconclusive` et l'action `human_review`.
+
+Variables d'environnement de la politique (valeurs par défaut dans `config.py`) :
+
+| Variable | Défaut | Rôle |
+|---|---|---|
+| `SANDBOX_MIN_SCORE` | 70 | score statique à partir duquel la sandbox est justifiée (à calibrer) |
+| `SANDBOX_ALLOW_EXTERNAL_SUBMISSION` | 0 | 1 = envoi automatique à Hybrid Analysis ; 0 = validation manuelle (« Soumettre ») |
+| `SANDBOX_NO_SHARE_THIRD_PARTY` / `SANDBOX_ALLOW_COMMUNITY_ACCESS` | 1 / 0 | paramètres de partage envoyés à l'API (à vérifier dans la doc HA) |
+| `SANDBOX_RETENTION_DAYS` | 7 | durée de conservation des copies dans `sandbox/` |
+| `ARCHIVE_MAX_DEPTH` / `ARCHIVE_MAX_FILES` | 3 / 200 | limites anti zip-bomb et imbrication |
+| `CACHE_TTL_HOURS` | 24 | réutilisation d'un rapport « clean » (même SHA-256 + mêmes règles YARA) pour la surveillance auto |
+| `CABINET_NOIR_HOST` / `CABINET_NOIR_PORT` | 127.0.0.1 / 5500 | adresse d'écoute (locale par défaut) |
+| `CABINET_NOIR_API_TOKEN` | vide | jeton `X-API-Token` exigé par `/api/ingest-remote` hors machine locale |
+
+Les documents Office / OpenDocument et paquets (`.docx`, `.xlsx`, `.jar`, `.apk`…) ne sont
+plus extraits comme des archives : ils sont analysés comme un tout. L'historique est indexé
+dans `cabinet_noir.db` (SQLite) ; les rapports restent des fichiers JSON dans `reports/`.
+
+Tests : `python -m unittest discover -s tests`
+

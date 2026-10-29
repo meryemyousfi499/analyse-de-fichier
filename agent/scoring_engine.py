@@ -27,7 +27,12 @@ WEIGHTS = {
     "ml_probabilite": 25,    # ponderation de la probabilite ML (0-1) * 25
     "ti_signale": 15,        # IP/domaine/URL signale par une source externe
     "ti_hash_malveillant": 60,  # hash du fichier confirme malveillant par une source externe
+    "specialise_indicateurs": 10,  # indicateurs de l'analyse specialisee (Office/PDF/script)
 }
+
+# Indicateurs specialises qui ne comptent pas (informatifs, deja couverts ailleurs
+# ou trop frequents dans des documents legitimes).
+SPECIALIZED_IGNORED = {"/URI", "relationship_read_error"}
 
 
 def band_for_score(score):
@@ -38,7 +43,8 @@ def band_for_score(score):
 
 
 def compute_score(hash_check, type_check, entropy_data, static_result,
-                   yara_result, clamav_result, iocs, ml_result, ti_result=None):
+                   yara_result, clamav_result, iocs, ml_result, ti_result=None,
+                   specialized_result=None):
     points = 0
     explications = []
 
@@ -47,20 +53,43 @@ def compute_score(hash_check, type_check, entropy_data, static_result,
         points += WEIGHTS["hash_connu_malveillant"]
         explications.append("Hash SHA-256 identifie comme malveillant dans une base connue.")
 
+    # --- Signaux deja couverts par une autre source (anti double comptage) ---
+    # Une meme caracteristique (type usurpe, macro auto-exec, API d'injection)
+    # etait comptee deux fois : une fois par l'analyse structurelle et une
+    # fois par la regle YARA correspondante. La regle reste affichee dans les
+    # explications, mais ses points ne sont ajoutes qu'une seule fois.
+    pe_info = static_result.get("pe", {}) if isinstance(static_result, dict) else {}
+    office_info = static_result.get("office", {}) if isinstance(static_result, dict) else {}
+    injection_apis = {"VirtualAllocEx", "WriteProcessMemory", "CreateRemoteThread", "NtUnmapViewOfSection"}
+    redundant_rules = set()
+    if type_check.get("alerte"):
+        redundant_rules.add("PE_Disguised_As_Document")
+    if office_info.get("macros_presentes") and office_info.get("auto_execution"):
+        redundant_rules.add("Suspicious_Office_AutoOpen_Shell")
+    if pe_info.get("disponible") and injection_apis.intersection(pe_info.get("imports_dangereux_detectes", [])):
+        redundant_rules.add("Suspicious_PE_Process_Injection_APIs")
+
     # --- YARA ---
-    severities = [m["severite"] for m in yara_result.get("matches", [])]
+    counted = [m for m in yara_result.get("matches", []) if m["regle"] not in redundant_rules]
+    ignored = [m["regle"] for m in yara_result.get("matches", []) if m["regle"] in redundant_rules]
+    severities = [m["severite"] for m in counted]
     if "critique" in severities:
         points += WEIGHTS["yara_critique"]
-        rules = [m["regle"] for m in yara_result["matches"] if m["severite"] == "critique"]
+        rules = [m["regle"] for m in counted if m["severite"] == "critique"]
         explications.append(f"Regle(s) YARA critique(s) declenchee(s) : {', '.join(rules)}.")
     elif "eleve" in severities:
         points += WEIGHTS["yara_eleve"]
-        rules = [m["regle"] for m in yara_result["matches"] if m["severite"] == "eleve"]
+        rules = [m["regle"] for m in counted if m["severite"] == "eleve"]
         explications.append(f"Regle(s) YARA de severite elevee declenchee(s) : {', '.join(rules)}.")
     elif "moyen" in severities:
         points += WEIGHTS["yara_moyen"]
-        rules = [m["regle"] for m in yara_result["matches"] if m["severite"] == "moyen"]
+        rules = [m["regle"] for m in counted if m["severite"] == "moyen"]
         explications.append(f"Regle(s) YARA moderee(s) declenchee(s) : {', '.join(rules)}.")
+    if ignored:
+        explications.append(
+            "Regle(s) YARA " + ", ".join(ignored) +
+            " : meme signal que l'analyse structurelle, points comptes une seule fois."
+        )
 
     # --- ClamAV ---
     if clamav_result.get("disponible") and clamav_result.get("infecte"):
@@ -76,10 +105,9 @@ def compute_score(hash_check, type_check, entropy_data, static_result,
         )
 
     # --- Analyse statique PE ---
-    pe = static_result.get("pe", {}) if isinstance(static_result, dict) else {}
+    pe = pe_info
     if pe.get("disponible"):
         dangerous = pe.get("imports_dangereux_detectes", [])
-        injection_apis = {"VirtualAllocEx", "WriteProcessMemory", "CreateRemoteThread", "NtUnmapViewOfSection"}
         if injection_apis.intersection(dangerous):
             points += WEIGHTS["pe_injection_apis"]
             explications.append("Combinaison d'API Windows typique d'une injection de processus.")
@@ -91,7 +119,7 @@ def compute_score(hash_check, type_check, entropy_data, static_result,
             explications.append("Aucune signature numerique Authenticode presente.")
 
     # --- Office ---
-    office = static_result.get("office", {}) if isinstance(static_result, dict) else {}
+    office = office_info
     if office.get("macros_presentes") and office.get("auto_execution"):
         points += WEIGHTS["macros_auto_exec"]
         explications.append("Macro Office avec auto-execution detectee (AutoOpen/Document_Open).")
@@ -111,6 +139,21 @@ def compute_score(hash_check, type_check, entropy_data, static_result,
             f"Des donnees ({taille} octets) sont dissimulees apres la fin officielle "
             "de l'image (technique de fichier polyglotte / steganographie de conteneur)."
         )
+
+    # --- Analyse specialisee (agent/specialized_analysis.py) ---
+    # Points ajoutes une seule fois, et uniquement pour des indicateurs non deja
+    # comptes par l'analyse structurelle (macros auto-exec, JS/Launch PDF).
+    if specialized_result and specialized_result.get("findings"):
+        deja_compte = {"vba_project"} if office_info.get("macros_presentes") else set()
+        deja_compte |= {"/JavaScript", "/Launch"} if (pdf.get("javascript_embarque") or pdf.get("action_launch")) else set()
+        nouveaux = [f["indicator"] for f in specialized_result["findings"]
+                    if f.get("indicator") not in SPECIALIZED_IGNORED
+                    and f.get("indicator") not in deja_compte]
+        if nouveaux:
+            points += WEIGHTS["specialise_indicateurs"]
+            explications.append(
+                "Analyse specialisee : indicateur(s) a verifier -> " + ", ".join(sorted(set(nouveaux))) + "."
+            )
 
     # --- Entropie ---
     # Un format nativement compresse (image, archive, docx/xlsx/pptx...) a
@@ -134,8 +177,12 @@ def compute_score(hash_check, type_check, entropy_data, static_result,
         explications.append("Quelques indicateurs isoles detectes (a corroborer).")
 
     # --- ML heuristique ---
+    # Le modele est alimente par les MEMES signaux que les regles ci-dessus
+    # (type usurpe, packer, macros, IOC...) : quand ces signaux ont deja fait
+    # monter le score, sa contribution est reduite pour ne pas les compter deux fois.
     proba = ml_result.get("probabilite_risque", 0)
-    points += proba * WEIGHTS["ml_probabilite"]
+    ml_factor = 0.4 if points >= 40 else 1.0
+    points += proba * WEIGHTS["ml_probabilite"] * ml_factor
     if proba >= 0.5:
         explications.append(f"Le modele de scoring des features estime une probabilite de risque de {proba:.0%}.")
 
