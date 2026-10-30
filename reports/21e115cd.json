@@ -1,0 +1,156 @@
+{
+  "id_rapport": "21e115cd",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 1.733,
+  "metadonnees": {
+    "nom": "THREE_OPT.png",
+    "extension": "png",
+    "taille_octets": 40908,
+    "taille_lisible": "39.9 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_w5qqpic9\\images_pfe\\THREE_OPT.png",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-28T23:59:15",
+    "date_modification": "2026-10-28T23:59:15",
+    "date_acces": "2026-10-29T00:08:30",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "png",
+    "extension_declaree": ".png",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "1ac5d9f12d6394ded13b93d5aae7c4503e499c0936be6aeb073a7256a3b4ba02",
+    "sha1": "9e29cc9aa9556e4bd7661c77b26a8373d53136e8",
+    "md5": "c76aeea853fad7150baa78365d0bf744",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "png",
+    "image": {
+      "disponible": true,
+      "dimensions": "3941x1050",
+      "donnees_ajoutees_apres_fin": false,
+      "taille_donnees_ajoutees_octets": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.913,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.91
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "I:\\F\u0004"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0039012908935546877,
+      "entropie_globale": 0.989125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0435,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_w5qqpic9\\images_pfe\\THREE_OPT.png",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

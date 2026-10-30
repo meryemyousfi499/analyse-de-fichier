@@ -1,0 +1,550 @@
+{
+  "id_rapport": "61aa95ef",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 46.445,
+  "metadonnees": {
+    "nom": "TB-MICHEL-PEREIRA-RENDU-FINAL.pdf",
+    "extension": "pdf",
+    "taille_octets": 739711,
+    "taille_lisible": "722.4 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TB-MICHEL-PEREIRA-RENDU-FINAL.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-03-10T02:06:04",
+    "date_modification": "2026-03-10T02:06:06",
+    "date_acces": "2026-10-28T12:50:34",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.google.com/\nHostUrl=https://sonar.rero.ch/documents/323802/files/TB-MICHEL-PEREIRA-RENDU-FINAL.pdf\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "5db4f525e2a0fca60eb1110d6ec273de3555232252ece5c0107401f287155b30",
+    "sha1": "aca662027c3e7965c8701826f8d09831c56c913a",
+    "md5": "4eb13a0bb5e632bba54e38cdfa1e47b3",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 46
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.899,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.51,
+      7.98,
+      7.99,
+      7.98,
+      7.84,
+      7.91,
+      7.84,
+      7.96,
+      7.98,
+      7.98,
+      7.3,
+      3.23
+    ],
+    "base64": {
+      "nombre_blobs_base64": 3,
+      "exemple": "/Type/Font/Subtype/TrueType/Name/F3/BaseFont/ArialMT/Encodin..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.urkund.com",
+      "www.techno-science.net",
+      "fr.jura.com",
+      "www.bitpanda.com",
+      "www.linkedin.com",
+      "www.nytimes.com",
+      "fr.wikipedia.org",
+      "dbdb.io",
+      "edri.org",
+      "www.avast.com",
+      "fondalo.com",
+      "www.investopedia.com",
+      "nftnow.com",
+      "www.digitaltrends.com",
+      "taginspector.com",
+      "medium.com",
+      "www.theverge.com",
+      "www.fastcompany.com",
+      "www.welivesecurity.com",
+      "www.nbcnews.com",
+      "www.youtube.com",
+      "www.sap.com",
+      "en.wikipedia.org",
+      "www.bloomberg.com",
+      "ethereum.org",
+      "www.ibm.com",
+      "allaboutcookies.org",
+      "earthweb.com"
+    ],
+    "urls": [
+      "https://www.urkund.com/fr/student/)",
+      "https://www.techno-science.net/definition/10886.html)",
+      "https://www.usg.edu/galileo/skills/unit07/internet07_02.phtml)",
+      "https://fr.jura.com/fr/conseil-achat/achat-en-ligne-conditions/protection-des-donnees)",
+      "https://cryptoast.fr/web-3-version-decentralisee-internet/)",
+      "https://dev.to/rounakbanik/deploying-a-dapp-to-mainnet-3cob)",
+      "https://www.bitpanda.com/academy/fr/lecons/quest-ce-quune-dapp)",
+      "https://www.linkedin.com/pulse/evolution-internet-from-web10-web3-ravi-chamria)",
+      "https://www.lemonde.fr/pixels/article/2022/04/20/le-web3-explique-en-quatre-questions_6122944_4408996.html)",
+      "https://www.nytimes.com/2018/04/04/us/politics/cambridge-analytica-scandal-fallout.html)",
+      "https://fr.wikipedia.org/w/index.php?title=Cookie_\\(informatique\\)&oldid=196282405)",
+      "https://dbdb.io/db/gun)",
+      "https://fr.wikipedia.org/w/index.php?title=D%C3%A9centralisation&oldid=190623278)",
+      "https://edri.org/our-work/targeted-online-big-tech-business-model-sells-your-deepest-secrets-for-profit/)",
+      "https://www.avast.com/fr-fr/c-what-is-tcp-ip)",
+      "https://fondalo.com/what-is-targeting-in-digital-marketing/)",
+      "https://www.investopedia.com/terms/d/distributed-ledger-technology-dlt.asp)",
+      "https://fr.wikipedia.org/w/index.php?title=GAFAM&oldid=196433050)",
+      "https://nftnow.com/features/the-problem-with-anonymity-in-web3-and-nfts/)",
+      "https://gun.eco/docs/Introduction)",
+      "https://www.investopedia.com/terms/b/blockchain.asp)",
+      "https://www.digitaltrends.com/computing/history-of-cookies-and-effect-on-privacy/)",
+      "https://fr.wikipedia.org/w/index.php?title=Histoire_d%27Internet&oldid=192365639)",
+      "https://thereader.mitpress.mit.edu/a-history-of-the-data-tracked-user/)",
+      "https://www.lebigdata.fr/gafam-tout-savoir)",
+      "https://taginspector.com/articles/marketing-tags-and-pixels-form-and-function/)",
+      "https://medium.com/@vivekmadurai/web-evolution-from-1-0-to-3-0-e84f2c06739)",
+      "https://www.lesechos.fr/tech-medias/hightech/cest-quoi-le-web3-cette-nouvelle-version-dinternet-qui-fait-parler-delle-1376152)",
+      "https://www.theverge.com/2016/11/13/13619148/trump-facebook-twitter-helped-win)",
+      "https://www.fastcompany.com/90656170/targeted-ads-arent-just-annoying-they-can-be-harmful-heres-how-to-fight-back)",
+      "https://www.welivesecurity.com/2018/02/23/six-tips-avoid-targeted-marketing/)",
+      "https://www.cnil.fr/fr/nouvelles-methodes-de-tracage-en-ligne-quelles-solutions-pour-se-proteger)",
+      "https://www.nbcnews.com/tech/social-media/mark-zuckerberg-leveraged-facebook-user-data-fight-rivals-help-friends-n994706)",
+      "https://www.youtube.com/watch?v=N5E3gra5wz4)",
+      "https://www.icodproject.eu/)",
+      "https://www.sap.com/suisse/insights/what-is-blockchain.html)",
+      "https://www.investopedia.com/news/cryptokitties-are-still-thing-heres-why/)",
+      "https://en.wikipedia.org/w/index.php?title=Steemit&oldid=1101156463)",
+      "https://www.bloomberg.com/news/videos/2018-05-07/steemit-1st-social-media-platform-built-on-top-of-a-blockchain-video)",
+      "https://ethereum.org/en/developers/docs/dapps/#top)",
+      "https://fr.wikipedia.org/w/index.php?title=Web3&oldid=195064586)",
+      "https://fr.wikipedia.org/w/index.php?title=WebRTC&oldid=186009806)",
+      "https://www.youtube.com/watch?v=WmR9IMUD_CY)",
+      "https://www.ibm.com/topics/smart-contracts)",
+      "https://allaboutcookies.org/what-is-a-web-beacon)",
+      "https://ethereum.org/)",
+      "https://earthweb.com/metamask-statistics/)"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 3
+    },
+    "chemins_windows": [
+      "z:\\^Eo}AUux)\f5"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "A5F7F964BEDB8F4499788E8916E9311F"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 122
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [
+      {
+        "indicator": "/URI",
+        "description": "Marqueur PDF présent : /URI"
+      }
+    ],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.urkund.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.techno-science.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "fr.jura.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.bitpanda.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.linkedin.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://www.urkund.com/fr/student/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.techno-science.net/definition/10886.html)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.usg.edu/galileo/skills/unit07/internet07_02.phtml)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://fr.jura.com/fr/conseil-achat/achat-en-ligne-conditions/protection-des-donnees)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://cryptoast.fr/web-3-version-decentralisee-internet/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.07054433822631836,
+      "entropie_globale": 0.987375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 47,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1596,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 38,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\TB-MICHEL-PEREIRA-RENDU-FINAL.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 3.715,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.05,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.815,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.523,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "detected",
+        "duration_s": 0.005,
+        "summary": "1 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "/URI",
+            "description": "Marqueur PDF présent : /URI"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

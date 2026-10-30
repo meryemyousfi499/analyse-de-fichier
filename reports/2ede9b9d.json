@@ -1,0 +1,214 @@
+{
+  "id_rapport": "2ede9b9d",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 3.379,
+  "metadonnees": {
+    "nom": "1ced71f7.json",
+    "extension": "json",
+    "taille_octets": 4070,
+    "taille_lisible": "4.0 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\1ced71f7.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:23",
+    "date_modification": "2026-10-29T00:52:23",
+    "date_acces": "2026-10-29T03:52:30",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "226c3c0b61fdef16362558fcf18cfaad0e242bfd5b37198a1eafc5b71da8c8c5",
+    "sha1": "4b3e30872c1508e1ae9dd2fa2205eb005aa5abab",
+    "md5": "686a285ab19fcc9056bc422e94bf050f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.754,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.75
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "github.com"
+    ],
+    "urls": [
+      "https://github.com/\\n"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "dd5309d891004f5008d37dc84cd13d8d"
+      ],
+      "sha1": [
+        "40424bbceceb13b3144ed35b7d052455dc16c7c2"
+      ],
+      "sha256": [
+        "496a591eb1e67df2a620f710d529ba6ddfe1c19149e6647cc4e320bb0efd8553"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "github.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "55446"
+        }
+      }
+    },
+    "urls": {
+      "https://github.com/\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "496a591eb1e67df2a620f710d529ba6ddfe1c19149e6647cc4e320bb0efd8553": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "github.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.00038814544677734375,
+      "entropie_globale": 0.59425,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0426,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 24,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['github.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\1ced71f7.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id_rapport": "23d6958b",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 8.181,
+  "metadonnees": {
+    "nom": "35c27396.json",
+    "extension": "json",
+    "taille_octets": 4439,
+    "taille_lisible": "4.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\35c27396.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:25",
+    "date_modification": "2026-10-29T00:52:25",
+    "date_acces": "2026-10-29T09:19:17",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "bb73409afd3b1ee92e27acb66b24d43b8a5b28fc324a1417a5a7dab44608e564",
+    "sha1": "e825c572d846bf41b6e4f6e1bf84cecd75a416f7",
+    "md5": "83e23b800f6609d2ffed612535cd3104",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.84,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.84
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "4d8f4ca2861c3077292e62478816a5ef"
+      ],
+      "sha1": [
+        "3901f31161afdaf38c0b63da870c8044fd8a3779"
+      ],
+      "sha256": [
+        "c370f20048e62c000d05a464b9e5546854ca7673f39b6c84f6c5178280f65484"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {
+      "c370f20048e62c000d05a464b9e5546854ca7673f39b6c84f6c5178280f65484": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.00042333602905273435,
+      "entropie_globale": 0.605,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0266,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\35c27396.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

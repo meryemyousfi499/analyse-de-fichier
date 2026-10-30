@@ -1,0 +1,225 @@
+{
+  "id_rapport": "2bf42c57",
+  "origine": "auto_watch",
+  "duree_analyse_s": 9.966,
+  "metadonnees": {
+    "nom": "TP2 Partie 3.pdf",
+    "extension": "pdf",
+    "taille_octets": 286908,
+    "taille_lisible": "280.2 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\TP2 Partie 3.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-14T20:03:15",
+    "date_modification": "2026-10-14T20:03:17",
+    "date_acces": "2026-10-28T23:45:44",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://drive.google.com/\nHostUrl=https://drive.usercontent.google.com/download?id=11sJ0Edmb-MsXsYMp0iyVGC2oNZWQOgpb&export=download&authuser=3\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "3ca7738eb3482aaf789a57a40d271aca50641e6c1d7a96922a83b6fe62ad1948",
+    "sha1": "cf246c7f650773840895505d722d15998db3274c",
+    "md5": "0cee8fb334b9759b6023650b6c21406d",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 6
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.318,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.97,
+      4.79,
+      7.54,
+      7.97,
+      4.06
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "154.0.0.0"
+    ],
+    "domaines": [
+      "fr.wikipedia.org"
+    ],
+    "urls": [
+      "https://fr.wikipedia.org/wiki/Extract-transform-load)",
+      "https://www.drought.gov/data-maps-tools/global-historical-climatology-network-ghcn)"
+    ],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 6
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "154.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 14,
+          "pays": "ZA",
+          "nombre_signalements": 15,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "fr.wikipedia.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://fr.wikipedia.org/wiki/Extract-transform-load)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.drought.gov/data-maps-tools/global-historical-climatology-network-ghcn)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.027361679077148437,
+      "entropie_globale": 0.91475,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 2,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0735,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 28,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\TP2 Partie 3.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

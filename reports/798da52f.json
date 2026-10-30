@@ -1,0 +1,368 @@
+{
+  "id_rapport": "798da52f",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 15.19,
+  "metadonnees": {
+    "nom": "00878043.json",
+    "extension": "json",
+    "taille_octets": 9447,
+    "taille_lisible": "9.2 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\00878043.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:21",
+    "date_modification": "2026-10-29T00:52:21",
+    "date_acces": "2026-10-29T01:02:26",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "e15b22756a3a4f954278b0d522602604145f10c6c823fe0ec005aa7f2fe48e59",
+    "sha1": "5eb009a14e4ab62d413468690d969ee16333f501",
+    "md5": "d32545f00860280bf52293fcadb18c6e",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.613,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.61
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "drive.google.com",
+      "drive.usercontent.google.com",
+      "scikit-learn.org",
+      "github.com",
+      "nbviewer.org",
+      "www.example.com"
+    ],
+    "urls": [
+      "https://drive.google.com/\\nHostUrl=https://drive.usercontent.google.com/download?id=16i2bq53zkBwdtdwqhCCOKbRhGjRjR7aI&export=download&authuser=3\\n",
+      "https://localhost:8080/",
+      "https://github.com/scikit-learn/scikit-learn/issues/21755",
+      "https://scikit-learn.org/1.7/modules/generated/sklearn.pipeline.Pipeline.html\\\\",
+      "https://scikit-learn.org/1.7/modules/generated/sklearn.preprocessing.StandardScaler.html\\\\",
+      "https://scikit-learn.org/1.7/modules/generated/sklearn.linear_model.LogisticRegression.html\\\\",
+      "https://scikit-learn.org/1.7/modules/generated/sklearn.ensemble.RandomForestClassifier.html\\\\",
+      "https://scikit-learn.org/1.7/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html\\\\",
+      "https://scikit-learn.org/1.7/modules/generated/sklearn.naive_bayes.MultinomialNB.html\\\\",
+      "https://www.example.com/course",
+      "http://microsoft-security-check.invalid/accoun...",
+      "http://paypal-verify-account.invalid/login",
+      "http://microsoft-security-check.invalid/account/verify"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "s:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "24e4d654de17a665f7ab06314ce3a5e2"
+      ],
+      "sha1": [
+        "ca6020e71c92987a8ceb08f5fbde2f8279dcbab5"
+      ],
+      "sha256": [
+        "8d6265f8761cd598d8cd21772f2fe8725358be6c0de47e042b92a0909167bf06"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 32
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "drive.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "17000"
+        }
+      },
+      "drive.usercontent.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "126"
+        }
+      },
+      "scikit-learn.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 1,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "github.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "55422"
+        }
+      },
+      "nbviewer.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 1,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://drive.google.com/\\nHostUrl=https://drive.usercontent.google.com/download?id=16i2bq53zkBwdtdwqhCCOKbRhGjRjR7aI&export=download&authuser=3\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://localhost:8080/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://github.com/scikit-learn/scikit-learn/issues/21755": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://scikit-learn.org/1.7/modules/generated/sklearn.pipeline.Pipeline.html\\\\": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://scikit-learn.org/1.7/modules/generated/sklearn.preprocessing.StandardScaler.html\\\\": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "8d6265f8761cd598d8cd21772f2fe8725358be6c0de47e042b92a0909167bf06": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "drive.google.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "drive.usercontent.google.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "scikit-learn.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "github.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "nbviewer.org",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0009009361267089844,
+      "entropie_globale": 0.576625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 13,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1078,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['drive.google.com', 'drive.usercontent.google.com', 'scikit-learn.org', 'github.com', 'nbviewer.org'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\00878043.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

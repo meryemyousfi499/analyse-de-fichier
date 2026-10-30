@@ -1,0 +1,295 @@
+{
+  "id_rapport": "dc6a38e2",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 8.68,
+  "metadonnees": {
+    "nom": "20d43d9f.json",
+    "extension": "json",
+    "taille_octets": 6468,
+    "taille_lisible": "6.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\20d43d9f.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:23",
+    "date_modification": "2026-10-29T00:52:23",
+    "date_acces": "2026-10-29T04:12:38",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "4e4e4f11fea6a5542abadfce4cd03af30aeacb594e69b01ba7e3768df94b1d72",
+    "sha1": "be3d7ff94c361ebdcf3ace0e51420cec440cb330",
+    "md5": "1c47b394944e7f64d629a9001bd2c98b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.035,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.04
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/api/v1/indicators/file/461693ecf2d45ca274f1a90c8d25f13c300a..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "chatgpt.com",
+      "matplotlib.org",
+      "otx.alienvault.com",
+      "2Fmatplotlib.org"
+    ],
+    "urls": [
+      "https://chatgpt.com/c/690aa1af-97fc-832f-847c-89c4efb2499b\\nHostUrl=https://chatgpt.com/backend-api/estuary/content?id=file_00000000d678720a9d578fbb32e9cdfe&ts=489529&p=fs&cid=1&sig=2f89fa9e8991eaf4e80d947990b4ea63543f6d840176e52f3a7a565c7e870cbc&v=0\\n",
+      "https://matplotlib.org/\\u0000\\u0000\\u0000"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "bcf72c488625d98c15643497080dcf4f"
+      ],
+      "sha1": [
+        "cde9770d7634f0f17722e5a2d20cc3635b571581"
+      ],
+      "sha256": [
+        "2f89fa9e8991eaf4e80d947990b4ea63543f6d840176e52f3a7a565c7e870cbc",
+        "461693ecf2d45ca274f1a90c8d25f13c300add2d386fcf0f9d79b03a23de8a27"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 8
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "chatgpt.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "matplotlib.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "2Fmatplotlib.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://chatgpt.com/c/690aa1af-97fc-832f-847c-89c4efb2499b\\nHostUrl=https://chatgpt.com/backend-api/estuary/content?id=file_00000000d678720a9d578fbb32e9cdfe&ts=489529&p=fs&cid=1&sig=2f89fa9e8991eaf4e80d947990b4ea63543f6d840176e52f3a7a565c7e870cbc&v=0\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://matplotlib.org/\\u0000\\u0000\\u0000": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "2f89fa9e8991eaf4e80d947990b4ea63543f6d840176e52f3a7a565c7e870cbc": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "461693ecf2d45ca274f1a90c8d25f13c300add2d386fcf0f9d79b03a23de8a27": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "chatgpt.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "matplotlib.org",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0006168365478515625,
+      "entropie_globale": 0.629375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 2,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0606,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 33,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu.",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['chatgpt.com', 'matplotlib.org'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\20d43d9f.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

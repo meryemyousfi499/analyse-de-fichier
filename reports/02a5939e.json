@@ -1,0 +1,222 @@
+{
+  "id_rapport": "02a5939e",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 3.786,
+  "metadonnees": {
+    "nom": "03536459.json",
+    "extension": "json",
+    "taille_octets": 5593,
+    "taille_lisible": "5.5 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\03536459.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:21",
+    "date_modification": "2026-10-29T00:52:21",
+    "date_acces": "2026-10-29T01:22:20",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "049fb0bd2d79ab558fc09d0a676a47e231b8a7505f6ba7502f803561eca911b5",
+    "sha1": "16c4b9fdfbf83b3d13e4b156cf1ee78234bf8a94",
+    "md5": "e7f2866794940c66ffc7987af8bb9811",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.892,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.89
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://www.irif.fr/_media/users/ylg/crypto.pdf\\nHostUrl=https://www.irif.fr/_media/users/ylg/crypto.pdf\\n"
+    ],
+    "emails": [
+      "ylg@irif.fr"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "r:\\",
+      "d:\\",
+      "G:\\",
+      "I:\\",
+      "P:\\",
+      "V:\\",
+      "R:\\",
+      "e:\\",
+      "s:\\"
+    ],
+    "chemins_unix": [
+      "/usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonbook.pdf)",
+      "/usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericononline.pdf)"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "a565dd4efa470a85e5982467e3275e39",
+        "D913074D06F1F840142C8E97FB951780"
+      ],
+      "sha1": [
+        "2a426e6eb34bb564f9dceebb1589e8cc89d76778"
+      ],
+      "sha256": [
+        "b153ff5c79af5b01e7d13a02a50bc3d29fc568afc75414d3c6dd12354d1549cd"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://www.irif.fr/_media/users/ylg/crypto.pdf\\nHostUrl=https://www.irif.fr/_media/users/ylg/crypto.pdf\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "b153ff5c79af5b01e7d13a02a50bc3d29fc568afc75414d3c6dd12354d1549cd": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0005333900451660156,
+      "entropie_globale": 0.6115,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0434,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 9,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\03536459.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

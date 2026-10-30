@@ -1,0 +1,364 @@
+{
+  "id_rapport": "3279121c",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 10.269,
+  "metadonnees": {
+    "nom": "26997499.json",
+    "extension": "json",
+    "taille_octets": 57104,
+    "taille_lisible": "55.8 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\26997499.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:24",
+    "date_modification": "2026-10-29T00:52:24",
+    "date_acces": "2026-10-29T04:45:07",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "708171d6f413669168031a564c9b729a6fbe936a45e3e6f965672f0d63a488d7",
+    "sha1": "a15be87fdb6e9f5c25d557983384d2b925e6e324",
+    "md5": "fb55e50e18fb2fc7ea45beb5b90dfcae",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.256,
+    "verdict_entropie": "faible (texte / code non compresse)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.26
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/api/v1/indicators/file/03fe815e236ad8fb6fa4289921a746e14925..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "4.0.6.0"
+    ],
+    "domaines": [
+      "cacerts.digicert.com",
+      "crl3.digicert.com",
+      "crl4.digicert.com",
+      "www.digicert.com",
+      "wixtoolset.org",
+      "api.abuseipdb.com",
+      "otx.alienvault.com",
+      "2Fcacerts.digicert.com",
+      "2Fcrl3.digicert.com",
+      "2Fcrl4.digicert.com",
+      "2Fwww.digicert.com",
+      "2Fwixtoolset.org"
+    ],
+    "urls": [
+      "http://ocsp.digicert.com0C\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00027http://cacerts.digicert.com/DigiCertCSRSA4096RootG5.crt0E\\u0006\\u0003U\\u001d\\u001f\\u0004",
+      "http://crl3.digicert.com/NETFoundationProjectsCodeSigningCA2.crl0FDB@http://crl4.digicert.com/NETFoundationProjectsCodeSigningCA2.crl0=\\u0006\\u0003U\\u001d",
+      "http://www.digicert.com/CPS0\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u0007\\u0001\\u0001\\u0004y0w0$\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u0018http://ocsp.digicert.com0O\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Chttp://cacerts.digicert.com/NETFoundationProjectsCodeSigningCA2.crt0",
+      "https://wixtoolset.org/",
+      "http://ocsp.digicert.com0X\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0",
+      "http://ocsp.digicert.com0A\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\\u0006\\u0003U\\u001d\\u001f\\u0004",
+      "http://ocsp.digicert.com0C\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\\u0006\\u0003U\\u001d\\u001f\\u0004"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "d:\\",
+      "c:\\",
+      "D:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "cc5a949cd5af6f890d9c65068bbd9afa"
+      ],
+      "sha1": [
+        "c0b3194b363bc3da316eeae0274d3f49b2040d9a"
+      ],
+      "sha256": [
+        "03fe815e236ad8fb6fa4289921a746e1492571acee49105154f2cc0b07021515"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 27
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "4.0.6.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "cacerts.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crl3.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crl4.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "wixtoolset.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 26,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://ocsp.digicert.com0C\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00027http://cacerts.digicert.com/DigiCertCSRSA4096RootG5.crt0E\\u0006\\u0003U\\u001d\\u001f\\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0C%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu00027http%3A%2F%2Fcacerts.digicert.com%2FDigiCertCSRSA4096RootG5.crt0E%5Cu0006%5Cu0003U%5Cu001d%5Cu001f%5Cu0004/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://crl3.digicert.com/NETFoundationProjectsCodeSigningCA2.crl0FDB@http://crl4.digicert.com/NETFoundationProjectsCodeSigningCA2.crl0=\\u0006\\u0003U\\u001d": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.digicert.com/CPS0\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u0007\\u0001\\u0001\\u0004y0w0$\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u0018http://ocsp.digicert.com0O\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Chttp://cacerts.digicert.com/NETFoundationProjectsCodeSigningCA2.crt0": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://wixtoolset.org/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 3,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ocsp.digicert.com0X\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0X%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu0002Lhttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "03fe815e236ad8fb6fa4289921a746e1492571acee49105154f2cc0b07021515": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "wixtoolset.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "https://wixtoolset.org/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.00544586181640625,
+      "entropie_globale": 0.532,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 7,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1059,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['wixtoolset.org'], URLs: ['https://wixtoolset.org/'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\26997499.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

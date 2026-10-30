@@ -1,0 +1,283 @@
+{
+  "id_rapport": "a0c19f85",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 19.251,
+  "metadonnees": {
+    "nom": "48f31e59.json",
+    "extension": "json",
+    "taille_octets": 6895,
+    "taille_lisible": "6.7 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\48f31e59.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:26",
+    "date_modification": "2026-10-29T00:52:26",
+    "date_acces": "2026-10-29T11:14:37",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "7e2d0e43fde4d012710cb776b9ebf155c676a028e83df9cd76599242e0172991",
+    "sha1": "525a3c7bd528d2b8c7f6963ac688537ee149b9a5",
+    "md5": "2c6a2eb8868e07f2997e02e252d16d68",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.633,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.63
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.w3.org",
+      "ns.adobe.com",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "http://ns.adobe.com/exif/1.0/",
+      "http://ns.adobe.com/tiff/1.0/"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "N:\\",
+      "t:\\",
+      "S:\\",
+      "l:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "b9d87c4034df8b7b0096238784ec6dbc"
+      ],
+      "sha1": [
+        "02e6c12ee27a1ee4d51027e2acb6b490c4c83eb9"
+      ],
+      "sha256": [
+        "77f92c3b0fab102441a844b2b60e57d0ce5f5bb378ea1830e474bf177093cf78"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 9
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "ns.adobe.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/exif/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 33,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/tiff/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 32,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "77f92c3b0fab102441a844b2b60e57d0ce5f5bb378ea1830e474bf177093cf78": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "http://ns.adobe.com/exif/1.0/",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://ns.adobe.com/tiff/1.0/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0006575584411621094,
+      "entropie_globale": 0.579125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 3,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0749,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 33,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu.",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://ns.adobe.com/exif/1.0/', 'http://ns.adobe.com/tiff/1.0/'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\48f31e59.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

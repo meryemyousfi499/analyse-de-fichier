@@ -1,0 +1,402 @@
+{
+  "id_rapport": "6754ed25",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 81.883,
+  "metadonnees": {
+    "nom": "mongosh-2.14.0-x64.msi",
+    "extension": "msi",
+    "taille_octets": 65949696,
+    "taille_lisible": "62.9 Mo",
+    "mime_reel": "application/x-msi",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\mongosh-2.14.0-x64.msi",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-27T10:15:08",
+    "date_modification": "2026-10-27T10:24:25",
+    "date_acces": "2026-10-29T17:47:58",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "ole_office_legacy",
+    "extension_declaree": ".msi",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "0c433d1c06d0a8377997da39775c537b0c9a4ad639dcdea7edf8b594872516c1",
+    "sha1": "af25f8022d7d6d8398527301df44cf65b81a4d7a",
+    "md5": "0e4036dd2a6598f0c9f98b0da570bb16",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "ole_office_legacy",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.992,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.2,
+      7.99,
+      7.98,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.98,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.98,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.95,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.98,
+      7.95,
+      7.98,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "u.io"
+    ],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "T:\\&PӆvQ\u0011Qq$.\u0007sƌCa'8КGP\u001a\u00161",
+      "K:\\XC𢱣\u001c0\tA\u00172",
+      "v:\\\u000e",
+      "X:\\E\u0019+s\u0010hriBBe\u001e&A\u0014\u001b8\u00166Z9frtIL˲^\\оlo\u001f19x@hϙO\u0019",
+      "N:\\y'\u0017Mñ(J\u0000ݝ(\u001fk",
+      "y:\\\u0001y_T~_%1",
+      "l:\\G\u000fbv",
+      "e:\\\u0000\u0001",
+      "e:\\\u000b",
+      "a:\\YWli6QN=&t",
+      "A:\\'L",
+      "d:\\=v",
+      "L:\\\u0010.\u000610ߧ\u0010\u0017X\u000fFn^w",
+      "X:\\C1#\u0018VP\u0000t",
+      "r:\\^%\t\tHRT8mpg`\u0007Z\u0015",
+      "z:\\_ϓ~~=]^3\\=i\u0007x",
+      "w:\\'ۓ.",
+      "Y:\\},5n\u0014z\u001fɴ]\u00181E",
+      "B:\\",
+      "Y:\\5\u0011",
+      "e:\\yko1S",
+      "P:\\&g\u001bl¼\u0014~",
+      "x:\\{)",
+      "n:\\oj[",
+      "u:\\y\u0005\u0001&W\u000ej`\u0019a\u001d\\yZWpv\u000b\\۫",
+      "O:\\pUl\u0014lhzė1e@\u0017\u001a5Ȣ\u0010r2¯\u000f\u001b.`P\u0016C~,ZR7\u0004y1\u001fM\u001f",
+      "b:\\j\u0006\u001cZ@g,s\u000e'n\u0004s%\u0006)\u000f\u0016l\u0013R\u0001,.ژtgсB~\u0016uEUUWF$ԯj3~\u0000\u0000!h-Sp׵K^[\u0004\u001f",
+      "N:\\s VG\u001d4}؁\u0016P",
+      "W:\\\u000bMJU",
+      "K:\\%&w6hQCx\u001eZ\u001cZpW\u0004kQ\bE\u0004RN\u0004F^wxtΟ\u000eCjMV"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 65949696,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 1
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "u.io": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.999,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0824,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 20,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\mongosh-2.14.0-x64.msi",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 62.757,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 67.694,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 67.661,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 50.427,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox.",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "non_applicable",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": false,
+    "declencheurs": [],
+    "bloquants": [
+      "fichier > 50 Mo",
+      "politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+    ],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

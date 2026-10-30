@@ -1,0 +1,164 @@
+{
+  "id_rapport": "79ebf042",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 1.013,
+  "metadonnees": {
+    "nom": "4b03a552.json",
+    "extension": "json",
+    "taille_octets": 4126,
+    "taille_lisible": "4.0 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4b03a552.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:26",
+    "date_modification": "2026-10-29T00:52:26",
+    "date_acces": "2026-10-29T11:27:06",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "0c4a23f676bfa53d010d51257f273ed0c8a5de5a55b1740a3453a2cbf5d36a15",
+    "sha1": "4cb09e96b60636c0fa34c4af5b7e855a34c946a5",
+    "md5": "e42d08f7c7883f4b7e9486b0455ecbb7",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.766,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.77
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "cbacb7b93b1d407e88fc353e4f91e846"
+      ],
+      "sha1": [
+        "2f6647ff9b2ec02e500481a9416970e76595fc1d"
+      ],
+      "sha256": [
+        "ff09d35ca1d6eeddba46660c844cecc9bbde7a46dcabb32eca322106cab799f2"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {
+      "ff09d35ca1d6eeddba46660c844cecc9bbde7a46dcabb32eca322106cab799f2": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/ff09d35ca1d6eeddba46660c844cecc9bbde7a46dcabb32eca322106cab799f2/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "malwarebazaar": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/0c4a23f676bfa53d010d51257f273ed0c8a5de5a55b1740a3453a2cbf5d36a15/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.00039348602294921877,
+      "entropie_globale": 0.59575,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0262,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4b03a552.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

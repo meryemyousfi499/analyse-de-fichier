@@ -1,0 +1,263 @@
+{
+  "id_rapport": "c52b6fe5",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 25.101,
+  "metadonnees": {
+    "nom": "4fe3fd39.json",
+    "extension": "json",
+    "taille_octets": 7276,
+    "taille_lisible": "7.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4fe3fd39.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:27",
+    "date_modification": "2026-10-29T00:52:27",
+    "date_acces": "2026-10-29T11:53:28",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "8a4a81dcba2f5a74e81e0fa7801daa36a5e2c67fe5806f2aa1198a05e2a6d057",
+    "sha1": "33b608d012ffcac43b18d411e4a8c73d65a3dcd7",
+    "md5": "a6b0dd8fe103e4e98bee0023b0e1a135",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.612,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.61
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "schemas.openxmlformats.org"
+    ],
+    "urls": [
+      "http://schemas.openxmlformats.org/package/2006/relationships",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+      "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "1b9fef4b23a1d0dcb9a829a2147aa31a"
+      ],
+      "sha1": [
+        "cda39f3f9eb2c82d5de4de291c8d43eacacf1f1e"
+      ],
+      "sha256": [
+        "3ad6e83971fdc749a0eff5aca764d13f35ff3fd00f80c4ed5fa3490b63982fa9"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 9
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "schemas.openxmlformats.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://schemas.openxmlformats.org/package/2006/relationships": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 4,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "3ad6e83971fdc749a0eff5aca764d13f35ff3fd00f80c4ed5fa3490b63982fa9": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "http://schemas.openxmlformats.org/package/2006/relationships",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0006938934326171875,
+      "entropie_globale": 0.5765,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 4,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0913,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 33,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu.",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://schemas.openxmlformats.org/package/2006/relationships', 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4fe3fd39.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

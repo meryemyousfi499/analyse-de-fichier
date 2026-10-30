@@ -1,0 +1,351 @@
+{
+  "id_rapport": "da4e7ba3",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 8.775,
+  "metadonnees": {
+    "nom": "14b75b21.json",
+    "extension": "json",
+    "taille_octets": 16518,
+    "taille_lisible": "16.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\14b75b21.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:22",
+    "date_modification": "2026-10-29T00:52:22",
+    "date_acces": "2026-10-29T03:00:48",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "fbbac6a828f89ebdd118dbad35900359d3167e5146f33c732b537b46af32e5d2",
+    "sha1": "f3310d88ee95a31da581f4884dd4ec55d146dbf5",
+    "md5": "745a8171a7929f0f0125339d2a5001bf",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.126,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.13
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/api/v1/indicators/file/7d3654531c32d941b8cae81c4137fc542172..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "1.0.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [
+      "cacerts.digicert.com",
+      "crl3.digicert.com",
+      "crl4.digicert.com",
+      "www.digicert.com",
+      "api.abuseipdb.com",
+      "otx.alienvault.com",
+      "2Fcacerts.digicert.com",
+      "2Fwww.digicert.com"
+    ],
+    "urls": [
+      "http://ocsp.digicert.com0C\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\\u0006\\u0003U\\u001d\\u001f\\u0004",
+      "http://ocsp.digicert.com0A\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\\u0006\\u0003U\\u001d\\u001f\\u0004",
+      "http://ocsp.digicert.com0X\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0",
+      "http://www.digicert.com/CPS0\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u0007\\u0001\\u0001\\u000400$\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u0018http://ocsp.digicert.com0\\\\\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "x:\\",
+      "E:\\",
+      "D:\\",
+      "d:\\",
+      "k:\\",
+      "q:\\",
+      "f:\\",
+      "I:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "1b54b70beef8eb240db31718e8f7eb5d"
+      ],
+      "sha1": [
+        "da5995070737ec655824c92622333c489eb6bce4"
+      ],
+      "sha256": [
+        "7d3654531c32d941b8cae81c4137fc542172bfa9635f169cb392f245a0a12bcb"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 18
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "AU",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "6.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "cacerts.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crl3.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crl4.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "api.abuseipdb.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://ocsp.digicert.com0C\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\\u0006\\u0003U\\u001d\\u001f\\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0C%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu00027http%3A%2F%2Fcacerts.digicert.com%2FDigiCertAssuredIDRootCA.crt0E%5Cu0006%5Cu0003U%5Cu001d%5Cu001f%5Cu0004/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ocsp.digicert.com0A\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\\u0006\\u0003U\\u001d\\u001f\\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0A%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu00025http%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedRootG4.crt0C%5Cu0006%5Cu0003U%5Cu001d%5Cu001f%5Cu0004/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ocsp.digicert.com0X\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0X%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu0002Lhttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.digicert.com/CPS0\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u0007\\u0001\\u0001\\u000400$\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u0018http://ocsp.digicert.com0\\\\\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "7d3654531c32d941b8cae81c4137fc542172bfa9635f169cb392f245a0a12bcb": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 2,
+          "signale": true
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "7d3654531c32d941b8cae81c4137fc542172bfa9635f169cb392f245a0a12bcb",
+        "type": "hashs",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0015752792358398437,
+      "entropie_globale": 0.64075,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 4,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0941,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 41,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: aucune, hashs embarques: ['7d3654531c32d941b8cae81c4137fc542172bfa9635f169cb392f245a0a12bcb']."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\14b75b21.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

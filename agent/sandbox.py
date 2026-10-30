@@ -1,4 +1,3 @@
-
 """
 Gestion de la sandbox Hybrid Analysis pour Cabinet Noir.
 
@@ -28,13 +27,20 @@ from config import (
     SANDBOX_ENVIRONMENT_ID,
     SANDBOX_POLL_INTERVAL_S,
     SANDBOX_MAX_WAIT_S,
+    SANDBOX_NEVER_STANDALONE_EXTENSIONS,
+    SANDBOX_NO_SHARE_THIRD_PARTY,
+    SANDBOX_ALLOW_COMMUNITY_ACCESS,
+    SANDBOX_RETENTION_DAYS,
+    REPORTS_DIR,
 )
 
 
 API_BASE = "https://hybrid-analysis.com/api/v2"
 USER_AGENT = "Falcon Sandbox"
 
-_UNSUITABLE_STANDALONE_EXTENSIONS = {".rels"}
+# Extensions jamais soumises seules (composants internes Office, medias) :
+# liste centralisee dans config.SANDBOX_NEVER_STANDALONE_EXTENSIONS.
+_UNSUITABLE_STANDALONE_EXTENSIONS = set(SANDBOX_NEVER_STANDALONE_EXTENSIONS) | {".rels"}
 
 _REQUEST_HEADERS = {
     "User-Agent": USER_AGENT,
@@ -155,6 +161,7 @@ def get_status():
     counts = {
         "cle_api_configuree": bool(HYBRID_ANALYSIS_API_KEY),
         "en_attente": 0,
+        "a_valider": 0,
         "en_cours": 0,
         "termines": 0,
         "echecs": 0,
@@ -165,8 +172,10 @@ def get_status():
     for entry in entries:
         status = entry.get("statut", "")
 
-        if status in ("en_attente", "cle_api_absente"):
+        if status in ("en_attente", "cle_api_absente", "en_attente_validation"):
             counts["en_attente"] += 1
+            if status == "en_attente_validation":
+                counts["a_valider"] += 1
         elif status == "en_cours":
             counts["en_cours"] += 1
         elif status == "termine":
@@ -241,12 +250,18 @@ def _update_entry(entry_id, **changes):
 # Enregistrement d'une demande d'analyse
 # ---------------------------------------------------------------------------
 
-def enqueue(source_path, nom_original, report_id, score, niveau):
+def enqueue(source_path, nom_original, report_id, score, niveau,
+            auto_submit=True, parent_report_id=None):
     """
     Ajoute un fichier à la file d'attente sandbox.
 
     Retourne l'identifiant de la demande créée.
     L'analyse statique existante n'est pas modifiée.
+
+    auto_submit=False : la sandbox est un service EXTERNE ; le fichier reste
+    en "en_attente_validation" et ne part qu'après un clic manuel sur
+    "Soumettre" (submit_now). C'est le comportement par défaut de l'agent
+    (config.SANDBOX_ALLOW_EXTERNAL_SUBMISSION = False).
     """
     _ensure_directories()
 
@@ -268,17 +283,24 @@ def enqueue(source_path, nom_original, report_id, score, niveau):
     if _is_unsuitable_file(original_name):
         status = "non_applicable"
         error = (
-            "Analyse dynamique non applicable : le fichier .rels est un "
-            "composant XML interne à un document Office OOXML, et non un "
-            "échantillon autonome. L'analyse statique est conservée. "
-            "Si nécessaire, analyser le document Office complet après "
-            "vérification de la politique de partage des données."
+            "Analyse dynamique non applicable : ce type de fichier (composant "
+            "XML/média interne à un document) n'est pas un échantillon "
+            "autonome. L'analyse statique est conservée. Si nécessaire, "
+            "analyser le document complet après vérification de la "
+            "politique de partage des données."
         )
     elif not HYBRID_ANALYSIS_API_KEY:
         status = "cle_api_absente"
         error = (
             "Clé API Hybrid Analysis absente. Configurez "
             "HYBRID_ANALYSIS_API_KEY pour activer la soumission."
+        )
+    elif not auto_submit:
+        status = "en_attente_validation"
+        error = (
+            "Soumission automatique désactivée : ce fichier serait partagé avec "
+            "Hybrid Analysis (service externe). Cliquez sur « Soumettre » pour "
+            "l'autoriser."
         )
     else:
         status = "en_attente"
@@ -287,6 +309,7 @@ def enqueue(source_path, nom_original, report_id, score, niveau):
     entry = {
         "id": entry_id,
         "report_id": report_id,
+        "report_parent_id": parent_report_id,
         "nom_original": original_name,
         "score_statique": score,
         "niveau_statique": niveau,
@@ -298,6 +321,8 @@ def enqueue(source_path, nom_original, report_id, score, niveau):
         "verdict": None,
         "score_menace_sandbox": None,
         "menaces_detectees": [],
+        "comportements_informatifs": [],
+        "mitre_attck": [],
         "url_rapport_public": None,
         "erreur": error,
     }
@@ -332,9 +357,9 @@ def submit_now(entry_id):
             entry_id,
             statut="non_applicable",
             erreur=(
-                "Soumission ignorée : un fichier .rels est un composant "
-                "interne d'un document Office OOXML. Analysez le document "
-                "Office complet si une analyse dynamique est nécessaire."
+                "Soumission ignorée : ce type de fichier est un composant "
+                "interne d'un document. Analysez le document complet si "
+                "une analyse dynamique est nécessaire."
             ),
         )
         return False
@@ -375,7 +400,7 @@ def _submit_to_hybrid_analysis(file_path, original_name):
 
     if _is_unsuitable_file(original_name):
         raise ValueError(
-            "Le fichier .rels n'est pas soumis individuellement à la sandbox."
+            "Ce type de fichier n'est pas soumis individuellement à la sandbox."
         )
 
     if not os.path.isfile(file_path):
@@ -388,6 +413,11 @@ def _submit_to_hybrid_analysis(file_path, original_name):
 
     if SANDBOX_ENVIRONMENT_ID:
         data["environment_id"] = str(SANDBOX_ENVIRONMENT_ID)
+    # Politique de partage (parametres de l'API v2 /submit/file, a verifier
+    # dans la documentation Hybrid Analysis : une cle gratuite peut rendre
+    # les rapports publics quoi qu'on demande).
+    data["no_share_third_party"] = "true" if SANDBOX_NO_SHARE_THIRD_PARTY else "false"
+    data["allow_community_access"] = "true" if SANDBOX_ALLOW_COMMUNITY_ACCESS else "false"
 
     with open(file_path, "rb") as file:
         files = {
@@ -502,26 +532,153 @@ def _get_summary_state(summary):
     return str(state).strip().upper()
 
 
-def _extract_tags(summary):
-    """Extrait une liste de menaces/tags sans supposer un format unique."""
+def _summarize_threats(summary):
+    """Sépare les comportements réellement malveillants/suspects de ceux
+    simplement informatifs (une technique MITRE ATT&CK avec 0 identifiant
+    malveillant n'est PAS une menace).
+
+    Retourne (menaces, informatifs, mitre) :
+      menaces     liste de chaînes lisibles (malveillant/suspect uniquement)
+      informatifs liste de chaînes lisibles (comportements neutres)
+      mitre       liste compacte de dicts (pour le détail)
+    """
     if not isinstance(summary, dict):
-        return []
+        return [], [], []
 
-    tags = (
-        summary.get("threat_level_human")
-        or summary.get("tags")
-        or summary.get("mitre_attcks")
-        or summary.get("threats")
-        or []
+    menaces, informatifs, mitre = [], [], []
+
+    for item in summary.get("mitre_attcks") or []:
+        if not isinstance(item, dict):
+            continue
+        label = " ".join(x for x in (item.get("attck_id"), item.get("technique")) if x)
+        if item.get("tactic"):
+            label += f" ({item['tactic']})"
+        label = label.strip() or "technique inconnue"
+        mal = int(item.get("malicious_identifiers_count") or 0)
+        sus = int(item.get("suspicious_identifiers_count") or 0)
+        inf = int(item.get("informative_identifiers_count") or 0)
+        mitre.append({
+            "tactic": item.get("tactic"), "technique": item.get("technique"),
+            "attck_id": item.get("attck_id"), "malveillants": mal,
+            "suspects": sus, "informatifs": inf,
+        })
+        if mal or sus:
+            menaces.append(label)
+        else:
+            informatifs.append(label)
+
+    for key in ("tags", "threats"):
+        vals = summary.get(key) or []
+        if isinstance(vals, str):
+            vals = [vals]
+        if isinstance(vals, list):
+            for v in vals:
+                if isinstance(v, str) and v not in menaces:
+                    menaces.append(v)
+
+    return menaces, informatifs, mitre
+
+
+def _extract_tags(summary):
+    """Compatibilité : liste des menaces (chaînes) uniquement."""
+    return _summarize_threats(summary)[0]
+
+
+def _correlate_with_report(entry):
+    """Rattache le résultat sandbox au rapport d'analyse d'origine et
+    recalcule le verdict : sandbox et rapport statique ne vivent plus
+    séparément, reliés par le seul report_id."""
+    report_id = entry.get("report_id")
+    if not report_id:
+        return
+    path = os.path.join(REPORTS_DIR, f"{os.path.basename(str(report_id))}.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            report = json.load(f)
+    except (OSError, ValueError):
+        return
+
+    from . import verdict as verdict_mod
+    from . import report_store
+    from .tool_result import ToolResult
+
+    report.setdefault("sandbox", {})["resultat"] = {
+        "id_soumission": entry.get("id"),
+        "statut": entry.get("statut"),
+        "verdict": entry.get("verdict"),
+        "score_menace": entry.get("score_menace_sandbox"),
+        "menaces": entry.get("menaces_detectees", []),
+        "comportements_informatifs": entry.get("comportements_informatifs", []),
+        "url_rapport": entry.get("url_rapport_public"),
+        "date": entry.get("updated_at"),
+    }
+    orch = report.get("orchestration", {})
+    tools = {n: ToolResult.from_dict(d) for n, d in (orch.get("outils") or {}).items()}
+    old = (report.get("verdict") or {}).get("verdict")
+    # Le verdict est recalculé à partir des mêmes outils + du résultat sandbox.
+    ti_hash = any(
+        r.get("disponible") and r.get("signale")
+        for r in ((report.get("threat_intelligence") or {}).get("hash_fichier_analyse") or {}).values()
     )
+    new = verdict_mod.compute_verdict(
+        report.get("score_final", {}), tools,
+        hash_connu_malveillant=bool((report.get("empreintes") or {}).get("connu_malveillant")),
+        ti_hash_malveillant=ti_hash, sandbox_entry=entry,
+        extra_required=tuple(orch.get("extra_requis") or ()),
+    )
+    # Ne jamais rétrograder un verdict « malicious » posé par une preuve forte
+    # déjà enregistrée (ex. enfant d'archive) : on ne fait que l'enrichir.
+    rank = {"clean": 0, "inconclusive": 1, "suspect": 2, "malicious": 3}
+    if rank.get(new["verdict"], 0) < rank.get(old, 0):
+        new["verdict"], new["libelle"] = old, (report.get("verdict") or {}).get("libelle")
+        new["raisons"].append("Verdict initial conservé (la sandbox ne l'infirme pas à elle seule).")
+    report["verdict"] = new
+    report["score_final"]["action_recommandee"] = verdict_mod.adjust_action(
+        report["score_final"].get("action_recommandee"), new["verdict"])
+    report["score_final"].setdefault("explications", []).append(
+        f"Sandbox terminée : verdict « {entry.get('verdict')} » — verdict global recalculé : {new['verdict']}."
+    )
+    if "orchestration" in report and "sandbox" in (report["orchestration"].get("outils") or {}):
+        report["orchestration"]["outils"]["sandbox"] = {
+            "tool": "sandbox", "status": "detected" if new["verdict"] == "malicious" else "ok",
+            "duration_s": 0.0, "summary": f"terminée : {entry.get('verdict')}", "findings": [], "error": None,
+        }
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(report, f, ensure_ascii=False, indent=2, default=str)
+    os.replace(tmp, path)
+    report_store.index_report(report)
 
-    if isinstance(tags, str):
-        return [tags]
 
-    if isinstance(tags, list):
-        return tags
-
-    return []
+def purge_old_samples(retention_days=None):
+    """Supprime les COPIES d'échantillons de SANDBOX_DIR devenues inutiles
+    (soumission terminée/échouée/non applicable, plus anciennes que la durée
+    de rétention). Les entrées de rapport sont conservées. Ne touche jamais
+    à un fichier hors de SANDBOX_DIR ni à une demande encore active."""
+    days = SANDBOX_RETENTION_DAYS if retention_days is None else retention_days
+    if days is None or days <= 0:
+        return 0
+    limit = time.time() - days * 86400
+    root = os.path.realpath(SANDBOX_DIR)
+    purged = 0
+    for entry in list_entries():
+        if entry.get("statut") not in ("termine", "echec", "non_applicable"):
+            continue
+        path = entry.get("chemin_sandbox")
+        if not path or not os.path.isfile(path):
+            continue
+        real = os.path.realpath(path)
+        if not real.startswith(root + os.sep):
+            continue
+        try:
+            if os.path.getmtime(real) < limit:
+                os.remove(real)
+                _update_entry(entry["id"], chemin_sandbox=None,
+                              copie_purgee=f"copie supprimée après {days} jour(s) de rétention")
+                purged += 1
+        except OSError:
+            continue
+    return purged
 
 
 def _process_entry(entry_id):
@@ -539,9 +696,9 @@ def _process_entry(entry_id):
             entry_id,
             statut="non_applicable",
             erreur=(
-                "Soumission ignorée : le fichier .rels est un composant "
-                "interne à un document Office OOXML, pas un échantillon "
-                "autonome. L'analyse statique est conservée."
+                "Soumission ignorée : ce fichier est un composant interne "
+                "à un document, pas un échantillon autonome. "
+                "L'analyse statique est conservée."
             ),
         )
         return
@@ -624,15 +781,24 @@ def _process_entry(entry_id):
                     or summary.get("permalink")
                 )
 
-                _update_entry(
+                menaces, informatifs, mitre = _summarize_threats(summary)
+                done = _update_entry(
                     entry_id,
                     statut="termine",
                     verdict=verdict,
                     score_menace_sandbox=threat_score,
-                    menaces_detectees=_extract_tags(summary),
+                    menaces_detectees=menaces,
+                    comportements_informatifs=informatifs,
+                    mitre_attck=mitre,
                     url_rapport_public=report_url,
                     erreur=None,
                 )
+                try:
+                    if done:
+                        _correlate_with_report(done)
+                    purge_old_samples()
+                except Exception as exc:  # la corrélation ne doit pas faire échouer le worker
+                    print(f"[cabinet-noir] avertissement: corrélation sandbox impossible: {exc}")
                 return
 
             if state in ("ERROR", "FAILED", "FAILURE"):
@@ -746,8 +912,8 @@ def resume_pending_on_startup():
                     entry_id,
                     statut="non_applicable",
                     erreur=(
-                        "Analyse dynamique non applicable : fichier .rels "
-                        "interne à un document Office OOXML."
+                        "Analyse dynamique non applicable : composant interne "
+                        "d'un document."
                     ),
                 )
             continue

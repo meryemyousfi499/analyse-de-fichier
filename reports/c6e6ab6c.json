@@ -1,0 +1,604 @@
+{
+  "id_rapport": "c6e6ab6c",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 24.278,
+  "metadonnees": {
+    "nom": "53ef8c54.json",
+    "extension": "json",
+    "taille_octets": 20311,
+    "taille_lisible": "19.8 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\53ef8c54.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:27",
+    "date_modification": "2026-10-29T00:52:27",
+    "date_acces": "2026-10-29T12:22:46",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "6983d93034bd79f0d7251d4773e00f72441a4b43812cb3f64d763108403b06c1",
+    "sha1": "dcd9d3f9e2beaf7d2ce988172c6d7bc95f277055",
+    "md5": "2b8382a4d6f570c8dcec0ff475c37c58",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.903,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.9
+    ],
+    "base64": {
+      "nombre_blobs_base64": 2,
+      "exemple": "5885d80a13c0db1fb6947b0aeae66fdbfb2119927117e3a6f876e0fd34af..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "149.20.54.227",
+      "149.20.54.228",
+      "64.233.14.37",
+      "20.20.20.20",
+      "2.0.16.9",
+      "5.13.0.0",
+      "2.1.1.5",
+      "100.42.52.85",
+      "63.247.80.138",
+      "0.83.145.9",
+      "105.136.160.174",
+      "253.93.233.72",
+      "44.33.0.109",
+      "67.98.200.2",
+      "190.146.206.137",
+      "183.60.136.227",
+      "181.133.76.84",
+      "3.5.0.229",
+      "6.1.1.0",
+      "149.20.54.229",
+      "190.249.215.194",
+      "67.225.179.163",
+      "12.12.1.0",
+      "84.209.104.151",
+      "31.131.18.40",
+      "11.12.31.114",
+      "4.4.0.0",
+      "2.2.0.0",
+      "66.40.34.205",
+      "193.200.150.125",
+      "200.14.232.227",
+      "38.19.84.69",
+      "213.37.154.166",
+      "141.101.237.49",
+      "08.27.27.131",
+      "84.209.66.194",
+      "02.27.27.111",
+      "12.12.45.131",
+      "186.86.186.236",
+      "190.85.27.29",
+      "125.14.226.143",
+      "190.244.107.162",
+      "10.1.1.43",
+      "10.1.1.16",
+      "10.1.1.53",
+      "10.1.1.46",
+      "10.1.1.18",
+      "10.1.1.49",
+      "10.1.1.27",
+      "10.1.1.11"
+    ],
+    "domaines": [
+      "drive.google.com",
+      "drive.usercontent.google.com",
+      "login.SkyPe.com",
+      "www.dghjdgf.com",
+      "serviciosbys.com",
+      "mail.printakid.com",
+      "www.online.americanexpress.com",
+      "thewhiskeydregs.com",
+      "smilesvoegol.servebbs.org",
+      "premierpaymentprocessing.com",
+      "myxxxcollection.com",
+      "bpd.com",
+      "super1000.info",
+      "horizonsgallery.com",
+      "www.paypal.com",
+      "phlebolog.com",
+      "docs.google.com",
+      "www.coincoele.com",
+      "perfectsolutionofall.net",
+      "lingshc.com",
+      "anonymeidentity.net",
+      "dutchweb.gtphost.com",
+      "www.avedeoiro.com",
+      "asladconcentration.com",
+      "www.regaranch.info",
+      "www.itau.com",
+      "optimistic-pessimism.com",
+      "aoluserupdatealert.info",
+      "mercadolivre.com.br.premiosfidelidade2012.com",
+      "www.everythinggoingon.net",
+      "www.revitolcream.org",
+      "jameshowardmusic.com",
+      "paypal.com.cgi.bin.webscr.cmd.login.submit.dispatch.5885d80a13c03faee8dcbcd55a50598f04d34b4bf5tt1.mediareso.com",
+      "ebayisapidlld.altervista.org",
+      "sontemeda.altervista.org",
+      "interbank.com",
+      "remax.com.behinehsazerooyesh.com",
+      "www.aclaydance.com",
+      "www.procedimentotamfidelidade.com",
+      "paypal.com.us.cgi.bin.webscr.cmd.login.submit.bx3digitallp.com",
+      "tinyurl.com",
+      "users11.jabry.com",
+      "professionalcrapsplayer.com",
+      "westerncentermuseum.org",
+      "cardpromocion2012.com",
+      "portalsalinas.com",
+      "trigononline.com",
+      "nextgensmartphones.com",
+      "www.allandmedia.com",
+      "www.hoskoyu.net"
+    ],
+    "urls": [
+      "https://drive.google.com/\\nHostUrl=https://drive.usercontent.google.com/download?id=1_ZJjDLbkaZU2JGhud5_mQtbW7QlQTUQW&export=download&authuser=3\\n"
+    ],
+    "emails": [
+      "BillingCenter@aim.com",
+      "p.bettina@citromail.hu",
+      "lollytrap@libero.it",
+      "roberto.morassi@poste.it",
+      "mario.Carelli@poste.it",
+      "mario.carelli@poste.it",
+      "ebay@chicagocarauction.com",
+      "jim@gentlemansclub.de",
+      "peterboden55@arcor.de",
+      "okaranza@gmx.de",
+      "info@nordostint.de",
+      "sunmtnsft@aol.com",
+      "mattybrandt@aol.com",
+      "user@example.com",
+      "andre-1978@bol.com.br",
+      "cesare.camboni@poste.it",
+      "security@psu.edu",
+      "victima@correo.com",
+      "igorrgt@hotmail.com",
+      "8bradesco.com.br2012sansoftware@hotmail.com",
+      "robocomp_1965@libero.it",
+      "m.zirelli@alice.it",
+      "schio.it@alice.it",
+      "whitcombc@me.com",
+      "tia_baltazar@yahoo.com",
+      "jack.nshost.com.ve.daniels@att.net",
+      "nshost.com.ve.jack.daniels.skank@att.net",
+      "nshost.com.ve@yahoo.com",
+      "alesha_alstoft@yahoo.com",
+      "nshost.com.ve@att.net",
+      "huda3_2@yahoo.com",
+      "doug1jr@swbell.net",
+      "shelbsx33x@aol.com",
+      "cbulbenko@sbcglobal.net",
+      "hotwheeler83@yahoo.com",
+      "randomuser@gmail.com",
+      "helpdeskcorretores@portonline.com.br",
+      "hotheny@acotubo.com.br",
+      "bitetto.antonio@libero.it",
+      "wu-westernunion@modernaccent.ca",
+      "3co-operative-co-operative@totalfluidpower.ca",
+      "co-operative-co-operative@abujacitydirectory.com",
+      "thecliman@aol.com",
+      "gallainiky@citromail.hu",
+      "cocse.admin@gmail.com",
+      "loxsde@orange.fr",
+      "phished_user@yahoo.fr",
+      "paypal.com@paypal.com",
+      "29241430.96733.1352577055289.javamail.root@www.mailgenetics.co.za",
+      "29241430.96733.1352577055289.JavaMail.root@www.mailgenetics.co.za"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "p:\\",
+      "s:\\"
+    ],
+    "chemins_unix": [
+      "/bin/ssl1/_id/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run/login.php?cmd=_login-run&amp;dispatch=1471c4bdb044ae2be9",
+      "/home/Email/",
+      "/bin/ssl/_id/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run/login.php?cmd=_login-run&dispatch=7adb89899b4614aec671534",
+      "/tmp/sp.php",
+      "/bin/ssl/_id/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run/",
+      "/bin/ssl/_id/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run",
+      "/bin/updates/webscr.html?cmd=_login-run",
+      "/root/wbsccr.php?cmd=_Processing&dispatch=5885d80a13c0db1fb6947b0aeae66fdbfb2119927117e3a6f876e0fd34af436569905a3104029cd88dc8",
+      "/bin/_ssl2/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run/login.php",
+      "/home/Cpanel/cpanel.net/2082.htm?_default.asp?id=Pre&amp;prod=?locale=en",
+      "/tmp/RBMC8Qg1BHav4pYFzembFoENcG1gf3H4PaiYU4haol/cmThkRqcUe5qBbIUMLTMUxjVXHuoiRBMC8Qg1BHav4pYFzembFoENcG1gf3H4PaiYU4h/Verify/s",
+      "/tmp/fr/fr/paypal\\\\%20fr/Fr/Info.Aspx/",
+      "/tmp/fr/fr/paypal\\\\%20fr/Fr/Info.Aspx/Informations.php?cmd=_Questions&amp;dispatch=5885d80a13c0db1fb6947b0aeae66fdbfb21199271",
+      "/home/images/stories/food/GbPlugin/",
+      "/tmp/webmailpromocao/Cielo/",
+      "/bin/_ssl/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run",
+      "/bin/_ssl/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run/",
+      "/bin/_id/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run/",
+      "/bin/_id/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run",
+      "/bin/_ssl1/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run/",
+      "/bin/_ssl1/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run",
+      "/bin/_ssl2/www.paypal.com/fr/cgi-bin/webscr/cmd=_registration-run/login.php?cmd=_login-run&dispatch=ad1b3787af6927c5368400336",
+      "/tmp/ww3.update.de=session-Twbp7zjxg1amhln96922/servers.update.de/cmd_login=e67fyd382ghavsr/11032/cmd=_home&country_lang.x=tr",
+      "/home/includes/Http.html",
+      "/home/uk/wric-cmd-login.run=5885d80a13c0db0254jh1f8e263663d3faee8d8494db9c6480bb01a15/uk-ok/uk/cycgi-bin/1/",
+      "/tmp/user/cadastrar.php",
+      "/tmp/paypal/cgi-bin/webscrcmd.login-processing/cmdverification.creditcard-/198.245.157.263/webscr.php?cmd=_login-run&dispatch",
+      "/home/language/2012/www.itau.com.br/iToken/",
+      "/tmp/cliente-Cielo/",
+      "/root/httpwwwpaypal.caenpersonal/httpwww.Paypal/httppaypal/"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "037df9d67089ecce4c6db4a4e47caf8c",
+        "70ffb52d079109dca5664cce6f317373",
+        "4d7a1ff5c55825a2e632a679c2fd5353",
+        "e9d83d4fd35ff9d702196ab514573999",
+        "3a3e3c4dba5e5cc4407a5694adf1aa8e",
+        "897962b2c7faf34e7f2d8353af8bdf4e",
+        "fd60358464c1f6411c44e5bf6e28ff0c",
+        "56a56d0c72ca057b293ee8964b9d13be",
+        "64208031cb708813b3d774f3c7f098a3",
+        "ec3c38df1b6f9e413ed3d6dcb693d36d"
+      ],
+      "sha1": [
+        "a9b7f8dcd557891d8f8074ffb735b5ebc43f6d70",
+        "0b5f4410cdef8351cbd41c21fe40c9132ad6f811",
+        "fa764acb61812020f0480ac6907ef66dd3278e84",
+        "ED08BC241B9C7998427E6D762278B1A051C09210",
+        "f2d7300f60a17e90e714885570af54ef611d7754",
+        "5885d80e263663d3faed55a50d34b4bf50870803",
+        "7b6612baafb91df655b06ad04e05a327d08dd809",
+        "20b6d7b50f8cbc288f28845b0f0191b72fb7a860",
+        "73a5ab551201c439b5bae378a5f909ce612ac305",
+        "ae091d3ae3e8d93ae091d0d3fa5353538ee8d938"
+      ],
+      "sha256": [
+        "f7229c4f5f105a74f5b72df71ed8154f9fca10b6535b488192434fd988c848d3",
+        "1471c4bdb044ae2be9e2fc3ec514b88b1471c4bdb044ae2be9e2fc3ec514b88b",
+        "7adb89899b4614aec6715340ae31adce7adb89899b4614aec6715340ae31adce",
+        "5885d80a13c0db1f8e263663d3faee8d7283e7f0184a5674430f290db9e9c846",
+        "5885d80a13c0db1f1ff80d546411d7f8a8350c132bc41e0934cfc023d4e8f9e5",
+        "5885d80a13c0db1f998ca054efbdf2c25fe4a05bcb33bff68c4fe49456517e3e",
+        "43e2bce28325592c95b0c9e23471746043e2bce28325592c95b0c9e234717460",
+        "c2bb5724a7c00e987c64436a93ab0047c2bb5724a7c00e987c64436a93ab0047",
+        "5885d80a13c0db1f8e263663d3faee8d0288a7fd2903afb85a5540fd44243d07",
+        "5885d80a13c0db1f8e263663d3faee8d4b3d02051cb40a5393d96fec50118c72"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "cscript",
+        "occurrences": 1
+      },
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      },
+      {
+        "chaine": "vbscript",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 111
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "149.20.54.227": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "149.20.54.228": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "64.233.14.37": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "20.20.20.20": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.0.16.9": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "drive.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "17000"
+        }
+      },
+      "drive.usercontent.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "126"
+        }
+      },
+      "login.SkyPe.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.dghjdgf.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "serviciosbys.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://drive.google.com/\\nHostUrl=https://drive.usercontent.google.com/download?id=1_ZJjDLbkaZU2JGhud5_mQtbW7QlQTUQW&export=download&authuser=3\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "f7229c4f5f105a74f5b72df71ed8154f9fca10b6535b488192434fd988c848d3": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "1471c4bdb044ae2be9e2fc3ec514b88b1471c4bdb044ae2be9e2fc3ec514b88b": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "7adb89899b4614aec6715340ae31adce7adb89899b4614aec6715340ae31adce": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "5885d80a13c0db1f8e263663d3faee8d7283e7f0184a5674430f290db9e9c846": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "5885d80a13c0db1f1ff80d546411d7f8a8350c132bc41e0934cfc023d4e8f9e5": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "drive.google.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "drive.usercontent.google.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0019370079040527343,
+      "entropie_globale": 0.612875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 3,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1423,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 43,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['drive.google.com', 'drive.usercontent.google.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\53ef8c54.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

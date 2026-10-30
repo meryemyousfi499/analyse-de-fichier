@@ -1,0 +1,552 @@
+{
+  "id_rapport": "58abbb6e",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 22.435,
+  "metadonnees": {
+    "nom": "4d529552.json",
+    "extension": "json",
+    "taille_octets": 14505,
+    "taille_lisible": "14.2 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4d529552.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:27",
+    "date_modification": "2026-10-29T00:52:27",
+    "date_acces": "2026-10-29T11:38:09",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "08bccc5569c76918a24261cd6b440199a476225fd7ff2ee4dfa94b3afaccd31b",
+    "sha1": "3e7398bbb00365d0c8e1fd6f917c2efb811c54d6",
+    "md5": "9877dd6ae1ec2b566286f6dc9f3a95fc",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.673,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.67
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "10.34.0.84",
+      "10.12.3.31",
+      "0.0.0.0",
+      "10.12.3.14",
+      "10.12.0.202",
+      "104.18.32.47",
+      "8.8.8.8",
+      "8.8.4.4",
+      "82.145.216.47",
+      "23.206.246.162",
+      "31.13.83.51",
+      "172.64.155.209",
+      "40.74.98.198",
+      "104.18.43.204",
+      "64.233.166.188",
+      "135.236.136.184",
+      "98.66.133.186",
+      "104.18.39.21",
+      "10.12.3.78",
+      "150.171.109.82",
+      "2.23.231.252",
+      "104.18.24.232",
+      "50.85.242.216",
+      "104.26.13.38",
+      "185.26.182.112",
+      "35.190.80.1",
+      "1.80.190.35",
+      "34.160.81.0",
+      "0.81.160.34",
+      "104.18.41.41",
+      "150.171.109.83",
+      "172.65.251.78",
+      "127.0.0.1",
+      "172.23.160.1",
+      "172.26.208.1",
+      "192.168.19.1",
+      "192.168.72.1",
+      "9.0.232.90",
+      "19.0.19.65",
+      "2.7.12.0",
+      "3.74.0.0",
+      "1.0.0.0",
+      "26.0.1.0",
+      "12.0.0.0",
+      "8.94.0.0",
+      "1.65.245.0",
+      "3.13.150.0"
+    ],
+    "domaines": [
+      "clients2.google.com",
+      "crashstats-collector-2.opera.com",
+      "a23-206-246-162.deploy.static.akamaitechnologies.com",
+      "whatsapp-cdn-shv-01-mad1.fbcdn.net",
+      "wm-in-f188.1e100.net",
+      "a2-23-231-252.deploy.static.akamaitechnologies.com",
+      "1.80.190.35.bc.googleusercontent.com",
+      "0.81.160.34.bc.googleusercontent.com",
+      "MiKTeX.org",
+      "api.abuseipdb.com",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://clients2.google.com/cr/report",
+      "https://crashstats-collector-2.opera.com/",
+      "http://10.12.3.31:8080/api/report",
+      "https://go.dev",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=10.34.0.84&maxAgeInDays=90",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=10.12.3.31&maxAgeInDays=90",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=0.0.0.0&maxAgeInDays=90",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=10.12.3.14&maxAgeInDays=90",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=10.12.0.202&maxAgeInDays=90"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "c:\\",
+      "D:\\"
+    ],
+    "chemins_unix": [
+      "/usr/bin/vpnkit-bridge"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [
+      "Conhost.exe",
+      "Explorer.EXE",
+      "cmd.exe",
+      "conhost.exe",
+      "explorer.exe",
+      "powershell.exe",
+      "svchost.exe",
+      "taskhostw.exe"
+    ],
+    "hashs_embarques": {
+      "md5": [
+        "3bdbe04d3665fa4d2ddeb0144ca597ad",
+        "42f44ab4d9e2c43fce9fbdd6b7e9ef59",
+        "b6bda03ed99a8ac30250918af528d48b"
+      ],
+      "sha1": [
+        "22572d14ed7a1c0f09cf599ff377542f98c7e03a",
+        "ab5f575e5fdaa2cf4987b1a474e49b54dc2d6b68",
+        "a44adf7f53e00964ab890f9f8758a334f1fc15bc"
+      ],
+      "sha256": [
+        "bb3a21f7cb9526576cd3720c963d3bafe6f4ccd716d91453cfa127e273186545",
+        "fe7922326f2a1d3188454ba5502861253223d5da10d9da0b858f9b10f3e01468",
+        "9708903a1e0646d68a2007d62384030e831558b475484e83dff3f32e6e99623a",
+        "b0b36bff7ae4057f687d839cd4b3d81159ab646f1ee1b22106a927e93decbb61",
+        "cee4e1602f2f4776ca785e077114c35cf417179597651477a15fd0ff5dd06d02",
+        "5962e0c68bd5bf2d318c706d6467e41d66a429912bec3e8931b6c6e19821a115",
+        "5f2b9a9b5cc6be90acdf7dc0debc6133ed68c5cc27d2bd31048d03c312d18f4b",
+        "8d8d019b3c4eea3ae435d56dbe6aa0f239e5b6432c4ca473ff82cb82f48bcb59",
+        "485602428d580a2506644aeb71e0c73a08575e1ec653985ec841b2d7ce942dcd",
+        "ea91cd0634c69789b68770311b4e892010fe9e37d16c15fd33c461a04cebe4e3"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "powershell",
+        "occurrences": 2
+      },
+      {
+        "chaine": "cmd.exe",
+        "occurrences": 2
+      },
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 85
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "10.34.0.84": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": null,
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "10.12.3.31": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": null,
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "0.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": null,
+          "nombre_signalements": 576,
+          "signale": false
+        }
+      },
+      "10.12.3.14": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": null,
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "10.12.0.202": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": null,
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "clients2.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crashstats-collector-2.opera.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "a23-206-246-162.deploy.static.akamaitechnologies.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "whatsapp-cdn-shv-01-mad1.fbcdn.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "wm-in-f188.1e100.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://clients2.google.com/cr/report": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://crashstats-collector-2.opera.com/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 7,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://10.12.3.31:8080/api/report": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://go.dev": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=10.34.0.84&maxAgeInDays=90": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "bb3a21f7cb9526576cd3720c963d3bafe6f4ccd716d91453cfa127e273186545": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "fe7922326f2a1d3188454ba5502861253223d5da10d9da0b858f9b10f3e01468": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "9708903a1e0646d68a2007d62384030e831558b475484e83dff3f32e6e99623a": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "b0b36bff7ae4057f687d839cd4b3d81159ab646f1ee1b22106a927e93decbb61": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 7,
+          "signale": true
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "cee4e1602f2f4776ca785e077114c35cf417179597651477a15fd0ff5dd06d02": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "https://clients2.google.com/cr/report",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "https://crashstats-collector-2.opera.com/",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "b0b36bff7ae4057f687d839cd4b3d81159ab646f1ee1b22106a927e93decbb61",
+        "type": "hashs",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0013833045959472656,
+      "entropie_globale": 0.584125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 3,
+      "nb_urls": 9,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.207,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 44,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['https://clients2.google.com/cr/report', 'https://crashstats-collector-2.opera.com/'], hashs embarques: ['b0b36bff7ae4057f687d839cd4b3d81159ab646f1ee1b22106a927e93decbb61']."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4d529552.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

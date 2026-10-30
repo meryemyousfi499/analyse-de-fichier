@@ -1,0 +1,238 @@
+{
+  "id_rapport": "627229d6",
+  "origine": "auto_watch",
+  "duree_analyse_s": 35.232,
+  "metadonnees": {
+    "nom": "cabinet-noir-fichiers-modifies.zip",
+    "extension": "zip",
+    "taille_octets": 52557,
+    "taille_lisible": "51.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-fichiers-modifies.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:10:26",
+    "date_modification": "2026-10-29T00:10:28",
+    "date_acces": "2026-10-29T00:10:34",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://chatgpt.com/\nHostUrl=https://chatgpt.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "9b0fabeff0a174fe11dca4f8b245c621764cf9325f3ef11610a21fe6819bf0a2",
+    "sha1": "1450f2105f54bf38a81f5db90c0f7ed63a430771",
+    "md5": "35234e415f7888f12ffaa677f0eb4b62",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.962,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.96
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.005012226104736328,
+      "entropie_globale": 0.99525,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0438,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\.env.example",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\config.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\README.txt",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\agent\\clamav_scan.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\agent\\pipeline.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\agent\\sandbox.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\agent\\scoring_engine.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\agent\\__pycache__\\clamav_scan.cpython-313.pyc",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\agent\\__pycache__\\pipeline.cpython-313.pyc",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\agent\\__pycache__\\sandbox.cpython-313.pyc",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\agent\\__pycache__\\scoring_engine.cpython-313.pyc",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_j1najmpl\\cabinet-noir-fichiers-modifies\\__pycache__\\config.cpython-313.pyc"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "35253e9c",
+      "nom": ".env.example",
+      "score": 9
+    },
+    {
+      "id_rapport": "73a8b20e",
+      "nom": "config.py",
+      "score": 9
+    },
+    {
+      "id_rapport": "d8e6cee3",
+      "nom": "README.txt",
+      "score": 1
+    },
+    {
+      "id_rapport": "19dc7039",
+      "nom": "clamav_scan.py",
+      "score": 1
+    },
+    {
+      "id_rapport": "862be439",
+      "nom": "pipeline.py",
+      "score": 1
+    },
+    {
+      "id_rapport": "31838fd1",
+      "nom": "sandbox.py",
+      "score": 24
+    },
+    {
+      "id_rapport": "36f51fb2",
+      "nom": "scoring_engine.py",
+      "score": 64
+    },
+    {
+      "id_rapport": "1346a3f6",
+      "nom": "clamav_scan.cpython-313.pyc",
+      "score": 1
+    },
+    {
+      "id_rapport": "53cfb38c",
+      "nom": "pipeline.cpython-313.pyc",
+      "score": 1
+    },
+    {
+      "id_rapport": "b12b690a",
+      "nom": "sandbox.cpython-313.pyc",
+      "score": 25
+    },
+    {
+      "id_rapport": "a8acd520",
+      "nom": "scoring_engine.cpython-313.pyc",
+      "score": 65
+    },
+    {
+      "id_rapport": "5289ee49",
+      "nom": "config.cpython-313.pyc",
+      "score": 9
+    }
+  ],
+  "score_final": {
+    "score": 65,
+    "niveau": "eleve",
+    "action_recommandee": "quarantine",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : .env.example (score 9, rapport 35253e9c).",
+      "Score releve par le contenu extrait de l'archive : sandbox.py (score 24, rapport 31838fd1).",
+      "Score releve par le contenu extrait de l'archive : scoring_engine.py (score 64, rapport 36f51fb2).",
+      "Score releve par le contenu extrait de l'archive : scoring_engine.cpython-313.pyc (score 65, rapport a8acd520)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1793229068,
+    "fichier_original": "cabinet-noir-fichiers-modifies.zip",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1793229068_cabinet-noir-fichiers-modifies.zip.quarantine",
+    "raison": "Aucun signal notable detecte : fichier conforme aux attentes.; Score releve par le contenu extrait de l'archive : .env.example (score 9, rapport 35253e9c).; Score releve par le contenu extrait de l'archive : sandbox.py (score 24, rapport 31838fd1).; Score releve par le contenu extrait de l'archive : scoring_engine.py (score 64, rapport 36f51fb2).; Score releve par le contenu extrait de l'archive : scoring_engine.cpython-313.pyc (score 65, rapport a8acd520).",
+    "action": "quarantine",
+    "libelle": "Mettre en quarantaine"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "14e2c6ef287440c19e604412e788de8d"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "id_rapport": "4eeb4128",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 0.385,
+  "metadonnees": {
+    "nom": "42195233.json",
+    "extension": "json",
+    "taille_octets": 7531,
+    "taille_lisible": "7.4 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\42195233.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:26",
+    "date_modification": "2026-10-29T00:52:26",
+    "date_acces": "2026-10-29T10:52:32",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "e7a8e8068488f971c34a5d0e60037cc12242d049a8f600b4f51921c9f45bb2c9",
+    "sha1": "2ce6b7cafa4cc4bb41c8ed4857816eb128444879",
+    "md5": "4a18a74a442e0a7f564dd03c7f15b092",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.039,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.04
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/api/v1/indicators/file/f1486c9978eb05e6b887ddb5f5b2303a2e7b..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "0.0.0.0",
+      "203.0.113.99"
+    ],
+    "domaines": [
+      "google.com",
+      "monentreprise-test.com",
+      "api.abuseipdb.com",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://claude.ai/chat/d8ea5f41-4295-4126-b457-f0264c5afe84\\nHostUrl=https://claude.ai/api/organizations/def1f0e2-259a-4e88-8af0-dc1efcf7c815/conversations/d8ea5f41-4295-4126-b457-f0264c5afe84/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Fsurveillance.py\\n"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "M:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "afa07d8f6fcabb7f19821af9d2c02c87"
+      ],
+      "sha1": [
+        "65f1e55142e584f5a9b0b5cc432329ee355134b3"
+      ],
+      "sha256": [
+        "f1486c9978eb05e6b887ddb5f5b2303a2e7b7aed24f3ced13fab31154141472d"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "powershell",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 11
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "0.0.0.0": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=0.0.0.0&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "203.0.113.99": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=203.0.113.99&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "google.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/google.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "monentreprise-test.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/monentreprise-test.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "api.abuseipdb.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/api.abuseipdb.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/otx.alienvault.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "https://claude.ai/chat/d8ea5f41-4295-4126-b457-f0264c5afe84\\nHostUrl=https://claude.ai/api/organizations/def1f0e2-259a-4e88-8af0-dc1efcf7c815/conversations/d8ea5f41-4295-4126-b457-f0264c5afe84/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Fsurveillance.py\\n": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/https%3A%2F%2Fclaude.ai%2Fchat%2Fd8ea5f41-4295-4126-b457-f0264c5afe84%5CnHostUrl%3Dhttps%3A%2F%2Fclaude.ai%2Fapi%2Forganizations%2Fdef1f0e2-259a-4e88-8af0-dc1efcf7c815%2Fconversations%2Fd8ea5f41-4295-4126-b457-f0264c5afe84%2Fwiggle%2Fdownload-file%3Fpath%3D%252Fmnt%252Fuser-data%252Foutputs%252Fsurveillance.py%5Cn/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {
+      "f1486c9978eb05e6b887ddb5f5b2303a2e7b7aed24f3ced13fab31154141472d": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/f1486c9978eb05e6b887ddb5f5b2303a2e7b7aed24f3ced13fab31154141472d/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "malwarebazaar": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/e7a8e8068488f971c34a5d0e60037cc12242d049a8f600b4f51921c9f45bb2c9/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0007182121276855469,
+      "entropie_globale": 0.629875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0771,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 18,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\42195233.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

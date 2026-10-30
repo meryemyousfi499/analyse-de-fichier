@@ -1,0 +1,264 @@
+{
+  "id_rapport": "28a60a05",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 7.644,
+  "metadonnees": {
+    "nom": "268e2e02.json",
+    "extension": "json",
+    "taille_octets": 5417,
+    "taille_lisible": "5.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\268e2e02.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:24",
+    "date_modification": "2026-10-29T00:52:24",
+    "date_acces": "2026-10-29T04:45:00",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "392789b111c4903ba8150500cfa46ad3f87dbba0a0458b58cb5a15f880c3d2f5",
+    "sha1": "8cf832f634e00f376091a9f33fdb8e42929ce1f8",
+    "md5": "422c7639da043bd1211e47c7c01159ae",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.804,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.8
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "185.220.101.5"
+    ],
+    "domaines": [
+      "chatgpt.com",
+      "st.info"
+    ],
+    "urls": [
+      "https://chatgpt.com/c/6a74861d-0b64-83ea-ba93-a8f7e9c47c0b\\nHostUrl=https://chatgpt.com/backend-api/estuary/content?id=file_00000000182081f9bd22f8d06700ab2d&fn=dashboard%281%29.py&cd=attachment&ts=496118&p=fs&cid=1&sig=2ae9498f9e538955bdfaa0f257085d85498eb0b3fdec71a33b24b753d9e5dbb6&v=0\\n"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [
+      "/usr/bin/env"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "a7ba8f58a5414010718f9c1564dc1947"
+      ],
+      "sha1": [
+        "dc7e926c2fd5a017c8e779e27bd62824a7536f7f"
+      ],
+      "sha256": [
+        "2ae9498f9e538955bdfaa0f257085d85498eb0b3fdec71a33b24b753d9e5dbb6",
+        "2e5a2531d728ea64d5f1c8c0645cad973d3bca75ac70716d36a0cca86e6ef2fc"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 5
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "185.220.101.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "DE",
+          "nombre_signalements": 420,
+          "signale": true
+        }
+      }
+    },
+    "domaines": {
+      "chatgpt.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "st.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://chatgpt.com/c/6a74861d-0b64-83ea-ba93-a8f7e9c47c0b\\nHostUrl=https://chatgpt.com/backend-api/estuary/content?id=file_00000000182081f9bd22f8d06700ab2d&fn=dashboard%281%29.py&cd=attachment&ts=496118&p=fs&cid=1&sig=2ae9498f9e538955bdfaa0f257085d85498eb0b3fdec71a33b24b753d9e5dbb6&v=0\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "2ae9498f9e538955bdfaa0f257085d85498eb0b3fdec71a33b24b753d9e5dbb6": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "2e5a2531d728ea64d5f1c8c0645cad973d3bca75ac70716d36a0cca86e6ef2fc": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "185.220.101.5",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "chatgpt.com",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0005166053771972657,
+      "entropie_globale": 0.6005,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0429,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 24,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: ['185.220.101.5'], domaines: ['chatgpt.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\268e2e02.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "id_rapport": "cd40b6bc",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 11.245,
+  "metadonnees": {
+    "nom": "159b55ae.json",
+    "extension": "json",
+    "taille_octets": 14059,
+    "taille_lisible": "13.7 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\159b55ae.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:22",
+    "date_modification": "2026-10-29T00:52:22",
+    "date_acces": "2026-10-29T03:08:28",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "b94f67e28d13c57b5123b95a8caa0dc9a93f5152c02d17694a9e110c5a2c706c",
+    "sha1": "bbcda7eedd7567f51223d07f27cdc678fb43a794",
+    "md5": "9a1f9451974e226d9b5c1c77b21a8f51",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.17,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.17
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/api/v1/indicators/file/75575ccb037abf425108aa750ad3a41a9921..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "drive.usercontent.google.com",
+      "www.w3.org",
+      "purl.org",
+      "ns.adobe.com",
+      "www.aiim.org",
+      "otx.alienvault.com",
+      "2Fwww.w3.org",
+      "2Fpurl.org",
+      "2Fns.adobe.com",
+      "2Fwww.aiim.org"
+    ],
+    "urls": [
+      "https://drive.usercontent.google.com/download?id=1jCyNILVyUmlGFUNnuedq7AgDP7mNX3u9&export=download&authuser=0&confirm=t&uuid=d2b10fdd-ca5b-430b-8c36-261d546c19bc&at=AAINaIJeb2WW_mfdRvrwqGv9b7sQ:1780529520158\\n",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "http://purl.org/dc/elements/1.1/",
+      "http://ns.adobe.com/pdf/1.3/",
+      "http://ns.adobe.com/xap/1.0/",
+      "http://www.aiim.org/pdfua/ns/id/"
+    ],
+    "emails": [
+      "IV@K.Nr"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "h:\\",
+      "u:\\",
+      "B:\\",
+      "m:\\",
+      "F:\\",
+      "a:\\",
+      "s:\\",
+      "d:\\",
+      "k:\\",
+      "J:\\",
+      "o:\\",
+      "U:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "8b4665c506c77bb5a6da19add800d1b6"
+      ],
+      "sha1": [
+        "59adec15072e276faa287f6eaa347b01370f3b31"
+      ],
+      "sha256": [
+        "75575ccb037abf425108aa750ad3a41a992158da655dc3a3d93cd4c5234b9a44"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 22
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "drive.usercontent.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "126"
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "purl.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "ns.adobe.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.aiim.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://drive.usercontent.google.com/download?id=1jCyNILVyUmlGFUNnuedq7AgDP7mNX3u9&export=download&authuser=0&confirm=t&uuid=d2b10fdd-ca5b-430b-8c36-261d546c19bc&at=AAINaIJeb2WW_mfdRvrwqGv9b7sQ:1780529520158\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://purl.org/dc/elements/1.1/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/pdf/1.3/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 45,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/xap/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "75575ccb037abf425108aa750ad3a41a992158da655dc3a3d93cd4c5234b9a44": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "drive.usercontent.google.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "purl.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://purl.org/dc/elements/1.1/",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://ns.adobe.com/pdf/1.3/",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://ns.adobe.com/xap/1.0/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.001340770721435547,
+      "entropie_globale": 0.64625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 6,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1108,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['drive.usercontent.google.com', 'purl.org'], URLs: ['http://purl.org/dc/elements/1.1/', 'http://ns.adobe.com/pdf/1.3/', 'http://ns.adobe.com/xap/1.0/'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\159b55ae.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

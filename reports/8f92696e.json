@@ -1,0 +1,226 @@
+{
+  "id_rapport": "8f92696e",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 4.504,
+  "metadonnees": {
+    "nom": "57d17732.json",
+    "extension": "json",
+    "taille_octets": 13137,
+    "taille_lisible": "12.8 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\57d17732.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:27",
+    "date_modification": "2026-10-29T00:52:27",
+    "date_acces": "2026-10-29T14:02:06",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "7e5017f34214ce557e3590eead8fa3762515f2b1e5e92a0f889db6cf279954a2",
+    "sha1": "2fd34479d7395f8ddb9b942a11bf88493684e1ba",
+    "md5": "4179e355fa6a99016a08f6d945267cfa",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.096,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.1
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/api/v1/indicators/file/940595656078519e3a8234c6ce154c427974..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://claude.ai/chat/62bfc4f2-d416-4669-9632-a65f17dc579c\\nHostUrl=https://claude.ai/api/organizations/def1f0e2-259a-4e88-8af0-dc1efcf7c815/conversations/62bfc4f2-d416-4669-9632-a65f17dc579c/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FRapport_Evenements_Locaux_macOS.docx\\n"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "n:\\",
+      "m:\\",
+      "T:\\",
+      "M:\\",
+      "v:\\",
+      "D:\\",
+      "S:\\",
+      "A:\\",
+      "h:\\",
+      "l:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "ffc6a962ff0acc2ad97c57d853523815"
+      ],
+      "sha1": [
+        "62656f0e8ed3ae6d305b22800562af897f0cabe5",
+        "b4e9cd56c914a5c9fb562f8822feb780ff399e53",
+        "70daadc9763deba472e0506a62d6c313106d0ea7",
+        "52c4e0b8a767b45399b94257f7c940101db2f8e5",
+        "caa573d2935e3fdaa729759c81c3c07bf6b745ec",
+        "886626ab30d9403d45bdad5323b51a04d00c135d",
+        "c97167181f668c3f95c54cf0860b8dd6bc2d5985",
+        "021b552cc807df27719b4b28a9246cb1e8bd4ba6",
+        "cf2a0729b33b3d630f366da8066ae22389ae74ca",
+        "53a4b8758514cd7a7c131e9164a364f245c0e1ee"
+      ],
+      "sha256": [
+        "940595656078519e3a8234c6ce154c427974f2df4efe3b08bbd9d5a072677062"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://claude.ai/chat/62bfc4f2-d416-4669-9632-a65f17dc579c\\nHostUrl=https://claude.ai/api/organizations/def1f0e2-259a-4e88-8af0-dc1efcf7c815/conversations/62bfc4f2-d416-4669-9632-a65f17dc579c/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FRapport_Evenements_Locaux_macOS.docx\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "940595656078519e3a8234c6ce154c427974f2df4efe3b08bbd9d5a072677062": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0012528419494628907,
+      "entropie_globale": 0.637,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0445,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 9,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\57d17732.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

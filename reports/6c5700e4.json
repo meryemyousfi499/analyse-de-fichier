@@ -1,0 +1,371 @@
+{
+  "id_rapport": "6c5700e4",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 30.748,
+  "metadonnees": {
+    "nom": "40e42cd4.json",
+    "extension": "json",
+    "taille_octets": 8441,
+    "taille_lisible": "8.2 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\40e42cd4.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:26",
+    "date_modification": "2026-10-29T00:52:26",
+    "date_acces": "2026-10-29T10:40:59",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "b98905075aaf9ee32a3afc16a098fabae028c3820c15640bc44da2d8ca55158c",
+    "sha1": "dd1358ad4e2826da452e4301e47d3a6ba7910fd6",
+    "md5": "1ca57288fed60702ae18aacdfcf6040e",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.725,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.73
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "chatgpt.com",
+      "www.w3.org",
+      "cv.iptc.org",
+      "SSL.com",
+      "crt-c2pa.ssl.com",
+      "otx.alienvault.com",
+      "2Fcrt-c2pa.ssl.com",
+      "2FSSL.com"
+    ],
+    "urls": [
+      "https://chatgpt.com/c/6ab5305e-5fd4-83e9-bb2b-7c3fa98bf2e5\\nHostUrl=https://chatgpt.com/backend-api/estuary/content?id=file_00000000b6c8820ebd4ab125ba151ddd&ts=497294&p=fs&cid=1&sig=632a2c88c64a9f31767a8a2e23acbcc3fc2d5168f4c3fb43f7a9c91cf8d35695&v=0\\n",
+      "http://www.w3.org/2000/svg",
+      "http://crt-c2pa.ssl.com/SSL.com-C2PA-I-R1.cer0$\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u0018http://ocsp-c2pa.ssl.com0\\u0017\\u0006\\u0003U\\u001d",
+      "http://ocsp-c2pa.ssl.com0B\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00026http://crt-c2pa.ssl.com/SSL.com-C2PA-Root-2025-RSA.cer0",
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp-c2pa.ssl.com0B%06%08%2B%06%01%05%05%070%026http%3A%2F%2Fcrt-c2pa.ssl.com%2FSSL.com-C2PA-Root-2025-RSA.cer0/general"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "q:\\",
+      "O:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "288a48f7a48aaa3052ddf9e130455e05"
+      ],
+      "sha1": [
+        "477993ab49166fe145f05a608ee7d1a5e4f1b90b"
+      ],
+      "sha256": [
+        "632a2c88c64a9f31767a8a2e23acbcc3fc2d5168f4c3fb43f7a9c91cf8d35695",
+        "f0e677c3f1d9baea8748b920637d032059db6b8e99c69b861055b91776776804"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 21
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "chatgpt.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "cv.iptc.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "SSL.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crt-c2pa.ssl.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://chatgpt.com/c/6ab5305e-5fd4-83e9-bb2b-7c3fa98bf2e5\\nHostUrl=https://chatgpt.com/backend-api/estuary/content?id=file_00000000b6c8820ebd4ab125ba151ddd&ts=497294&p=fs&cid=1&sig=632a2c88c64a9f31767a8a2e23acbcc3fc2d5168f4c3fb43f7a9c91cf8d35695&v=0\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.w3.org/2000/svg": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://crt-c2pa.ssl.com/SSL.com-C2PA-I-R1.cer0$\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u0018http://ocsp-c2pa.ssl.com0\\u0017\\u0006\\u0003U\\u001d": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ocsp-c2pa.ssl.com0B\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00026http://crt-c2pa.ssl.com/SSL.com-C2PA-Root-2025-RSA.cer0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp-c2pa.ssl.com0B%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu00026http%3A%2F%2Fcrt-c2pa.ssl.com%2FSSL.com-C2PA-Root-2025-RSA.cer0/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp-c2pa.ssl.com0B%06%08%2B%06%01%05%05%070%026http%3A%2F%2Fcrt-c2pa.ssl.com%2FSSL.com-C2PA-Root-2025-RSA.cer0/general": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "632a2c88c64a9f31767a8a2e23acbcc3fc2d5168f4c3fb43f7a9c91cf8d35695": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "f0e677c3f1d9baea8748b920637d032059db6b8e99c69b861055b91776776804": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "chatgpt.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "SSL.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://www.w3.org/2000/svg",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0008049964904785156,
+      "entropie_globale": 0.590625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 5,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1414,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 43,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['chatgpt.com', 'SSL.com'], URLs: ['http://www.w3.org/2000/svg'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\40e42cd4.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

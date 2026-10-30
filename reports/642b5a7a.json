@@ -1,0 +1,341 @@
+{
+  "id_rapport": "642b5a7a",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 35.637,
+  "metadonnees": {
+    "nom": "413628e1.json",
+    "extension": "json",
+    "taille_octets": 9478,
+    "taille_lisible": "9.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\413628e1.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:26",
+    "date_modification": "2026-10-29T00:52:26",
+    "date_acces": "2026-10-29T10:46:35",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "8396fc6c883ae94fc8adcc61ade381f2445871574cdd657c60b66ec353f0698c",
+    "sha1": "c58eefe88c677978b30786a013ef044e09a43684",
+    "md5": "0609ed9862ef913bcc6950784eb09a27",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.769,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.77
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.google.com",
+      "www.iso.org",
+      "www.sans.org",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://www.google.com/\\nHostUrl=https://www.ulb.be/medias/fichier/politique-de-securite-des-systemes-d-information-de-l-ulb_1589528034835-pdf?ID_FICHE=5273&INLINE=FALSE\\n",
+      "http://www.iec.ch\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0016IEC",
+      "http://www.iec.ch\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000desc\\u0000\\u00",
+      "https://portail.ulb.be/fr/documents-officiels/protection-des-donnees-a-caractere-personnel)",
+      "https://www.iso.org/fr/isoiec-27001-information-security.html)",
+      "https://www.iso.org/fr/standard/56742.html)",
+      "https://www.autoriteprotectiondonnees.be/)",
+      "https://www.iso.org/)",
+      "https://www.nist.gov/)",
+      "https://www.sans.org/)",
+      "https://uit.stanford.edu/security)",
+      "https://www.bu.edu/tech/services/security/)",
+      "https://economie.fgov.be/fr/themes/line/securite-de-linformation)",
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fwww.iec.ch%00%00%00%00%00%00%00%00%00%00%00%16IEC/general",
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fwww.iec.ch%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00desc%00%00%00%00%00%00%00.IEC/general"
+    ],
+    "emails": [
+      "support.SSI@ulb.be",
+      "RGPD@ulb.be",
+      "Alex.Genatzy@ulb.be",
+      "Karin.Doguet@ulb.be",
+      "Stephane.Louies@ulb.be",
+      "Petroula.Petropoulos@ulb.be"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "u:\\",
+      "X:\\",
+      "p:\\",
+      "s:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "c25e53b0b9d71a3d2da792f04a20bd88",
+        "A8043D18CADF074DA15533A093F6713F"
+      ],
+      "sha1": [
+        "57f97e2e533a93e1bcc13643ecb4ffbd9e488e8a"
+      ],
+      "sha256": [
+        "f64380186dc9c0e359510fc5f56aea9c3d14e9feb4ec3040b08e31609900f179"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 34
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "4"
+        }
+      },
+      "www.iso.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.sans.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://www.google.com/\\nHostUrl=https://www.ulb.be/medias/fichier/politique-de-securite-des-systemes-d-information-de-l-ulb_1589528034835-pdf?ID_FICHE=5273&INLINE=FALSE\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.iec.ch\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0016IEC": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fwww.iec.ch%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0016IEC/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.iec.ch\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000desc\\u0000\\u00": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fwww.iec.ch%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000%5Cu0000desc%5Cu0000%5Cu00/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://portail.ulb.be/fr/documents-officiels/protection-des-donnees-a-caractere-personnel)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.iso.org/fr/isoiec-27001-information-security.html)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "f64380186dc9c0e359510fc5f56aea9c3d14e9feb4ec3040b08e31609900f179": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "www.google.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0009038925170898437,
+      "entropie_globale": 0.596125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 15,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1086,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['www.google.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\413628e1.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

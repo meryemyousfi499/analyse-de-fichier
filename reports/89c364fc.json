@@ -1,0 +1,202 @@
+{
+  "id_rapport": "89c364fc",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 9.93,
+  "metadonnees": {
+    "nom": "features_pps.png",
+    "extension": "png",
+    "taille_octets": 433564,
+    "taille_lisible": "423.4 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_w5qqpic9\\images_pfe\\features_pps.png",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-28T23:59:15",
+    "date_modification": "2026-10-28T23:59:15",
+    "date_acces": "2026-10-29T00:04:12",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "png",
+    "extension_declaree": ".png",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "39699cc161a4db1806ed62b2d6c97b99e5f1d683b19792af55384473580bda67",
+    "sha1": "354e0824bcc5bbf7dc240e6fd879fc8d631b4c6f",
+    "md5": "b484346eb2e49a82bf4ad30094eb200e",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "png",
+    "image": {
+      "disponible": true,
+      "dimensions": "1921x1770",
+      "donnees_ajoutees_apres_fin": false,
+      "taille_donnees_ajoutees_octets": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.967,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.95,
+      7.92,
+      7.95,
+      7.94,
+      7.96,
+      7.95,
+      7.85
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "matplotlib.org"
+    ],
+    "urls": [
+      "http://matplotlib.org/#\u0014D\u0005\u0000\u0000"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "d:\\{5oՖro\u0016311\u0011_ߜ\u001d\u0012\u0013\u0012sC"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "matplotlib.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://matplotlib.org/#\u0014D\u0005\u0000\u0000": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fmatplotlib.org%2F%23%14D%05%00%00/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "matplotlib.org",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.04134788513183594,
+      "entropie_globale": 0.995875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0607,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 25,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['matplotlib.org'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_w5qqpic9\\images_pfe\\features_pps.png",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

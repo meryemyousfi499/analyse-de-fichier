@@ -1,0 +1,319 @@
+{
+  "id_rapport": "461b8748",
+  "id_parent": "e430034a",
+  "profondeur": 1,
+  "origine": "extrait_archive",
+  "duree_analyse_s": 2.531,
+  "metadonnees": {
+    "nom": "KDE_result.png",
+    "extension": "png",
+    "taille_octets": 1415927,
+    "taille_lisible": "1.4 Mo",
+    "mime_reel": "image/png",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0k9sm5fw\\images_pfe\\KDE_result.png",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-30T03:02:45",
+    "date_modification": "2026-10-30T03:02:45",
+    "date_acces": "2026-10-30T03:02:45",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "png",
+    "extension_declaree": ".png",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "9b100882a7e305ef23c04dd0de527a6c52b03b8db25a8750fd355f09cd1c8f8f",
+    "sha1": "4f0f3adc18590ec328f16a57a32164b32f945111",
+    "md5": "484d4fef7916bf0537cac364f0709178",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "png",
+    "image": {
+      "disponible": true,
+      "dimensions": "950x874",
+      "donnees_ajoutees_apres_fin": false,
+      "taille_donnees_ajoutees_octets": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.993,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      7.99,
+      7.98,
+      7.98,
+      7.98,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 2,
+      "urls": 2
+    },
+    "chemins_windows": [
+      "a:\\ܫ",
+      "N:\\)擏.Uїq",
+      "o:\\Sĺ#h5;%x\u0018",
+      "r:\\\u0019jMᷝ\u0003MMFjwo\u0017\u0010\u001dORyfQ&\u000707",
+      "j:\\7\u000bA\u001aml0\u0019׿"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.13503332138061525,
+      "entropie_globale": 0.999125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0454,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_0k9sm5fw\\images_pfe\\KDE_result.png",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 1.835,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.001,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 1.478,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.078,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "l'extension '.png' n'est jamais soumise seule (composant interne ou média) ; analyser le document complet",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "l'extension '.png' n'est jamais soumise seule (composant interne ou média) ; analyser le document complet"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": false,
+    "declencheurs": [],
+    "bloquants": [
+      "l'extension '.png' n'est jamais soumise seule (composant interne ou média) ; analyser le document complet"
+    ],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

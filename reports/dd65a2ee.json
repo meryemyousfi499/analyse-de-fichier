@@ -1,0 +1,288 @@
+{
+  "id_rapport": "dd65a2ee",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 1.336,
+  "metadonnees": {
+    "nom": "~$pport_de_presentation_du_projet_4.docx",
+    "extension": "docx",
+    "taille_octets": 162,
+    "taille_lisible": "162.0 o",
+    "mime_reel": "application/octet-stream",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\~$pport_de_presentation_du_projet_4.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-18T12:34:36",
+    "date_modification": "2026-10-18T12:34:36",
+    "date_acces": "2026-10-29T18:37:06",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".docx",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "b85179bbeccb08c97e86e748518b428429bfb50fd3ab60c8e13b163fdb424aab",
+    "sha1": "69cb38ec24fb7dd94c764e8bea34a0106cf380e2",
+    "md5": "f2832495f8eb3fa3d263bd94d0f28e80",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 2.766,
+    "verdict_entropie": "faible (texte / code non compresse)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      2.77
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.544952392578125e-05,
+      "entropie_globale": 0.34575,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0427,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false,
+    "conteneur": "office_ooxml"
+  },
+  "conteneur": "office_ooxml",
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\~$pport_de_presentation_du_projet_4.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 0.046,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.077,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.033,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "extraction_archive",
+        "lance": false,
+        "raison": "document/paquet (office_ooxml) : analysé comme un tout, jamais extrait en fichiers indépendants"
+      },
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

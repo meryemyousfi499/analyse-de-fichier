@@ -1,0 +1,363 @@
+{
+  "id_rapport": "9a4a139d",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 9.614,
+  "metadonnees": {
+    "nom": "1f0001d2.json",
+    "extension": "json",
+    "taille_octets": 50606,
+    "taille_lisible": "49.4 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\1f0001d2.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:23",
+    "date_modification": "2026-10-29T00:52:23",
+    "date_acces": "2026-10-29T04:02:31",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "6010d997624c3257d2e519bc363905c26eb12e80e078ae2bcf39c93fc3f3d194",
+    "sha1": "4747e145fb1839c923b41a1ce07960664e9e5925",
+    "md5": "805b64f9e674a5b6b6aa2162b42a30c3",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.085,
+    "verdict_entropie": "faible (texte / code non compresse)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.09
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "21.0.12.1"
+    ],
+    "domaines": [
+      "cacerts.digicert.com",
+      "crl3.digicert.com",
+      "www.digicert.com",
+      "crl4.digicert.com",
+      "wixtoolset.org",
+      "w.io",
+      "otx.alienvault.com",
+      "2Fcacerts.digicert.com",
+      "2Fwww.digicert.com"
+    ],
+    "urls": [
+      "http://ocsp.digicert.com0A\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\\u0006\\u0003U\\u001d\\u001f\\u0004",
+      "http://www.digicert.com/CPS0\\u000e\\u0006\\u0003U\\u001d\\u000f\\u0001\\u0001\\u0004\\u0004\\u0003\\u0002\\u00070\\u0013\\u0006\\u0003U\\u001d%\\u0004",
+      "http://ocsp.digicert.com0\\\\\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0",
+      "https://wixtoolset.org/",
+      "http://ocsp.digicert.com0X\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0",
+      "http://ocsp.digicert.com0C\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\\u0006\\u0003U\\u001d\\u001f\\u0004",
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0A%06%08%2B%06%01%05%05%070%025http%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedRootG4.crt0C%06%03U%1D%1F%04/general",
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fwww.digicert.com%2FCPS0%0E%06%03U%1D%0F%01%01%04%04%03%02%070%13%06%03U%1D%25%04/general",
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0%5C%06%08%2B%06%01%05%05%070%02Phttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0/general",
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0X%06%08%2B%06%01%05%05%070%02Lhttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0/general"
+    ],
+    "emails": [
+      "H@o.wo"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "e:\\",
+      "D:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "908f8a825c4be2ecd29c92983bf23cfa"
+      ],
+      "sha1": [
+        "2b92ccb3240d6a3f38818f79d0bb17370dabbb6e"
+      ],
+      "sha256": [
+        "454cfd334b9ca91c96dd8c2de97fcef6b9f1f98be9172ff076711f1c6b44e4e0"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 30
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "21.0.12.1": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "cacerts.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crl3.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crl4.digicert.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "wixtoolset.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 26,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://ocsp.digicert.com0A\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\\u0006\\u0003U\\u001d\\u001f\\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0A%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu00025http%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedRootG4.crt0C%5Cu0006%5Cu0003U%5Cu001d%5Cu001f%5Cu0004/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.digicert.com/CPS0\\u000e\\u0006\\u0003U\\u001d\\u000f\\u0001\\u0001\\u0004\\u0004\\u0003\\u0002\\u00070\\u0013\\u0006\\u0003U\\u001d%\\u0004": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ocsp.digicert.com0\\\\\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0%5C%5C%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu0002Phttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://wixtoolset.org/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 3,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ocsp.digicert.com0X\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0X%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu0002Lhttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "454cfd334b9ca91c96dd8c2de97fcef6b9f1f98be9172ff076711f1c6b44e4e0": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "wixtoolset.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "https://wixtoolset.org/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.004826164245605469,
+      "entropie_globale": 0.510625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 10,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1049,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['wixtoolset.org'], URLs: ['https://wixtoolset.org/'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\1f0001d2.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

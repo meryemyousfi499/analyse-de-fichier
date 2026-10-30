@@ -1,91 +1,70 @@
-/*
-  Règles YARA de démarrage — génériques et éducatives.
-  A enrichir avec vos propres règles ou des flux (ex: YARA-Rules, abuse.ch)
-  pour couvrir des familles de malware spécifiques.
-*/
+"""Application des regles YARA sur le fichier.
 
-rule Suspicious_PowerShell_Obfuscation
-{
-    meta:
-        description = "Commande PowerShell encodee ou usage d'IEX/DownloadString"
-        severity = "eleve"
-    strings:
-        $s1 = "-EncodedCommand" nocase
-        $s2 = "FromBase64String" nocase
-        $s3 = "IEX(" nocase
-        $s4 = "DownloadString" nocase
-        $s5 = "-nop -w hidden" nocase
-    condition:
-        2 of them
-}
+La variable externe `file_ext` (extension sans point, minuscules) est
+fournie aux regles qui en ont besoin (ex. PE_Disguised_As_Document) : YARA
+seul ne connait pas le nom du fichier analyse.
+"""
+import hashlib
+import os
 
-rule Suspicious_Office_AutoOpen_Shell
-{
-    meta:
-        description = "Macro Office avec auto-execution combinee a un appel shell"
-        severity = "eleve"
-    strings:
-        $auto1 = "AutoOpen" nocase
-        $auto2 = "Document_Open" nocase
-        $shell1 = "Shell(" nocase
-        $shell2 = "WScript.Shell" nocase
-        $shell3 = "CreateObject" nocase
-    condition:
-        1 of ($auto*) and 1 of ($shell*)
-}
+from config import YARA_RULES_PATH
 
-rule Suspicious_PE_Process_Injection_APIs
-{
-    meta:
-        description = "Combinaison d'API Windows typiques d'une injection de processus"
-        severity = "critique"
-    strings:
-        $a = "VirtualAllocEx"
-        $b = "WriteProcessMemory"
-        $c = "CreateRemoteThread"
-        $d = "NtUnmapViewOfSection"
-    condition:
-        3 of them
-}
+try:
+    import yara
+    _HAS_YARA = True
+except ImportError:
+    _HAS_YARA = False
 
-rule Generic_Ransomware_Note_Strings
-{
-    meta:
-        description = "Formulations typiques d'une note de rancon"
-        severity = "critique"
-    strings:
-        $r1 = "your files have been encrypted" nocase
-        $r2 = "decrypt your files" nocase
-        $r3 = "bitcoin wallet" nocase
-        $r4 = "restore your files" nocase
-        $r5 = "tor browser" nocase
-    condition:
-        2 of them
-}
+_compiled = None
+_rules_version = None
 
-rule Suspicious_LOLBins_Chain
-{
-    meta:
-        description = "Chaine d'outils systeme legitimes detournes (living-off-the-land)"
-        severity = "moyen"
-    strings:
-        $l1 = "certutil" nocase
-        $l2 = "-urlcache" nocase
-        $l3 = "bitsadmin" nocase
-        $l4 = "rundll32" nocase
-        $l5 = "regsvr32" nocase
-        $l6 = "mshta" nocase
-    condition:
-        2 of them
-}
 
-rule PE_Disguised_As_Document
-{
-    meta:
-        description = "En-tete MZ (executable) alors que le contexte attend un document"
-        severity = "critique"
-    strings:
-        $mz = { 4D 5A }
-    condition:
-        $mz at 0
-}
+def _get_compiled_rules():
+    global _compiled
+    if _compiled is None and _HAS_YARA:
+        try:
+            _compiled = yara.compile(filepath=YARA_RULES_PATH, externals={"file_ext": ""})
+        except Exception:
+            _compiled = False
+    return _compiled
+
+
+def rules_version():
+    """Empreinte courte du fichier de regles : sert a invalider le cache
+    quand les regles changent."""
+    global _rules_version
+    if _rules_version is None:
+        try:
+            with open(YARA_RULES_PATH, "rb") as f:
+                _rules_version = hashlib.sha256(f.read()).hexdigest()[:12]
+        except OSError:
+            _rules_version = "absent"
+    return _rules_version
+
+
+def scan_file(path, original_name=None):
+    """`original_name` : nom/extension d'origine du fichier si `path` est un
+    chemin temporaire (ex. fichier uploade renomme)."""
+    if not _HAS_YARA:
+        return {"disponible": False, "raison": "module yara-python non installe", "matches": []}
+
+    rules = _get_compiled_rules()
+    if not rules:
+        return {"disponible": False, "raison": "echec de compilation des regles YARA", "matches": []}
+
+    ext = os.path.splitext(original_name or path)[1].lstrip(".").lower()
+
+    try:
+        matches = rules.match(filepath=path, timeout=20, externals={"file_ext": ext})
+    except Exception as e:
+        return {"disponible": False, "raison": f"erreur de scan: {e}", "matches": []}
+
+    results = []
+    for m in matches:
+        results.append({
+            "regle": m.rule,
+            "severite": m.meta.get("severity", "inconnue"),
+            "description": m.meta.get("description", ""),
+        })
+
+    return {"disponible": True, "matches": results, "version_regles": rules_version()}

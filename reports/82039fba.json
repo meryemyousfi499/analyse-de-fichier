@@ -1,0 +1,346 @@
+{
+  "id_rapport": "82039fba",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 6.664,
+  "metadonnees": {
+    "nom": "Rapport_TP3_Neo4j_Partie2.docx",
+    "extension": "docx",
+    "taille_octets": 1606716,
+    "taille_lisible": "1.5 Mo",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Rapport_TP3_Neo4j_Partie2.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-27T05:01:32",
+    "date_modification": "2026-10-27T05:01:35",
+    "date_acces": "2026-10-29T02:07:30",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://claude.ai/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "666c4e3187b571bbb923f32f269eb6329f40331e779f62ffe6776477e7ee1a71",
+    "sha1": "0d06e22300dce564132ce084d1c11a2a35055576",
+    "md5": "d5f3c876a9f4bc0326f7321b06a3036f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.84
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "n:\\",
+      "A:\\;먴 0L!o\u0006YNyd\u0004\u001d0\u001eQh\u00054܌\u0002Q!aT\u00046\t3\u000f\u001b)\u000fF;x\u000e^",
+      "d:\\\u0011ky1",
+      "b:\\;\u0006p_({F]",
+      "D:\\fS[;Aj\u0001Ɲj8(\u001b\u001fmU-pq{\u000f\u0004",
+      "J:\\k}%X\u0015{\u000eS \u001ccϐ;k\u0015E;\u000b&9X\u00009r&OsT%=\u0012we͛\u001b0E"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "712e3f63236f531ac3f54190679cc4f7a6dbdf0b",
+        "e5927b7597c5c88a64c9bb9c0e35bb5cbb855eb7",
+        "2f6647ff9b2ec02e500481a9416970e76595fc1d",
+        "424ae1cf7421586edb9029578eda0ec5ecaba05c",
+        "2b16e6d9d9d80addf353a3fe6ff6a5324d0d66c6",
+        "058d4ab31c7e741723892819d4628c2d2b9ea855",
+        "f86ca63acfb318fa3c4e4d2dde6aa49ad23a99b0",
+        "8a77bbb3e081976a2ba85602aa3000f7c0a5fc8f",
+        "3cbe63b534f76af734e3ceb0ffe92413ef1cd8c1",
+        "ec431e3c3ae838eb3cdfb1ec7b28c9a3f487c909"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_office",
+    "status": "termine",
+    "file_type": "ZIP/OOXML",
+    "entries_inspected": 61,
+    "macros_present": false,
+    "external_relationships": 0,
+    "truncated": false,
+    "findings": [],
+    "note": "Analyse statique limitée. Les macros ou relations externes ne prouvent pas à elles seules qu'un document est malveillant."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.15322837829589844,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0456,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false,
+    "conteneur": "office_ooxml"
+  },
+  "conteneur": "office_ooxml",
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Rapport_TP3_Neo4j_Partie2.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 2.316,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.018,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 2.555,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.711,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_office",
+        "status": "ok",
+        "duration_s": 0.128,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "extraction_archive",
+        "lance": false,
+        "raison": "document/paquet (office_ooxml) : analysé comme un tout, jamais extrait en fichiers indépendants"
+      },
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'ZIP/OOXML' / extension '.docx' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

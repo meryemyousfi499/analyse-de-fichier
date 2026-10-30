@@ -1,0 +1,342 @@
+{
+  "id_rapport": "a964da03",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 18.078,
+  "metadonnees": {
+    "nom": "IMG_20260216_155228.pdf",
+    "extension": "pdf",
+    "taille_octets": 1104472,
+    "taille_lisible": "1.1 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\IMG_20260216_155228.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-25T05:20:00",
+    "date_modification": "2026-05-25T05:20:20",
+    "date_acces": "2026-10-28T12:36:44",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.ilovepdf.com/\nHostUrl=https://api74.ilovepdf.com/v1/download/rhsptwlq1163f2gdhhf2f2yh9fpkjdsqjn2vvkw4xqpslqr9pxwg04y8jAz8h30632vywmbjwn9p8rz5x76vkczk5mcxvck7whfhv7bzkfghql6gt5fb5ttdw0vz30679jfy2s2ntq3bbt4cvAbpk88bs4kvvm1kh8095s9jsg5v722dmAtq\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "8e5f08c31315dcd1b807302b386f0fbd04f8d48ba002b789e47f2740f313dc24",
+    "sha1": "021bf15efa5cfbf547e6e9fb3f39729bf443e5d8",
+    "md5": "deaa40dc17ab4d7d3d0ae220dab2966a",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 11
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "0.io"
+    ],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "s:\\C\u0007T\u0014\u0004o~r\u0001}Kswx skl[AndC^\u0005\u0003",
+      "N:\\\u0013\u000fmlEsSPj-DFsN\u0016HYξ\u001c",
+      "R:\\b7ZiyY\u001cJ3\b\u0011c]kk",
+      "l:\\ke~3vѷR4b]5\u001a",
+      "e:\\HvF66\\\u001f\u0000[5&",
+      "T:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "FCD6EC845DC9F070BB2B72AB7F6A078A",
+        "5164914DC877FC9B9136196B58CA8A2F"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 1
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "0.io": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.10533065795898437,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0451,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 19,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\IMG_20260216_155228.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 1.248,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.012,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.997,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.6,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.001,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

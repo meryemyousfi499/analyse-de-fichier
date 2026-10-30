@@ -1,0 +1,281 @@
+{
+  "id_rapport": "625255e3",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 0.46,
+  "metadonnees": {
+    "nom": "4246f7e1.json",
+    "extension": "json",
+    "taille_octets": 10502,
+    "taille_lisible": "10.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4246f7e1.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:26",
+    "date_modification": "2026-10-29T00:52:26",
+    "date_acces": "2026-10-29T10:52:37",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "d36860dea75840e9d3416dfa2820475b384b371a0c0ec6cc39f546118d6e4982",
+    "sha1": "c085b2cb656ae8ee547a252300033fc26964d748",
+    "md5": "72c550bbaddaef55ad296c49662b71f6",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.621,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.62
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "65.61.137.117"
+    ],
+    "domaines": [
+      "schemas.openxmlformats.org",
+      "schemas.microsoft.com",
+      "demo.testfire.net"
+    ],
+    "urls": [
+      "http://schemas.openxmlformats.org/markup-compatibility/2006",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+      "http://schemas.openxmlformats.org/officeDocument/2006/math",
+      "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+      "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+      "http://schemas.microsoft.com/office/word/2006/wordml",
+      "http://schemas.openxmlformats.org/schemaLibrary/2006/main",
+      "http://schemas.openxmlformats.org/drawingml/2006/main",
+      "http://schemas.openxmlformats.org/drawingml/2006/picture",
+      "http://schemas.openxmlformats.org/drawingml/2006/chart",
+      "http://schemas.openxmlformats.org/drawingml/2006/lockedCanvas",
+      "http://schemas.openxmlformats.org/drawingml/2006/diagram",
+      "http://schemas.microsoft.com/office/word/2010/wordprocessingShape",
+      "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+      "http://schemas.microsoft.com/office/word/2010/wordml",
+      "http://schemas.microsoft.com/office/word/2012/wordml",
+      "http://schemas.microsoft.com/office/word/2018/wordml",
+      "http://schemas.microsoft.com/office/word/2018/wordml/cex",
+      "http://schemas.microsoft.com/office/word/2016/wordml/cid",
+      "http://schemas.microsoft.com/office/tasks/2019/documenttasks",
+      "http://schemas.microsoft.com/office/comments/2020/reactions"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "7b971b66d3df98dd45893b4a411beffe"
+      ],
+      "sha1": [
+        "857cd4f9cd8d26629b8feebab7cbd607a367594d"
+      ],
+      "sha256": [
+        "479c68c5a81b1ae730c79c710d63f3a4927ce75ca22403813df6b5c74fe8c9da"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 46
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "65.61.137.117": {
+        "abuseipdb": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='api.abuseipdb.com', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=65.61.137.117&maxAgeInDays=90 (Caused by NameResolutionError(\"HTTPSConnection(host='api.abuseipdb.com', port=443): Failed to resolve 'api.abuseipdb.com' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "domaines": {
+      "schemas.openxmlformats.org": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/schemas.openxmlformats.org/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "schemas.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/schemas.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "demo.testfire.net": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/demo.testfire.net/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "http://schemas.openxmlformats.org/markup-compatibility/2006": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2Fmarkup-compatibility%2F2006/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2FofficeDocument%2F2006%2Frelationships/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.openxmlformats.org/officeDocument/2006/math": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2FofficeDocument%2F2006%2Fmath/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2Fdrawingml%2F2006%2FwordprocessingDrawing/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "http://schemas.openxmlformats.org/wordprocessingml/2006/main": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.openxmlformats.org%2Fwordprocessingml%2F2006%2Fmain/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/url/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "hashs": {
+      "479c68c5a81b1ae730c79c710d63f3a4927ce75ca22403813df6b5c74fe8c9da": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/479c68c5a81b1ae730c79c710d63f3a4927ce75ca22403813df6b5c74fe8c9da/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "malwarebazaar": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/file/d36860dea75840e9d3416dfa2820475b384b371a0c0ec6cc39f546118d6e4982/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='mb-api.abuse.ch', port=443): Max retries exceeded with url: /api/v1/ (Caused by NameResolutionError(\"HTTPSConnection(host='mb-api.abuse.ch', port=443): Failed to resolve 'mb-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0010015487670898438,
+      "entropie_globale": 0.577625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 21,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1078,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 27,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4246f7e1.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

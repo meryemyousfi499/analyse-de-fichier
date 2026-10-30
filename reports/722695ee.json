@@ -1,0 +1,163 @@
+{
+  "id_rapport": "722695ee",
+  "origine": "auto_watch",
+  "duree_analyse_s": 7.901,
+  "metadonnees": {
+    "nom": "presentation_gouvernance_et_compliance.pdf",
+    "extension": "pdf",
+    "taille_octets": 149627,
+    "taille_lisible": "146.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\presentation_gouvernance_et_compliance.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-07T19:52:47",
+    "date_modification": "2026-10-07T19:52:48",
+    "date_acces": "2026-10-29T00:30:06",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://web.whatsapp.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "d34c6726a45c0d7fa267df23b313d395357278ce4e807243146c97bb94e102fa",
+    "sha1": "092ba1dbe3a1c9484b5d28fe6105f0746016c99b",
+    "md5": "5e0f8e72504d8c57470f7f5a0503201b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 7
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.941,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.86,
+      7.99,
+      7.91
+    ],
+    "base64": {
+      "nombre_blobs_base64": 3,
+      "exemple": "feff00c9007100750069007000650020003900200045004c00200059004f..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "T:\\(If-\u0019D"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "c6afb628c92277ca49820f05bbdbe986",
+        "5add23f8eab80f9d8b2fb84fb06ddda2"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.014269542694091798,
+      "entropie_globale": 0.992625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0768,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 12,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\presentation_gouvernance_et_compliance.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

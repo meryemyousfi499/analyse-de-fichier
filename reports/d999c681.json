@@ -1,0 +1,300 @@
+{
+  "id_rapport": "d999c681",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 11.979,
+  "metadonnees": {
+    "nom": "3c79229c.json",
+    "extension": "json",
+    "taille_octets": 7644,
+    "taille_lisible": "7.5 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\3c79229c.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:25",
+    "date_modification": "2026-10-29T00:52:25",
+    "date_acces": "2026-10-29T09:57:33",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "827fe2eceea1b72ccb29eae14cfc9ed6c9a0f41a6f760dff3d8b9b5485730a99",
+    "sha1": "ae7ec747f1d7343580fc5792f444a05825257922",
+    "md5": "9bde641544a551db680714410dcbf629",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.934,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.93
+    ],
+    "base64": {
+      "nombre_blobs_base64": 4,
+      "exemple": "com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/k7jcn..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "153.0.0.0"
+    ],
+    "domaines": [
+      "doc-00-a0-apps-viewer.googleusercontent.com",
+      "www.docker.com",
+      "hub.docker.com"
+    ],
+    "urls": [
+      "https://doc-00-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/k7jcnh5igph5srihkbmlubq7547kmjj5/1789847775000/drive/14365239555874006747/ACFrOgA7AzH7w0-68P3ziDLsyp_6vFS3tVXS6LgtI7ixJLVELYBW_GNsKhkWDFCvbeccJHkjYzZRe1ZA4-JSm7JipRYXVAXXp5DBRHdg5kyLP56izo36xc3tIcqqoIBRYZa",
+      "https://www.docker.com/products/docker-desktop/)",
+      "https://hub.docker.com/r/chakour12/hadoop-cluster)",
+      "http://localhost:9870/)"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "D:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "a9b01f4fec0ea695e9b0114713e74687",
+        "F2A51D6198CDC0A512BFD49F74978CF9"
+      ],
+      "sha1": [
+        "7d39c64ab591197fc8eecf21a21806c1a8a8af71"
+      ],
+      "sha256": [
+        "3c34ea8c44cc2316ec8adf8b959753a2ef7bf3ec7f0eec38aa264f7b61f58a5f"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 12
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "153.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 18,
+          "pays": "CN",
+          "nombre_signalements": 21,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "doc-00-a0-apps-viewer.googleusercontent.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.docker.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "hub.docker.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://doc-00-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/k7jcnh5igph5srihkbmlubq7547kmjj5/1789847775000/drive/14365239555874006747/ACFrOgA7AzH7w0-68P3ziDLsyp_6vFS3tVXS6LgtI7ixJLVELYBW_GNsKhkWDFCvbeccJHkjYzZRe1ZA4-JSm7JipRYXVAXXp5DBRHdg5kyLP56izo36xc3tIcqqoIBRYZa": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.docker.com/products/docker-desktop/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://hub.docker.com/r/chakour12/hadoop-cluster)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://localhost:9870/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "3c34ea8c44cc2316ec8adf8b959753a2ef7bf3ec7f0eec38aa264f7b61f58a5f": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0007289886474609375,
+      "entropie_globale": 0.61675,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 4,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.126,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 19,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\3c79229c.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

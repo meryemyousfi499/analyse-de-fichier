@@ -1,0 +1,490 @@
+{
+  "id_rapport": "1d69553f",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 15.462,
+  "metadonnees": {
+    "nom": "01e4a884.json",
+    "extension": "json",
+    "taille_octets": 40006,
+    "taille_lisible": "39.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\01e4a884.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:21",
+    "date_modification": "2026-10-29T00:52:21",
+    "date_acces": "2026-10-29T01:13:52",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "72d44595f542dae26c3c809aa84ff6973f41ee8afb131672c0db01bfec751bf6",
+    "sha1": "c07715192ed12407d99551cc0f782c8e383e6c0e",
+    "md5": "62ae3ed3befe0772e9e38e5c05a7ced4",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 3.988,
+    "verdict_entropie": "faible (texte / code non compresse)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      3.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "127.0.0.1",
+      "2.5.29.17",
+      "2.5.4.3",
+      "1.3.14.3",
+      "2.5.4.4",
+      "2.5.4.5",
+      "2.5.4.6",
+      "2.5.4.7",
+      "2.5.4.8",
+      "2.5.4.9",
+      "2.5.4.10",
+      "2.5.4.11",
+      "2.5.4.12",
+      "2.5.4.13",
+      "2.5.4.17",
+      "2.5.4.41",
+      "2.5.4.42",
+      "2.5.4.43",
+      "2.5.4.44",
+      "2.5.4.45",
+      "2.5.4.46",
+      "2.5.4.65",
+      "2.5.4.72",
+      "2.5.29.18",
+      "2.5.29.19",
+      "1.101.3.4",
+      "25.12.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [
+      "miktex.org",
+      "api2.miktex.org",
+      "MiKTeX.org",
+      "www.w3.org",
+      "www.miktex.org",
+      "mirrors.ctan.org",
+      "example.com",
+      "sourceware.org",
+      "www.memtest86.com",
+      "github.com",
+      "schemas.microsoft.com",
+      "www.tug.org",
+      "tug.org",
+      "www.gnu.org",
+      "www.debian.org",
+      "u0000MiKTeX.org",
+      "otx.alienvault.com",
+      "2Fmiktex.org",
+      "2Fwww.w3.org",
+      "2Fwww.miktex.org",
+      "2Fmirrors.ctan.org"
+    ],
+    "urls": [
+      "https://miktex.org/giveback\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u001b\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u001f\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u00008\\b@\\u0001\\u0000\\u0000\\u0000\\u0016E\\u0000@\\u0001\\u0000\\u000",
+      "https://miktex.org/kb\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000Operation",
+      "https://api2.miktex.org/",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000xmlns:rdf\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000http://texlive.dante.de/\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000xmlns:TPM\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000rdf:Descript",
+      "http://mirrors.ctan.org/\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000",
+      "https://miktex.org.\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000[repository]\\u0000\\u0000\\u0000\\u0000date={}\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000version={}\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000%\\u0000M\\u0000I\\u000",
+      "https://miktex.org/support\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000MiKTeX.org\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000https://miktex.org/about\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000https://miktex.org\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000MiKTeXDirect",
+      "http://www.w3.org/XML/1998/namespace\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0006\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000@\\u0011@\\u0001\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0007\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000X\\u0011@\\u0001\\u0000\\u0000\\u0000\\u0001\\u0000\\u0",
+      "https://curl.se/docs/http-cookies.html",
+      "https://curl.se/docs/alt-svc.html",
+      "https://curl.se/docs/hsts.html",
+      "https://github.com/twogood/unshield)",
+      "http://\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000C:\\\\build-miktex\\\\stable\\\\source\\\\Libraries\\\\MiKTeX\\\\Core\\\\Uri\\\\Uri.cpp\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000Uri\\u0000uri\\u0000\\u0000\\u0000\\u0000\\u0000Bad",
+      "http://schemas.microsoft.com/SMI/2016/WindowsSettings",
+      "http://schemas.microsoft.com/SMI/2019/WindowsSettings",
+      "http://schemas.microsoft.com/SMI/2005/WindowsSettings",
+      "http://www.tug.org/usergroups.html",
+      "https://miktex.org/",
+      "https://miktex.org/giveback",
+      "https://miktex.org/email/",
+      "https://miktex.org/packages/",
+      "http://tug.org/texlive/LICENSE.TL",
+      "https://www.gnu.org/philosophy/free-sw.html",
+      "https://www.debian.org/intro/free",
+      "https://www.gnu.org/licenses/license-list.html",
+      "https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fmiktex.org%2Fgiveback%00%00%00%00%00%00%00%00%00%00%00%00%00%1B%00%00%00%00%00%00%00%1F%00%00%00%00%00%00%00%00%00%00%00%00%00%00%008%08%40%01%00%00%00%16E%00%40%01%00%00%00%00%00%00%00%00%00%00%00texmfs%2Finstall%00%00%00%00%00%00%00%00%00%00%0",
+      "https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fmiktex.org%2Fkb%00%00%00%00%00%00%00%00%00%00%00Operation/general",
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%00%00%00%00%00%00%00%00%00%00%00%00%00xmlns%3Ardf%00%00%00%00%00%00%00http%3A%2F%2Ftexlive.dante.de%2F%00%00%00%00%00%00%00%00xmlns%3ATPM%00%00%00%00%00%00%00rdf%3ADescription%00%00%00%00%00%00%00%00%0",
+      "https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fmirrors.ctan.org%2F%00%00%00%00%00%00%00%00/general"
+    ],
+    "emails": [
+      "cs@miktex.org",
+      "ftp@example.com",
+      "bzip2-devel@sourceware.org"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "v:\\",
+      "B:\\",
+      "r:\\"
+    ],
+    "chemins_unix": [
+      "/bin/x64\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000--hide\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000--check-updates\\u0000\\u0000\\u0000\\u0000",
+      "/bin/x64/internal\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000GetDistRootDirectory\\u0000\\u0000\\u0000\\u0000\\u0000\\u00",
+      "/etc/passwd)?",
+      "/bin/x64\\\\MiKTeX251200-core.dll\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000miktex/bin/x64\\\\MiKTeX",
+      "/bin/x64\\\\MiKTeX251200-package",
+      "/bin/x64\\\\MiKTeX251200-packagemanager-PS.dll\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0",
+      "/etc/ssl/private\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000/etc/ssl\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000/etc/",
+      "/etc/ssl/cert.pem\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000SSL_CERT_DIR\\u0000\\u0000\\u0000\\u0000SSL_CERT_FILE\\u0000\\u0000\\u000",
+      "/etc/ssl/ct_log_list.cnf\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000enabled_logs\\u0000\\u0000\\u0000\\u0000C:\\\\build-miktex\\"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [
+      "cmd.exe"
+    ],
+    "hashs_embarques": {
+      "md5": [
+        "9e21d3274248a6ca61840be36e8ac24c",
+        "D6AAD62216146D44B580E92711724B78",
+        "DD62CE0F78794BD2AEEFCDD29780398B",
+        "ABF3880A6239B84E87DC7E727A8BBFD4",
+        "B3CB81AE1C634DFBB208D80FA1A264AE",
+        "AF1A1A64A53D45708F96161A1541D424"
+      ],
+      "sha1": [
+        "94cfb3118492feb7ce67118eca2567a93b75a493",
+        "f44adf3c8302162edd1a4f5cd514485307adf0a0",
+        "961c151d2e87f2686a955a9be24d316f1362bf21"
+      ],
+      "sha256": [
+        "14b42dd9f4b4a7813a8bfd69c8f99316c2888cc4ee26f631f397e163d85d6c62"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 4
+      },
+      {
+        "chaine": "cmd.exe",
+        "occurrences": 2
+      },
+      {
+        "chaine": "wget",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 116
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "127.0.0.1": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": null,
+          "nombre_signalements": 1545,
+          "signale": false
+        }
+      },
+      "2.5.29.17": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.3": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "1.3.14.3": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "CN",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "miktex.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "api2.miktex.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "MiKTeX.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.miktex.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://miktex.org/giveback\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u001b\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u001f\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u00008\\b@\\u0001\\u0000\\u0000\\u0000\\u0016E\\u0000@\\u0001\\u0000\\u000": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://miktex.org/kb\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000Operation": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://api2.miktex.org/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000xmlns:rdf\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000http://texlive.dante.de/\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000xmlns:TPM\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000rdf:Descript": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://mirrors.ctan.org/\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "14b42dd9f4b4a7813a8bfd69c8f99316c2888cc4ee26f631f397e163d85d6c62": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0038152694702148437,
+      "entropie_globale": 0.4985,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 3,
+      "nb_urls": 29,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.2033,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 29,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\01e4a884.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

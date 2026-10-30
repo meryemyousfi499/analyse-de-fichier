@@ -1,0 +1,309 @@
+{
+  "id_rapport": "ac98bfec",
+  "id_parent": "0c441e62",
+  "profondeur": 1,
+  "origine": "extrait_archive",
+  "duree_analyse_s": 1.975,
+  "metadonnees": {
+    "nom": "cv meryem yousfi.pdf",
+    "extension": "pdf",
+    "taille_octets": 302590,
+    "taille_lisible": "295.5 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rdvqsrwk\\cv meryem yousfi.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T20:37:56",
+    "date_modification": "2026-10-29T20:37:56",
+    "date_acces": "2026-10-29T20:37:56",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "ee79247352df3a334e5e06e844ab9a4b5f4f35831e11360befca7c0e6fec496c",
+    "sha1": "353cdbabf300ef9b60744aaa1abe73be81c00691",
+    "md5": "5ebb37e7e06abf707f1761909f76b58b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 1
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.94,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.87,
+      7.97,
+      7.99,
+      7.99,
+      7.41
+    ],
+    "base64": {
+      "nombre_blobs_base64": 3,
+      "exemple": "/Type/Font/Subtype/TrueType/Name/F1/BaseFont/BCDEEE+TimesNew..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 5
+    },
+    "chemins_windows": [
+      "g:\\ج\u001e\u0003\u001ehFL;\u0013"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "E0040F41B41E4A4BAE738FCC0EC8572C"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.02885723114013672,
+      "entropie_globale": 0.9925,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0769,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 12,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rdvqsrwk\\cv meryem yousfi.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 0.795,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.014,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.691,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.227,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.011,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

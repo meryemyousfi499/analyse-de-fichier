@@ -1,0 +1,857 @@
+{
+  "id_rapport": "319be4c5",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 295.269,
+  "metadonnees": {
+    "nom": "pfe-colored-fixed.zip",
+    "extension": "zip",
+    "taille_octets": 108336,
+    "taille_lisible": "105.8 Ko",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\pfe-colored-fixed.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-03-04T06:41:59",
+    "date_modification": "2026-03-04T06:42:01",
+    "date_acces": "2026-10-28T12:50:39",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/b13f6b2d-c2dd-48a6-bc68-539b32774bdd\nHostUrl=https://claude.ai/api/organizations/d92153e8-af71-4ce3-9f46-aed4bb124f55/conversations/b13f6b2d-c2dd-48a6-bc68-539b32774bdd/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Fpfe-colored-fixed.zip\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "82842a88cc27116135fb04a4e65aceab42cf3944a2bb263acb46f7aa5eeb91cb",
+    "sha1": "fecb4876132e0ba13ff2595b8db8dd9acfa1035a",
+    "md5": "7da8e16db6b0df8073d0b16e1299342f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.768,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.9,
+      7.49
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "h:\\BAzCi",
+      "l:\\i驛8\u001da\u0012\\)\u0003\u0005"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.01033172607421875,
+      "entropie_globale": 0.971,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0428,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\install.sh",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\README.md",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\.env",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\.env.example",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\package.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\server.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\applicationController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\authController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\dashboardController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\deliverableController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\evaluationController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\groupController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\messageController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\milestoneController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\notificationController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\projectController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\subjectController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\controllers\\userController.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\middlewares\\auth.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\middlewares\\upload.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\Application.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\Deliverable.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\Evaluation.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\Group.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\Message.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\Milestone.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\Notification.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\Project.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\Subject.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\models\\User.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\applicationRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\authRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\dashboardRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\deliverableRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\evaluationRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\groupRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\messageRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\milestoneRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\notificationRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\projectRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\subjectRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\routes\\userRoutes.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\utils\\notifications.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\backend\\utils\\seeder.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\package.json",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\public\\index.html",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\App.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\index.css",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\index.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\components\\layout\\AppLayout.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\components\\layout\\Header.css",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\components\\layout\\Header.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\components\\layout\\Sidebar.css",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\components\\layout\\Sidebar.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\context\\AuthContext.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\admin\\AdminDashboard.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\admin\\AdminProjectsPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\admin\\AdminSubjectsPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\admin\\UsersManagementPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\auth\\AuthPages.css",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\auth\\ForgotPasswordPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\auth\\LoginPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\auth\\RegisterPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\shared\\DashboardPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\shared\\MessagesPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\shared\\NotificationsPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\shared\\ProfilePage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\shared\\ProjectDetailPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\shared\\SubjectDetailPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\shared\\SubjectsPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\student\\GroupPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\student\\MyApplicationsPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\student\\MyProjectPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\student\\StudentDashboard.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\supervisor\\ApplicationsReviewPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\supervisor\\MySupervisorSubjectsPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\supervisor\\SupervisorDashboard.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\pages\\supervisor\\SupervisorProjectsPage.js",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_au92yi92\\fixed-project\\frontend\\src\\services\\api.js"
+    ],
+    "erreur": null
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "9ab0799b",
+      "nom": "install.sh",
+      "score": 19,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "caaf90e3",
+      "nom": "README.md",
+      "score": 10,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "cf0cb8cf",
+      "nom": ".env",
+      "score": 9,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "c5e2a6ca",
+      "nom": ".env.example",
+      "score": 9,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "5ceab274",
+      "nom": "package.json",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "5546aeaa",
+      "nom": "server.js",
+      "score": 9,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "9a9b0747",
+      "nom": "applicationController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "4073018e",
+      "nom": "authController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "35f04a34",
+      "nom": "dashboardController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "b19bc6a5",
+      "nom": "deliverableController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "2f02d78f",
+      "nom": "evaluationController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "d7c30d32",
+      "nom": "groupController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "72faf856",
+      "nom": "messageController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "080aa321",
+      "nom": "milestoneController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "9acb6e07",
+      "nom": "notificationController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "4a5988cf",
+      "nom": "projectController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "7f03ea44",
+      "nom": "subjectController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "4092a7bf",
+      "nom": "userController.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "7648d77e",
+      "nom": "auth.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "77977fef",
+      "nom": "upload.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "e593a30b",
+      "nom": "Application.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "8ddfe345",
+      "nom": "Deliverable.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "569d39c5",
+      "nom": "Evaluation.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "7718af32",
+      "nom": "Group.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "a64d83e9",
+      "nom": "Message.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "cdc33715",
+      "nom": "Milestone.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "c6a68554",
+      "nom": "Notification.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "855ede90",
+      "nom": "Project.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "4ba1b9a0",
+      "nom": "Subject.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "efd0b797",
+      "nom": "User.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "23917fac",
+      "nom": "applicationRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "703649d2",
+      "nom": "authRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "83e83cb6",
+      "nom": "dashboardRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "3e762e44",
+      "nom": "deliverableRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "6643a27d",
+      "nom": "evaluationRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "eeb4a0cb",
+      "nom": "groupRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "dedebb06",
+      "nom": "messageRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "57acbaed",
+      "nom": "milestoneRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "57db4561",
+      "nom": "notificationRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "bd25732d",
+      "nom": "projectRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "327913ef",
+      "nom": "subjectRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "1dffc03c",
+      "nom": "userRoutes.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "2ce6538d",
+      "nom": "notifications.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "0fab572e",
+      "nom": "seeder.js",
+      "score": 24,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "fe8a6ad3",
+      "nom": "package.json",
+      "score": 9,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "6e2e5c5c",
+      "nom": "index.html",
+      "score": 33,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "17450fa4",
+      "nom": "App.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "3b2849fb",
+      "nom": "index.css",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "349bdbff",
+      "nom": "index.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "b756c91c",
+      "nom": "AppLayout.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "100ed418",
+      "nom": "Header.css",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "bd15251a",
+      "nom": "Header.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "8d656bd2",
+      "nom": "Sidebar.css",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "e9024a12",
+      "nom": "Sidebar.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "ef8ad76f",
+      "nom": "AuthContext.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "2dbdd000",
+      "nom": "AdminDashboard.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "62bd0698",
+      "nom": "AdminProjectsPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "cdaa40c6",
+      "nom": "AdminSubjectsPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "1843a01d",
+      "nom": "UsersManagementPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "4251d86a",
+      "nom": "AuthPages.css",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "4325c13f",
+      "nom": "ForgotPasswordPage.js",
+      "score": 24,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "38ac7e4a",
+      "nom": "LoginPage.js",
+      "score": 24,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "b46b633e",
+      "nom": "RegisterPage.js",
+      "score": 24,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "7bf2fc17",
+      "nom": "DashboardPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "deee682a",
+      "nom": "MessagesPage.js",
+      "score": 9,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "102b04c9",
+      "nom": "NotificationsPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "898f4bf4",
+      "nom": "ProfilePage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "f76fb4ae",
+      "nom": "ProjectDetailPage.js",
+      "score": 9,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "f9ec924f",
+      "nom": "SubjectDetailPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "301ce683",
+      "nom": "SubjectsPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "a396bd3b",
+      "nom": "GroupPage.js",
+      "score": 24,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "c41a1eaa",
+      "nom": "MyApplicationsPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "c8d0387a",
+      "nom": "MyProjectPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "7f380fc1",
+      "nom": "StudentDashboard.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "b2513f70",
+      "nom": "ApplicationsReviewPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "e49cb975",
+      "nom": "MySupervisorSubjectsPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "f4f2c69d",
+      "nom": "SupervisorDashboard.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "37ce3bcc",
+      "nom": "SupervisorProjectsPage.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "b2caa5b9",
+      "nom": "api.js",
+      "score": 1,
+      "verdict": "inconclusive"
+    }
+  ],
+  "score_final": {
+    "score": 33,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : install.sh (score 19, rapport 9ab0799b).",
+      "Score releve par le contenu extrait de l'archive : seeder.js (score 24, rapport 0fab572e).",
+      "Score releve par le contenu extrait de l'archive : index.html (score 33, rapport 6e2e5c5c)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\pfe-colored-fixed.zip",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 3.403,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.657,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.653,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.062,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "archive : le contenu extrait est analysé fichier par fichier",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "extraction_archive",
+        "lance": true,
+        "raison": "archive détectée ; contenu ré-analysé fichier par fichier"
+      },
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "archive : analyse du contenu extrait"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

@@ -1,0 +1,509 @@
+{
+  "id_rapport": "81d9f3dc",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 30.519,
+  "metadonnees": {
+    "nom": "XIM12354.pdf",
+    "extension": "pdf",
+    "taille_octets": 2134554,
+    "taille_lisible": "2.0 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\XIM12354.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-19T21:16:09",
+    "date_modification": "2026-09-19T21:16:09",
+    "date_acces": "2026-10-28T11:18:59",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www-api.ibm.com/adobe/assets/urn:aaid:aem:24126caa-ccc0-4b31-b5fc-2de5c73fada8/original/as/XIM12354.pdf\nHostUrl=https://www-api.ibm.com/adobe/assets/urn:aaid:aem:24126caa-ccc0-4b31-b5fc-2de5c73fada8/original/as/XIM12354.pdf\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "8bd6c63a5178f217f65ceb70ba9184200e66e0e9b899a6a64907eb2adf995bb3",
+    "sha1": "2b5307a2307d44ab07ea9288f079851cfffa0027",
+    "md5": "c009fcc545000e530ca934c7192acb5d",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": true,
+      "fichiers_embarques": true,
+      "action_launch": false,
+      "nombre_pages": 51
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.959,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.93,
+      7.97,
+      7.97,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.97,
+      5.74,
+      7.8,
+      6.36,
+      7.64,
+      7.94,
+      7.88,
+      7.91,
+      7.9,
+      7.98,
+      7.99,
+      7.95,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      7.98,
+      7.96,
+      7.99,
+      7.96,
+      7.99,
+      7.96,
+      7.76
+    ],
+    "base64": {
+      "nombre_blobs_base64": 17,
+      "exemple": "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.npes.org",
+      "ns.xinet.com",
+      "ns.InsiderSoftware.com"
+    ],
+    "urls": [
+      "http://www.npes.org/pdfx/ns/id/",
+      "http://ns.xinet.com/webnative/private/1.0/",
+      "http://ns.InsiderSoftware.com/fontlist/1.0/",
+      "http://ns.xinet.com/webnative/text-extraction/1.0/",
+      "http://ns.xinet.com/fpoinfo/1.0/",
+      "http://ns.xinet.com/webnative/imageinfo/1.0/",
+      "http://ns.xinet.com/webnative/thumbnails/1.0/",
+      "http://ns.xinet.com/webnative/previews/1.0/"
+    ],
+    "emails": [
+      "R@NZ.mq"
+    ],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 15
+    },
+    "chemins_windows": [
+      "r:\\',8\u0010\u000f.O7%\u0007v\by~sR}\u001c",
+      "q:\\r=\u0005\u001d\u0003gr\u001cG͟\u000f\u001c\u000f\fZ\u0010\t}j\u000fTWW",
+      "e:\\\u000f",
+      "U:\\\u0016 ",
+      "l:\\ƇV7=-) ș7\u0015\u00034ye\u0001Su^j}o",
+      "q:\\ɭ\u0017R$",
+      "o:\\5",
+      "E:\\!",
+      "b:\\\u001bFbins\f[\u0010NH"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "6EF6BC8C0C4B1D0D602A2058EF93F97A",
+        "F6385622D7004F4EBA5BEF4666690562",
+        "539EF82FF4C4E511A5CAD0F1B19B782B",
+        "20B40ABFA7D8E6118119D62463D7E145",
+        "3B13710F32D8E611B365D2F5C41853B2",
+        "1FB40ABFA7D8E6118119D62463D7E145",
+        "1BB40ABFA7D8E6118119D62463D7E145",
+        "1CB40ABFA7D8E6118119D62463D7E145",
+        "1DB40ABFA7D8E6118119D62463D7E145",
+        "3E13710F32D8E611B365D2F5C41853B2"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 19
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [
+      {
+        "indicator": "/OpenAction",
+        "description": "Marqueur PDF présent : /OpenAction"
+      }
+    ],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.npes.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "ns.xinet.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "ns.InsiderSoftware.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.npes.org/pdfx/ns/id/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.xinet.com/webnative/private/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.InsiderSoftware.com/fontlist/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.xinet.com/webnative/text-extraction/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.xinet.com/fpoinfo/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "http://www.npes.org/pdfx/ns/id/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.20356693267822265,
+      "entropie_globale": 0.994875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 8,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1614,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 61,
+    "niveau": "eleve",
+    "action_recommandee": "quarantine",
+    "explications": [
+      "Analyse specialisee : indicateur(s) a verifier -> /OpenAction.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://www.npes.org/pdfx/ns/id/'], hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "suspect",
+    "libelle": "Suspect",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Score de risque élevé (61/100) sans preuve forte indépendante"
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1793300584,
+    "fichier_original": "XIM12354.pdf",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1793300584_XIM12354.pdf.quarantine",
+    "raison": "Analyse specialisee : indicateur(s) a verifier -> /OpenAction.; Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.; Volume important d'indicateurs suspects (URLs, IP, commandes).; Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://www.npes.org/pdfx/ns/id/'], hashs embarques: aucun.",
+    "action": "quarantine",
+    "libelle": "Mettre en quarantaine"
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 10.676,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.512,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 1.58,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.2,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "detected",
+        "duration_s": 0.01,
+        "summary": "1 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "/OpenAction",
+            "description": "Marqueur PDF présent : /OpenAction"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

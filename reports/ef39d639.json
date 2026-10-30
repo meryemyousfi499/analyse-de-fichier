@@ -1,0 +1,475 @@
+{
+  "id_rapport": "ef39d639",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 54.263,
+  "metadonnees": {
+    "nom": "AttentionIsAllYouNeed.pdf",
+    "extension": "pdf",
+    "taille_octets": 2215244,
+    "taille_lisible": "2.1 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\AttentionIsAllYouNeed.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-05T21:32:45",
+    "date_modification": "2026-10-05T21:32:47",
+    "date_acces": "2026-10-29T00:35:12",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://web.whatsapp.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "sha1": "a639448e61be3ab2a6fb696c0e910b0a3e5fd57f",
+    "md5": "18e1b007a1dab45b30cc861ba2dfda25",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 15
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.072,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.72,
+      7.78,
+      7.9,
+      7.72,
+      4.92,
+      4.9,
+      7.3,
+      8.0,
+      6.06,
+      4.9,
+      6.83,
+      8.0,
+      5.9,
+      4.89,
+      7.63,
+      7.93,
+      5.34,
+      4.9,
+      7.74,
+      7.78,
+      4.91,
+      6.03,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.4,
+      4.94,
+      4.85,
+      4.8,
+      5.12,
+      2.83,
+      2.84
+    ],
+    "base64": {
+      "nombre_blobs_base64": 5,
+      "exemple": "/E/K/N/O/P/Q/V/W/a/alpha/b/beta/c/comma/d/e/epsilon1/g/h/i/k..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "arxiv.org"
+    ],
+    "urls": [
+      "http://arxiv.org/abs/1607.06450)",
+      "http://arxiv.org/abs/1601.06733)",
+      "http://arxiv.org/abs/1610.02357)",
+      "http://arxiv.org/abs/1705.03122)",
+      "http://arxiv.org/abs/1308.0850)",
+      "http://arxiv.org/abs/1602.02410)",
+      "http://arxiv.org/abs/1610.10099)",
+      "http://arxiv.org/abs/1703.10722)",
+      "http://arxiv.org/abs/1703.03130)",
+      "http://arxiv.org/abs/1511.06114)",
+      "http://arxiv.org/abs/1508.04025)",
+      "http://arxiv.org/abs/1705.04304)",
+      "http://arxiv.org/abs/1608.05859)",
+      "http://arxiv.org/abs/1508.07909)",
+      "http://arxiv.org/abs/1701.06538)",
+      "http://arxiv.org/abs/1609.08144)"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 1,
+      "urls": 1
+    },
+    "chemins_windows": [
+      "D:\\\u0013\u0015aG(C\u001dQ\u000bq"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "ff3e15dfc6c8c63548b1c64bc2982fdb",
+        "df4e004b950fdce2316c92c337019be1"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 33
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [
+      {
+        "indicator": "/OpenAction",
+        "description": "Marqueur PDF présent : /OpenAction"
+      },
+      {
+        "indicator": "/URI",
+        "description": "Marqueur PDF présent : /URI"
+      }
+    ],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "arxiv.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://arxiv.org/abs/1607.06450)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://arxiv.org/abs/1601.06733)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://arxiv.org/abs/1610.02357)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://arxiv.org/abs/1705.03122)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://arxiv.org/abs/1308.0850)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "arxiv.org",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.21126213073730468,
+      "entropie_globale": 0.884,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 16,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1566,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 53,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Analyse specialisee : indicateur(s) a verifier -> /OpenAction.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['arxiv.org'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\AttentionIsAllYouNeed.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 38.582,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.038,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 1.579,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.143,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "detected",
+        "duration_s": 0.012,
+        "summary": "2 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "/OpenAction",
+            "description": "Marqueur PDF présent : /OpenAction"
+          },
+          {
+            "indicator": "/URI",
+            "description": "Marqueur PDF présent : /URI"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

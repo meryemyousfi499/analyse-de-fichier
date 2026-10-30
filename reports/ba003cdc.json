@@ -1,0 +1,810 @@
+{
+  "id_rapport": "ba003cdc",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 24.926,
+  "metadonnees": {
+    "nom": "phishing_email_subset (1).csv",
+    "extension": "csv",
+    "taille_octets": 11141850,
+    "taille_lisible": "10.6 Mo",
+    "mime_reel": "application/octet-stream",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\phishing_email_subset (1).csv",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-14T14:44:03",
+    "date_modification": "2026-10-14T14:44:12",
+    "date_acces": "2026-10-30T02:34:57",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://drive.google.com/\nHostUrl=https://drive.usercontent.google.com/download?id=1cCOQJah42p-NN7IebK5Ju8wqjjRFYyKW&export=download&authuser=3\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".csv",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "f80be82d0236bb0cb86f78cd1e3e673bd94aa63d922c9f6290ca23cc81fa3b48",
+    "sha1": "0699f9bcc7cf734a527dd14660362d2e7e8bb284",
+    "md5": "a78dabebb036bb5bc10dcb5251e1488e",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.772,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.58,
+      4.71,
+      4.54,
+      4.66,
+      4.68,
+      4.6,
+      4.56,
+      4.6,
+      4.61,
+      4.51,
+      4.45,
+      4.78,
+      4.67,
+      4.69,
+      4.49,
+      4.62,
+      4.73,
+      4.74,
+      4.52,
+      4.56,
+      4.48,
+      4.72,
+      4.89,
+      4.92,
+      4.8,
+      4.8,
+      4.61,
+      4.76,
+      4.57,
+      4.46,
+      4.52,
+      4.68,
+      4.52,
+      4.87,
+      4.72,
+      4.53,
+      4.57,
+      4.68,
+      4.67,
+      4.6,
+      4.72,
+      4.62,
+      4.75,
+      4.74,
+      4.75,
+      4.55,
+      4.62,
+      4.87,
+      4.69,
+      4.72,
+      4.56,
+      4.59,
+      4.61,
+      4.69,
+      4.69,
+      4.58,
+      4.69,
+      4.68,
+      4.65,
+      4.82,
+      4.73,
+      4.75,
+      4.7,
+      4.47
+    ],
+    "base64": {
+      "nombre_blobs_base64": 8,
+      "exemple": "LLCawadfxpycporehzqimpavfkcajiucqkdwqfnustyzmfikmsyvnwgqpvvb..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "62.16.101.30",
+      "66.46.145.35",
+      "211.78.96.11",
+      "216.35.187.6",
+      "61.129.81.68",
+      "211.78.96.242",
+      "61.129.81.99",
+      "6.14.00.63",
+      "7.1.4.0",
+      "3.1.0.2",
+      "6.3.1.0",
+      "194.44.46.21",
+      "213.139.76.69",
+      "9.0.5.1",
+      "0.0.7.9",
+      "2.4.8.5",
+      "65.218.171.48",
+      "210.51.251.244",
+      "64.227.161.52",
+      "81.9.8.40",
+      "211.167.74.101",
+      "1.68.2.12",
+      "1.68.2.13",
+      "61.145.116.186",
+      "203.31.88.12",
+      "1.60.2.5",
+      "1.60.2.3",
+      "1.60.2.1",
+      "61.129.68.32",
+      "61.151.247.39",
+      "80.71.65.57",
+      "1.1.2.2",
+      "1.1.2.3",
+      "202.101.163.34",
+      "64.123.160.91",
+      "203.62.158.32",
+      "64.251.23.141",
+      "213.139.76.142",
+      "61.129.68.19",
+      "81.9.8.7",
+      "66.231.133.70",
+      "32.97.166.75",
+      "65.162.84.5",
+      "64.90.187.2",
+      "1.100.2.11",
+      "1.100.2.12",
+      "1.115.2.11",
+      "1.115.2.12",
+      "209.163.187.42"
+    ],
+    "domaines": [
+      "golfemail.com",
+      "jeremy.zawodny.com",
+      "www.teledyn.com",
+      "xent.com",
+      "fsckit.net",
+      "sf.net",
+      "thinkgeek.com",
+      "lists.sourceforge.net",
+      "www.levenez.com",
+      "www.hotmail.com",
+      "www.newsisfree.com",
+      "deepeddy.vircio.com",
+      "redhat.com",
+      "listman.redhat.com",
+      "us.click.yahoo.com",
+      "egroups.com",
+      "docs.yahoo.com",
+      "scriptingnews.userland.com",
+      "advogato.com",
+      "boingboing.net",
+      "www.oreillynet.com",
+      "www.quicktopic.com",
+      "apt.freshrpms.net",
+      "freshrpms.net",
+      "lists.freshrpms.net",
+      "svanstrom.com",
+      "suberic.net",
+      "ie.suberic.net",
+      "use.perl.org",
+      "www.yapc.org",
+      "home.rica.net",
+      "www.crimes-of-persuasion.com",
+      "www.npr.org",
+      "magnesium.net",
+      "spamassassin.taint.org",
+      "jmason.org",
+      "www.venturereporter.net",
+      "venturereporter.net",
+      "TheStreet.com",
+      "ConsumerReports.com",
+      "FT.com",
+      "cmsummit.com",
+      "www.seekercenter.net",
+      "seekercenter.net",
+      "yahoo.com",
+      "Xenu.net",
+      "www.theshiftedlibrarian.com",
+      "bellsouth.net",
+      "redhat.aldil.org",
+      "ftp.freshrpms.net"
+    ],
+    "urls": [
+      "http://www.linux.ie/mailman/listinfo/ilug",
+      "http://jeremy.zawodny.com/blog/archives/000230.html",
+      "http://www.teledyn.com",
+      "http://xent.com/mailman/listinfo/fork",
+      "http://thinkgeek.com/sf",
+      "https://lists.sourceforge.net/lists/listinfo/razor-users",
+      "http://www.levenez.com/unix/history.htmlPÃ¡draig.",
+      "http://www.hotmail.com",
+      "http://www.newsisfree.com/click/-3,8457387,215/",
+      "https://listman.redhat.com/mailman/listinfo/exmh-workers",
+      "http://us.click.yahoo.com/pt6YBB/NXiEAA/mG3HAA/7gSolB/TM",
+      "http://docs.yahoo.com/info/terms/",
+      "http://scriptingnews.userland.com/backissues/2002/09/23#When:4:54:52PM",
+      "http://advogato.com/article/544.html",
+      "http://boingboing.net/#85515860",
+      "http://www.oreillynet.com/pub/wlg/1414",
+      "http://www.oreillynet.com/pub/wlg/2086",
+      "http://www.quicktopic.com/boing/H/bfYib9hETQSA",
+      "http://freshrpms.net/",
+      "http://lists.freshrpms.net/mailman/listinfo/rpm-list",
+      "http://www.newsisfree.com/click/-2,8417796,215/",
+      "https://lists.sourceforge.net/lists/listinfo/spamassassin-talk",
+      "http://www.netleads.ws/morganAlso,",
+      "http://www.netleads.ws/remove",
+      "http://ie.suberic.net/~kevin",
+      "http://use.perl.org/article.pl?sid=02/08/14/2351255",
+      "http://use.perl.org/comments.pl?sid=02/08/14/2351255Links:",
+      "http://www.yapc.org/Europe/",
+      "http://use.perl.org/my/messages/You",
+      "http://home.rica.net/alphae/419coal/",
+      "http://www.secretservice.gov/alert419.shtml",
+      "http://www.crimes-of-persuasion.com/Crimes/Business/nigerian.htm",
+      "http://www.npr.org/ramfiles/atc/20020729.atc.12.ram",
+      "http://www.venturereporter.net/myaccount/",
+      "http://venturereporter.net/myaccount/k.asp?E=jm@jmason.org",
+      "http://www.seekercenter.net.",
+      "http://www.seekercenter.net/faq.php.",
+      "http://www.seekercenter.net/engines.php.",
+      "http://www.seekercenter.net",
+      "http://scriptingnews.userland.com/backissues/2002/09/25#When:6:48:40AM",
+      "http://www.theshiftedlibrarian.com/2002/09/24.html#a2837",
+      "http://research.yale.edu/lawmeme/modules.php?name=News&file=article&sid=350",
+      "http://freshrpms.net/mirrors/psyche.htmlMatthias--",
+      "http://62.16.101.30/jump2/index.htmlRemove",
+      "http://62.16.101.30/jump1/remove.html",
+      "http://ftp.freshrpms.net/pub/freshrpms/testing/nessus/It",
+      "http://freetravel@66.46.145.35/members/travel/",
+      "http://www.editorandpublisher.com/editorandpublisher/features_columns/articl",
+      "http://makeashorterlink.com/?A1D525B61",
+      "http://www.groovymother.com/"
+    ],
+    "emails": [
+      "bulmulete@golfemail.com",
+      "ilug@linux.ie",
+      "listmaster@linux.ie",
+      "razor-users@fsckit.net",
+      "Razor-users@lists.sourceforge.net",
+      "1030028647.6462.TMDA@deepeddy.vircio.com",
+      "Exmh-workers@redhat.com",
+      "forteana-unsubscribe@egroups.com",
+      "tony@svanstrom.com",
+      "Spamassassin-talk@lists.sourceforge.net",
+      "removemenow@sohu.comand",
+      "kevin@suberic.net",
+      "Richard.Foley@t-online.deCopyright",
+      "bitbitch@magnesium.net",
+      "fork-admin@xent.com",
+      "fork@spamassassin.taint.org",
+      "zzzz@jmason.org",
+      "support@venturereporter.net",
+      "invite@cmsummit.com",
+      "jm@jmason.org",
+      "Vanessa@seekercenter.net",
+      "hu_power10@yahoo.com",
+      "lance_tt@bellsouth.net",
+      "carlreed@core.com",
+      "Spamassassin-devel@lists.sourceforge.net",
+      "Webdev@linux.ie",
+      "9347bilsag@msn.com",
+      "webmake-talk@example.sourceforge.net",
+      "webmake-talk@lists.sourceforge.net",
+      "alex@SecurePipe.com",
+      "alex@netWindows.org",
+      "conor_wynne@maxtor.com",
+      "Exmh-users@redhat.com",
+      "jeremy@alum.mit.edu",
+      "info@gin.elax2.ekorp.com",
+      "ttessr@hotmail.com",
+      "surefiremarketing@btamail.net.cn",
+      "welch@panasas.com",
+      "cryptography@wasabisystems.com",
+      "perry@piermont.com",
+      "majordomo@wasabisystems.com",
+      "qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org",
+      "social@linux.ie",
+      "NeverAgain@btamail.net.cn",
+      "Spamassassin-Sightings@lists.sourceforge.net",
+      "dispatchfeedback@news.com.Price",
+      "optmeoutnow@aol.com",
+      "lisa@perl.org",
+      "knb4menu@charter.net",
+      "jamesr@best.com"
+    ],
+    "exclus_domaines_legitimes": {
+      "ips": 1
+    },
+    "chemins_windows": [
+      "t:\\F0B7;",
+      "C:\\ drive on my ",
+      "C:\\ drive and dropped the "
+    ],
+    "chemins_unix": [
+      "/usr/local/lib/exmh-2.5/pick.tcl",
+      "/usr/inc",
+      "/home/yyyy/lib/spamtrap/spam.mbox:",
+      "/usr/sbin/alsactl",
+      "/etc/syslog.conf)",
+      "/var/log/cron.log",
+      "/var/log/cron",
+      "/etc/modules.conf",
+      "/etc/makedev.d",
+      "/usr/share/libgcj.zip;3c5b5e75:",
+      "/bin/rpm",
+      "/var/tmp/xine-root/usr/bin/aaxineArgh,",
+      "/home/alwhite2/flotsam1.htm",
+      "/usr/bin/procmail",
+      "/home/user",
+      "/etc/hosts.allowin.ftpd:",
+      "/var/www/mysite",
+      "/etc/exim/exim4.conf",
+      "/etc/exim/local_scan.py",
+      "/etc/exim/harvest",
+      "/usr/bin/razor-check",
+      "/tmp/cvs-serv23243/debianModified",
+      "/etc/default/spamassassin.",
+      "/tmp/cvs-serv4019Modified",
+      "/tmp/foo.log",
+      "/etc/sysctl.conf,",
+      "/var/named",
+      "/etc/bind",
+      "/bin/dnsdomainname",
+      "/bin/domainname"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "c96285ccb37d419079d79ce22254cb66",
+        "d19867356ee809b9ece4a07f3d70ebd5"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "net user",
+        "occurrences": 20
+      },
+      {
+        "chaine": "curl",
+        "occurrences": 9
+      },
+      {
+        "chaine": "cscript",
+        "occurrences": 2
+      },
+      {
+        "chaine": "wget",
+        "occurrences": 2
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 211
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {
+      "62.16.101.30": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "RU",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "66.46.145.35": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "211.78.96.11": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "TW",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "216.35.187.6": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "61.129.81.68": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "CN",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "golfemail.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 1,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "jeremy.zawodny.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.teledyn.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "xent.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "fsckit.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.linux.ie/mailman/listinfo/ilug": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://jeremy.zawodny.com/blog/archives/000230.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.teledyn.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://xent.com/mailman/listinfo/fork": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://thinkgeek.com/sf": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "golfemail.com",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.5965,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 4,
+      "nb_urls": 50,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.2845,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 46,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['golfemail.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\phishing_email_subset (1).csv",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 15.193,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 12.344,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 8.641,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

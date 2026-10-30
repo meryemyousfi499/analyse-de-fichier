@@ -1,0 +1,324 @@
+{
+  "id_rapport": "22ffe7ba",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 16.788,
+  "metadonnees": {
+    "nom": "269c61de.json",
+    "extension": "json",
+    "taille_octets": 12127,
+    "taille_lisible": "11.8 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\269c61de.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:24",
+    "date_modification": "2026-10-29T00:52:24",
+    "date_acces": "2026-10-29T04:45:17",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "425905e53ec8c0ea26f10357683d8ad89db08dee7623467fa0530536e7338fe0",
+    "sha1": "c60f26d609f79dcdd97cdd2c71226f49b5eaf815",
+    "md5": "11c5c44fc6821724b8e2aa99e8b81037",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.351,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.35
+    ],
+    "base64": {
+      "nombre_blobs_base64": 4,
+      "exemple": "d3EXXilicoSllVKQLbwsrMhBei5gSNQdD4uHs0KnszkITkUNl4beeMcvSvsm..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "15.21.181.8",
+      "15.21.181.9",
+      "15.21.181.6"
+    ],
+    "domaines": [
+      "mail.google.com",
+      "mail-attachment.googleusercontent.com",
+      "microsoft.com",
+      "mx.microsoft.com",
+      "gmail.com",
+      "DU2PR04CA0210.eurprd04.prod.outlook.com",
+      "DB9PR01MB9007.eurprd01.prod.exchangelabs.com",
+      "DB5PEPF00014B97.eurprd02.prod.outlook.com",
+      "DU2PR04CA0210.outlook.office365.com",
+      "protection.outlook.com",
+      "mail-pf1-x42d.google.com",
+      "DB5PEPF00014B97.mail.protection.outlook.com",
+      "google.com",
+      "mx.google.com",
+      "1e100.net",
+      "mail.gmail.com",
+      "api.abuseipdb.com",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://mail.google.com/\\nHostUrl=https://mail-attachment.googleusercontent.com/attachment/u/2/?ui=2&ik=d39f82ab2e&attid=0.1&permmsgid=msg-f:1869805735368305516&th=19f2e268df9dab6c&view=att&zw&disp=safe&saddbat=ANGjdJ-FkEjaCa6s0tB-h4RI7yi5lmQRCMBagZ8DDPjQCfVfR2sN46rvfkHcooCzPKdmJsL3Q6Uyq0KqKBM1_MNKHwEV_1rf3"
+    ],
+    "emails": [
+      "m.boukourizia@tamwilcom.ma",
+      "meryemyousfi339@gmail.com",
+      "CA+xmTcqYXmnXLiM2kV9zi8_tRdzVDyr4prf_BacMKN-o8+6u+w@mail.gmail.com"
+    ],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "1889e043f8240572ebd428003f4fb38f"
+      ],
+      "sha1": [
+        "c12b529e91f7e0962d2ee449a6eeeb482488ba4d"
+      ],
+      "sha256": [
+        "29eb50da47344ad57634cb6cb7a3e464ef8acf617705357ab1e90a01714d6d03"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 23
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "15.21.181.8": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "15.21.181.9": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "15.21.181.6": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "mail.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "mail-attachment.googleusercontent.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "microsoft.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "mx.microsoft.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "gmail.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://mail.google.com/\\nHostUrl=https://mail-attachment.googleusercontent.com/attachment/u/2/?ui=2&ik=d39f82ab2e&attid=0.1&permmsgid=msg-f:1869805735368305516&th=19f2e268df9dab6c&view=att&zw&disp=safe&saddbat=ANGjdJ-FkEjaCa6s0tB-h4RI7yi5lmQRCMBagZ8DDPjQCfVfR2sN46rvfkHcooCzPKdmJsL3Q6Uyq0KqKBM1_MNKHwEV_1rf3": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "29eb50da47344ad57634cb6cb7a3e464ef8acf617705357ab1e90a01714d6d03": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "gmail.com",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0011565208435058594,
+      "entropie_globale": 0.668875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0789,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 41,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['gmail.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\269c61de.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

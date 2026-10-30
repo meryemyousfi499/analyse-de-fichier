@@ -1,0 +1,296 @@
+{
+  "id_rapport": "f8f3da0b",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 5.385,
+  "metadonnees": {
+    "nom": "59558eba.json",
+    "extension": "json",
+    "taille_octets": 7233,
+    "taille_lisible": "7.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\59558eba.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:27",
+    "date_modification": "2026-10-29T00:52:27",
+    "date_acces": "2026-10-29T16:59:57",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "513b2978a83dd14daac55d4e96286e9f149cb5062d66a5b0203a896719ff9ed4",
+    "sha1": "c10e3271440b44afac9ad992fc9997904b5649c5",
+    "md5": "ceb6978592df3d974788efc9b28a1f16",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.673,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.67
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "95.173.222.52",
+      "66.132.195.33",
+      "66.132.195.122",
+      "66.132.195.115",
+      "66.132.195.107",
+      "66.132.186.187",
+      "66.132.186.175",
+      "66.132.172.35",
+      "66.132.172.223",
+      "66.132.172.218",
+      "66.132.172.216",
+      "66.132.172.208",
+      "66.132.172.204",
+      "66.132.172.202",
+      "66.132.172.142",
+      "66.132.172.107",
+      "65.49.1.162",
+      "185.247.137.182",
+      "185.247.137.176",
+      "185.147.157.220",
+      "172.213.144.209",
+      "170.106.152.218",
+      "195.96.139.232",
+      "195.96.139.23",
+      "195.96.139.216",
+      "195.96.139.209",
+      "195.96.139.203",
+      "195.96.139.202",
+      "195.96.139.118",
+      "193.160.32.97",
+      "185.93.89.147",
+      "185.247.137.94",
+      "185.247.137.242",
+      "185.247.137.211",
+      "185.247.137.199",
+      "23.180.120.146",
+      "23.137.105.2",
+      "207.241.173.42",
+      "20.214.106.237",
+      "20.206.67.15",
+      "20.197.195.24",
+      "20.171.9.56",
+      "20.100.178.92",
+      "199.45.154.135",
+      "199.45.154.128",
+      "65.110.40.43",
+      "51.116.233.22",
+      "5.61.209.44",
+      "49.51.178.45",
+      "43.165.198.144"
+    ],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "ee6737bf1dc554065e025cb57188d2ab"
+      ],
+      "sha1": [
+        "da8ab534fb0ee55137f4ab439d6dd68c9e016e54"
+      ],
+      "sha256": [
+        "9d9c18aa5d290c819dcddf9dc7e1534a78a6371f8360ee04bef7c53771832c77"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 50
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "95.173.222.52": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 22,
+          "pays": "FR",
+          "nombre_signalements": 4,
+          "signale": false
+        }
+      },
+      "66.132.195.33": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "US",
+          "nombre_signalements": 1815,
+          "signale": true
+        }
+      },
+      "66.132.195.122": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "US",
+          "nombre_signalements": 2141,
+          "signale": true
+        }
+      },
+      "66.132.195.115": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "US",
+          "nombre_signalements": 2093,
+          "signale": true
+        }
+      },
+      "66.132.195.107": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "US",
+          "nombre_signalements": 2538,
+          "signale": true
+        }
+      }
+    },
+    "domaines": {},
+    "urls": {},
+    "hashs": {
+      "9d9c18aa5d290c819dcddf9dc7e1534a78a6371f8360ee04bef7c53771832c77": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "66.132.195.33",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "66.132.195.122",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "66.132.195.115",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "66.132.195.107",
+        "type": "ips",
+        "source": "abuseipdb"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0006897926330566406,
+      "entropie_globale": 0.584125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0257,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 40,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: ['66.132.195.33', '66.132.195.122', '66.132.195.115', '66.132.195.107'], domaines: aucun, URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\59558eba.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

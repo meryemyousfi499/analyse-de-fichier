@@ -1,0 +1,515 @@
+{
+  "id_rapport": "0767ebfd",
+  "id_parent": "2d08d3c6",
+  "profondeur": 1,
+  "origine": "extrait_archive",
+  "duree_analyse_s": 12.446,
+  "metadonnees": {
+    "nom": "references.bib",
+    "extension": "bib",
+    "taille_octets": 58971,
+    "taille_lisible": "57.6 Ko",
+    "mime_reel": "text/plain",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ar86nirl\\references.bib",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T19:20:11",
+    "date_modification": "2026-10-29T19:20:11",
+    "date_acces": "2026-10-29T19:20:11",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".bib",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "e47b3ec2a6b412667ca5839d38178db379e19bfff0f72e606040246d5188da5d",
+    "sha1": "5b2f58d91ca458d6d1d30abc6ba72f1b0c83a536",
+    "md5": "ddbe2367f87ae082f2ec3871861b1e7b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.158,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.16
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.datanovia.com",
+      "medium.com",
+      "www.jstor.org",
+      "www.sciencedirect.com",
+      "onfleet.com",
+      "www.paragonrouting.com",
+      "www.overleaf.com",
+      "towardsdatascience.com",
+      "link.springer.com",
+      "doi.org",
+      "www.ouedkniss.com",
+      "Ouedkniss.com",
+      "pubsonline.informs.org",
+      "epubs.siam.org",
+      "www.intechopen.com",
+      "webstar-electro.com",
+      "www.1min30.com",
+      "www.cartelis.com",
+      "dl.acm.org",
+      "linkinghub.elsevier.com",
+      "doi.wiley.com",
+      "www.mdpi.com",
+      "www.emerald.com",
+      "onlinelibrary.wiley.com",
+      "ieeexplore.ieee.org",
+      "www.tandfonline.com",
+      "www.scirp.org"
+    ],
+    "urls": [
+      "https://www.datanovia.com/en/lessons/determining-the-optimal-number-of-clusters-3-must-know-methods/},",
+      "https://medium.com/analytics-vidhya/how-to-determine-the-optimal-k-for-k-means-708505d204eb},",
+      "http://www.jstor.org/stable/169020},",
+      "http://www.sciencedirect.com/science/article/pii/S0377221799002842},",
+      "https://medium.com/@CircuitApp/using-route-optimization-to-cut-delivery-costs-8c90e2a7c8ea},",
+      "https://onfleet.com/blog/route-optimization/},",
+      "https://www.paragonrouting.com/en-us/blog/post/is-route-optimization-worth-the-money/},",
+      "https://www.overleaf.com/project/5dd1a4fb1167f30001ca028d},",
+      "https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598},",
+      "http://link.springer.com/10.1007/s12532-009-0004-6},",
+      "https://doi.org/10.1007/s12532-009-0004-6},",
+      "https://www.ouedkniss.com/brother-mfc-j497dw-alger-said-hamdine-algerie-informatique-d21204594},",
+      "http://doi.org/10.1145/937503.937505},",
+      "http://link.springer.com/10.1007/s11047-008-9098-4},",
+      "http://pubsonline.informs.org/doi/abs/10.1287/opre.28.3.694},",
+      "http://epubs.siam.org/doi/10.1137/0206041},",
+      "https://epubs.siam.org/doi/abs/10.1137/0206041},",
+      "http://link.springer.com/10.1007/s00170-007-1056-2},",
+      "https://doi.org/10.1007/978-3-319-05035-5_2},",
+      "https://www.intechopen.com/books/traveling-salesman-problem-theory-and-applications},",
+      "https://www.jstor.org/stable/822953},",
+      "http://www.djezzy.dz/djezzy/nous-connaitre/a-propos-de-djezzy/},",
+      "http://webstar-electro.com/documents/document_service_53613_879_5_310476367.jpg},",
+      "http://www.djezzy.dz/djezzy/nous-connaitre/nos-engagements/},",
+      "http://www.djezzy.dz/djezzy/nous-connaitre/nos-engagements/politique-environnementale-iso-14001/#},",
+      "http://www.djezzy.dz/djezzy/nous-connaitre/nos-engagements/politique-qualite-iso-9001/},",
+      "https://www.1min30.com/dictionnaire-du-web/transformation-digitale-numerique},",
+      "http://www.djezzy.dz/djezzy/nous-connaitre/nos-engagements/vision-mission-et-valeurs/},",
+      "https://www.cartelis.com/blog/architecture-donnees/},",
+      "http://dl.acm.org/citation.cfm?doid=3139958.3139981},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S014362281200135X},",
+      "http://doi.wiley.com/10.1111/j.1538-4632.1995.tb00338.x},",
+      "https://www.jstor.org/stable/622936?origin=crossref},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S0166218X12003320},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S0305048314000243},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S0377221707011034},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S1366554511000196},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S0305054803000753},",
+      "https://linkinghub.elsevier.com/retrieve/pii/0305054894000313},",
+      "http://doi.wiley.com/10.1002/net.20011},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S0305054801000351},",
+      "http://link.springer.com/10.1007/978-3-319-05035-5_2},",
+      "https://www.academia.edu/699868/Detecting_hotspots_in_time_and_space},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S0198971509000817},",
+      "http://www.mdpi.com/1660-4601/8/1/75},",
+      "https://www.emerald.com/insight/content/doi/10.1108/PIJPSM-04-2013-0039/full/html},",
+      "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1992.tb00261.x},",
+      "http://link.springer.com/10.1007/s10980-016-0430-6},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S0001457508002340},",
+      "https://linkinghub.elsevier.com/retrieve/pii/S0001457514000219},"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 127
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.datanovia.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "medium.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.jstor.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.sciencedirect.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "onfleet.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://www.datanovia.com/en/lessons/determining-the-optimal-number-of-clusters-3-must-know-methods/},": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://medium.com/analytics-vidhya/how-to-determine-the-optimal-k-for-k-means-708505d204eb},": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.jstor.org/stable/169020},": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.sciencedirect.com/science/article/pii/S0377221799002842},": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://medium.com/@CircuitApp/using-route-optimization-to-cut-delivery-costs-8c90e2a7c8ea},": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "medium.com",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.005623912811279297,
+      "entropie_globale": 0.64475,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 50,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1108,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['medium.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_ar86nirl\\references.bib",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 0.057,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.314,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.057,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

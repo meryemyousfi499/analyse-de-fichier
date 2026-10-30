@@ -1,0 +1,430 @@
+{
+  "id_rapport": "f824f45e",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 16.767,
+  "metadonnees": {
+    "nom": "4a4b138f.json",
+    "extension": "json",
+    "taille_octets": 13694,
+    "taille_lisible": "13.4 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4a4b138f.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:26",
+    "date_modification": "2026-10-29T00:52:26",
+    "date_acces": "2026-10-29T11:22:38",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "b685b1b765d5758685d53e9432245753144e5f67d6f17b1136a0d1e43effb100",
+    "sha1": "b31132636498d97393cd933fcbca2feae28309cf",
+    "md5": "3628df7a3af478629641185669c70198",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.858,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.86
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.w3.org",
+      "ns.adobe.com",
+      "purl.org",
+      "refhub.elsevier.com",
+      "doi.org",
+      "analyticsindiamag.com",
+      "elsevier.com",
+      "sciencedirect.com",
+      "www.niso.org",
+      "creativecommons.org",
+      "crossref.org",
+      "prismstandard.org",
+      "www.elsevier.com",
+      "orcid.org",
+      "gmail.com",
+      "www.sciencedirect.com",
+      "crossmark.crossref.org"
+    ],
+    "urls": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "http://ns.adobe.com/xap/1.0/",
+      "http://ns.adobe.com/xap/1.0/mm/",
+      "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#",
+      "http://ns.adobe.com/xap/1.0/sType/ResourceRef#",
+      "http://purl.org/dc/elements/1.1/",
+      "http://ns.adobe.com/pdf/1.3/",
+      "http://ns.adobe.com/pdfx/1.3/",
+      "http://ns.adobe.com/tiff/1.0/",
+      "http://ns.adobe.com/exif/1.0/",
+      "http://ns.adobe.com/photoshop/1.0/",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0001)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0002)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0003)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0004)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0005)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0006)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0007)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0008)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0009)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0010)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0011)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0012)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0013)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0014)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0015)",
+      "https://doi.org/10.3390/ai5040143)",
+      "https://doi.org/10.1007/s10462-025-11108-x)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0018)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0019)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0020)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0022)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0023)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0024)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0025)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0026)",
+      "https://doi.org/10.1007/s43926-023-00034-5)",
+      "https://doi.org/10.1007/s00500-023-09037-4)",
+      "https://doi.org/10.1016/j.teler.2022.100009)",
+      "https://doi.org/10.1186/s40537-023-00694-8)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0032)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0033)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0034)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0035)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0036)",
+      "https://analyticsindiamag.com/how-to-use-genetic-algorithm-for-yperparameter-tuning-of-ml-models/)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0038)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0039)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0041)",
+      "http://refhub.elsevier.com/S2590-1230\\\\(25\\\\)01632-9/sbref0042)"
+    ],
+    "emails": [
+      "ssverma80@gmail.com"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "i:\\",
+      "q:\\",
+      "t:\\",
+      "z:\\",
+      "p:\\",
+      "v:\\",
+      "m:\\",
+      "g:\\",
+      "n:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "dcf35204822e689f4e9e2b9c690b70b0",
+        "AE27B8E9F53CF011BEBAAB20A543BDF0",
+        "2800FC50EE9F4D48853C051361BD41F2",
+        "03DA16832AE162993D10BAEC559CD949",
+        "AF27B8E9F53CF011BEBAAB20A543BDF0",
+        "A508CE8C5ABCFDEB7000CA2A9EC23C92",
+        "69C1594FD0453F4AEA569775533FD125",
+        "B027B8E9F53CF011BEBAAB20A543BDF0",
+        "1BB7E8FF1E7F3455EC07E1E12359F016",
+        "1EE67889A79AEEE3FD41117183BC58E3"
+      ],
+      "sha1": [
+        "e4871aa4a907429bee7aca0cf02d4ce576450267"
+      ],
+      "sha256": [
+        "7818ccd4573836c419c04c278ccbc6bf7195d3a6c5e4b748cb629ccb240a3d94"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 117
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "ns.adobe.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "purl.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "refhub.elsevier.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "doi.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/xap/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/xap/1.0/mm/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/xap/1.0/sType/ResourceRef#": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "7818ccd4573836c419c04c278ccbc6bf7195d3a6c5e4b748cb629ccb240a3d94": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "purl.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "doi.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://ns.adobe.com/xap/1.0/",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://ns.adobe.com/xap/1.0/mm/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0013059616088867188,
+      "entropie_globale": 0.60725,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 50,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1091,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['purl.org', 'doi.org'], URLs: ['http://ns.adobe.com/xap/1.0/', 'http://ns.adobe.com/xap/1.0/mm/'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\4a4b138f.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

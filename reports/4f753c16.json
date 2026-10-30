@@ -1,0 +1,336 @@
+{
+  "id_rapport": "4f753c16",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 17.382,
+  "metadonnees": {
+    "nom": "0058dfe0.json",
+    "extension": "json",
+    "taille_octets": 7751,
+    "taille_lisible": "7.6 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\0058dfe0.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:20",
+    "date_modification": "2026-10-29T00:52:20",
+    "date_acces": "2026-10-29T01:00:47",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "ba0a844315b35141e641384520110c632d249743e0f07a92b6a21785865fb20f",
+    "sha1": "3d55985dc4ade296a7566849c579b5036035ff6d",
+    "md5": "8853905d5d18f1c7855ae55999ec26f8",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.786,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.79
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "chatgpt.com",
+      "www.w3.org",
+      "cv.iptc.org",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://chatgpt.com/\\n",
+      "http://www.w3.org/2000/svg",
+      "https://ocsp.trufo.ai0+\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002\\u001fhttps://ca.trufo.ai/c2pa-ca.crt03\\u0006",
+      "https://trufo.ai/cpcps0^\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u0007\\u0001\\u0001\\u0004R0P0!\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u0015https://ocsp.trufo.ai0+\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002\\u001fhttps://ca.trufo.ai/root-ca.crt0",
+      "https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Focsp.trufo.ai0%2B%06%08%2B%06%01%05%05%070%02%1Fhttps%3A%2F%2Fca.trufo.ai%2Fc2pa-ca.crt03%06/general",
+      "https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Ftrufo.ai%2Fcpcps0%5E%06%08%2B%06%01%05%05%07%01%01%04R0P0%21%06%08%2B%06%01%05%05%070%01%15https%3A%2F%2Focsp.trufo.ai0%2B%06%08%2B%06%01%05%05%070%02%1Fhttps%3A%2F%2Fca.trufo.ai%2Froot-ca.crt0/general"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "h:\\",
+      "Z:\\",
+      "n:\\",
+      "I:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "4f07327feaebd4ba8e4328a065e1940a"
+      ],
+      "sha1": [
+        "44c4d0b9358f66b0c9a6f96aece59b0236ae672c"
+      ],
+      "sha256": [
+        "dc961cd39d44d8f25145b36900eebc8afba1818273e5786ae711291763019093"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 19
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "chatgpt.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "cv.iptc.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://chatgpt.com/\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.w3.org/2000/svg": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://ocsp.trufo.ai0+\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002\\u001fhttps://ca.trufo.ai/c2pa-ca.crt03\\u0006": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Focsp.trufo.ai0%2B%5Cu0006%5Cb%2B%5Cu0006%5Cu0001%5Cu0005%5Cu0005%5Cu00070%5Cu0002%5Cu001fhttps%3A%2F%2Fca.trufo.ai%2Fc2pa-ca.crt03%5Cu0006/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://trufo.ai/cpcps0^\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u0007\\u0001\\u0001\\u0004R0P0!\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u0015https://ocsp.trufo.ai0+\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002\\u001fhttps://ca.trufo.ai/root-ca.crt0": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Focsp.trufo.ai0%2B%06%08%2B%06%01%05%05%070%02%1Fhttps%3A%2F%2Fca.trufo.ai%2Fc2pa-ca.crt03%06/general": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "dc961cd39d44d8f25145b36900eebc8afba1818273e5786ae711291763019093": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "chatgpt.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://www.w3.org/2000/svg",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0007391929626464844,
+      "entropie_globale": 0.59825,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 6,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1417,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 43,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['chatgpt.com'], URLs: ['http://www.w3.org/2000/svg'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\0058dfe0.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "id_rapport": "01222f90",
+  "origine": "auto_watch",
+  "duree_analyse_s": 96.003,
+  "metadonnees": {
+    "nom": "Rapport sur Auto Dealers Digital.docx",
+    "extension": "docx",
+    "taille_octets": 9286,
+    "taille_lisible": "9.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Rapport sur Auto Dealers Digital.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-11T09:33:44",
+    "date_modification": "2026-10-11T09:33:48",
+    "date_acces": "2026-10-28T23:56:11",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://claude.ai/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "de43b9ecf4bbd1f328ba5cb874a6b48be13db7935cba53a789784543052e9c76",
+    "sha1": "bce5201a8edbc0577e18937eb28957d87aa31860",
+    "md5": "7abb718b5a3820c626bd23551b1f672c",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.89,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.89
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0008855819702148438,
+      "entropie_globale": 0.98625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0434,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_smexdzo_\\[Content_Types].xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_smexdzo_\\docProps\\app.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_smexdzo_\\docProps\\core.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_smexdzo_\\word\\document.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_smexdzo_\\word\\numbering.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_smexdzo_\\word\\styles.xml",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_smexdzo_\\word\\_rels\\document.xml.rels",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_smexdzo_\\_rels\\.rels"
+    ],
+    "erreur": null
+  },
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "a7749ee6",
+      "nom": "[Content_Types].xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "5e3e1c52",
+      "nom": "app.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "ff3a3e0e",
+      "nom": "core.xml",
+      "score": 33
+    },
+    {
+      "id_rapport": "ef71650d",
+      "nom": "document.xml",
+      "score": 34
+    },
+    {
+      "id_rapport": "e52da156",
+      "nom": "numbering.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "2984985c",
+      "nom": "styles.xml",
+      "score": 24
+    },
+    {
+      "id_rapport": "62e815ee",
+      "nom": "document.xml.rels",
+      "score": 42
+    },
+    {
+      "id_rapport": "cbdbe713",
+      "nom": ".rels",
+      "score": 33
+    }
+  ],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : [Content_Types].xml (score 24, rapport a7749ee6).",
+      "Score releve par le contenu extrait de l'archive : core.xml (score 33, rapport ff3a3e0e).",
+      "Score releve par le contenu extrait de l'archive : document.xml (score 34, rapport ef71650d).",
+      "Score releve par le contenu extrait de l'archive : document.xml.rels (score 42, rapport 62e815ee)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Rapport sur Auto Dealers Digital.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

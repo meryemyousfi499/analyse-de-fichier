@@ -1,0 +1,484 @@
+{
+  "id_rapport": "df8cf277",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 33.863,
+  "metadonnees": {
+    "nom": "Green Illustrated Economy and Finance Presentation (1).pdf",
+    "extension": "pdf",
+    "taille_octets": 5691418,
+    "taille_lisible": "5.4 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Green Illustrated Economy and Finance Presentation (1).pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-06-04T00:29:39",
+    "date_modification": "2026-06-04T00:29:46",
+    "date_acces": "2026-10-28T12:35:47",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://drive.usercontent.google.com/download?id=1Gr0KJO06o29Azcx4_WhL7hzA36wCjGqH&export=download&authuser=0&confirm=t&uuid=510b903f-221b-44cc-aea3-8c56be79385b&at=AAINaIKLtzZ1fjtmnpeSR6z_C-WH:1780529451792\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "a9789abb0719d969089f63661ce0578920351e3e942238305624c9cdac447ab2",
+    "sha1": "c215f9d08d55ff9e461d56545b36942f20c40cc8",
+    "md5": "34dbd0bef74a773de981cc7a9c8897e2",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 41
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.99,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.45,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.97,
+      7.94,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.97,
+      7.98,
+      7.99,
+      7.97,
+      7.98,
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 91,
+      "exemple": "5072E973656E74E920706172204F74686D616E65204B6172696D2026204D..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.aiim.org"
+    ],
+    "urls": [
+      "http://www.aiim.org/pdfua/ns/id/"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 4
+    },
+    "chemins_windows": [
+      "m:\\\u001c5G_p\u001eO_\u0011#~f;\u000e.",
+      "q:\\Ȍ3ە=\u000e7\u0002q\u0012G\u00158+\u0006",
+      "u:\\\u000bf̆]~#K\u0010I7Ҏ4;B9Z-a%=\u001c\u0019^Tvub\u0016\u001a([G\u0018qvr'%\u0003\u001d,\u0010}f^ёD9B5",
+      "B:\\0x\u000b囃\fzVO",
+      "z:\\",
+      "x:\\\u000b",
+      "j:\\pa߾}\u001b7nܾ}ӧ\u0003\u0003\u0003e_B9ZHHŋ\u0017oܸ{ j[E\u0007\u0004\u0004\\~\u001d۱b]\u001b7nq\u0002Oa\tɆD\u001bFsM__[n7\u0002Uq",
+      "r:\\",
+      "N:\\!a+K1ߥ[B\u0001\u0011y,"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "4C45532044C944554354494F4E53203A"
+      ],
+      "sha1": [
+        "53414C4149524520C0204C41205049C84345203A",
+        "53656374657572207075626C6963208420434D52"
+      ],
+      "sha256": [
+        "65737420666978E92070617220756E6974E92064652070726F64756374696F6E",
+        "4C657320696E64656D6E6974E9732064652072657072E973656E746174696F6E",
+        "352D204C455320494E44454D4E4954C95320455420414C4C4F434154494F4E53",
+        "38EE250996474242B306AD5810D723B6C5A28E78521C31E548073C2F33CB3CF1"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.aiim.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.aiim.org/pdfua/ns/id/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "65737420666978E92070617220756E6974E92064652070726F64756374696F6E": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "4C657320696E64656D6E6974E9732064652072657072E973656E746174696F6E": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "352D204C455320494E44454D4E4954C95320455420414C4C4F434154494F4E53": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "38EE250996474242B306AD5810D723B6C5A28E78521C31E548073C2F33CB3CF1": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "http://www.aiim.org/pdfua/ns/id/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.5427759170532227,
+      "entropie_globale": 0.99875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0993,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 35,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://www.aiim.org/pdfua/ns/id/'], hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Green Illustrated Economy and Finance Presentation (1).pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 16.508,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 3.709,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 6.678,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 5.49,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.012,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

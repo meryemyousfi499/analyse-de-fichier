@@ -1,0 +1,350 @@
+{
+  "id_rapport": "67581fdc",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 3.24,
+  "metadonnees": {
+    "nom": "Meryem_Yousfi.ipynb",
+    "extension": "ipynb",
+    "taille_octets": 1263501,
+    "taille_lisible": "1.2 Mo",
+    "mime_reel": "text/plain",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Meryem_Yousfi.ipynb",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-27T22:47:13",
+    "date_modification": "2026-10-27T22:47:16",
+    "date_acces": "2026-10-30T02:19:22",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=about:internet\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".ipynb",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "a00b596d1b102bcf236deb9cc94b30f8285aedce237bd01df20d018acd863478",
+    "sha1": "c9718f32a2b4a72c55fafa1a9dcdc9283d9952f2",
+    "md5": "75105e992115c9ac56995cd1df8b5b17",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.228,
+    "verdict_entropie": "faible (texte / code non compresse)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.08,
+      4.08,
+      4.08,
+      4.08,
+      4.08,
+      4.08,
+      4.07,
+      4.08,
+      4.08,
+      4.08,
+      4.08,
+      4.08,
+      4.07,
+      4.08,
+      4.08,
+      4.08,
+      4.45,
+      4.84,
+      4.5,
+      4.44
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [
+      "https://localhost:8080/"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "b:\\n",
+      "s:\\",
+      "m:\\u001b[0m \\u001b[0;30;48;2;231;138;195mtwo\\u001b[0m \\u001b[0;30;48;2;166;216;84mtab\\u001b[0m \\u001b[0;30;48;2;255;217;47m##s\\u001b[0m \\u001b[0;30;48;2;102;194;165m",
+      "m:\\u001b[0m \\u001b[0;30;48;2;252;141;98m\\",
+      "m:\\u001b[0m \\u001b[0;30;48;2;255;217;47mtwo\\u001b[0m \\u001b[0;30;48;2;102;194;165mta\\u001b[0m \\u001b[0;30;48;2;252;141;98m##bs\\u001b[0m \\u001b[0;30;48;2;141;160;203m",
+      "m:\\u001b[0m \\u001b[0;30;48;2;231;138;195m\\",
+      "m:\\u001b[0m \\u001b[0;30;48;2;252;141;98mtwo\\u001b[0m \\u001b[0;30;48;2;141;160;203mtabs\\u001b[0m \\u001b[0;30;48;2;231;138;195m",
+      "m:\\u001b[0m \\u001b[0;30;48;2;166;216;84m\\",
+      "s:\\n",
+      "D:\\tcan be ignored when loading from different task",
+      "f:\\n",
+      "l:\\n"
+    ],
+    "chemins_unix": [
+      "/usr/local/lib/python3.13/dist-packages"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "ad8a015ba7304d1db30cb8cc4a117077",
+        "1be8e59285f449c38ebea891b944f2f2",
+        "29bd35d4636b4bfbabdf7459e4149fcd",
+        "a0de60c199a4454bafa73a5617aa55bc",
+        "8cae697802dd428eaca148a822069296",
+        "db1513a3b0bc487c8fa62f4b46462740",
+        "f3fc7fe6343b4b57984ce1fe30cb6af5",
+        "ee0a0dc29e354515a863f19a034cd56b",
+        "33d75b4268834f98860b92f53109208f",
+        "af64faf17b0749108e8e3da43c42f712"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "powershell",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 5
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {
+      "https://localhost:8080/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.12049684524536133,
+      "entropie_globale": 0.5285,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.074,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 10,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Meryem_Yousfi.ipynb",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 1.715,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 1.376,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.68,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

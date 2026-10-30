@@ -1,0 +1,476 @@
+{
+  "id_rapport": "1157eae8",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 48.551,
+  "metadonnees": {
+    "nom": "Remix-Desktop-Setup-1.3.0.exe",
+    "extension": "exe",
+    "taille_octets": 141054153,
+    "taille_lisible": "134.5 Mo",
+    "mime_reel": "application/x-dosexec",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Remix-Desktop-Setup-1.3.0.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-10-20T19:38:29",
+    "date_modification": "2026-10-20T20:11:51",
+    "date_acces": "2026-10-29T18:36:36",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "03ed3f031cd547125a8416473b4e804fb9311ddd3e96f747a5373c4b22d40d5c",
+    "sha1": "191b536b5c49b843e211a13e766c11357861d466",
+    "md5": "cee0e115583d8220e7128642a2338b46",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": true,
+      "type": "EXE",
+      "architecture": "0x14c",
+      "nombre_imports": 164,
+      "imports_dangereux_detectes": [
+        "AdjustTokenPrivileges",
+        "GetProcAddress"
+      ],
+      "sections": [
+        {
+          "nom": ".text",
+          "taille_brute": 26624,
+          "entropie": 6.45,
+          "executable": true,
+          "ecriture": false
+        },
+        {
+          "nom": ".rdata",
+          "taille_brute": 5632,
+          "entropie": 5.025,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".data",
+          "taille_brute": 1536,
+          "entropie": 4.037,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".ndata",
+          "taille_brute": 0,
+          "entropie": 0.0,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".rsrc",
+          "taille_brute": 20992,
+          "entropie": 6.171,
+          "executable": false,
+          "ecriture": false
+        }
+      ],
+      "packer_suspecte": false,
+      "signature_presente": false,
+      "point_entree": "0x338f",
+      "timestamp_compilation": 1544912774
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 8.0,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.72,
+      7.98,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "1.0.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "X:\\5R3%v9",
+      "W:\\\t\u0017y1AM0O;BC΂\u001efo\u0003hk\f6K",
+      "B:\\\u0017zAfT",
+      "D:\\\u0007eB54\u0014",
+      "e:\\}u\u0017m¬",
+      "t:\\{Q70N\u0007\u0007",
+      "A:\\wfLҨ",
+      "i:\\\u000by\u0002\u001e6\u0002v4f\u0015ҮQ\t9O'e`w\u0007Σ",
+      "o:\\&\tG\\\u001b",
+      "L:\\",
+      "Y:\\4R\u0013B@\u001bBG΢Xϴ\u0000Z\u0013\u0014wj.Ym#j",
+      "T:\\Q'\u0011\f",
+      "d:\\u\u001cb\f_\u0000We`",
+      "g:\\N\u0004\u0005[\u0012",
+      "c:\\9-\u0014^np\u0004I2⩫u\u0016_'=3١×֭[z\tho\u001b",
+      "z:\\_k\b˓\u001dN\t(B#%}Ӿ\b\u0018~-z s5g",
+      "m:\\2iQ\u001c܋M#o\u0004GLZ\u0006M.!Ic;",
+      "F:\\dͦN\u0015\u0005\u0007,!\u0001;}]\u0015C^V$\u000b\u000fy\u0016\u0013oׅ(",
+      "c:\\pB\u0001%.^\u001eܼ\\j",
+      "g:\\n-s\u0019=S\u000bA_",
+      "U:\\Ltt].p\u001f\u0002AQW\u0003G\u0003+&PP",
+      "z:\\2XִXtK\u0005c)R\u001fǆīGHU\bRPow",
+      "h:\\\u001bɆ\u0017a3\u001a̐\u001a~\u0014\u00179\\\u001a\u000b]\u0002l\u0010\u0012",
+      "K:\\\u0002\u0012\u0002\u001f\u0002\u001aG=e=7CS",
+      "b:\\y;oS\u0002",
+      "X:\\Q\u001f",
+      "r:\\~6)@\u001fi\u0017GbD\u0010s\u00150B̧4Mj",
+      "m:\\Q",
+      "U:\\F\fKr4P",
+      "n:\\k\u0019\u001fN"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 141054153,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 2
+  },
+  "signature_numerique": {
+    "applicable": true,
+    "signature_presente": false,
+    "verifiee": null,
+    "editeur": null,
+    "commentaire": "Aucune signature Authenticode detectee. Cela n'implique pas automatiquement un fichier malveillant, mais augmente legerement le niveau de vigilance."
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "infecte": null,
+    "signature": null,
+    "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pe",
+    "status": "termine",
+    "file_type": "PE/EXE",
+    "pe_offset": 216,
+    "pe_signature_valid": true,
+    "findings": [],
+    "note": "Contrôle structurel minimal. Utiliser un parseur PE dédié pour une analyse plus approfondie."
+  },
+  "threat_intelligence": {
+    "ips": {
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "AU",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "6.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 1.0,
+      "nb_imports_dangereux": 2,
+      "packer_suspecte": 0,
+      "signature_absente": 1,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.2253,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 30,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucune signature numerique Authenticode presente.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "faible",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.5,
+      "manquants": [
+        {
+          "outil": "clamav",
+          "statut": "error",
+          "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+        },
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : clamav (error), yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Remix-Desktop-Setup-1.3.0.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "error",
+        "duration_s": 44.197,
+        "summary": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte",
+        "findings": [],
+        "error": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 24.981,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 35.616,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 24.788,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pe",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox.",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PE/EXE' / extension '.exe' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "non_applicable",
+      "alerts": [],
+      "reasons": [
+        "Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": false,
+    "declencheurs": [],
+    "bloquants": [
+      "fichier > 50 Mo",
+      "politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+    ],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

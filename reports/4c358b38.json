@@ -1,0 +1,396 @@
+{
+  "id_rapport": "4c358b38",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 12.051,
+  "metadonnees": {
+    "nom": "0f4d4013.json",
+    "extension": "json",
+    "taille_octets": 12038,
+    "taille_lisible": "11.8 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\0f4d4013.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:22",
+    "date_modification": "2026-10-29T00:52:22",
+    "date_acces": "2026-10-29T02:27:18",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "66548601e0402a61a7effc492f6ea015ba6f6b29fc224ed639552a3cfcbe8c4f",
+    "sha1": "e74b767fa22cb3be996fd544630ea0733f2cc9d6",
+    "md5": "b3b4dd490da11162da3e017af9337a76",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.764,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.76
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.mdpi.com",
+      "2Fmdpi-res.com",
+      "crossmark.crossref.org",
+      "creativecommons.org",
+      "orcid.org",
+      "doi.org",
+      "otx.alienvault.com",
+      "2Fwww.mdpi.com"
+    ],
+    "urls": [
+      "https://www.mdpi.com/1999-5903/18/7/345\\nHostUrl=https://www.mdpi.com/api/articles/single/download-from-url?url=https%3A%2F%2Fmdpi-res.com%2Ffutureinternet%2Ffutureinternet-18-00345%2Farticle_deploy%2Ffutureinternet-18-00345.pdf%3Fversion%3D1782802769&fileName=futureinternet-18-00345.pdf\\n",
+      "https://crossmark.crossref.org/dialog?doi=10.3390/fi18070345&domain=pdf&date_stamp=2026-06-30)",
+      "https://creativecommons.org/licenses/by/4.0/)",
+      "https://www.mdpi.com/journal/futureinternet)",
+      "https://www.mdpi.com)",
+      "https://orcid.org/0000-0002-7388-4340)",
+      "https://orcid.org/0000-0002-5643-0021)",
+      "https://doi.org/10.3390/fi18070345)",
+      "https://research.unsw.edu.au/projects/toniot-datasets)",
+      "https://research.unsw.edu.au/projects/unsw-nb15-dataset)",
+      "https://doi.org/10.1109/JIOT.2026.3656738)",
+      "https://doi.org/10.1016/j.adhoc.2023.103120)",
+      "https://doi.org/10.1016/j.asej.2024.102777)",
+      "https://doi.org/10.1007/s00521-020-04772-3)",
+      "https://doi.org/10.1016/j.phycom.2025.102777)",
+      "https://doi.org/10.1007/s12083-025-02124-3)",
+      "https://doi.org/10.48084/etasr.7657)",
+      "https://doi.org/10.1016/j.procs.2023.09.026)",
+      "https://doi.org/10.3390/app15126421)",
+      "https://doi.org/10.1007/s12559-024-10313-0)",
+      "https://doi.org/10.1038/s41598-025-33242-w)",
+      "https://www.ncbi.nlm.nih.gov/pubmed/41491357)",
+      "https://doi.org/10.1016/j.procs.2025.09.526)",
+      "https://doi.org/10.1109/EEET64351.2024.00011)",
+      "https://doi.org/10.1109/access.2025.3528214)",
+      "https://doi.org/10.1038/s41598-025-32183-8)",
+      "https://www.ncbi.nlm.nih.gov/pubmed/41554793)",
+      "https://doi.org/10.1007/s11042-024-19695-7)",
+      "https://doi.org/10.1109/CSNT64827.2025.10968274)",
+      "https://doi.org/10.3390/s23187856)",
+      "https://www.ncbi.nlm.nih.gov/pubmed/37765912)",
+      "https://doi.org/10.1016/j.scs.2021.102994)",
+      "https://doi.org/10.1016/j.advengsoft.2013.12.007)",
+      "https://doi.org/10.1613/jair.953)",
+      "https://doi.org/10.5755/j01.itc.53.1.34933)",
+      "https://doi.org/10.1016/j.compeleceng.2022.107810)",
+      "https://doi.org/10.1016/j.jfranklin.2024.107440)",
+      "https://doi.org/10.18517/ijaseit.15.3.13022)",
+      "https://doi.org/10.58496/MJCS/2024/004)",
+      "https://doi.org/10.1109/JSEN.2009.2038120)",
+      "https://doi.org/10.3390/s25154845)",
+      "https://www.ncbi.nlm.nih.gov/pubmed/40808008)",
+      "https://doi.org/10.71129/ijaci.v2i1.pp21-33)",
+      "https://doi.org/10.52866/ijcsm.2023.04.04.009)",
+      "https://doi.org/10.11591/ijeecs.v8.i1.pp27-35)",
+      "https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fwww.mdpi.com%29/general"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "c:\\",
+      "m:\\",
+      "o:\\",
+      "O:\\",
+      "B:\\",
+      "q:\\",
+      "z:\\",
+      "M:\\",
+      "x:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "58aca08f5da3136d285b9d6bc9b176b1",
+        "3c4d98ea999cd749e74741463d6d41ce",
+        "c9bb3f6d9d4de9be58d26c46fb4ecadd"
+      ],
+      "sha1": [
+        "a7b3d6c57c1852de3e263237a88c1fb664df7bc9"
+      ],
+      "sha256": [
+        "7fad5d93356b0210d6a6d1b966b933fd556127c76c8ecf9fe2b15dbfd319c17c"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 100
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.mdpi.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "2Fmdpi-res.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crossmark.crossref.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "creativecommons.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "orcid.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://www.mdpi.com/1999-5903/18/7/345\\nHostUrl=https://www.mdpi.com/api/articles/single/download-from-url?url=https%3A%2F%2Fmdpi-res.com%2Ffutureinternet%2Ffutureinternet-18-00345%2Farticle_deploy%2Ffutureinternet-18-00345.pdf%3Fversion%3D1782802769&fileName=futureinternet-18-00345.pdf\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://crossmark.crossref.org/dialog?doi=10.3390/fi18070345&domain=pdf&date_stamp=2026-06-30)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://creativecommons.org/licenses/by/4.0/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.mdpi.com/journal/futureinternet)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://www.mdpi.com)": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fwww.mdpi.com%29/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "7fad5d93356b0210d6a6d1b966b933fd556127c76c8ecf9fe2b15dbfd319c17c": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "creativecommons.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "orcid.org",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0011480331420898437,
+      "entropie_globale": 0.5955,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 46,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1086,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['creativecommons.org', 'orcid.org'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\0f4d4013.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

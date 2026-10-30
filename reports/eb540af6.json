@@ -1,0 +1,347 @@
+{
+  "id_rapport": "eb540af6",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 11.985,
+  "metadonnees": {
+    "nom": "3dc718a2.json",
+    "extension": "json",
+    "taille_octets": 13064,
+    "taille_lisible": "12.8 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\3dc718a2.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:25",
+    "date_modification": "2026-10-29T00:52:25",
+    "date_acces": "2026-10-29T10:06:23",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "79a343df7dada723a86ba8314a471ff469bafeddc0653c787a560e002757dad6",
+    "sha1": "cd6c4ea0d026832c39827ed188b7515066dc96cd",
+    "md5": "7b8723efb8ad269bc815d1c726c516ab",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.088,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.09
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/api/v1/indicators/file/c7d4e44d6122dd73c07a4b4f73e2da3e0a5e..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "schemas.microsoft.com",
+      "schemas.openxmlformats.org",
+      "otx.alienvault.com",
+      "2Fschemas.microsoft.com"
+    ],
+    "urls": [
+      "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+      "http://schemas.microsoft.com/office/drawing/2014/chartex",
+      "http://schemas.microsoft.com/office/drawing/2015/9/8/chartex",
+      "http://schemas.microsoft.com/office/drawing/2015/10/21/chartex",
+      "http://schemas.microsoft.com/office/drawing/2016/5/9/chartex",
+      "http://schemas.microsoft.com/office/drawing/2016/5/10/chartex",
+      "http://schemas.microsoft.com/office/drawing/2016/5/11/chartex",
+      "http://schemas.microsoft.com/office/drawing/2016/5/12/chartex",
+      "http://schemas.microsoft.com/office/drawing/2016/5/13/chartex",
+      "http://schemas.microsoft.com/office/drawing/2016/5/14/chartex",
+      "http://schemas.openxmlformats.org/markup-compatibility/2006",
+      "http://schemas.microsoft.com/office/drawing/2016/ink",
+      "http://schemas.microsoft.com/office/drawing/2017/model3d",
+      "http://schemas.microsoft.com/office/2019/extlst",
+      "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+      "http://schemas.openxmlformats.org/officeDocument/2006/math",
+      "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+      "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+      "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+      "http://schemas.microsoft.com/office/word/2010/wordml",
+      "http://schemas.microsoft.com/office/word/2012/wordml",
+      "http://schemas.microsoft.com/office/word/2018/wordml/cex",
+      "http://schemas.microsoft.com/office/word/2016/wordml/cid",
+      "http://schemas.microsoft.com/office/word/2018/wordml",
+      "http://schemas.microsoft.com/office/word/2023/wordml/word16du",
+      "http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash",
+      "http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock",
+      "http://schemas.microsoft.com/office/word/2015/wordml/symex",
+      "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+      "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+      "http://schemas.microsoft.com/office/word/2006/wordml",
+      "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "9d0ec249a77e736234914473d33e4295"
+      ],
+      "sha1": [
+        "7fdbcfecec1892aaa507daab54194ed9fe824dc2"
+      ],
+      "sha256": [
+        "c7d4e44d6122dd73c07a4b4f73e2da3e0a5e2dbe6c599712f08e97e9b07c6be6"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 68
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "schemas.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/schemas.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "schemas.openxmlformats.org": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/schemas.openxmlformats.org/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/otx.alienvault.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      },
+      "2Fschemas.microsoft.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/domain/2Fschemas.microsoft.com/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='urlhaus-api.abuse.ch', port=443): Max retries exceeded with url: /v1/host/ (Caused by NameResolutionError(\"HTTPSConnection(host='urlhaus-api.abuse.ch', port=443): Failed to resolve 'urlhaus-api.abuse.ch' ([Errno 11001] getaddrinfo failed)\"))"
+        }
+      }
+    },
+    "urls": {
+      "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Max retries exceeded with url: /api/v1/indicators/url/http%3A%2F%2Fschemas.microsoft.com%2Foffice%2Fword%2F2010%2FwordprocessingCanvas/general (Caused by NameResolutionError(\"HTTPSConnection(host='otx.alienvault.com', port=443): Failed to resolve 'otx.alienvault.com' ([Errno 11001] getaddrinfo failed)\"))"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.microsoft.com/office/drawing/2014/chartex": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 10,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.microsoft.com/office/drawing/2015/9/8/chartex": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 9,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.microsoft.com/office/drawing/2015/10/21/chartex": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 9,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://schemas.microsoft.com/office/drawing/2016/5/9/chartex": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 11,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "c7d4e44d6122dd73c07a4b4f73e2da3e0a5e2dbe6c599712f08e97e9b07c6be6": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "http://schemas.microsoft.com/office/drawing/2014/chartex",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://schemas.microsoft.com/office/drawing/2015/9/8/chartex",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://schemas.microsoft.com/office/drawing/2015/10/21/chartex",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://schemas.microsoft.com/office/drawing/2016/5/9/chartex",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.001245880126953125,
+      "entropie_globale": 0.636,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 32,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1104,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://schemas.microsoft.com/office/drawing/2014/chartex', 'http://schemas.microsoft.com/office/drawing/2015/9/8/chartex', 'http://schemas.microsoft.com/office/drawing/2015/10/21/chartex', 'http://schemas.microsoft.com/office/drawing/2016/5/9/chartex'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\3dc718a2.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

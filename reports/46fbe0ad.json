@@ -1,0 +1,541 @@
+{
+  "id_rapport": "46fbe0ad",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 49.589,
+  "metadonnees": {
+    "nom": "35194440.json",
+    "extension": "json",
+    "taille_octets": 14035,
+    "taille_lisible": "13.7 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\35194440.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:25",
+    "date_modification": "2026-10-29T00:52:25",
+    "date_acces": "2026-10-29T09:14:03",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "62f54b143a5a218521ab6a3e9978415c35761c3f9a69f0be20b77df3333a1ebe",
+    "sha1": "aa74dc937a0ad577d07c6213aafbddccec3193ac",
+    "md5": "8a5f5cffc828f379977dae84744c4308",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.717,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.72
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "10.12.3.31",
+      "104.18.32.47",
+      "172.64.148.235",
+      "64.233.166.188",
+      "172.217.118.4",
+      "172.64.155.209",
+      "8.8.4.4",
+      "104.18.37.228",
+      "172.64.144.52",
+      "35.190.80.1",
+      "1.80.190.35",
+      "142.251.168.84",
+      "74.125.206.188",
+      "142.250.178.14",
+      "142.250.181.206",
+      "142.251.153.4",
+      "142.250.181.106",
+      "142.251.36.133",
+      "173.194.164.68",
+      "8.8.8.8",
+      "142.251.209.74",
+      "142.250.181.195",
+      "127.0.0.1",
+      "20.184.175.6",
+      "13.107.5.93",
+      "140.82.113.21",
+      "150.171.109.83",
+      "20.199.39.224",
+      "150.171.74.16",
+      "172.67.70.74",
+      "140.82.114.22",
+      "1.1.1.1"
+    ],
+    "domaines": [
+      "stat-tile.info",
+      "finding-card.info",
+      "badge.info",
+      "clients2.google.com",
+      "wm-in-f188.1e100.net",
+      "1.80.190.35.bc.googleusercontent.com",
+      "wh-in-f84.1e100.net",
+      "wk-in-f188.1e100.net",
+      "ncmrsb-am-in-f14.1e100.net",
+      "ncmrsa-ap-in-f14.1e100.net",
+      "ncmrsa-ao-in-f10.1e100.net",
+      "prg03s12-in-f5.1e100.net",
+      "ncmrsa-ar-in-f4.1e100.net",
+      "ncmrsa-ai-in-f10.1e100.net",
+      "ham02s21-in-f3.1e100.net",
+      "lb-140-82-113-21-iad.github.com",
+      "lb-140-82-114-22-iad.github.com",
+      "trial.apple.com",
+      "www.w3.org",
+      "s.info",
+      "api.abuseipdb.com"
+    ],
+    "urls": [
+      "https://clients2.google.com/cr/report",
+      "http://www.w3.org/2000/svg",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=10.12.3.31&maxAgeInDays=90",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=104.18.32.47&maxAgeInDays=90",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=172.64.148.235&maxAgeInDays=90",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=64.233.166.188&maxAgeInDays=90",
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=172.217.118.4&maxAgeInDays=90"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "s:\\"
+    ],
+    "chemins_unix": [
+      "/usr/libexec/logd",
+      "/usr/libexec/UserEventAgent",
+      "/usr/sbin/systemstats",
+      "/usr/libexec/configd",
+      "/usr/libexec/IOMFB_bics_daemon",
+      "/usr/libexec/remoted",
+      "/usr/libexec/watchdogd",
+      "/usr/libexec/kernelmanagerd",
+      "/usr/libexec/diskarbitrationd",
+      "/usr/sbin/syslogd",
+      "/usr/libexec/thermalmonitord",
+      "/usr/libexec/xprotectd",
+      "/usr/libexec/opendirectoryd",
+      "/usr/libexec/timed",
+      "/usr/sbin/securityd",
+      "/usr/libexec/locationd",
+      "/usr/libexec/autofsd",
+      "/usr/libexec/dasd",
+      "/usr/libexec/corerepaird",
+      "/usr/sbin/distnoted",
+      "/usr/sbin/KernelEventAgent",
+      "/usr/sbin/bluetoothd",
+      "/usr/sbin/notifyd",
+      "/usr/libexec/corebrightnessd",
+      "/usr/libexec/AirPlayXPCHelper",
+      "/usr/sbin/cfprefsd",
+      "/usr/libexec/runningboardd",
+      "/usr/sbin/coreaudiod",
+      "/usr/libexec/apfsd",
+      "/usr/libexec/lsd"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "dc84b937eb9b4067647cd3b705fbd848"
+      ],
+      "sha1": [
+        "4d16917faedb5ab46b2e12d750c40db75d004fcd"
+      ],
+      "sha256": [
+        "60f009382b7417607290553a3f281cffe4dda11d43cf2cdb46df12c9de1a5375",
+        "19125e57084c807292904cc97ef81dad703861453fad6b5442cbe6b7f2886350",
+        "3e0e7fe41f3731007f03e6d984ba456a041b1a769d5a8be31262d9abaebea050",
+        "b63f84c49d7b4d5b34430abcd25f3cf55710254c90b0bbd2aca8d7ece7cab533",
+        "ea3c2ca4088fed6d0f3c7b787de062ece24fea2685113d00cecd236f4e447288",
+        "a5dff8520be938fd35b593996bbfb6ebdd27496fc435fa09059b5b1f1ba3f757",
+        "3d0846f0dcc40c9808595dbedfaaa670ac459e0be210eddc88bebb2d99a02e26",
+        "5bcc6fe0b81de2ae76191f46aa213c4267d1c7fd7cc44656151a01a0139efc74",
+        "6657ac506c322a04d058c18663998bdb27ca48e7984bde56a97a89027dfc65c7",
+        "501cad38c5963dc8c82571e7b18b6838ac085eacb7b2e0eff7116e314275d345"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "/bin/bash",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 70
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "10.12.3.31": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": null,
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "104.18.32.47": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 15,
+          "signale": false
+        }
+      },
+      "172.64.148.235": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 8,
+          "signale": false
+        }
+      },
+      "64.233.166.188": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "BE",
+          "nombre_signalements": 4,
+          "signale": false
+        }
+      },
+      "172.217.118.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 453,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "stat-tile.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "finding-card.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "badge.info": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "clients2.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "wm-in-f188.1e100.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://clients2.google.com/cr/report": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.w3.org/2000/svg": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=10.12.3.31&maxAgeInDays=90": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=104.18.32.47&maxAgeInDays=90": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://api.abuseipdb.com/api/v2/check?ipAddress=172.64.148.235&maxAgeInDays=90": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "60f009382b7417607290553a3f281cffe4dda11d43cf2cdb46df12c9de1a5375": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "19125e57084c807292904cc97ef81dad703861453fad6b5442cbe6b7f2886350": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "3e0e7fe41f3731007f03e6d984ba456a041b1a769d5a8be31262d9abaebea050": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "b63f84c49d7b4d5b34430abcd25f3cf55710254c90b0bbd2aca8d7ece7cab533": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "ea3c2ca4088fed6d0f3c7b787de062ece24fea2685113d00cecd236f4e447288": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "https://clients2.google.com/cr/report",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://www.w3.org/2000/svg",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0013384819030761719,
+      "entropie_globale": 0.589625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 7,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1413,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 43,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['https://clients2.google.com/cr/report', 'http://www.w3.org/2000/svg'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\35194440.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

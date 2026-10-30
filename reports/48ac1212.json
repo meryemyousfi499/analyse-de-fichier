@@ -1,0 +1,303 @@
+{
+  "id_rapport": "48ac1212",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 7.295,
+  "metadonnees": {
+    "nom": "362c1082.json",
+    "extension": "json",
+    "taille_octets": 25420,
+    "taille_lisible": "24.8 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\362c1082.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:25",
+    "date_modification": "2026-10-29T00:52:25",
+    "date_acces": "2026-10-29T09:21:07",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "97421babbc91896883c8babd2ea295f8bb675af74edf94a7938edd6a06e7e51a",
+    "sha1": "40ec17beb14520cd60b3f740ad77979f5f97160d",
+    "md5": "7df91f7715c48d048e68f7e1d2a1a7b8",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.977,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.98
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "Cgpub3RlYm9va2xtEkYSD2FydGlmYWN0c19tZWRpYRozCiQ0MmI0YmU5Yi1l..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "notebooklm.google.com",
+      "contribution.usercontent.google.com",
+      "96F.cn",
+      "o.ru",
+      "c.cn",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://notebooklm.google.com/\\nHostUrl=https://contribution.usercontent.google.com/download?c=Cgpub3RlYm9va2xtEkYSD2FydGlmYWN0c19tZWRpYRozCiQ0MmI0YmU5Yi1lZWRjLTRkOTItOGE3MS1lYTdkNGY5MzRmOWUSCxIHEMjZnI_KFBgB&filename=Moroccan_Folktales_From_Circle_to_Grid.pptx&opi=96797242&authuser=0\\n"
+    ],
+    "emails": [
+      "Zi@N.Zr",
+      "_@6.Nk",
+      "R@I.BXG",
+      "2Qu@e.My"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "u:\\",
+      "x:\\",
+      "f:\\",
+      "w:\\",
+      "l:\\",
+      "X:\\",
+      "d:\\",
+      "Y:\\",
+      "G:\\",
+      "O:\\",
+      "e:\\",
+      "b:\\",
+      "U:\\",
+      "m:\\",
+      "k:\\",
+      "K:\\",
+      "V:\\",
+      "z:\\",
+      "D:\\",
+      "R:\\",
+      "B:\\",
+      "L:\\",
+      "g:\\",
+      "j:\\",
+      "W:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "5e08116c41cd65edb01980dc3e407ac5"
+      ],
+      "sha1": [
+        "0419e6870f3143a03592dc2ecc48ccecf638b361"
+      ],
+      "sha256": [
+        "f05b37af25a0b57a70de3c97631460e2fd35880c9a5931a3434a62b3e59ce885"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 11
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "notebooklm.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "contribution.usercontent.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "96F.cn": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "o.ru": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "c.cn": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://notebooklm.google.com/\\nHostUrl=https://contribution.usercontent.google.com/download?c=Cgpub3RlYm9va2xtEkYSD2FydGlmYWN0c19tZWRpYRozCiQ0MmI0YmU5Yi1lZWRjLTRkOTItOGE3MS1lYTdkNGY5MzRmOWUSCxIHEMjZnI_KFBgB&filename=Moroccan_Folktales_From_Circle_to_Grid.pptx&opi=96797242&authuser=0\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "f05b37af25a0b57a70de3c97631460e2fd35880c9a5931a3434a62b3e59ce885": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0024242401123046875,
+      "entropie_globale": 0.622125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0768,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 18,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\362c1082.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

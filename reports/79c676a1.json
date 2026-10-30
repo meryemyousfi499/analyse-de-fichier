@@ -1,0 +1,387 @@
+{
+  "id_rapport": "79c676a1",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 19.436,
+  "metadonnees": {
+    "nom": "presentation-ultra-hq-2025-11-07T02-26-25.pdf",
+    "extension": "pdf",
+    "taille_octets": 4126259,
+    "taille_lisible": "3.9 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\presentation-ultra-hq-2025-11-07T02-26-25.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2025-11-07T03:26:25",
+    "date_modification": "2025-11-07T03:26:25",
+    "date_acces": "2026-10-28T12:57:32",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://www.magicslides.app/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "808e3260f5cac2aeafde2f7eafb4e00a582b3fc2f63ad087997886741c69f531",
+    "sha1": "68358aac0cb85e4cb981101dafb8143b05c71ff6",
+    "md5": "ff2d3cb93775e18712b3e58cbf727656",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": true,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 5
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.55,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.61,
+      7.18,
+      6.41,
+      7.72,
+      7.53,
+      7.11,
+      7.78,
+      6.7,
+      7.61,
+      7.75,
+      7.47,
+      7.54,
+      7.07,
+      7.66,
+      7.56,
+      7.47,
+      7.2,
+      7.58,
+      7.91,
+      6.98,
+      7.54,
+      7.52,
+      7.16,
+      7.92,
+      7.0,
+      7.57,
+      7.84,
+      7.87,
+      6.89,
+      7.54,
+      7.8,
+      7.95,
+      7.24,
+      7.33,
+      7.62,
+      7.11,
+      7.37,
+      7.63,
+      7.38,
+      7.63,
+      7.52,
+      7.25,
+      7.85,
+      7.04,
+      7.93,
+      7.17,
+      7.44,
+      7.27,
+      7.64,
+      7.67,
+      6.93,
+      7.88,
+      7.68,
+      7.87,
+      7.52,
+      7.91,
+      7.86,
+      7.24,
+      7.95,
+      7.83,
+      7.02,
+      7.64,
+      7.78
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "N:\\zgyn~V\u0015q6",
+      "g:\\ˊ\u0013n4Sum4,",
+      "v:\\W0k\\W5_Xt7HG",
+      "H:\\S)A2\u0012\u0019\u001895\u0013\u0011ȵ\u0005\u0011\b-&OF&T\u0012\u0003;9",
+      "u:\\^\f-\u0000tb\u0000)L\u0018V\u0003,.\u0018η#^\u0000@tܛӠ\u0019",
+      "t:\\s\u0000f\t\u0000\u0000&\u0003\u001b\u001eT\u0000",
+      "X:\\`\u0016)h1+C\u0014-Y1\u000fKREifmoVTs\u0005",
+      "D:\\\u0015\u0016JN=oώ\u0001+\u0018",
+      "u:\\W\u0007EjIo}7",
+      "J:\\Z2w\u0019K_\u001a-",
+      "M:\\Z1\u001as",
+      "x:\\",
+      "S:\\^]\u000e}\u0011(=\u0013\u000e22=Q\u001apc@\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001fZQ\u0000\u001eõ\u0014UM"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "F6C4EB8B15DC9D4796FE4A567528AC2F"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [
+      {
+        "indicator": "/JavaScript",
+        "description": "Marqueur PDF présent : /JavaScript"
+      }
+    ],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.3935107231140137,
+      "entropie_globale": 0.94375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 1,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1008,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 31,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "PDF contenant du JavaScript embarque et/ou une action /Launch.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\presentation-ultra-hq-2025-11-07T02-26-25.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 15.454,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.035,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 5.343,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 3.029,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "detected",
+        "duration_s": 0.015,
+        "summary": "1 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "/JavaScript",
+            "description": "Marqueur PDF présent : /JavaScript"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

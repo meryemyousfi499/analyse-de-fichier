@@ -1,0 +1,383 @@
+{
+  "id_rapport": "e47f627f",
+  "id_parent": "7338e74d",
+  "profondeur": 1,
+  "origine": "extrait_archive",
+  "duree_analyse_s": 12.48,
+  "metadonnees": {
+    "nom": "part-00007.json.gz",
+    "extension": "gz",
+    "taille_octets": 7768247,
+    "taille_lisible": "7.4 Mo",
+    "mime_reel": "application/x-gzip",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rw8dkhkr\\DataTP2Partie2\\reddit2\\reddit2\\part-00007.json.gz",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T19:52:41",
+    "date_modification": "2026-10-29T19:52:41",
+    "date_acces": "2026-10-29T19:52:41",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "gzip",
+    "extension_declaree": ".gz",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "c1765d4a1289afd04d5512b05de9ef09d32f0e355d41fa32baeb1f20d1ae7521",
+    "sha1": "2bf7efa32c807dca5598cc61d3d3dc296355cc55",
+    "md5": "3a15a4b7c891e6395657a80879760b21",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "gzip",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [
+      "H-@U.jk"
+    ],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "w:\\ڝCf\u001eL\u001f",
+      "Y:\\O)-\u0014C\f\u0006KuqP0\u0017Z\tv[",
+      "G:\\3&-k.k\u0013ރ\u001d\u001b\u001f۶7Jm\u0006zqҲ\u001eM",
+      "Y:\\۝\u0012\u001c^Ca",
+      "V:\\j\u001fuOH\u0004\u0015\u0011;\u0015e",
+      "T:\\T\u001eY^McF\u000bS",
+      "j:\\\u0013g\u0000\u001f`͎",
+      "I:\\ItOcV\u0001+\u0017[;#\u0010ZΌǇ\u0004!]",
+      "M:\\vB\u0011򌘦P\u0002\u000e\f",
+      "m:\\\u000e\u000fI",
+      "I:\\v!)\b U~;DTA~\u001d@1\u001aR\u000f'd&\u0012#κ",
+      "s:\\+",
+      "g:\\Tŀ\u0005\u0019\u0013b",
+      "l:\\Tڵ9\b5O",
+      "F:\\$NI \u001dˣX{52)\u0007vC]\u0016ǫ04u",
+      "I:\\Ğes̄ t\u00063ʠ^@BN!JIGf",
+      "x:\\%dR\u0014$9c\u0016PIVFˊ\u000brDiMy=O90_ځI\u0002n.\f\u0019(P+t",
+      "a:\\ξԨ0W$@~gJAL",
+      "y:\\n\tAh\u0010yH4s",
+      "E:\\\f",
+      "g:\\\u0010f}\u0010J%rb\u001fD2#H˫H\u0006n_QBp밦7592g CȦuB\u001d6i\u0012»,Ճ\u001cl\u000f歎E",
+      "I:\\ן\u0012zd9\u0001!c{\u0017p\fnK(Iɿ#",
+      "D:\\~_\u0005\u000e\u0014j\u0014f²P",
+      "W:\\{.P\f}JE\\$߬",
+      "p:\\_\u0002z6\u001d_nX\u0003^ג{\u000b\u001eOT",
+      "v:\\\u00047m\u001bא6X)]q\u0013wZ\u0011EBb\u0018\u0002^]8U,&\\",
+      "f:\\8E\u0012enu(9\u001d`z1x\u0000\u0013w{HWEڞтd",
+      "B:\\PU\u001d\u000eB",
+      "t:\\B\u000e",
+      "i:\\\u0001"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.7408377647399902,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0851,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 10,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_rw8dkhkr\\DataTP2Partie2\\reddit2\\reddit2\\part-00007.json.gz",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 9.97,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 8.982,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 7.847,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

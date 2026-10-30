@@ -1,0 +1,420 @@
+{
+  "id_rapport": "238076b2",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 28.238,
+  "metadonnees": {
+    "nom": "demande de stage PFA (1).eml",
+    "extension": "eml",
+    "taille_octets": 451470,
+    "taille_lisible": "440.9 Ko",
+    "mime_reel": "text/plain",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\demande de stage PFA (1).eml",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-07-06T15:54:08",
+    "date_modification": "2026-07-06T16:06:59",
+    "date_acces": "2026-10-28T12:33:58",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://mail.google.com/\nHostUrl=https://mail-attachment.googleusercontent.com/attachment/u/2/?ui=2&ik=d39f82ab2e&attid=0.1&permmsgid=msg-f:1869805735368305516&th=19f2e268df9dab6c&view=att&zw&disp=safe&saddbat=ANGjdJ-FkEjaCa6s0tB-h4RI7yi5lmQRCMBagZ8DDPjQCfVfR2sN46rvfkHcooCzPKdmJsL3Q6Uyq0KqKBM1_MNKHwEV_1rf3NwaXP0BZn_d3EXXilicoSllVKQLbwsrMhBei5gSNQdD4uHs0KnszkITkUNl4beeMcvSvsmzcKjQe2LkEpRF3fTs0yhbbrS0fYimVyfpn9V55YfLjXHs5n6HdkITuybDqkEX1SVOhxPb-sGFnmJhSoEfKxGj6g-L9v9p6mIN-wsUvdhCodgFEGz59AL408CqRaSqhg_rcvHkBqZKQ9ZKVoOKd7V-4OB7pS39T1RqBYlbsbGlaVmcGe5gwUB93hpWlcSJHthTl7QKbWg5TgWK7WjNpUo2nPdJAo9eQx4aeFeGrDS_qWWAI0sZDBXu4Uys9Ysi5Jd5yiLcvlWNx7feLIwlhd2-pIMw6DiWMY2hEXpfCAigwDkbvjpCDGDvtYzVwwr9bmA_w4JZrqw2LjrqJh987lklZRgGiZiKq0QAQ9TIQjhc766oIrQKC8dtp7ZLNTUQkeDtBzoSr_-4qjVt2gUA0kq__3c6ojZLfgZQWmbOstwp4kaQ_axifVoo05hbTUzJIfx5Foj0xpMZ3tYblrhgvwwGx642KGFiqIg3zuScQLey92i35yLOtpIi6kDdLAtVk-Cpovv_jQMuE1-DFTmFT2-CYPFizSb_flEz11rwxkAGlsujHtT9AKzeGC07KGg9boSiw6ky4KChKSPmfSKyHIVSgJ1zv55zFSx8yQtglL9_afN91XhI6Jmb-Nf_pKnhvGHTKQSYovz9krm2yr1IaAoRN8pIzc1IEZWhWz95hFuhddo_0fcv-2lSjzDPXu5sJUEVovz8_tZtfP9FrBxMA_7KpQpaOOInVgBoohyKzQ0nLs_lhy1qxJ8RBm0E4T91IghyZVPoWrCGPB75602fC6boByDkjjPlZy_wogHxQm3sDUeNNq3nwxW5RBGg0nilJNRQIRVAftMa1DqRhbebDDY12S1W8UJxvLyoMla69P_y8gg3PwTcAcGkTN8cSHWjV6EIc2Sv5QkH4JS1UyDmjzNidVrtOB_8vLNwUAHPR_cTbgoDQvCaKkrdvYrSPgE0S4P2sw\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".eml",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "29eb50da47344ad57634cb6cb7a3e464ef8acf617705357ab1e90a01714d6d03",
+    "sha1": "c12b529e91f7e0962d2ee449a6eeeb482488ba4d",
+    "md5": "1889e043f8240572ebd428003f4fb38f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.063,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.13,
+      6.04,
+      6.01,
+      6.04,
+      6.04,
+      6.04,
+      5.95
+    ],
+    "base64": {
+      "nombre_blobs_base64": 2,
+      "exemple": "GjAouuyt5Y/D/mgEXh1FKXzAI6g6mNL6X2u4yiJfVpAjxLqNtxeT5FIr85Oh..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "15.21.181.8",
+      "15.21.181.9",
+      "15.21.181.6"
+    ],
+    "domaines": [
+      "gmail.com",
+      "DU2PR04CA0210.eurprd04.prod.outlook.com",
+      "DB9PR01MB9007.eurprd01.prod.exchangelabs.com",
+      "DB5PEPF00014B97.eurprd02.prod.outlook.com",
+      "DU2PR04CA0210.outlook.office365.com",
+      "protection.outlook.com",
+      "mail-pf1-x42d.google.com",
+      "DB5PEPF00014B97.mail.protection.outlook.com",
+      "google.com",
+      "mx.google.com",
+      "1e100.net",
+      "mail.gmail.com"
+    ],
+    "urls": [],
+    "emails": [
+      "m.boukourizia@tamwilcom.ma",
+      "meryemyousfi339@gmail.com",
+      "CA+xmTcqYXmnXLiM2kV9zi8_tRdzVDyr4prf_BacMKN-o8+6u+w@mail.gmail.com"
+    ],
+    "exclus_domaines_legitimes": {
+      "domaines": 2
+    },
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 15
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {
+      "15.21.181.8": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "15.21.181.9": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "15.21.181.6": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "gmail.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "DU2PR04CA0210.eurprd04.prod.outlook.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "DB9PR01MB9007.eurprd01.prod.exchangelabs.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "DB5PEPF00014B97.eurprd02.prod.outlook.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "DU2PR04CA0210.outlook.office365.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "gmail.com",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.04305553436279297,
+      "entropie_globale": 0.757875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0338,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 40,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['gmail.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\demande de stage PFA (1).eml",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 2.592,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 1.333,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.345,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

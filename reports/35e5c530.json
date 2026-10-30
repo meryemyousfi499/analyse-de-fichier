@@ -1,0 +1,590 @@
+{
+  "id_rapport": "35e5c530",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 30.796,
+  "metadonnees": {
+    "nom": "3d155bdc.json",
+    "extension": "json",
+    "taille_octets": 17485,
+    "taille_lisible": "17.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\3d155bdc.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:25",
+    "date_modification": "2026-10-29T00:52:25",
+    "date_acces": "2026-10-29T10:02:05",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "f0db28e6d31689357baed976125f48a2929a7c7f683210baa9187ea4f6b290fa",
+    "sha1": "ea7c5a551b12389f623fc545fa80d08b679b5ed3",
+    "md5": "ee31dfde31b13044d59f77a6a83902a9",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.687,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.69
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "5.4.62.5",
+      "4.32.5.4",
+      "52.5.4.72",
+      "5.4.82.5",
+      "5.4.102.5",
+      "4.112.5.4",
+      "169.254.170.2",
+      "169.254.169.254",
+      "127.0.0.1",
+      "1.1.1.1",
+      "1.3.1.1",
+      "1.2.2.1",
+      "1.2.1.1"
+    ],
+    "domaines": [
+      "github.com",
+      "go.mongodb.org",
+      "golang.org",
+      "yaml.org",
+      "loadedaccept-encodingaccept-languageavx512vpopcntdqsts.windows.net",
+      "login.chinacloudapi.cn",
+      "login.microsoftonline.com",
+      "management.core.windows.net",
+      "www.w3.org",
+      "schemas.xmlsoap.org",
+      "management.core.chinacloudapi.cn",
+      "management.core.usgovcloudapi.net",
+      "dgithub.com",
+      "docs.oasis-open.org",
+      "kubernetes.io",
+      "dochub.mongodb.org",
+      "sts.amazonaws.com",
+      "learn.microsoft.com",
+      "www.mongodb.com",
+      "docs.mongodb.com",
+      "runtime.link",
+      "idna.info",
+      "cases.info",
+      "0go.mongodb.org",
+      "0github.com",
+      "1go.mongodb.org",
+      "2go.mongodb.org",
+      "2github.com",
+      "3go.mongodb.org",
+      "3github.com",
+      "4github.com",
+      "5go.mongodb.org",
+      "6go.mongodb.org",
+      "7go.mongodb.org",
+      "7github.com",
+      "8go.mongodb.org",
+      "8github.com",
+      "9go.mongodb.org",
+      "9github.com",
+      "Bgo.mongodb.org",
+      "Bgithub.com",
+      "Egithub.com",
+      "Fgithub.com",
+      "Jgithub.com",
+      "Lgithub.com",
+      "Mgithub.com",
+      "Ngithub.com",
+      "Ogithub.com",
+      "Pgithub.com",
+      "Qgithub.com"
+    ],
+    "urls": [
+      "https://%v/%v/oauth2/v2.0/authorizexml:",
+      "http://169.254.169.254/latest/api/tokenpbkdf2:",
+      "http://www.w3.org/2003/05/soap-envelopefound",
+      "https://https://management.core.chinacloudapi.cn/fips140:",
+      "https://management.core.usgovcloudapi.net/parse",
+      "https://go.dev/doc/godebug#go-1casgstatus:",
+      "https://aka.ms/azsdk/go/identity/troubleshoot#loadBalanced",
+      "https://go.dev/issue/66821):",
+      "https://login.microsoftonline.com/",
+      "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsdexpected",
+      "https://pkg.go.dev/go.mongodb.org/mongo-driver/mongo#hdr-Potential_DNS_Issues:",
+      "https://go.dev/pkg/crypto/rsa#hdr-Minimum_key_size)no",
+      "https://aka.ms/azsdk/go/identity/troubleshoot#dac",
+      "http://dochub.mongodb.org/core/tools-dbpath-deprecated",
+      "https://sts.amazonaws.com/?Action=AssumeRoleWithWebIdentity&RoleSessionName=%s&RoleArn=%s&WebIdentityToken=%s&Version=2011-06-15could",
+      "https://aka.ms/azsdk/go/identity/docs#DefaultAzureCredential",
+      "https://learn.microsoft.com/partner-center/find-ids-and-domain-names%s.GetToken():",
+      "https://aka.ms/servicefabricmiThe",
+      "https://www.mongodb.com/supportability/cosmosdbYou",
+      "https://www.mongodb.com/supportability/documentdbfound",
+      "http://docs.mongodb.com/database-tools/mongorestore/",
+      "https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2F%25v%2F%25v%2Foauth2%2Fv2.0%2Fauthorizexml%3A/general",
+      "https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fhttps%3A%2F%2Fmanagement.core.chinacloudapi.cn%2Ffips140%3A/general"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "L:\\",
+      "n:\\",
+      "Y:\\",
+      "l:\\",
+      "t:\\",
+      "g:\\"
+    ],
+    "chemins_unix": [
+      "/etc/mdns.allowunknown",
+      "/etc/resolv.confhostLookupOrder=non-IPv4",
+      "/etc/hostsinvalid",
+      "/etc/nsswitch.confinvalid",
+      "/bin/himdsAZURE_KUBERNETES_CA_FILEAZURE_KUBERNETES_CA_DATAsha3:",
+      "/var/opt/azcmagent/tokensAZURE_KUBERNETES_SNI_NAMEtesting",
+      "/var/run/secrets/kubernetes.io/serviceaccount/tokenURI"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [
+      "cmd.exe"
+    ],
+    "hashs_embarques": {
+      "md5": [
+        "34e5a2127d9e183a6a74426a8092af5e",
+        "B10B11B12B13B14B15B16B17B18B19B2",
+        "B20B21B22B23B24B25B26B27B28B29B3",
+        "B30B31B32B33B34B35B36B37B38B39B4",
+        "B40B41B42B43B44B45B46B47B48B49B5",
+        "EDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+        "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+      ],
+      "sha1": [
+        "db37fc59f5a17c8add1099f8d168266daad6316d",
+        "7536fd7f3d67f5115de3eb2e271b327b7ce329b9"
+      ],
+      "sha256": [
+        "51225270d5e5fe70ffce61489ad8865b5834ec5cdc89420d6a49ceb38d2530de",
+        "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "68e328d70a0c9f4d3399877636a721ae667f6eaeaeaaf0bcdd72110f766d41f0",
+        "25d71935e7be5b3a1b9e7953558bb9b2749229687cf3cd39c7f99d3f42672fae",
+        "5614d73739c4cb953979c5b476501cda147b86386834ff88f636587787e0f1e9",
+        "151980c76045461a035541e4715980704f7cf5d4baabc792b5831ad82e0f352b",
+        "eb5c9593356a453fa3d606d0a7b939e5709e67a6354ae0c100932b4968b0aff9",
+        "57c34c5db143984eafbc04101be885deb0c256ea5580fde907eae9e651564ac4",
+        "d9a2bfed8f78ccf55e607f0a56c8209adb348363078f1f6aa8ffa893060fe816",
+        "1f009943335f345924036a535645b81aa2c9ed06ae1a52257385744e7ca237db"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "powershell",
+        "occurrences": 1
+      },
+      {
+        "chaine": "cmd.exe",
+        "occurrences": 1
+      },
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      },
+      {
+        "chaine": "wget",
+        "occurrences": 1
+      },
+      {
+        "chaine": "-encodedcommand",
+        "occurrences": 1
+      },
+      {
+        "chaine": "writeprocessmemory",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 127
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "5.4.62.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "4.32.5.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "52.5.4.72": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "5.4.82.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "5.4.102.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "github.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": true,
+          "nombre_urls_malveillantes": "55638"
+        }
+      },
+      "go.mongodb.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "golang.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "yaml.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 15,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "loadedaccept-encodingaccept-languageavx512vpopcntdqsts.windows.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://%v/%v/oauth2/v2.0/authorizexml:": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2F%25v%2F%25v%2Foauth2%2Fv2.0%2Fauthorizexml%3A/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://169.254.169.254/latest/api/tokenpbkdf2:": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.w3.org/2003/05/soap-envelopefound": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://https://management.core.chinacloudapi.cn/fips140:": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fhttps%3A%2F%2Fmanagement.core.chinacloudapi.cn%2Ffips140%3A/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://management.core.usgovcloudapi.net/parse": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "51225270d5e5fe70ffce61489ad8865b5834ec5cdc89420d6a49ceb38d2530de": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "68e328d70a0c9f4d3399877636a721ae667f6eaeaeaaf0bcdd72110f766d41f0": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "25d71935e7be5b3a1b9e7953558bb9b2749229687cf3cd39c7f99d3f42672fae": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      },
+      "5614d73739c4cb953979c5b476501cda147b86386834ff88f636587787e0f1e9": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "github.com",
+        "type": "domaines",
+        "source": "urlhaus"
+      },
+      {
+        "indicateur": "golang.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "yaml.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "type": "hashs",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0016674995422363281,
+      "entropie_globale": 0.585875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 6,
+      "nb_urls": 23,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.273,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 46,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['github.com', 'golang.org', 'yaml.org'], URLs: aucune, hashs embarques: ['AAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC']."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\3d155bdc.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

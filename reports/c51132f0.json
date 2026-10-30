@@ -1,0 +1,438 @@
+{
+  "id_rapport": "c51132f0",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 13.823,
+  "metadonnees": {
+    "nom": "2b642ba7.json",
+    "extension": "json",
+    "taille_octets": 12754,
+    "taille_lisible": "12.5 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\2b642ba7.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:24",
+    "date_modification": "2026-10-29T00:52:24",
+    "date_acces": "2026-10-29T05:10:00",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "d143e7ed7ecc8fd552d493c104c694ca853d8583ae4c0109f022089cb85604b4",
+    "sha1": "e4d13ea89918003238b6cda57c7271824c7489b1",
+    "md5": "84fa1a284987c02f32bd2b9546e43f7b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.762,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.76
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "5.5.13.4"
+    ],
+    "domaines": [
+      "link.springer.com",
+      "springer.com",
+      "springerlink.com",
+      "doi.org",
+      "www.w3.org",
+      "ns.adobe.com",
+      "purl.org",
+      "crossref.org",
+      "prismstandard.org",
+      "www.niso.org",
+      "www.aiim.org",
+      "springernature.com",
+      "orcid.org",
+      "yahoogroups.com",
+      "magazine.com",
+      "www.pdftk.com",
+      "lowagie.com",
+      "cybersecurityventures.com",
+      "arxiv.org",
+      "creativecommons.org",
+      "crossmark.crossref.org",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://link.springer.com/article/10.1186/s13638-025-02477-6\\nHostUrl=https://link.springer.com/content/pdf/10.1186/s13638-025-02477-6.pdf\\n",
+      "https://doi.org/10.1186/s13638-025-02477-6)/Title(Deep",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "http://ns.adobe.com/xap/1.0/",
+      "http://ns.adobe.com/pdf/1.3/",
+      "http://purl.org/dc/elements/1.1/",
+      "http://crossref.org/crossmark/1.0/",
+      "http://prismstandard.org/namespaces/basic/2.0/",
+      "http://ns.adobe.com/pdfx/1.3/",
+      "http://www.niso.org/schemas/jav/1.0/",
+      "http://ns.adobe.com/xap/1.0/mm/",
+      "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#",
+      "http://www.aiim.org/pdfa/ns/id/",
+      "http://springernature.com/ns/xmpExtensions/2.0/",
+      "http://springernature.com/ns/xmpExtensions/2.0/authorInfo/",
+      "http://www.aiim.org/pdfa/ns/extension/",
+      "http://www.aiim.org/pdfa/ns/schema#",
+      "http://www.aiim.org/pdfa/ns/property#",
+      "http://www.aiim.org/pdfa/ns/type#",
+      "http://www.aiim.org/pdfa/ns/field#",
+      "https://doi.org/10.1186/s13638-025-02477-6",
+      "http://orcid.org/0009-0009-4672-8607",
+      "http://ns.adobe.com/xap/1.0/sType/Part#",
+      "http://ns.adobe.com/xap/1.0/t/pg/",
+      "http://ns.adobe.com/xap/1.0/sType/Font#",
+      "http://ns.adobe.com/tiff/1.0/",
+      "http://ns.adobe.com/exif/1.0/",
+      "https://cybersecurityventures.com/hackerpocalypse-cybercrime-report-2016/)",
+      "http://arxiv.org/2305.17473)",
+      "http://arxiv.org/1412.6980)",
+      "http://arxiv.org/1712.02029)",
+      "http://ns.adobe.com/xap/1.0/sType/ResourceRef#",
+      "http://ns.adobe.com/xap/1.0/sType/Dimensions#",
+      "http://springernature.com/ns/xmpExtensions/2.0/editorInfo/",
+      "http://springernature.com/ns/xmpExtensions/2.0/seriesEditorInfo/",
+      "http://orcid.org/0009-0009-4672-8607)",
+      "http://creativecommons.org/licenses/by-nc-nd/4.0/)",
+      "http://crossmark.crossref.org/dialog/?doi=10.1186/s13638-025-02477-6&domain=pdf)"
+    ],
+    "emails": [
+      "prism-wg@yahoogroups.com",
+      "info@prismstandard.org",
+      "W@.H.H.H.H.H.H.H.D.D.D.D.D.D.D.DN"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "c:\\",
+      "s:\\",
+      "P:\\",
+      "y:\\",
+      "t:\\",
+      "q:\\",
+      "I:\\",
+      "T:\\",
+      "D:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "bbd2bdac9bb3b29c85ecd40ddb200b47",
+        "97C63461F5C6E411B47C86F789762FAC",
+        "CB3922DCB7C1E4119116AB34D81C299E",
+        "D53570733F1AE9118ED2AA710E6871AE",
+        "5D20892493BFDB11914A8590D31508C8",
+        "BD9FD2D1191AE9119720BECECD8DF2DE",
+        "222181770DC1EA11B67EB71D56208C82",
+        "688159C71A9CEA118D58B0568F112091",
+        "D7EED071A2E2E511A229E1EA5DDA7EF6",
+        "18ce1a44d81ba24d8d868c8e607385d0"
+      ],
+      "sha1": [
+        "50335a24909935c919494e40826a8828fe6dc8a1"
+      ],
+      "sha256": [
+        "553f68a1c9cdf90af0bf76277ba53585c01bebe93c2ea45bac625fe160321c0f"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 99
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {
+      "5.5.13.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "link.springer.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "springer.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "springerlink.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "doi.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://link.springer.com/article/10.1186/s13638-025-02477-6\\nHostUrl=https://link.springer.com/content/pdf/10.1186/s13638-025-02477-6.pdf\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://doi.org/10.1186/s13638-025-02477-6)/Title(Deep": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/xap/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/pdf/1.3/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 45,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "553f68a1c9cdf90af0bf76277ba53585c01bebe93c2ea45bac625fe160321c0f": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "springer.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "doi.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://ns.adobe.com/xap/1.0/",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://ns.adobe.com/pdf/1.3/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0012163162231445313,
+      "entropie_globale": 0.59525,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 38,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1086,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['springer.com', 'doi.org'], URLs: ['http://ns.adobe.com/xap/1.0/', 'http://ns.adobe.com/pdf/1.3/'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\2b642ba7.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

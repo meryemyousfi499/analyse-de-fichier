@@ -1,0 +1,439 @@
+{
+  "id_rapport": "57accf6c",
+  "id_parent": "8a986744",
+  "profondeur": 1,
+  "origine": "extrait_archive",
+  "duree_analyse_s": 39.571,
+  "metadonnees": {
+    "nom": "tmax-2.zip",
+    "extension": "zip",
+    "taille_octets": 3712679,
+    "taille_lisible": "3.5 Mo",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f7dydanf\\Datasets\\tmax-2.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T17:58:59",
+    "date_modification": "2026-10-29T17:58:59",
+    "date_acces": "2026-10-29T17:58:59",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "f286f7059c4aacd954158a3b9acfead450d01b24e149ce65f43f525af3b0b698",
+    "sha1": "af749cc14b8789a002795c94395857dba1bb2b4a",
+    "md5": "682488f867b1f54f86f30b83207a9742",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [
+      "7j@SY.xv"
+    ],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "A:\\(125x",
+      "U:\\b;",
+      "I:\\;]",
+      "U:\\\u0007\u001b0%\u0005\u000eV\u0014\u0014Y\u001a\u001aᚋtk\u0007Hs\u0006Cm6#",
+      "a:\\\u0017sCz=ә&+؂Nբ",
+      "q:\\j",
+      "J:\\4'2\u0013{z\u0018ù`$\u0015\\H\u0018V3",
+      "S:\\\u0014%M\u0012~hD\u00141Z[FY\u001ec\u001b(",
+      "c:\\\u0015E",
+      "y:\\\u000f[)ȹ=",
+      "F:\\IU",
+      "A:\\\u0010",
+      "j:\\JT\u0005"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.354068660736084,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0478,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00000.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00001.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00002.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00003.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00004.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00005.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00006.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00007.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00008.csv.gz",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_46lnr392\\tmax-2\\part-00009.csv.gz"
+    ],
+    "erreur": null
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "b65f0d42",
+      "nom": "part-00000.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "0bb221cc",
+      "nom": "part-00001.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "ada2bb77",
+      "nom": "part-00002.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "2cb1a446",
+      "nom": "part-00003.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "bf8f0519",
+      "nom": "part-00004.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "761fc6b6",
+      "nom": "part-00005.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "60d1dc99",
+      "nom": "part-00006.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "7f9fab82",
+      "nom": "part-00007.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "bf9466b1",
+      "nom": "part-00008.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "425fc064",
+      "nom": "part-00009.csv.gz",
+      "score": 1,
+      "verdict": "inconclusive"
+    }
+  ],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_f7dydanf\\Datasets\\tmax-2.zip",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 5.353,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.011,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 4.98,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 3.516,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "archive : le contenu extrait est analysé fichier par fichier",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "extraction_archive",
+        "lance": true,
+        "raison": "archive détectée ; contenu ré-analysé fichier par fichier"
+      },
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "archive : analyse du contenu extrait"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

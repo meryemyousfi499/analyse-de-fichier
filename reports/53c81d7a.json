@@ -1,0 +1,243 @@
+{
+  "id_rapport": "53c81d7a",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 8.423,
+  "metadonnees": {
+    "nom": "356de04f.json",
+    "extension": "json",
+    "taille_octets": 5248,
+    "taille_lisible": "5.1 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\356de04f.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:25",
+    "date_modification": "2026-10-29T00:52:25",
+    "date_acces": "2026-10-29T09:17:55",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "ed0a37d067542d769750164f0bfedb324ee06c0bd5a0a23cc9bbeae76d2da6cf",
+    "sha1": "125140d50dbc4f3ba908dcdc292a6abcecc108dc",
+    "md5": "b08da053ff988a6269c9fd958464940a",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.027,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.03
+    ],
+    "base64": {
+      "nombre_blobs_base64": 2,
+      "exemple": "com/v1/download/5jnbl61x7hm2fp5rtm1l2lmtr4lhy1jnw7tp65xkz0jh..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.ilovepdf.com",
+      "api88.ilovepdf.com",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://www.ilovepdf.com/\\nHostUrl=https://api88.ilovepdf.com/v1/download/5jnbl61x7hm2fp5rtm1l2lmtr4lhy1jnw7tp65xkz0jhktvrc7gfpds8f4w73nw523xnzbAp3324kfnnynd6b60Aqcclckyx69rvd8xdqvftl370jwddl60pf2z6lm3rAkhnz31hy787cv40zqgpcz6k54qlhfr0d77Ax7r3g3w2f91A4hw1\\n"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "h:\\",
+      "G:\\",
+      "O:\\",
+      "E:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "535233953b18f4ee7c44b21b30c4651c",
+        "EB9F7A90136DF4B9F83010F66066C026",
+        "3D782DAED4C10F0FCAE85781D6A990A8"
+      ],
+      "sha1": [
+        "2e9b55326ab3615f718fd5b0db4ce7f01adc232f"
+      ],
+      "sha256": [
+        "10ace814174e87a58db4c15e8bfbf829b5da2e63c4acaa52b91818f68baee8a3"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 5
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.ilovepdf.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "api88.ilovepdf.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://www.ilovepdf.com/\\nHostUrl=https://api88.ilovepdf.com/v1/download/5jnbl61x7hm2fp5rtm1l2lmtr4lhy1jnw7tp65xkz0jhktvrc7gfpds8f4w73nw523xnzbAp3324kfnnynd6b60Aqcclckyx69rvd8xdqvftl370jwddl60pf2z6lm3rAkhnz31hy787cv40zqgpcz6k54qlhfr0d77Ax7r3g3w2f91A4hw1\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "10ace814174e87a58db4c15e8bfbf829b5da2e63c4acaa52b91818f68baee8a3": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.00050048828125,
+      "entropie_globale": 0.628375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0441,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 9,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\356de04f.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

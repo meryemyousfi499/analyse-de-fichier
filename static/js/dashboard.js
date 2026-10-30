@@ -14,6 +14,62 @@ const ACTION_LABELS = {
   human_review: "Revue humaine requise",
 };
 
+// ---------------- Utilitaires ----------------
+// Les noms de fichiers, IOC et noms de sections viennent du fichier analysé
+// (donc d'un attaquant potentiel) : toujours échapper avant innerHTML.
+function esc(v) {
+  return String(v ?? "").replace(/[&<>"']/g, (c) => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+  ));
+}
+
+// Une "menace" peut être une chaîne (ancien format) ou un objet MITRE
+// ATT&CK {tactic, technique, attck_id, ...} : jamais afficher [object Object].
+function threatLabel(t) {
+  if (t == null) return "";
+  if (typeof t === "string") return t;
+  const base = [t.attck_id, t.technique].filter(Boolean).join(" ") || "technique inconnue";
+  return t.tactic ? `${base} (${t.tactic})` : base;
+}
+
+// Sépare menaces réelles (identifiants malveillants/suspects) et comportements
+// simplement informatifs. Gère les anciennes entrées (objets MITRE dans
+// menaces_detectees) et le nouveau format (menaces_detectees = menaces réelles,
+// comportements_informatifs = le reste).
+function splitThreats(e) {
+  const real = [];
+  const info = (e.comportements_informatifs || []).map(threatLabel);
+  (e.menaces_detectees || []).forEach((t) => {
+    if (t && typeof t === "object") {
+      const mal = (t.malicious_identifiers_count || 0) + (t.suspicious_identifiers_count || 0);
+      (mal > 0 ? real : info).push(threatLabel(t));
+    } else if (t) {
+      real.push(String(t));
+    }
+  });
+  return { real, info };
+}
+
+function parseTs(v) {
+  if (!v) return null;
+  const d = typeof v === "number" ? new Date(v * 1000) : new Date(v);
+  return isNaN(d) ? null : d;
+}
+
+const VERDICT_LABELS = {
+  clean: "Sain (analyse complète)",
+  suspect: "Suspect",
+  malicious: "Malveillant (preuve forte)",
+  inconclusive: "Non concluant (analyse incomplète)",
+};
+const VERDICT_COLORS = {
+  clean: "#3C6E52", suspect: "#B5652E", malicious: "#7A2A2A", inconclusive: "#B8863B",
+};
+const TOOL_STATUS_LABELS = {
+  ok: "ok", detected: "détection", error: "erreur", unavailable: "indisponible",
+  not_applicable: "non applicable", skipped: "non lancé", pending: "en attente",
+};
+
 // ---------------- Statut des moteurs ----------------
 async function loadEngineStatus() {
   try {
@@ -257,6 +313,7 @@ setInterval(refreshGlobalStats, 4000);
 // ---------------- Vue Sandbox ----------------
 const SANDBOX_STATUS_LABELS = {
   en_attente: "En attente",
+  en_attente_validation: "À valider",
   cle_api_absente: "Clé API absente",
   en_cours: "Test en cours",
   termine: "Terminé",
@@ -286,15 +343,21 @@ async function loadSandbox() {
       return;
     }
 
-    tbody.innerHTML = entries.map((e) => `
-      <tr class="sandbox-row" data-entry-id="${e.id}">
-        <td>${e.nom_original}</td>
-        <td style="color:${STATUS_COLORS[e.niveau_statique] || "#EDE6D5"}">${e.niveau_statique} (${e.score_statique})</td>
-        <td><span class="badge badge-${e.statut}">${SANDBOX_STATUS_LABELS[e.statut] || e.statut}</span></td>
-        <td>${e.verdict || "—"}</td>
-        <td>${(e.menaces_detectees || []).join(", ") || "—"}</td>
+    tbody.innerHTML = entries.map((e) => {
+      const t = splitThreats(e);
+      const menaces = t.real.length
+        ? esc(t.real.join(", "))
+        : (t.info.length ? `aucune menace · ${t.info.length} comportement(s) informatif(s)` : "—");
+      return `
+      <tr class="sandbox-row" data-entry-id="${esc(e.id)}">
+        <td>${esc(e.nom_original)}</td>
+        <td style="color:${STATUS_COLORS[e.niveau_statique] || "#EDE6D5"}">${esc(e.niveau_statique)} (${esc(e.score_statique)})</td>
+        <td><span class="badge badge-${esc(e.statut)}">${esc(SANDBOX_STATUS_LABELS[e.statut] || e.statut)}</span></td>
+        <td>${esc(e.verdict || "—")}</td>
+        <td>${menaces}</td>
         <td>${sandboxActionCell(e)}</td>
-      </tr>`).join("");
+      </tr>`;
+    }).join("");
 
     // Clic sur une ligne (hors boutons/liens) -> ouvre le rapport sandbox
     // récupéré, directement dans le panneau de détail du dashboard.
@@ -331,9 +394,9 @@ async function loadSandbox() {
 }
 
 function sandboxActionCell(e) {
-  const reportLink = `<a href="#" data-report-link="${e.report_id}">analyse statique</a>`;
-  if (e.statut === "cle_api_absente" || e.statut === "echec") {
-    return `<button class="mini-btn" data-submit-id="${e.id}">Soumettre</button> · ${reportLink}`;
+  const reportLink = `<a href="#" data-report-link="${esc(e.report_id)}">analyse statique</a>`;
+  if (e.statut === "cle_api_absente" || e.statut === "echec" || e.statut === "en_attente_validation") {
+    return `<button class="mini-btn" data-submit-id="${esc(e.id)}">Soumettre</button> · ${reportLink}`;
   }
   return `${reportLink}`;
 }
@@ -357,33 +420,52 @@ function openSandboxDetail(entryId) {
 
   title.textContent = `Rapport sandbox — ${e.nom_original}`;
 
+  const created = parseTs(e.created_at || e.horodatage_ajout);
+  const updated = parseTs(e.updated_at || e.horodatage_maj);
   const rows = [
     ["Statut", SANDBOX_STATUS_LABELS[e.statut] || e.statut],
     ["Niveau statique (analyse pré-sandbox)", `${e.niveau_statique} (score ${e.score_statique})`],
-    ["Ajouté à la file le", e.horodatage_ajout ? new Date(e.horodatage_ajout * 1000).toLocaleString("fr-FR") : "—"],
-    ["Dernière mise à jour", e.horodatage_maj ? new Date(e.horodatage_maj * 1000).toLocaleString("fr-FR") : "—"],
+    ["Ajouté à la file le", created ? created.toLocaleString("fr-FR") : "—"],
+    ["Dernière mise à jour", updated ? updated.toLocaleString("fr-FR") : "—"],
   ];
 
-  if (e.statut === "cle_api_absente") {
+  if (e.statut === "en_attente_validation") {
+    rows.push(["Détail", "Ce fichier justifie un test comportemental, mais il n'a PAS été envoyé : la sandbox est un service externe (Hybrid Analysis) et l'envoi automatique est désactivé. Cliquez sur \"Soumettre\" pour autoriser le partage de ce fichier."]);
+  } else if (e.statut === "cle_api_absente") {
     rows.push(["Détail", "Ce fichier a été identifié comme suspect mais n'a pas encore été envoyé au sandbox (clé API Hybrid Analysis absente). Configurez HYBRID_ANALYSIS_API_KEY puis cliquez sur \"Soumettre\"."]);
   } else if (e.statut === "en_attente") {
     rows.push(["Détail", "En file d'attente, sera soumis au sandbox sous peu."]);
   } else if (e.statut === "en_cours") {
     rows.push(["Détail", "Fichier en cours d'exécution dans la machine virtuelle jetable. Le rapport apparaîtra ici automatiquement une fois terminé (quelques minutes)."]);
     if (e.ha_job_id) rows.push(["Identifiant de soumission", e.ha_job_id]);
-  } else if (e.statut === "echec") {
-    rows.push(["Erreur", e.erreur || "erreur inconnue"]);
+  } else if (e.statut === "echec" || e.statut === "non_applicable") {
+    rows.push(["Détail", e.erreur || "erreur inconnue"]);
   } else if (e.statut === "termine") {
+    const t = splitThreats(e);
     rows.push(["Verdict comportemental", e.verdict || "—"]);
     rows.push(["Score de menace (sandbox)", e.score_menace_sandbox != null ? e.score_menace_sandbox : "—"]);
-    rows.push(["Comportements / menaces détectés", (e.menaces_detectees || []).length ? e.menaces_detectees.join(", ") : "aucun comportement notable relevé"]);
+    rows.push(["Menaces (identifiants malveillants/suspects)", t.real.length ? t.real.join(", ") : "aucune"]);
+    rows.push(["Comportements informatifs (non malveillants)", t.info.length ? t.info.join(", ") : "aucun"]);
     if (e.ha_job_id) rows.push(["Identifiant de soumission", e.ha_job_id]);
-    if (e.url_rapport_public) {
-      rows.push(["Rapport complet (détail processus/réseau)", `<a href="${e.url_rapport_public}" target="_blank" rel="noopener">ouvrir sur Hybrid Analysis ↗</a>`]);
+    if (e.url_rapport_public && /^https?:\/\//i.test(e.url_rapport_public)) {
+      rows.push(["Rapport complet (détail processus/réseau)", { href: e.url_rapport_public, text: "ouvrir sur Hybrid Analysis ↗" }]);
     }
   }
+  if (e.copie_purgee) rows.push(["Copie de l'échantillon", e.copie_purgee]);
 
-  kv.innerHTML = rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
+  kv.innerHTML = "";
+  rows.forEach(([k, v]) => {
+    const dt = document.createElement("dt"); dt.textContent = k;
+    const dd = document.createElement("dd");
+    if (v && typeof v === "object" && v.href) {
+      const a = document.createElement("a");
+      a.href = v.href; a.target = "_blank"; a.rel = "noopener"; a.textContent = v.text;
+      dd.appendChild(a);
+    } else {
+      dd.textContent = v;
+    }
+    kv.appendChild(dt); kv.appendChild(dd);
+  });
   panel.hidden = false;
   panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
@@ -484,8 +566,10 @@ function renderReport(r) {
   document.getElementById("gauge-score").textContent = score;
   document.getElementById("gauge-label").textContent = "niveau " + niveau;
 
+  const v = r.verdict || null;
+  const vText = v ? ` · verdict : <strong style="color:${VERDICT_COLORS[v.verdict] || color}">${esc(VERDICT_LABELS[v.verdict] || v.verdict)}</strong> (confiance ${esc(v.confiance)})` : "";
   document.getElementById("verdict-line").innerHTML =
-    `<strong style="color:${color}">Niveau ${niveau}</strong> — action recommandee : ${ACTION_LABELS[r.action.action] || r.action.action}`;
+    `<strong style="color:${color}">Niveau ${esc(niveau)}</strong>${vText} — action recommandee : ${esc(ACTION_LABELS[r.action.action] || r.action.action)}`;
 
   // Explications + actions
   const expl = document.getElementById("panel-explications");
@@ -495,11 +579,20 @@ function renderReport(r) {
     li.textContent = e;
     expl.appendChild(li);
   });
+  appendOrchestration(expl, r);
+  if (r.cache && r.cache.reutilise) {
+    const li = document.createElement("li");
+    li.textContent = `Résultat réutilisé du rapport ${r.cache.rapport_source} (${r.cache.raison}).`;
+    expl.appendChild(li);
+  }
   if (r.sandbox && r.sandbox.recommande) {
     const li = document.createElement("li");
+    const attente = r.sandbox.soumission_automatique_autorisee === false;
     li.innerHTML = r.sandbox.id_soumission
-      ? `Ce fichier a été mis en file pour un <a href="#" id="goto-sandbox-link">test sandbox</a> (comportement réel, en plus de l'analyse statique ci-dessus).`
-      : `Ce fichier mériterait un test sandbox, mais la mise en file a échoué (fichier déjà supprimé/déplacé).`;
+      ? (attente
+          ? `Un <a href="#" id="goto-sandbox-link">test sandbox</a> est justifié mais attend votre validation : le fichier n'est pas partagé avec le service externe sans accord.`
+          : `Ce fichier a été mis en file pour un <a href="#" id="goto-sandbox-link">test sandbox</a> (comportement réel, en plus de l'analyse statique ci-dessus).`)
+      : `Ce fichier mériterait un test sandbox, mais la mise en file a échoué${r.sandbox.erreur ? " (" + esc(r.sandbox.erreur) + ")" : ""}.`;
     expl.appendChild(li);
     const link = document.getElementById("goto-sandbox-link");
     if (link) link.addEventListener("click", (e2) => { e2.preventDefault(); switchView("sandbox"); });
@@ -569,6 +662,30 @@ function renderReport(r) {
   document.getElementById("report-grid").style.animation = "reveal .5s ease forwards";
 }
 
+// Trace de l'orchestrateur : verdict, outils lancés / non lancés et pourquoi,
+// analyses manquantes. C'est ce qui distingue « fichier sain » de « analyse incomplète ».
+function appendOrchestration(listEl, r) {
+  const add = (text) => { const li = document.createElement("li"); li.textContent = text; listEl.appendChild(li); };
+  if (r.verdict) {
+    (r.verdict.raisons || []).forEach((t) => add("Verdict — " + t));
+    const manquants = (r.verdict.couverture && r.verdict.couverture.manquants) || [];
+    manquants.forEach((m) => add(`Analyse manquante : ${m.outil} (${TOOL_STATUS_LABELS[m.statut] || m.statut})${m.raison ? " — " + m.raison : ""}`));
+  }
+  const outils = r.orchestration && r.orchestration.outils;
+  if (outils) {
+    const parts = Object.entries(outils).map(([n, t]) =>
+      `${n}: ${TOOL_STATUS_LABELS[t.status] || t.status}${t.duration_s ? " (" + t.duration_s + " s)" : ""}`);
+    add("Outils — " + parts.join(" · "));
+  }
+  ((r.orchestration && r.orchestration.plan) || []).filter((p) => !p.lance).forEach((p) =>
+    add(`Non lancé : ${p.outil} — ${p.raison}`));
+  const enfants = r.sous_rapports_archive || [];
+  if (enfants.length) {
+    add(`Contenu d'archive : ${enfants.length} fichier(s) analysé(s) — ` +
+        enfants.slice(0, 8).map((c) => `${c.nom} (${c.verdict || c.score})`).join(", ") + (enfants.length > 8 ? "…" : ""));
+  }
+}
+
 function fillKV(id, obj) {
   const dl = document.getElementById(id);
   dl.innerHTML = "";
@@ -589,10 +706,10 @@ function renderStaticAnalysis(sa) {
         <h4>Executable PE — ${pe.type}</h4>
         <div class="mono-block">Architecture: ${pe.architecture}
 Point d'entree: ${pe.point_entree}
-Imports dangereux: ${pe.imports_dangereux_detectes.join(", ") || "aucun"}
+Imports dangereux: ${pe.imports_dangereux_detectes.map(esc).join(", ") || "aucun"}
 Packer suspecte: ${pe.packer_suspecte ? "oui" : "non"}
 Signature presente: ${pe.signature_presente ? "oui" : "non"}
-Sections: ${pe.sections.map(s => s.nom + " (entropie " + s.entropie + ")").join(" | ")}</div>
+Sections: ${pe.sections.map(s => esc(s.nom) + " (entropie " + esc(s.entropie) + ")").join(" | ")}</div>
       </div>` : `<p class="empty-note">${pe.raison}</p>`;
   }
   if (sa.office) {
@@ -601,7 +718,7 @@ Sections: ${pe.sections.map(s => s.nom + " (entropie " + s.entropie + ")").join(
       <div class="block">
         <h4>Document Office</h4>
         <div class="mono-block">Macros presentes: ${o.macros_presentes ? "oui" : "non"}
-${o.macros_presentes ? "Auto-execution: " + (o.auto_execution || []).join(", ") + "\nIOC macro: " + (o.iocs_macro || []).join(", ") : ""}</div>
+${o.macros_presentes ? "Auto-execution: " + (o.auto_execution || []).map(esc).join(", ") + "\nIOC macro: " + (o.iocs_macro || []).map(esc).join(", ") : ""}</div>
       </div>` : `<p class="empty-note">${o.raison}</p>`;
   }
   if (sa.pdf) {
@@ -621,7 +738,7 @@ Action /Launch: ${p.action_launch ? "oui" : "non"}</div>
     el.innerHTML += `<div class="block"><h4>Executable ELF</h4><div class="mono-block">${e.classe || ""} ${e.endianness || ""}\n${e.note || ""}</div></div>`;
   }
   if (sa.note) {
-    el.innerHTML += `<p class="empty-note">${sa.note}</p>`;
+    el.innerHTML += `<p class="empty-note">${esc(sa.note)}</p>`;
   }
 }
 
@@ -660,9 +777,9 @@ function showIOCTab(iocs, key) {
     return;
   }
   if (key === "chaines_suspectes") {
-    contentEl.innerHTML = `<div class="mono-block">${items.map(x => `${x.chaine} — ${x.occurrences} occurrence(s)`).join("\n")}</div>`;
+    contentEl.innerHTML = `<div class="mono-block">${items.map(x => `${esc(x.chaine)} — ${esc(x.occurrences)} occurrence(s)`).join("\n")}</div>`;
   } else {
-    contentEl.innerHTML = `<div class="mono-block">${items.join("\n")}</div>`;
+    contentEl.innerHTML = `<div class="mono-block">${items.map(esc).join("\n")}</div>`;
   }
 }
 
@@ -680,7 +797,7 @@ function renderYara(yara) {
   yara.matches.forEach((m) => {
     const div = document.createElement("div");
     div.className = `yara-badge sev-${m.severite}`;
-    div.innerHTML = `<b>${m.regle}</b><span>${m.description} — severite ${m.severite}</span>`;
+    div.innerHTML = `<b>${esc(m.regle)}</b><span>${esc(m.description)} — severite ${esc(m.severite)}</span>`;
     el.appendChild(div);
   });
 }
@@ -717,12 +834,12 @@ async function loadHistory() {
       return;
     }
     tbody.innerHTML = data.map((r) => `
-      <tr class="history-row" data-report-id="${r.id_rapport}" style="cursor:pointer">
-        <td>${r.nom}</td>
-        <td style="color:${STATUS_COLORS[r.niveau] || "#EDE6D5"}">${r.score}</td>
-        <td>${r.niveau}</td>
-        <td>${ACTION_LABELS[r.action] || r.action}</td>
-        <td>${(r.sha256 || "").slice(0, 16) || "—"}...</td>
+      <tr class="history-row" data-report-id="${esc(r.id_rapport)}" style="cursor:pointer">
+        <td>${esc(r.nom)}</td>
+        <td style="color:${STATUS_COLORS[r.niveau] || "#EDE6D5"}">${esc(r.score)}</td>
+        <td>${esc(r.niveau)}${r.verdict ? " · " + esc(VERDICT_LABELS[r.verdict] || r.verdict) : ""}</td>
+        <td>${esc(ACTION_LABELS[r.action] || r.action)}</td>
+        <td>${esc((r.sha256 || "").slice(0, 16)) || "—"}...</td>
       </tr>`).join("");
     tbody.querySelectorAll("tr.history-row").forEach((tr) => {
       tr.addEventListener("click", () => viewReportById(tr.dataset.reportId));

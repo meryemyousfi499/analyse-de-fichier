@@ -1,0 +1,444 @@
+{
+  "id_rapport": "7e8a3f84",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 49.785,
+  "metadonnees": {
+    "nom": "WhatsApp Installer.exe",
+    "extension": "exe",
+    "taille_octets": 1123872,
+    "taille_lisible": "1.1 Mo",
+    "mime_reel": "application/x-dosexec",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\WhatsApp Installer.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-02-26T18:26:30",
+    "date_modification": "2026-02-26T18:26:31",
+    "date_acces": "2026-10-28T12:51:00",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://get.microsoft.com/installer/download/9NKSQGP7F2NH?cid=call_btn_modal\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "ba3901e9f6b4e9d4c51b1545104e0f0e751434911fb27bdb7bdfd5bcd7b82429",
+    "sha1": "4dfcff4b1734ed9bebb6305b99dff44bea8f7aeb",
+    "md5": "f5fb1adee1d9a2737ad8a79dcc870aad",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": true,
+      "type": "EXE",
+      "architecture": "0x14c",
+      "nombre_imports": 1,
+      "imports_dangereux_detectes": [],
+      "sections": [
+        {
+          "nom": ".text",
+          "taille_brute": 1018368,
+          "entropie": 6.736,
+          "executable": true,
+          "ecriture": false
+        },
+        {
+          "nom": ".rsrc",
+          "taille_brute": 75264,
+          "entropie": 7.936,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".reloc",
+          "taille_brute": 512,
+          "entropie": 0.102,
+          "executable": false,
+          "ecriture": false
+        }
+      ],
+      "packer_suspecte": false,
+      "signature_presente": true,
+      "point_entree": "0xfa9ca",
+      "timestamp_compilation": 3747715944
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.814,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.52,
+      6.22,
+      6.13,
+      5.47,
+      7.76,
+      7.99,
+      7.72,
+      7.14,
+      5.61,
+      5.69,
+      5.69,
+      5.58,
+      5.94,
+      5.56,
+      5.96,
+      7.25,
+      7.0,
+      6.15
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "MIIDUDCCAjigAwIBAgIQImsjBGfFTk6M7sZzNVcAwDANBgkqhkiG9w0BAQsF..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "4.0.0.0",
+      "9.0.12.0",
+      "4.1.2.0",
+      "1.0.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [],
+    "urls": [
+      "http://www.microsoft.com0"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 5,
+      "urls": 24
+    },
+    "chemins_windows": [
+      "D:\\a\\_work\\1\\s\\src\\StoreInstaller\\obj\\Release\\net472\\StoreInstaller.pdb\u0000SHA256\u0000\u0015\u0002Ϙw74\u0012T6{Y7\u0017yY$I\u000f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000f\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000_CorExeMain\u0000mscoree.dll\u0000\u0000\u0000\u0000\u0000\u0000%\u0000 @\u0000"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "9494f71d9aae0ee75db6b9d3ad9105e310bc7b13"
+      ],
+      "sha256": [
+        "CCEC4700597EB3F093C5841181BE8E638DADFDD2514DC22229244DF1396767AE"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 7
+  },
+  "signature_numerique": {
+    "applicable": true,
+    "signature_presente": true,
+    "verifiee": null,
+    "editeur": null,
+    "commentaire": "Table de certificats presente. Verification cryptographique complete non effectuee (osslsigncode non installe sur cette machine)."
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pe",
+    "status": "termine",
+    "file_type": "PE/EXE",
+    "pe_offset": 128,
+    "pe_signature_valid": true,
+    "findings": [],
+    "note": "Contrôle structurel minimal. Utiliser un parseur PE dédié pour une analyse plus approfondie."
+  },
+  "threat_intelligence": {
+    "ips": {
+      "4.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "9.0.12.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "4.1.2.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "AU",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "6.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {},
+    "urls": {
+      "http://www.microsoft.com0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fwww.microsoft.com0/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "CCEC4700597EB3F093C5841181BE8E638DADFDD2514DC22229244DF1396767AE": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.1071807861328125,
+      "entropie_globale": 0.85175,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.0826,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 18,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\WhatsApp Installer.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 24.796,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.092,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.959,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.565,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pe",
+        "status": "ok",
+        "duration_s": 0.001,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PE/EXE' / extension '.exe' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

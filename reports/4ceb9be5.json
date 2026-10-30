@@ -1,0 +1,217 @@
+{
+  "id_rapport": "4ceb9be5",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 4.12,
+  "metadonnees": {
+    "nom": "489a27e2.json",
+    "extension": "json",
+    "taille_octets": 13317,
+    "taille_lisible": "13.0 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\489a27e2.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:26",
+    "date_modification": "2026-10-29T00:52:26",
+    "date_acces": "2026-10-29T11:11:54",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "a6f2b029d62fb51788857a96dc4e80b68238c7e1b3151413a3ece1ca31dc3f2b",
+    "sha1": "8c88c1f127c7df5fef6510886108928e7ad84f7d",
+    "md5": "648bbec52bb5067ebc5a3963345dbfa1",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.097,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.1
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/api/v1/indicators/file/e7813626d8ae9e21cf9989791227d27be1d8..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "https://claude.ai/chat/e28b5fee-9cf4-40ed-9334-5efcad6a6279\\nHostUrl=https://claude.ai/api/organizations/d92153e8-af71-4ce3-9f46-aed4bb124f55/conversations/e28b5fee-9cf4-40ed-9334-5efcad6a6279/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FCompte_Rendu_TP1_SELinux_AppArmor.docx\\n"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "r:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "d40541eb277c3ed7f27a53b913e1d854"
+      ],
+      "sha1": [
+        "695da4833441fe2a7c6d91a664ae2a0524e1976f",
+        "24c68d3d47860faad1311585e8d0a1064f744bac",
+        "25547cac014d5ee054c5a396eb8bf28ac2c1d3d6",
+        "fceecd383deb9c884671cf3534f16482a62f7fb6",
+        "2e2ff0b6c7fb5e6f3d6ff7fcfb7dfbfc736c5ddf",
+        "10fe4b8711bde0f456ee15a888c74e1bb0b3c012",
+        "b32858d63023b2b8769c128e93404c2f2b5ee561",
+        "a6e3123c072b4a8b25715b7e3ce7c240940be8a7",
+        "3da68d8fde7fb5a2ec326f7a03af31767b520c19",
+        "f92a196de64d935d982cf2af0db6f66b2f6ec08c"
+      ],
+      "sha256": [
+        "e7813626d8ae9e21cf9989791227d27be1d8040c94441818fe362aa0274cf026"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://claude.ai/chat/e28b5fee-9cf4-40ed-9334-5efcad6a6279\\nHostUrl=https://claude.ai/api/organizations/d92153e8-af71-4ce3-9f46-aed4bb124f55/conversations/e28b5fee-9cf4-40ed-9334-5efcad6a6279/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FCompte_Rendu_TP1_SELinux_AppArmor.docx\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "e7813626d8ae9e21cf9989791227d27be1d8040c94441818fe362aa0274cf026": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0012700080871582032,
+      "entropie_globale": 0.637125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0445,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 9,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\489a27e2.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

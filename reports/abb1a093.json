@@ -1,0 +1,293 @@
+{
+  "id_rapport": "abb1a093",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 8.598,
+  "metadonnees": {
+    "nom": "0d14d2f8.json",
+    "extension": "json",
+    "taille_octets": 11902,
+    "taille_lisible": "11.6 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\0d14d2f8.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:21",
+    "date_modification": "2026-10-29T00:52:21",
+    "date_acces": "2026-10-29T02:16:07",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "2a5eaa11ab0911a41007082f45cb03d1521cb19b8272e93c07b74014698f50d7",
+    "sha1": "17c46ec30ebf397e7e3a356fb0dcd581d474f598",
+    "md5": "915b109ab83c72ab0edc0bae7fb3f02f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.261,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.26
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/api/v1/indicators/file/c55de1d4d5898afd9989b027cf2fa1edf479..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "cv.iptc.org",
+      "otx.alienvault.com"
+    ],
+    "urls": [
+      "http://c2pa-ocsp.pki.goog/04\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002(http://pki.goog/c2pa/media-1p-ica-g3.crt0\\u0017\\u0006\\u0003U\\u001d",
+      "http://pki.goog/c2pa/root-g3.crt0&\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u001ahttp://c2pa-ocsp.pki.goog/0\\u001f\\u0006\\u0003U\\u001d#\\u0004\\u00180\\u0016\\u0014\\\\؉SCZՁ\\u0003\\u0019\\u0004**-0\\u001d\\u0006\\u0003U\\u001d\\u000e\\u0004\\u0016\\u0004\\u0014{ὴ,\\u0010kJ70",
+      "http://c2pa-ocsp.pki.goog/04\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002(http://pki.goog/c2pa/core-tsa-ica-g3.crt0\\u0017\\u0006\\u0003U\\u001d",
+      "http://pki.goog/c2pa/root-g3.crt0&\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u001ahttp://c2pa-ocsp.pki.goog/0\\u001f\\u0006\\u0003U\\u001d#\\u0004\\u00180\\u0016\\u0014\\\\؉SCZՁ\\u0003\\u0019\\u0004**-0\\u001d\\u0006\\u0003U\\u001d\\u000e\\u0004\\u0016\\u0004\\u0014U`t;\\u0003jD\\u0006ea0",
+      "http://pki.goog/c2pa/media-1p-ica-g3.crt0\\u000f\\u0006"
+    ],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\",
+      "q:\\",
+      "t:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "59b63b2853f364bbad68fd4f88548b2f"
+      ],
+      "sha1": [
+        "cf29a6f663b49681fcd37caf91383063d4c1f5ba"
+      ],
+      "sha256": [
+        "c55de1d4d5898afd9989b027cf2fa1edf47926226c974d718177f220ad9c6671"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 15
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "cv.iptc.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "otx.alienvault.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://c2pa-ocsp.pki.goog/04\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002(http://pki.goog/c2pa/media-1p-ica-g3.crt0\\u0017\\u0006\\u0003U\\u001d": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://pki.goog/c2pa/root-g3.crt0&\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u001ahttp://c2pa-ocsp.pki.goog/0\\u001f\\u0006\\u0003U\\u001d#\\u0004\\u00180\\u0016\\u0014\\\\؉SCZՁ\\u0003\\u0019\\u0004**-0\\u001d\\u0006\\u0003U\\u001d\\u000e\\u0004\\u0016\\u0004\\u0014{ὴ,\\u0010kJ70": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://c2pa-ocsp.pki.goog/04\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0002(http://pki.goog/c2pa/core-tsa-ica-g3.crt0\\u0017\\u0006\\u0003U\\u001d": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://pki.goog/c2pa/root-g3.crt0&\\u0006\\b+\\u0006\\u0001\\u0005\\u0005\\u00070\\u0001\\u001ahttp://c2pa-ocsp.pki.goog/0\\u001f\\u0006\\u0003U\\u001d#\\u0004\\u00180\\u0016\\u0014\\\\؉SCZՁ\\u0003\\u0019\\u0004**-0\\u001d\\u0006\\u0003U\\u001d\\u000e\\u0004\\u0016\\u0004\\u0014U`t;\\u0003jD\\u0006ea0": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://pki.goog/c2pa/media-1p-ica-g3.crt0\\u000f\\u0006": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "c55de1d4d5898afd9989b027cf2fa1edf47926226c974d718177f220ad9c6671": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0011350631713867188,
+      "entropie_globale": 0.657625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 5,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1443,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 28,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes)."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\0d14d2f8.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

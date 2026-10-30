@@ -1,0 +1,434 @@
+{
+  "id_rapport": "fa084f6f",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 18.28,
+  "metadonnees": {
+    "nom": "Meryem Yousfi - TP1 - Hadoop HDFS et MapReduce.pdf",
+    "extension": "pdf",
+    "taille_octets": 566654,
+    "taille_lisible": "553.4 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Meryem Yousfi - TP1 - Hadoop HDFS et MapReduce.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-19T21:01:08",
+    "date_modification": "2026-09-19T21:01:09",
+    "date_acces": "2026-10-28T11:32:12",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://doc-00-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/k7jcnh5igph5srihkbmlubq7547kmjj5/1789847775000/drive/14365239555874006747/ACFrOgA7AzH7w0-68P3ziDLsyp_6vFS3tVXS6LgtI7ixJLVELYBW_GNsKhkWDFCvbeccJHkjYzZRe1ZA4-JSm7JipRYXVAXXp5DBRHdg5kyLP56izo36xc3tIcqqoIBRYZayGkJm1s9Es497oGI7SQL8cw3u3q9am4tPSoLFIrvpMt0qsygk7m_mrPalosfXyyl40qshmssGu29AUdFmzKGrhHPyRMq2gwKDGDpOcC57q5Nn_TgkyrIYslxWEozsm4HTM9Kf3k7UqqicobGi?authuser=2&print=true&nonce=ppurnqbo74l4u&user=14365239555874006747&hash=ccqr39813n938gbcd63o93d3j9u1ofb2\nHostUrl=https://doc-00-a0-apps-viewer.googleusercontent.com/viewer/secure/pdf/de7qm9t9lub2ujgjtmtbq3huspqm4n8b/k7jcnh5igph5srihkbmlubq7547kmjj5/1789847775000/drive/14365239555874006747/ACFrOgA7AzH7w0-68P3ziDLsyp_6vFS3tVXS6LgtI7ixJLVELYBW_GNsKhkWDFCvbeccJHkjYzZRe1ZA4-JSm7JipRYXVAXXp5DBRHdg5kyLP56izo36xc3tIcqqoIBRYZayGkJm1s9Es497oGI7SQL8cw3u3q9am4tPSoLFIrvpMt0qsygk7m_mrPalosfXyyl40qshmssGu29AUdFmzKGrhHPyRMq2gwKDGDpOcC57q5Nn_TgkyrIYslxWEozsm4HTM9Kf3k7UqqicobGi?authuser=2&print=true&nonce=ppurnqbo74l4u&user=14365239555874006747&hash=ccqr39813n938gbcd63o93d3j9u1ofb2\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "3c34ea8c44cc2316ec8adf8b959753a2ef7bf3ec7f0eec38aa264f7b61f58a5f",
+    "sha1": "7d39c64ab591197fc8eecf21a21806c1a8a8af71",
+    "md5": "a9b01f4fec0ea695e9b0114713e74687",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": true,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 9
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.65,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.54,
+      5.97,
+      7.86,
+      7.88,
+      7.82,
+      7.92,
+      7.31,
+      8.0,
+      6.09
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "153.0.0.0"
+    ],
+    "domaines": [
+      "www.docker.com",
+      "hub.docker.com"
+    ],
+    "urls": [
+      "https://www.docker.com/products/docker-desktop/)",
+      "https://hub.docker.com/r/chakour12/hadoop-cluster)",
+      "http://localhost:9870/)"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "D:\\$\u0006\u0016c;FE1\u000b-"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "F2A51D6198CDC0A512BFD49F74978CF9"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 9
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [
+      {
+        "indicator": "/JavaScript",
+        "description": "Marqueur PDF présent : /JavaScript"
+      },
+      {
+        "indicator": "/OpenAction",
+        "description": "Marqueur PDF présent : /OpenAction"
+      },
+      {
+        "indicator": "/URI",
+        "description": "Marqueur PDF présent : /URI"
+      }
+    ],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {
+      "153.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 18,
+          "pays": "CN",
+          "nombre_signalements": 21,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "www.docker.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "hub.docker.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://www.docker.com/products/docker-desktop/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "https://hub.docker.com/r/chakour12/hadoop-cluster)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://localhost:9870/)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.05404033660888672,
+      "entropie_globale": 0.95625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 1,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 3,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.147,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 55,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "PDF contenant du JavaScript embarque et/ou une action /Launch.",
+      "Analyse specialisee : indicateur(s) a verifier -> /OpenAction.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Meryem Yousfi - TP1 - Hadoop HDFS et MapReduce.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 1.816,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.021,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 1.271,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.698,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "detected",
+        "duration_s": 0.002,
+        "summary": "3 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "/JavaScript",
+            "description": "Marqueur PDF présent : /JavaScript"
+          },
+          {
+            "indicator": "/OpenAction",
+            "description": "Marqueur PDF présent : /OpenAction"
+          },
+          {
+            "indicator": "/URI",
+            "description": "Marqueur PDF présent : /URI"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

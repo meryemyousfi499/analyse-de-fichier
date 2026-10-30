@@ -1,0 +1,357 @@
+{
+  "id_rapport": "1130b132",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 75.037,
+  "metadonnees": {
+    "nom": "Mery Ysf - purchases.txt",
+    "extension": "txt",
+    "taille_octets": 211312924,
+    "taille_lisible": "201.5 Mo",
+    "mime_reel": "text/plain",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Mery Ysf - purchases.txt",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-30T18:01:02",
+    "date_modification": "2026-09-30T18:05:08",
+    "date_acces": "2026-10-29T00:52:19",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://drive.usercontent.google.com/download?id=1-EjWiwhCp0VkDe8g1Y33H2bCvv-e7a2v&export=download&authuser=0&confirm=t&uuid=db1cb2c9-6ead-463f-b363-f1b27778f115&at=AMrWOn0Ewe1QFtNZo6CEBF3aHGP6%3A1790787415354\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".txt",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "5d0d410c3f6461934e9aa72cbbcff25d5eb3513696644cb74135a940cc3d33bf",
+    "sha1": "a545162336b09944ca1b9ab6ea5748f68f87bb4b",
+    "md5": "be796d55ad565233a6e08f1e68e6a13f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.126,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.07,
+      5.03,
+      5.02,
+      5.04,
+      5.06,
+      5.06,
+      5.07,
+      5.08,
+      5.07,
+      5.07,
+      5.04,
+      5.03,
+      5.04,
+      5.08,
+      5.07,
+      5.07,
+      5.08,
+      5.1,
+      5.09,
+      5.06,
+      5.06,
+      5.07,
+      5.09,
+      5.1,
+      5.1,
+      5.12,
+      5.11,
+      5.08,
+      5.06,
+      5.07,
+      5.08,
+      5.08,
+      5.09,
+      5.12,
+      5.11,
+      5.12,
+      5.08,
+      5.07,
+      5.07,
+      5.1,
+      5.11,
+      5.09,
+      5.11,
+      5.11,
+      5.12,
+      5.08,
+      5.07,
+      5.08,
+      5.1,
+      5.11,
+      5.11,
+      5.09,
+      5.11,
+      5.11,
+      5.08,
+      5.07,
+      5.08,
+      5.1,
+      5.1,
+      5.11,
+      5.11,
+      5.1,
+      5.11,
+      5.07
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 211312924,
+    "taille_analysee_octets": 209715200
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 211312924,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "infecte": null,
+    "signature": null,
+    "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.64075,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0392,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "faible",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "analyse_statique"
+      ],
+      "ratio": 0.33,
+      "manquants": [
+        {
+          "outil": "clamav",
+          "statut": "error",
+          "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+        },
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : clamav (error), yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Mery Ysf - purchases.txt",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "error",
+        "duration_s": 71.099,
+        "summary": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte",
+        "findings": [],
+        "error": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 62.705,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 34.613,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "l'extension '.txt' n'est jamais soumise seule (composant interne ou média) ; analyser le document complet; fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox.",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "l'extension '.txt' n'est jamais soumise seule (composant interne ou média) ; analyser le document complet; fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "non_applicable",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": false,
+    "declencheurs": [],
+    "bloquants": [
+      "l'extension '.txt' n'est jamais soumise seule (composant interne ou média) ; analyser le document complet",
+      "fichier > 50 Mo",
+      "politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+    ],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

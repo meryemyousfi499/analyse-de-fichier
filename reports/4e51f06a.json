@@ -1,0 +1,237 @@
+{
+  "id_rapport": "4e51f06a",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 34.572,
+  "metadonnees": {
+    "nom": "part-00006.json.gz",
+    "extension": "gz",
+    "taille_octets": 7795868,
+    "taille_lisible": "7.4 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_jp3ne8mh\\DataTP2Partie2\\reddit2\\reddit2\\part-00006.json.gz",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:41:03",
+    "date_modification": "2026-10-29T00:41:03",
+    "date_acces": "2026-10-29T00:47:28",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "gzip",
+    "extension_declaree": ".gz",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "6f838caa47a609821450ba3816447366695ec601b0d260958f9f496efe94816d",
+    "sha1": "cbb531ea37eada659005e78c9c36ca17e2dfcb3d",
+    "md5": "95b9b23c0c7719e46f9b30076908c819",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "gzip",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "t:\\V%O5\u001c\u0010",
+      "a:\\e\u00187$9G\u0013",
+      "w:\\lоYW",
+      "g:\\Z\u00140=ٙu\u0015D\u0016̊ϸQk\u001f!ȰtT\u0014$\u0003",
+      "s:\\jd}",
+      "Z:\\sM'e8[KGjPAsi\u0018J}eK#G\u001eu=\u0014\u0018ETK7jma#l~[]lɑ",
+      "l:\\7\u000eFG'[Ԧ\u0018fm{v%\u0015X",
+      "L:\\七;wޯO7Ƈ\u0010eJ].-c{o",
+      "U:\\7##M~\u001c\u001f\u0004",
+      "t:\\ѕ\u0006SA~j+6^W[tu(Ylntl",
+      "F:\\\u0002\u001dN0\u001duІ#\u0000vLc^^",
+      "d:\\\t",
+      "g:\\^Q\u000e",
+      "b:\\\u0005Kr^&7ac9\u000f",
+      "h:\\h\u001atC,5]=qfH\u0006=CH7_\u000e6_ \u001bz4 \b\u001d#tzNVn",
+      "R:\\ry\u0013fd",
+      "O:\\#2StB{Jy\u001d\u001f\u001aFke5Vٮwf{2",
+      "L:\\s+U\u0007",
+      "S:\\sj\bTU)\u0001n̮90\u0004",
+      "l:\\nem0}\u001b{\tPY\u0002\u0019Q\u0019\u0004&m-3N^~ҽϭW{kzuʉ={Ëg\u0010j~",
+      "v:\\N",
+      "k:\\vq",
+      "U:\\DYF1,\\\u0019\u0011{50E",
+      "B:\\2Bω0\u0019 \u00058"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.743471908569336,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0521,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_jp3ne8mh\\DataTP2Partie2\\reddit2\\reddit2\\part-00006.json.gz",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

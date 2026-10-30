@@ -1,0 +1,173 @@
+{
+  "id_rapport": "5f0f7925",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 1.686,
+  "metadonnees": {
+    "nom": "scoring_engine.cpython-313.pyc",
+    "extension": "pyc",
+    "taille_octets": 10823,
+    "taille_lisible": "10.6 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\agent\\__pycache__\\scoring_engine.cpython-313.pyc",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:20",
+    "date_modification": "2026-10-29T00:52:20",
+    "date_acces": "2026-10-29T00:57:11",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".pyc",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "97bfd60b23ddafdffa68bac1399bfcdb42ab442d8e0cf4697bd46b770e9dbcef",
+    "sha1": "38f1fd1d406a7fcbc97cc153f6b38a7f245741e2",
+    "md5": "1a91ca533ac052aadcae2a4e463d0122",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.591,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.59
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\agent\\scoring_engine.py\u000eband_for_scorer-\u0000\u0000\u0000!\u0000\u0000\u0000s,\u0000\u0000\u0000\u0000!,\b\u001d\u0002\u0005\u000b"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "createremotethread",
+        "occurrences": 1
+      },
+      {
+        "chaine": "virtualallocex",
+        "occurrences": 1
+      },
+      {
+        "chaine": "writeprocessmemory",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 9
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": [
+      {
+        "regle": "Suspicious_PE_Process_Injection_APIs",
+        "severite": "critique",
+        "description": "Combinaison d'API Windows typiques d'une injection de processus"
+      }
+    ]
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0010321617126464843,
+      "entropie_globale": 0.698875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 3,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.1571,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 65,
+    "niveau": "eleve",
+    "action_recommandee": "quarantine",
+    "explications": [
+      "Regle(s) YARA critique(s) declenchee(s) : Suspicious_PE_Process_Injection_APIs.",
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1793231833,
+    "fichier_original": "scoring_engine.cpython-313.pyc",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1793231833_scoring_engine.cpython-313.pyc.quarantine",
+    "raison": "Regle(s) YARA critique(s) declenchee(s) : Suspicious_PE_Process_Injection_APIs.; Plusieurs indicateurs suspects detectes dans le contenu.",
+    "action": "quarantine",
+    "libelle": "Mettre en quarantaine"
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "fddcc2b7ba704299a369c99f6001c7f9"
+  }
+}

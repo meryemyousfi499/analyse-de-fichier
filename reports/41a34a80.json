@@ -1,0 +1,285 @@
+{
+  "id_rapport": "41a34a80",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 3.687,
+  "metadonnees": {
+    "nom": "ioc_extraction.cpython-313.pyc",
+    "extension": "pyc",
+    "taille_octets": 5422,
+    "taille_lisible": "5.3 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\agent\\__pycache__\\ioc_extraction.cpython-313.pyc",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:20",
+    "date_modification": "2026-10-29T00:52:20",
+    "date_acces": "2026-10-29T00:56:29",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".pyc",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "22c0654725871459e9645df111667b986742f5e26906705484db87ac4e7a5f24",
+    "sha1": "4873c15e03562aeb9e2e79d62549060bcfd473df",
+    "md5": "d4c1d43b5307b9206f1e911b544ec5dd",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 5.61,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      5.61
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\agent\\ioc_extraction.py\u000e_decode_uniquer$\u0000\u0000\u0000%\u0000\u0000\u0000sg\u0000\u0000\u0000\u0000\u000b"
+    ],
+    "chemins_unix": [
+      "/bin/bashz\u0011invoke-expressionz\u0004iex(\u000edownloadstring\u0010frombase64stringz\u000f-encodedcommandz\bnet"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [
+      "cmd.exe"
+    ],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "powershell",
+        "occurrences": 2
+      },
+      {
+        "chaine": "rundll32",
+        "occurrences": 2
+      },
+      {
+        "chaine": "regsvr32",
+        "occurrences": 2
+      },
+      {
+        "chaine": "mshta",
+        "occurrences": 2
+      },
+      {
+        "chaine": "wscript",
+        "occurrences": 2
+      },
+      {
+        "chaine": "cscript",
+        "occurrences": 2
+      },
+      {
+        "chaine": "cmd.exe",
+        "occurrences": 1
+      },
+      {
+        "chaine": "certutil",
+        "occurrences": 1
+      },
+      {
+        "chaine": "bitsadmin",
+        "occurrences": 1
+      },
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      },
+      {
+        "chaine": "wget",
+        "occurrences": 1
+      },
+      {
+        "chaine": "/bin/bash",
+        "occurrences": 1
+      },
+      {
+        "chaine": "invoke-expression",
+        "occurrences": 1
+      },
+      {
+        "chaine": "iex(",
+        "occurrences": 1
+      },
+      {
+        "chaine": "downloadstring",
+        "occurrences": 1
+      },
+      {
+        "chaine": "frombase64string",
+        "occurrences": 1
+      },
+      {
+        "chaine": "-encodedcommand",
+        "occurrences": 1
+      },
+      {
+        "chaine": "net user",
+        "occurrences": 1
+      },
+      {
+        "chaine": "vssadmin delete shadows",
+        "occurrences": 1
+      },
+      {
+        "chaine": "schtasks",
+        "occurrences": 1
+      },
+      {
+        "chaine": "reg add",
+        "occurrences": 1
+      },
+      {
+        "chaine": "attrib +h",
+        "occurrences": 1
+      },
+      {
+        "chaine": "vbscript",
+        "occurrences": 1
+      },
+      {
+        "chaine": "shellcode",
+        "occurrences": 1
+      },
+      {
+        "chaine": "createremotethread",
+        "occurrences": 1
+      },
+      {
+        "chaine": "virtualallocex",
+        "occurrences": 1
+      },
+      {
+        "chaine": "writeprocessmemory",
+        "occurrences": 1
+      },
+      {
+        "chaine": "amsi.dll",
+        "occurrences": 1
+      },
+      {
+        "chaine": "disablerealtimemonitoring",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 87
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": [
+      {
+        "regle": "Suspicious_PowerShell_Obfuscation",
+        "severite": "eleve",
+        "description": "Commande PowerShell encodee ou usage d'IEX/DownloadString"
+      },
+      {
+        "regle": "Suspicious_LOLBins_Chain",
+        "severite": "moyen",
+        "description": "Chaine d'outils systeme legitimes detournes (living-off-the-land)"
+      }
+    ]
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0005170822143554688,
+      "entropie_globale": 0.70125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 29,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.2231,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 55,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Regle(s) YARA de severite elevee declenchee(s) : Suspicious_PowerShell_Obfuscation.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Mis en file sandbox malgre un niveau de risque global 'moyen' : une regle YARA critique/elevee a ete declenchee."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\agent\\__pycache__\\ioc_extraction.cpython-313.pyc",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": true,
+    "id_soumission": "58a9e59fc6a847d8b111246b5d39c80a"
+  }
+}

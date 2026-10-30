@@ -1,0 +1,388 @@
+{
+  "id_rapport": "f39c7f30",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 19.412,
+  "metadonnees": {
+    "nom": "3c11efd6.json",
+    "extension": "json",
+    "taille_octets": 10819,
+    "taille_lisible": "10.6 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\3c11efd6.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:25",
+    "date_modification": "2026-10-29T00:52:25",
+    "date_acces": "2026-10-29T09:56:31",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "8cfbd9c8f591cac2d0f10eefe564bfdf1c58c1fe71e78a568b657b280f584ebb",
+    "sha1": "0ce56a50860f07e46652cead259964c23bb4ec7c",
+    "md5": "80ff893fe6dd487a1af061ceb2a9c887",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.681,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.68
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www-api.ibm.com",
+      "www.w3.org",
+      "ns.adobe.com",
+      "purl.org",
+      "www.npes.org",
+      "ns.xinet.com",
+      "ns.InsiderSoftware.com"
+    ],
+    "urls": [
+      "https://www-api.ibm.com/adobe/assets/urn:aaid:aem:24126caa-ccc0-4b31-b5fc-2de5c73fada8/original/as/XIM12354.pdf\\nHostUrl=https://www-api.ibm.com/adobe/assets/urn:aaid:aem:24126caa-ccc0-4b31-b5fc-2de5c73fada8/original/as/XIM12354.pdf\\n",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "http://ns.adobe.com/xap/1.0/",
+      "http://ns.adobe.com/xap/1.0/mm/",
+      "http://ns.adobe.com/xap/1.0/sType/ResourceRef#",
+      "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#",
+      "http://purl.org/dc/elements/1.1/",
+      "http://ns.adobe.com/pdf/1.3/",
+      "http://ns.adobe.com/photoshop/1.0/",
+      "http://ns.adobe.com/pdfx/1.3/",
+      "http://www.npes.org/pdfx/ns/id/",
+      "http://ns.adobe.com/xap/1.0/t/pg/",
+      "http://ns.adobe.com/xap/1.0/sType/Dimensions#",
+      "http://ns.adobe.com/xap/1.0/g/",
+      "http://ns.xinet.com/webnative/private/1.0/",
+      "http://ns.InsiderSoftware.com/fontlist/1.0/",
+      "http://ns.xinet.com/webnative/text-extraction/1.0/",
+      "http://ns.xinet.com/fpoinfo/1.0/",
+      "http://ns.xinet.com/webnative/imageinfo/1.0/",
+      "http://ns.xinet.com/webnative/thumbnails/1.0/",
+      "http://ns.xinet.com/webnative/previews/1.0/",
+      "http://ns.adobe.com/xap/1.0/sType/Font#",
+      "http://ns.adobe.com/illustrator/1.0/",
+      "http://ns.adobe.com/tiff/1.0/"
+    ],
+    "emails": [
+      "R@NZ.mq"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "r:\\",
+      "q:\\",
+      "e:\\",
+      "U:\\",
+      "l:\\",
+      "o:\\",
+      "E:\\",
+      "b:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "c009fcc545000e530ca934c7192acb5d",
+        "6EF6BC8C0C4B1D0D602A2058EF93F97A",
+        "F6385622D7004F4EBA5BEF4666690562",
+        "539EF82FF4C4E511A5CAD0F1B19B782B",
+        "20B40ABFA7D8E6118119D62463D7E145",
+        "3B13710F32D8E611B365D2F5C41853B2",
+        "1FB40ABFA7D8E6118119D62463D7E145",
+        "1BB40ABFA7D8E6118119D62463D7E145",
+        "1CB40ABFA7D8E6118119D62463D7E145",
+        "1DB40ABFA7D8E6118119D62463D7E145"
+      ],
+      "sha1": [
+        "2b5307a2307d44ab07ea9288f079851cfffa0027"
+      ],
+      "sha256": [
+        "8bd6c63a5178f217f65ceb70ba9184200e66e0e9b899a6a64907eb2adf995bb3"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 55
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www-api.ibm.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.w3.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "ns.adobe.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "purl.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "www.npes.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://www-api.ibm.com/adobe/assets/urn:aaid:aem:24126caa-ccc0-4b31-b5fc-2de5c73fada8/original/as/XIM12354.pdf\\nHostUrl=https://www-api.ibm.com/adobe/assets/urn:aaid:aem:24126caa-ccc0-4b31-b5fc-2de5c73fada8/original/as/XIM12354.pdf\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/xap/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/xap/1.0/mm/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://ns.adobe.com/xap/1.0/sType/ResourceRef#": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "8bd6c63a5178f217f65ceb70ba9184200e66e0e9b899a6a64907eb2adf995bb3": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "purl.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://ns.adobe.com/xap/1.0/",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://ns.adobe.com/xap/1.0/mm/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.001031780242919922,
+      "entropie_globale": 0.585125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 24,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1081,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 42,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['purl.org'], URLs: ['http://ns.adobe.com/xap/1.0/', 'http://ns.adobe.com/xap/1.0/mm/'], hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\3c11efd6.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

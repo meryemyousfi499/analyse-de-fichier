@@ -1,0 +1,542 @@
+{
+  "id_rapport": "a0c57d09",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 39.185,
+  "metadonnees": {
+    "nom": "RH Emails - The bigest data base-1.pdf",
+    "extension": "pdf",
+    "taille_octets": 3034207,
+    "taille_lisible": "2.9 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\RH Emails - The bigest data base-1.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-06-09T16:07:22",
+    "date_modification": "2026-06-09T16:07:23",
+    "date_acces": "2026-10-28T12:34:25",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://web.whatsapp.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "c3c2d2ada77515a9e5faa219a539650ac19d6341429b19f0dd7730a13c4308c2",
+    "sha1": "0a9eabf750b76ef29e1cd9debe562f18becfe8e9",
+    "md5": "60a1cc1576d941251eb44aae7ce5b10f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 134
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.692,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.76,
+      7.41,
+      7.82,
+      7.58,
+      7.54,
+      7.84,
+      7.56,
+      7.59,
+      7.74,
+      7.52,
+      7.59,
+      7.62,
+      7.93,
+      7.98,
+      7.97,
+      7.97,
+      7.97,
+      7.97,
+      7.97,
+      7.97,
+      7.93,
+      7.78,
+      7.37,
+      7.97,
+      7.98,
+      7.62,
+      6.31,
+      3.19,
+      3.12,
+      3.2,
+      3.29,
+      3.27,
+      3.32,
+      3.28,
+      3.27,
+      3.3,
+      3.23,
+      3.21,
+      3.27,
+      3.3,
+      3.24,
+      3.32,
+      3.17,
+      3.15,
+      3.22,
+      3.22,
+      3.32
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "/Type/Font/Subtype/TrueType/Name/F2/BaseFont/Arial/Encoding/..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "3smorocco.com",
+      "abb.com",
+      "ma.abb.com",
+      "actis-maroc.com",
+      "gmail.com",
+      "iam.net",
+      "afginvestmenbank.com",
+      "hotmail.com",
+      "africphar.com",
+      "akwagroup.com",
+      "anp.org",
+      "amnsl.com",
+      "airliquide.com",
+      "akzonobel.com",
+      "alcatel-lucent.com",
+      "wanadoo.net",
+      "allvidia.com",
+      "altadis.com",
+      "ma.imptob.com",
+      "aluminiumdumaroc.com",
+      "amaroc-agro.com",
+      "amcor.com",
+      "apmterminals.com",
+      "appro-tech.com",
+      "arkelio.com",
+      "arsenconsulting.com",
+      "artis-environnement.com",
+      "ma.cimpor.com",
+      "onep.org",
+      "casanet.net",
+      "winner.net",
+      "abcoujda.com",
+      "abctanger.com",
+      "attijariwafa.com",
+      "augesatmaroc.com",
+      "sanofi-aventis.com",
+      "aventis.com",
+      "sanofi.com",
+      "avy-protect.com",
+      "laboratoires-azbane.com",
+      "bayercropscience.com",
+      "bayerhealthcare.com",
+      "bayer.com",
+      "open.net",
+      "besix.com",
+      "cimpor.com",
+      "nadornet.net",
+      "bnpparibas.com",
+      "bostik.com",
+      "bottu.com"
+    ],
+    "urls": [],
+    "emails": [
+      "khalid-boukaa@3smorocco.com",
+      "hassan.herradi@3smorocco.com",
+      "noureddine.khalid@3smorocco.com",
+      "youssef.zabane@abb.com",
+      "fatimazahraa.aghlim@ma.abb.com",
+      "kenza.majid@ma.abb.com",
+      "mohamed.achouri@ma.abb.com",
+      "n.rami@accolade.co.ma",
+      "nharrak@accolade.co.ma",
+      "doulabi@acteor.ma",
+      "o.rachid@actis-maroc.com",
+      "adimag100@gmail.com",
+      "aditrad08@gmail.com",
+      "adricom@iam.net.ma",
+      "hicham.oussaid@afginvestmenbank.com",
+      "afayadgroupe@menara.maafayadgroupe",
+      "a.africlabo@menara.ma",
+      "o.ennaya@africphar.com",
+      "a.assaous@africphar.com",
+      "commercial@africode.ma",
+      "a.laghrani@africode.co.ma",
+      "anthiou2@gmail.com",
+      "o.ouhmidou@akwagroup.com",
+      "bouelkhurat@hotmail.com",
+      "aamraoui@anp.org.ma",
+      "s_farah@anp.org.ma",
+      "a_laabous@anp.org.ma",
+      "m.touab@tmsa.ma",
+      "i.aarabi@tmsa.ma",
+      "amn@amnsl.com",
+      "hmitta@hotmail.com",
+      "ka_zekri@yahoo.fr",
+      "aicm@menara.ma",
+      "samira.belkacem@airliquide.com",
+      "azrib.youness@airliquide.com",
+      "cliane.serhic@akzonobel.ma",
+      "karim.abid@akzonobel.com",
+      "achat@aui.ma",
+      "ybenbrahim@almanar.ma",
+      "hanane.benlahsen@alcatel-lucent.com",
+      "abdelhamid.cherrat@alcatel-lucent.com",
+      "aicha.archoq@alcatel-lucent.com",
+      "mohamed.lamhamdi@alcatel-lucent.com",
+      "alfellouss@wanadoo.net.ma",
+      "hicham.alliance@gmail.com",
+      "bahou.alliance@menara.ma",
+      "aldel-h@hotmail.com",
+      "asennani@allvidia.com",
+      "said.bamouss@almabat.ma",
+      "youness.jabine@almabat.ma"
+    ],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "n:\\\u0013hfg='&t4\u001f@\tn\u0011Z",
+      "I:\\q}y}\u0015\u001dX\u0002`ߝ"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "09705BEAC2DECE4F9569BD6CD05D992A"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 50
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [
+      {
+        "indicator": "/URI",
+        "description": "Marqueur PDF présent : /URI"
+      }
+    ],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "3smorocco.com": {
+        "otx": {
+          "disponible": false,
+          "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "abb.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 11,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "ma.abb.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "actis-maroc.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "gmail.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "abb.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "gmail.com",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.28936452865600587,
+      "entropie_globale": 0.8365,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0399,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 40,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['abb.com', 'gmail.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\RH Emails - The bigest data base-1.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 15.804,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 3.174,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 3.771,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.726,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "detected",
+        "duration_s": 0.01,
+        "summary": "1 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "/URI",
+            "description": "Marqueur PDF présent : /URI"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

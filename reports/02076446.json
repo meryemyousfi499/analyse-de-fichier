@@ -1,0 +1,355 @@
+{
+  "id_rapport": "02076446",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 5.121,
+  "metadonnees": {
+    "nom": "Whatsapp Scan 27 octobre 2026 at 21.02.32 (1)-combined.pdf",
+    "extension": "pdf",
+    "taille_octets": 912401,
+    "taille_lisible": "891.0 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Whatsapp Scan 27 octobre 2026 at 21.02.32 (1)-combined.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-28T01:06:55",
+    "date_modification": "2026-10-28T01:06:55",
+    "date_acces": "2026-10-29T17:44:00",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://acrobat.adobe.com/\nHostUrl=https://acp-aep-cs-blobstore-prod-irl1-data.adobe.io/42612dd1-314d-412e-a481-dd630626fd7d?response-content-disposition=attachment%3B%20filename%3D%22Whatsapp%2520Scan%252027%2520octobre%25202026%2520at%252021.02.32%2520%25281%2529-combined.pdf%22&response-content-type=application%2Fpdf&x-user-client-id=dc-prod-virgoweb&x-region=irl1&x-version-id=2&x-partition-prefix=f1eeb8fc61c66736e4c081162044b79457e09dc8a8fa829e055b15d920a373b3dbd42940&x-resource-length=912401&x-resource-id=a7bceeaf63936461e496da422544b79a52e09d90aba08b9e5b0f168876fc79b28a857516&x-key-id=BN5JZ&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDEaCWV1LXdlc3QtMSJGMEQCICorw0iyM16xfnaCDu1Y4lOMRTP2tZmUBaworKdeZen4AiBFxJf8V5%2F7bh08BbaUAjMLBDNiQlvxxHI%2F8M7%2F4P1lAyr0AQj6%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDc2Njk2OTg0NDA3OCIMI6QRaXI0wcfgzSl5KsgBxDoyGor0Gt2FVdGhhrwBo3WuBBFSpPtgfqlqOuIqACwjbSdOFDLVKlMPAoh7GdsbyGq59S%2BdOU9eyf%2FsvJ8gX3%2FciAJmeemwXGJ%2FYyrOK9wRCcKUVmlX7S5mcQR22fFVJJKGsMjkUv4oqriaUT1s4AjRouKggQTszh9PeF3HKpAMogkoxHiSF15EJxz3R%2BVHfhNgsI%2BeUOrDBe2va%2B%2F7DOTTK%2FdflRuvA%2Fst8szndB7HqJpcbuSztk%2Bj05FI74cr1LHI7tU8MYswto2F1wY6mQGLq622AK6YYt1ErwVCQBZSa%2Fxb6v5PGReeYSyqJaWpFTyeQIE6c%2BykPGa3UPbmI40qR8BguxMqkFNhEmMcHd1vsuabvsdFuLxjHyq7ITBZj8BAl0A92E2O3EqwVpxkaMCTC2iuETQM0PAcxGgunFynwYRAuhEqFXO5Wk2lwO0METs8JIrSSf4NLBAKO9jkGiq0v5OKXYrqMgQ%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261028T010725Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIA3FEXXCFXK25UXHMR%2F20261028%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Expires=14400&X-Amz-Signature=1435dc8c50665e858b0a9287c339aa1b0acc4d80946633f0ee5f12657be019a8\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "6ad5a8d24d34e46cf1f6003f0afa71f7f453caeae2649a27bf9d7ffff0783a31",
+    "sha1": "f9865cd5d3cf633d84b65d3e9680479fa60c953a",
+    "md5": "e47c001417678f7018c854c0f6bf78b1",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 4
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.96,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.95,
+      7.83,
+      7.91,
+      7.94,
+      7.94,
+      7.94,
+      7.94,
+      7.93,
+      7.96,
+      7.9,
+      7.96,
+      7.95,
+      7.94,
+      7.15
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.color.org"
+    ],
+    "urls": [
+      "http://www.color.org)/S/GTS_PDFA1/Type/OutputIntent"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 5
+    },
+    "chemins_windows": [
+      "j:\\C23.\t42wof1S\u0013%-\u0015\u0014ʒ2.,",
+      "G:\\Rw",
+      "B:\\HX+)^UC\u001ceE\u0016\u0000"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "EFBB3618E8C0B2110A0067458B6BC623",
+        "E4DA3618E8C0B2110A00291F8E23CD7C"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.color.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.color.org)/S/GTS_PDFA1/Type/OutputIntent": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fwww.color.org%29%2FS%2FGTS_PDFA1%2FType%2FOutputIntent/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0870133399963379,
+      "entropie_globale": 0.995,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0612,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 20,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Whatsapp Scan 27 octobre 2026 at 21.02.32 (1)-combined.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 2.075,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.032,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 2.331,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.761,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.009,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

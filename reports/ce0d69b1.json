@@ -1,0 +1,247 @@
+{
+  "id_rapport": "ce0d69b1",
+  "origine": "extrait_archive",
+  "duree_analyse_s": 4.938,
+  "metadonnees": {
+    "nom": "12ad0471.json",
+    "extension": "json",
+    "taille_octets": 7809,
+    "taille_lisible": "7.6 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\12ad0471.json",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-29T00:52:22",
+    "date_modification": "2026-10-29T00:52:22",
+    "date_acces": "2026-10-29T02:45:15",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".json",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "2a12d97148577bed2e34e91e61ae90130777fd9b56e254c38e5ceb4c617f21a0",
+    "sha1": "c4a05424607c59e8071d32c81c76625d5426a168",
+    "md5": "2789e8efc4796fc3234880397b31960b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.963,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.96
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "s.io"
+    ],
+    "urls": [
+      "https://claude.ai/chat/08507518-71af-47b3-b843-3c748aacf4a4\\nHostUrl=https://claude.ai/api/organizations/def1f0e2-259a-4e88-8af0-dc1efcf7c815/conversations/08507518-71af-47b3-b843-3c748aacf4a4/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Fuploads%2Fcabinet-noir-agent.rar\\n"
+    ],
+    "emails": [
+      "OX@5JO..bK"
+    ],
+    "chemins_windows": [
+      "C:\\",
+      "n:\\",
+      "k:\\",
+      "F:\\",
+      "z:\\",
+      "f:\\",
+      "O:\\",
+      "Q:\\",
+      "B:\\",
+      "u:\\",
+      "J:\\",
+      "M:\\",
+      "o:\\",
+      "t:\\",
+      "m:\\",
+      "y:\\",
+      "g:\\",
+      "Y:\\",
+      "d:\\",
+      "b:\\",
+      "U:\\",
+      "v:\\",
+      "S:\\",
+      "r:\\",
+      "s:\\",
+      "Z:\\",
+      "I:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "a05607febfc5f7d6c44d9ed3022673a6"
+      ],
+      "sha1": [
+        "dc3f72062dd47bd4035ea0bcde8329144ffa295a"
+      ],
+      "sha256": [
+        "1483fb117e7ec1421e4abe23da01f364ed5d78b0ffa4abec6a971a9d8fc4b672"
+      ]
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 6
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "s.io": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 4,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://claude.ai/chat/08507518-71af-47b3-b843-3c748aacf4a4\\nHostUrl=https://claude.ai/api/organizations/def1f0e2-259a-4e88-8af0-dc1efcf7c815/conversations/08507518-71af-47b3-b843-3c748aacf4a4/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Fuploads%2Fcabinet-noir-agent.rar\\n": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {
+      "1483fb117e7ec1421e4abe23da01f364ed5d78b0ffa4abec6a971a9d8fc4b672": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": true,
+          "source": "malwarebazaar",
+          "signale": false,
+          "connu_malveillant": false
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "s.io",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0007447242736816406,
+      "entropie_globale": 0.620375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0767,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 33,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu.",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['s.io'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_e8iofqgn\\analyse-de-fichier-main\\reports\\12ad0471.json",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

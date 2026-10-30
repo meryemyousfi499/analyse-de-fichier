@@ -1,0 +1,165 @@
+{
+  "id_rapport": "54aa921b",
+  "origine": "auto_watch",
+  "duree_analyse_s": 3.448,
+  "metadonnees": {
+    "nom": "Attestation d'immatriculation.pdf",
+    "extension": "pdf",
+    "taille_octets": 108699,
+    "taille_lisible": "106.2 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Attestation d'immatriculation.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-03T11:15:09",
+    "date_modification": "2026-10-03T11:15:10",
+    "date_acces": "2026-10-29T00:36:31",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://www.macnss.ma/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "aff6b1a603337307482015be7dbf99c6d1836736709595c756012a58094100ce",
+    "sha1": "c0cb27b8003f0e66754ac861ca4bbbc9d897d198",
+    "md5": "664f40e68d3a16f8938f211beb615056",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 1
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.99,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      8.0,
+      7.96
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "chemins_windows": [
+      "l:\\\u0017gu\u00186#tS@\u0005mۨ",
+      "n:\\331MSL7.)Y=\u0004\u0014\u0001xc"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "e17f4cfd6dd5a17fe967617c1001ee64",
+        "6c78e80dd892fa2e0c077a297f6a20e6"
+      ],
+      "sha1": [
+        "2bc7ab61c56f459e8176eb05c7705e145cd400ad"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.010366344451904297,
+      "entropie_globale": 0.99875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.044,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 11,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Attestation d'immatriculation.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}

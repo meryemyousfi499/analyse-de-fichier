@@ -1,0 +1,195 @@
+{
+  "id_rapport": "9e4c2c41",
+  "origine": "auto_watch",
+  "duree_analyse_s": 12.838,
+  "metadonnees": {
+    "nom": "crypto1.pdf",
+    "extension": "pdf",
+    "taille_octets": 2092660,
+    "taille_lisible": "2.0 Mo",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\crypto1.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-02T22:32:30",
+    "date_modification": "2026-10-02T22:32:31",
+    "date_acces": "2026-10-29T00:36:34",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.di.ens.fr/~nitulesc/files/crypto1.pdf\nHostUrl=https://www.di.ens.fr/~nitulesc/files/crypto1.pdf\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "81634ced007058d7b7621a4d191ace5d43e1e9070548a2d29ac21f4388723d37",
+    "sha1": "7623926de8f2a1991a368aa753771bcc3b276c9d",
+    "md5": "8cc17f3cadf65fb527224dc98329a56d",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 49
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.98,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.96,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.97,
+      7.86,
+      7.98,
+      7.99,
+      7.92,
+      7.97,
+      7.98,
+      7.97,
+      7.93,
+      7.98,
+      7.96,
+      7.92,
+      7.93,
+      7.98,
+      7.97,
+      7.93,
+      7.97,
+      7.91,
+      7.91,
+      7.97,
+      7.97,
+      7.98,
+      7.97,
+      7.98,
+      8.0,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [
+      "040anca.nitulescu@ens.fr"
+    ],
+    "chemins_windows": [
+      "I:\\",
+      "I:\\lvyX!-ʕέ\\\u0018 hxI\u0001(",
+      "e:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "35415C9885E54F79C98AA7E062C6E7CE"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.1995716094970703,
+      "entropie_globale": 0.9975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.046,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 11,
+    "niveau": "faible",
+    "action_recommandee": "allow",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "allow",
+    "libelle": "Autoriser",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\crypto1.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "sandbox": {
+    "recommande": false,
+    "id_soumission": null
+  }
+}
