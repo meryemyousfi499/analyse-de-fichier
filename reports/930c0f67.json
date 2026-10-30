@@ -1,0 +1,342 @@
+{
+  "id_rapport": "930c0f67",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 45.507,
+  "metadonnees": {
+    "nom": "Dataset TP3 Partie 2.zip",
+    "extension": "zip",
+    "taille_octets": 101048,
+    "taille_lisible": "98.7 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Dataset TP3 Partie 2.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-23T16:14:13",
+    "date_modification": "2026-10-23T16:14:14",
+    "date_acces": "2026-10-30T05:07:57",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://drive.google.com/\nHostUrl=https://drive.usercontent.google.com/download?id=1FvUCcRT1vKXmY9IFvzE7xYEFQJjEOt76&export=download&authuser=1\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "15490747094474e726e68b9f7631fcfcc5a7be3aecfa15fdf2eb400f658b5f3f",
+    "sha1": "8a58d982651a0fb0a2c589b83a92b01d24556d62",
+    "md5": "f5e78c15c82efc2a0bf5ac81886160f8",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": false,
+      "raison": "module oletools non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.995,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      7.99
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "Module clamd non installe dans cet environnement Python"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.009636688232421874,
+      "entropie_globale": 0.999375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.044,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_fuijgu71\\Dataset TP3 Partie 2\\friends.csv",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_fuijgu71\\Dataset TP3 Partie 2\\genres.csv",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_fuijgu71\\Dataset TP3 Partie 2\\movies.csv",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_fuijgu71\\Dataset TP3 Partie 2\\mov_genre.csv",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_fuijgu71\\Dataset TP3 Partie 2\\ratings.csv",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_fuijgu71\\Dataset TP3 Partie 2\\users.csv"
+    ],
+    "erreur": null
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "024863a7",
+      "nom": "friends.csv",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "32154c65",
+      "nom": "genres.csv",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "7113f315",
+      "nom": "movies.csv",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "6f230eee",
+      "nom": "mov_genre.csv",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "5e787166",
+      "nom": "ratings.csv",
+      "score": 0,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "7c6e1e7a",
+      "nom": "users.csv",
+      "score": 1,
+      "verdict": "inconclusive"
+    }
+  ],
+  "score_final": {
+    "score": 1,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "faible",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "analyse_statique"
+      ],
+      "ratio": 0.33,
+      "manquants": [
+        {
+          "outil": "clamav",
+          "statut": "unavailable",
+          "raison": "Module clamd non installe dans cet environnement Python"
+        },
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : clamav (unavailable), yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Dataset TP3 Partie 2.zip",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "unavailable",
+        "duration_s": 0.0,
+        "summary": "Module clamd non installe dans cet environnement Python",
+        "findings": [],
+        "error": "Module clamd non installe dans cet environnement Python"
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.016,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 1.32,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.197,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "archive : le contenu extrait est analysé fichier par fichier",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "extraction_archive",
+        "lance": true,
+        "raison": "archive détectée ; contenu ré-analysé fichier par fichier"
+      },
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "archive : analyse du contenu extrait"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

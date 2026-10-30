@@ -1,0 +1,619 @@
+{
+  "id_rapport": "f78f0421",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 17.054,
+  "metadonnees": {
+    "nom": "1-s2.0-S2590123025016329-main.pdf",
+    "extension": "pdf",
+    "taille_octets": 4692879,
+    "taille_lisible": "4.5 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\1-s2.0-S2590123025016329-main.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-26T09:35:54",
+    "date_modification": "2026-10-26T09:35:55",
+    "date_acces": "2026-10-30T02:45:55",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=about:internet\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "7818ccd4573836c419c04c278ccbc6bf7195d3a6c5e4b748cb629ccb240a3d94",
+    "sha1": "e4871aa4a907429bee7aca0cf02d4ce576450267",
+    "md5": "dcf35204822e689f4e9e2b9c690b70b0",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 16
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.855,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.95,
+      7.98,
+      7.96,
+      6.92,
+      7.87,
+      7.03,
+      7.89,
+      7.91,
+      7.94,
+      7.94,
+      7.99,
+      7.03,
+      7.9,
+      7.6,
+      7.63,
+      7.96,
+      7.92,
+      7.94,
+      7.92,
+      7.1,
+      7.95,
+      7.94,
+      7.94,
+      7.96,
+      7.96,
+      6.56,
+      7.97,
+      7.95,
+      7.94,
+      7.96,
+      7.95,
+      7.2,
+      7.89,
+      7.97,
+      7.94,
+      7.97,
+      7.96,
+      6.98,
+      7.95,
+      7.96,
+      7.96,
+      7.92,
+      7.96,
+      7.97,
+      7.84,
+      7.27,
+      7.95,
+      7.85,
+      7.83,
+      6.97,
+      7.95,
+      7.83,
+      7.89,
+      6.94,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.95,
+      7.96,
+      7.98,
+      7.05,
+      7.98,
+      6.8
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "refhub.elsevier.com",
+      "doi.org",
+      "analyticsindiamag.com",
+      "elsevier.com",
+      "sciencedirect.com",
+      "www.niso.org",
+      "creativecommons.org",
+      "crossref.org",
+      "prismstandard.org",
+      "www.elsevier.com",
+      "orcid.org",
+      "gmail.com",
+      "www.sciencedirect.com",
+      "crossmark.crossref.org"
+    ],
+    "urls": [
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0001)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0002)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0003)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0004)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0005)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0006)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0007)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0008)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0009)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0010)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0011)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0012)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0013)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0014)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0015)",
+      "https://doi.org/10.3390/ai5040143)",
+      "https://doi.org/10.1007/s10462-025-11108-x)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0018)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0019)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0020)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0022)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0023)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0024)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0025)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0026)",
+      "https://doi.org/10.1007/s43926-023-00034-5)",
+      "https://doi.org/10.1007/s00500-023-09037-4)",
+      "https://doi.org/10.1016/j.teler.2022.100009)",
+      "https://doi.org/10.1186/s40537-023-00694-8)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0032)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0033)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0034)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0035)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0036)",
+      "https://analyticsindiamag.com/how-to-use-genetic-algorithm-for-yperparameter-tuning-of-ml-models/)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0038)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0039)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0041)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0042)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0043)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0044)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0045)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0046)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0047)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0048)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0049)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0050)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0051)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0052)",
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0053)"
+    ],
+    "emails": [
+      "ssverma80@gmail.com"
+    ],
+    "exclus_domaines_legitimes": {
+      "domaines": 3
+    },
+    "chemins_windows": [
+      "i:\\",
+      "q:\\qʫ\u000e-B-\u000e",
+      "t:\\\t\u0014BP(\u0014",
+      "i:\\Wd.\b=p\u000b\u000bqJtIW",
+      "z:\\]$\u001awP\u0000\u001eI\u001eFldTHrS5XR5+EIƪ-T",
+      "z:\\K'$$@\u0019h]\u0015Bqxx\bs7,РhpЈ",
+      "p:\\{\u000b޻_\u0002\u0007R{~dO߫Ф\u000e\u0013ree\u000f\f܂ħ)+\u001bۄ\u0003ә`j\u0015˔Q.m\u001fZt6Tɡk5tg\u000f1S",
+      "v:\\F-G\u0002MmK%^ \u0016Y\u0015\u0015\u000be+\u0013",
+      "m:\\\u001c;c",
+      "g:\\",
+      "n:\\X%ti֍YAiAz"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "AE27B8E9F53CF011BEBAAB20A543BDF0",
+        "2800FC50EE9F4D48853C051361BD41F2",
+        "03DA16832AE162993D10BAEC559CD949",
+        "AF27B8E9F53CF011BEBAAB20A543BDF0",
+        "A508CE8C5ABCFDEB7000CA2A9EC23C92",
+        "69C1594FD0453F4AEA569775533FD125",
+        "B027B8E9F53CF011BEBAAB20A543BDF0",
+        "1BB7E8FF1E7F3455EC07E1E12359F016",
+        "1EE67889A79AEEE3FD41117183BC58E3",
+        "B127B8E9F53CF011BEBAAB20A543BDF0"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 114
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "refhub.elsevier.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "doi.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "analyticsindiamag.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "elsevier.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "sciencedirect.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0001)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0002)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0003)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0004)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://refhub.elsevier.com/S2590-1230\\(25\\)01632-9/sbref0005)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "doi.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "elsevier.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "sciencedirect.com",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.44754781723022463,
+      "entropie_globale": 0.981875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 50,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1305,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 52,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['doi.org', 'elsevier.com', 'sciencedirect.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\1-s2.0-S2590123025016329-main.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 8.47,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.947,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 7.701,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 6.737,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.016,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

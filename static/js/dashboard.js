@@ -115,7 +115,7 @@ document.querySelectorAll(".stat-card[data-nav]").forEach((btn) => {
   btn.addEventListener("click", () => switchView(btn.dataset.nav));
 });
 
-document.getElementById("stat-last-report").addEventListener("click", () => {
+document.getElementById("stat-last-report")?.addEventListener("click", () => {
   if (_lastReportId) viewReportById(_lastReportId);
 });
 
@@ -470,21 +470,21 @@ function openSandboxDetail(entryId) {
   panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
-document.getElementById("sandbox-detail-close").addEventListener("click", closeSandboxDetail);
+document.getElementById("sandbox-detail-close")?.addEventListener("click", closeSandboxDetail);
 
 // ---------------- Upload / Dropzone ----------------
 const dropzone = document.getElementById("dropzone");
 const fileInput = document.getElementById("file-input");
 
-dropzone.addEventListener("click", () => fileInput.click());
-dropzone.addEventListener("dragover", (e) => { e.preventDefault(); dropzone.classList.add("is-dragover"); });
-dropzone.addEventListener("dragleave", () => dropzone.classList.remove("is-dragover"));
-dropzone.addEventListener("drop", (e) => {
+dropzone?.addEventListener("click", () => fileInput.click());
+dropzone?.addEventListener("dragover", (e) => { e.preventDefault(); dropzone.classList.add("is-dragover"); });
+dropzone?.addEventListener("dragleave", () => dropzone.classList.remove("is-dragover"));
+dropzone?.addEventListener("drop", (e) => {
   e.preventDefault();
   dropzone.classList.remove("is-dragover");
   if (e.dataTransfer.files.length) analyzeFile(e.dataTransfer.files[0]);
 });
-fileInput.addEventListener("change", () => {
+fileInput?.addEventListener("change", () => {
   if (fileInput.files.length) analyzeFile(fileInput.files[0]);
 });
 
@@ -529,7 +529,7 @@ async function viewReportById(reportId) {
   // Bascule sur la vue Analyse et y affiche le rapport demande
   document.querySelectorAll(".rail-link").forEach((b) => b.classList.remove("is-active"));
   document.querySelectorAll(".view").forEach((v) => v.classList.remove("is-active"));
-  document.querySelector('.rail-link[data-view="analyse"]').classList.add("is-active");
+  document.querySelector('.rail-link[data-view="analyse"]')?.classList.add("is-active");
   document.getElementById("view-analyse").classList.add("is-active");
 
   document.getElementById("verdict-line").textContent = "Chargement du rapport...";
@@ -541,7 +541,7 @@ async function viewReportById(reportId) {
       return;
     }
     const data = await res.json();
-    document.getElementById("dropzone-filename").textContent =
+    (document.getElementById("dropzone-filename") || {}).textContent =
       (data.metadonnees && data.metadonnees.nom) || reportId;
     resetPipelineTrack();
     animatePipelineSteps();
@@ -812,6 +812,7 @@ function renderClamav(av) {
 
 function renderMLFeatures(ml) {
   const el = document.getElementById("panel-ml");
+  if (!el) return;
   el.innerHTML = `<p class="empty-note" style="margin-bottom:10px">Methode : ${ml.methode} — probabilite globale : ${(ml.probabilite_risque * 100).toFixed(1)}%</p>`;
   Object.entries(ml.features).forEach(([k, v]) => {
     const pct = Math.min(100, Math.abs(v) * (v <= 1 ? 100 : 20));

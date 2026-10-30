@@ -1,0 +1,79 @@
+/* Rapport en pages : boutons de sections + page dédiée */
+.section-nav {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.section-nav[hidden], .section-back[hidden] { display: none; }
+.section-btn { min-height: 74px; justify-content: center; }
+.section-btn .stat-label { font-size: 13px; text-transform: none; letter-spacing: 0; color: var(--ivory); }
+.section-btn.is-alert { border-color: var(--high); }
+.section-btn.is-alert .stat-sub { color: var(--high); }
+
+.section-back {
+  grid-column: span 6;
+  justify-self: start;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--brass-light);
+  font-family: var(--sans);
+  font-size: 13px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.section-back:hover { border-color: var(--brass); }
+
+/* Les panneaux de section sont cachés tant qu'on n'a pas ouvert leur page */
+.report-grid .panel-section { display: none; }
+.report-grid .panel-section.is-open { display: block; grid-column: span 6; }
+
+@media (max-width: 900px) {
+  .section-nav { grid-template-columns: repeat(2, 1fr); grid-column: span 1; }
+  .section-back { grid-column: span 1; }
+}
+
+/* Cache la grille tant qu'aucune analyse n'a été faite
+   (display:grid de .report-grid écrasait l'attribut hidden) */
+.report-grid[hidden] { display: none; }
+
+/* Accueil par machines */
+.stat-card.is-static { cursor: default; }
+.stat-card.is-static:hover { border-color: var(--line); background: var(--panel); }
+.stat-card.is-static.is-alert:hover { border-color: var(--line); }
+.m-stats, #machine-stats { margin: 22px 0; }
+#view-machine .section-back, #view-analyse > .section-back { margin-bottom: 14px; }
+#machine-tabs { margin: 8px 0 4px; }
+@media (max-width: 1200px) { .m-stats, #machine-stats { grid-template-columns: repeat(3, 1fr); } }
+
+/* Vue d'ensemble, listes, graphiques */
+.stats-bar.auto { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+button.stat-card.is-selected { border-color: var(--brass); background: var(--panel-2); }
+.view-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.period { padding: 8px 10px; background: var(--panel); border: 1px solid var(--line); color: var(--ivory); font-family: var(--sans); }
+.sub-title { font-family: var(--serif); font-weight: 500; font-size: 20px; color: var(--brass-light); margin: 28px 0 0; }
+.items-panel { background: var(--panel); border: 1px solid var(--brass); padding: 16px 18px; margin: 0 0 22px; overflow-x: auto; }
+.items-panel[hidden] { display: none; }
+.items-head { display: flex; justify-content: space-between; align-items: center; }
+.items-head h3 { margin: 0; font-family: var(--serif); font-weight: 500; font-size: 18px; color: var(--brass-light); }
+.items-head h3 span { color: var(--taupe); font-size: 14px; margin-left: 6px; }
+.history-row { cursor: pointer; }
+.history-row:hover { background: rgba(255,255,255,.05); }
+.m-charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 22px 0; }
+.chart-box { background: var(--panel); border: 1px solid var(--line); padding: 16px 18px; }
+.chart-box h3 { margin: 0 0 14px; font-family: var(--serif); font-weight: 500; font-size: 18px; color: var(--brass-light); }
+.stack { display: flex; height: 14px; background: var(--line); }
+.stack span { display: block; height: 100%; }
+.legend { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12.5px; color: var(--taupe); }
+.legend i { display: inline-block; width: 9px; height: 9px; margin-right: 6px; }
+.legend b { color: var(--ivory); margin-left: 4px; }
+.daybars { display: flex; align-items: flex-end; gap: 4px; height: 90px; }
+.daybars .col { flex: 1; height: 100%; display: flex; align-items: flex-end; }
+.daybars .t { display: flex; align-items: flex-end; width: 100%; background: var(--brass); opacity: .75; min-height: 3px; }
+.daybars .r { display: block; width: 100%; background: var(--high); }
+@media (max-width: 900px) { .m-charts { grid-template-columns: 1fr; } }
+.m-charts.three { grid-template-columns: repeat(3, 1fr); }
+.chart-box .history-table { margin-top: 0; }
+.chart-box .history-table td { padding: 7px 6px; font-size: 12.5px; }
+.big { font-family: var(--serif); font-size: 40px; color: var(--brass-light); margin: 0 0 10px; line-height: 1; }
+@media (max-width: 1200px) { .m-charts.three { grid-template-columns: 1fr; } }

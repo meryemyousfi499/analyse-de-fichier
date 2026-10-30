@@ -1,0 +1,355 @@
+{
+  "id_rapport": "c321efd9",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 5.252,
+  "metadonnees": {
+    "nom": "Whatsapp Scan 28 octobre 2026 at 01.08.09-combined.pdf",
+    "extension": "pdf",
+    "taille_octets": 695486,
+    "taille_lisible": "679.2 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Whatsapp Scan 28 octobre 2026 at 01.08.09-combined.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-28T01:20:11",
+    "date_modification": "2026-10-28T01:20:13",
+    "date_acces": "2026-10-30T04:20:20",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://acrobat.adobe.com/\nHostUrl=https://acp-aep-cs-blobstore-prod-irl1-data.adobe.io/1bcbd472-3c74-4ae8-8ad5-d3b384c0987b?response-content-disposition=attachment%3B%20filename%3D%22Whatsapp%2520Scan%252028%2520octobre%25202026%2520at%252001.08.09-combined.pdf%22&response-content-type=application%2Fpdf&x-user-client-id=dc-prod-virgoweb&x-region=irl1&x-version-id=2&x-partition-prefix=ea044be73463fb944e213c57d46739e8e17c4ddd8848ff97ed8b897a44baba76&x-resource-length=695486&x-resource-id=e85139e13f11dd9e552b3a05f0793c9eb20f5485d868f88a9cfad8771ebbcb0255114b1c&x-key-id=BN5JZ&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDEaCWV1LXdlc3QtMSJGMEQCIB2D1z%2BZa6f338mgK%2BnMW5Gnd%2F9KdPgSpcFiZ8iM7UbmAiB57xac%2BovraZNX3QqWa6HIBhM0OZjeQ%2F7SPfedKPUn7Sr0AQj5%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDc2Njk2OTg0NDA3OCIM9tyE3Ldh7cWGFXliKsgBCH5yfYvF9WfETBq%2FUY9xjxpZgsWhkONJp59kBNwW8dWDvAJ6F4SwQ1%2F6mpQBxCC1cxsgmcgbJhQGjjJoYQAE2VXhmVVum%2FuKjLFsS6EJKWoyF6t1rEfPu5udAnbb36wej78wHfIK8MBbHnhg%2ByQXMYsNUd16NMeSwomKllj8uJgxFG%2Fr7ifokBwMv%2BfAve1GsV3tDGCMDGa9EupFXtmdRBKQwM%2BLAsiyfNBmSO7AXw3VRJ9MjikabSJ6HTcYC%2B%2BtePIAk5qHtCYwkI%2BF1wY6mQHvffDM975L6%2Feo8E99cfQLy1fcSxgD%2FO31fKkK%2Bhf2CW6AfruItfdzM74gfYHe80VWMgJmll2CbBAJTt%2B34gGgSbuuvH03xmHmmQ65NwMA5qKENVi1kLKcJBlqVL9ZWnV9Rx86qlcQJiW1sXPGI0Mz2eOvGwyaNaeTK6s%2B9mWBPTGb3tQpf4%2ByhRGf%2FR22InLCkkFSigfKZ2o%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261028T012042Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIA3FEXXCFXFO2X2K2N%2F20261028%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Expires=14400&X-Amz-Signature=1c83b12293c5a5688d534c058aa10b3672d118fa74b320ad6f6ad8f90e8b4ac5\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "96d25f05014dcc83295ddca8e081b7c404fb623a1eaa23a0a55827c5a53eb82c",
+    "sha1": "28bfb15c22e653521ac5aac5a927f072ee0ff63b",
+    "md5": "57ea5c3337bfc9b01554b17b82090c5e",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 4
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.956,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.93,
+      7.94,
+      7.95,
+      7.96,
+      7.96,
+      7.97,
+      7.95,
+      7.88,
+      7.9,
+      7.83,
+      6.84
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.color.org"
+    ],
+    "urls": [
+      "http://www.color.org)/S/GTS_PDFA1/Type/OutputIntent"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 5
+    },
+    "chemins_windows": [
+      "j:\\y'&NW\u001ahN.$ܤ.3p",
+      "i:\\\u001bIs"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "B95B911AE8C0B2110A0067458B6BC623",
+        "E07A911AE8C0B2110A00291F8E23CD7C"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "infecte": null,
+    "signature": null,
+    "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.color.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "http://www.color.org)/S/GTS_PDFA1/Type/OutputIntent": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fwww.color.org%29%2FS%2FGTS_PDFA1%2FType%2FOutputIntent/general"
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.06632671356201172,
+      "entropie_globale": 0.9945,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0609,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 20,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "faible",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.5,
+      "manquants": [
+        {
+          "outil": "clamav",
+          "statut": "error",
+          "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+        },
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : clamav (error), yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Whatsapp Scan 28 octobre 2026 at 01.08.09-combined.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "error",
+        "duration_s": 1.329,
+        "summary": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte",
+        "findings": [],
+        "error": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 3.034,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 2.651,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.496,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.01,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

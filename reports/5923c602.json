@@ -1,0 +1,316 @@
+{
+  "id_rapport": "5923c602",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 2.963,
+  "metadonnees": {
+    "nom": "AnImprovedAnomaly-basedIntrusionDetectionSystemforIoTApplicationsusingMachineLearningMethods.pdf",
+    "extension": "pdf",
+    "taille_octets": 687492,
+    "taille_lisible": "671.4 Ko",
+    "mime_reel": "inconnu",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\AnImprovedAnomaly-basedIntrusionDetectionSystemforIoTApplicationsusingMachineLearningMethods.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-26T09:27:44",
+    "date_modification": "2026-10-26T09:27:44",
+    "date_acces": "2026-10-30T05:23:54",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.researchgate.net/profile/Shirin-Muataz/publication/401723941_An_Improved_Anomaly-based_Intrusion_Detection_System_for_IoT_Applications_using_Machine_Learning_Methods/links/6a4eb755f6cec25ad2d7a654/An-Improved-Anomaly-based-Intrusion-Detection-System-for-IoT-Applications-using-Machine-Learning-Methods.pdf\nHostUrl=https://www.researchgate.net/profile/Shirin-Muataz/publication/401723941_An_Improved_Anomaly-based_Intrusion_Detection_System_for_IoT_Applications_using_Machine_Learning_Methods/links/6a4eb755f6cec25ad2d7a654/An-Improved-Anomaly-based-Intrusion-Detection-System-for-IoT-Applications-using-Machine-Learning-Methods.pdf\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "853b546b50fd33bb905b8df4416923f3e3c03b9c2ed9944f2ef9a5c00d79611c",
+    "sha1": "dab40bbe746d070658e05b3797299dce077b44a8",
+    "md5": "9183dff0b21616edb1d091f0f212a930",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": false,
+      "raison": "module PyPDF2 non installe"
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.841,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.89,
+      7.99,
+      7.99,
+      7.66,
+      7.81,
+      7.8,
+      7.91,
+      7.65,
+      7.97,
+      7.99,
+      4.12
+    ],
+    "base64": {
+      "nombre_blobs_base64": 44,
+      "exemple": "FEFF0078006D0070002E006400690064003A003200610036003300610062..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 7
+    },
+    "chemins_windows": [
+      "Z:\\x",
+      "Y:\\",
+      "t:\\\u0019ǓD@ ;A",
+      "h:\\P\u0018\tOA2f\u0001Q\th'uw~,ƒH",
+      "p:\\㝎\u00034~T;9\\f}eR\u0000Hh\u001dpQ#5dN҄x9n{3.=,\u0014=D\u0010Eec8~l7fg\u001f^c\u001f\u0018r\u001b\u0010c\u001dqt"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "EC6F74B8D0BCC042A55DF45962D239B4",
+        "6523678466C4934886A1B98BCCC5C8BF"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "raison": "Module clamd non installe dans cet environnement Python"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.06556434631347656,
+      "entropie_globale": 0.980125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0768,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 12,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "faible",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.5,
+      "manquants": [
+        {
+          "outil": "clamav",
+          "statut": "unavailable",
+          "raison": "Module clamd non installe dans cet environnement Python"
+        },
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : clamav (unavailable), yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\AnImprovedAnomaly-basedIntrusionDetectionSystemforIoTApplicationsusingMachineLearningMethods.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "unavailable",
+        "duration_s": 0.0,
+        "summary": "Module clamd non installe dans cet environnement Python",
+        "findings": [],
+        "error": "Module clamd non installe dans cet environnement Python"
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.002,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.894,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.72,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.007,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

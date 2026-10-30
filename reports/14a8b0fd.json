@@ -1,0 +1,606 @@
+{
+  "id_rapport": "14a8b0fd",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 31.604,
+  "metadonnees": {
+    "nom": "s13638-025-02477-6.pdf",
+    "extension": "pdf",
+    "taille_octets": 3001212,
+    "taille_lisible": "2.9 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\s13638-025-02477-6.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-26T09:34:38",
+    "date_modification": "2026-10-26T09:34:39",
+    "date_acces": "2026-10-30T04:24:20",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://link.springer.com/article/10.1186/s13638-025-02477-6\nHostUrl=https://link.springer.com/content/pdf/10.1186/s13638-025-02477-6.pdf\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "553f68a1c9cdf90af0bf76277ba53585c01bebe93c2ea45bac625fe160321c0f",
+    "sha1": "50335a24909935c919494e40826a8828fe6dc8a1",
+    "md5": "bbd2bdac9bb3b29c85ecd40ddb200b47",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 21
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.93,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.56,
+      7.62,
+      7.69,
+      7.89,
+      7.99,
+      7.99,
+      7.86,
+      7.8,
+      7.89,
+      7.99,
+      7.99,
+      7.99,
+      7.93,
+      7.61,
+      7.99,
+      7.99,
+      7.99,
+      7.89,
+      7.99,
+      7.87,
+      7.99,
+      7.87,
+      7.88,
+      7.99,
+      7.87,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      7.89,
+      7.98,
+      7.9,
+      7.99,
+      7.71,
+      8.0,
+      8.0,
+      7.84,
+      7.24,
+      7.98,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.83,
+      4.42
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "5.5.13.4"
+    ],
+    "domaines": [
+      "springer.com",
+      "springerlink.com",
+      "doi.org",
+      "crossref.org",
+      "prismstandard.org",
+      "www.niso.org",
+      "www.aiim.org",
+      "springernature.com",
+      "orcid.org",
+      "yahoogroups.com",
+      "magazine.com",
+      "www.pdftk.com",
+      "lowagie.com",
+      "cybersecurityventures.com",
+      "arxiv.org",
+      "creativecommons.org",
+      "crossmark.crossref.org"
+    ],
+    "urls": [
+      "https://doi.org/10.1186/s13638-025-02477-6)/Title(Deep",
+      "http://crossref.org/crossmark/1.0/",
+      "http://prismstandard.org/namespaces/basic/2.0/",
+      "http://www.niso.org/schemas/jav/1.0/",
+      "http://www.aiim.org/pdfa/ns/id/",
+      "http://springernature.com/ns/xmpExtensions/2.0/",
+      "http://springernature.com/ns/xmpExtensions/2.0/authorInfo/",
+      "http://www.aiim.org/pdfa/ns/extension/",
+      "http://www.aiim.org/pdfa/ns/schema#",
+      "http://www.aiim.org/pdfa/ns/property#",
+      "http://www.aiim.org/pdfa/ns/type#",
+      "http://www.aiim.org/pdfa/ns/field#",
+      "https://doi.org/10.1186/s13638-025-02477-6",
+      "http://orcid.org/0009-0009-4672-8607",
+      "https://cybersecurityventures.com/hackerpocalypse-cybercrime-report-2016/)",
+      "http://arxiv.org/2305.17473)",
+      "http://arxiv.org/1412.6980)",
+      "http://arxiv.org/1712.02029)",
+      "http://springernature.com/ns/xmpExtensions/2.0/editorInfo/",
+      "http://springernature.com/ns/xmpExtensions/2.0/seriesEditorInfo/",
+      "http://orcid.org/0009-0009-4672-8607)",
+      "http://creativecommons.org/licenses/by-nc-nd/4.0/)",
+      "http://crossmark.crossref.org/dialog/?doi=10.1186/s13638-025-02477-6&domain=pdf)"
+    ],
+    "emails": [
+      "prism-wg@yahoogroups.com",
+      "info@prismstandard.org",
+      "W@.H.H.H.H.H.H.H.D.D.D.D.D.D.D.DN"
+    ],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 14
+    },
+    "chemins_windows": [
+      "c:\\G62ڟ4Kv^+S;sr5UDf\u001b~[b\bwL_!\u0017SoWq\u000eq].}G2\u001fLr3θy]n",
+      "s:\\\u001f5C\\'\u0013\u0010(\u000el\u0002eL~8~",
+      "P:\\Ոg\u000e=þD\u0019 1\u000b}L\u0019dJ\u0005\u0018\u0000\u0014",
+      "y:\\C\u0003EZ. V^dɩS-GW\u0001buɼl",
+      "t:\\\u0001\u000b\u0003!\u0019\f\u0006",
+      "q:\\'v",
+      "I:\\}6\u000f}\u001bǭ9T\u000b\u0007{Wn=^د&=\u000e}w7Ǽ,ADT)R\u00149\u0002\u0002zuCK\u0005\u0002\u0004ДX\u0018\tE\f\u0012@",
+      "T:\\N\u0017\u0016ȱbl9VR`",
+      "D:\\Kz\b\u001cu8]-,\u0002sd\u00106"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "97C63461F5C6E411B47C86F789762FAC",
+        "CB3922DCB7C1E4119116AB34D81C299E",
+        "D53570733F1AE9118ED2AA710E6871AE",
+        "5D20892493BFDB11914A8590D31508C8",
+        "BD9FD2D1191AE9119720BECECD8DF2DE",
+        "222181770DC1EA11B67EB71D56208C82",
+        "688159C71A9CEA118D58B0568F112091",
+        "D7EED071A2E2E511A229E1EA5DDA7EF6",
+        "18ce1a44d81ba24d8d868c8e607385d0",
+        "202453889e8fcce85e9dc0b98d11b5b2"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 64
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {
+      "5.5.13.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "DE",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "springer.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "springerlink.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "doi.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "crossref.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      },
+      "prismstandard.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 8,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "nombre_urls_malveillantes": null
+        }
+      }
+    },
+    "urls": {
+      "https://doi.org/10.1186/s13638-025-02477-6)/Title(Deep": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://crossref.org/crossmark/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://prismstandard.org/namespaces/basic/2.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.niso.org/schemas/jav/1.0/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      },
+      "http://www.aiim.org/pdfa/ns/id/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 33,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": true,
+          "source": "urlhaus",
+          "signale": false,
+          "statut_url": null,
+          "menace": null
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "springer.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "doi.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "crossref.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "prismstandard.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://www.niso.org/schemas/jav/1.0/",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "http://www.aiim.org/pdfa/ns/id/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": true,
+        "source": "malwarebazaar",
+        "signale": false,
+        "connu_malveillant": false
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.28621788024902345,
+      "entropie_globale": 0.99125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 23,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1291,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 52,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['springer.com', 'doi.org', 'crossref.org', 'prismstandard.org'], URLs: ['http://www.niso.org/schemas/jav/1.0/', 'http://www.aiim.org/pdfa/ns/id/'], hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\s13638-025-02477-6.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 21.541,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 4.114,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 7.557,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 5.004,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.021,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

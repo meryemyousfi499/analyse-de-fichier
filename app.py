@@ -11,8 +11,9 @@ from flask import Flask, jsonify, render_template, request, redirect
 
 from config import MAX_UPLOAD_MB, UPLOAD_DIR, AUTO_WATCH_ENABLED, WATCH_DIRS, HOST, PORT, API_TOKEN
 from agent.pipeline import run_pipeline, list_reports, get_report
-
+from agent.machines_api import bp as machines_bp
 app = Flask(__name__)
+app.register_blueprint(machines_bp)
 app.config["MAX_CONTENT_LENGTH"] = MAX_UPLOAD_MB * 1024 * 1024
 
 # URL publique (ou locale) de secagent-server, utilisée uniquement pour

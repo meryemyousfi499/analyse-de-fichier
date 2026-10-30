@@ -1,0 +1,398 @@
+{
+  "id_rapport": "4528f14c",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 68.783,
+  "metadonnees": {
+    "nom": "2016101628_a.pdf",
+    "extension": "pdf",
+    "taille_octets": 4334549,
+    "taille_lisible": "4.1 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\2016101628_a.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-18T01:24:59",
+    "date_modification": "2026-10-18T01:25:04",
+    "date_acces": "2026-10-30T06:01:50",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.institutdesactuaires.com/global/gene/link.php?doc_id=8479&fg=1\nHostUrl=https://www.institutdesactuaires.com/global/gene/link.php?doc_id=8479&fg=1\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "a49be3b7d6a0eb75c2054297082ba89fd0789073e09a42243e317b90776a15d7",
+    "sha1": "a271d6cfea5f7e5dde417d8ceb0984e150ed3bb9",
+    "md5": "64a7e8f61c30927a4d71818420d1b97f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": true,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 71
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.924,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.15,
+      7.61,
+      7.88,
+      7.97,
+      7.98,
+      7.97,
+      7.99,
+      7.97,
+      7.97,
+      7.78,
+      7.85,
+      7.76,
+      7.92,
+      7.98,
+      7.93,
+      7.82,
+      7.95,
+      7.91,
+      7.86,
+      7.96,
+      7.92,
+      7.94,
+      7.97,
+      7.96,
+      6.73,
+      4.97,
+      7.77,
+      7.85,
+      7.94,
+      7.95,
+      7.96,
+      7.96,
+      7.97,
+      7.8,
+      7.94,
+      7.98,
+      7.98,
+      7.68,
+      4.19,
+      5.8,
+      7.97,
+      7.97,
+      7.97,
+      7.98,
+      7.96,
+      7.94,
+      7.95,
+      7.96,
+      7.96,
+      7.93,
+      7.93,
+      7.94,
+      7.84,
+      7.41,
+      7.59,
+      7.91,
+      7.89,
+      7.88,
+      7.95,
+      7.99,
+      5.41,
+      6.37,
+      7.64,
+      7.96
+    ],
+    "base64": {
+      "nombre_blobs_base64": 5,
+      "exemple": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 5
+    },
+    "chemins_windows": [
+      "X:\\\u0004Ҥ\t\u000b;h\u0005\u000b̙-\u001d",
+      "c:\\zep\u0016oc\u000b-^#fu}]%\u0000.y\\",
+      "z:\\[\u001d\u0001,L",
+      "g:\\",
+      "X:\\جmVA^\f\u0019\u0003~ڭnZa4g\u0019",
+      "s:\\\u000bQ؃\f",
+      "o:\\!X6Q\u0019q",
+      "g:\\!\u0014ܶD+\u0004ry)\u0000&n[h1\u0007\u0005I\u0015.H[[t&]_+FY~\u0000Uj#qy\u001eI\u0013J\u001c'",
+      "L:\\cam+\u0006s[\u001b)\u001axb\u001aiWXCrņ\u001a!",
+      "n:\\5[\\ѳX",
+      "m:\\TZ2m1(3rϩBEQfCk`Z-j\tXH\u0011\u001eK\u000b[P\u0007",
+      "e:\\4",
+      "r:\\]W\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000G.Tb{y\\o",
+      "X:\\\f-Y",
+      "Y:\\g!l.\u001c\u00162ޅy&",
+      "p:\\F7^uaXassaj",
+      "G:\\ORPR@"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "B802E5D42580E14B80ADDDF41D69748C",
+        "A8E77B323B6D48EB822AC61DD3948354"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "infecte": null,
+    "signature": null,
+    "raison": "Erreur pendant l'analyse ClamAV : Error while reading from socket: ('timed out',)"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [
+      {
+        "indicator": "/OpenAction",
+        "description": "Marqueur PDF présent : /OpenAction"
+      }
+    ],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.4133748054504395,
+      "entropie_globale": 0.9905,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.081,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 22,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Analyse specialisee : indicateur(s) a verifier -> /OpenAction.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "faible",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.5,
+      "manquants": [
+        {
+          "outil": "clamav",
+          "statut": "error",
+          "raison": "Erreur pendant l'analyse ClamAV : Error while reading from socket: ('timed out',)"
+        },
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : clamav (error), yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\2016101628_a.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "error",
+        "duration_s": 67.829,
+        "summary": "Erreur pendant l'analyse ClamAV : Error while reading from socket: ('timed out',)",
+        "findings": [],
+        "error": "Erreur pendant l'analyse ClamAV : Error while reading from socket: ('timed out',)"
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.712,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 7.424,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 4.633,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "detected",
+        "duration_s": 0.022,
+        "summary": "1 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "/OpenAction",
+            "description": "Marqueur PDF présent : /OpenAction"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

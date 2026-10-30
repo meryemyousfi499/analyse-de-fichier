@@ -6,6 +6,18 @@ dégradé (sans Threat Intelligence externe) si elles sont absentes.
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# --- Chargement du fichier .env (clés API), sans dépendance externe ---
+# Une variable déjà définie dans le terminal reste prioritaire sur le fichier.
+_env_path = os.path.join(BASE_DIR, ".env")
+if os.path.isfile(_env_path):
+    with open(_env_path, encoding="utf-8") as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip().strip('"').strip("'"))
+
 UPLOAD_DIR = os.path.join(BASE_DIR, "uploads")
 QUARANTINE_DIR = os.path.join(BASE_DIR, "quarantine")
 REPORTS_DIR = os.path.join(BASE_DIR, "reports")
