@@ -1,0 +1,388 @@
+{
+  "id_rapport": "aff2d9be",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 15.296,
+  "metadonnees": {
+    "nom": "Conception d’un système d’IA responsable et conforme au RGPD (1).pdf",
+    "extension": "pdf",
+    "taille_octets": 1663566,
+    "taille_lisible": "1.6 Mo",
+    "mime_reel": "cannot open `C:\\Users\\HYPER\\Downloads\\Conception d\\342\\200\\231un syst\\303\\250me d\\342\\200\\231IA responsable et conforme au RGPD (1).pdf' (No such file or directory)",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Conception d’un système d’IA responsable et conforme au RGPD (1).pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-04-06T14:12:31",
+    "date_modification": "2026-04-06T14:12:49",
+    "date_acces": "2026-10-29T20:52:31",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://www.canva.com/\nHostUrl=https://export-download.canva.com/15ijU/DAHFAJ15ijU/222/0-3834188453685302350.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260406%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260406T005240Z&X-Amz-Expires=49373&X-Amz-Signature=ba871270f3195e5aafba2ccc77ea6d6e4085005cfecd4c7eb17b3341ac2eb152&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Conception%2520d%25E2%2580%2599un%2520syst%25C3%25A8me%2520d%25E2%2580%2599IA%2520responsable%2520et%2520conforme%2520au%2520RGPD.pdf&response-expires=Mon%2C%2006%20Apr%202026%2014%3A35%3A33%20GMT\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "99cd60277063c60df0416db1d08e5050f1e79def60e2d9d5f558f1ba28c4ae11",
+    "sha1": "d5b2084b9c868c4f6cb35b640ff3cdd429d2e816",
+    "md5": "ce3bf220192a4d919682c04a5142b1e6",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 19
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.933,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.7,
+      7.84,
+      7.9,
+      7.84,
+      7.93,
+      7.96,
+      7.95,
+      7.98,
+      7.98,
+      7.94,
+      7.98,
+      7.95,
+      7.93,
+      7.96,
+      7.93,
+      7.97,
+      7.98,
+      7.97,
+      7.88,
+      7.52,
+      7.69,
+      6.59,
+      7.96,
+      7.99,
+      7.96,
+      4.49
+    ],
+    "base64": {
+      "nombre_blobs_base64": 16,
+      "exemple": "436F6E63657074696F6E206490756E2073797374E86D6520649049412072..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "www.aiim.org"
+    ],
+    "urls": [
+      "http://www.aiim.org/pdfua/ns/id/"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 4
+    },
+    "chemins_windows": [
+      "b:\\vwC\u0018!Iv",
+      "V:\\.;\u0005\u0000\u0000\u0000\u0000\u000f",
+      "M:\\NmIפc",
+      "X:\\\u0017\u001dn",
+      "T:\\mlJ_9\u0019&p\u0018gJ\u0018^c0\u000er)9J",
+      "F:\\QU7\u0005Y=΁\u00127S(ZSY\u0015B",
+      "a:\\G"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "E0206C90696E666F726D6174696F6E20",
+        "20E0206C906566666163656D656E7420"
+      ],
+      "sha1": [],
+      "sha256": [
+        "5056DFC812B4AB188FBB796686C433C3905955854E3707B6EF0F2B8E88F61EC0"
+      ]
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "www.aiim.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      }
+    },
+    "urls": {
+      "http://www.aiim.org/pdfua/ns/id/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      }
+    },
+    "hashs": {
+      "5056DFC812B4AB188FBB796686C433C3905955854E3707B6EF0F2B8E88F61EC0": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "malwarebazaar": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+        }
+      }
+    },
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "http://www.aiim.org/pdfua/ns/id/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.15865001678466797,
+      "entropie_globale": 0.991625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0948,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 35,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['http://www.aiim.org/pdfua/ns/id/'], hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Conception d’un système d’IA responsable et conforme au RGPD (1).pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 10.214,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.058,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 3.534,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 2.791,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.014,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

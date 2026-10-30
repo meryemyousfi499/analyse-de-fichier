@@ -1,0 +1,395 @@
+{
+  "id_rapport": "f921c6cd",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 14.538,
+  "metadonnees": {
+    "nom": "seance2.rar",
+    "extension": "rar",
+    "taille_octets": 7132828,
+    "taille_lisible": "6.8 Mo",
+    "mime_reel": "application/x-rar",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\seance2.rar",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-06T14:33:02",
+    "date_modification": "2026-10-06T14:33:07",
+    "date_acces": "2026-10-30T07:12:27",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://web.whatsapp.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "rar",
+    "extension_declaree": ".rar",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "bab1e3b45f6b213193de5645d144515838106d5e774f151f0fdefa5b08bbc157",
+    "sha1": "8fe72eee1c41d8554707ef0ff62f795ba4edd046",
+    "md5": "ddc65a6563f553a4d7982e96b0a93122",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "rar",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.999,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "k.ru"
+    ],
+    "urls": [],
+    "emails": [
+      "Z@O.At",
+      "rv@k.Rt",
+      "o@md.ib"
+    ],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "r:\\\u000f\u0013NNC\u0011\u001a\fŏ\u000fl\b~^J\u0019\u0013O黰\u0019}\u001dy",
+      "f:\\Qk\u00195piD$\u0006L\u0001\u000fmgcg\u000f}U",
+      "D:\\Y",
+      "v:\\Ӆo\u00123F\u00034Sb",
+      "I:\\{oUx;k6nE,\u0019T̡\t\u0000\u001c\u0007^x\t_N,zHMp;@.g7V$27\u001b\u0016 \tiA",
+      "P:\\)\u0007R\u0007W\u001e\u001f",
+      "g:\\'\u0011WcH\u001f\u001fR&\u0010Jr\u001de\u0003'\u0012#N\u0016=x9\u001a؆۶xf\u0014t",
+      "j:\\\u0016W\u0012\u001b\u0003\u001cm\u001apϹrjV#4\\7t;fv\u0000\u0011]O",
+      "E:\\\u000bb\u0005\u0011aKkty=,",
+      "y:\\(\u001ch華\u001f8._JJ\u0018YYtIe'\f=d\u0017o\f",
+      "T:\\m\u0017{\u0001~\u0015\u0016^\u0015\u0017",
+      "R:\\8I5&F",
+      "c:\\\u0016\u0000\u0005t\f1'\u0017+\u001c=\u0001]$tA3muc\u0000\u0007\u0005ja.e",
+      "I:\\",
+      "q:\\\u0013Q}5\u0014Gc\u001e)\u0011",
+      "Q:\\cQ'\u0014\u001c;\u001d=V$",
+      "i:\\",
+      "Q:\\ \u0014Wi^l9.Y\u0003Fx\u0018M.lfF\u0013=揄!",
+      "I:\\tl#I2# \u0012\u0007VR{pY=Y-\u000e\u001c",
+      "l:\\\u000f8P6Rq\u0010񔫳",
+      "h:\\\u00132ͳ",
+      "O:\\ԅazBݤKr`Ch^\u0006,i",
+      "b:\\#\u0015#\by\u001b",
+      "u:\\=\u0017^nAb\u0000^T (ƮHk,\u0005rN\b3Ƿ-\\-h6\u0001Yn!",
+      "M:\\[7#"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 1
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": [],
+    "version_regles": "4ac64b3b5cfc"
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "k.ru": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.680239486694336,
+      "entropie_globale": 0.999875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0514,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".rar",
+    "backend_disponible": true,
+    "extraction_reussie": false,
+    "mot_de_passe_utilise": null,
+    "fichiers_extraits": [],
+    "erreur": "impossible d'ouvrir l'archive (mot de passe manquant/incorrect) : Cannot find working tool"
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 9,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Archive protegee par mot de passe : contenu NON inspecte (aucun mot de passe valide fourni ou trouve parmi les mots de passe courants). Fournissez le mot de passe partage pour une analyse complete."
+    ]
+  },
+  "verdict": {
+    "verdict": "clean",
+    "libelle": "Sain (analyse complète, aucun signal)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "ratio": 1.0,
+      "manquants": []
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Tous les contrôles requis ont tourné et n'ont relevé aucun signal notable"
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\seance2.rar",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 11.63,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "ok",
+        "duration_s": 7.15,
+        "summary": "Aucune règle déclenchée",
+        "findings": [],
+        "error": null
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 9.952,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 8.126,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "archive : le contenu extrait est analysé fichier par fichier",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "extraction_archive",
+        "lance": true,
+        "raison": "archive détectée ; contenu ré-analysé fichier par fichier"
+      },
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "archive : analyse du contenu extrait"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "4ac64b3b5cfc",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": true,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

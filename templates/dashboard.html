@@ -67,20 +67,6 @@
         <thead><tr><th>Machine</th><th>Fichiers analysés</th><th>Suspects</th><th>Malveillants</th><th>Quarantaine</th><th>Sandbox à traiter</th><th>Dernière activité</th></tr></thead>
         <tbody id="machines-body"></tbody>
       </table>
-
-      <h3 class="sub-title">Dernières alertes</h3>
-      <div id="items-recent" class="items-panel"></div>
-
-      <h3 class="sub-title">Ce qui est détecté</h3>
-      <div class="m-charts three">
-        <div class="chart-box"><h3>Signatures ClamAV</h3><div id="top-clamav"></div></div>
-        <div class="chart-box"><h3>Règles YARA</h3><div id="top-yara"></div></div>
-        <div class="chart-box"><h3>Indicateurs signalés (réputation)</h3><div id="top-ioc"></div></div>
-      </div>
-      <div class="m-charts">
-        <div class="chart-box"><h3>Types de fichiers</h3><div id="top-ext"></div></div>
-        <div class="chart-box"><h3>Couverture des analyses</h3><div id="chart-coverage"></div></div>
-      </div>
     </section>
 
     <!-- VUE D'UNE MACHINE -->
@@ -166,11 +152,6 @@
           <div id="ioc-content" class="ioc-content"></div>
         </article>
 
-        <article class="panel panel-wide">
-          <h3>Réputation des indicateurs</h3>
-          <div id="panel-reputation"></div>
-        </article>
-
         <article class="panel">
           <h3>Règles YARA déclenchées</h3>
           <div id="panel-yara" class="badge-list"></div>
@@ -191,5 +172,6 @@
 <script src="/static/js/sections.js"></script>
 <script src="/static/js/machines.js"></script>
 <script src="/static/js/reputation.js"></script>
+<script src="/static/js/panels.js"></script>
 </body>
 </html>

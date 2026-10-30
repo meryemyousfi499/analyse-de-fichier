@@ -1,0 +1,430 @@
+{
+  "id_rapport": "fbbd8f70",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 10.094,
+  "metadonnees": {
+    "nom": "invite.ics",
+    "extension": "ics",
+    "taille_octets": 4695,
+    "taille_lisible": "4.6 Ko",
+    "mime_reel": "text/calendar",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\invite.ics",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-07-15T11:31:52",
+    "date_modification": "2026-07-15T11:31:53",
+    "date_acces": "2026-10-29T20:18:00",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://mail-attachment.googleusercontent.com/attachment/u/2/?ui=2&ik=d39f82ab2e&attid=0.0.2&permmsgid=msg-f:1870776387214166751&th=19f655365e16cadf&view=att&zw&disp=safe&saddbat=ANGjdJ8aQVq0YUgkJSaoGY9CZ18M8LXncPtt4gzeFEpwzFuz-_kbybdr1ZH4AdW0txjJGuC0r2EgN9yrcxrMakFw7fMitI5dBg_qFQqbCsceOPo6D4BZBAhdvOqBFkZLfvBxX9kXn61LqqYyzAiYUffzFnapcIIZQTpuge8EtW2wX3PFxtSEaL-kp-F8lRWX8NCqaEnWtn48AtQabNJjnwksZOWT6yfTBC6o1OsljvrKfB4KXSJQe54roSdrhEGxytE11iSTvOwaZPcIPJ3H_4ZWJH12LxFadBzO3bP2HsCdF0Wo5YzfSQGVYN6fUoVsi55r8XzSu8UaUQnKhL7AvudkE9Ky6QrkL_zMNREKLUj90LIZlkqAdxAuPBp7bRACA6hbXQUjaFwhjH4JPa1pIYjL4ZW4RSHqGnfxF7S7l6WSHFuC23kT91PL3DLe_gjfIZyz8arSSAmCC6SRw_yz6vVHvvwts8sIddQ-h6lErJmGkpA2iz5PcpZkRlPxz3eSCOi14I8HCQeV6zWzVrmWac1k1oFFgLp6ylnON3U8h6hZtAJo3usSwib_vqKZhaIXnK7cPs6JBdG3H1FQ1vH8n-CDS0cHRsGs9koEqa9NpKra1F6RJzTGZtdLtBYg4Z4zgCvhx6cezlW5c3bGePnGGLPg9e12ahcLdsbCyCHCsF89ZBn0Hn1iePiXrKToVbwVbFwuk8Qmgh3Hllm9Alh0fco4pTQFG7fp0iDvEMnYfbemyF-NcemZkoxM4kvnyttHNKU3jsQkyE0fs0Ca7kmnOYrGqZ5pFhfDQhCk54tw1GWV5uI4fGGJ21gLth02riqr9fO1dnYtybEbmuND78oekukTaEL_9A_vcf4kS25tVPqExK8_5QHyIxC0OwIpOc39uSUq0bjjfAydKunYSAsMx-YZJSz6EeeYJKNN7h4qNv0MJly0e1n7-phC_sVoq4TuNQIhqxP__WTpooRpJTvWvCJ4vTtp62H7aln9EBkQtem0IONUptNtO9FKC2MRqmv22q0pakwPfOA9wKMBBVbnf1OXTlcLbKkpAUMpm046Ko87qqA-Ogyf_N3Ao0jt-Hquv293NfF1hOMmTXbbH5WCQDZsJaupeIUP0fgpG5VOSg\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".ics",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "e835296cf2e9947dbaea0745ec05a0e2b419eec3c4d4997734e209e479595d38",
+    "sha1": "bbb4e079c77160cdfd11c1490a6ce033391a2476",
+    "md5": "452aa15cc12169ba069a6701f4d5bbc3",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.839,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.84
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "autodealersdigital.com",
+      "google.com",
+      "gmail.com",
+      "il.com",
+      "meet.google.com",
+      "support.google.com"
+    ],
+    "urls": [
+      "https://meet.google.com/ywu-rsnr-pcw",
+      "https://meet.google.com/yw",
+      "https://tel.meet/ywu-rsnr-pcw?pin=5078328497091&hs=7\\n\\nLearn",
+      "https://support.google.com/a/users/answer/9282720\\n\\nPlease"
+    ],
+    "emails": [
+      "k.khayal@autodealersdigital.com",
+      "7okr8joado7olsbioncm02tomj@google.com",
+      "meryemyousfi339@gmail.com"
+    ],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 14
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "autodealersdigital.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "gmail.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "il.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 1,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "meet.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "support.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      }
+    },
+    "urls": {
+      "https://meet.google.com/ywu-rsnr-pcw": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://meet.google.com/yw": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://tel.meet/ywu-rsnr-pcw?pin=5078328497091&hs=7\\n\\nLearn": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://support.google.com/a/users/answer/9282720\\n\\nPlease": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "gmail.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "il.com",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0004477500915527344,
+      "entropie_globale": 0.604875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 4,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0925,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 33,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu.",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['gmail.com', 'il.com'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\invite.ics",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 0.09,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.46,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.018,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

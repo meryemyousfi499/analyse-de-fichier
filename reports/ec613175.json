@@ -1,0 +1,368 @@
+{
+  "id_rapport": "ec613175",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 5.097,
+  "metadonnees": {
+    "nom": "ChatGPT Image 24 sept. 2026, 15_57_30 (2).png",
+    "extension": "png",
+    "taille_octets": 1724910,
+    "taille_lisible": "1.6 Mo",
+    "mime_reel": "image/png",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\ChatGPT Image 24 sept. 2026, 15_57_30 (2).png",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-09-24T15:57:34",
+    "date_modification": "2026-09-24T15:57:38",
+    "date_acces": "2026-10-30T03:25:15",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://chatgpt.com/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "png",
+    "extension_declaree": ".png",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "9019b712b1d8c2ab9329d5a6ed84b21904449f1aa1239f0348e09cbef0385242",
+    "sha1": "068fc629611f7078602704a151d227e7195ef192",
+    "md5": "0e6cfd238bb961cdb4539f4131b85609",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "png",
+    "image": {
+      "disponible": true,
+      "dimensions": "1312x1199",
+      "donnees_ajoutees_apres_fin": false,
+      "taille_donnees_ajoutees_octets": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.986,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.35,
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      7.98,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.98,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.98,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.99,
+      7.98,
+      7.99,
+      7.97
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [
+      "cv.iptc.org"
+    ],
+    "urls": [
+      "https://ocsp.trufo.ai0+\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002\u001fhttps://ca.trufo.ai/c2pa-ca.crt03\u0006",
+      "https://trufo.ai/cpcps0^\u0006\b+\u0006\u0001\u0005\u0005\u0007\u0001\u0001\u0004R0P0!\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u0015https://ocsp.trufo.ai0+\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002\u001fhttps://ca.trufo.ai/root-ca.crt0"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 1,
+      "urls": 1
+    },
+    "chemins_windows": [
+      "y:\\zD%\u001fx\u001ctc",
+      "V:\\5v",
+      "U:\\\f",
+      "o:\\\u001d\u0005\\",
+      "w:\\LV(7,-\u0016\\\u0001N&ݟ\u0006.Dȸ",
+      "j:\\\u0017,",
+      "x:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 4
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 8
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {
+      "cv.iptc.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      }
+    },
+    "urls": {
+      "https://ocsp.trufo.ai0+\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002\u001fhttps://ca.trufo.ai/c2pa-ca.crt03\u0006": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Focsp.trufo.ai0%2B%06%08%2B%06%01%05%05%070%02%1Fhttps%3A%2F%2Fca.trufo.ai%2Fc2pa-ca.crt03%06/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://trufo.ai/cpcps0^\u0006\b+\u0006\u0001\u0005\u0005\u0007\u0001\u0001\u0004R0P0!\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\u0015https://ocsp.trufo.ai0+\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002\u001fhttps://ca.trufo.ai/root-ca.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Ftrufo.ai%2Fcpcps0%5E%06%08%2B%06%01%05%05%07%01%01%04R0P0%21%06%08%2B%06%01%05%05%070%01%15https%3A%2F%2Focsp.trufo.ai0%2B%06%08%2B%06%01%05%05%070%02%1Fhttps%3A%2F%2Fca.trufo.ai%2Froot-ca.crt0/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.16450023651123047,
+      "entropie_globale": 0.99825,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 2,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1116,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 19,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Plusieurs indicateurs suspects detectes dans le contenu."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\ChatGPT Image 24 sept. 2026, 15_57_30 (2).png",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 2.065,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.002,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 2.333,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.844,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "l'extension '.png' n'est jamais soumise seule (composant interne ou média) ; analyser le document complet",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "l'extension '.png' n'est jamais soumise seule (composant interne ou média) ; analyser le document complet"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": false,
+    "declencheurs": [],
+    "bloquants": [
+      "l'extension '.png' n'est jamais soumise seule (composant interne ou média) ; analyser le document complet"
+    ],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

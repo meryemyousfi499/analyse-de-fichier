@@ -1,0 +1,497 @@
+{
+  "id_rapport": "c52b7acf",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 11.414,
+  "metadonnees": {
+    "nom": "demande de stage PFA.eml",
+    "extension": "eml",
+    "taille_octets": 451470,
+    "taille_lisible": "440.9 Ko",
+    "mime_reel": "text/plain",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\demande de stage PFA.eml",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-07-06T15:49:11",
+    "date_modification": "2026-07-06T15:49:13",
+    "date_acces": "2026-10-29T20:19:11",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://mail.google.com/\nHostUrl=https://mail-attachment.googleusercontent.com/attachment/u/2/?ui=2&ik=d39f82ab2e&attid=0.1&permmsgid=msg-f:1869805735368305516&th=19f2e268df9dab6c&view=att&zw&disp=safe&saddbat=ANGjdJ_AiRqSzXtpZ-V-R7bIhge_rEAUmQQCzhT5KHHxojm-Mog3fnArwpagJPlROZ48uQvNmVdOWHmE4KL1p_AR9xTN6pCjCgZX0KN2-92Bmmy5L-lTKjN_55ywMn9ptRm5J0SouxGy8OvH3jQVHCyPiRkIImEGYyBAaMVAscxE1KPqTCpjCjozI1x2zwkOnbSI6V0WHPZeG-3JUkTgR6k4zVTwMWsGZZUDw909X_NCn8AxZxFWKgkZNtOrWgu9MI_1V0y5kd0tjLBYx3LbGN0QA8L0yZQP8ciE6frT-8VMaXHxu4vLruWukBaYRNhfhs2zFBOaKN9uYVGWbfdt9dD-EJ6a9JeS0zpZ_hyYUcPmmqzeZxba-QCj5FHm1_OxxxVg13vOM3XGrBOiSx-osqnXHvnOtzFdxIDksc3FLL_Vg46TzduwivDuFbRhyFOAuDgz7KDFfIZhukkI717MJR00KiaYnLbBDfOm5BEZzkt0300AY6JkjIl-uz0gqavyCha0SH635MsysnzsCL5j4zHxNMJg7J-VnjHyLOsZDLMHojIiOLASrpPyekLUQBnlELZnACpAW__hDKSqOQELr6nISKsfRBatdQxhYDpUHPcc5rUaLX54uWkWJVUKcsVAZuWD7nYjpISmQj1c4iaoznOmlZdGqGT_iIqBACtj8WGcSDv7NLSpqcZ3Y5WVz5lhRmrezMaRUsrrogpADuLWrL0ffM3Npn0rwuUgkdCQ8n9soerfxUHSA1cGpCpphdtGlz6I7vTWGU6FLcetrXr648iPpb-Wkt_MSf4zVHtyhKVIngTAf4VI2LDSTnD5ajeQ-hJkxybzryJpvZ2v7XNJ2evuLBP0_PXzZIq6zbRgnEk4IbHbThFKwD3OkbJpQxrVIe8aszjJwS0SMJ-m23kkg-9RcV0J408GSSWNC6zfCJZ8p6n57lVH2tA6lhLSwwr-TSY5zE3Q4pf85Fvza1Pf0a4YkjM1HQOu2MC-sVqhnW4BPSznHNIlXRibvPaXZhbo7y2XNoGp6ATczg2m-_lWprwWMFO-qtDEbva1EvFVw5vm3LnyfwQw1LoAD3Z6mwtzcxbqvAia_pY70tMsk8xMD6as1fpkXU3f4_EHoxif9Q\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".eml",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "29eb50da47344ad57634cb6cb7a3e464ef8acf617705357ab1e90a01714d6d03",
+    "sha1": "c12b529e91f7e0962d2ee449a6eeeb482488ba4d",
+    "md5": "1889e043f8240572ebd428003f4fb38f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.063,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.13,
+      6.04,
+      6.01,
+      6.04,
+      6.04,
+      6.04,
+      5.95
+    ],
+    "base64": {
+      "nombre_blobs_base64": 2,
+      "exemple": "GjAouuyt5Y/D/mgEXh1FKXzAI6g6mNL6X2u4yiJfVpAjxLqNtxeT5FIr85Oh..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "15.21.181.8",
+      "15.21.181.9",
+      "15.21.181.6"
+    ],
+    "domaines": [
+      "gmail.com",
+      "DU2PR04CA0210.eurprd04.prod.outlook.com",
+      "DB9PR01MB9007.eurprd01.prod.exchangelabs.com",
+      "DB5PEPF00014B97.eurprd02.prod.outlook.com",
+      "DU2PR04CA0210.outlook.office365.com",
+      "protection.outlook.com",
+      "mail-pf1-x42d.google.com",
+      "DB5PEPF00014B97.mail.protection.outlook.com",
+      "google.com",
+      "mx.google.com",
+      "1e100.net",
+      "mail.gmail.com"
+    ],
+    "urls": [],
+    "emails": [
+      "m.boukourizia@tamwilcom.ma",
+      "meryemyousfi339@gmail.com",
+      "CA+xmTcqYXmnXLiM2kV9zi8_tRdzVDyr4prf_BacMKN-o8+6u+w@mail.gmail.com"
+    ],
+    "exclus_domaines_legitimes": {
+      "domaines": 2
+    },
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 15
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {
+      "15.21.181.8": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "15.21.181.9": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "15.21.181.6": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "gmail.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "DU2PR04CA0210.eurprd04.prod.outlook.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "DB9PR01MB9007.eurprd01.prod.exchangelabs.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "DB5PEPF00014B97.eurprd02.prod.outlook.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "DU2PR04CA0210.outlook.office365.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "protection.outlook.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "mail-pf1-x42d.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "DB5PEPF00014B97.mail.protection.outlook.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "mx.google.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "1e100.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 50,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "mail.gmail.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "gmail.com",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "1e100.net",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.04305553436279297,
+      "entropie_globale": 0.757875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0338,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 40,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['gmail.com', '1e100.net'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\demande de stage PFA.eml",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 1.574,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 1.409,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.893,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

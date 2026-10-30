@@ -1,0 +1,416 @@
+{
+  "id_rapport": "e33e157f",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 10.706,
+  "metadonnees": {
+    "nom": "AGOURRAM Hajar Bouarafa SaraTP4_ASF.pdf",
+    "extension": "pdf",
+    "taille_octets": 3731224,
+    "taille_lisible": "3.6 Mo",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\AGOURRAM Hajar Bouarafa SaraTP4_ASF.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-10T19:30:07",
+    "date_modification": "2026-05-10T19:31:25",
+    "date_acces": "2026-10-29T20:42:31",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://drive.usercontent.google.com/download?id=1iitFpdtItxI0p8_9LnFzOWo7keiIvM7O&export=download&authuser=0&confirm=t&uuid=5ee1a1a3-bc90-44ca-a57a-ea8c47a0b75c&at=ALBwUgl5zCGn-NfxiM1UJ69ZYy6P:1778437877374\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "c1eec4882d6e5d9f82873c2213f1ec7abe57373f9fdb0676755c90394cf6bb42",
+    "sha1": "15ffc35ce1ffe886abcc52c342c085b2acd7677b",
+    "md5": "dc1ae872b9842c85d6fbc83eefaa0dc7",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 25
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.959,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.9,
+      7.87,
+      7.97,
+      7.95,
+      7.95,
+      7.92,
+      7.9,
+      7.92,
+      7.81,
+      7.89,
+      7.97,
+      7.97,
+      7.97,
+      7.95,
+      7.94,
+      7.99,
+      7.99,
+      7.92,
+      7.75,
+      7.84,
+      7.99,
+      7.99,
+      7.99,
+      7.97,
+      7.78,
+      7.8,
+      7.81,
+      7.8,
+      7.87,
+      7.86,
+      7.9,
+      7.87,
+      7.94,
+      7.97,
+      7.94,
+      7.97,
+      7.97,
+      7.95,
+      7.92,
+      7.83,
+      7.97,
+      7.94,
+      7.96,
+      7.97,
+      7.94,
+      7.94,
+      7.91,
+      7.94,
+      7.96,
+      7.95,
+      7.97,
+      7.97,
+      7.97,
+      7.99,
+      7.99,
+      7.99,
+      7.25
+    ],
+    "base64": {
+      "nombre_blobs_base64": 4,
+      "exemple": "/BaseFont/TimesNewRomanPSMT/Subtype/CIDFontType2/Type/Font/C..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "192.168.56.10"
+    ],
+    "domaines": [],
+    "urls": [
+      "http://localhost:9999/autopsy)"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 5
+    },
+    "chemins_windows": [
+      "e:\\q\u0019Ew\u0005h[H7M'",
+      "V:\\",
+      "c:\\K4m\u0004̨7\u001f0",
+      "Z:\\}lskmFo\u0012G,v%",
+      "E:\\,,\u001dųBĐT\u0006c\u000e",
+      "E:\\,,\u001dųBI ",
+      "C:\\w\u0016\u000b!$7\u001c}n4NK",
+      "j:\\v5\u000f6X\t\u00133U\u00169\u00191a\u0000x\u000e}c\u0013Mi{`6o\u0004B.#@˸t`WtK~NGqd",
+      "K:\\JA\u001c8\f\u0002zn\u0004`GdY\\g\u000f",
+      "C:\\tij\u001eWRmwbUyr\u0005",
+      "N:\\$",
+      "h:\\(@[2\u0002[]9\u001d\t❦x\u001e\u0010}OK\u0016^̌%,A",
+      "k:\\ǩ8c5L\u0015\bA9",
+      "e:\\QjWW.kWi5\u0010G;D\u0018S\u0018eQ\u0005np\u000e8m",
+      "R:\\.\u0014y7޽(ӏə\u000f",
+      "k:\\YE4\\%ibDH\bmL'\u001f1f\u001fJ6XK\u000b;!I\u0006\u00016\u0007\\-\u0004\u0011uoP87GA\\ mJ.AGRo\u0007jkkK,kiWOI @",
+      "J:\\\fY",
+      "j:\\G\u0015KO\tn$'hثU5x&\u000eAc-6!7\u000b",
+      "F:\\\u0010$\u001b\u001c\u0004r9"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "9FAA5E895722A84ABDA9F21D745348E7"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 3
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [
+      {
+        "indicator": "/URI",
+        "description": "Marqueur PDF présent : /URI"
+      }
+    ],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {
+      "192.168.56.10": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": null,
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {},
+    "urls": {
+      "http://localhost:9999/autopsy)": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.3558372497558594,
+      "entropie_globale": 0.994875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 1,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0971,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 20,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\AGOURRAM Hajar Bouarafa SaraTP4_ASF.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 7.327,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.541,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 2.303,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.836,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "detected",
+        "duration_s": 0.012,
+        "summary": "1 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "/URI",
+            "description": "Marqueur PDF présent : /URI"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

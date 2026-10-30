@@ -14,12 +14,11 @@
     "panel-static": (r) => (r.analyse_statique && r.analyse_statique.type_analyse) || "",
     "ioc-content": (r) => {
       const k = ["ips", "domaines", "urls", "emails", "chemins_windows", "chemins_unix", "cles_registre", "chaines_suspectes"];
-      return k.reduce((n, x) => n + ((r.iocs && r.iocs[x]) || []).length, 0) + " indicateur(s)";
+      const f = window.cnRepFlagged ? window.cnRepFlagged(r) : 0;
+      return k.reduce((n, x) => n + ((r.iocs && r.iocs[x]) || []).length, 0) + " indicateur(s)" + (f ? " · " + f + " signalé(s)" : "");
     },
     "panel-yara": (r) => (r.yara.disponible ? r.yara.matches.length + " règle(s)" : "indisponible"),
     "panel-clamav": (r) => (r.antivirus.disponible ? (r.antivirus.infecte ? "infecté" : "aucune détection") : "indisponible"),
-    "panel-reputation": (r) => !r.threat_intelligence ? "non exécutée"
-      : ((r.threat_intelligence.indicateurs_signales || []).length + " signalé(s)"),
     "panel-ml": (r) => (r.scoring_ml.probabilite_risque * 100).toFixed(1) + " %",
   };
   const ALERT_IF = {
@@ -27,7 +26,7 @@
     "panel-yara": (r) => !r.yara.disponible || r.yara.matches.length > 0,
     "panel-clamav": (r) => !r.antivirus.disponible || r.antivirus.infecte,
     "panel-hashes": (r) => r.empreintes.connu_malveillant,
-    "panel-reputation": (r) => !!(r.threat_intelligence && (r.threat_intelligence.indicateurs_signales || []).length),
+    "ioc-content": (r) => (window.cnRepFlagged ? window.cnRepFlagged(r) : 0) > 0,
   };
 
   function panels() {

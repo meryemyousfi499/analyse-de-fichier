@@ -1,0 +1,374 @@
+{
+  "id_rapport": "4aa09feb",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 4.735,
+  "metadonnees": {
+    "nom": "generic_rules.yar",
+    "extension": "yar",
+    "taille_octets": 3670,
+    "taille_lisible": "3.6 Ko",
+    "mime_reel": "text/plain",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\generic_rules.yar",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-30T10:04:51",
+    "date_modification": "2026-10-30T10:04:53",
+    "date_acces": "2026-10-30T10:05:04",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nHostUrl=https://claude.ai/\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".yar",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "b69649d4dc0620a097ed6c3280b1a3342f465a194c9b4e803343dad295e45b23",
+    "sha1": "0d4cbca4e15f417354ae424c5292c3d875e92653",
+    "md5": "230f4b6152a3652b3fb2ad6535b6e14f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.685,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.68
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [
+      "cmd.exe",
+      "wscript.exe"
+    ],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "powershell",
+        "occurrences": 3
+      },
+      {
+        "chaine": "wscript",
+        "occurrences": 2
+      },
+      {
+        "chaine": "cmd.exe",
+        "occurrences": 1
+      },
+      {
+        "chaine": "rundll32",
+        "occurrences": 1
+      },
+      {
+        "chaine": "regsvr32",
+        "occurrences": 1
+      },
+      {
+        "chaine": "mshta",
+        "occurrences": 1
+      },
+      {
+        "chaine": "certutil",
+        "occurrences": 1
+      },
+      {
+        "chaine": "bitsadmin",
+        "occurrences": 1
+      },
+      {
+        "chaine": "invoke-expression",
+        "occurrences": 1
+      },
+      {
+        "chaine": "downloadstring",
+        "occurrences": 1
+      },
+      {
+        "chaine": "frombase64string",
+        "occurrences": 1
+      },
+      {
+        "chaine": "createremotethread",
+        "occurrences": 1
+      },
+      {
+        "chaine": "virtualallocex",
+        "occurrences": 1
+      },
+      {
+        "chaine": "writeprocessmemory",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 42
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": true,
+    "matches": [
+      {
+        "regle": "Suspicious_PowerShell_Obfuscated",
+        "severite": "eleve",
+        "description": "Script PowerShell encode ou obfusque qui telecharge ou execute du code"
+      },
+      {
+        "regle": "Ransom_Note_Generic",
+        "severite": "eleve",
+        "description": "Texte typique d'une note de rancon (fichiers chiffres, paiement en crypto-monnaie)"
+      },
+      {
+        "regle": "LOLBin_Download_Execute",
+        "severite": "moyen",
+        "description": "Utilisation detournee d'un outil Windows legitime pour telecharger ou executer du code distant"
+      }
+    ],
+    "version_regles": "4ac64b3b5cfc"
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.00034999847412109375,
+      "entropie_globale": 0.585625,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 14,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.1906,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 51,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Regle(s) YARA de severite elevee declenchee(s) : Suspicious_PowerShell_Obfuscated, Ransom_Note_Generic.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Mis en file sandbox malgre un niveau de risque global 'moyen' : une règle YARA critique/élevée a été déclenchée."
+    ]
+  },
+  "verdict": {
+    "verdict": "suspect",
+    "libelle": "Suspect",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "ratio": 1.0,
+      "manquants": []
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Règle YARA de sévérité élevée/critique déclenchée"
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\generic_rules.yar",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 3.311,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "detected",
+        "duration_s": 0.0,
+        "summary": "3 règle(s) déclenchée(s)",
+        "findings": [
+          {
+            "regle": "Suspicious_PowerShell_Obfuscated",
+            "severite": "eleve",
+            "description": "Script PowerShell encode ou obfusque qui telecharge ou execute du code"
+          },
+          {
+            "regle": "Ransom_Note_Generic",
+            "severite": "eleve",
+            "description": "Texte typique d'une note de rancon (fichiers chiffres, paiement en crypto-monnaie)"
+          },
+          {
+            "regle": "LOLBin_Download_Execute",
+            "severite": "moyen",
+            "description": "Utilisation detournee d'un outil Windows legitime pour telecharger ou executer du code distant"
+          }
+        ],
+        "error": null
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 2.739,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.061,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "pending",
+        "duration_s": 0.0,
+        "summary": "mis en file pour soumission automatique",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": true,
+        "raison": "une règle YARA critique/élevée a été déclenchée"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_soumettre",
+      "alerts": [
+        "yara_detection"
+      ],
+      "reasons": [
+        "Une ou plusieurs règles YARA correspondent au fichier.",
+        "Le type réel du fichier n'a pas été identifié.",
+        "Des éléments justifient une analyse sandbox complémentaire."
+      ],
+      "clamav_detected": false,
+      "yara_detected": true
+    },
+    "extra_requis": []
+  },
+  "version_regles": "4ac64b3b5cfc",
+  "sandbox": {
+    "recommande": true,
+    "justifiee": true,
+    "eligible": true,
+    "declencheurs": [
+      "une règle YARA critique/élevée a été déclenchée"
+    ],
+    "bloquants": [],
+    "soumission_automatique_autorisee": true,
+    "id_soumission": "606bf84a4c3a42618c107fd74983bab7",
+    "erreur": null
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "id_rapport": "ee02933c",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 34.12,
+  "metadonnees": {
+    "nom": "option-b.zip",
+    "extension": "zip",
+    "taille_octets": 14833,
+    "taille_lisible": "14.5 Ko",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\option-b.zip",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-03-19T02:23:13",
+    "date_modification": "2026-03-19T02:23:17",
+    "date_acces": "2026-10-29T20:58:57",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/e642bf8d-fb08-4e79-824d-7d6405558c2a\nHostUrl=https://claude.ai/api/organizations/d92153e8-af71-4ce3-9f46-aed4bb124f55/conversations/e642bf8d-fb08-4e79-824d-7d6405558c2a/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2Foption-b.zip\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".zip",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "18db709694c7641b4657303b50069970b4627cff2e6b630b9c96d202257ef551",
+    "sha1": "5f50a170ad8909df51dc95f36b27a32d46ef13af",
+    "md5": "00585d8431bb25193963354d67c7038b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.886,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.89
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0014145851135253906,
+      "entropie_globale": 0.98575,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0433,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": true,
+    "format": ".zip",
+    "backend_disponible": true,
+    "extraction_reussie": true,
+    "mot_de_passe_utilise": "mot_de_passe_courant_devine",
+    "fichiers_extraits": [
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_4pxpra7d\\option-b\\.env",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_4pxpra7d\\option-b\\app.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_4pxpra7d\\option-b\\compare.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_4pxpra7d\\option-b\\database.py",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_4pxpra7d\\option-b\\README.md",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_4pxpra7d\\option-b\\requirements.txt",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_4pxpra7d\\option-b\\templates\\historique.html",
+      "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_4pxpra7d\\option-b\\templates\\index.html"
+    ],
+    "erreur": null
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [
+    {
+      "id_rapport": "9a8f01b3",
+      "nom": ".env",
+      "score": 17,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "18576156",
+      "nom": "app.py",
+      "score": 9,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "ba699f2e",
+      "nom": "compare.py",
+      "score": 33,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "fe48a002",
+      "nom": "database.py",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "65a3fbe6",
+      "nom": "README.md",
+      "score": 43,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "3fcac7b9",
+      "nom": "requirements.txt",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "c7fd92a7",
+      "nom": "historique.html",
+      "score": 1,
+      "verdict": "inconclusive"
+    },
+    {
+      "id_rapport": "833d629e",
+      "nom": "index.html",
+      "score": 1,
+      "verdict": "inconclusive"
+    }
+  ],
+  "score_final": {
+    "score": 43,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Aucun signal notable detecte : fichier conforme aux attentes.",
+      "Score releve par le contenu extrait de l'archive : .env (score 17, rapport 9a8f01b3).",
+      "Score releve par le contenu extrait de l'archive : compare.py (score 33, rapport ba699f2e).",
+      "Score releve par le contenu extrait de l'archive : README.md (score 43, rapport 65a3fbe6)."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\option-b.zip",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 1.339,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.019,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.796,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.058,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "archive : le contenu extrait est analysé fichier par fichier",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "extraction_archive",
+        "lance": true,
+        "raison": "archive détectée ; contenu ré-analysé fichier par fichier"
+      },
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "archive : analyse du contenu extrait"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

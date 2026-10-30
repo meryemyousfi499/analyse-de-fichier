@@ -1,0 +1,495 @@
+{
+  "id_rapport": "df28695f",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 115.758,
+  "metadonnees": {
+    "nom": "node-v24.11.1-x64.msi",
+    "extension": "msi",
+    "taille_octets": 32223232,
+    "taille_lisible": "30.7 Mo",
+    "mime_reel": "application/x-msi",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\node-v24.11.1-x64.msi",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2025-12-02T14:52:12",
+    "date_modification": "2025-12-02T14:52:57",
+    "date_acces": "2026-10-29T21:18:59",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "ole_office_legacy",
+    "extension_declaree": ".msi",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "208ba5ca1dab0b330f457909e0797de340c40b34ddf2edf40d26f382f733297e",
+    "sha1": "d7b7f29e082d2a4ea2eb69b5cfe0e5c654457a07",
+    "md5": "75df753aa41761e9bad73e9649dbe926",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "ole_office_legacy",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.984,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.37,
+      5.85,
+      6.76,
+      5.7,
+      6.52,
+      5.01,
+      6.16,
+      6.29,
+      6.46,
+      6.29,
+      4.87,
+      5.89,
+      6.13,
+      6.35,
+      6.64,
+      5.82,
+      5.39,
+      7.04,
+      6.68,
+      6.36,
+      6.09,
+      6.87,
+      6.7,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 16,
+      "exemple": "ABCDEFGHIJKLMNOPQRSTUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "4.0.6.0"
+    ],
+    "domaines": [
+      "wixtoolset.org"
+    ],
+    "urls": [
+      "http://ocsp.digicert.com0C\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00027http://cacerts.digicert.com/DigiCertCSRSA4096RootG5.crt0E\u0006\u0003U\u001d\u001f\u0004",
+      "https://wixtoolset.org/",
+      "http://ocsp.digicert.com0X\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0",
+      "http://ocsp.digicert.com0A\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\u0006\u0003U\u001d\u001f\u0004",
+      "http://ocsp.digicert.com0C\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\u0006\u0003U\u001d\u001f\u0004"
+    ],
+    "emails": [
+      "H@Z.mw",
+      "A2@J.JT",
+      "UP2@im.eg"
+    ],
+    "exclus_domaines_legitimes": {
+      "domaines": 4,
+      "urls": 2
+    },
+    "chemins_windows": [
+      "d:\\a\\wix4\\wix4\\src\\libs\\wcautil\\wixtoolset.wcautil\\wcautil.cpp\u0000\u0000Failed to set verbose logging global atom\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get module filename\u0000\u0000\u0000Entering %s in %ls, version %u.%u.%u.%u\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000S\u0000o\u0000f\u0000t\u0000w\u0000a\u0000r\u0000e\u0000\\\u0000P\u0000o\u0000l\u0000i\u0000c\u0000i\u0000e\u0000s\u0000\\\u0000M\u0000i\u0000c\u0000r\u0000o\u0000s\u0000o\u0000f\u0000t\u0000\\\u0000W\u0000i\u0000n\u0000d\u0000o\u0000w\u0000s\u0000\\\u0000I\u0000n\u0000s\u0000t\u0000a\u0000l\u0000l\u0000e\u0000r\u0000\u0000\u0000\u0000\u0000\u0000\u0000L\u0000o\u0000g\u0000g\u0000i\u0000n\u0000g\u0000\u0000\u0000LOGVERBOSE\u0000\u0000\u0000\u0000\u0000\u0000M\u0000s\u0000i\u0000L\u0000o\u0000g\u0000g\u0000i\u0000n\u0000g\u0000\u0000\u0000\u0000\u0000failed to get MsiLogging property\u0000\u0000\u0000\u0000\u0000\u0000\u0000d",
+      "d:\\a\\wix4\\wix4\\src\\libs\\wcautil\\wixtoolset.wcautil\\wcawrap.cpp\u0000\u0000Failed to allocate string for Property '%ls'\u0000\u0000\u0000\u0000Failed to get previous size of property data string.\u0000\u0000\u0000\u0000Failed to get data for property '%ls'\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000`;\u0002\u0001\u0000\u0000\u0000\u0000",
+      "d:\\a\\wix4\\wix4\\src\\libs\\dutil\\wixtoolset.dutil\\fileutil.cpp\u0000\u0000\u0000\u0000\u0000failed to get version info for file",
+      "d:\\a\\wix4\\wix4\\src\\libs\\dutil\\wixtoolset.dutil\\memutil.cpp\u0000\u0000\u0000\u0000\u0000\u0000Failed to get new memory size.\u0000\u0000Failed to reallocate memory\u0000\u0000\u0000\u0000\u0000Failed to get memory size\u0000\u0000\u0000\u0000\u0000\u0000\u0000Not enough memory to allocate string of size",
+      "d:\\a\\wix4\\wix4\\src\\libs\\dutil\\wixtoolset.dutil\\strutil.cpp\u0000\u0000\u0000\u0000\u0000\u0000Failed to reallocate string\u0000\u0000\u0000\u0000\u0000failed to allocate string, len",
+      "c:\\ws\\tools\\msvs\\msi\\custom_actions\\custom_actions.cc\u0000\u0000\u0000Failed to get active database\u0000\u0000\u0000S\u0000E\u0000L\u0000E\u0000C\u0000T\u0000 \u0000D\u0000I\u0000S\u0000T\u0000I\u0000N\u0000C\u0000T\u0000 \u0000U\u0000p\u0000g\u0000r\u0000a\u0000d\u0000e\u0000C\u0000o\u0000d\u0000e\u0000 \u0000F\u0000R\u0000O\u0000M\u0000 \u0000U\u0000p\u0000g\u0000r\u0000a\u0000d\u0000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed MsiDatabaseOpenView\u0000\u0000\u0000\u0000\u0000\u0000Failed MsiViewExecute\u0000\u0000\u0000Failed MsiViewFetch\u0000\u0000\u0000\u0000\u0000Failed to read UpgradeCode\u0000\u0000\u0000\u0000\u0000\u0000Failed to get related product code\u0000\u0000\u0000\u0000\u0000\u0000A\u0000s\u0000s\u0000i\u0000g\u0000n\u0000m\u0000e\u0000n\u0000t\u0000T\u0000y\u0000p\u0000e\u0000\u0000\u0000\u0000\u0000Failed to get the assignment type property from related product\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000A\u0000L\u0000L\u0000U\u0000S\u0000E\u0000R\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to set the install scope to per-user\u0000\u0000\u0000\u0000\u0000GetLocalizedUserNames\u0000\u0000\u0000S\u0000-\u00001\u0000-\u00005\u0000-\u00001\u00001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to convert security identifier\u0000\u0000\u0000Failed to lookup security identifier\u0000\u0000\u0000\u0000A\u0000U\u0000T\u0000H\u0000E\u0000N\u0000T\u0000I\u0000C\u0000A\u0000T\u0000E\u0000D\u0000_\u0000U\u0000S\u0000E\u0000R\u0000S\u0000\u0000\u0000Failed to set localized Authenticated User name\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@ \u0002\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Pc\u0001\u0001\u0000\u0000\u0000Xc\u0001\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0014\u0001\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000`c\u0001\u0001\u0000\u0000\u0000hc\u0001\u0001\u0000\u0000\u0000pc\u0001\u0001\u0000\u0000\u0000xc\u0001\u0001\u0000\u0000\u0000c\u0001\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\f\b\u0013i\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000L\u0000\u0000\u0000\b\u0001\u0000\b\u0001\u0000\u0000\u0000\u0000\u0000\f\b\u0013i\u0000\u0000\u0000\u0000\f\u0000\u0000\u0000\u0014\u0000\u0000\u0000T\u0001\u0000T\u0001\u0000\u0000\u0000\u0000\u0000\f\b\u0013i\u0000\u0000\u0000\u0000",
+      "c:\\ws\\tools\\msvs\\msi\\x64\\Release\\custom_actions.pdb\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GCTL\u0000\u0010\u0000\u0000;\u0001\u0000.text$mn\u0000\u0000\u0000\u0000K\u0001\u0000`\u0000\u0000\u0000.text$mn$00\u00000L\u0001\u0000@\f\u0000\u0000.text$mn$21\u0000pX\u0001\u0000\u0004\u0000\u0000.text$x\u0000\u0000`\u0001\u0000P\u0003\u0000\u0000.idata$5\u0000\u0000\u0000\u0000Pc\u0001\u00008\u0000\u0000\u0000.00cfg\u0000\u0000c\u0001\u0000\b\u0000\u0000\u0000.CRT$XCA\u0000\u0000\u0000\u0000c\u0001\u0000\b\u0000\u0000\u0000.CRT$XCZ\u0000\u0000\u0000\u0000c\u0001\u0000\b\u0000\u0000\u0000.CRT$XIA\u0000\u0000\u0000\u0000c\u0001\u0000 \u0000\u0000\u0000.CRT$XIC\u0000\u0000\u0000\u0000c\u0001\u0000\b\u0000\u0000\u0000.CRT$XIZ\u0000\u0000\u0000\u0000c\u0001\u0000\b\u0000\u0000\u0000.CRT$XLA\u0000\u0000\u0000\u0000c\u0001\u0000\b\u0000\u0000\u0000.CRT$XLZ\u0000\u0000\u0000\u0000c\u0001\u0000\b\u0000\u0000\u0000.CRT$XPA\u0000\u0000\u0000\u0000c\u0001\u0000\u0010\u0000\u0000\u0000.CRT$XPX\u0000\u0000\u0000\u0000c\u0001\u0000\b\u0000\u0000\u0000.CRT$XPXA\u0000\u0000\u0000c\u0001\u0000\b\u0000\u0000\u0000.CRT$XPZ\u0000\u0000\u0000\u0000\u0000d\u0001\u0000\b\u0000\u0000\u0000.CRT$XTA\u0000\u0000\u0000\u0000\bd\u0001\u0000\b\u0000\u0000\u0000.CRT$XTZ\u0000\u0000\u0000\u0000\u0010d\u0001\u0000\u0010\u0000\u0000.rdata\u0000\u0000 \u0001\u0000`\u0001\u0000\u0000.rdata$00\u0000\u0000\u0000\u0001\u0000(\u0000\u0000\u0000.rdata$T\u0000\u0000\u0000\u0000\u0001\u0000l\u0001\u0000\u0000.rdata$r\u0000\u0000\u0000\u0000\u0014\u0001\u0000\u0000\u0000\u0000.rdata$voltmd\u0000\u0000\u0000\b\u0001\u0000\u0018\u0004\u0000\u0000.rdata$zzzdbg\u0000\u0000\u0000 \u0001\u0000\b\u0000\u0000\u0000.rtc$IAA\u0000\u0000\u0000\u0000(\u0001\u0000\b\u0000\u0000\u0000.rtc$IZZ\u0000\u0000\u0000\u00000\u0001\u0000\b\u0000\u0000\u0000.rtc$TAA\u0000\u0000\u0000\u00008\u0001\u0000\b\u0000\u0000\u0000.rtc$TZZ\u0000\u0000\u0000\u0000@\u0001\u0000\u0004\u0000\u0000\u0000.tls\u0000\u0000\u0000\u0000D\u0001\u0000\u0004\u0000\u0000\u0000.tls$\u0000\u0000\u0000H\u0001\u0000\b\u0000\u0000\u0000.tls$ZZZ\u0000\u0000\u0000\u0000P\u0001\u0000\u0011\u0000\u0000.xdata\u0000\u0000\b",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\BroadcastSettingChange.cpp\u0000WixBroadcastEnvironmentChange\u0000\u0000\u0000failed to initialize WixBroadcastEnvironmentChange\u0000\u0000\u0000\u0000\u0000\u0000E\u0000n\u0000v\u0000i\u0000r\u0000o\u0000n\u0000m\u0000e\u0000n\u0000t\u0000\u0000\u0000WixCheckRebootRequired\u0000\u0000failed to initialize\u0000\u0000\u0000\u0000D",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\CloseApps.cpp\u0000\u0000\u0000\u0000\u0000\u0000Failed to create record for prompt.\u0000\u0000\u0000\u0000\u0000Failed to set prompt record field string\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Unexpected return value from prompt to continue.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Attempting to send process id 0x%x message id",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\FormatFiles.cpp\u0000\u0000\u0000\u0000Failed to open view on Wix4FormatFile table\u0000\u0000\u0000\u0000\u0000Failed to get Binary table key.\u0000Failed to get File table key.\u0000\u0000\u0000Failed to get Component table key.\u0000\u0000\u0000\u0000\u0000\u0000[\u0000#\u0000%\u0000l\u0000s\u0000]\u0000\u0000\u0000\u0000\u0000Failed to format file string for file",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\netshortcuts.cpp\u0000\u0000\u0000W\u0000i\u0000x\u00004\u0000I\u0000n\u0000t\u0000e\u0000r\u0000n\u0000e\u0000t\u0000S\u0000h\u0000o\u0000r\u0000t\u0000c\u0000u\u0000t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Wix4InternetShortcut table doesn't exist, so there are no Internet shortcuts to process\u0000failed to initialize COM\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to create an instance of IUniformResourceLocatorW, skipping shortcut creation\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to create an instance of IShellLinkW, skipping shortcut creation\u0000failed to open view on Wix4InternetShortcut table\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get shortcut component\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get shortcut directory\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get shortcut filename\u0000failed to get shortcut target\u0000\u0000\u0000failed to get shortcut attributes\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get shortcut icon file\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get shortcut icon index\u0000\u0000\u0000\u0000\u0000\u0000\u0000Skipping shortcut for null-action component '%ls'\u0000\u0000\u0000\u0000\u0000\u0000\u0000Adding folder '%ls', component '%ls' to the CreateFolder table\u0000\u0000C\u0000r\u0000e\u0000a\u0000t\u0000e\u0000F\u0000o\u0000l\u0000d\u0000e\u0000r\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Folder '%ls' already exists in the CreateFolder table; the above error is harmless\u0000\u0000\u0000\u0000\u0000\u0000Couldn't add temporary CreateFolder row\u0000failed to allocate string for shortcut directory\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to allocate string for shortcut filename\u0000failed to write shortcut path to custom action data\u0000\u0000\u0000\u0000\u0000failed to write shortcut target to custom action data\u0000\u0000\u0000failed to write shortcut attributes to custom action data\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to write icon file to custom action data\u0000failed to write icon index to custom action data\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failure occured while processing Wix4InternetShortcut table\u0000\u0000\u0000\u0000\u0000failed to extend progress bar for InternetShortcuts\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u00004\u0000R\u0000o\u0000l\u0000l\u0000b\u0000a\u0000c\u0000k\u0000I\u0000n\u0000t\u0000e\u0000r\u0000n\u0000e\u0000t\u0000S\u0000h\u0000o\u0000r\u0000t\u0000c\u0000u\u0000t\u0000s\u0000_\u0000X\u00006\u00004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to set WixRollbackInternetShortcuts rollback custom action data\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u00004\u0000C\u0000r\u0000e\u0000a\u0000t\u0000e\u0000I\u0000n\u0000t\u0000e\u0000r\u0000n\u0000e\u0000t\u0000S\u0000h\u0000o\u0000r\u0000t\u0000c\u0000u\u0000t\u0000s\u0000_\u0000X\u00006\u00004\u0000\u0000\u0000failed to set WixCreateInternetShortcuts custom action data\u0000\u0000\u0000\u0000\u0000Creating IUniformResourceLocatorW shortcut '%ls' target '%ls'\u0000\u0000\u0000failed to create an instance of IUniformResourceLocatorW\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to set shortcut '%ls' target '%ls'\u0000\u0000\u0000\u0000\u0000\u0000\u0000Adding icon '%ls' index '%d'\u0000\u0000\u0000\u0000failed to get IPropertySetStorage for shortcut '%ls'\u0000\u0000\u0000\u0000failed to open storage for shortcut '%ls'\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to write icon storage for shortcut '%ls'\u0000failed to commit icon storage for shortcut '%ls'\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get IPersistFile for shortcut '%ls'\u0000\u0000\u0000failed to save shortcut '%ls'\u0000\u0000\u0000Creating IShellLinkW shortcut '%ls' target '%ls'\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to create an instance of IShellLinkW\u0000\u0000\u0000\u0000\u0000failed to set icon for shortcut '%ls'\u0000\u0000\u0000WixCreateInternetShortcuts\u0000\u0000\u0000\u0000\u0000\u0000failed to initialize WixCreateInternetShortcuts\u0000failed to read shortcut path from custom action data\u0000\u0000\u0000\u0000failed to read shortcut target from custom action data\u0000\u0000failed to read shortcut attributes from custom action data\u0000\u0000\u0000\u0000\u0000\u0000failed to read shortcut icon path from custom action data\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to read shortcut icon index from custom action data\u0000\u0000\u0000\u0000\u0000\u0000failed to create Internet shortcut\u0000\u0000\u0000\u0000\u0000\u0000failed to tick progress bar for shortcut",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\OsInfo.cpp\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000S\u0000M\u0000A\u0000L\u0000L\u0000B\u0000U\u0000S\u0000I\u0000N\u0000E\u0000S\u0000S\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000E\u0000N\u0000T\u0000E\u0000R\u0000P\u0000R\u0000I\u0000S\u0000E\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000B\u0000A\u0000C\u0000K\u0000O\u0000F\u0000F\u0000I\u0000C\u0000E\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000C\u0000O\u0000M\u0000M\u0000U\u0000N\u0000I\u0000C\u0000A\u0000T\u0000I\u0000O\u0000N\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000T\u0000E\u0000R\u0000M\u0000I\u0000N\u0000A\u0000L\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000S\u0000M\u0000A\u0000L\u0000L\u0000B\u0000U\u0000S\u0000I\u0000N\u0000E\u0000S\u0000S\u0000_\u0000R\u0000E\u0000S\u0000T\u0000R\u0000I\u0000C\u0000T\u0000E\u0000D\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000E\u0000M\u0000B\u0000E\u0000D\u0000D\u0000E\u0000D\u0000N\u0000T\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000D\u0000A\u0000T\u0000A\u0000C\u0000E\u0000N\u0000T\u0000E\u0000R\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000S\u0000I\u0000N\u0000G\u0000L\u0000E\u0000U\u0000S\u0000E\u0000R\u0000T\u0000S\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000P\u0000E\u0000R\u0000S\u0000O\u0000N\u0000A\u0000L\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000B\u0000L\u0000A\u0000D\u0000E\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000E\u0000M\u0000B\u0000E\u0000D\u0000D\u0000E\u0000D\u0000_\u0000R\u0000E\u0000S\u0000T\u0000R\u0000I\u0000C\u0000T\u0000E\u0000D\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000S\u0000E\u0000C\u0000U\u0000R\u0000I\u0000T\u0000Y\u0000_\u0000A\u0000P\u0000P\u0000L\u0000I\u0000A\u0000N\u0000C\u0000E\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000S\u0000T\u0000O\u0000R\u0000A\u0000G\u0000E\u0000_\u0000S\u0000E\u0000R\u0000V\u0000E\u0000R\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000C\u0000O\u0000M\u0000P\u0000U\u0000T\u0000E\u0000_\u0000S\u0000E\u0000R\u0000V\u0000E\u0000R\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000W\u0000H\u0000_\u0000S\u0000E\u0000R\u0000V\u0000E\u0000R\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000S\u0000E\u0000R\u0000V\u0000E\u0000R\u0000R\u00002\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000M\u0000E\u0000D\u0000I\u0000A\u0000C\u0000E\u0000N\u0000T\u0000E\u0000R\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000S\u0000T\u0000A\u0000R\u0000T\u0000E\u0000R\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000S\u0000U\u0000I\u0000T\u0000E\u0000_\u0000T\u0000A\u0000B\u0000L\u0000E\u0000T\u0000P\u0000C\u0000\u0000\u0000\u0000\u0000WixQueryOsDirs\u0000\u0000WixQueryOsDirs failed to initialize\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000A\u0000D\u0000M\u0000I\u0000N\u0000T\u0000O\u0000O\u0000L\u0000S\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000A\u0000L\u0000T\u0000S\u0000T\u0000A\u0000R\u0000T\u0000U\u0000P\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000C\u0000D\u0000B\u0000U\u0000R\u0000N\u0000_\u0000A\u0000R\u0000E\u0000A\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000C\u0000O\u0000M\u0000M\u0000O\u0000N\u0000_\u0000A\u0000D\u0000M\u0000I\u0000N\u0000T\u0000O\u0000O\u0000L\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000C\u0000O\u0000M\u0000M\u0000O\u0000N\u0000_\u0000A\u0000L\u0000T\u0000S\u0000T\u0000A\u0000R\u0000T\u0000U\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000C\u0000O\u0000M\u0000M\u0000O\u0000N\u0000_\u0000D\u0000O\u0000C\u0000U\u0000M\u0000E\u0000N\u0000T\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000C\u0000O\u0000M\u0000M\u0000O\u0000N\u0000_\u0000F\u0000A\u0000V\u0000O\u0000R\u0000I\u0000T\u0000E\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000C\u0000O\u0000M\u0000M\u0000O\u0000N\u0000_\u0000M\u0000U\u0000S\u0000I\u0000C\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000C\u0000O\u0000M\u0000M\u0000O\u0000N\u0000_\u0000P\u0000I\u0000C\u0000T\u0000U\u0000R\u0000E\u0000S\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000C\u0000O\u0000M\u0000M\u0000O\u0000N\u0000_\u0000V\u0000I\u0000D\u0000E\u0000O\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000C\u0000O\u0000O\u0000K\u0000I\u0000E\u0000S\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000D\u0000E\u0000S\u0000K\u0000T\u0000O\u0000P\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000H\u0000I\u0000S\u0000T\u0000O\u0000R\u0000Y\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000I\u0000N\u0000T\u0000E\u0000R\u0000N\u0000E\u0000T\u0000_\u0000C\u0000A\u0000C\u0000H\u0000E\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000M\u0000Y\u0000M\u0000U\u0000S\u0000I\u0000C\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000M\u0000Y\u0000P\u0000I\u0000C\u0000T\u0000U\u0000R\u0000E\u0000S\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000M\u0000Y\u0000V\u0000I\u0000D\u0000E\u0000O\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000N\u0000E\u0000T\u0000H\u0000O\u0000O\u0000D\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000P\u0000E\u0000R\u0000S\u0000O\u0000N\u0000A\u0000L\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000P\u0000R\u0000I\u0000N\u0000T\u0000H\u0000O\u0000O\u0000D\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000P\u0000R\u0000O\u0000F\u0000I\u0000L\u0000E\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000R\u0000E\u0000C\u0000E\u0000N\u0000T\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000I\u0000R\u0000_\u0000R\u0000E\u0000S\u0000O\u0000U\u0000R\u0000C\u0000E\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get SID; skipping account %ls\u0000Failed to look up account for SID; skipping account %ls.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000%\u0000s\u0000\\\u0000%\u0000s\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to format property value\u0000Failed write domain\\name property\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed write to name-only property\u0000\u0000\u0000\u0000\u0000\u0000WixQueryOsWellKnownSID\u0000\u0000WixQueryOsWellKnownSID failed to initialize\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000A\u0000C\u0000C\u0000O\u0000U\u0000N\u0000T\u0000_\u0000L\u0000O\u0000C\u0000A\u0000L\u0000S\u0000Y\u0000S\u0000T\u0000E\u0000M\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000A\u0000C\u0000C\u0000O\u0000U\u0000N\u0000T\u0000_\u0000L\u0000O\u0000C\u0000A\u0000L\u0000S\u0000E\u0000R\u0000V\u0000I\u0000C\u0000E\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000A\u0000C\u0000C\u0000O\u0000U\u0000N\u0000T\u0000_\u0000N\u0000E\u0000T\u0000W\u0000O\u0000R\u0000K\u0000S\u0000E\u0000R\u0000V\u0000I\u0000C\u0000E\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000A\u0000C\u0000C\u0000O\u0000U\u0000N\u0000T\u0000_\u0000A\u0000D\u0000M\u0000I\u0000N\u0000I\u0000S\u0000T\u0000R\u0000A\u0000T\u0000O\u0000R\u0000S\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000A\u0000C\u0000C\u0000O\u0000U\u0000N\u0000T\u0000_\u0000U\u0000S\u0000E\u0000R\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000A\u0000C\u0000C\u0000O\u0000U\u0000N\u0000T\u0000_\u0000G\u0000U\u0000E\u0000S\u0000T\u0000S\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000A\u0000C\u0000C\u0000O\u0000U\u0000N\u0000T\u0000_\u0000P\u0000E\u0000R\u0000F\u0000L\u0000O\u0000G\u0000U\u0000S\u0000E\u0000R\u0000S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000A\u0000C\u0000C\u0000O\u0000U\u0000N\u0000T\u0000_\u0000P\u0000E\u0000R\u0000F\u0000L\u0000O\u0000G\u0000U\u0000S\u0000E\u0000R\u0000S\u0000_\u0000N\u0000O\u0000D\u0000O\u0000M\u0000A\u0000I\u0000N\u0000\u0000\u0000\u0000\u0000\u0000\u0000d\u00003\u0000d\u00009\u0000.\u0000d\u0000l\u0000l\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to the load the existing DirectX APIs.\u0000\u0000\u0000Direct3DCreate9Ex\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Unable to load Direct3DCreateEx function, so the driver is not a WDDM driver.\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000W\u0000D\u0000D\u0000M\u0000_\u0000D\u0000R\u0000I\u0000V\u0000E\u0000R\u0000_\u0000P\u0000R\u0000E\u0000S\u0000E\u0000N\u0000T\u0000\u0000\u0000Failed write property\u0000\u0000\u0000d\u0000w\u0000m\u0000a\u0000p\u0000i\u0000.\u0000d\u0000l\u0000l\u0000\u0000\u0000\u0000\u0000Failed to load the existing window manager APIs.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000DwmIsCompositionEnabled\u0000Unable to obtain function information, skipping Composition Enabled check.\u0000\u0000\u0000\u0000\u0000\u0000Failed to retrieve Composition state\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000D\u0000W\u0000M\u0000_\u0000C\u0000O\u0000M\u0000P\u0000O\u0000S\u0000I\u0000T\u0000I\u0000O\u0000N\u0000_\u0000E\u0000N\u0000A\u0000B\u0000L\u0000E\u0000D\u0000\u0000\u0000WixQueryOsDriverInfo\u0000\u0000\u0000\u0000WixQueryOsDriverInfo failed to initialize\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to detect WIX_WDDM_DRIVER_PRESENT\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to detect WIX_DWM_COMPOSITION_ENABLED\u0000\u0000\u0000\u0000WixQueryNativeMachine\u0000\u0000\u0000WixQueryNativeMachine failed to initialize\u0000\u0000\u0000\u0000\u0000\u0000Failed to get native machine value.\u0000\u0000\u0000\u0000\u0000W\u0000I\u0000X\u0000_\u0000N\u0000A\u0000T\u0000I\u0000V\u0000E\u0000_\u0000M\u0000A\u0000C\u0000H\u0000I\u0000N\u0000E\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u0000Q\u0000u\u0000i\u0000e\u0000t\u0000E\u0000x\u0000e\u0000c\u0000C\u0000m\u0000d\u0000L\u0000i\u0000n\u0000e\u0000\u0000\u0000W\u0000i\u0000x\u0000Q\u0000u\u0000i\u0000e\u0000t\u0000E\u0000x\u0000e\u0000c\u00006\u00004\u0000C\u0000m\u0000d\u0000L\u0000i\u0000n\u0000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u0000Q\u0000u\u0000i\u0000e\u0000t\u0000E\u0000x\u0000e\u0000c\u0000C\u0000m\u0000d\u0000T\u0000i\u0000m\u0000e\u0000o\u0000u\u0000t\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u0000Q\u0000u\u0000i\u0000e\u0000t\u0000E\u0000x\u0000e\u0000c\u00006\u00004\u0000C\u0000m\u0000d\u0000T\u0000i\u0000m\u0000e\u0000o\u0000u\u0000t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u0000S\u0000i\u0000l\u0000e\u0000n\u0000t\u0000E\u0000x\u0000e\u0000c\u0000C\u0000m\u0000d\u0000L\u0000i\u0000n\u0000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u0000S\u0000i\u0000l\u0000e\u0000n\u0000t\u0000E\u0000x\u0000e\u0000c\u00006\u00004\u0000C\u0000m\u0000d\u0000L\u0000i\u0000n\u0000e\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u0000S\u0000i\u0000l\u0000e\u0000n\u0000t\u0000E\u0000x\u0000e\u0000c\u0000C\u0000m\u0000d\u0000T\u0000i\u0000m\u0000e\u0000o\u0000u\u0000t\u0000\u0000\u0000W\u0000i\u0000x\u0000S\u0000i\u0000l\u0000e\u0000n\u0000t\u0000E\u0000x\u0000e\u0000c\u00006\u00004\u0000C\u0000m\u0000d\u0000T\u0000i\u0000m\u0000e\u0000o\u0000u\u0000t\u0000\u0000\u0000\u0000\u0000\u0000\u0000CustomActionData\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get CustomActionData\u0000\u0000D",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\RemoveFoldersEx.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Search path not found",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\RemoveRegistryKeysEx.cpp\u0000\u0000\u0000W\u0000i\u0000x\u00004\u0000R\u0000e\u0000m\u0000o\u0000v\u0000e\u0000R\u0000e\u0000g\u0000i\u0000s\u0000t\u0000r\u0000y\u0000K\u0000e\u0000y\u0000E\u0000x\u0000\u0000\u0000Wix4RemoveRegistryKeyEx table doesn't exist, so there are no registry keys to remove.\u0000\u0000\u0000Failed to open view on Wix4RemoveRegistryKeyEx table\u0000\u0000\u0000\u0000Failed to get Wix4RemoveRegistryKeyEx identity.\u0000Failed to get Wix4RemoveRegistryKeyEx condition.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get Wix4RemoveRegistryKeyEx component.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get Wix4RemoveRegistryKeyEx root.\u0000\u0000\u0000\u0000\u0000Failed to get Wix4RemoveRegistryKeyEx key.\u0000\u0000\u0000\u0000\u0000\u0000Failed to get Wix4RemoveRegistryKeyEx mode.\u0000\u0000\u0000\u0000\u0000Adding RemoveRegistry row",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\RestartManager.cpp\u0000W\u0000i\u0000x\u00004\u0000R\u0000e\u0000s\u0000t\u0000a\u0000r\u0000t\u0000R\u0000e\u0000s\u0000o\u0000u\u0000r\u0000c\u0000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000The Wix4RestartResource table does not exist; there are no resources to register with Restart Manager.\u0000\u0000M\u0000s\u0000i\u0000R\u0000e\u0000s\u0000t\u0000a\u0000r\u0000t\u0000M\u0000a\u0000n\u0000a\u0000g\u0000e\u0000r\u0000S\u0000e\u0000s\u0000s\u0000i\u0000o\u0000n\u0000K\u0000e\u0000y\u0000\u0000\u0000Failed to get the MsiRestartManagerSessionKey property.\u0000Failed to get the MsiRestartManagerSessionKey string length.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000The MsiRestartManagerSessionKey property is not available to join.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000The Restart Manager is not supported on this platform. Skipping.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to join the existing Restart Manager session %ls.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to open a view on the RestartResource table.\u0000\u0000\u0000\u0000\u0000Failed to get the RestartResource field value.\u0000\u0000Failed to get the Component_ field value.\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get the Resource formatted field value.\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get the Attributes field value.\u0000\u0000\u0000\u0000\u0000\u0000\u0000Skipping resource %ls.\u0000\u0000Registering file name %ls with the Restart Manager.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to register the file name with the Restart Manager session.\u0000\u0000\u0000\u0000\u0000\u0000Registering process name %ls with the Restart Manager.\u0000\u0000The process, %ls, could not be registered with the Restart Manager (probably because the setup is not elevated and the process is in another user context). A reboot may be requested later.\u0000\u0000\u0000\u0000Failed to register the process name with the Restart Manager session.\u0000\u0000\u0000Registering service name %ls with the Restart Manager.\u0000\u0000Failed to register the service name with the Restart Manager session.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000The resource type %d for %ls is not supported and will not be registered.\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed while looping through all rows to register resources.\u0000\u0000\u0000\u0000Failed to register the resources with the Restart Manager.\u0000\u0000\u0000\u0000\u0000\u0000CreateSmb\u0000\u0000\u0000\u0000\u0000\u0000\u0000D",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\scamanifest.cpp\u0000\u0000\u0000\u0000Skipping ConfigurePerfmonManifestRegister() because the target system does not support perfmon manifest\u0000W\u0000i\u0000x\u00004\u0000P\u0000e\u0000r\u0000f\u0000m\u0000o\u0000n\u0000M\u0000a\u0000n\u0000i\u0000f\u0000e\u0000s\u0000t\u0000\u0000\u0000Skipping ConfigurePerfmonManifestRegister() because Wix4PerfmonManifest table not present\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to open view on PerfMonManifest table\u0000\u0000\u0000\u0000failed to get Component for PerfMonManifest\u0000\u0000\u0000\u0000\u0000failed to get Component state for PerfMonManifest\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get File for PerfMonManifest\u0000\u0000failed to get ApplicationIdentity for PerfMonManifest\u0000\u0000\u0000",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\scaperf.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to process Wix4PerformanceCategory table.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000UninstallPerfCounterData\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to initialize UninstallPerfCounterData.\u0000\u0000ConfigurePerfmonInstall\u0000W\u0000i\u0000x\u00004\u0000P\u0000e\u0000r\u0000f\u0000m\u0000o\u0000n\u0000\u0000\u0000Skipping RegisterPerfmon() because Wix4Perfmon table not present\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to open view on PerfMon table\u0000\u0000\u0000\u0000failed to get Component for PerfMon\u0000\u0000\u0000\u0000\u0000failed to get Component state for PerfMon\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get Name for PerfMon\u0000\u0000failed to get File for PerfMon\u0000\u0000ConfigurePerfmonInstall's CustomActionData",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\scaperfexec.cpp\u0000\u0000\u0000\u0000Failed to execute Wix4PerformanceCategory table.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000UnregisterPerfCounterData\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to initialize UnregisterPerfCounterData.\u0000RegisterPerfmon\u0000l\u0000o\u0000a\u0000d\u0000p\u0000e\u0000r\u0000f\u0000.\u0000d\u0000l\u0000l\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to load DLL for PerfMon\u0000\u0000LoadPerfCounterTextStringsW\u0000\u0000\u0000\u0000\u0000failed to get DLL function for PerfMon\u0000\u0000failed to allocate string\u0000\u0000\u0000\u0000\u0000\u0000\u0000Converting DLL path to short format",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\scasched.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u00004\u0000F\u0000i\u0000l\u0000e\u0000S\u0000h\u0000a\u0000r\u0000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000Skipping SMB CustomAction, no Wix4FileShare table\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to read Wix4FileShare table\u0000\u0000\u0000\u0000\u0000\u0000failed to install FileShares\u0000\u0000\u0000\u0000ConfigureSmbUninstall\u0000\u0000\u0000failed to uninstall FileShares\u0000\u0000ConfigureUsers\u0000\u0000failed to read Wix4User table\u0000\u0000\u0000failed to add",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\scasmbexec.cpp\u0000\u0000\u0000\u0000\u0000failed to allocate memory for explicit access structure\u0000E\u0000v\u0000e\u0000r\u0000y\u0000o\u0000n\u0000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000A\u0000d\u0000m\u0000i\u0000n\u0000i\u0000s\u0000t\u0000r\u0000a\u0000t\u0000o\u0000r\u0000s\u0000\u0000\u0000\u0000\u0000L\u0000o\u0000c\u0000a\u0000l\u0000S\u0000y\u0000s\u0000t\u0000e\u0000m\u0000\u0000\u0000L\u0000o\u0000c\u0000a\u0000l\u0000S\u0000e\u0000r\u0000v\u0000i\u0000c\u0000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000N\u0000e\u0000t\u0000w\u0000o\u0000r\u0000k\u0000S\u0000e\u0000r\u0000v\u0000i\u0000c\u0000e\u0000\u0000\u0000\u0000\u0000A\u0000u\u0000t\u0000h\u0000e\u0000n\u0000t\u0000i\u0000c\u0000a\u0000t\u0000e\u0000d\u0000U\u0000s\u0000e\u0000r\u0000\u0000\u0000\u0000\u0000\u0000\u0000G\u0000u\u0000e\u0000s\u0000t\u0000s\u0000\u0000\u0000\u0000\u0000C\u0000R\u0000E\u0000A\u0000T\u0000O\u0000R\u0000 \u0000O\u0000W\u0000N\u0000E\u0000R\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get sid for account",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\scasmbsched.cpp\u0000\u0000\u0000\u0000Failed to get Wix4FileShare.FileShare\u0000\u0000\u0000Failed to copy ID string to smb object\u0000\u0000Failed to get Wix4FileShare.ShareName\u0000\u0000\u0000Failed to copy share name string to smb object\u0000\u0000Failed to get Component for Wix4FileShare",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\scauser.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to open view on Wix4User table\u0000\u0000\u0000Failed to execute view on Wix4User table\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get Wix4User.User\u0000\u0000\u0000\u0000\u0000Failed to copy key string to user object\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get Wix4User.Component_\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to copy component string to user object\u0000\u0000Failed to get Wix4User.Name\u0000\u0000\u0000\u0000\u0000Failed to copy name string to user object\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to get Wix4User.Domain\u0000\u0000\u0000Failed to copy domain string to user object\u0000\u0000\u0000\u0000\u0000Failed to get Wix4User.Comment\u0000\u0000Failed to copy comment string to user object\u0000\u0000\u0000\u0000Failed to get Wix4User.Password\u0000Failed to copy password string to user object\u0000\u0000\u0000Error",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\secureobj.cpp\u0000\u0000\u0000\u0000\u0000\u0000Unable to schedule rollback for object (failed to get security descriptor control)",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\serviceconfig.cpp\u0000\u0000Failed to add encoding key to CustomActionData.\u0000Failed to open view on Wix4ServiceConfig table.\u0000Failed to get component name\u0000\u0000\u0000\u0000Failed to get install state for Component",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\shellexecca.cpp\u0000\u0000\u0000\u0000ShelExecUnelevated failed with target %ls\u0000\u0000\u0000\u0000\u0000\u0000\u0000ShellExec failed with return code %llu.\u0000WixShellExec\u0000\u0000\u0000\u0000W\u0000i\u0000x\u0000S\u0000h\u0000e\u0000l\u0000l\u0000E\u0000x\u0000e\u0000c\u0000T\u0000a\u0000r\u0000g\u0000e\u0000t\u0000\u0000\u0000\u0000\u0000failed to get WixShellExecTarget\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000WixShellExecTarget is %ls\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to launch target\u0000WixUnelevatedShellExec\u0000\u0000W\u0000i\u0000x\u0000U\u0000n\u0000e\u0000l\u0000e\u0000v\u0000a\u0000t\u0000e\u0000d\u0000S\u0000h\u0000e\u0000l\u0000l\u0000E\u0000x\u0000e\u0000c\u0000T\u0000a\u0000r\u0000g\u0000e\u0000t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get WixUnelevatedShellExecTarget\u0000\u0000\u0000\u0000\u0000\u0000WixUnelevatedShellExecTarget is %ls\u0000\u0000\u0000\u0000\u0000B\u0000i\u0000n\u0000a\u0000r\u0000y\u0000\u0000\u0000\u0000\u0000There is no Binary table.\u0000\u0000\u0000\u0000\u0000\u0000\u0000Binary ID cannot be null\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Binary ID cannot be empty string\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000S\u0000E\u0000L\u0000E\u0000C\u0000T\u0000 \u0000`\u0000D\u0000a\u0000t\u0000a\u0000`\u0000 \u0000F\u0000R\u0000O\u0000M\u0000 \u0000`\u0000B\u0000i\u0000n\u0000a\u0000r\u0000y\u0000`\u0000 \u0000W\u0000H\u0000E\u0000R\u0000E\u0000 \u0000`\u0000N\u0000a\u0000m\u0000e\u0000`\u0000=\u0000'\u0000%\u0000s\u0000'\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to allocate Binary table query.\u0000\u0000Failed to open view on Binary table\u0000\u0000\u0000\u0000\u0000Failed to retrieve request from Binary table\u0000\u0000\u0000\u0000Failed to read Binary.Data.\u0000\u0000\u0000\u0000\u0000WixShellExecBinary\u0000\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u0000S\u0000h\u0000e\u0000l\u0000l\u0000E\u0000x\u0000e\u0000c\u0000B\u0000i\u0000n\u0000a\u0000r\u0000y\u0000I\u0000d\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get WixShellExecBinaryId\u0000\u0000\u0000\u0000\u0000\u0000WixShellExecBinaryId is %ls\u0000\u0000\u0000\u0000\u0000Failed to append filename.\u0000\u0000\u0000\u0000\u0000\u0000failed to extract binary data\u0000\u0000\u0000failed to launch target",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\test.cpp\u0000\u0000\u0000Failed to create message window.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000D\u0000",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\TouchFile.cpp\u0000\u0000\u0000\u0000\u0000\u0000Failed to add touch file identity to custom action data.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Failed to add touch file path to custom action data.\u0000\u0000\u0000\u0000Failed to add touch file attributes to custom action data.\u0000\u0000\u0000\u0000\u0000\u0000Failed to add touch file high date",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\utilca.cpp\u0000Could not get domain name from server name",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\XmlConfig.cpp\u0000\u0000\u0000\u0000\u0000\u0000failed to free xml config element path in change list item\u0000\u0000\u0000\u0000\u0000\u0000failed to free xml config verify path in change list item\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to free xml config value in change list item\u0000\u0000\u0000\u0000\u0000failed to free xml config change list item\u0000\u0000\u0000\u0000\u0000\u0000failed to allocate memory for new xml file change list element\u0000\u0000failed to open view on Wix4XmlConfig table\u0000\u0000\u0000\u0000\u0000\u0000failed to add xml file change to list\u0000\u0000\u0000failed to get Wix4XmlConfig record Id\u0000\u0000\u0000failed to copy Wix4XmlConfig record Id\u0000\u0000failed to get component name for Wix4XmlConfig",
+      "D:\\a\\wix\\wix\\src\\ext\\Util\\ca\\XmlFile.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000W\u0000i\u0000x\u00004\u0000X\u0000m\u0000l\u0000F\u0000i\u0000l\u0000e\u0000\u0000\u0000failed to open view on Wix4XmlFile table\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000failed to get Wix4XmlFile record Id\u0000\u0000\u0000\u0000\u0000failed to copy Wix4XmlFile record Id\u0000\u0000\u0000\u0000failed to get component name for Wix4XmlFile"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "iex(",
+        "occurrences": 1
+      }
+    ],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 32223232,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 15
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "infecte": null,
+    "signature": null,
+    "raison": "Erreur pendant l'analyse ClamAV : Error while reading from socket: ('timed out',)"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {
+      "4.0.6.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "wixtoolset.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 26,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      }
+    },
+    "urls": {
+      "http://ocsp.digicert.com0C\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00027http://cacerts.digicert.com/DigiCertCSRSA4096RootG5.crt0E\u0006\u0003U\u001d\u001f\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0C%06%08%2B%06%01%05%05%070%027http%3A%2F%2Fcacerts.digicert.com%2FDigiCertCSRSA4096RootG5.crt0E%06%03U%1D%1F%04/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://wixtoolset.org/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 3,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://ocsp.digicert.com0X\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0X%06%08%2B%06%01%05%05%070%02Lhttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://ocsp.digicert.com0A\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\u0006\u0003U\u001d\u001f\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0A%06%08%2B%06%01%05%05%070%025http%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedRootG4.crt0C%06%03U%1D%1F%04/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://ocsp.digicert.com0C\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\u0006\u0003U\u001d\u001f\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0C%06%08%2B%06%01%05%05%070%027http%3A%2F%2Fcacerts.digicert.com%2FDigiCertAssuredIDRootCA.crt0E%06%03U%1D%1F%04/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "wixtoolset.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "https://wixtoolset.org/",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.998,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 5,
+      "base64_massif": 1,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.2307,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 55,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['wixtoolset.org'], URLs: ['https://wixtoolset.org/'], hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "faible",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "analyse_statique"
+      ],
+      "ratio": 0.33,
+      "manquants": [
+        {
+          "outil": "clamav",
+          "statut": "error",
+          "raison": "Erreur pendant l'analyse ClamAV : Error while reading from socket: ('timed out',)"
+        },
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : clamav (error), yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\node-v24.11.1-x64.msi",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "error",
+        "duration_s": 100.388,
+        "summary": "Erreur pendant l'analyse ClamAV : Error while reading from socket: ('timed out',)",
+        "findings": [],
+        "error": "Erreur pendant l'analyse ClamAV : Error while reading from socket: ('timed out',)"
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 38.475,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 38.108,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 30.378,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

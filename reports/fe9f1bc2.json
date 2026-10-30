@@ -1,0 +1,562 @@
+{
+  "id_rapport": "fe9f1bc2",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 86.019,
+  "metadonnees": {
+    "nom": "VSCodeUserSetup-x64-1.109.2.exe",
+    "extension": "exe",
+    "taille_octets": 125931816,
+    "taille_lisible": "120.1 Mo",
+    "mime_reel": "application/x-dosexec",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\VSCodeUserSetup-x64-1.109.2.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-02-11T12:34:54",
+    "date_modification": "2026-02-11T13:13:06",
+    "date_acces": "2026-10-29T21:16:52",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "036032b9c806df7678c2f20c96c39b1e3ab0e69010ce9a839c6a1d364ccbf331",
+    "sha1": "2875755be7544d0c70febe8a0e8fd959982ccfa4",
+    "md5": "49df7da474c1b5b9ef79b106952c6cbd",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": true,
+      "type": "EXE",
+      "architecture": "0x14c",
+      "nombre_imports": 146,
+      "imports_dangereux_detectes": [
+        "AdjustTokenPrivileges",
+        "GetProcAddress",
+        "LoadLibraryA",
+        "VirtualAlloc"
+      ],
+      "sections": [
+        {
+          "nom": ".text",
+          "taille_brute": 677888,
+          "entropie": 6.379,
+          "executable": true,
+          "ecriture": false
+        },
+        {
+          "nom": ".itext",
+          "taille_brute": 6144,
+          "entropie": 6.168,
+          "executable": true,
+          "ecriture": false
+        },
+        {
+          "nom": ".data",
+          "taille_brute": 14848,
+          "entropie": 4.973,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".bss",
+          "taille_brute": 0,
+          "entropie": 0.0,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".idata",
+          "taille_brute": 4096,
+          "entropie": 5.02,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".didata",
+          "taille_brute": 512,
+          "entropie": 2.729,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".edata",
+          "taille_brute": 512,
+          "entropie": 1.306,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".tls",
+          "taille_brute": 0,
+          "entropie": 0.0,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".rdata",
+          "taille_brute": 512,
+          "entropie": 1.389,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".reloc",
+          "taille_brute": 69120,
+          "entropie": 6.714,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".rsrc",
+          "taille_brute": 66560,
+          "entropie": 5.135,
+          "executable": false,
+          "ecriture": false
+        }
+      ],
+      "packer_suspecte": false,
+      "signature_presente": true,
+      "point_entree": "0xa7f98",
+      "timestamp_compilation": 1739339596
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 8.0,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.47,
+      6.09,
+      6.53,
+      6.07,
+      6.25,
+      6.35,
+      5.91,
+      5.49,
+      6.35,
+      6.58,
+      6.0,
+      6.97,
+      5.32,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "base64": {
+      "nombre_blobs_base64": 3,
+      "exemple": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "6.4.0.1",
+      "1.0.0.0"
+    ],
+    "domaines": [
+      "C.ru",
+      "5.cn"
+    ],
+    "urls": [],
+    "emails": [
+      "V@O.EDA"
+    ],
+    "exclus_domaines_legitimes": {
+      "domaines": 1,
+      "urls": 1
+    },
+    "chemins_windows": [
+      "G:\\",
+      "T:\\",
+      "X:\\",
+      "L:\\",
+      "N:\\",
+      "X:\\;;",
+      "c:\\X\u0017L\t\u0002A",
+      "r:\\ixm}\u001d\u0003f\u000f3@",
+      "t:\\}\u0006EFw`i H%",
+      "e:\\Ϣ \u0014\u000b@gIsnNZXDk\u0007};-p8c)7'n\\!jy\u0010ӑ~X5ORy32aøw",
+      "q:\\",
+      "f:\\\u000e\tpGfeA\u0006.;ɨy\tZey-n\u0006py",
+      "v:\\k\\P",
+      "R:\\r\u000534.",
+      "N:\\C2\u0015&L'i\b\u0006QIB[;\u0018(\u0001",
+      "m:\\\u0018bb\u0015\u0013\t",
+      "O:\\L",
+      "i:\\",
+      "q:\\wr(yqךVd$m_ҫ\u0011=!",
+      "M:\\U7a'",
+      "n:\\N\u0011)\u0016W",
+      "p:\\",
+      "N:\\Yw\u0012\u0006\u0016$À#\u000e,j}(KQ=xʺ",
+      "Q:\\\f",
+      "L:\\syBE\fH\u001e{\u00076^QrW\u0003]\u0002jԤ",
+      "b:\\c+N5zf",
+      "A:\\ݲr\tS",
+      "C:\\\u001f",
+      "f:\\\u00065ޝc",
+      "F:\\]{}\t\\j{O"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 125931816,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 4
+  },
+  "signature_numerique": {
+    "applicable": true,
+    "signature_presente": true,
+    "verifiee": null,
+    "editeur": null,
+    "commentaire": "Table de certificats presente. Verification cryptographique complete non effectuee (osslsigncode non installe sur cette machine)."
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": false,
+    "infecte": null,
+    "signature": null,
+    "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pe",
+    "status": "termine",
+    "file_type": "PE/EXE",
+    "pe_offset": 256,
+    "pe_signature_valid": true,
+    "findings": [],
+    "note": "Contrôle structurel minimal. Utiliser un parseur PE dédié pour une analyse plus approfondie."
+  },
+  "threat_intelligence": {
+    "ips": {
+      "6.4.0.1": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "1.0.0.0": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "AU",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "C.ru": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 2,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "5.cn": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 2,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      }
+    },
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "C.ru",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "5.cn",
+        "type": "domaines",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 1.0,
+      "nb_imports_dangereux": 4,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 1,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.3352,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 41,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Quelques indicateurs isoles detectes (a corroborer).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['C.ru', '5.cn'], URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "faible",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.5,
+      "manquants": [
+        {
+          "outil": "clamav",
+          "statut": "error",
+          "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+        },
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : clamav (error), yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\VSCodeUserSetup-x64-1.109.2.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "error",
+        "duration_s": 59.561,
+        "summary": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte",
+        "findings": [],
+        "error": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 47.398,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 69.641,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 46.261,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pe",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox.",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PE/EXE' / extension '.exe' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "non_applicable",
+      "alerts": [],
+      "reasons": [
+        "Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": false,
+    "declencheurs": [],
+    "bloquants": [
+      "fichier > 50 Mo",
+      "politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+    ],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

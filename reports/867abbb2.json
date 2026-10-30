@@ -1,0 +1,316 @@
+{
+  "id_rapport": "867abbb2",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 2.379,
+  "metadonnees": {
+    "nom": "demande de stage.pdf",
+    "extension": "pdf",
+    "taille_octets": 130046,
+    "taille_lisible": "127.0 Ko",
+    "mime_reel": "application/pdf",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\demande de stage.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-06-09T14:43:53",
+    "date_modification": "2026-06-09T14:43:54",
+    "date_acces": "2026-10-29T20:23:30",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://mail.google.com/\nHostUrl=https://mail-attachment.googleusercontent.com/attachment/u/2/?ui=2&ik=d39f82ab2e&attid=0.1&permmsgid=msg-a:r7574284667729608484&th=19e314dd161b4330&view=att&disp=safe&realattid=f_mp8c0ynb1&zw&saddbat=ANGjdJ_-48YM91FF5M2lmzT8HLrHq7By6y4fS5YyOuXggCTAsg1cKxIqfhODtOxvdkbD3UIKBEnqFM2c4DFokr5hkfY1tqhDz4Ks2ni0g1YJRevDC44SC7nlcy0s2ByjXPUxpsZe7d8mANXxWEHTRISGWs3JcUfihQIqoeYDMTwVv_GUmP1sPXYxMIPYa6wcBjEzfetUGZ0pcdyJy7SpndgRdEyHuyv0bXVM1tL_c1pk4nyYSqXpjqP9f6koIBs_x8Vg_zgcZE0Iy57uLsutk-YiTFT4EldpJY1d8JVTEvm71u2aSrXObTD6HUDYkw03S5HroHMACn6QESSam_t0SvqZHxoBBN9n0zg5NIiOYaEPDHfiGxNj5FQi5nYbaPFcOhSNaPMhep-c2sUx1yy4ecyqI8v2nECGpcg6AWnVXGl1kkNTYt7T5Z8-Ki3Q4nxIY-zbRWXaR3C_qSeCXc0oNBK8R6Gaf6Hp4nZnpX4OyNlahXzXM9wzLkoR8mJOBlLMwE1UH9JQxBCKGwS5O68ALV9TnMfdaLxuQVhgHWCAk_WIXC_wAZLCc3LpTDVgtubIWELLnizgGIQ7iOX4ba2CzIMAY1ViAcsxOrhFuBG4hi7o1OBFRRUONRp_heNsu5WZdnOpGmX4MmNfxIDwaM5m47HZ4-JD3_catJD665z8fBjRxuAORWzYuoAcJgue9O0bWLg9xZ1Okfg7QtBGuh8dG_q4g5ROKfJtf48qTj5C7KQtCzKF8cEYghtLEf1PL80d3xm5ZXzgw7_z_3tpyGbShcKETHU73UXZS0ElyuyPDYmeHfLS9GZiCneiCknt_M6UK_xLTeRdC1Ez3mckBnGeyqZeLEY7LslrIahsgolzUVIVbWSls6G1-h1hLdAmw9AMDbk8PUsEv0pvusqYp_tejiz3tIgbdN3HC34H3Oh6Zsz8qu4K_dWXbOdYgT6sNGk6C8dRJm0LpNNNgQuE88v_54kgMahm9RnxDKxitvFENvm00VZYfoclixqVxGEyczXkkReQMfTTGoIKqhX_Mw2I-bdYj63hw90paPv11P51xn6_Qvb6gZ195eRy_pBG6OBNhz3yAc2xd0g3FoLkk4EeDD7RQHEPjRSVZMbXyfabS2CFzvWWM1_WGSxWPk06s28\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pdf",
+    "extension_declaree": ".pdf",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "b02309f7f460230ce09e8d4dba610cafe39af6809441849996ea264ee9ca16ef",
+    "sha1": "1ac2841bec5a1545f825620eba321269df3b2cde",
+    "md5": "16474eb5436d5ffb03c680c6231d6b8f",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pdf",
+    "pdf": {
+      "disponible": true,
+      "javascript_embarque": false,
+      "action_ouverture": false,
+      "fichiers_embarques": false,
+      "action_launch": false,
+      "nombre_pages": 1
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.943,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      7.97,
+      7.89
+    ],
+    "base64": {
+      "nombre_blobs_base64": 3,
+      "exemple": "/Type/Font/Subtype/TrueType/Name/F4/BaseFont/BCDHEE+Calibri/..."
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [
+      "Meryem.yousfi@usms.ac.ma"
+    ],
+    "exclus_domaines_legitimes": {
+      "domaines": 3,
+      "urls": 5
+    },
+    "chemins_windows": [
+      "f:\\+C믛e_RQl\u0010\\9dO\u0001!\u0005"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "F0CE7449098B8148A7B4CAAB848CAB7C"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [
+      {
+        "indicator": "/URI",
+        "description": "Marqueur PDF présent : /URI"
+      }
+    ],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.012402153015136719,
+      "entropie_globale": 0.992875,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 1,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0767,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 12,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\demande de stage.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 1.656,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.008,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.754,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.104,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "detected",
+        "duration_s": 0.004,
+        "summary": "1 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "/URI",
+            "description": "Marqueur PDF présent : /URI"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PDF' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

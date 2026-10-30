@@ -1,0 +1,364 @@
+{
+  "id_rapport": "c8e10d6e",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 7.32,
+  "metadonnees": {
+    "nom": "Rapport_TP4_Forensique.docx",
+    "extension": "docx",
+    "taille_octets": 2111387,
+    "taille_lisible": "2.0 Mo",
+    "mime_reel": "application/zip",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Rapport_TP4_Forensique.docx",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-05-10T20:53:51",
+    "date_modification": "2026-05-10T20:56:26",
+    "date_acces": "2026-10-29T20:41:53",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://claude.ai/chat/d58daa08-901d-4fef-826d-8764aac90752\nHostUrl=https://claude.ai/api/organizations/43deef5a-cdd6-4f6e-928b-609824995097/conversations/d58daa08-901d-4fef-826d-8764aac90752/wiggle/download-file?path=%2Fmnt%2Fuser-data%2Foutputs%2FRapport_TP4_Forensique.docx\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "zip_or_office_ooxml",
+    "extension_declaree": ".docx",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "8cc2aa27f500a2646dda072cd44ec0965977e964d40d21a45ca8b5f00d03de1a",
+    "sha1": "5fa669c29fac9ed086287f52b0ef8d067b53295f",
+    "md5": "4ef316b3f24d6f32becc1ae965cc0669",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "zip_or_office_ooxml",
+    "office": {
+      "disponible": true,
+      "macros_presentes": false
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.998,
+    "verdict_entropie": "tres elevee - normale pour ce type de fichier (image/archive/document deja compresse), ce n'est PAS en soi un signe de chiffrement ou d'obfuscation",
+    "format_naturellement_compresse": true,
+    "entropie_par_bloc": [
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      8.0,
+      8.0,
+      7.99,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      8.0,
+      7.99,
+      8.0,
+      7.99,
+      7.58
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [
+      "w:\\\u0014݌",
+      "i:\\\u0000\u0014tjm\u0012i",
+      "S:\\\t\u0011p\b\bDP\bCߞ\u0018ߑ@((6vmy`;X`e\u0017(",
+      "M:\\Δ Ng\u0016I6\u0004at\u0002\u0004[e",
+      "e:\\l-&Ǭ",
+      "h:\\5]\u0018uE\u0013m\u0019\b\bʩ\\",
+      "Z:\\X#9\\۹q\u0013Z",
+      "E:\\j\f(\f\u0007[\u0006M\u000fjP,3"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [
+        "d9e7b275d7f79155c7fa7d7448f78d8731b44d47",
+        "b33e792597bd2b4dcd1aeaff3b077da830eb5f7e",
+        "ad47290479a49e45f31bb5fe6c876dc83280d516",
+        "5a58221f8b8b549a397fef5903927cb6032411a1",
+        "f353168cca2489eaf7b363278ba9729f7b35f1c4",
+        "438b682c0f799f8abc92c36c8aaee68b0a3dccff",
+        "99e3331302419c94dc094beb16048326c4685dda",
+        "df138179253a84dd90ac6459cb974355a40e7457",
+        "73b43a806ab08cf438ef1f0e7abea44dd013652b",
+        "ebb3aeaa2d1ea0561d5c21dcbae3f4c42881db4f"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_office",
+    "status": "termine",
+    "file_type": "ZIP/OOXML",
+    "entries_inspected": 51,
+    "macros_present": false,
+    "external_relationships": 0,
+    "truncated": false,
+    "findings": [
+      {
+        "indicator": "powershell_reference",
+        "description": "Indicateur powershell_reference trouvé dans word/document.xml"
+      }
+    ],
+    "note": "Analyse statique limitée. Les macros ou relations externes ne prouvent pas à elles seules qu'un document est malveillant."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.2013575553894043,
+      "entropie_globale": 0.99975,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0462,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false,
+    "conteneur": "office_ooxml"
+  },
+  "conteneur": "office_ooxml",
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 11,
+    "niveau": "faible",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Analyse specialisee : indicateur(s) a verifier -> powershell_reference."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Rapport_TP4_Forensique.docx",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 6.21,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 1.931,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 1.925,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 1.426,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_office",
+        "status": "detected",
+        "duration_s": 0.024,
+        "summary": "1 indicateur(s)",
+        "findings": [
+          {
+            "indicator": "powershell_reference",
+            "description": "Indicateur powershell_reference trouvé dans word/document.xml"
+          }
+        ],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "extraction_archive",
+        "lance": false,
+        "raison": "document/paquet (office_ooxml) : analysé comme un tout, jamais extrait en fichiers indépendants"
+      },
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'ZIP/OOXML' / extension '.docx' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

@@ -1,0 +1,1040 @@
+{
+  "id_rapport": "efb29c53",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 31.383,
+  "metadonnees": {
+    "nom": "Wondershare_Filmora_Installer.exe",
+    "extension": "exe",
+    "taille_octets": 2363880,
+    "taille_lisible": "2.3 Mo",
+    "mime_reel": "application/x-dosexec",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\Wondershare_Filmora_Installer.exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-06-24T04:18:37",
+    "date_modification": "2026-06-24T04:27:53",
+    "date_acces": "2026-10-29T20:22:51",
+    "zone_origine": "[ZoneTransfer]\nZoneId=3\nReferrerUrl=https://filmora.wondershare.net/fr/ai-image-enhancer.html?adgroup=videoenhancer&gad_source=1&gad_campaignid=15899567273&gbraid=0AAAAADqc_oZEQuwQl86OBN_leK8VS39LJ&gclid=CjwKCAjwgO7RBhBKEiwAZNP85h3FM0HTEayd-WxqAltr75vu4M9KsU5gNvufWM51dyZ7lz85Q1stthoC24EQAvD_BwE\nHostUrl=https://download.wondershare.net/inst/filmora_setup_full7552.exe\n"
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "c7679d614612726e71e586db65688d44ca195d0da220fac98fcdd3d3af1e3778",
+    "sha1": "83cd177e0a082a37fdfd66c2d599135791759f2c",
+    "md5": "7022ca491dbef59d6d0e36028df1b371",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": true,
+      "type": "EXE",
+      "architecture": "0x14c",
+      "nombre_imports": 519,
+      "imports_dangereux_detectes": [
+        "CryptEncrypt",
+        "GetProcAddress",
+        "IsDebuggerPresent",
+        "LoadLibraryA",
+        "VirtualAlloc"
+      ],
+      "sections": [
+        {
+          "nom": ".text",
+          "taille_brute": 1466368,
+          "entropie": 6.651,
+          "executable": true,
+          "ecriture": false
+        },
+        {
+          "nom": ".rdata",
+          "taille_brute": 376832,
+          "entropie": 5.448,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".data",
+          "taille_brute": 27648,
+          "entropie": 4.533,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".tls",
+          "taille_brute": 512,
+          "entropie": 0.0,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".rsrc",
+          "taille_brute": 387584,
+          "entropie": 7.319,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".reloc",
+          "taille_brute": 82432,
+          "entropie": 6.6,
+          "executable": false,
+          "ecriture": false
+        }
+      ],
+      "packer_suspecte": false,
+      "signature_presente": true,
+      "point_entree": "0x11fbef",
+      "timestamp_compilation": 1778654830
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 6.852,
+    "verdict_entropie": "elevee (compression ou binaire dense)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.29,
+      6.44,
+      6.38,
+      6.47,
+      6.56,
+      6.52,
+      6.54,
+      6.41,
+      6.29,
+      6.32,
+      6.56,
+      6.43,
+      6.52,
+      6.36,
+      6.48,
+      6.43,
+      6.61,
+      6.7,
+      6.62,
+      6.66,
+      6.74,
+      6.47,
+      6.02,
+      5.79,
+      6.2,
+      4.51,
+      5.06,
+      3.58,
+      6.18,
+      7.92,
+      7.88,
+      7.79,
+      7.6,
+      4.61,
+      6.45,
+      6.94,
+      7.67
+    ],
+    "base64": {
+      "nombre_blobs_base64": 1,
+      "exemple": "PAPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXP..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "1.101.3.4",
+      "2.5.29.19",
+      "2.5.29.18",
+      "2.5.4.72",
+      "2.5.4.65",
+      "2.5.4.46",
+      "2.5.4.45",
+      "2.5.4.44",
+      "2.5.4.43",
+      "2.5.4.42",
+      "2.5.4.41",
+      "2.5.4.17",
+      "2.5.4.13",
+      "2.5.4.12",
+      "2.5.4.11",
+      "2.5.4.10",
+      "2.5.4.9",
+      "2.5.4.8",
+      "2.5.4.7",
+      "2.5.4.6",
+      "2.5.4.5",
+      "2.5.4.4",
+      "1.3.14.3",
+      "2.5.4.3",
+      "2.5.29.17",
+      "4.0.5.0",
+      "223.5.5.5",
+      "223.6.6.6",
+      "1.0.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [
+      "pc-api.300624.com",
+      "analytics.300624.com",
+      "download.wondershare.net",
+      "filmora.wondershare.net",
+      "pop.wondershare.com"
+    ],
+    "urls": [
+      "https://curl.se/docs/alt-svc.html",
+      "https://curl.se/docs/http-cookies.html",
+      "https://pc-api.wondershare.cc\u0000\u0000\u0000code\u0000\u0000\u0000\u0000[WARN]",
+      "https://pc-api.300624.com\u0000\u0000\u0000https://pc-api.wondershare.cc\u0000\u0000\u0000Authorization:",
+      "https://pc-api.300624.com\u0000\u0000\u0000_\u0000\u0000\u0000_\u0000\u0000\u0000_\u0000\u0000\u0000",
+      "https://pc-api.wondershare.cc\u0000\u0000\u0000code\u0000\u0000\u0000\u0000https://pc-api.300624.com\u0000\u0000\u0000X-Client-Type:",
+      "https://analytics.wondershare.cc:8106/sa?project=\u0000\u0000\u0000https://analytics.300624.com:8106/sa?project=\u0000\u0000\u0000downloader_ver\u0000\u0000scene_code\u0000\u0000exe_name\u0000\u0000\u0000\u0000clipboard_param\u0000track_id\u0000\u0000\u0000\u0000downloader_lang\u0000downloader_url\u0000\u0000%I64u\u0000\u0000\u0000package_size\u0000\u0000\u0000\u00000\u0000\u0000\u00002\u0000\u0000\u0000auto_install\u0000\u0000\u0000\u0000downloader_startup\u0000\u0000[INFO]",
+      "https://223.5.5.5\u0000\u0000\u0000Mzc4Miop0xjZfMjQzNzgwOTYzOTcyMTg4MTY=\u0000\u0000\u0000&uid=\u0000\u0000\u0000/resolve?type=1&short=1\u0000&name=\u0000\u0000&ak=\u0000\u0000\u0000\u0000&key=\u0000\u0000\u0000&ts=\u0000\u0000\u0000\u0000https://223.6.6.6\u0000\u0000\u0000,\u0000\u0000\u0000",
+      "http://\u0000[ERROR]",
+      "https://wae.wondershare.cc/filmora_design_v15_fr.html",
+      "http://platform.wondershare.cc",
+      "https://download.wondershare.net/cbs_down/filmora_full7552.exe]]",
+      "https://download.wondershare.net/cbs_down/filmora_64bit_full7552.exe]]",
+      "https://download.wondershare.net/filmora_full7552.exe]]",
+      "https://filmora.wondershare.net/fr/thankyou/install-filmora-video-editor.html]]",
+      "http://pop.wondershare.com/license.html]]",
+      "https://www.wondershare.fr/entreprise/contrat-licence-utilisateur-final.html]]",
+      "https://www.wondershare.fr/confidentialite.html]]",
+      "http://ocsp.digicert.com0A\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\u0006\u0003U\u001d\u001f\u0004",
+      "http://ocsp.digicert.com0\\\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0",
+      "http://ocsp.digicert.com0]\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Qhttp://cacerts.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crt0_\u0006\u0003U\u001d\u001f\u0004X0V0TRPNhttp://crl3.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl0",
+      "http://ocsp.digicert.com0C\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\u0006\u0003U\u001d\u001f\u0004"
+    ],
+    "emails": [],
+    "exclus_domaines_legitimes": {
+      "ips": 1,
+      "domaines": 7,
+      "urls": 5
+    },
+    "chemins_windows": [
+      "Y:\\$\u0018tP\u000fV\u0004t\u0007\u0002\u0000\u0000\u0000#V\u0004t\u0007\u0003\u0000\u0000\u0000\u000fV\u0004\u001b;D$\u0010u\bD$\u001c\u0004\u0006\u0001",
+      "G:\\devops_yanfa\\workspace\\p-4663c901377d457795e7a5c44ce670aa\\src\\bin\\WAE_FRA.pdb\u0000\u0000\u0000\u0000n\u0000\u0000\u0000+\u0002\u0000\u0000+\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u000b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000`nZ\u0000lnZ\u0000Z\u0000\u0000\u0000\u0000\u0000_\\\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000PnZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000_\\\u0000nZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000nZ\u0000nZ\u0000lnZ\u0000Z\u0000\u0000\u0000\u0000\u0000_\\\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000nZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000`\\\u0000nZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000nZ\u0000\u0004oZ\u0000\u0000\u0000\u0000\u0000\u0000`\\\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000nZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000(`\\\u00004oZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000DoZ\u0000XoZ\u0000toZ\u0000oZ\u0000Z\u0000\u0000\u0000\u0000\u0000(`\\\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u00004oZ\u0000P`\\\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000oZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000oZ\u0000toZ\u0000oZ\u0000Z\u0000\u0000\u0000\u0000\u0000t`\\\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000oZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000oZ\u0000oZ\u0000Z\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000T\\\u0000Z\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\\\u0000\u0010pZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000 pZ\u0000,pZ\u0000tZ\u0000\u0000\u0000\u0000\u0000\\\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000\u0010pZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000`\\\u0000\\pZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000lpZ\u0000xpZ\u0000pZ\u0000\u0000\u0000\u0000\u0000`\\\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000\\pZ\u0000`\\\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000pZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000pZ\u0000pZ\u0000\u0000\u0000\u0000\u0000`\\\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000pZ\u0000`\\\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000\u0000qZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0010qZ\u0000pZ\u0000pZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000`\\\u0000\u0000qZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000`\\\u0000DqZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000TqZ\u0000dqZ\u0000xpZ\u0000pZ\u0000\u0000\u0000\u0000\u0000`\\\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000DqZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Ј\\\u0000Z\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\\\u0000qZ\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0005\u0000\u0000\u0000qZ\u0000qZ\u0000qZ\u0000tZ\u0000(rZ\u0000xrZ\u0000\u0000\u0000\u0000\u0000\\\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000qZ\u0000\u0010a\\\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000\brZ\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0018rZ\u0000qZ\u0000tZ\u0000(rZ\u0000\u0000\u0000\u0000\u00004a\\\u0000\u0000\u0000\u0000\u0000P\u0005\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000DrZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000TrZ\u0000\\rZ\u0000\u0000\u0000\u0000\u00004a\\\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000DrZ\u0000\\\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000xZ\u0000\u0000\u0000\u0000\u0000P\u0005\u0000\u0000\u0000\u0000\u0000\u0000\\\u0000qZ\u0000\u0000\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\\\u0000qZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Xa\\\u0000rZ\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000rZ\u0000rZ\u0000\fsZ\u0000Z\u0000\u0000\u0000\u0000\u0000Xa\\\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0000rZ\u0000",
+      "E:\\MobileGo\\Trunk\\PC\\Setup\\Framework_Lite\\DotNetChecker\\obj\\x86\\Release\\NFWCHK.pdb\u0000\u0000\u00180\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000.0\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 0\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000_CorExeMain\u0000mscoree.dll\u0000\u0000\u0000\u0000\u0000%\u0000 @\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0010\u0000\u0000\u0000 \u0000\u0000\u0018\u0000\u0000\u00008\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0000P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0000h\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000@\u0000\u0000\u0010\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000C\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u00034\u0000\u0000\u0000V\u0000S\u0000_\u0000V\u0000E\u0000R\u0000S\u0000I\u0000O\u0000N\u0000_\u0000I\u0000N\u0000F\u0000O\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000",
+      "C:\\Program Files\\]]",
+      "X:\\",
+      "R:\\",
+      "T:\\",
+      "P:\\"
+    ],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [
+        "4663c901377d457795e7a5c44ce670aa",
+        "A6E392DE666411E4A82FE5A80EFB1014",
+        "A6E392DD666411E4A82FE5A80EFB1014"
+      ],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 56
+      }
+    ],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 82
+  },
+  "signature_numerique": {
+    "applicable": true,
+    "signature_presente": true,
+    "verifiee": null,
+    "editeur": null,
+    "commentaire": "Table de certificats presente. Verification cryptographique complete non effectuee (osslsigncode non installe sur cette machine)."
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pe",
+    "status": "termine",
+    "file_type": "PE/EXE",
+    "pe_offset": 296,
+    "pe_signature_valid": true,
+    "findings": [],
+    "note": "Contrôle structurel minimal. Utiliser un parseur PE dédié pour une analyse plus approfondie."
+  },
+  "threat_intelligence": {
+    "ips": {
+      "1.101.3.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "KR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.29.19": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.29.18": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.72": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.65": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.46": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.45": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.44": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.43": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.42": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.41": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.17": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.13": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.12": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.11": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.10": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.9": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.8": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.7": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.6": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "1.3.14.3": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "CN",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.3": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.29.17": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "pc-api.300624.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "analytics.300624.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "download.wondershare.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "filmora.wondershare.net": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "pop.wondershare.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      }
+    },
+    "urls": {
+      "https://curl.se/docs/alt-svc.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 7,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://curl.se/docs/http-cookies.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 7,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://pc-api.wondershare.cc\u0000\u0000\u0000code\u0000\u0000\u0000\u0000[WARN]": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fpc-api.wondershare.cc%00%00%00code%00%00%00%00%5BWARN%5D/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://pc-api.300624.com\u0000\u0000\u0000https://pc-api.wondershare.cc\u0000\u0000\u0000Authorization:": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fpc-api.300624.com%00%00%00https%3A%2F%2Fpc-api.wondershare.cc%00%00%00Authorization%3A/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://pc-api.300624.com\u0000\u0000\u0000_\u0000\u0000\u0000_\u0000\u0000\u0000_\u0000\u0000\u0000": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fpc-api.300624.com%00%00%00_%00%00%00_%00%00%00_%00%00%00/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://pc-api.wondershare.cc\u0000\u0000\u0000code\u0000\u0000\u0000\u0000https://pc-api.300624.com\u0000\u0000\u0000X-Client-Type:": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fpc-api.wondershare.cc%00%00%00code%00%00%00%00https%3A%2F%2Fpc-api.300624.com%00%00%00X-Client-Type%3A/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://analytics.wondershare.cc:8106/sa?project=\u0000\u0000\u0000https://analytics.300624.com:8106/sa?project=\u0000\u0000\u0000downloader_ver\u0000\u0000scene_code\u0000\u0000exe_name\u0000\u0000\u0000\u0000clipboard_param\u0000track_id\u0000\u0000\u0000\u0000downloader_lang\u0000downloader_url\u0000\u0000%I64u\u0000\u0000\u0000package_size\u0000\u0000\u0000\u00000\u0000\u0000\u00002\u0000\u0000\u0000auto_install\u0000\u0000\u0000\u0000downloader_startup\u0000\u0000[INFO]": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fanalytics.wondershare.cc%3A8106%2Fsa%3Fproject%3D%00%00%00https%3A%2F%2Fanalytics.300624.com%3A8106%2Fsa%3Fproject%3D%00%00%00downloader_ver%00%00scene_code%00%00exe_name%00%00%00%00clipboard_param%00track_id%00%00%00%00downloader_lang%00downloader_url%00%00%25I64u%00%00%00package_size%00%00%00%000%00%00%002%00%00%00auto_install%00%00%00%00downloader_startup%00%00%5BINFO%5D/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://223.5.5.5\u0000\u0000\u0000Mzc4Miop0xjZfMjQzNzgwOTYzOTcyMTg4MTY=\u0000\u0000\u0000&uid=\u0000\u0000\u0000/resolve?type=1&short=1\u0000&name=\u0000\u0000&ak=\u0000\u0000\u0000\u0000&key=\u0000\u0000\u0000&ts=\u0000\u0000\u0000\u0000https://223.6.6.6\u0000\u0000\u0000,\u0000\u0000\u0000": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2F223.5.5.5%00%00%00Mzc4Miop0xjZfMjQzNzgwOTYzOTcyMTg4MTY%3D%00%00%00%26uid%3D%00%00%00%2Fresolve%3Ftype%3D1%26short%3D1%00%26name%3D%00%00%26ak%3D%00%00%00%00%26key%3D%00%00%00%26ts%3D%00%00%00%00https%3A%2F%2F223.6.6.6%00%00%00%2C%00%00%00/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://\u0000[ERROR]": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2F%00%5BERROR%5D/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://wae.wondershare.cc/filmora_design_v15_fr.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://platform.wondershare.cc": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://download.wondershare.net/cbs_down/filmora_full7552.exe]]": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://download.wondershare.net/cbs_down/filmora_64bit_full7552.exe]]": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://download.wondershare.net/filmora_full7552.exe]]": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://filmora.wondershare.net/fr/thankyou/install-filmora-video-editor.html]]": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://pop.wondershare.com/license.html]]": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://www.wondershare.fr/entreprise/contrat-licence-utilisateur-final.html]]": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://www.wondershare.fr/confidentialite.html]]": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://ocsp.digicert.com0A\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00025http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C\u0006\u0003U\u001d\u001f\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0A%06%08%2B%06%01%05%05%070%025http%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedRootG4.crt0C%06%03U%1D%1F%04/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://ocsp.digicert.com0\\\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0%5C%06%08%2B%06%01%05%05%070%02Phttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://ocsp.digicert.com0]\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0002Qhttp://cacerts.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crt0_\u0006\u0003U\u001d\u001f\u0004X0V0TRPNhttp://crl3.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl0": {
+        "otx": {
+          "disponible": false,
+          "raison": "500 Server Error: Internal Server Error for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0%5D%06%08%2B%06%01%05%05%070%02Qhttp%3A%2F%2Fcacerts.digicert.com%2FDigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crt0_%06%03U%1D%1F%04X0V0TRPNhttp%3A%2F%2Fcrl3.digicert.com%2FDigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl0/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://ocsp.digicert.com0C\u0006\b+\u0006\u0001\u0005\u0005\u00070\u00027http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E\u0006\u0003U\u001d\u001f\u0004": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Focsp.digicert.com0C%06%08%2B%06%01%05%05%070%027http%3A%2F%2Fcacerts.digicert.com%2FDigiCertAssuredIDRootCA.crt0E%06%03U%1D%1F%04/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "https://curl.se/docs/alt-svc.html",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "https://curl.se/docs/http-cookies.html",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.22543716430664062,
+      "entropie_globale": 0.8565,
+      "nb_imports_dangereux": 5,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 1,
+      "nb_urls": 22,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.4577,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 50,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: aucun, URLs: ['https://curl.se/docs/alt-svc.html', 'https://curl.se/docs/http-cookies.html'], hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\Wondershare_Filmora_Installer.exe",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 3.851,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 3.65,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 3.768,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 2.797,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pe",
+        "status": "ok",
+        "duration_s": 0.001,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PE/EXE' / extension '.exe' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

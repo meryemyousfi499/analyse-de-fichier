@@ -208,3 +208,11 @@ def top():
     restant = _rows(f"SELECT COUNT(*) AS n {_TODO}")[0]["n"]
     return jsonify({"clamav": q("clamav"), "yara": q("yara"), "ioc": q("ioc"),
                     "extensions": ext, "indexation_restante": restant})
+
+
+@bp.route("/api/yara-check")
+def yara_check():
+    """Les règles YARA se compilent-elles réellement ? (le module installé ne suffit pas)"""
+    from . import yara_scan
+    ok, err = yara_scan.compile_status()
+    return jsonify({"ok": ok, "erreur": err, "version_regles": yara_scan.rules_version() if ok else None})

@@ -39,6 +39,7 @@
   async function loadItems(scope) {
     const box = $("items-" + scope);
     const kind = (scope === "alertes" || scope === "recent") ? "alertes" : state.sel[scope];
+    if (scope === "home") $("view-machines").classList.toggle("list-open", !!kind);   // liste ouverte = page seule
     if (!kind) { box.hidden = true; return; }
     const host = scope === "machine" ? state.host : "";
     const days = scope === "alertes" ? 0 : state.days;
@@ -70,7 +71,7 @@
     }
     box.hidden = false;
     box.innerHTML = `<div class="items-head"><h3>${esc(title)} <span>${d.rows.length}</span></h3>
-      ${scope === "home" ? '<button class="mini-btn" data-close>✕ fermer</button>' : ""}</div>
+      ${scope === "home" ? '<button class="mini-btn" data-close>← Retour à la vue d\'ensemble</button>' : ""}</div>
       <table class="history-table"><thead>${head}</thead><tbody>${rows.join("") ||
       `<tr><td colspan="6">Rien à afficher ici.</td></tr>`}</tbody></table>`;
     box.querySelectorAll("tr[data-report]").forEach((tr) => tr.addEventListener("click", () => viewReportById(tr.dataset.report)));
@@ -79,10 +80,6 @@
 
   // ---------- Accueil ----------
   function charts(d) {
-    const cv = d.totaux.couverture;
-    $("chart-coverage").innerHTML = cv === null ? `<p class="empty-note">Aucune analyse sur la période.</p>`
-      : `<p class="big">${cv} %</p><div class="stack"><span style="width:${cv}%;background:#3C6E52"></span></div>
-         <p class="empty-note" style="margin-top:12px">Part des analyses où tous les contrôles requis (ClamAV, YARA, analyse statique) ont tourné. Le reste est « non concluant » : ouvrez « Analyses incomplètes ».</p>`;
     const order = [["malicious", "Malveillant"], ["suspect", "Suspect"], ["inconclusive", "Non concluant"], ["clean", "Sain"]];
     const total = Object.values(d.verdicts).reduce((a, b) => a + b, 0) || 1;
     $("chart-verdicts").innerHTML =
@@ -111,36 +108,6 @@
       tr.addEventListener("click", () => openMachine(tr.dataset.host)));
     state.machines = d.machines;
     loadItems("home");
-    loadItems("recent");
-    loadTop();
-  }
-
-  // ---------- Détections les plus fréquentes ----------
-  async function loadTop(force) {
-    if (!force && Date.now() - state.topAt < 30000) return;
-    state.topAt = Date.now();
-    let t;
-    try { t = await getJSON(`/api/top?days=${state.days}`); } catch (e) { return; }
-    const wait = t.indexation_restante
-      ? `<p class="empty-note">Indexation en cours : ${t.indexation_restante} rapport(s) restant(s) à résumer.</p>` : "";
-    const list = (id, rows, dk, empty) => {
-      $(id).innerHTML = (rows.length
-        ? `<table class="history-table"><tbody>${rows.map((r) => `<tr class="history-row" data-dk="${dk}" data-name="${esc(r.name)}">
-            <td style="word-break:break-all">${esc(r.name)}</td><td style="text-align:right">${r.n}</td></tr>`).join("")}</tbody></table>`
-        : `<p class="empty-note">${empty}</p>`) + wait;
-      $(id).querySelectorAll("tr[data-dk]").forEach((tr) => tr.addEventListener("click", () => {
-        state.det = { k: tr.dataset.dk, n: tr.dataset.name };
-        state.sel.home = "detection";
-        loadItems("home").then(() => $("items-home").scrollIntoView({ behavior: "smooth", block: "nearest" }));
-      }));
-    };
-    list("top-clamav", t.clamav, "clamav", "Aucune signature ClamAV détectée sur la période.");
-    list("top-yara", t.yara, "yara", "Aucune règle YARA déclenchée sur la période.");
-    list("top-ioc", t.ioc, "ioc", "Aucun indicateur signalé par les sources de réputation.");
-    const max = Math.max(1, ...t.extensions.map((x) => x.n));
-    $("top-ext").innerHTML = t.extensions.length ? `<div class="feature-bars">${t.extensions.map((x) => `<div class="feature-row">
-      <span class="label">${esc(x.name)}</span><span class="track"><span class="fill" style="width:${(x.n / max) * 100}%"></span></span>
-      <span class="value">${x.n}</span></div>`).join("")}</div>` : `<p class="empty-note">Aucun fichier sur la période.</p>`;
   }
 
   // ---------- Page d'une machine ----------
@@ -162,10 +129,12 @@
   // ---------- État des moteurs ----------
   async function loadEngines() {
     const s = await getJSON("/api/status");
+    let y = { ok: !!s.yara, erreur: null };
+    try { y = await getJSON("/api/yara-check"); setDot("yara", y.ok); } catch (e) { /* ancien serveur */ }
     const ti = s.threat_intelligence || {}, ar = s.archives_protegees || {};
     const sb = s.sandbox || {}, w = s.surveillance_automatique || {};
     const rows = [
-      ["YARA", s.yara, "Règles de détection (module yara-python et fichier rules/generic_rules.yar)."],
+      ["YARA", y.ok, y.ok ? `Règles compilées (version ${y.version_regles}).` : "Règles non chargées : " + (y.erreur || "module yara-python absent") + " (fichier rules/generic_rules.yar)."],
       ["ClamAV", s.clamav, "Antivirus : module clamd installé ; le service clamd doit aussi tourner (Docker, port 3310)."],
       ["AbuseIPDB", ti.abuseipdb, "Réputation des adresses IP (ABUSEIPDB_API_KEY)."],
       ["AlienVault OTX", ti.otx, "Réputation des domaines, URLs et hashs (OTX_API_KEY)."],
@@ -199,8 +168,11 @@
     return _view(id);
   };
 
+  const syncYaraDot = () => getJSON("/api/yara-check").then((y) => setDot("yara", y.ok)).catch(() => {});
+  syncYaraDot();
   loadHome();
   setInterval(() => {   // l'agent est automatique : l'écran se met à jour tout seul
+    syncYaraDot();
     const cur = (document.querySelector(".view.is-active") || {}).id;
     if (cur === "view-machines") loadHome();
     else if (cur === "view-machine") refreshMachine();

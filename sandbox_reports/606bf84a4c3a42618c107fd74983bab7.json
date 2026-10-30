@@ -1,0 +1,20 @@
+{
+  "id": "606bf84a4c3a42618c107fd74983bab7",
+  "report_id": "4aa09feb",
+  "report_parent_id": null,
+  "nom_original": "generic_rules.yar",
+  "score_statique": 51,
+  "niveau_statique": "moyen",
+  "statut": "echec",
+  "created_at": "2026-10-30T09:13:21+00:00",
+  "updated_at": "2026-10-30T09:13:22+00:00",
+  "chemin_sandbox": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\sandbox\\606bf84a4c3a42618c107fd74983bab7_generic_rules.yar",
+  "ha_job_id": null,
+  "verdict": null,
+  "score_menace_sandbox": null,
+  "menaces_detectees": [],
+  "comportements_informatifs": [],
+  "mitre_attck": [],
+  "url_rapport_public": null,
+  "erreur": "RuntimeError : Erreur HTTP 400 | URL : https://hybrid-analysis.com/api/v2/submit/file | Réponse : {\"validation_errors\": [{\"field\": \"allow_community_access\", \"errors\": [\"This value should be true.\"]}], \"message\": \"Input data validation has failed. Please check 'validation_errors' field to get more data.\"}"
+}

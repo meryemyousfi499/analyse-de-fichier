@@ -1,0 +1,319 @@
+{
+  "id_rapport": "436c3f93",
+  "id_parent": "138280ac",
+  "profondeur": 1,
+  "origine": "extrait_archive",
+  "duree_analyse_s": 31.849,
+  "metadonnees": {
+    "nom": "5_facture_2026_test.pdf",
+    "extension": "pdf",
+    "taille_octets": 512,
+    "taille_lisible": "512.0 o",
+    "mime_reel": "application/x-dosexec",
+    "chemin": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_yd2i25we\\kit_test_cabinet_noir\\5_facture_2026_test.pdf",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-10-30T11:10:57",
+    "date_modification": "2026-10-30T11:10:57",
+    "date_acces": "2026-10-30T11:10:57",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".pdf",
+    "coherent": false,
+    "alerte": true,
+    "commentaire": "ALERTE : le fichier déclaré '.pdf' est en réalité de type 'pe_executable'. Usurpation d'extension probable."
+  },
+  "empreintes": {
+    "sha256": "ce546559c9cec612ad01e561585706ac19995eabf558cfe91f00bc013f9c921a",
+    "sha1": "447d1d295fe23669c5aa075c4db60436c2e6fba0",
+    "md5": "dc302f437873e3fb55ed6e650a853559",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": true,
+      "type": "EXE",
+      "architecture": "0x0",
+      "nombre_imports": 0,
+      "imports_dangereux_detectes": [],
+      "sections": [],
+      "packer_suspecte": false,
+      "signature_presente": false,
+      "point_entree": "0x0",
+      "timestamp_compilation": 0
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 1.441,
+    "verdict_entropie": "faible (texte / code non compresse)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      1.44
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 0
+  },
+  "signature_numerique": {
+    "applicable": true,
+    "signature_presente": false,
+    "verifiee": null,
+    "editeur": null,
+    "commentaire": "Aucune signature Authenticode detectee. Cela n'implique pas automatiquement un fichier malveillant, mais augmente legerement le niveau de vigilance."
+  },
+  "yara": {
+    "disponible": true,
+    "matches": [
+      {
+        "regle": "PE_Disguised_As_Document",
+        "severite": "eleve",
+        "description": "Executable Windows (PE) portant l'extension d'un document ou d'une image"
+      }
+    ],
+    "version_regles": "4ac64b3b5cfc"
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pdf",
+    "status": "termine",
+    "file_type": "PDF",
+    "findings": [],
+    "note": "Les marqueurs PDF peuvent être légitimes. Une analyse structurelle approfondie nécessite un parseur spécialisé."
+  },
+  "threat_intelligence": {
+    "ips": {},
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": false,
+    "indicateurs_signales": [],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": false,
+        "raison": "HTTPSConnectionPool(host='otx.alienvault.com', port=443): Read timed out. (read timeout=8)"
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 4.8828125e-05,
+      "entropie_globale": 0.180125,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 1,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 1,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.1782,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 40,
+    "niveau": "moyen",
+    "action_recommandee": "monitor",
+    "explications": [
+      "Regle(s) YARA PE_Disguised_As_Document : meme signal que l'analyse structurelle, points comptes une seule fois.",
+      "Fichier deguise : extension '.pdf' mais contenu reel de type 'pe_executable'.",
+      "Aucune signature numerique Authenticode presente.",
+      "Mis en file sandbox malgre un niveau de risque global 'moyen' : une règle YARA critique/élevée a été déclenchée."
+    ]
+  },
+  "verdict": {
+    "verdict": "suspect",
+    "libelle": "Suspect",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 1.0,
+      "manquants": []
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Règle YARA de sévérité élevée/critique déclenchée"
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "monitor",
+    "libelle": "Surveiller",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\AppData\\Local\\Temp\\cabinet_noir_extract_yd2i25we\\kit_test_cabinet_noir\\5_facture_2026_test.pdf",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 22.494,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "detected",
+        "duration_s": 0.002,
+        "summary": "1 règle(s) déclenchée(s)",
+        "findings": [
+          {
+            "regle": "PE_Disguised_As_Document",
+            "severite": "eleve",
+            "description": "Executable Windows (PE) portant l'extension d'un document ou d'une image"
+          }
+        ],
+        "error": null
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.001,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.616,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.087,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pdf",
+        "status": "ok",
+        "duration_s": 0.002,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "pending",
+        "duration_s": 0.0,
+        "summary": "mis en file pour soumission automatique",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PE/EXE' / extension '.pdf' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": true,
+        "raison": "une règle YARA critique/élevée a été déclenchée"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "a_soumettre",
+      "alerts": [
+        "extension_mismatch",
+        "yara_detection"
+      ],
+      "reasons": [
+        "L'extension ne correspond pas à la signature détectée.",
+        "Une ou plusieurs règles YARA correspondent au fichier.",
+        "Des éléments justifient une analyse sandbox complémentaire."
+      ],
+      "clamav_detected": false,
+      "yara_detected": true
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "4ac64b3b5cfc",
+  "sandbox": {
+    "recommande": true,
+    "justifiee": true,
+    "eligible": true,
+    "declencheurs": [
+      "une règle YARA critique/élevée a été déclenchée"
+    ],
+    "bloquants": [],
+    "soumission_automatique_autorisee": true,
+    "id_soumission": "94a74b908f33479fac12398f331bc8f5",
+    "erreur": null
+  }
+}

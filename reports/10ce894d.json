@@ -1,0 +1,674 @@
+{
+  "id_rapport": "10ce894d",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 11.728,
+  "metadonnees": {
+    "nom": "alertes_export.csv",
+    "extension": "csv",
+    "taille_octets": 12765,
+    "taille_lisible": "12.5 Ko",
+    "mime_reel": "text/plain",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\alertes_export.csv",
+    "proprietaire": "0",
+    "permissions": "-rw-rw-rw-",
+    "date_creation": "2026-07-30T00:38:25",
+    "date_modification": "2026-07-30T00:38:25",
+    "date_acces": "2026-10-30T03:32:41",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "inconnu",
+    "extension_declaree": ".csv",
+    "coherent": null,
+    "alerte": false,
+    "commentaire": "Signature binaire non reconnue par les règles internes."
+  },
+  "empreintes": {
+    "sha256": "cddc9b260cfb69ccb2b15ba86490604819d9c4b53be9ce6a3e67d82fae2bacda",
+    "sha1": "abdad85bdb0623e92e885511964fcfe47970ba52",
+    "md5": "485210689d52c6087ed7d6d66cd9118b",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "inconnu",
+    "note": "Aucun module d'analyse de structure dedie a ce type de fichier (formats couverts en detail : executables PE/ELF, documents Office, PDF, images PNG/JPEG/GIF). Le fichier est neanmoins verifie par toutes les autres etapes du pipeline, qui s'appliquent a TOUT type de fichier sans exception : hash SHA-256 (comparaison a des bases de malwares connus), entropie/obfuscation, extraction d'IOC generiques (URLs, IP, domaines, commandes), regles YARA, antivirus ClamAV et Threat Intelligence externe."
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 4.619,
+    "verdict_entropie": "moyenne (binaire natif classique)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      4.62
+    ],
+    "base64": {
+      "nombre_blobs_base64": 0,
+      "exemple": null
+    },
+    "xor": {
+      "xor_simple_suspecte": false,
+      "cle_probable": null
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "104.28.195.193",
+      "104.28.219.194",
+      "104.28.227.193",
+      "104.28.237.81",
+      "104.28.251.192",
+      "124.156.204.51",
+      "14.103.10.167",
+      "142.248.80.30",
+      "172.213.17.107",
+      "172.213.225.181",
+      "185.247.137.103",
+      "103.20.193.117",
+      "173.255.225.25",
+      "185.247.137.131",
+      "185.247.137.102",
+      "185.247.137.239",
+      "185.247.137.231",
+      "185.247.137.226",
+      "185.247.137.201",
+      "185.247.137.2",
+      "185.247.137.181",
+      "185.247.137.48",
+      "185.247.137.59",
+      "185.247.137.77",
+      "185.247.137.90",
+      "185.247.137.97",
+      "195.96.139.102",
+      "185.247.137.242",
+      "185.247.137.243",
+      "195.96.139.116",
+      "185.242.3.5",
+      "195.96.139.229",
+      "195.96.139.176",
+      "195.96.139.161",
+      "195.96.139.127",
+      "195.96.139.126",
+      "195.96.139.121",
+      "20.220.227.237",
+      "20.48.234.177",
+      "23.137.105.241",
+      "23.180.120.145",
+      "23.180.120.147",
+      "23.180.120.146",
+      "4.184.60.71",
+      "185.247.137.186",
+      "195.96.139.43",
+      "195.96.139.5",
+      "195.96.139.65",
+      "195.96.139.86",
+      "195.96.139.90"
+    ],
+    "domaines": [],
+    "urls": [],
+    "emails": [],
+    "exclus_domaines_legitimes": {},
+    "chemins_windows": [],
+    "chemins_unix": [],
+    "cles_registre": [],
+    "processus_mentionnes": [],
+    "hashs_embarques": {
+      "md5": [],
+      "sha1": [],
+      "sha256": []
+    },
+    "chaines_suspectes": [],
+    "contenu_tronque_pour_analyse": false,
+    "score_indicateurs": 50
+  },
+  "signature_numerique": {
+    "applicable": false
+  },
+  "yara": {
+    "disponible": false,
+    "raison": "echec de compilation des regles YARA",
+    "matches": []
+  },
+  "antivirus": {
+    "disponible": true,
+    "infecte": false,
+    "signature": null,
+    "statut_brut": "OK"
+  },
+  "analyse_specialisee": null,
+  "threat_intelligence": {
+    "ips": {
+      "104.28.195.193": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 30,
+          "signale": false
+        }
+      },
+      "104.28.219.194": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 34,
+          "pays": "US",
+          "nombre_signalements": 69,
+          "signale": true
+        }
+      },
+      "104.28.227.193": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 3,
+          "pays": "US",
+          "nombre_signalements": 34,
+          "signale": false
+        }
+      },
+      "104.28.237.81": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 3,
+          "pays": "US",
+          "nombre_signalements": 56,
+          "signale": false
+        }
+      },
+      "104.28.251.192": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 26,
+          "pays": "US",
+          "nombre_signalements": 79,
+          "signale": true
+        }
+      },
+      "124.156.204.51": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "SG",
+          "nombre_signalements": 901,
+          "signale": true
+        }
+      },
+      "14.103.10.167": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 23,
+          "pays": "CN",
+          "nombre_signalements": 467,
+          "signale": false
+        }
+      },
+      "142.248.80.30": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "US",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "172.213.17.107": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 26,
+          "pays": "IT",
+          "nombre_signalements": 456,
+          "signale": true
+        }
+      },
+      "172.213.225.181": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 23,
+          "pays": "IT",
+          "nombre_signalements": 233,
+          "signale": false
+        }
+      },
+      "185.247.137.103": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 296,
+          "signale": true
+        }
+      },
+      "103.20.193.117": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "HK",
+          "nombre_signalements": 14,
+          "signale": false
+        }
+      },
+      "173.255.225.25": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "US",
+          "nombre_signalements": 986,
+          "signale": true
+        }
+      },
+      "185.247.137.131": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 281,
+          "signale": true
+        }
+      },
+      "185.247.137.102": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 303,
+          "signale": true
+        }
+      },
+      "185.247.137.239": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 314,
+          "signale": true
+        }
+      },
+      "185.247.137.231": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 298,
+          "signale": true
+        }
+      },
+      "185.247.137.226": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 354,
+          "signale": true
+        }
+      },
+      "185.247.137.201": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 312,
+          "signale": true
+        }
+      },
+      "185.247.137.2": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 324,
+          "signale": true
+        }
+      },
+      "185.247.137.181": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 285,
+          "signale": true
+        }
+      },
+      "185.247.137.48": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 286,
+          "signale": true
+        }
+      },
+      "185.247.137.59": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 277,
+          "signale": true
+        }
+      },
+      "185.247.137.77": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 299,
+          "signale": true
+        }
+      },
+      "185.247.137.90": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 100,
+          "pays": "GB",
+          "nombre_signalements": 301,
+          "signale": true
+        }
+      }
+    },
+    "domaines": {},
+    "urls": {},
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "104.28.219.194",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "104.28.251.192",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "124.156.204.51",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "172.213.17.107",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.103",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "173.255.225.25",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.131",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.102",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.239",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.231",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.226",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.201",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.2",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.181",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.48",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.59",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.77",
+        "type": "ips",
+        "source": "abuseipdb"
+      },
+      {
+        "indicateur": "185.247.137.90",
+        "type": "ips",
+        "source": "abuseipdb"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 0.0012173652648925781,
+      "entropie_globale": 0.577375,
+      "nb_imports_dangereux": 0,
+      "packer_suspecte": 0,
+      "signature_absente": 0,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 0,
+      "nb_urls": 0,
+      "base64_massif": 0,
+      "xor_suspecte": 0
+    },
+    "probabilite_risque": 0.0254,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 40,
+    "niveau": "moyen",
+    "action_recommandee": "human_review",
+    "explications": [
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: ['104.28.219.194', '104.28.251.192', '124.156.204.51', '172.213.17.107', '185.247.137.103', '173.255.225.25', '185.247.137.131', '185.247.137.102', '185.247.137.239', '185.247.137.231', '185.247.137.226', '185.247.137.201', '185.247.137.2', '185.247.137.181', '185.247.137.48', '185.247.137.59', '185.247.137.77', '185.247.137.90'], domaines: aucun, URLs: aucune, hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "inconclusive",
+    "libelle": "Non concluant (analyse incomplète)",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique"
+      ],
+      "couverts": [
+        "clamav",
+        "analyse_statique"
+      ],
+      "ratio": 0.67,
+      "manquants": [
+        {
+          "outil": "yara",
+          "statut": "error",
+          "raison": "echec de compilation des regles YARA"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Analyse incomplète : yara (error) — l'absence de détection ne prouve pas que le fichier est sain."
+    ]
+  },
+  "action": {
+    "succes": true,
+    "action": "human_review",
+    "libelle": "Revue humaine requise",
+    "fichier_conserve_a": "C:\\Users\\HYPER\\Downloads\\alertes_export.csv",
+    "note": "Aucun deplacement effectue pour cette action."
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "ok",
+        "duration_s": 0.07,
+        "summary": "Aucune signature détectée",
+        "findings": [],
+        "error": null
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "error",
+        "duration_s": 0.0,
+        "summary": "echec de compilation des regles YARA",
+        "findings": [],
+        "error": "echec de compilation des regles YARA"
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 0.0,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 0.316,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 0.027,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "analyse_specialisee",
+        "status": "not_applicable",
+        "duration_s": 0.0,
+        "summary": "aucun analyseur dédié pour ce type",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "aucun signal ne justifie un test comportemental",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": false,
+        "raison": "aucun analyseur dédié pour ce type"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "aucun signal ne justifie un test comportemental"
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": false,
+      "sandbox_status": "a_evaluer",
+      "alerts": [],
+      "reasons": [
+        "Le type réel du fichier n'a pas été identifié.",
+        "Décider de la soumission à partir des résultats statiques et de la politique locale."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": []
+  },
+  "version_regles": "3b0a7f5bd100",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": true,
+    "declencheurs": [],
+    "bloquants": [],
+    "soumission_automatique_autorisee": false,
+    "id_soumission": null,
+    "erreur": null
+  }
+}

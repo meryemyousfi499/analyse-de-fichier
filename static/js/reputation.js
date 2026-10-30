@@ -1,93 +1,143 @@
-// Réputation automatique des indicateurs (IP, domaines, URLs, hash) extraits du fichier.
-// Les données viennent de r.threat_intelligence, déjà calculé par l'agent à chaque analyse.
+// Réputation intégrée aux Indicateurs de compromission : chaque IP / domaine / URL
+// affiche son score, son niveau et le résultat de chaque source, de façon visuelle.
+// Quand une source a détecté quelque chose, sa pastille ouvre la fiche de l'indicateur.
 (function () {
-  const LEVELS = [[75, "critique"], [50, "eleve"], [25, "moyen"], [0, "faible"]];
-  const level = (s) => LEVELS.find(([min]) => s >= min)[1];
-  let _ti = null;
+  let _ti = null, _sha = "";
+  const FLAG = 25;  // à partir de ce score, l'indicateur est « signalé »
+  const NAMES = { abuseipdb: "AbuseIPDB", otx: "OTX", urlhaus: "URLhaus", malwarebazaar: "MalwareBazaar" };
+  const band = (s) => s === null ? ["Non vérifié", "#7A705C"] : s === 0 ? ["Non signalé", "#5FA37F"]
+    : s < 25 ? ["Faible", "#C9A24C"] : s < 50 ? ["Moyen", "#D98A3D"] : s < 75 ? ["Élevé", "#D9534F"] : ["Critique", "#E0463E"];
 
-  // Score 0-100 d'une source (null = source non disponible : jamais "sain")
+  // Score 0-100 d'une source (null = source indisponible : jamais interprété comme « sain »).
+  // Un seul ou deux pulses OTX restent faibles : beaucoup de sites légitimes y figurent.
   function sourceScore(src, res, type) {
     if (!res || !res.disponible) return null;
     if (src === "abuseipdb") return res.score_abus || 0;
-    if (src === "otx") return res.nombre_pulses > 0 ? Math.min(90, 30 + 15 * res.nombre_pulses) : 0;
+    if (src === "otx") { const n = res.nombre_pulses || 0; return n === 0 ? 0 : n < 3 ? 12 * n : Math.min(80, 40 + 10 * n); }
     if (src === "urlhaus") return res.signale ? (type === "url" ? 100 : 80) : 0;
     if (src === "malwarebazaar") return res.signale ? 100 : 0;
     return res.signale ? 80 : 0;
   }
-  function sourceLabel(src, res) {
-    if (!res || !res.disponible) return `${src} : indisponible`;
-    if (src === "abuseipdb") return `${src} : ${res.score_abus}/100 (${res.nombre_signalements || 0} signalement(s))`;
-    if (src === "otx") return `${src} : ${res.nombre_pulses} pulse(s)`;
-    if (src === "malwarebazaar") return `${src} : ${res.signale ? "malware connu" + (res.signature ? " (" + res.signature + ")" : "") : "inconnu"}`;
-    return `${src} : ${res.signale ? "signalé" : "non signalé"}`;
+
+  // Fiche publique de l'indicateur chez la source (OTX : liste des pulses).
+  function link(src, type, ind) {
+    if (!ind) return null;
+    const e = encodeURIComponent;
+    if (src === "otx") {
+      const t = type === "IP" ? "ip" : type === "domaine" ? (ind.split(".").length > 2 ? "hostname" : "domain")
+        : type === "url" ? "url" : type === "hash" ? "file" : null;
+      return t ? `https://otx.alienvault.com/indicator/${t}/${e(ind)}` : null;
+    }
+    if (src === "abuseipdb") return type === "IP" ? `https://www.abuseipdb.com/check/${e(ind)}` : null;
+    if (src === "urlhaus") return type === "url" ? `https://urlhaus.abuse.ch/browse.php?search=${e(ind)}`
+      : type === "domaine" ? `https://urlhaus.abuse.ch/host/${e(ind)}/` : null;
+    if (src === "malwarebazaar") return type === "hash" ? `https://bazaar.abuse.ch/sample/${e(ind)}/` : null;
+    return null;
   }
-  function evaluate(type, sources) {
+
+  function chip(src, res, type, ind) {
+    const name = NAMES[src] || src, s = sourceScore(src, res, type);
+    if (s === null) return { cls: "", text: `${name} · indisponible` };
+    let t = "non signalé", seen = false;
+    if (src === "abuseipdb") { t = `${res.score_abus}/100`; seen = res.score_abus > 0 || res.nombre_signalements > 0; }
+    else if (src === "otx") { t = `${res.nombre_pulses} pulse(s)`; seen = res.nombre_pulses > 0; }
+    else if (res.signale) { t = src === "malwarebazaar" ? "malware connu" : "signalé"; seen = true; }
+    return {
+      cls: s >= FLAG ? "bad" : "ok", text: `${name} · ${t}`,
+      href: seen ? link(src, type, ind) : null,
+      title: src === "otx" ? "Voir les pulses sur AlienVault OTX" : `Ouvrir la fiche sur ${name}`,
+    };
+  }
+  function evaluate(type, sources, ind) {
     const scores = Object.entries(sources).map(([s, r]) => sourceScore(s, r, type)).filter((x) => x !== null);
     return {
       score: scores.length ? Math.max(...scores) : null,
-      detail: Object.entries(sources).map(([s, r]) => sourceLabel(s, r)).join(" · "),
+      chips: Object.entries(sources).map(([s, r]) => chip(s, r, type, ind)),
     };
   }
-  const scoreHtml = (s) => s === null
-    ? `<span style="color:#A79A82">non vérifié</span>`
-    : `<span style="color:${STATUS_COLORS[level(s)]}">${s} / 100</span>`;
+  const TYPE = { ips: "IP", domaines: "domaine", urls: "url" };
 
-  function rows(ti) {
+  function allRows(ti, sha) {
     const out = [];
-    const add = (type, ind, sources) => out.push({ type, ind, ...evaluate(type, sources) });
-    if (ti.hash_fichier_analyse) add("hash du fichier", "SHA-256 du fichier analysé", ti.hash_fichier_analyse);
-    [["ips", "IP"], ["domaines", "domaine"], ["urls", "url"], ["hashs", "hash intégré"]].forEach(([g, label]) =>
-      Object.entries(ti[g] || {}).forEach(([ind, src]) => add(label, ind, src)));
-    return out.sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+    if (ti.hash_fichier_analyse) out.push({ type: "hash", ...evaluate("hash", ti.hash_fichier_analyse, sha) });
+    Object.keys(TYPE).forEach((g) => Object.entries(ti[g] || {}).forEach(([ind, src]) => out.push({ type: TYPE[g], ind, ...evaluate(TYPE[g], src, ind) })));
+    return out;
   }
+  window.cnRepFlagged = (r) => (r.threat_intelligence
+    ? allRows(r.threat_intelligence, (r.empreintes || {}).sha256).filter((x) => x.score !== null && x.score >= FLAG).length : 0);
 
-  function renderReputation(r) {
-    const el = document.getElementById("panel-reputation");
-    if (!el) return;
-    const ti = r.threat_intelligence;
-    if (!ti) { el.innerHTML = `<p class="empty-note">Vérification de réputation non exécutée pour ce fichier.</p>`; return; }
-    const list = rows(ti);
-    const verifies = list.filter((x) => x.score !== null);
-    const signales = verifies.filter((x) => x.score >= 25);
-    const nonVerifies = list.length - verifies.length;
-    const iocs = r.iocs || {};
-    const extraits = ["ips", "domaines", "urls"].reduce((n, k) => n + (iocs[k] || []).length, 0);
-    const controles = ["ips", "domaines", "urls"].reduce((n, k) => n + Object.keys(ti[k] || {}).length, 0);
-    let html = `<p class="empty-note" style="margin-bottom:10px">${verifies.length} élément(s) vérifié(s), ${signales.length} signalé(s)` +
-      (nonVerifies ? `, ${nonVerifies} non vérifié(s) (source indisponible : clé API manquante ou réseau)` : "") + `.</p>`;
-    if (!ti.au_moins_une_source_disponible)
-      html += `<p class="empty-note">Aucune source de réputation n'est joignable : vérifiez les clés dans le fichier .env (voir « État des moteurs »). Un élément non vérifié n'est pas un élément sain.</p>`;
-    if (extraits > controles) html += `<p class="empty-note">${extraits - controles} indicateur(s) extrait(s) non interrogé(s) (limite TI_MAX_LOOKUPS).</p>`;
-    html += list.length
-      ? `<table class="history-table"><thead><tr><th>Type</th><th>Indicateur</th><th>Score</th><th>Sources</th></tr></thead><tbody>` +
-        list.map((x) => `<tr><td>${esc(x.type)}</td><td style="word-break:break-all">${esc(x.ind)}</td><td>${scoreHtml(x.score)}</td>
-          <td style="font-size:11.5px">${esc(x.detail)}</td></tr>`).join("") + `</tbody></table>`
-      : `<p class="empty-note">Aucun indicateur à vérifier dans ce fichier.</p>`;
-    el.innerHTML = html;
+  function rowHtml(ind, ev, note, sub) {
+    const [label, color] = note ? ["Non interrogé", "#7A705C"] : band(ev.score);
+    const pct = ev.score === null ? 0 : ev.score;
+    const chips = (ev.chips || []).map((c) => c.href
+      ? `<a class="chip ${c.cls} link" href="${esc(c.href)}" target="_blank" rel="noopener noreferrer" title="${esc(c.title)}"><i></i>${esc(c.text)} ↗</a>`
+      : `<span class="chip ${c.cls}"><i></i>${esc(c.text)}</span>`).join("")
+      || `<span class="chip"><i></i>${esc(note || "aucune source")}</span>`;
+    return `<div class="rep-row"><div class="rep-ind">${esc(ind)}${sub ? `<div class="rep-host">${sub}</div>` : ""}</div>
+      <div class="rep-meter"><div class="rep-score"><b style="color:${color}">${label}</b><span>${ev.score === null ? "—" : ev.score + " / 100"}</span></div>
+      <div class="rep-bar"><span style="width:${pct}%;background:${color}"></span></div></div>
+      <div class="rep-chips">${chips}</div></div>`;
   }
+  window.cnRep = { evaluate, rowHtml, FLAG };
 
-  // Onglets IP / Domaines / URLs : chaque élément affiche directement son score.
+  // Hôtes des URLs signalées (score le plus élevé par hôte)
+  function flaggedUrlHosts() {
+    const out = {};
+    Object.entries((_ti && _ti.urls) || {}).forEach(([u, src]) => {
+      const sc = evaluate("url", src, u).score;
+      if (sc === null || sc < FLAG) return;
+      let host = ""; try { host = new URL(u).hostname.toLowerCase(); } catch (e) { return; }
+      if (host && (!out[host] || out[host] < sc)) out[host] = sc;
+    });
+    return out;
+  }
+  const hostOf = (u) => { try { return new URL(u).hostname; } catch (e) { return ""; } };
+
+  // Onglets IP / Domaines / URLs
   const _showIOC = showIOCTab;
   showIOCTab = function (iocs, key) {
-    const group = { ips: "ips", domaines: "domaines", urls: "urls" }[key];
-    const items = iocs[key] || [];
-    if (!group || !items.length) return _showIOC(iocs, key);
-    const type = key === "urls" ? "url" : key === "ips" ? "IP" : "domaine";
-    const lines = items.map((ind) => {
-      const src = _ti && _ti[group] && _ti[group][ind];
-      let txt;
-      if (!_ti) txt = `<span style="color:#A79A82">non vérifié (réputation non exécutée)</span>`;
-      else if (!src) txt = `<span style="color:#A79A82">non interrogé (limite TI_MAX_LOOKUPS)</span>`;
-      else { const e = evaluate(type, src); txt = `${scoreHtml(e.score)} — ${esc(e.detail)}`; }
-      return `${esc(ind)}  →  ${txt}`;
+    const type = TYPE[key];
+    if (!type) return _showIOC(iocs, key);
+    const rows = (iocs[key] || []).map((ind) => {
+      const src = _ti && _ti[key] && _ti[key][ind];
+      const sub = key === "urls" && hostOf(ind) ? "hôte : " + esc(hostOf(ind)) : "";
+      return src ? { ind, sub, ev: evaluate(type, src, ind) }
+        : { ind, sub, ev: { score: null, chips: [] }, note: _ti ? "limite TI_MAX_LOOKUPS" : "réputation non exécutée" };
     });
-    document.getElementById("ioc-content").innerHTML = `<div class="mono-block">${lines.join("\n")}</div>`;
+    if (key === "domaines") {   // l'hôte d'une URL signalée est signalé lui aussi
+      Object.entries(flaggedUrlHosts()).forEach(([host, sc]) => {
+        const via = { cls: "bad", text: "hôte d'une URL signalée" };
+        const row = rows.find((x) => x.ind.toLowerCase() === host);
+        if (row) row.ev = { score: Math.max(row.ev.score ?? 0, sc), chips: [...row.ev.chips, via] };
+        else rows.push({ ind: host, sub: "", ev: { score: sc, chips: [via] } });
+      });
+    }
+    if (!rows.length) return _showIOC(iocs, key);
+    rows.sort((a, b) => (b.ev.score ?? -1) - (a.ev.score ?? -1));
+    const ok = rows.filter((x) => x.ev.score !== null), bad = ok.filter((x) => x.ev.score >= FLAG);
+    const h = _ti && _ti.hash_fichier_analyse ? evaluate("hash", _ti.hash_fichier_analyse, _sha) : null;
+    let html = `<div class="rep-summary">
+      <span class="pill ${bad.length ? "bad" : "ok"}">${bad.length} signalé(s)</span>
+      <span class="pill">${ok.length} vérifié(s)</span>
+      ${rows.length - ok.length ? `<span class="pill off">${rows.length - ok.length} non vérifié(s)</span>` : ""}
+      ${h ? `<span class="pill ${h.score === null ? "off" : h.score >= FLAG ? "bad" : "ok"}">Hash du fichier : ${h.score === null ? "non vérifié" : h.score >= FLAG ? "signalé" : "non signalé"}</span>` : ""}</div>`;
+    if (!_ti || !_ti.au_moins_une_source_disponible)
+      html += `<div class="rep-warn">Aucune source de réputation n'est joignable (clés API manquantes ou réseau) : ces éléments ne sont pas vérifiés, ce qui ne veut pas dire qu'ils sont sains. Voir « État des moteurs ».</div>`;
+    document.getElementById("ioc-content").innerHTML = html + rows.map((x) => rowHtml(x.ind, x.ev, x.note, x.sub)).join("");
   };
 
   const _render = renderReport;
   renderReport = function (r) {
     _ti = r.threat_intelligence || null;   // avant le rendu : les onglets IOC en ont besoin
+    _sha = (r.empreintes || {}).sha256 || "";
     _render(r);
-    try { renderReputation(r); } catch (e) { console.error(e); }
+    try {  // onglet rouge quand il contient un indicateur signalé
+      const btns = document.querySelectorAll("#ioc-tabs .ioc-tab");
+      ["ips", "domaines", "urls"].forEach((k, i) => {
+        let bad = (r.iocs[k] || []).some((ind) => { const s = _ti && _ti[k] && _ti[k][ind]; const v = s && evaluate(TYPE[k], s, ind).score; return v !== null && v >= FLAG; });
+        if (k === "domaines" && Object.keys(flaggedUrlHosts()).length) bad = true;
+        btns[i]?.classList.toggle("is-flagged", !!bad);
+      });
+    } catch (e) { console.error(e); }
   };
 })();

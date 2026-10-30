@@ -1,0 +1,1214 @@
+{
+  "id_rapport": "c37826b0",
+  "id_parent": null,
+  "profondeur": 0,
+  "origine": "auto_watch",
+  "duree_analyse_s": 126.401,
+  "metadonnees": {
+    "nom": "basic-miktex-25.12-x64 (1).exe",
+    "extension": "exe",
+    "taille_octets": 148882184,
+    "taille_lisible": "142.0 Mo",
+    "mime_reel": "application/x-dosexec",
+    "chemin": "C:\\Users\\HYPER\\Downloads\\basic-miktex-25.12-x64 (1).exe",
+    "proprietaire": "0",
+    "permissions": "-rwxrwxrwx",
+    "date_creation": "2026-10-11T11:38:23",
+    "date_modification": "2026-10-11T11:39:35",
+    "date_acces": "2026-10-30T06:53:32",
+    "zone_origine": null
+  },
+  "coherence_type": {
+    "type_reel_detecte": "pe_executable",
+    "extension_declaree": ".exe",
+    "coherent": true,
+    "alerte": false,
+    "commentaire": "Extension cohérente avec le contenu réel."
+  },
+  "empreintes": {
+    "sha256": "14b42dd9f4b4a7813a8bfd69c8f99316c2888cc4ee26f631f397e163d85d6c62",
+    "sha1": "94cfb3118492feb7ce67118eca2567a93b75a493",
+    "md5": "9e21d3274248a6ca61840be36e8ac24c",
+    "connu_malveillant": false,
+    "source": null
+  },
+  "analyse_statique": {
+    "type_analyse": "pe_executable",
+    "pe": {
+      "disponible": true,
+      "type": "EXE",
+      "architecture": "0x8664",
+      "nombre_imports": 952,
+      "imports_dangereux_detectes": [
+        "CryptEncrypt",
+        "GetProcAddress",
+        "IsDebuggerPresent",
+        "LoadLibraryA",
+        "VirtualAlloc"
+      ],
+      "sections": [
+        {
+          "nom": ".text",
+          "taille_brute": 9859584,
+          "entropie": 5.718,
+          "executable": true,
+          "ecriture": false
+        },
+        {
+          "nom": ".rdata",
+          "taille_brute": 2443776,
+          "entropie": 5.007,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".data",
+          "taille_brute": 107008,
+          "entropie": 3.862,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".pdata",
+          "taille_brute": 437760,
+          "entropie": 6.165,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".idata",
+          "taille_brute": 42496,
+          "entropie": 4.006,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".00cfg",
+          "taille_brute": 512,
+          "entropie": 0.424,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".tls",
+          "taille_brute": 1024,
+          "entropie": 0.011,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".fptable",
+          "taille_brute": 1024,
+          "entropie": 0.0,
+          "executable": false,
+          "ecriture": true
+        },
+        {
+          "nom": ".rsrc",
+          "taille_brute": 323072,
+          "entropie": 4.289,
+          "executable": false,
+          "ecriture": false
+        },
+        {
+          "nom": ".reloc",
+          "taille_brute": 148480,
+          "entropie": 4.602,
+          "executable": false,
+          "ecriture": false
+        }
+      ],
+      "packer_suspecte": false,
+      "signature_presente": false,
+      "point_entree": "0x1265c",
+      "timestamp_compilation": 1767019113
+    }
+  },
+  "entropie_obfuscation": {
+    "entropie_globale": 7.844,
+    "verdict_entropie": "tres elevee (chiffrement, packer ou payload compresse probable)",
+    "format_naturellement_compresse": false,
+    "entropie_par_bloc": [
+      6.07,
+      6.09,
+      6.09,
+      1.26,
+      3.59,
+      1.56,
+      5.48,
+      5.47,
+      5.53,
+      5.53,
+      5.49,
+      5.52,
+      5.69,
+      5.5,
+      5.59,
+      5.4,
+      5.54,
+      5.6,
+      5.64,
+      5.55,
+      5.58,
+      5.47,
+      5.63,
+      5.58,
+      5.47,
+      5.61,
+      5.65,
+      5.69,
+      5.66,
+      5.61,
+      5.56,
+      5.48,
+      5.52,
+      5.75,
+      5.48,
+      5.56,
+      5.62,
+      5.47,
+      5.61,
+      5.63,
+      5.5,
+      5.52,
+      5.65,
+      5.58,
+      5.59,
+      5.63,
+      5.64,
+      5.58,
+      5.73,
+      5.69,
+      5.59,
+      5.66,
+      5.71,
+      5.67,
+      5.67,
+      5.69,
+      5.57,
+      5.72,
+      5.46,
+      5.51,
+      5.51,
+      5.54,
+      5.54,
+      5.67
+    ],
+    "base64": {
+      "nombre_blobs_base64": 8,
+      "exemple": "000102030405060708091011121314151617181920212223242526272829..."
+    },
+    "xor": {
+      "xor_simple_suspecte": true,
+      "cle_probable": "0x20"
+    },
+    "contenu_tronque_pour_analyse": false
+  },
+  "iocs": {
+    "ips": [
+      "2.5.29.17",
+      "2.5.4.3",
+      "1.3.14.3",
+      "2.5.4.4",
+      "2.5.4.5",
+      "2.5.4.6",
+      "2.5.4.7",
+      "2.5.4.8",
+      "2.5.4.9",
+      "2.5.4.10",
+      "2.5.4.11",
+      "2.5.4.12",
+      "2.5.4.13",
+      "2.5.4.17",
+      "2.5.4.41",
+      "2.5.4.42",
+      "2.5.4.43",
+      "2.5.4.44",
+      "2.5.4.45",
+      "2.5.4.46",
+      "2.5.4.65",
+      "2.5.4.72",
+      "2.5.29.18",
+      "2.5.29.19",
+      "1.101.3.4",
+      "25.12.0.0",
+      "6.0.0.0"
+    ],
+    "domaines": [
+      "miktex.org",
+      "api2.miktex.org",
+      "MiKTeX.org",
+      "www.miktex.org",
+      "mirrors.ctan.org",
+      "sourceware.org",
+      "www.memtest86.com",
+      "www.tug.org",
+      "tug.org",
+      "www.gnu.org",
+      "www.debian.org"
+    ],
+    "urls": [
+      "https://miktex.org/giveback\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00008\b@\u0001\u0000\u0000\u0000\u0016E\u0000@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000texmfs/install\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u00006\u0014\u0002@\u0001\u0000\u0000\u0000i\u0002@\u0001\u0000\u0000\u0000Q\u0000@\u0001\u0000\u0000\u0000A\u0001@\u0001\u0000\u0000\u0000!\u0001@\u0001\u0000\u0000\u0000O\u0000@\u0001\u0000\u0000\u0000\u0001@\u0001\u0000\u0000\u0000",
+      "https://miktex.org/kb\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Operation",
+      "https://api2.miktex.org/",
+      "http://mirrors.ctan.org/\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "https://miktex.org.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000[repository]\u0000\u0000\u0000\u0000date={}\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000version={}\u0000\u0000\u0000\u0000\u0000\u0000%\u0000M\u0000I\u0000K\u0000T\u0000E\u0000X\u0000_\u0000I\u0000N\u0000S\u0000T\u0000A\u0000L\u0000L\u0000%\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000.fmt\u0000\u0000\u0000\u0000Warning:",
+      "https://miktex.org/support\u0000\u0000\u0000\u0000\u0000\u0000MiKTeX.org\u0000\u0000\u0000\u0000\u0000\u0000https://miktex.org/about\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000https://miktex.org\u0000\u0000\u0000\u0000\u0000\u0000MiKTeXDirect",
+      "https://curl.se/docs/http-cookies.html",
+      "https://curl.se/docs/alt-svc.html",
+      "https://curl.se/docs/hsts.html",
+      "http://\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Uri\\Uri.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Uri\u0000uri\u0000\u0000\u0000\u0000\u0000Bad",
+      "http://www.tug.org/usergroups.html",
+      "https://miktex.org/",
+      "https://miktex.org/giveback",
+      "https://miktex.org/email/",
+      "https://miktex.org/packages/",
+      "http://tug.org/texlive/LICENSE.TL",
+      "https://www.gnu.org/philosophy/free-sw.html",
+      "https://www.debian.org/intro/free",
+      "https://www.gnu.org/licenses/license-list.html"
+    ],
+    "emails": [
+      "cs@miktex.org",
+      "bzip2-devel@sourceware.org"
+    ],
+    "exclus_domaines_legitimes": {
+      "ips": 1,
+      "domaines": 4,
+      "urls": 6
+    },
+    "chemins_windows": [
+      "v:\\",
+      "B:\\\u0000t",
+      "r:\\\u0000HHM\u00153\\\u0000\u000f\u0000\u0000\u0000I\u0019\u0000\u0000訤HH",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\FileCopyPage.h\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000e\u0000\u0000\u0000\u0000\u0000\u0000\u00000\u0001@\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000Â\u0001@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00003'\u0001@\u0001\u0000\u0000\u0000`̖@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000C",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\FinishPage.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000OnInitDialog\u0000\u0000\u0000\u0000https",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\InfoListPage.h\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00003'\u0001@\u0001\u0000\u0000\u0000ܖ@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000&\u0000S\u0000t\u0000a\u0000r\u0000t\u0000\u0000\u0000\u0000\u0000",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\InfoListPage.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000CreateReport\u0000\u0000\u0000\u0000\t@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000r\u0002@\u0001\u0000\u0000\u00006\u0014\u0002@\u0001\u0000\u0000\u0000i\u0002@\u0001\u0000\u0000\u0000Q\u0000@\u0001\u0000\u0000\u0000A\u0001@\u0001\u0000\u0000\u0000!\u0001@\u0001\u0000\u0000\u0000O\u0000@\u0001\u0000\u0000\u0000\u0001@\u0001\u0000\u0000\u0000'\u001d\u0003@\u0001\u0000\u0000\u0000\u001b\u0001@\u0001\u0000\u0000\u0000\u0005\u0000@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0006\u0001@\u0001\u0000\u0000\u0000\b\u0002@\u0001\u0000\u0000\u0000\u0001\u0001@\u0001\u0000\u0000\u0000)r\u0001@\u0001\u0000\u0000\u0000$\u0000@\u0001\u0000\u0000\u0000\u0016+\u0001@\u0001\u0000\u0000\u0000f!\u0001@\u0001\u0000\u0000\u0000\u0005\u0000@\u0001\u0000\u0000\u0000Ƕ\u0000@\u0001\u0000\u0000\u0000",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\InstallDirPage.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000OnChangePathName\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000S\u0000e\u0000l\u0000e\u0000c\u0000t\u0000 \u0000t\u0000h\u0000e\u0000 \u0000M\u0000i\u0000K\u0000T\u0000e\u0000X\u0000 \u0000i\u0000n\u0000s\u0000t\u0000a\u0000l\u0000l\u0000a\u0000t\u0000i\u0000o\u0000n\u0000 \u0000d\u0000i\u0000r\u0000e\u0000c\u0000t\u0000o\u0000r\u0000y\u0000",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\LicensePage.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000FindResourceW\u0000\u0000\u0000LoadResource\u0000\u0000\u0000\u0000SizeofResource\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\LocalRepositoryPage.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000D\u0000o\u0000w\u0000n\u0000l\u0000o\u0000a\u0000d\u0000 \u0000t\u0000h\u0000e\u0000 \u0000M\u0000i\u0000K\u0000T\u0000e\u0000X\u0000 \u0000d\u0000i\u0000s\u0000t\u0000r\u0000i\u0000b\u0000u\u0000t\u0000i\u0000o\u0000n\u0000 \u0000t\u0000o\u0000",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\RemoteRepositoryPage.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000SplitUrl\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000InternetCrackUrlW\u0000\u0000\u0000\u0000\u0000\u0000\u0000Cancelled\u0000\u0000\u0000\u0000\u0000\u0000\u0000Unsuccessful\u0000\u0000\u0000\u0000OnFillList\u0000\u0000\u0000\u0000\u0000\u0000CListCtrl",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\Setup.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000CheckStartupConfig\u0000\u0000\u0000\u0000\u0000\u0000path\u0000\u0000\u0000\u0000Improper options",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\SetupWizard.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000SetupWizard\u0000\u0000\u0000\u0000\u0000SystemParametersInfoW\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000V\u0000e\u0000r\u0000d\u0000a\u0000n\u0000a\u0000 \u0000B\u0000o\u0000l\u0000d\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000CFont",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\SharedInstallationPage.h\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0011\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0003\u0000\u0000",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\SharedInstallationPage.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000u\u0000n\u0000k\u0000n\u0000o\u0000w\u0000n\u0000 \u0000u\u0000s\u0000e\u0000r\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GetUserNameW\u0000\u0000\u0000\u0000 \u0000(\u0000\u0000\u0000\u0000\u0000C\u0000h\u0000o\u0000o\u0000s\u0000i\u0000n\u0000g\u0000 \u0000t\u0000h\u0000i\u0000s\u0000 \u0000o\u0000p\u0000t\u0000i\u0000o\u0000n\u0000 \u0000i\u0000s\u0000 \u0000r\u0000a\u0000r\u0000e\u0000l\u0000y\u0000 \u0000a\u0000 \u0000g\u0000o\u0000o\u0000d\u0000 \u0000d\u0000e\u0000c\u0000i\u0000s\u0000i\u0000o\u0000n\u0000.\u0000 \u0000Y\u0000o\u0000u\u0000 \u0000h\u0000a\u0000v\u0000e\u0000 \u0000b\u0000e\u0000e\u0000n\u0000 \u0000w\u0000a\u0000r\u0000n\u0000e\u0000d\u0000.\u0000.\u0000.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00000#@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000x\u0001@\u0001\u0000\u0000\u00006\u0014\u0002@\u0001\u0000\u0000\u0000i\u0002@\u0001\u0000\u0000\u0000Q\u0000@\u0001\u0000\u0000\u0000A\u0001@\u0001\u0000\u0000\u0000!\u0001@\u0001\u0000\u0000\u0000O\u0000@\u0001\u0000\u0000\u0000\u0001@\u0001\u0000\u0000\u0000'\u001d\u0003@\u0001\u0000\u0000\u0000 \u0000@\u0001\u0000\u0000\u0000\u0005\u0000@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0006\u0001@\u0001\u0000\u0000\u0000\b\u0002@\u0001\u0000\u0000\u0000\u0001\u0001@\u0001\u0000\u0000\u0000)r\u0001@\u0001\u0000\u0000\u0000$\u0000@\u0001\u0000\u0000\u0000\u0016+\u0001@\u0001\u0000\u0000\u0000f!\u0001@\u0001\u0000\u0000\u0000\u0005\u0000@\u0001\u0000\u0000\u0000Ƕ\u0000@\u0001\u0000\u0000\u0000",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\TaskPage.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000OnWizardNext\u0000\u0000\u0000\u0000EnableButtons\u0000\u0000\u0000#@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u00006\u0014\u0002@\u0001\u0000\u0000\u0000i\u0002@\u0001\u0000\u0000\u0000Q\u0000@\u0001\u0000\u0000\u0000A\u0001@\u0001\u0000\u0000\u0000!\u0001@\u0001\u0000\u0000\u0000O\u0000@\u0001\u0000\u0000\u0000\u0001@\u0001\u0000\u0000\u0000'\u001d\u0003@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0005\u0000@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0006\u0001@\u0001\u0000\u0000\u0000\b\u0002@\u0001\u0000\u0000\u0000\u0001\u0001@\u0001\u0000\u0000\u0000)r\u0001@\u0001\u0000\u0000\u0000$\u0000@\u0001\u0000\u0000\u0000\u0016+\u0001@\u0001\u0000\u0000\u0000f!\u0001@\u0001\u0000\u0000\u0000\u0005\u0000@\u0001\u0000\u0000\u0000Ƕ\u0000@\u0001\u0000\u0000\u0000",
+      "C:\\build-miktex\\stable\\source\\Programs\\MiKTeX\\Setup\\MFC\\WelcomePage.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000false\u0000\u0000\u0000true\u0000\u0000\u0000\u0000%@\u0001\u0000\u0000\u0000#\u0003@\u0001\u0000\u0000\u0000.\u0002@\u0001\u0000\u0000\u0000d\u0002@\u0001\u0000\u0000\u0000^\u0002@\u0001\u0000\u0000\u0000c\u0001@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000invalid stoi argument\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000stoi argument out of range\u0000\u0000\u0000\u0000\u0000\u00000'@\u0001\u0000\u0000\u0000q\u0000@\u0001\u0000\u0000\u0000n\u0001@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000)\u0000\u0000\u0000(\u0000\u0000\u0000\u0000\u0000\u0000\u0000'@\u0001\u0000\u0000\u0000",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Session\\init.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Create\u0000\u0000\u0000\u0000\u0000\u0000error",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\include\\miktex",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Session\\win\\winSession.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GetPsFontDirectory\u0000\u0000\u0000\u0000\u0000\u0000GetWindowsDirectoryW\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000psfonts\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Windows API error \u0000\u0000\u0000\u0000\u0000\u0000MiKTeX cannot access file '{path}' because it is either locked by another MiKTeX program or by the operating system.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Close running MiKTeX programs and try again.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000file-in-use\u0000\u0000\u0000\u0000\u0000%R\\doc\\miktex",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Utils\\win\\winUtils.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GetFolderPath\u0000\u0000\u0000nFolder\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000A required file system folder does not exist.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Unsupported Windows product.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000A required file system folder cannot be accessed.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000hr\u0000\u0000A required file system path could not be retrieved.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Windows {0}\u0000\u0000\u0000\u0000\u0000GetDefPrinter\u0000\u0000\u0000GetDefaultPrinterW\u0000\u0000\u0000\u0000\u0000\u0000config\u0000\u0000setting env {0}={1}\u0000\u0000\u0000\u0000\u0000SetEnvironmentString\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000valueName\u0000\u0000\u0000\u0000\u0000\u0000\u0000_wputenv_s\u0000\u0000\u0000\u0000\u0000\u0000U\u0000R\u0000L\u0000 \u0000P\u0000r\u0000o\u0000t\u0000o\u0000c\u0000o\u0000l\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000ShowWebPage\u0000\u0000\u0000\u0000\u0000hInst\u0000\u0000\u0000The web browser could not be started.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000CheckHeap\u0000\u0000\u0000\u0000\u0000\u0000\u0000P\u0000a\u0000t\u0000h\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000CheckPath\u0000\u0000\u0000\u0000\u0000\u0000\u0000Something is wrong with the system PATH",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Directory\\win\\winDirectory.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000SetCurrent\u0000\u0000\u0000\u0000\u0000\u0000_wchdir\u0000\u0000\u0000\u0000\u0000access\u0000\u0000\u0000\u0000\u0000\u0000{0} is not a directory\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000accessing directory {0}",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\DirectoryLister\\win\\winDirectoryLister.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Close\u0000\u0000\u0000\u0000\u0000\u0000\u0000FindClose\u0000\u0000\u0000\u0000\u0000\u0000\u0000GetNext\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000directory\u0000\u0000\u0000\u0000\u0000\u0000\u0000FindFirstFileExW\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000FindNextFileExW\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000H5@\u0001\u0000\u0000\u0000Y\u0000@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0018\u0000\u0000\u0000\u0000\u0000\u0000\u00005@\u0001\u0000\u0000\u0000\u0004\u0001@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00006@\u0001\u0000\u0000\u0000\u0001@\u0001\u0000\u0000\u0000\u0001@\u0001\u0000\u0000\u0000Jj\u0001@\u0001\u0000\u0000\u0000\u0019_\u0001@\u0001\u0000\u0000\u0000\u0015\u0002@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000C",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Process\\Process.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Run\u0000\u0000\u0000\u0000\u0000processFileName\u0000\u0000\u0000\u0000\u0000fread\u0000\u0000\u0000\u0000\u0000\u0000\u0000read {0} bytes from the pipe\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000The executed process did not succeed.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000{0} returned with exit code {1}\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000{0} was killed by a signal\u0000\u0000\u0000\u0000\u0000\u0000{0} exited abnormally\u0000\u0000\u0000\u0000\u0000\u0000\u0000...\u00007@\u0001\u0000\u0000\u0000P{",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Utils\\Utils.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000IsSafeFileName\u0000\u0000\u0000\u0000\u0000\u0000",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Cfg\\Cfg.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000OpenSSLWalkCallback\u0000\u0000\u0000\u0000\u0000Verify\u0000\u0000Sign\u0000\u0000\u0000\u0000\u0000D@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0000@\u0001\u0000\u0000\u0000v\u0000@\u0001\u0000\u0000\u00003",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Session\\miktex.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GetTempDirectory\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000No suitable temporary directory found.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000env\u0000\u0000\u0000\u0000\u0000filesearch\u0000\u0000\u0000\u0000\u0000\u0000mem\u0000values\u0000\u0000\u0000\u0000\u0000\u0000miktex\\log\u0000\u0000\u0000\u0000\u0000\u0000GetSpecialPath\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GetVolumePathNameA\u0000\u0000\u0000\u0000\u0000\u0000HOMEDRIVE\u0000\u0000\u0000\u0000\u0000\u0000\u0000GetHomeDirectory\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Home directory is not defined.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Home directory ({path}) does not exist.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000miktex-makepk.exe\u0000\u0000\u0000\u0000\u0000\u0000\u0000MakeMakePkCommandLine\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000{}+{}",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\internal.h\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000FdOpen\u0000\u0000fdopen\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000C",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Process\\win\\winProcess.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000.\u0000e\u0000x\u0000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000fileName\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000SearchPath\u0000\u0000\u0000\u0000\u0000\u0000redirecting stdout to a stream\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000commandLine\u0000\u0000\u0000\u0000\u0000_fileno\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000_get_osfhandle\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000redirecting stdout to a pipe\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000CreatePipe\u0000\u0000\u0000\u0000\u0000\u0000redirecting stderr to a stream\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000redirecting stderr to a pipe\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000make child stderr = child stdout\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000redirecting stdin to a stream\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000redirecting stdin to a pipe\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000start process",
+      "C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\TemporaryDirectory\\TemporaryDirectory.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000TemporaryDirectoryImpl\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000tempDir\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Could not create a unique sub-directory.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000K@\u0001\u0000\u0000\u0000+v\u0000@\u0001\u0000\u0000\u0000\u001b\u0000@\u0001\u0000\u0000\u0000v\u0001@\u0001\u0000\u0000\u0000@\u0002@\u0001\u0000\u0000\u0000"
+    ],
+    "chemins_unix": [
+      "/bin/x64\u0000\u0000\u0000\u0000\u0000\u0000--hide\u0000\u0000\u0000\u0000\u0000\u0000--check-updates\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000--admin\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000o\u0000p\u0000e\u0000n\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000notepad\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000notepad.exe\u0000\u0000\u0000\u0000\u0000--auto-inst",
+      "/bin/x64/internal\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000GetDistRootDirectory\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000UnregisterRootDirectory\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000RegisterRootDirectories\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000thi",
+      "/etc/passwd)?",
+      "/bin/x64\\MiKTeX251200-core.dll\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000miktex/bin/x64\\MiKTeX251200-core-PS.dll\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000miktex/bin/x64\\MiKTeX251200-package",
+      "/bin/x64\\MiKTeX251200-packagemanager-PS.dll\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000fontconfig\\config\\fonts.conf\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000.tar.lzma\u0000\u0000\u0000\u0000\u0000\u0000\u0000.tar.xz\u0000\u0000\u0000\u0000",
+      "/etc/ssl/private\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000/etc/ssl\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000/etc/ssl/certs\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000/etc/ssl/cert.pem\u0000\u0000\u0000\u0000\u0000\u0000\u0000SSL_CERT_DIR\u0000\u0000\u0000\u0000SSL_CERT_FILE\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "/etc/ssl/ct_log_list.cnf\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000enabled_logs\u0000\u0000\u0000\u0000C:\\build-miktex\\stable\\source\\Libraries\\3rd\\libressl\\source\\crypto\\ct\\ct_sct_"
+    ],
+    "cles_registre": [],
+    "processus_mentionnes": [
+      "cmd.exe"
+    ],
+    "hashs_embarques": {
+      "md5": [
+        "D6AAD62216146D44B580E92711724B78",
+        "DD62CE0F78794BD2AEEFCDD29780398B",
+        "ABF3880A6239B84E87DC7E727A8BBFD4",
+        "B3CB81AE1C634DFBB208D80FA1A264AE",
+        "AF1A1A64A53D45708F96161A1541D424"
+      ],
+      "sha1": [
+        "f44adf3c8302162edd1a4f5cd514485307adf0a0",
+        "961c151d2e87f2686a955a9be24d316f1362bf21"
+      ],
+      "sha256": []
+    },
+    "chaines_suspectes": [
+      {
+        "chaine": "curl",
+        "occurrences": 108
+      },
+      {
+        "chaine": "cmd.exe",
+        "occurrences": 2
+      },
+      {
+        "chaine": "wget",
+        "occurrences": 2
+      }
+    ],
+    "contenu_tronque_pour_analyse": true,
+    "taille_totale_octets": 148882184,
+    "taille_analysee_octets": 26214400,
+    "score_indicateurs": 85
+  },
+  "signature_numerique": {
+    "applicable": true,
+    "signature_presente": false,
+    "verifiee": null,
+    "editeur": null,
+    "commentaire": "Aucune signature Authenticode detectee. Cela n'implique pas automatiquement un fichier malveillant, mais augmente legerement le niveau de vigilance."
+  },
+  "yara": {
+    "disponible": true,
+    "matches": [],
+    "version_regles": "4ac64b3b5cfc"
+  },
+  "antivirus": {
+    "disponible": false,
+    "infecte": null,
+    "signature": null,
+    "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+  },
+  "analyse_specialisee": {
+    "tool": "specialized_pe",
+    "status": "termine",
+    "file_type": "PE/EXE",
+    "pe_offset": 304,
+    "pe_signature_valid": true,
+    "findings": [],
+    "note": "Contrôle structurel minimal. Utiliser un parseur PE dédié pour une analyse plus approfondie."
+  },
+  "threat_intelligence": {
+    "ips": {
+      "2.5.29.17": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.3": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "1.3.14.3": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "CN",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.5": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.6": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.7": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.8": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.9": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.10": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.11": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.12": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.13": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.17": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.41": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.42": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.43": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.44": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.45": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.46": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.65": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.4.72": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.29.18": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "2.5.29.19": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "FR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      },
+      "1.101.3.4": {
+        "abuseipdb": {
+          "disponible": true,
+          "source": "abuseipdb",
+          "score_abus": 0,
+          "pays": "KR",
+          "nombre_signalements": 0,
+          "signale": false
+        }
+      }
+    },
+    "domaines": {
+      "miktex.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "api2.miktex.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "MiKTeX.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "www.miktex.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "mirrors.ctan.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "sourceware.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 15,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "www.memtest86.com": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "www.tug.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "tug.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 5,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "www.gnu.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      },
+      "www.debian.org": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/host/"
+        }
+      }
+    },
+    "urls": {
+      "https://miktex.org/giveback\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00008\b@\u0001\u0000\u0000\u0000\u0016E\u0000@\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000texmfs/install\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u0000\u0002@\u0001\u0000\u0000\u00006\u0014\u0002@\u0001\u0000\u0000\u0000i\u0002@\u0001\u0000\u0000\u0000Q\u0000@\u0001\u0000\u0000\u0000A\u0001@\u0001\u0000\u0000\u0000!\u0001@\u0001\u0000\u0000\u0000O\u0000@\u0001\u0000\u0000\u0000\u0001@\u0001\u0000\u0000\u0000": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fmiktex.org%2Fgiveback%00%00%00%00%00%00%00%00%00%00%00%00%00%1B%00%00%00%00%00%00%00%1F%00%00%00%00%00%00%00%00%00%00%00%00%00%00%008%08%40%01%00%00%00%16E%00%40%01%00%00%00%00%00%00%00%00%00%00%00texmfs%2Finstall%00%00%00%00%00%00%00%00%00%00%08%40%01%00%00%00%02%40%01%00%00%00%02%40%01%00%00%006%14%02%40%01%00%00%00i%02%40%01%00%00%00Q%00%40%01%00%00%00A%01%40%01%00%00%00%21%01%40%01%00%00%00O%00%40%01%00%00%00%01%40%01%00%00%00/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://miktex.org/kb\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Operation": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fmiktex.org%2Fkb%00%00%00%00%00%00%00%00%00%00%00Operation/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://api2.miktex.org/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://mirrors.ctan.org/\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2Fmirrors.ctan.org%2F%00%00%00%00%00%00%00%00/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://miktex.org.\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000[repository]\u0000\u0000\u0000\u0000date={}\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000version={}\u0000\u0000\u0000\u0000\u0000\u0000%\u0000M\u0000I\u0000K\u0000T\u0000E\u0000X\u0000_\u0000I\u0000N\u0000S\u0000T\u0000A\u0000L\u0000L\u0000%\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000.fmt\u0000\u0000\u0000\u0000Warning:": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fmiktex.org.%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%5Brepository%5D%00%00%00%00date%3D%7B%7D%00%00%00%00%00%00%00%00%00version%3D%7B%7D%00%00%00%00%00%00%25%00M%00I%00K%00T%00E%00X%00_%00I%00N%00S%00T%00A%00L%00L%00%25%00%00%00%00%00%00%00%00%00.fmt%00%00%00%00Warning%3A/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://miktex.org/support\u0000\u0000\u0000\u0000\u0000\u0000MiKTeX.org\u0000\u0000\u0000\u0000\u0000\u0000https://miktex.org/about\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000https://miktex.org\u0000\u0000\u0000\u0000\u0000\u0000MiKTeXDirect": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/https%3A%2F%2Fmiktex.org%2Fsupport%00%00%00%00%00%00MiKTeX.org%00%00%00%00%00%00https%3A%2F%2Fmiktex.org%2Fabout%00%00%00%00%00%00%00%00https%3A%2F%2Fmiktex.org%00%00%00%00%00%00MiKTeXDirect/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://curl.se/docs/http-cookies.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 7,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://curl.se/docs/alt-svc.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 7,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://curl.se/docs/hsts.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 6,
+          "signale": true
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000C:\\build-miktex\\stable\\source\\Libraries\\MiKTeX\\Core\\Uri\\Uri.cpp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Uri\u0000uri\u0000\u0000\u0000\u0000\u0000Bad": {
+        "otx": {
+          "disponible": false,
+          "raison": "400 Client Error: Bad Request for url: https://otx.alienvault.com/api/v1/indicators/url/http%3A%2F%2F%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00%00C%3A%5Cbuild-miktex%5Cstable%5Csource%5CLibraries%5CMiKTeX%5CCore%5CUri%5CUri.cpp%00%00%00%00%00%00%00%00%00%00%00%00%00Uri%00uri%00%00%00%00%00Bad/general"
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://www.tug.org/usergroups.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://miktex.org/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://miktex.org/giveback": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://miktex.org/email/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://miktex.org/packages/": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "http://tug.org/texlive/LICENSE.TL": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://www.gnu.org/philosophy/free-sw.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://www.debian.org/intro/free": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      },
+      "https://www.gnu.org/licenses/license-list.html": {
+        "otx": {
+          "disponible": true,
+          "source": "otx",
+          "nombre_pulses": 0,
+          "signale": false
+        },
+        "urlhaus": {
+          "disponible": false,
+          "raison": "403 Client Error: Forbidden for url: https://urlhaus-api.abuse.ch/v1/url/"
+        }
+      }
+    },
+    "hashs": {},
+    "au_moins_une_source_disponible": true,
+    "indicateurs_signales": [
+      {
+        "indicateur": "sourceware.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "tug.org",
+        "type": "domaines",
+        "source": "otx"
+      },
+      {
+        "indicateur": "https://curl.se/docs/http-cookies.html",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "https://curl.se/docs/alt-svc.html",
+        "type": "urls",
+        "source": "otx"
+      },
+      {
+        "indicateur": "https://curl.se/docs/hsts.html",
+        "type": "urls",
+        "source": "otx"
+      }
+    ],
+    "hash_fichier_analyse": {
+      "otx": {
+        "disponible": true,
+        "source": "otx",
+        "nombre_pulses": 0,
+        "signale": false
+      },
+      "malwarebazaar": {
+        "disponible": false,
+        "raison": "403 Client Error: Forbidden for url: https://mb-api.abuse.ch/api/v1/"
+      }
+    }
+  },
+  "scoring_ml": {
+    "features": {
+      "taille_normalisee": 1.0,
+      "entropie_globale": 0.9805,
+      "nb_imports_dangereux": 5,
+      "packer_suspecte": 0,
+      "signature_absente": 1,
+      "macros_presentes": 0,
+      "auto_execution": 0,
+      "pdf_js_ou_launch": 0,
+      "type_usurpe": 0,
+      "nb_chaines_suspectes": 3,
+      "nb_urls": 19,
+      "base64_massif": 1,
+      "xor_suspecte": 1
+    },
+    "probabilite_risque": 0.6035,
+    "methode": "heuristique_ponderee"
+  },
+  "archive": {
+    "est_archive": false
+  },
+  "conteneur": null,
+  "sous_rapports_archive": [],
+  "score_final": {
+    "score": 61,
+    "niveau": "eleve",
+    "action_recommandee": "quarantine",
+    "explications": [
+      "Aucune signature numerique Authenticode presente.",
+      "Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.",
+      "Volume important d'indicateurs suspects (URLs, IP, commandes).",
+      "Le modele de scoring des features estime une probabilite de risque de 60%.",
+      "Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['sourceware.org', 'tug.org'], URLs: ['https://curl.se/docs/http-cookies.html', 'https://curl.se/docs/alt-svc.html', 'https://curl.se/docs/hsts.html'], hashs embarques: aucun."
+    ]
+  },
+  "verdict": {
+    "verdict": "suspect",
+    "libelle": "Suspect",
+    "confiance": "moyenne",
+    "couverture": {
+      "requis": [
+        "clamav",
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "couverts": [
+        "yara",
+        "analyse_statique",
+        "analyse_specialisee"
+      ],
+      "ratio": 0.75,
+      "manquants": [
+        {
+          "outil": "clamav",
+          "statut": "error",
+          "raison": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+        }
+      ]
+    },
+    "preuves_fortes": [],
+    "raisons": [
+      "Score de risque élevé (61/100) sans preuve forte indépendante"
+    ]
+  },
+  "action": {
+    "succes": true,
+    "horodatage": 1793355057,
+    "fichier_original": "basic-miktex-25.12-x64 (1).exe",
+    "chemin_quarantaine": "C:\\Users\\HYPER\\Downloads\\cabinet-noir-agent-maj\\file-analysis-agent\\quarantine\\1793355057_basic-miktex-25.12-x64 (1).exe.quarantine",
+    "raison": "Aucune signature numerique Authenticode presente.; Entropie tres elevee : chiffrement, packer ou charge utile compressee probable.; Volume important d'indicateurs suspects (URLs, IP, commandes).; Le modele de scoring des features estime une probabilite de risque de 60%.; Threat Intelligence : indicateur(s) signale(s) -> IP: aucune, domaines: ['sourceware.org', 'tug.org'], URLs: ['https://curl.se/docs/http-cookies.html', 'https://curl.se/docs/alt-svc.html', 'https://curl.se/docs/hsts.html'], hashs embarques: aucun.",
+    "action": "quarantine",
+    "libelle": "Mettre en quarantaine"
+  },
+  "orchestration": {
+    "outils": {
+      "clamav": {
+        "tool": "clamav",
+        "status": "error",
+        "duration_s": 57.115,
+        "summary": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte",
+        "findings": [],
+        "error": "Erreur pendant l'analyse ClamAV : [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte"
+      },
+      "yara": {
+        "tool": "yara",
+        "status": "ok",
+        "duration_s": 6.33,
+        "summary": "Aucune règle déclenchée",
+        "findings": [],
+        "error": null
+      },
+      "analyse_statique": {
+        "tool": "analyse_statique",
+        "status": "ok",
+        "duration_s": 59.055,
+        "summary": "Analyse structurelle effectuée",
+        "findings": [],
+        "error": null
+      },
+      "entropie_obfuscation": {
+        "tool": "entropie_obfuscation",
+        "status": "ok",
+        "duration_s": 68.726,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "extraction_ioc": {
+        "tool": "extraction_ioc",
+        "status": "ok",
+        "duration_s": 36.537,
+        "summary": "terminé",
+        "findings": [],
+        "error": null
+      },
+      "analyse_specialisee": {
+        "tool": "specialized_pe",
+        "status": "ok",
+        "duration_s": 0.001,
+        "summary": "Aucun indicateur",
+        "findings": [],
+        "error": null
+      },
+      "sandbox": {
+        "tool": "sandbox",
+        "status": "skipped",
+        "duration_s": 0.0,
+        "summary": "fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox.",
+        "findings": [],
+        "error": null
+      }
+    },
+    "plan": [
+      {
+        "outil": "controles_locaux",
+        "lance": true,
+        "raison": "ClamAV, YARA, analyse statique, entropie et IOC lancés en parallèle pour tout fichier"
+      },
+      {
+        "outil": "analyse_specialisee",
+        "lance": true,
+        "raison": "type 'PE/EXE' / extension '.exe' : analyseur dédié applicable"
+      },
+      {
+        "outil": "sandbox",
+        "lance": false,
+        "raison": "fichier > 50 Mo; politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      }
+    ],
+    "decision_engine": {
+      "run_static_analysis": true,
+      "run_clamav": true,
+      "run_yara": true,
+      "run_specialized_analysis": true,
+      "sandbox_status": "non_applicable",
+      "alerts": [],
+      "reasons": [
+        "Le fichier dépasse la taille maximale autorisée pour le sandbox."
+      ],
+      "clamav_detected": false,
+      "yara_detected": false
+    },
+    "extra_requis": [
+      "analyse_specialisee"
+    ]
+  },
+  "version_regles": "4ac64b3b5cfc",
+  "sandbox": {
+    "recommande": false,
+    "justifiee": false,
+    "eligible": false,
+    "declencheurs": [],
+    "bloquants": [
+      "fichier > 50 Mo",
+      "politique decision_engine : Le fichier dépasse la taille maximale autorisée pour le sandbox."
+    ],
+    "soumission_automatique_autorisee": true,
+    "id_soumission": null,
+    "erreur": null
+  }
+}
